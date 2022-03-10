@@ -1,0 +1,10 @@
+{
+  "2capthcaKey": "yourCaptchaKey",
+  "threading": 50,
+  "Number_of_accounts_to_be_created": 10,
+  "sleepdelay": 3,
+  "timeout": 1500,
+  "useProxy": true,
+  "proxyType": "http|http/https|socsk5",
+  "deleteUsedProxy": false
+}
