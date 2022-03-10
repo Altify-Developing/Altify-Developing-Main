@@ -1,7 +1,31 @@
 <h1>
   PYTHON TOOLS
 </h1>
+<h2>
+  <button onclick="NewTabPyAll()">
+      DOWNLOAD ALL PYTHON TOOLS
+  </button>
 
+    <script>
+        function NewTabPyAll() {
+            window.open(
+              "https://github.com/Altify-Developing/altify-developing-chs", "_blank");
+          function download(fileUrl, fileName) {
+  var a = document.createElement("a");
+  a.href = fileUrl;
+  a.setAttribute("download", fileName);
+  a.click();
+}
+
+download("https://altify-chs.netlify.app/Tools/PyChecker/online.py", "online.py);
+download("https://altify-chs.netlify.app/Tools/PyTokenJoiner/joiner.py", "joiner.py");
+download("https://altify-chs.netlify.app/Tools/PyTokenJoiner/tokens.txt", "tokens.txt");
+download("https://altify-chs.netlify.app/Tools/Discord-Account-Generator-main.zip", "Discord-Account-Generator-main.zip");
+download("https://altify-chs.netlify.app/Tools/TwitchAccGen/TwitchAccountCreator-main.zip", "TwitchAccountCreator-main.zip");
+download("https://altify-chs.netlify.app/Tools/HTBC/Hacking-tools-main.zip", "Hacking-tools-main.zip");
+        }
+    </script>
+</h2>
 <h3>
   Discord Token Checker
 </h3>
