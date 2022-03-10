@@ -7,21 +7,11 @@
 <button onclick="NewTab()">
       Download
   </button>
-  
     <script>
-        function NewTab() {
-            window.open(
-              "https://github.com/Altify-Developing/altify-developing-chs", "_blank");
-          function download(fileUrl, fileName) {
-  var a = document.createElement("a");
-  a.href = fileUrl;
-  a.setAttribute("download", fileName);
-  a.click();
-}
-
+src="/NewTab.js"
+src="/DownloadFile.js"
 download("https://altify-chs.netlify.app/Tools/PyChecker/online.py", "online.py");
 download("https://altify-chs.netlify.app/Tools/PyChecker/tokens.txt", "tokens.txt");
-        }
     </script>
 
 
