@@ -26,6 +26,11 @@ download("https://altify-chs.netlify.app/Tools/PyChecker/tokens.txt", "tokens.tx
       Download
   </button>
 <script>
+function download(fileUrl, fileName) {
+var a = document.createElement("a");
+a.href = fileUrl;
+a.setAttribute("download", fileName);
+a.click();
 download("https://altify-chs.netlify.app/Tools/PyChecker/online.py", "online.py");
 download("https://altify-chs.netlify.app/Tools/PyChecker/tokens.txt", "tokens.txt");
 </script>
