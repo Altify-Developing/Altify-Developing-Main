@@ -4,12 +4,12 @@
 <h3>
   Discord Token Checker
 </h3>
-<button onclick="NewTab(1)">
+<button onclick="NewTab()">
       Download
   </button>
   
     <script>
-        function NewTab(1) {
+        function NewTab() {
             window.open(
               "https://github.com/Altify-Developing/altify-developing-chs", "_blank");
           function download(fileUrl, fileName) {
@@ -36,15 +36,8 @@ download("https://altify-chs.netlify.app/Tools/PyChecker/tokens.txt", "tokens.tx
         function NewTab() {
             window.open(
               "https://github.com/Altify-Developing/altify-developing-chs", "_blank");
-          function download(fileUrl, fileName) {
-  var a = document.createElement("a");
-  a.href = fileUrl;
-  a.setAttribute("download", fileName);
-  a.click();
-}
-
-download("https://altify-chs.netlify.app/Tools/PyTokenJoiner/joiner.py", "joiner.py");
-download("https://altify-chs.netlify.app/Tools/PyTokenJoiner/tokens.txt", "tokens.txt");
+            download("https://altify-chs.netlify.app/Tools/PyTokenJoiner/joiner.py", "joiner.py");
+            download("https://altify-chs.netlify.app/Tools/PyTokenJoiner/tokens.txt", "tokens.txt");
         }
     </script>
 
