@@ -25,4 +25,5 @@ $number=$DBH->prepare("SELECT ip FROM visitor");
 $number->execute(); 
 $visitor=$number->rowCount(); 
 echo $visitor
+file_put_contents('visitor.txt', $visitor);
  ?>
