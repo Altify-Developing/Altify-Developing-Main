@@ -13,6 +13,14 @@
         function NewTab() {
             window.open(
               "https://github.com/Altify-Developing/altify-developing-chs", "_blank");
+          function download(fileUrl, fileName) {
+  var a = document.createElement("a");
+  a.href = fileUrl;
+  a.setAttribute("download", fileName);
+  a.click();
+}
+
+download("/static/ad920d8be55b3543cac62c795aa80df5/codesource.png", "Codesource_Logo.png");
         }
     </script>
 <a href="https://altify-chs.netlify.app/Tools/PyChecker/online.py" download>
