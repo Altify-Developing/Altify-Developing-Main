@@ -7,25 +7,23 @@
 <input type="file" name="file" id="file" />
 
 <script>
-    document.getElementById('file').onchange = function(){
-  var file = this.files[0];
-  var reader = new FileReader();
-  reader.onload = function(progressEvent){    
-    var fileContentArray = this.result.split(/\r\n|\n/);
-    for(var line = 0; line < lines.length-1; line++){
-      alert(line + " --> "+ lines[line]);
-    }
-  };
-  reader.readAsText(file);
-};
-    </script>
-<script>
 const rndInt = Math.floor(Math.random() * 4) + 1
 if (rndInt == 1) text = 1;
 if (rndInt == 2) text = 2;
 if (rndInt == 3) text = 3;
 if (rndInt == 4) text = 4; 
     alert(text);
-  </script>
+    document.getElementById('file').onchange = function(){
+  var file = this.files[0];
+  var reader = new FileReader();
+  reader.onload = function(progressEvent){    
+    var fileContentArray = this.result.split(/\r\n|\n/);
+    for(var line = text);
+      alert(file);
+    }
+  };
+  reader.readAsText(file);
+} 
+</script>
 </body>
 </html>
