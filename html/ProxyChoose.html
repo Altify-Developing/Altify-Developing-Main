@@ -6,20 +6,12 @@
 
 
 <script>
-const lineReader = require('line-reader');
 const rndInt = Math.floor(Math.random() * 4) + 1
 if (rndInt == 1) text = 1;
 if (rndInt == 2) text = 2;
 if (rndInt == 3) text = 3;
 if (rndInt == 4) text = 4; 
     alert(text);
-    lineReader.eachLine('https://altify-chs.netlify.app/html/socks4.txt',(line,last)=>{
-    alert(line);
-})
-    }
-  };
-  reader.readAsText(file);
-} 
 </script>
 </body>
 </html>
