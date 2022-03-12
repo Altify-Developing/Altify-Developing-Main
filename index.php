@@ -1,8 +1,8 @@
 <?php
-$host='localhost'; 
- $user='root';
- $pass='';
- $db='test';
+$host='ftp://Altify-Number-1.backup.somee.com/Altify-Number-1_MSSql_Database_Backup'; 
+ $user='Altify';
+ $pass='5czbh6eb7c';
+ $db='Altify-Number-1';
  try{ 
       $DBH=new pdo ("mysql:host=$host; dbname=$db", $user, $pass);
       }catch(PDOException $e){ 
