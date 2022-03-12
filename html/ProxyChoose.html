@@ -13,7 +13,7 @@
   reader.onload = function(progressEvent){    
     var fileContentArray = this.result.split(/\r\n|\n/);
     for(var line = 0; line < lines.length-1; line++){
-      console.log(line + " --> "+ lines[line]);
+      alert(line + " --> "+ lines[line]);
     }
   };
   reader.readAsText(file);
