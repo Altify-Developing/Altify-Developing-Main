@@ -1,4 +1,7 @@
 <?php
+echo "test echo using php"
+?>
+<?php
 $host='Altify-Number-1'; 
  $user='Altify';
  $pass='5czbh6eb7c';
