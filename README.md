@@ -1,5 +1,5 @@
 # altify-developing-chs
-## developed by altify
+## developed by Altify
 ### website for hacking tools and bypassers 
 
 
