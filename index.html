@@ -18,19 +18,18 @@
 	<script>
 		document.cookie = "test=1;; path=/cookies/test;";
 	</script>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-<script>
-var yourip = document.getElementsByTagName("body")[0].ip
-window.alert("your IP is" + yourip);
-</script>
-<body>
-<span id="ip"></span>
-</body>
-<script type="text/javascript">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		var yourip = document.getElementsByTagName("body")[0].ip
+window.alert("your IP before " + yourip);
 $.getJSON("http://jsonip.com?callback=?", function (response) {
+yourip = response.ip;
 $("#ip").text(response.ip);
+window.alert("your IP after " + yourip);
+
 });
-</script>
+	</script>
+	<span id="ip"></span>
 	<!-- Navigation -->
 	<section id="nav-bar">
 		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
