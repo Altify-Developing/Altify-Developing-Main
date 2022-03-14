@@ -19,13 +19,14 @@
 		document.cookie = "test=1;; path=/cookies/test;";
 	</script>
 	<script>
+fetch('')
+		var obj;
+
 fetch('https://api.ipify.org/?format=json')
-  .then(response => response.json())
-// Returns 
-{
- "ip": "user_ip"
-}
-document.cookie = "ip='user_ip';; path=/cookies/test;";
+  .then(res => res.json())
+  .then(data => obj = data)
+  .then(() => alert(obj))
+document.cookie = "ip='user_ip';; path=/cookies/ip;";
 </script>
 	<span id="ip">test</span>
 	<!-- Navigation -->
