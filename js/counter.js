@@ -52,4 +52,4 @@ if (visitorCount > 450 && visitorCount < 500) {
   messageNextMilestone = 500;
 }
 counterContainer.innerHTML = visitCount;
-document.getElementById('messageNextMilestone').innerHTML = NextMilestone;
+document.getElementById('MessNextMilestone').innerHTML = messageNextMilestone;
