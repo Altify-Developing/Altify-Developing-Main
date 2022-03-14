@@ -1,4 +1,5 @@
 var counterContainer = document.querySelector(".website-counter");
+var milestoneContainer = document.querySelector(".milestone-counter");
 var visitCount = localStorage.getItem("page_view");
 
 // Check if page_view entry is present
@@ -52,4 +53,4 @@ if (visitorCount > 450 && visitorCount < 500) {
   var messageNextMilestone = 500;
 }
 counterContainer.innerHTML = visitCount;
-document.getElementById('MessNextMilestone').innerHTML = messageNextMilestone;
+milestoneContainer.innerHTML = messageNextMilestone;
