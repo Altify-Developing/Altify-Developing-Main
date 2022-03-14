@@ -9,4 +9,4 @@ if (visitCount) {
   visitCount = 1;
   localStorage.setItem("page_view", 1);
 }
-counterContainer.innerHTML = visitCount;
+if (visitCount == 150) alert("Welcome 150th Visitor");
