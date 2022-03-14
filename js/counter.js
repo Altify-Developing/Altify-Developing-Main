@@ -31,25 +31,25 @@ if (visitCount) {
   localStorage.setItem("page_view", 1);
 }
 if (visitorCount > 150 && visitorCount < 200) {
-  messageNextMilestone = 200;
+  var messageNextMilestone = 200;
 }
 if (visitorCount > 200 && visitorCount < 250) {
-  messageNextMilestone = 250;
+  var messageNextMilestone = 250;
 }
 if (visitorCount > 250 && visitorCount < 300) {
-  messageNextMilestone = 300;
+  var messageNextMilestone = 300;
 }
 if (visitorCount > 300 && visitorCount < 350) {
-  messageNextMilestone = 350;
+  var messageNextMilestone = 350;
 }
 if (visitorCount > 350 && visitorCount < 400) {
-  messageNextMilestone = 400;
+  var messageNextMilestone = 400;
 }
 if (visitorCount > 400 && visitorCount < 450) {
-  messageNextMilestone = 450;
+  var messageNextMilestone = 450;
 }
 if (visitorCount > 450 && visitorCount < 500) {
-  messageNextMilestone = 500;
+  var messageNextMilestone = 500;
 }
 counterContainer.innerHTML = visitCount;
 document.getElementById('MessNextMilestone').innerHTML = messageNextMilestone;
