@@ -32,25 +32,25 @@ if (visitCount) {
   localStorage.setItem("page_view", 1);
 }
 if (visitorCount > 150 && visitorCount < 200) {
-  var messageNextMilestone = 200;
+  localStorage.setItem("messageNextMilestone", 200);
 }
 if (visitorCount > 200 && visitorCount < 250) {
-  var messageNextMilestone = 250;
+localStorage.setItem("messageNextMilestone", 250);
 }
 if (visitorCount > 250 && visitorCount < 300) {
-  var messageNextMilestone = 300;
+  localStorage.setItem("messageNextMilestone", 300);
 }
 if (visitorCount > 300 && visitorCount < 350) {
-  var messageNextMilestone = 350;
+  localStorage.setItem("messageNextMilestone", 350);
 }
 if (visitorCount > 350 && visitorCount < 400) {
-  var messageNextMilestone = 400;
+  localStorage.setItem("messageNextMilestone", 400);
 }
 if (visitorCount > 400 && visitorCount < 450) {
-  var messageNextMilestone = 450;
+  localStorage.setItem("messageNextMilestone", 450);
 }
 if (visitorCount > 450 && visitorCount < 500) {
-  var messageNextMilestone = 500;
+  localStorage.setItem("messageNextMilestone", 500);
 }
 counterContainer.innerHTML = visitCount;
 milestoneContainer.innerHTML = messageNextMilestone;
