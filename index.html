@@ -18,18 +18,15 @@
 	<script>
 		document.cookie = "test=1;; path=/cookies/test;";
 	</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
-		var yourip = document.getElementsByTagName("body")[0].ip
-window.alert("your IP before " + yourip);
-$.getJSON("http://jsonip.com?callback=?", function (response) {
-yourip = response.ip;
-$("#ip").text(response.ip);
-window.alert("your IP after " + yourip);
-
-});
-	</script>
-	<span id="ip"></span>
+fetch('https://api.ipify.org/?format=json')
+  .then(response => response.json())
+// Returns 
+{
+ "ip": "user_ip"
+}
+</script>
+	<span id="ip">test</span>
 	<!-- Navigation -->
 	<section id="nav-bar">
 		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
