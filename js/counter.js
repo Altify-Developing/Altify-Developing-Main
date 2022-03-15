@@ -32,4 +32,4 @@ if (visitCount) {
   localStorage.setItem("page_view", 1);
 }
 counterContainer.innerHTML = visitCount;
-document.cookie 'visit number=' '+visitCount+';
+document.cookie = 'VisitorCount='+visitCount+'; expires=Wed, 1 Jan 2070 13:47:11 UTC; path=/'
