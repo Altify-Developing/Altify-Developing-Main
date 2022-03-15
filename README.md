@@ -2,7 +2,7 @@
 ## developed by Altify
 ### website for hacking tools and bypassers 
 
-!![Repo Stats](https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg)
+![Repo Stats](https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg)
 
 (stats)
 
