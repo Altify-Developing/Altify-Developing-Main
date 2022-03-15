@@ -19,13 +19,11 @@
 		document.cookie = "test=1;; path=/cookies/test;";
 	</script>
 	<script>
-	$.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
-  data = data.trim().split('\n').reduce(function(obj, pair) {
-    pair = pair.split('=');
-    return obj[pair[0]] = pair[1], obj;
-  }, {});
-  console.log(data);
+	$.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
+  console.log(JSON.stringify(data, null, 2));
 alert(data)
+alert(null)
+});
 document.cookie = "ip=data;; path=/cookies/ip;";
 });
 </script>
