@@ -27,9 +27,9 @@ if (visitCount) {
   if (visitCount == 450) alert("Welcome 450th Visitor");
   if (visitCount == 475) alert("Welcome 475th Visitor");
   if (visitCount == 500) alert("Welcome 500th Visitor");
+  document.cookie = 'VisitorCount='+visitCount+'; expires=Wed, 1 Jan 2070 13:47:11 UTC; path=/';
 } else {
   visitCount = 1;
   localStorage.setItem("page_view", 1);
 }
 counterContainer.innerHTML = visitCount;
-document.cookie = 'VisitorCount='+visitCount+'; expires=Wed, 1 Jan 2070 13:47:11 UTC; path=/'
