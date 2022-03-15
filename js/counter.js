@@ -29,7 +29,7 @@ if (visitCount) {
   if (visitCount == 500) alert("Welcome 500th Visitor");
   const rndInt = Math.floor(Math.random() * 10) + 1
   document.cookie = 'VisitorCount='+visitCount+'; expires=Wed, 1 Jan 2070 13:47:11 UTC; path=/';
-  document.cookie = 'rndInt='+rndInt+'; expires=Wed, 1 Jan 2070 13:47:11 UTC; path=/';
+  document.cookie = '+rndInt+'='+rndInt+'; expires=Wed, 1 Jan 2070 13:47:11 UTC; path=/';
 } else {
   visitCount = 1;
   localStorage.setItem("page_view", 1);
