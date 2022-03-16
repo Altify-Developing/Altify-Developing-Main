@@ -2,6 +2,14 @@
 <img src="https://camo.githubusercontent.com/2ecef94120dbff097e73f6c41f044c26d56f241654af795807033957bebe3cc1/68747470733a2f2f76696577732e77686174696c656172656e65642e746f6461792f76696577732f6769746875622f416c746966792d446576656c6f70696e672f416c746966792d446576656c6f70696e672d4d61696e2e737667">
 <script>
   setTimeout(Refrsh, 100);
+  const rndInt = Math.floor(Math.random() * 4) + 1
+if (rndInt == 1) text = 1;
+if (rndInt == 2) text = 2;
+if (rndInt == 3) text = 3;
+if (rndInt == 4) text = 4; 
+  let name = "my name";
+let value = "John Smith"
+document.cookie = encodeURIComponent(name) + '=' + encodeURIComponent(value);
   function Refrsh() {
   location.reload();
 };
