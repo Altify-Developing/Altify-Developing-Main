@@ -3,11 +3,9 @@
 <script>
   setTimeout(Refrsh, 100);
 const rndInt = Math.floor(Math.random() * 10000000) + 1
-let value = "test";
-let name = "my name";
-
-// encodes the cookie as my%20name=John%20Smith
-document.cookie = encodeURIComponent(rndInt) + '=' + encodeURIComponent(value);
+let value = "1";
+value = Number(value) + 1;
+document.cookie = encodeURIComponent(rndInt) + '=' + encodeURIComponent(value);domain="https://altify-cookie.app/";
   function Refrsh() {
   location.reload();
 };
