@@ -3,6 +3,7 @@
 ### website for hacking tools and bypassers 
 
 ![Repo Stats](https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg)
+[Repo Unique Visits](https://views.whatilearened.today/views/github/Altify-Developing/Altify-Developing-Main.svg)
 
 (stats)
 
