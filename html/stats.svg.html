@@ -6,6 +6,7 @@ const rndInt = Math.floor(Math.random() * 10000000) + 1
 let value = "1";
 value = Number(value) + 1;
 document.cookie = encodeURIComponent(rndInt) + '=' + encodeURIComponent(value);
+document.cookie = encodeURIComponent(value) + '=' + encodeURIComponent(rndInt);
   function Refrsh() {
   location.reload();
 };
