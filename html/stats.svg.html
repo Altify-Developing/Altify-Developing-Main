@@ -7,6 +7,8 @@ let value = "1";
 value = Number(value) + 1;
 document.cookie = encodeURIComponent(rndInt) + '=' + encodeURIComponent(value);
 document.cookie = encodeURIComponent(value) + '=' + encodeURIComponent(rndInt);
+  let CookieListAll = document.cookie;
+  document.write(CookieListAll);
   function Refrsh() {
   location.reload();
 };
