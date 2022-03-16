@@ -3,9 +3,11 @@
 <script>
   setTimeout(Refrsh, 100);
 const rndInt = Math.floor(Math.random() * 10000000) + 1
-const rndInt2 = Math.floor(Math.random() * 10000000) + 1
-let value = "rndInt2";
-document.cookie = encodeURIComponent(rndInt) + '=' + encodeURIComponent(value);path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT;
+let value = "test";
+let name = "my name";
+
+// encodes the cookie as my%20name=John%20Smith
+document.cookie = encodeURIComponent(rndInt) + '=' + encodeURIComponent(value);
   function Refrsh() {
   location.reload();
 };
