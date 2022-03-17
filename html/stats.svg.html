@@ -5,8 +5,12 @@
 				<div class="website-counter"></div>
 <script>
   setTimeout(Refrsh, 1000);
+  setTimeout(data, 100);
   function Refrsh() {
   location.reload();
+	$.getJSON('http://ip-api.com/json', function(data) {
+  console.log(JSON.stringify(data, null, 2));
+});
   };
 };
 </script>
