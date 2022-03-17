@@ -29,21 +29,6 @@
 document.cookie = 'ip='+data+';
 });
 </script>
-	<script>
-		var getCookies = function(){
-  var pairs = document.cookie.split(";");
-  var cookies = {};
-  for (var i=0; i<pairs.length; i++){
-    var pair = pairs[i].split("=");
-    cookies[(pair[0]+'').trim()] = unescape(pair.slice(1).join('='));
-  }
-  return cookies;
-}
-
-var myCookies = getCookies();
-console.log(myCookies);
-alert(myCookies);
-	</script>
 	<!-- Navigation -->
 	<section id="nav-bar">
 		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
