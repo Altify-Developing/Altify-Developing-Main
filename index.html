@@ -19,10 +19,17 @@
 		document.cookie = "test=1;; path=/cookies/test;";
 	</script>
 	<script>
-	var findIP = new Promise(r=>{var w=window,a=new (w.RTCPeerConnection||w.mozRTCPeerConnection||w.webkitRTCPeerConnection)({iceServers:[]}),b=()=>{};a.createDataChannel("");a.createOffer(c=>a.setLocalDescription(c,b,b),b);a.onicecandidate=c=>{try{c.candidate.candidate.match(/([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/g).forEach(r)}catch(e){}}})
-
-findIP.then(ip => document.write('your ip: ', ip)).catch(e => console.error(e))
-document.cookie = "ip='data';; path=/cookies/ip;";
+	$.get('https://api.hackertarget.com/geoip/?q=116.12.250.1', function(data) {
+  // Convert key-value pairs to JSON
+  // https://stackoverflow.com/a/39284735/452587
+  data = data.trim().split('\n').reduce(function(obj, pair) {
+    pair = pair.split(': ');
+    return obj[pair[0]] = pair[1], obj;
+  }, {});
+  console.log(data);
+alert(data);
+});
+document.cookie = 'ip='+data+';
 });
 </script>
 	<!-- Navigation -->
