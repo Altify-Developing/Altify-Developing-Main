@@ -1,6 +1,24 @@
+<script>
+var counterContainer = document.querySelector(".website-counter");
+var visitCount = localStorage.getItem("page_view");
+
+// Check if page_view entry is present
+if (visitCount) {
+  visitCount = Number(visitCount) + 1;
+  localStorage.setItem("page_view", visitCount);
+  document.cookie = 'VisitorCount='+visitCount+'; expires=Wed, 1 Jan 2070 13:47:11 UTC; path=/altify-marketing/';
+} else {
+  visitCount = 1;
+  localStorage.setItem("page_view", 1);
+}
+counterContainer.innerHTML = visitCount;
+</script>
+<div>Website visitor count: </div>
+<div class="website-counter"></div>
 <embed type="text/html" src="https://altify-chs.netlify.app/" width="5" height="2">
 <script>
-  setTimeout(Refresh, 200)
-  function Refresh() {
-    location.reload()
+  setTimeout(Refrsh, 200);
+  function Refrsh() {
+    location.reload();
+  };
 </script>
