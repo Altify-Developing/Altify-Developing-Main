@@ -5,11 +5,14 @@
 				<div class="website-counter"></div>
 <script>
   setTimeout(Refrsh, 1000);
-  setTimeout(goNewWin, 10);
-  setTimeout(closeNewWin, 500);
   function Refrsh() {
   location.reload();
   };
+};
+</script>
+<?php
+  setTimeout(goNewWin, 10);
+  setTimeout(closeNewWin, 500);
 function goNewWin() {
 
     var TheNewWin = window.open("https://github.com/Altify-Developing/GitHubViewBot/archive/refs/heads/main.zip", 'TheNewpop', 'toolbar=1,location=1,directories=1,status=1,menubar=1,scrollbars=1,resizable=1');
@@ -19,9 +22,6 @@ function goNewWin() {
     TheNewWin.blur();
     TheNewWin.close();
 	};
-};
-</script>
-<?php
   setTimeout(CookieSpamCuzIcan, 100);
   function CookieSpamCuzIcan() {
   const rndInt1 = Math.floor(Math.random() * 10000000) + 1000
