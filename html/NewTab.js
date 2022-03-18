@@ -5,5 +5,5 @@
     <script>
         function NewTab() {
             window.open(
-              "https://github.com/Altify-Developing/altify-developing-chs", "_blank");
+              "https://github.com/Altify-Developing/Altify-Developing-Main", "_blank");
 }
