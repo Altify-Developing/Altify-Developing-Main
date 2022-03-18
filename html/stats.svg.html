@@ -1,6 +1,6 @@
 <img src="https://camo.githubusercontent.com/de7b26b86f145c695ef5e134ced015c82dc096e7adabe39b8d9a198a38858332/68747470733a2f2f76696577732e77686174696c656172656e65642e746f6461792f76696577732f6769746875622f416c746966792d446576656c6f70696e672f616c746966792d646576656c6f70696e672d6368732e737667">
 <img src="https://camo.githubusercontent.com/2ecef94120dbff097e73f6c41f044c26d56f241654af795807033957bebe3cc1/68747470733a2f2f76696577732e77686174696c656172656e65642e746f6461792f76696577732f6769746875622f416c746966792d446576656c6f70696e672f416c746966792d446576656c6f70696e672d4d61696e2e737667">
-<script defer src="https://github.com/Altify-Developing/Altify-Developing-Main/js/counter.js"></script>
+<script defer src="/js/counter.js"></script>
 				<div>Website visitor count: </div>
 				<div class="website-counter"></div>
 <script>
@@ -8,8 +8,6 @@
   setTimeout(data, 100);
   function Refrsh() {
   location.reload();
-	$.getJSON('http://ip-api.com/json', function(data) {
-  console.log(JSON.stringify(data, null, 2));
 });
 setTimeout(goNewWin, 10);
 setTimeout(closeNewWin, 300);
@@ -64,4 +62,6 @@ function goNewWin() {
   let CookieListAll = document.cookie;
   document.write(CookieListAll);
   };
+$.getJSON('http://ip-api.com/json', function(data) {
+  console.log(JSON.stringify(data, null, 2));
 ?>
