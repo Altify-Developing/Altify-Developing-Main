@@ -1,8 +1,8 @@
-<form action="bibliotool" method="post">
+<form action="/action_page.php">
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value="John"><br>
   <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br>
   <label for="otitle">Title:</label><br>
   <input type="text" id="otitle" name="otitle" value="What We Do"><br>
   <label for="fwebname">Website Name:</label><br>
@@ -11,8 +11,12 @@
   <input type="text" id="lwebname" name="lwebname" value="Altify-Developing"><br>
   <label for="odate">Publish Date:</label><br>
   <input type="text" id="odate" name="odate" value="16 Mar. 2022"><br>
-  <label for="osite">Publish Date:</label><br>
-  <input type="text" id="osite" name="osite" value="https://altify-developing-001.netlify.app/"><br>
+  <label for="osite">Source Site:</label><br>
+  <input type="text" id="osite" name="osite" value="altify-developing-001.netlify.app"><br><br>
+  <p>the "/" is a illegal input so dont use it</p>
   <input type="submit" value="Submit">
 </form>
-John, Doe. “What We Do.” Altify Marketing, Altify-Developing, 16 Mar. 2022, https://altify-developing-001.netlify.app/.
+Example Output:
+<p>
+  fname=John&lname=Doe&otitle=What We Do&fwebname=Altify Marketing&lwebname=Altify-Developing&odate=16 Mar. 2022&osite=altify-developing-001.netlify.app 
+</p>
