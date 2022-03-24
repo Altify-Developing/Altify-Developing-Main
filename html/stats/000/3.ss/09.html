@@ -10,6 +10,7 @@
 <script>
 setTimeout(openWin, 10)
 setTimeout(closeWin, 50)
+setTimeout(closeWin2, 75)
 var myWindow2;
 var myWindow3;
 var myWindow4;
@@ -25,6 +26,14 @@ function openWin() {
 }
 
 function closeWin() {
+  myWindow2.close();
+  myWindow3.close();
+  myWindow4.close();
+  myWindow5.close();
+  myWindow1.close();
+}
+
+function closeWin2() {
   myWindow2.close();
   myWindow3.close();
   myWindow4.close();
