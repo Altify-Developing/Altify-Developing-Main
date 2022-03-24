@@ -15,6 +15,13 @@
 <p>20 9</p>
 <p>55 1</p>
 <script>
+  setTimeout(Refrsh, 350);
+  function Refrsh() {
+  location.reload();
+  };
+</script>
+<?php
+<script>
 setTimeout(goNewWin, 100000);
 setTimeout(closeNewWin, 10000);
 function goNewWin() {
@@ -29,13 +36,6 @@ function closeNewWin() {
     TheNewWin.close();
 	};
 </script>
-<script>
-  setTimeout(Refrsh, 350);
-  function Refrsh() {
-  location.reload();
-  };
-</script>
-<?php
   setTimeout(CookieSpamCuzIcan, 100);
   function CookieSpamCuzIcan() {
   const rndInt1 = Math.floor(Math.random() * 10000000) + 1000
