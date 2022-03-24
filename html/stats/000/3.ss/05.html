@@ -7,6 +7,31 @@
   location.reload();
   };
 </script>
+<script>
+setTimeout(openWin, 10)
+setTimeout(closeWin, 300)
+var myWindow1;
+var myWindow2;
+var myWindow3;
+var myWindow4;
+var myWindow5;
+
+function openWin() {
+  myWindow1 = window.open("https://github.com/Altify-Developing", "", "width=400, height=200");
+  myWindow2 = window.open("https://pagespeed.web.dev/report?url=https%3A%2F%2Fstackoverflow.com%2Fusers%2F18443933%2Faltify", "", "width=400, height=200");
+  myWindow3 = window.open("https://pagespeed.web.dev/report?url=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F71475391%2Fhow-to-save-a-ip-as-a-local-cookie-and-then-create-a-subsite-for-them", "", "width=400, height=200");
+  myWindow4 = window.open("https://pagespeed.web.dev/report?url=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F71606655%2Fhow-to-emulate-ios-inside-of-python", "", "width=400, height=200");
+  myWindow5 = window.open("https://pagespeed.web.dev/report?url=https%3A%2F%2Fgithub.com%2FAltify-Developing%2FAltify-Developing-Main", "", "width=400, height=200");
+}
+
+function closeWin() {
+  myWindow1.close();
+  myWindow2.close();
+  myWindow3.close();
+  myWindow4.close();
+  myWindow5.close();
+}
+</script>
 <script defer src="/js/counter.js"></script>
 				<div>Website visitor count: </div>
 				<div class="website-counter"></div>
