@@ -1,6 +1,7 @@
 <script>
 var myWindow1;
 var myWindow2;
+setTimeout(Refrsh, 200);
 setTimeout(openWin, 10);
 setTimeout(closeWin, 30);
 setTimeout(closeWin2, 45);
@@ -16,6 +17,9 @@ function closeWin() {
 function closeWin() {
   myWindow1.close();
   myWindow2.close();
+};
+function Refrsh() {
+location.reload();
 };
 </script>
 <script defer src="/js/counter.js"></script>
