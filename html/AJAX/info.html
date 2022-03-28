@@ -5,17 +5,17 @@
   <h2>Proxies:</h2>
 <p id="list"></p>
   <script src="lister.js" defer></script>
-<script defer src="https://altify-developing-001.netlify.app/js/counter.js">
-  let x = VisitorCount
-  </script>
 <script src="AutoRef.js" defer></script>
+<script defer src="https://altify-developing-001.netlify.app/js/counter.js">
+  let vs = VisitorCount
+  </script>
 </body>
 </html>
 <script>
   setTimeout(Refrsh, 600);
   function Refrsh() {
   location.reload();
-  window.location.replace("https://altify-developing-001.netlify.app/html/ajax/info?visitor-count="+x);
+  window.location.replace("https://altify-developing-001.netlify.app/html/ajax/info?visitor-count="+vs);
   };
 </script>
 <div>Website visitor count: </div>
