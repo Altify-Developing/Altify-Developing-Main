@@ -1,7 +1,6 @@
 var counterContainer = document.querySelector(".website-counter");
 var milestoneContainer = document.querySelector(".milestone-counter");
 var visitCount = localStorage.getItem("page_view");
-
 // Check if page_view entry is present
 if (visitCount) {
   visitCount = Number(visitCount) + 1;
@@ -13,4 +12,6 @@ if (visitCount) {
   localStorage.setItem("page_view", 1);
 }
 counterContainer.innerHTML = visitCount;
-window.location.replace("?visitor-count="+visitCount);
+setTimeout(Refrsh, 600);
+  function Refrsh() {
+  window.location.replace("https://altify-developing-001.netlify.app/html/ajax/info?visitor-count="+visitCount);
