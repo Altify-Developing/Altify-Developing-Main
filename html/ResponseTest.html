@@ -40,4 +40,15 @@
             submitButton.disabled = true;
         }, 1);
     });
-</script> 
+</script>
+<script>
+Email.send({
+    SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+    To : 'admin@psnator.com',
+    From : "AltifyDeveloping@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+<script
