@@ -128,12 +128,68 @@ let w = (w1+'.'+w2+'.'+w3+'.'+w4);
 let x = (x1+'.'+x2+'.'+x3+'.'+x4)
 let y = (y1+'.'+y2+'.'+y3+'.'+y4);
 let z = (z1+'.'+z2+'.'+z3+'.'+z4);
-const numbers = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z];
+
+aa1 = Math.floor(Math.random() * 8999) + 1000;
+bb1 = Math.floor(Math.random() * 8999) + 1000;
+cc1 = Math.floor(Math.random() * 8999) + 1000;
+dd1 = Math.floor(Math.random() * 8999) + 1000;
+ee1 = Math.floor(Math.random() * 8999) + 1000;
+ff1 = Math.floor(Math.random() * 8999) + 1000;
+gg1 = Math.floor(Math.random() * 8999) + 1000;
+hh1 = Math.floor(Math.random() * 8999) + 1000;
+ii1 = Math.floor(Math.random() * 8999) + 1000;
+jj1 = Math.floor(Math.random() * 8999) + 1000;
+kk1 = Math.floor(Math.random() * 8999) + 1000;
+ll1 = Math.floor(Math.random() * 8999) + 1000;
+mm1 = Math.floor(Math.random() * 8999) + 1000;
+nn1 = Math.floor(Math.random() * 8999) + 1000;
+oo1 = Math.floor(Math.random() * 8999) + 1000;
+pp1 = Math.floor(Math.random() * 8999) + 1000;
+qq1 = Math.floor(Math.random() * 8999) + 1000;
+rr1 = Math.floor(Math.random() * 8999) + 1000;
+ss1 = Math.floor(Math.random() * 8999) + 1000;
+tt1 = Math.floor(Math.random() * 8999) + 1000;
+uu1 = Math.floor(Math.random() * 8999) + 1000;
+vv1 = Math.floor(Math.random() * 8999) + 1000;
+ww1 = Math.floor(Math.random() * 8999) + 1000;
+xx1 = Math.floor(Math.random() * 8999) + 1000;
+yy1 = Math.floor(Math.random() * 8999) + 1000;
+zz1 = Math.floor(Math.random() * 8999) + 1000;
+
+let aaa = (a+':'+aa);
+let bbb = (b+':'+bb);
+let ccc = (c+':'+cc);
+let ddd = (d+':'+dd);
+let eee = (e+':'+ee);
+let fff = (f+':'+ff);
+let ggg = (g+':'+gg);
+let hhh = (h+':'+hh);
+let iii = (i+':'+ii);
+let jjj = (j+':'+jj);
+let kkk = (k+':'+kk);
+let lll = (l+':'+ll);
+let mmm = (m+':'+mm);
+let nnn = (n+':'+nn);
+let ooo = (o+':'+oo);
+let ppp = (p+':'+pp);
+let qqq = (q+':'+qq);
+let rrr = (r+':'+rr);
+let sss = (s+':'+ss);
+let ttt = (t+':'+tt);
+let uuu = (u+':'+uu);
+let vvv = (v+':'+vv);
+let www = (w+':'+ww);
+let xxx = (x+':'+xx);
+let yyy = (y+':'+yy);
+let zzz = (z+':'+zz);
+
+
+const proxies = [aaa, bbb, ccc, ddd, eee, fff, ggg, hhh, iii, jjj, kkk, lll, mmm, nnn, ooo, ppp, qqq, rrr, sss, ttt, uuu, vvv, www, xxx, yyy, zzz];
 
 let txt = "";
-numbers.forEach(myFunction);
+proxies.forEach(Proxies);
 document.getElementById("list").innerHTML = txt;
 
-function myFunction(value, index, array) {
+function Proxies(value, index, array) {
   txt += value + "<br>"; 
 };
