@@ -1,0 +1,12 @@
+<div id="constantupdate">
+  <h2>Randomized IP Gen Online</h2>
+  <button type="button" onclick="loadTXT()">Load Randomized IP</button>
+</div>
+function loadTXT() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("constantupdate").innerHTML = this.responseText;
+    }
+  xhttp.open("GET", "ips.html", true);
+  xhttp.send();
+}
