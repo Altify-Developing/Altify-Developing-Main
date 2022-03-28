@@ -15,3 +15,4 @@ counterContainer.innerHTML = visitCount;
 setTimeout(Refrsh, 600);
   function Refrsh() {
   window.location.replace("https://altify-developing-001.netlify.app/html/ajax/info?visitor-count="+visitCount);
+  };
