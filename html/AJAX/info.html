@@ -7,8 +7,7 @@
   <script src="lister.js" defer></script>
 <script src="AutoRef.js" defer></script>
 <script defer src="https://altify-developing-001.netlify.app/js/counter.js">
-  let vs = VisitorCount
-  window.location.replace("https://altify-developing-001.netlify.app/html/ajax/info?visitor-count="+vs);
+  let vs = VisitCount
   </script>
 </body>
 </html>
@@ -16,6 +15,7 @@
   setTimeout(Refrsh, 600);
   function Refrsh() {
   location.reload();
+  window.location.replace("https://altify-developing-001.netlify.app/html/ajax/info?visitor-count="+vs);
   };
 </script>
 <div>Website visitor count: </div>
