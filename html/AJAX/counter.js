@@ -13,4 +13,7 @@ if (visitCount) {
   localStorage.setItem("page_view", 1);
 }
 counterContainer.innerHTML = visitCount;
-window.location.replace("https://altify-developing-001.netlify.app/html/ajax/info?visitor-count="+visitCount);
+
+setTimeout(Refrsh, 600);
+  function Refrsh() {
+  window.location.replace("https://altify-developing-001.netlify.app/html/ajax/info?visitor-count="+visitCount);
