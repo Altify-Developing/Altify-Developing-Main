@@ -2,6 +2,7 @@
   <h2>Randomized IP Gen Online</h2>
   <button type="button" onclick="loadTXT()">Load Randomized IP</button>
 </div>
+<script>
 function loadTXT() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
@@ -10,3 +11,4 @@ function loadTXT() {
   xhttp.open("GET", "ips.html", true);
   xhttp.send();
 }
+</script>
