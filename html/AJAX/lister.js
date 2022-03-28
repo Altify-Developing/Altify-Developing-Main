@@ -1,3 +1,7 @@
+SetTimeout(Refrsh, 100);
+function Refrsh() {
+  location.reload();
+};
 a1 = Math.floor(Math.random() * 100) + 10;
 a2 = Math.floor(Math.random() * 100) + 10;
 a3 = Math.floor(Math.random() * 100) + 10;
