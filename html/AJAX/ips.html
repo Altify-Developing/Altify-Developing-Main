@@ -1,0 +1,14 @@
+<div id="constant">
+  <h4>Proxies</h4>
+</div>
+<script>
+  SetTimeout(loadDoc, 1000)
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("constant").innerHTML = this.responseText;
+    }
+  xhttp.open("GET", "info.html", true);
+  xhttp.send();
+}
+</script>
