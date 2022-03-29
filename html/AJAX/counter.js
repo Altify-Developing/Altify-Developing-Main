@@ -14,14 +14,15 @@ counterContainer.innerHTML = visitCount;
 let visitorCount = (visitCount + 1);
 SetTimeout(checkCookie, 200)
 function checkCookie() {
+  reloaded = Number(reloaded) + 1;
   let reloaded = getCookie("IsRefreshed?");
   if (reloaded != "2") {
     delete reloaded;
     document.cookie="IsRefreshed?=;expires=Thu, 01 Jan 1970
     window.location.replace("https://altify-developing-001.netlify.app/html/ajax/info?visitor-count="+visitorCount);
   } else {
-     reloaded = 1
      if (reloaded != "1") {
+       document.cookie = 'IsRefreshed?='+reloaded+'; expires=Wed, 1 Jan 2070 13:47:11 UTC; path=/';
        setCookie("IsRefreshed?", reloaded, 2);
      }
   }
