@@ -21,6 +21,7 @@ box {
   margin-right: 100px;
   margin-left: 525px;
   width: 320px;
+  height: 200px;
   padding: 10px;
   border: 5px solid green;
 }
