@@ -27,13 +27,9 @@ box {
 
 box2 {
   font-size: 18px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 100px;
-  margin-left: 550px;
-  width: 3200px;
-  height: 200px;
-  padding: 200px;
+  margin: 0px;
+  width: 350px;
+  padding: 10px;
   border: 5px solid green;
 }
 
