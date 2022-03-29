@@ -1,19 +1,19 @@
 function Stamp() {
   PrxType = Math.floor(Math.random() * 3) + 1
-  var prxbtype = "";
-  var advertise = "";
-  if (PrxType == 1) {
-  var prxbtype = ('$0CK$4');
-  var advertise = (prxbtype+' Proccy ganerated by: Altify @ Timestamp: '+curdate);
-  alert(prxbtype);
-  } else if (PrxType == 2) {
-  var prxbtype = ('$0CK$5');
-  var advertise = (prxbtype+' Proccy ganerated by: Altify @ Timestamp: '+curdate);
-  alert(prxbtype);
-  } else (PrxType == 3) {
-  var prxbtype = ('H11P');
-  var advertise = (prxbtype+' Proccy ganerated by: Altify @ Timestamp: '+curdate);
-  alert(prxbtype);
+  let prxbtype = "";
+  let advertise = "";
+  if (PrxType == "1") {
+  prxytype = '$0CK$4';
+  var advertise = ('Proccy ganerated by: Altify @ Timestamp: '+curdate+' ');
+  alert(prxytype);
+  } else if (PrxType == "2") {
+  prxytype = '$0CK$5';
+  var advertise = ('Proccy ganerated by: Altify @ Timestamp: '+curdate+' ');
+  alert(prxytype);
+  } else (PrxType == "3") {
+  prxytype = 'H11P';
+  var advertise = ('Proccy ganerated by: Altify @ Timestamp: '+curdate+' ');
+  alert(prxytype);
   }
 };
 
