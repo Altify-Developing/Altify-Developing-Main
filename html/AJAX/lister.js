@@ -1,3 +1,8 @@
+var curdate = new Date();
+curdate.getHours();
+curdate.getMinutes();
+curdate.getSeconds();
+
 a1 = Math.floor(Math.random() * 100) + 10;
 a2 = Math.floor(Math.random() * 100) + 10;
 a3 = Math.floor(Math.random() * 100) + 10;
@@ -102,32 +107,58 @@ z1 = Math.floor(Math.random() * 100) + 10;
 z2 = Math.floor(Math.random() * 100) + 10;
 z3 = Math.floor(Math.random() * 100) + 10;
 z4 = Math.floor(Math.random() * 1000) + 10;
-let a = (a1+'.'+a2+'.'+a3+'.'+a4);
-let b = (b1+'.'+b2+'.'+b3+'.'+b4);
-let c = (c1+'.'+c2+'.'+c3+'.'+c4);
-let d = (d1+'.'+d2+'.'+d3+'.'+d4);
-let e = (e1+'.'+e2+'.'+e3+'.'+e4);
-let f = (f1+'.'+f2+'.'+f3+'.'+f4);
-let g = (g1+'.'+g2+'.'+g3+'.'+g4);
-let h = (h1+'.'+h2+'.'+h3+'.'+h4);
-let i = (i1+'.'+i2+'.'+i3+'.'+i4);
-let j = (j1+'.'+j2+'.'+j3+'.'+j4);
-let k = (k1+'.'+k2+'.'+k3+'.'+k4);
-let l = (l1+'.'+l2+'.'+l3+'.'+l4);
-let m = (m1+'.'+m2+'.'+m3+'.'+m4);
-let n = (n1+'.'+n2+'.'+n3+'.'+n4);
-let o = (o1+'.'+o2+'.'+o3+'.'+o4);
-let p = (p1+'.'+p2+'.'+p3+'.'+p4);
-let q = (q1+'.'+q2+'.'+q3+'.'+q4);
-let r = (r1+'.'+r2+'.'+r3+'.'+r4);
-let s = (s1+'.'+s2+'.'+s3+'.'+s4);
-let t = (t1+'.'+t2+'.'+t3+'.'+t4);
-let u = (u1+'.'+u2+'.'+u3+'.'+u4)
-let v = (v1+'.'+v2+'.'+v3+'.'+v4);
-let w = (w1+'.'+w2+'.'+w3+'.'+w4);
-let x = (x1+'.'+x2+'.'+x3+'.'+x4)
-let y = (y1+'.'+y2+'.'+y3+'.'+y4);
-let z = (z1+'.'+z2+'.'+z3+'.'+z4);
+SetTimeout(Stamp, 5);
+let a = (advertise+a1+'.'+a2+'.'+a3+'.'+a4);
+SetTimeout(Stamp, 5);
+let b = (advertise+b1+'.'+b2+'.'+b3+'.'+b4);
+SetTimeout(Stamp, 5);
+let c = (advertise+c1+'.'+c2+'.'+c3+'.'+c4);
+SetTimeout(Stamp, 5);
+let d = (advertise+d1+'.'+d2+'.'+d3+'.'+d4);
+SetTimeout(Stamp, 5);
+let e = (advertise+e1+'.'+e2+'.'+e3+'.'+e4);
+SetTimeout(Stamp, 5);
+let f = (advertise+f1+'.'+f2+'.'+f3+'.'+f4);
+SetTimeout(Stamp, 5);
+let g = (advertise+g1+'.'+g2+'.'+g3+'.'+g4);
+SetTimeout(Stamp, 5);
+let h = (advertise+h1+'.'+h2+'.'+h3+'.'+h4);
+SetTimeout(Stamp, 5);
+let i = (advertise+i1+'.'+i2+'.'+i3+'.'+i4);
+SetTimeout(Stamp, 5);
+let j = (advertise+j1+'.'+j2+'.'+j3+'.'+j4);
+SetTimeout(Stamp, 5);
+let k = (advertise+k1+'.'+k2+'.'+k3+'.'+k4);
+SetTimeout(Stamp, 5);
+let l = (advertise+l1+'.'+l2+'.'+l3+'.'+l4);
+SetTimeout(Stamp, 5);
+let m = (advertise+m1+'.'+m2+'.'+m3+'.'+m4);
+SetTimeout(Stamp, 5);
+let n = (advertise+n1+'.'+n2+'.'+n3+'.'+n4);
+SetTimeout(Stamp, 5);
+let o = (advertise+o1+'.'+o2+'.'+o3+'.'+o4);
+SetTimeout(Stamp, 5);
+let p = (advertise+p1+'.'+p2+'.'+p3+'.'+p4);
+SetTimeout(Stamp, 5);
+let q = (advertise+q1+'.'+q2+'.'+q3+'.'+q4);
+SetTimeout(Stamp, 5);
+let r = (advertise+r1+'.'+r2+'.'+r3+'.'+r4);
+SetTimeout(Stamp, 5);
+let s = (advertise+s1+'.'+s2+'.'+s3+'.'+s4);
+SetTimeout(Stamp, 5);
+let t = (advertise+t1+'.'+t2+'.'+t3+'.'+t4);
+SetTimeout(Stamp, 5);
+let u = (advertise+u1+'.'+u2+'.'+u3+'.'+u4);
+SetTimeout(Stamp, 5);
+let v = (advertise+v1+'.'+v2+'.'+v3+'.'+v4);
+SetTimeout(Stamp, 5);
+let w = (advertise+w1+'.'+w2+'.'+w3+'.'+w4);
+SetTimeout(Stamp, 5);
+let x = (advertise+x1+'.'+x2+'.'+x3+'.'+x4);
+SetTimeout(Stamp, 5);
+let y = (advertise+y1+'.'+y2+'.'+y3+'.'+y4);
+SetTimeout(Stamp, 5);
+let z = (advertise+z1+'.'+z2+'.'+z3+'.'+z4);
 aa1 = Math.floor(Math.random() * 8999) + 1000;
 bb1 = Math.floor(Math.random() * 8999) + 1000;
 cc1 = Math.floor(Math.random() * 8999) + 1000;
@@ -216,4 +247,20 @@ proxies.forEach(Proxies);
 document.getElementById("list").innerHTML = txt;
 function Proxies(value, index, array) {
   txt += value + "<br>"; 
+};
+
+function Stamp() {
+PrxType = Math.floor(Math.random() * 3) + 1;
+if (PrxType == 1) {
+  let prxbtype = "𝕤𝕠𝕔𝕜𝕤𝟜"
+  let advertise = (prxbtype+' ₱ⱤØӾɎ ₲Ɇ₦ɆⱤ₳₮ɆĐ ฿Ɏ: ₳Ⱡ₮ł₣Ɏ'+' '+'@'+' '+'Timestamp: '+curdate)
+  };
+if (PrxType == 2) {
+  let prxbtype = "𝕤𝕠𝕔𝕜𝕤𝟝"
+  let advertise = (prxbtype+' ₱ⱤØӾɎ ₲Ɇ₦ɆⱤ₳₮ɆĐ ฿Ɏ: ₳Ⱡ₮ł₣Ɏ'+' '+'@'+' '+'Timestamp: '+curdate)
+  };
+if (PrxType == 3) {
+  let prxbtype = "𝕙𝕥𝕥𝕡"
+  let advertise = (prxbtype+' ₱ⱤØӾɎ ₲Ɇ₦ɆⱤ₳₮ɆĐ ฿Ɏ: ₳Ⱡ₮ł₣Ɏ'+' '+'@'+' '+'Timestamp: '+curdate)
+  };
 };
