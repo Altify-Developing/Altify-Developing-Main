@@ -12,3 +12,10 @@ if (visitCount) {
   localStorage.setItem("page_view", 1);
 }
 counterContainer.innerHTML = visitCount;
+let btn = document.createElement("button");
+btn.innerHTML = "Refresh List";
+document.body.appendChild(btn);
+btn.onclick = function () {
+  let visitorCount = (visitCount + 1)
+  window.location.replace("https://altify-developing-001.netlify.app/html/ajax/info?visitor-count="+visitorCount);
+};
