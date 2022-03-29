@@ -1,4 +1,4 @@
-SetTimeout(Refrsh, 900);
+SetTimeout(Refrsh, 3000);
     function Refrsh() {
     location.reload();
     };
