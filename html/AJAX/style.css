@@ -27,7 +27,7 @@ box {
 
 .flex-container {
   display: flex;
-  background-color: black;
+  background-color: grey;
 }
 
 .flex-container > box2 {
