@@ -1,16 +1,18 @@
 function Stamp() {
   PrxType = Math.floor(Math.random() * 3) + 1
+  var prxbtype = "";
+  var advertise = "";
   if (PrxType == 1) {
-  let prxbtype = "$0CK$4"
-  let advertise = (prxbtype+' Proccy ganerated by: Altify @ Timestamp: '+curdate)
+  var prxbtype = ('$0CK$4');
+  var advertise = (prxbtype+' Proccy ganerated by: Altify @ Timestamp: '+curdate);
   alert(prxbtype);
   } else if (PrxType == 2) {
-  let prxbtype = "$0CK$5"
-  let advertise = (prxbtype+' Proccy ganerated by: Altify @ Timestamp: '+curdate)
+  var prxbtype = ('$0CK$5');
+  var advertise = (prxbtype+' Proccy ganerated by: Altify @ Timestamp: '+curdate);
   alert(prxbtype);
   } else (PrxType == 3) {
-  let prxbtype = "H11P"
-  let advertise = (prxbtype+' Proccy ganerated by: Altify @ Timestamp: '+curdate)
+  var prxbtype = ('H11P');
+  var advertise = (prxbtype+' Proccy ganerated by: Altify @ Timestamp: '+curdate);
   alert(prxbtype);
   }
 };
