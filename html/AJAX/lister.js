@@ -3,12 +3,15 @@ function Stamp() {
   if (PrxType == 1) {
   let prxbtype = "$0CK$4"
   let advertise = (prxbtype+' Proccy ganerated by: Altify @ Timestamp: '+curdate)
+  alert(prxbtype);
   } else if (PrxType == 2) {
   let prxbtype = "$0CK$5"
   let advertise = (prxbtype+' Proccy ganerated by: Altify @ Timestamp: '+curdate)
+  alert(prxbtype);
   } else (PrxType == 3) {
   let prxbtype = "H11P"
   let advertise = (prxbtype+' Proccy ganerated by: Altify @ Timestamp: '+curdate)
+  alert(prxbtype);
   }
 };
 
