@@ -2,7 +2,7 @@ var curdate = new Date();
 curdate.getHours();
 curdate.getMinutes();
 curdate.getSeconds();
-
+alert(curdate);
 a1 = Math.floor(Math.random() * 100) + 10;
 a2 = Math.floor(Math.random() * 100) + 10;
 a3 = Math.floor(Math.random() * 100) + 10;
