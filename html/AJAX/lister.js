@@ -1,8 +1,24 @@
+function Stamp() {
+PrxType = Math.floor(Math.random() * 3) + 1;
+if (PrxType == 1) {
+  let prxbtype = "$0CK$4"
+  let advertise = (prxbtype+' Proccy ganerated by: Altify'+' '+'@'+' '+'Timestamp: '+curdate)
+  };
+if (PrxType == 2) {
+  let prxbtype = "$0CK$5"
+  let advertise = (prxbtype+' Proccy ganerated by: Altify'+' '+'@'+' '+'Timestamp: '+curdate)
+  };
+if (PrxType == 3) {
+  let prxbtype = "H11P"
+  let advertise = (prxbtype+' Proccy ganerated by: Altify'+' '+'@'+' '+'Timestamp: '+curdate)
+  };
+};
+
 var curdate = new Date();
 curdate.getHours();
 curdate.getMinutes();
 curdate.getSeconds();
-alert(curdate);
+
 a1 = Math.floor(Math.random() * 100) + 10;
 a2 = Math.floor(Math.random() * 100) + 10;
 a3 = Math.floor(Math.random() * 100) + 10;
@@ -247,20 +263,4 @@ proxies.forEach(Proxies);
 document.getElementById("list").innerHTML = txt;
 function Proxies(value, index, array) {
   txt += value + "<br>"; 
-};
-
-function Stamp() {
-PrxType = Math.floor(Math.random() * 3) + 1;
-if (PrxType == 1) {
-  let prxbtype = "𝕤𝕠𝕔𝕜𝕤𝟜"
-  let advertise = (prxbtype+' ₱ⱤØӾɎ ₲Ɇ₦ɆⱤ₳₮ɆĐ ฿Ɏ: ₳Ⱡ₮ł₣Ɏ'+' '+'@'+' '+'Timestamp: '+curdate)
-  };
-if (PrxType == 2) {
-  let prxbtype = "𝕤𝕠𝕔𝕜𝕤𝟝"
-  let advertise = (prxbtype+' ₱ⱤØӾɎ ₲Ɇ₦ɆⱤ₳₮ɆĐ ฿Ɏ: ₳Ⱡ₮ł₣Ɏ'+' '+'@'+' '+'Timestamp: '+curdate)
-  };
-if (PrxType == 3) {
-  let prxbtype = "𝕙𝕥𝕥𝕡"
-  let advertise = (prxbtype+' ₱ⱤØӾɎ ₲Ɇ₦ɆⱤ₳₮ɆĐ ฿Ɏ: ₳Ⱡ₮ł₣Ɏ'+' '+'@'+' '+'Timestamp: '+curdate)
-  };
 };
