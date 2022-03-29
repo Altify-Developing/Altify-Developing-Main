@@ -11,18 +11,17 @@ if (visitCount) {
   localStorage.setItem("page_view", 1);
 }
 counterContainer.innerHTML = visitCount;
-
-let reloaded = localStorage.getItem("page_view_2");
-if (reloaded) {
-  reloaded = Number(reloaded) + 1;
-  localStorage.setItem("page_view_2", reloaded);
-  const rndInt = Math.floor(Math.random() * 10) + 1
-  document.cookie = 'IsRefreshed?='+reloaded+'; path=/';
-} else {
-  reloaded = 1;
-  localStorage.setItem("page_view_2", 1);
-  let visitorCount = (reloaded + 1);
-  window.location.replace("https://altify-developing-001.netlify.app/html/ajax/info?visitor-count="+visitorCount);
+function checkCookie() {
+  let reloaded = getCookie("IsRefreshed?");
+  if (reloaded != "2") {
+    delete reloaded;
+    document.cookie="IsRefreshed?=;expires=Thu, 01 Jan 1970
+    let visitorCount = (visitCount + 1);
+    window.location.replace("https://altify-developing-001.netlify.app/html/ajax/info?visitor-count="+visitorCount);
+  } else {
+     reloaded = 1
+     if (reloaded != "1") {
+       setCookie("IsRefreshed?", reloaded, 2);
+     }
+  }
 }
-counterContainer.innerHTML = reloaded;
-delete reloaded;
