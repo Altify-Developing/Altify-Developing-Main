@@ -33,7 +33,7 @@ box {
 .flex-container > box2 {
   background-color: lightgrey;
   color: darkgreen;
-  margin: 10px;
+  margin: auto;
   padding: 20px;
   font-size: 30px;
   text-align: center;
