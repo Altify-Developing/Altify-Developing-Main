@@ -11,12 +11,13 @@ if (visitCount) {
   localStorage.setItem("page_view", 1);
 }
 counterContainer.innerHTML = visitCount;
+let visitorCount = (visitCount + 1);
+SetTimeout(checkCookie, 200)
 function checkCookie() {
   let reloaded = getCookie("IsRefreshed?");
   if (reloaded != "2") {
     delete reloaded;
     document.cookie="IsRefreshed?=;expires=Thu, 01 Jan 1970
-    let visitorCount = (visitCount + 1);
     window.location.replace("https://altify-developing-001.netlify.app/html/ajax/info?visitor-count="+visitorCount);
   } else {
      reloaded = 1
