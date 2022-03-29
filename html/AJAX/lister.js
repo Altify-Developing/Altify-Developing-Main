@@ -2,15 +2,15 @@ function Stamp() {
 PrxType = Math.floor(Math.random() * 3) + 1;
 if (PrxType == 1) {
   let prxbtype = "$0CK$4"
-  let advertise = (prxbtype+' Proccy ganerated by: Altify'+' '+'@'+' '+'Timestamp: '+curdate)
+  let advertise = (prxbtype+' Proccy ganerated by: Altify @ Timestamp: '+curdate)
   };
 if (PrxType == 2) {
   let prxbtype = "$0CK$5"
-  let advertise = (prxbtype+' Proccy ganerated by: Altify'+' '+'@'+' '+'Timestamp: '+curdate)
+  let advertise = (prxbtype+' Proccy ganerated by: Altify @ Timestamp: '+curdate)
   };
 if (PrxType == 3) {
   let prxbtype = "H11P"
-  let advertise = (prxbtype+' Proccy ganerated by: Altify'+' '+'@'+' '+'Timestamp: '+curdate)
+  let advertise = (prxbtype+' Proccy ganerated by: Altify @ Timestamp: '+curdate)
   };
 };
 
