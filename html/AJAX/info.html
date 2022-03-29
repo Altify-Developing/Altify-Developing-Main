@@ -4,7 +4,6 @@
   <link rel="stylesheet" href="style.css">
 
   <h2>Proxies:</h2>
-  <div><script src="counter.js" defer></script><div>
   <div>Website visitor count:</div><div class="website-counter"></div><br>
   <box>
 <img src="https://camo.githubusercontent.com/de7b26b86f145c695ef5e134ced015c82dc096e7adabe39b8d9a198a38858332/68747470733a2f2f76696577732e77686174696c656172656e65642e746f6461792f76696577732f6769746875622f416c746966792d446576656c6f70696e672f616c746966792d646576656c6f70696e672d6368732e737667">
@@ -12,6 +11,15 @@
 <a href="https://github.com/Altify-Developing"><img alt="GitHub Repo Views" src="https://views.whatilearened.today/views/github/Altify-Development/Gmail-Generator-Python.svg"></a>
   </box>
   <p id="list"></p>
+  <script src="counter.js" defer>
+  let btn = document.createElement("button");
+btn.innerHTML = "Refresh List";
+document.body.appendChild(btn);
+btn.onclick = function () {
+  let visitorCount = (visitCount + 1)
+  window.location.replace("https://altify-developing-001.netlify.app/html/ajax/info?visitor-count="+visitorCount);
+};
+  </script>
   <script src="lister.js" defer></script>
 <script src="AutoRef.js" defer></script>
 </body>
