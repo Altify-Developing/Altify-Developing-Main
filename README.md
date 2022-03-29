@@ -10,6 +10,7 @@
 </p>
 
 ![yo](https://views.whatilearened.today/views/github/Altify-Development/Gmail-Generator-Python.svg)
+
 (stats)
 
 [Altify](https://github.com/Altify-Development)
