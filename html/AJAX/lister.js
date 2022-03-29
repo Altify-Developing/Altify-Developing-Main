@@ -3,15 +3,15 @@ function Stamp() {
   let prxbtype = "";
   let advertise = "";
   if (PrxType == "1") {
-  prxytype = '$0CK$4';
+  prxytype = "$0CK$4";
   var advertise = ('Proccy ganerated by: Altify @ Timestamp: '+curdate+' ');
   alert(prxytype);
   } else if (PrxType == "2") {
-  prxytype = '$0CK$5';
+  prxytype = "$0CK$5";
   var advertise = ('Proccy ganerated by: Altify @ Timestamp: '+curdate+' ');
   alert(prxytype);
   } else (PrxType == "3") {
-  prxytype = 'H11P';
+  prxytype = "H11P";
   var advertise = ('Proccy ganerated by: Altify @ Timestamp: '+curdate+' ');
   alert(prxytype);
   }
