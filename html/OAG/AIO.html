@@ -43,4 +43,26 @@ function Proxies(value, index, array) {
   reader.readAsText(file);
 };
 </script>
+<body onload="readfileautomatically();">
+
+<div id="line1"></div>
+<div id="line3"></div>
+
+<script>
+    function readfileautomatically () {
+        var client = new XMLHttpRequest();
+        client.open('GET', '/html/OAG/Resources/FN.txt');
+        client.onreadystatechange = function()
+        {
+            if( client.responseText != '' )
+            {
+                var txt = client.responseText.split("\n");
+                document.getElementById("line1").innerHTML = txt[0];
+                document.getElementById("line3").innerHTML = txt[2];
+            }
+        }
+        client.send();
+    }
+</script>
+</body>
 </html>
