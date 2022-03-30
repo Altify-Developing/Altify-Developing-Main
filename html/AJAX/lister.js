@@ -1,3 +1,32 @@
+function Stamp() {
+var advertise1
+var advertise2
+var advertise3
+var PrxX
+var PrxY
+var PrxZ
+var curdate = new Date()
+curdate.getHours();
+curdate.getMinutes();
+curdate.getSeconds();
+PrxType1 = Math.floor(Math.random() * 3) + 1
+if (PrxType1 == "1") {
+	let PrxX = ("S0CK$4 ");
+	let advertise1 = (PrxX+"Proccy ganerated by: Altify @ Timestamp: "+curdate+" ");
+	alert(advertise1);
+    }
+if (PrxType1 == "2") {
+	let PrxY = ("S0CK$5 ");
+	let advertise2 = (PrxY+"Proccy ganerated by: Altify @ Timestamp: "+curdate+" ");
+	alert(advertise2);
+	} 
+if (PrxType1 == "3") {
+	let PrxZ = ("HTTP ");
+	let advertise3 = (PrxZ+"Proccy ganerated by: Altify @ Timestamp: "+curdate+" ");
+	alert(advertise3);
+	}
+};
+
 a1 = Math.floor(Math.random() * 100) + 10;
 a2 = Math.floor(Math.random() * 100) + 10;
 a3 = Math.floor(Math.random() * 100) + 10;
@@ -102,32 +131,58 @@ z1 = Math.floor(Math.random() * 100) + 10;
 z2 = Math.floor(Math.random() * 100) + 10;
 z3 = Math.floor(Math.random() * 100) + 10;
 z4 = Math.floor(Math.random() * 1000) + 10;
-let a = (a1+'.'+a2+'.'+a3+'.'+a4);
-let b = (b1+'.'+b2+'.'+b3+'.'+b4);
-let c = (c1+'.'+c2+'.'+c3+'.'+c4);
-let d = (d1+'.'+d2+'.'+d3+'.'+d4);
-let e = (e1+'.'+e2+'.'+e3+'.'+e4);
-let f = (f1+'.'+f2+'.'+f3+'.'+f4);
-let g = (g1+'.'+g2+'.'+g3+'.'+g4);
-let h = (h1+'.'+h2+'.'+h3+'.'+h4);
-let i = (i1+'.'+i2+'.'+i3+'.'+i4);
-let j = (j1+'.'+j2+'.'+j3+'.'+j4);
-let k = (k1+'.'+k2+'.'+k3+'.'+k4);
-let l = (l1+'.'+l2+'.'+l3+'.'+l4);
-let m = (m1+'.'+m2+'.'+m3+'.'+m4);
-let n = (n1+'.'+n2+'.'+n3+'.'+n4);
-let o = (o1+'.'+o2+'.'+o3+'.'+o4);
-let p = (p1+'.'+p2+'.'+p3+'.'+p4);
-let q = (q1+'.'+q2+'.'+q3+'.'+q4);
-let r = (r1+'.'+r2+'.'+r3+'.'+r4);
-let s = (s1+'.'+s2+'.'+s3+'.'+s4);
-let t = (t1+'.'+t2+'.'+t3+'.'+t4);
-let u = (u1+'.'+u2+'.'+u3+'.'+u4)
-let v = (v1+'.'+v2+'.'+v3+'.'+v4);
-let w = (w1+'.'+w2+'.'+w3+'.'+w4);
-let x = (x1+'.'+x2+'.'+x3+'.'+x4)
-let y = (y1+'.'+y2+'.'+y3+'.'+y4);
-let z = (z1+'.'+z2+'.'+z3+'.'+z4);
+SetTimeout(Stamp, 5);
+let a = (advertise1+a1+'.'+a2+'.'+a3+'.'+a4);
+SetTimeout(Stamp, 5);
+let b = (advertise2+b1+'.'+b2+'.'+b3+'.'+b4);
+SetTimeout(Stamp, 5);
+let c = (advertise3+c1+'.'+c2+'.'+c3+'.'+c4);
+SetTimeout(Stamp, 5);
+let d = (advertise1+d1+'.'+d2+'.'+d3+'.'+d4);
+SetTimeout(Stamp, 5);
+let e = (advertise2+e1+'.'+e2+'.'+e3+'.'+e4);
+SetTimeout(Stamp, 5);
+let f = (advertise3+f1+'.'+f2+'.'+f3+'.'+f4);
+SetTimeout(Stamp, 5);
+let g = (advertise1+g1+'.'+g2+'.'+g3+'.'+g4);
+SetTimeout(Stamp, 5);
+let h = (advertise2+h1+'.'+h2+'.'+h3+'.'+h4);
+SetTimeout(Stamp, 5);
+let i = (advertise3+i1+'.'+i2+'.'+i3+'.'+i4);
+SetTimeout(Stamp, 5);
+let j = (advertise1+j1+'.'+j2+'.'+j3+'.'+j4);
+SetTimeout(Stamp, 5);
+let k = (advertise2+k1+'.'+k2+'.'+k3+'.'+k4);
+SetTimeout(Stamp, 5);
+let l = (advertise3+l1+'.'+l2+'.'+l3+'.'+l4);
+SetTimeout(Stamp, 5);
+let m = (advertise1+m1+'.'+m2+'.'+m3+'.'+m4);
+SetTimeout(Stamp, 5);
+let n = (advertise2+n1+'.'+n2+'.'+n3+'.'+n4);
+SetTimeout(Stamp, 5);
+let o = (advertise3+o1+'.'+o2+'.'+o3+'.'+o4);
+SetTimeout(Stamp, 5);
+let p = (advertise1+p1+'.'+p2+'.'+p3+'.'+p4);
+SetTimeout(Stamp, 5);
+let q = (advertise2+q1+'.'+q2+'.'+q3+'.'+q4);
+SetTimeout(Stamp, 5);
+let r = (advertise3+r1+'.'+r2+'.'+r3+'.'+r4);
+SetTimeout(Stamp, 5);
+let s = (advertise1+s1+'.'+s2+'.'+s3+'.'+s4);
+SetTimeout(Stamp, 5);
+let t = (advertise2+t1+'.'+t2+'.'+t3+'.'+t4);
+SetTimeout(Stamp, 5);
+let u = (advertise3+u1+'.'+u2+'.'+u3+'.'+u4);
+SetTimeout(Stamp, 5);
+let v = (advertise1+v1+'.'+v2+'.'+v3+'.'+v4);
+SetTimeout(Stamp, 5);
+let w = (advertise2+w1+'.'+w2+'.'+w3+'.'+w4);
+SetTimeout(Stamp, 5);
+let x = (advertise3+x1+'.'+x2+'.'+x3+'.'+x4);
+SetTimeout(Stamp, 5);
+let y = (advertise1+y1+'.'+y2+'.'+y3+'.'+y4);
+SetTimeout(Stamp, 5);
+let z = (advertise2+z1+'.'+z2+'.'+z3+'.'+z4);
 aa1 = Math.floor(Math.random() * 8999) + 1000;
 bb1 = Math.floor(Math.random() * 8999) + 1000;
 cc1 = Math.floor(Math.random() * 8999) + 1000;

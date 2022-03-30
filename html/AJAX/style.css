@@ -2,9 +2,27 @@ body {
   background-color: black;
 }
 
+h1 {
+  color: green;
+  font-family: verdana;
+  font-size: 8px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 h2 {
   color: darkgreen;
   text-align: center;
+}
+
+h7 {
+  color: darkgreen;
+  text-align: left;
 }
 
 p {
@@ -13,6 +31,7 @@ p {
   font-size: 20px;
   text-align: center;
 }
+
 
 box {
   font-size: 18px;
@@ -25,16 +44,21 @@ box {
   border: 5px solid green;
 }
 
-box2 {
-  font-size: 18px;
+.flex-container {
+  display: flex;
+  background-color: grey;
+}
+
+.flex-container > box2 {
+  background-color: lightgrey;
+  color: darkgreen;
   margin-top: 100px;
   margin-bottom: 100px;
   margin-right: 100px;
-  margin-left: 550px;
-  width: 3200px;
-  height: 200px;
-  padding: 200px;
-  border: 5px solid green;
+  margin-left: 525px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
 div {
@@ -50,4 +74,21 @@ revad {
   color: lightgreen;
   text-align: center;
   font-family: Open+Sans;
+}
+
+http {
+  color: darkgreen;
+  text-align: center;
+}
+
+
+s4 {
+  color: darkgreen;
+  text-align: left;
+}
+
+
+s5 {
+  color: darkgreen;
+  text-align: right;
 }
