@@ -56,3 +56,20 @@ revad {
   text-align: center;
   font-family: Open+Sans;
 }
+
+http {
+  color: darkgreen;
+  text-align: center;
+}
+
+
+s4 {
+  color: darkgreen;
+  text-align: left;
+}
+
+
+s5 {
+  color: darkgreen;
+  text-align: right;
+}
