@@ -1,9 +1,11 @@
 function Stamp() {
-var advertise
+var advertise1
+var advertise2
+var advertise3
 var PrxX
 var PrxY
 var PrxZ
-var curdate = new Date();
+var curdate = new Date()
 curdate.getHours();
 curdate.getMinutes();
 curdate.getSeconds();
@@ -24,6 +26,7 @@ if (PrxType1 == "3") {
 	alert(advertise3);
 	}
 };
+
 a1 = Math.floor(Math.random() * 100) + 10;
 a2 = Math.floor(Math.random() * 100) + 10;
 a3 = Math.floor(Math.random() * 100) + 10;
