@@ -292,7 +292,7 @@ const proxies = [aaa, bbb, ccc, ddd, eee, fff, ggg, hhh, iii, jjj, kkk, lll, mmm
 
 let txt = "";
 proxies.forEach(Proxies);  
-document.getElementById("listS0CK$4").innerHTML = txt;
+document.getElementById("listS4").innerHTML = txt;
 function Proxies(value, index, array) {
   txt += value + "<br>"; 
 };
