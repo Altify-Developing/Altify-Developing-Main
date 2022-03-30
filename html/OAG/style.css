@@ -10,6 +10,11 @@ body {
   width: 50%;
 }
 
+p30 {
+  color: darkgreen;
+  text-align: center;
+}
+
 p20 {
   color: darkgreen;
   text-align: left;
