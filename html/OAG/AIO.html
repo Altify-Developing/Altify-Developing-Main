@@ -14,9 +14,6 @@
   linenum2 = Math.floor(Math.random() * 19235) + 1;
   linenum3 = Math.floor(Math.random() * 19235) + 1;
   randmail = Math.floor(Math.random() * 19295) + 19240;
-  let a = ("Timestamp of Generation: "+urdate);
-  let b = ("Name: "+linenum+" "+linenum2);
-  let c = ("email: "+linenum3+"@"+randmail);
     function readfileautomatically () {
         var client = new XMLHttpRequest();
         client.open('GET', '/html/OAG/Resources/FN.txt');
@@ -25,11 +22,28 @@
             if( client.responseText != '' )
             {
                 var txt = client.responseText.split("\n");
-                document.getElementById("line1").innerHTML = txt[a, b, c];
+                document.getElementById("line1").innerHTML = txt[linenum];
+                document.getElementById("line1").innerHTML = txt[linenum2];
+                document.getElementById("line1").innerHTML = txt[linenum3];
+                document.getElementById("line1").innerHTML = txt[randmail];
             }
         }
         client.send();
     }
+  
+  let a = ("Timestamp of Generation: "+urdate);
+  let b = ("Name: "+linenum+" "+linenum2);
+  let c = ("email: "+linenum3+"@"+randmail);
+  let Acc1 = (a+b+c);
+  
+  const accounts = [Acc1];
+
+let txt2 = "";
+accounts.forEach(Accs);  
+document.getElementById("listAccs").innerHTML = txt2;
+function Accs(value, index, array) {
+  txt2 += value + "<br>"; 
+};
 </script>
 </body>
 </html>
