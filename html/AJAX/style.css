@@ -2,8 +2,10 @@ body {
   background-color: black;
 }
 
-h1 {
-  color: darkgreen;
+pright {
+  color: green;
+  font-family: verdana;
+  font-size: 20px;
 }
 
 h2 {
@@ -18,12 +20,6 @@ p {
   text-align: center;
 }
 
-pright {
-  color: green;
-  font-family: verdana;
-  font-size: 20px;
-  text-align: left;
-}
 
 box {
   font-size: 18px;
