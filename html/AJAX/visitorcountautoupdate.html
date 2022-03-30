@@ -1,12 +1,12 @@
 <div id="constantupdate">
   <h2>Randomized IP Gen Online</h2>
 <body onload="loadtheload()">
-  
+<p onload="loadTXT()">  
 </div>
   <script>
-    function loadtheload() {
-      body.onload = function loadTXT();
-    }
+function loadtheload() {
+  SetTimeout(loadTXT, 200)
+}
   </script>
 <script>
 function loadTXT() {
@@ -16,5 +16,6 @@ function loadTXT() {
     }
   xhttp.open("GET", "vs.html", true);
   xhttp.send();
+  SetTimeout(loadtheload, 200);
 }
   </script>
