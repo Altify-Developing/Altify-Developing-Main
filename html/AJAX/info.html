@@ -27,53 +27,18 @@
     <script src="counter.js" defer></script>
 <script src="AutoRef.js" defer></script>
   <button type="button" onclick="httploader()">load Proxies</button>
-  <div><p id="http">HTTP</p></div>
-  <s4 id="S4-List">Socks4</s4>
-  <s5 id="S5-List">Socks5</s5>
+  <div><p id="http">HTTP</p>
+  <br>
   <embed type="text/html" src="/html/AJAX/http.html"></embed>
-  
-  <script>
-    function S4_loader() {
-    const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("S4-List").innerHTML = this.responseText;
-    }
-  xhttp.open("GET", "SOCKS4.html", true);
-  xhttp.send();
-  };
-  </script>
-<script>
-    function S5_loader() {
-    const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("S5-List").innerHTML = this.responseText;
-    }
-  xhttp.open("GET", "SOCKS5.html", true);
-  xhttp.send();
-  };
-  </script>
-  <script>
-    function httploader() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("http").innerHTML = this.responseText;
-    }
-  xhttp.open("GET", "HTTP.html", true);
-  xhttp.send();
-}
-  </script>
-  <div id="constantupdate">
-  <button type="button" onclick="loadTXT()">Load Randomized IP</button>
-</div>
-<script>
-function loadTXT() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("constantupdate").innerHTML = this.responseText;
-    }
-  xhttp.open("GET", "HTTP.html", true);
-  xhttp.send();
-}
+  </div>
+  <div><p id="S4-List">Socks4</p>
+  <br>
+  <embed type="text/html" src="/html/AJAX/SOCKS4.html"></embed>
+  </div>
+  <div><p id="S5-List">Socks5</p>
+  <br>
+  <embed type="text/html" src="/html/AJAX/SOCKS5.html"></embed>
+  </div>
 </script>
 </body>
 </html>
