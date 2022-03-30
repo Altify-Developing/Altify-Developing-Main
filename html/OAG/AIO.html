@@ -30,10 +30,10 @@ function Proxies(value, index, array) {
 
 <body onload="readfileautomatically();">
 
-<div id="line1"></div>
+  <p>Name: </p><p id="line1"></p><p id="line2"></p>
 
 <script>
-  linenum = Math.floor(Math.random() * 1000) + 1;
+  linenum = Math.floor(Math.random() * 19238) + 1;
     function readfileautomatically () {
         var client = new XMLHttpRequest();
         client.open('GET', '/html/OAG/Resources/FN.txt');
@@ -43,6 +43,7 @@ function Proxies(value, index, array) {
             {
                 var txt = client.responseText.split("\n");
                 document.getElementById("line1").innerHTML = txt[linenum];
+                document.getElementById("line2").innerHTML = txt[linenum];
             }
         }
         client.send();
