@@ -26,7 +26,8 @@
   <p id="list" class="flex-container"></p>
     <script src="counter.js" defer></script>
 <script src="AutoRef.js" defer></script>
-  <http id="HTTP-List">HTTP</http>
+  <button type="button" onclick="http_loader()">load Proxies</button>
+  <http id="http">HTTP</http>
   <s4 id="S4-List">Socks4</s4>
   <s5 id="S5-List">Socks5</s5>
   
@@ -50,15 +51,15 @@
   xhttp.send();
   };
   </script>
-<script>
+  <script>
     function http_loader() {
-    const xhttp = new XMLHttpRequest();
+  const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
-    document.getElementById("HTTP-List").innerHTML = this.responseText;
+    document.getElementById("http").innerHTML = this.responseText;
     }
   xhttp.open("GET", "HTTP.html", true);
   xhttp.send();
-  };
+}
   </script>
 </body>
 </html>
