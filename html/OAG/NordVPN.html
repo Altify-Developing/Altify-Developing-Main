@@ -1,2 +1,41 @@
 <script>
+  var urdate = new Date()
+  urdate.getHours();
+  urdate.getMinutes();
+  urdate.getSeconds();
+  
+  
+  let Prxz = ("NordVPN ");
+  let advertisez = (Prxz+"Account ganerated by: Altify @ Timestamp: "+urdate+" ");
+  z1 = Math.floor(Math.random() * 100) + 10;
+  z2 = Math.floor(Math.random() * 100) + 10;
+  z3 = Math.floor(Math.random() * 100) + 10;
+  z4 = Math.floor(Math.random() * 1000) + 10;
+  let z = (advertisez+z1+'.'+z2+'.'+z3+'.'+z4);
+  zz1 = Math.floor(Math.random() * 8999) + 1000;
+  let zzz = (z+':'+zz1);
+
+const proxies = [aaa, bbb, ccc, ddd, eee, fff, ggg, hhh, iii, jjj, kkk, lll, mmm, nnn, ooo, ppp, qqq, rrr, sss, ttt, uuu, vvv, www, xxx, yyy, zzz];
+
+let txt = "";
+proxies.forEach(Proxies);  
+document.getElementById("listHTTP").innerHTML = txt;
+function Proxies(value, index, array) {
+  txt += value + "<br>"; 
+};
+</script>
+
+<script>
+  document.getElementById('file').onchange = function(){
+  var file = this.files[0];
+  var reader = new FileReader();
+  reader.onload = function(progressEvent){    
+    var fileContentArray = this.result.split(/\r\n|\n/);
+    for(var line = 0; line < lines.length-1; line++){
+      console.log(line + " --> "+ lines[line]);
+      alert(line + " --> "+ lines[line]);
+    }
+  };
+  reader.readAsText(file);
+};
 </script>
