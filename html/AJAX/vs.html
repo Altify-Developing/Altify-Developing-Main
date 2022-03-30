@@ -6,6 +6,14 @@
 </box>
 <script>
   function reloooad() {
-  reload();
+  let user = getCookie("username");
+  if (user != "") {
+    location.reload();
+  } else {
+    user = prompt("Please enter your name:", "");
+    if (user != "" && user != null) {
+      setCookie("username", user, 365);
+    }
   }
+}
 </script>
