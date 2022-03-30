@@ -61,5 +61,18 @@
   xhttp.send();
 }
   </script>
+  <div id="constantupdate">
+  <button type="button" onclick="loadTXT()">Load Randomized IP</button>
+</div>
+<script>
+function loadTXT() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("constantupdate").innerHTML = this.responseText;
+    }
+  xhttp.open("GET", "HTTP.html", true);
+  xhttp.send();
+}
+</script>
 </body>
 </html>
