@@ -1,37 +1,15 @@
 <html>
 <link rel="stylesheet" href="style.css">
   <p id="file">
+
+<body onload="readfileautomatically();">
+
+  <p id="line1"></p>
 <script>
   var urdate = new Date()
   urdate.getHours();
   urdate.getMinutes();
   urdate.getSeconds();
-  
-  
-  let Prxz = ("NordVPN ");
-  let advertisez = (Prxz+"Account ganerated by: Altify @ Timestamp: "+urdate+" ");
-  z1 = Math.floor(Math.random() * 100) + 10;
-  z2 = Math.floor(Math.random() * 100) + 10;
-  z3 = Math.floor(Math.random() * 100) + 10;
-  z4 = Math.floor(Math.random() * 1000) + 10;
-  let z = (advertisez+z1+'.'+z2+'.'+z3+'.'+z4);
-  zz1 = Math.floor(Math.random() * 8999) + 1000;
-  let zzz = (z+':'+zz1);
-
-const proxies = [aaa, bbb, ccc, ddd, eee, fff, ggg, hhh, iii, jjj, kkk, lll, mmm, nnn, ooo, ppp, qqq, rrr, sss, ttt, uuu, vvv, www, xxx, yyy, zzz];
-
-let txt = "";
-proxies.forEach(Proxies);  
-document.getElementById("listHTTP").innerHTML = txt;
-function Proxies(value, index, array) {
-  txt += value + "<br>"; 
-};
-</script>
-
-<body onload="readfileautomatically();">
-
-  <p>Name: </p><p id="line1"></p><p id="line2"></p><br><p>Email: </p><p id="line3"></p><p id="line4">@</p>
-<script>
   linenum = Math.floor(Math.random() * 19235) + 1;
   linenum2 = Math.floor(Math.random() * 19235) + 1;
   linenum3 = Math.floor(Math.random() * 19235) + 1;
@@ -44,10 +22,7 @@ function Proxies(value, index, array) {
             if( client.responseText != '' )
             {
                 var txt = client.responseText.split("\n");
-                document.getElementById("line1").innerHTML = txt[linenum];
-                document.getElementById("line2").innerHTML = txt[linenum2];
-                document.getElementById("line3").innerHTML = txt[linenum3];
-                document.getElementById("line4").innerHTML = txt[randmail];
+                document.getElementById("line1").innerHTML = txt["Timestamp of Generation: "+urdate+"<br>"+"Name: "+linenum+" "+linenum2+"<br>"+"email: "+linenum3+"@"+randmail];
             }
         }
         client.send();
