@@ -1,6 +1,5 @@
 <html>
 <link rel="stylesheet" href="style.css">
-  <input type="file" name="file" id="file" />
   <p id="file">
 <script>
   var urdate = new Date()
@@ -29,26 +28,12 @@ function Proxies(value, index, array) {
 };
 </script>
 
-<script>
-  document.getElementById('file').onchange = function(){
-  var file = this.files[0];
-  var reader = new FileReader();
-  reader.onload = function(progressEvent){    
-    var fileContentArray = this.result.split(/\r\n|\n/);
-    for(var line = 0; line < lines.length-1; line++){
-      console.log(line + " --> "+ lines[line]);
-      alert(line + " --> "+ lines[line]);
-    }
-  };
-  reader.readAsText(file);
-};
-</script>
 <body onload="readfileautomatically();">
 
 <div id="line1"></div>
-<div id="line3"></div>
 
 <script>
+  linenum = Math.floor(Math.random() * 1000) + 1;
     function readfileautomatically () {
         var client = new XMLHttpRequest();
         client.open('GET', '/html/OAG/Resources/FN.txt');
@@ -57,8 +42,7 @@ function Proxies(value, index, array) {
             if( client.responseText != '' )
             {
                 var txt = client.responseText.split("\n");
-                document.getElementById("line1").innerHTML = txt[0];
-                document.getElementById("line3").innerHTML = txt[2];
+                document.getElementById("line1").innerHTML = txt[linenum];
             }
         }
         client.send();
