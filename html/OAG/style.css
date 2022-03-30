@@ -1,0 +1,70 @@
+body {
+  background-color: black;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+p20 {
+  color: darkgreen;
+  text-align: left;
+}
+
+p10 {
+  color: darkgreen;
+  text-align: right;
+}
+
+p {
+  color: green;
+  font-family: verdana;
+  font-size: 20px;
+}
+
+
+box {
+  font-size: 18px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 525px;
+  width: 320px;
+  padding: 10px;
+  border: 5px solid green;
+}
+
+div {
+  font-size: 18px;
+  color: green;
+  font-family: Open+Sans;
+}
+
+revad {
+  margin: auto;
+  font-size: 18px;
+  color: lightgreen;
+  text-align: left;
+  font-family: Open+Sans;
+}
+
+http {
+  color: darkgreen;
+  text-align: center;
+}
+
+
+s4 {
+  color: darkgreen;
+  text-align: left;
+}
+
+
+s5 {
+  color: darkgreen;
+  text-align: right;
+}
