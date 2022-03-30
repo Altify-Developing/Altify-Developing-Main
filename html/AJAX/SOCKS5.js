@@ -3,7 +3,7 @@ var urdate = new Date()
   urdate.getMinutes();
   urdate.getSeconds();
   var PrxA1
-  let PrxA = ("S0CK$4 ");
+  let PrxA = ("S0CK$5 ");
   let advertiseA = (PrxA+"Proccy ganerated by: Altify @ Timestamp: "+urdate+" ");
   a1 = Math.floor(Math.random() * 100) + 10;
   a2 = Math.floor(Math.random() * 100) + 10;
@@ -14,7 +14,7 @@ var urdate = new Date()
   let aaa = (a+':'+aa1);
   
   var PrxB2
-  let PrxB = ("S0CK$4 ");
+  let PrxB = ("S0CK$5 ");
   let advertiseB = (PrxB+"Proccy ganerated by: Altify @ Timestamp: "+urdate+" ");
   b1 = Math.floor(Math.random() * 100) + 10;
   b2 = Math.floor(Math.random() * 100) + 10;
@@ -25,7 +25,7 @@ var urdate = new Date()
   let bbb = (b+':'+bb1);
   
   var PrxC1
-  let PrxC = ("S0CK$4 ");
+  let PrxC = ("S0CK$5 ");
   let advertiseC = (PrxC+"Proccy ganerated by: Altify @ Timestamp: "+urdate+" ");
   c1 = Math.floor(Math.random() * 100) + 10;
   c2 = Math.floor(Math.random() * 100) + 10;
@@ -36,7 +36,7 @@ var urdate = new Date()
   let ccc = (c+':'+cc1);
   
   var Prxd1
-  let Prxd = ("S0CK$4 ");
+  let Prxd = ("S0CK$5 ");
   let advertised = (Prxd+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   d1 = Math.floor(Math.random() * 100) + 10;
   d2 = Math.floor(Math.random() * 100) + 10;
@@ -47,7 +47,7 @@ var urdate = new Date()
   let ddd = (d+':'+dd1);
 
   var Prxe1
-  let Prxe = ("S0CK$4 ");
+  let Prxe = ("S0CK$5 ");
   let advertisee = (Prxe+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   e1 = Math.floor(Math.random() * 100) + 10;
   e2 = Math.floor(Math.random() * 100) + 10;
@@ -58,7 +58,7 @@ var urdate = new Date()
   let eee = (e+':'+ee1);
 
   var Prxf1
-  let Prxf = ("S0CK$4 ");
+  let Prxf = ("S0CK$5 ");
   let advertisef = (Prxf+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   f1 = Math.floor(Math.random() * 100) + 10;
   f2 = Math.floor(Math.random() * 100) + 10;
@@ -69,7 +69,7 @@ var urdate = new Date()
   let fff = (f+':'+ff1);
 
   var Prxg1
-  let Prxg = ("S0CK$4 ");
+  let Prxg = ("S0CK$5 ");
   let advertiseg = (Prxg+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   g1 = Math.floor(Math.random() * 100) + 10;
   g2 = Math.floor(Math.random() * 100) + 10;
@@ -80,7 +80,7 @@ var urdate = new Date()
   let ggg = (g+':'+gg1);
 
   var Prxh1
-  let Prxh = ("S0CK$4 ");
+  let Prxh = ("S0CK$5 ");
   let advertiseh = (Prxh+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   h1 = Math.floor(Math.random() * 100) + 10;
   h2 = Math.floor(Math.random() * 100) + 10;
@@ -91,7 +91,7 @@ var urdate = new Date()
   let hhh = (h+':'+hh1);
 
   var Prxi1
-  let Prxi = ("S0CK$4 ");
+  let Prxi = ("S0CK$5 ");
   let advertisei = (Prxi+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   i1 = Math.floor(Math.random() * 100) + 10;
   i2 = Math.floor(Math.random() * 100) + 10;
@@ -102,7 +102,7 @@ var urdate = new Date()
   let iii = (i+':'+ii1);
 
   var Prxj1
-  let Prxj = ("S0CK$4 ");
+  let Prxj = ("S0CK$5 ");
   let advertisej = (Prxj+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   j1 = Math.floor(Math.random() * 100) + 10;
   j2 = Math.floor(Math.random() * 100) + 10;
@@ -113,7 +113,7 @@ var urdate = new Date()
   let jjj = (j+':'+jj1);
 
   var Prxk1
-  let Prxk = ("S0CK$4 ");
+  let Prxk = ("S0CK$5 ");
   let advertisek = (Prxk+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   k1 = Math.floor(Math.random() * 100) + 10;
   k2 = Math.floor(Math.random() * 100) + 10;
@@ -124,7 +124,7 @@ var urdate = new Date()
   let kkk = (k+':'+kk1);
 
   var Prxl1
-  let Prxl = ("S0CK$4 ");
+  let Prxl = ("S0CK$5 ");
   let advertisel = (Prxl+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   l1 = Math.floor(Math.random() * 100) + 10;
   l2 = Math.floor(Math.random() * 100) + 10;
@@ -135,7 +135,7 @@ var urdate = new Date()
   let lll = (l+':'+ll1);
 
   var Prxm1
-  let Prxm = ("S0CK$4 ");
+  let Prxm = ("S0CK$5 ");
   let advertisem = (Prxm+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   m1 = Math.floor(Math.random() * 100) + 10;
   m2 = Math.floor(Math.random() * 100) + 10;
@@ -146,7 +146,7 @@ var urdate = new Date()
   let mmm = (m+':'+mm1);
 
   var Prxn1
-  let Prxn = ("S0CK$4 ");
+  let Prxn = ("S0CK$5 ");
   let advertisen = (Prxn+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   n1 = Math.floor(Math.random() * 100) + 10;
   n2 = Math.floor(Math.random() * 100) + 10;
@@ -157,7 +157,7 @@ var urdate = new Date()
   let nnn = (n+':'+nn1);
 
   var Prxo1
-  let Prxo = ("S0CK$4 ");
+  let Prxo = ("S0CK$5 ");
   let advertiseo = (Prxo+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   o1 = Math.floor(Math.random() * 100) + 10;
   o2 = Math.floor(Math.random() * 100) + 10;
@@ -168,7 +168,7 @@ var urdate = new Date()
   let ooo = (o+':'+oo1);
 
   var Prxp1
-  let Prxp = ("S0CK$4 ");
+  let Prxp = ("S0CK$5 ");
   let advertisep = (Prxp+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   p1 = Math.floor(Math.random() * 100) + 10;
   p2 = Math.floor(Math.random() * 100) + 10;
@@ -179,7 +179,7 @@ var urdate = new Date()
   let ppp = (p+':'+pp1);
 
   var Prxq1
-  let Prxq = ("S0CK$4 ");
+  let Prxq = ("S0CK$5 ");
   let advertiseq = (Prxq+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   q1 = Math.floor(Math.random() * 100) + 10;
   q2 = Math.floor(Math.random() * 100) + 10;
@@ -190,7 +190,7 @@ var urdate = new Date()
   let qqq = (q+':'+qq1);
 
   var Prxr1
-  let Prxr = ("S0CK$4 ");
+  let Prxr = ("S0CK$5 ");
   let advertiser = (Prxr+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   r1 = Math.floor(Math.random() * 100) + 10;
   r2 = Math.floor(Math.random() * 100) + 10;
@@ -201,7 +201,7 @@ var urdate = new Date()
   let rrr = (r+':'+rr1);
 
   var Prxs1
-  let Prxs = ("S0CK$4 ");
+  let Prxs = ("S0CK$5 ");
   let advertises = (Prxs+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   s1 = Math.floor(Math.random() * 100) + 10;
   s2 = Math.floor(Math.random() * 100) + 10;
@@ -212,7 +212,7 @@ var urdate = new Date()
   let sss = (s+':'+ss1);
 
   var Prxt1
-  let Prxt = ("S0CK$4 ");
+  let Prxt = ("S0CK$5 ");
   let advertiset = (Prxt+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   t1 = Math.floor(Math.random() * 100) + 10;
   t2 = Math.floor(Math.random() * 100) + 10;
@@ -223,7 +223,7 @@ var urdate = new Date()
   let ttt = (t+':'+tt1);
 
   var Prxu1
-  let Prxu = ("S0CK$4 ");
+  let Prxu = ("S0CK$5 ");
   let advertiseu = (Prxu+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   u1 = Math.floor(Math.random() * 100) + 10;
   u2 = Math.floor(Math.random() * 100) + 10;
@@ -234,7 +234,7 @@ var urdate = new Date()
   let uuu = (u+':'+uu1);
 
   var Prxv1
-  let Prxv = ("S0CK$4 ");
+  let Prxv = ("S0CK$5 ");
   let advertisev = (Prxv+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   v1 = Math.floor(Math.random() * 100) + 10;
   v2 = Math.floor(Math.random() * 100) + 10;
@@ -245,7 +245,7 @@ var urdate = new Date()
   let vvv = (v+':'+vv1);
 
   var Prxw1
-  let Prxw = ("S0CK$4 ");
+  let Prxw = ("S0CK$5 ");
   let advertisew = (Prxw+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   w1 = Math.floor(Math.random() * 100) + 10;
   w2 = Math.floor(Math.random() * 100) + 10;
@@ -256,7 +256,7 @@ var urdate = new Date()
   let www = (w+':'+ww1);
 
   var Prxx1
-  let Prxx = ("S0CK$4 ");
+  let Prxx = ("S0CK$5 ");
   let advertisex = (Prxx+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   x1 = Math.floor(Math.random() * 100) + 10;
   x2 = Math.floor(Math.random() * 100) + 10;
@@ -267,7 +267,7 @@ var urdate = new Date()
   let xxx = (x+':'+xx1);
 
   var Prxy1
-  let Prxy = ("S0CK$4 ");
+  let Prxy = ("S0CK$5 ");
   let advertisey = (Prxy+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   y1 = Math.floor(Math.random() * 100) + 10;
   y2 = Math.floor(Math.random() * 100) + 10;
@@ -278,7 +278,7 @@ var urdate = new Date()
   let yyy = (y+':'+yy1);
 
   var Prxz1
-  let Prxz = ("S0CK$4 ");
+  let Prxz = ("S0CK$5 ");
   let advertisez = (Prxz+"Proxxy ganerated by: Altify @ Timestamp: "+urdate+" ");
   z1 = Math.floor(Math.random() * 100) + 10;
   z2 = Math.floor(Math.random() * 100) + 10;
@@ -292,7 +292,7 @@ const proxies = [aaa, bbb, ccc, ddd, eee, fff, ggg, hhh, iii, jjj, kkk, lll, mmm
 
 let txt = "";
 proxies.forEach(Proxies);  
-document.getElementById("listS0CK$4").innerHTML = txt;
+document.getElementById("listS5").innerHTML = txt;
 function Proxies(value, index, array) {
   txt += value + "<br>"; 
 };
