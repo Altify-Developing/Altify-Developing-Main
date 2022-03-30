@@ -2,6 +2,10 @@ body {
   background-color: black;
 }
 
+h1 {
+  color: darkgreen;
+}
+
 h2 {
   color: darkgreen;
   text-align: center;
