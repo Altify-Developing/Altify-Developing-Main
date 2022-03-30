@@ -13,6 +13,11 @@ h2 {
   text-align: center;
 }
 
+h7 {
+  color: darkgreen;
+  text-align: left;
+}
+
 p {
   color: green;
   font-family: verdana;
