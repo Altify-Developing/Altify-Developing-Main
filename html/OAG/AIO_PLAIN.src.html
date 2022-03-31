@@ -4,13 +4,13 @@
     <script>
     SetTimeout(replwindow, 1000);
 function replwindow() {
-  var visitCount = localStorage.getItem("page_view");
-  visitCount = Number(visitCount) + 1;
-  localStorage.setItem("page_view", visitCount);
+  var visitrCount = localStorage.getItem("page_view");
+  visitrCount = Number(visitrCount) + 1;
+  localStorage.setItem("page_view", visitrCount);
   if ( visitorCount == 1 ) {
   window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html/?circulation=true");
 } else {
-  visitCount = 0;
+  visitrCount = 0;
   localStorage.setItem("page_view", 0);
     </script>
 
