@@ -2,6 +2,17 @@ body {
   background-color: black;
 }
 
+h3 {
+  color: darkgreen;
+  text-align: right;
+}
+
+h3.right {
+  display: block;
+  margin-left: 1000;
+  margin-right: 0;
+  width: 50%;
+}
 
 .center {
   display: block;
