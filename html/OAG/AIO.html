@@ -11,7 +11,12 @@
   <br><p>combo</p><br>
   <p id="comboinfo"></p>
   <p id="comboinfo2"></p>
-  <p id="comboinfo2"></p>
+  <p id="comboinfo3"></p>
+  <p id="comboinfo4"></p>
+  <p id="comboinfo5"></p>
+  <p id="comboinfo6"></p>
+  <p id="comboinfo7"></p>
+  <p id="comboinfo8"></p>
   
   <script>
   var urdate = new Date()
@@ -24,12 +29,56 @@
   randmail = Math.floor(Math.random() * 55) + 19240;
   randuser = Math.floor(Math.random() * 1000) + 1;
   randpass = Math.floor(Math.random() * 1000) + 1;
+    
   linenum1 = Math.floor(Math.random() * 19235) + 1;
   linenum21 = Math.floor(Math.random() * 19235) + 1;
   linenum31 = Math.floor(Math.random() * 19235) + 1;
   randmail1 = Math.floor(Math.random() * 55) + 19240;
   randuser1 = Math.floor(Math.random() * 1000) + 1;
   randpass1 = Math.floor(Math.random() * 1000) + 1;
+    
+  linenum2 = Math.floor(Math.random() * 19235) + 1;
+  linenum22 = Math.floor(Math.random() * 19235) + 1;
+  linenum32 = Math.floor(Math.random() * 19235) + 1;
+  randmail2 = Math.floor(Math.random() * 55) + 19240;
+  randuser2 = Math.floor(Math.random() * 1000) + 1;
+  randpass2 = Math.floor(Math.random() * 1000) + 1;
+    
+  linenum3 = Math.floor(Math.random() * 19235) + 1;
+  linenum23 = Math.floor(Math.random() * 19235) + 1;
+  linenum33 = Math.floor(Math.random() * 19235) + 1;
+  randmail3 = Math.floor(Math.random() * 55) + 19240;
+  randuser3 = Math.floor(Math.random() * 1000) + 1;
+  randpass3 = Math.floor(Math.random() * 1000) + 1;
+    
+  linenum4 = Math.floor(Math.random() * 19235) + 1;
+  linenum24 = Math.floor(Math.random() * 19235) + 1;
+  linenum34 = Math.floor(Math.random() * 19235) + 1;
+  randmail4 = Math.floor(Math.random() * 55) + 19240;
+  randuser4 = Math.floor(Math.random() * 1000) + 1;
+  randpass4 = Math.floor(Math.random() * 1000) + 1;
+    
+  linenum5 = Math.floor(Math.random() * 19235) + 1;
+  linenum25 = Math.floor(Math.random() * 19235) + 1;
+  linenum35 = Math.floor(Math.random() * 19235) + 1;
+  randmail5 = Math.floor(Math.random() * 55) + 19240;
+  randuser5 = Math.floor(Math.random() * 1000) + 1;
+  randpass5 = Math.floor(Math.random() * 1000) + 1;
+    
+  linenum6 = Math.floor(Math.random() * 19235) + 1;
+  linenum26 = Math.floor(Math.random() * 19235) + 1;
+  linenum36 = Math.floor(Math.random() * 19235) + 1;
+  randmail6 = Math.floor(Math.random() * 55) + 19240;
+  randuser6 = Math.floor(Math.random() * 1000) + 1;
+  randpass6 = Math.floor(Math.random() * 1000) + 1;
+    
+  linenum7 = Math.floor(Math.random() * 19235) + 1;
+  linenum27 = Math.floor(Math.random() * 19235) + 1;
+  linenum37 = Math.floor(Math.random() * 19235) + 1;
+  randmail7 = Math.floor(Math.random() * 55) + 19240;
+  randuser7 = Math.floor(Math.random() * 1000) + 1;
+  randpass7 = Math.floor(Math.random() * 1000) + 1;
+    
     function readfileautomatically () {
         var client = new XMLHttpRequest();
         client.open('GET', '/html/OAG/Resources/FN.txt');
@@ -48,6 +97,18 @@
                 document.getElementById("comboinfo").innerHTML = (combo);
                 combo2 = (txt[linenum1]+txt[linenum21]+randuser1+':'+randpass1+txt[linenum31]+'@'+txt[randmail1]+'.com');
                 document.getElementById("comboinfo2").innerHTML = (combo2);
+                combo3 = (txt[linenum2]+txt[linenum22]+randuser2+':'+randpass2+txt[linenum32]+'@'+txt[randmail2]+'.com');
+                document.getElementById("comboinfo3").innerHTML = (combo3);
+                combo4 = (txt[linenum3]+txt[linenum23]+randuser3+':'+randpass3+txt[linenum33]+'@'+txt[randmail3]+'.com');
+                document.getElementById("comboinfo4").innerHTML = (combo4);
+                combo5 = (txt[linenum4]+txt[linenum24]+randuser4+':'+randpass4+txt[linenum34]+'@'+txt[randmail4]+'.com');
+                document.getElementById("comboinfo5").innerHTML = (combo5);
+                combo6 = (txt[linenum5]+txt[linenum25]+randuser5+':'+randpass5+txt[linenum35]+'@'+txt[randmail5]+'.com');
+                document.getElementById("comboinfo6").innerHTML = (combo6);
+                combo7 = (txt[linenum6]+txt[linenum26]+randuser6+':'+randpass6+txt[linenum36]+'@'+txt[randmail6]+'.com');
+                document.getElementById("comboinfo7").innerHTML = (combo7);
+                combo8 = (txt[linenum7]+txt[linenum27]+randuser7+':'+randpass7+txt[linenum37]+'@'+txt[randmail7]+'.com');
+                document.getElementById("comboinfo8").innerHTML = (combo8);
             }
         }
         client.send();
