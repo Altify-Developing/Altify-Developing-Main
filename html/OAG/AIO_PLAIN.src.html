@@ -6,13 +6,12 @@
       $(document).ready(function() {
         if (window.location.href.indexOf("?circulation=true") > -1) {
           setInterval(Refrsh, 1000);
-          refcount = document.cookie();
-          alert(refcount);
+          let refcount = document.cookie("views=1");
           function Refrsh() {
-            refcount = Number(refcount + 1)
-      window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html/?circulation=true&ref%20count="refcount);
+            refcount = Number(refcount + 1);
+            document
+            window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html/?circulation=true&ref%20count="refcount);
           }
-        }
       });
     </script>
     <button onclick="visorcount()">AutoRefresh</button>
