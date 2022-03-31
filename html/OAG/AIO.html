@@ -35,12 +35,12 @@
                 document.getElementById("line3").innerHTML = txt[linenum3];
                 document.getElementById("line4").innerHTML = txt[randmail];
                 alert(txt[linenum]+txt[linenum2]+randuser+':'+randpass+txt[linenum3]+'@'+txt[randmail]+'.com');
+                combo = (txt[linenum]+txt[linenum2]+randuser+':'+randpass+txt[linenum3]+'@'+txt[randmail]+'.com');
+                document.getElementById("comboinfo").innerHTML = (combo);
             }
         }
         client.send();
     }
-var combo = (txt[linenum]+txt[linenum2]+randuser+':'+randpass+txt[linenum3]+'@'+txt[randmail]+'.com');
-document.getElementById("comboinfo").innerHTML = (combo);
   
 </script>
 </body>
