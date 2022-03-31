@@ -8,7 +8,8 @@
       alert("circulation=true");
       setInterval(Refrsh, 1000);
       function Refrsh() {
-        location.reload();
+        refcount = Math.floor(Math.random() * 100000) + 1;
+        window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html/?circulation=true&ref%20count="refcount);
       }
     }
   });
