@@ -9,6 +9,12 @@
   <p id="line2"></p>
   <p id="line3"></p>
   <p id="line4"></p>
+  
+  
+  <br>
+  <br>
+  <br>
+  <p id="fourinfo"></p>
 <script>
   var urdate = new Date()
   urdate.getHours();
@@ -34,6 +40,12 @@
         }
         client.send();
     }
-  </script>
+  document.getElementById('fourinfo').innerHTML = ('@'+randmail+'.'+'com');
+  let a = ("Timestamp of Generation: "+urdate+" ");
+  let b = ("Name: "+linenum+" "+linenum2+" ");
+  let c = ("email: "+fourinfo+" ");
+  let Acc1 = (a+b+c);
+  
+</script>
 </body>
 </html>
