@@ -8,16 +8,14 @@
           setInterval(Refrsh, 1000);
           function Refrsh() {
             let refcount = document.cookie;
-            refcount = Number(refcount + 1);
-            document
-            window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html/?circulation=true&ref%20count="refcount);
+            window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html?circulation=true&ref%20count="refcount);
           }
       });
     </script>
     <button onclick="visorcount()">AutoRefresh</button>
     <script>
     function visorcount() {
-      window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html/?circulation=true");
+      window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html?circulation=true");
     }
     </script>
 
