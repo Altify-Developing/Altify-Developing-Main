@@ -10,6 +10,8 @@
   <p id="line4"></p>
   <br><p>combo</p><br>
   <p id="comboinfo"></p>
+  <p id="comboinfo2"></p>
+  <p id="comboinfo2"></p>
   
   <script>
   var urdate = new Date()
@@ -22,6 +24,12 @@
   randmail = Math.floor(Math.random() * 55) + 19240;
   randuser = Math.floor(Math.random() * 1000) + 1;
   randpass = Math.floor(Math.random() * 1000) + 1;
+  linenum1 = Math.floor(Math.random() * 19235) + 1;
+  linenum21 = Math.floor(Math.random() * 19235) + 1;
+  linenum31 = Math.floor(Math.random() * 19235) + 1;
+  randmail1 = Math.floor(Math.random() * 55) + 19240;
+  randuser1 = Math.floor(Math.random() * 1000) + 1;
+  randpass1 = Math.floor(Math.random() * 1000) + 1;
     function readfileautomatically () {
         var client = new XMLHttpRequest();
         client.open('GET', '/html/OAG/Resources/FN.txt');
@@ -35,8 +43,11 @@
                 document.getElementById("line3").innerHTML = txt[linenum3];
                 document.getElementById("line4").innerHTML = txt[randmail];
                 alert(txt[linenum]+txt[linenum2]+randuser+':'+randpass+txt[linenum3]+'@'+txt[randmail]+'.com');
+                alert(txt[linenum1]+txt[linenum21]+randuser1+':'+randpass1+txt[linenum31]+'@'+txt[randmail1]+'.com');
                 combo = (txt[linenum]+txt[linenum2]+randuser+':'+randpass+txt[linenum3]+'@'+txt[randmail]+'.com');
                 document.getElementById("comboinfo").innerHTML = (combo);
+                combo2 = (txt[linenum1]+txt[linenum21]+randuser1+':'+randpass1+txt[linenum31]+'@'+txt[randmail1]+'.com');
+                document.getElementById("comboinfo2").innerHTML = (combo2);
             }
         }
         client.send();
