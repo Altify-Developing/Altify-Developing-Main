@@ -17,6 +17,8 @@
   linenum2 = Math.floor(Math.random() * 19235) + 1;
   linenum3 = Math.floor(Math.random() * 19235) + 1;
   randmail = Math.floor(Math.random() * 55) + 19240;
+  randuser = Math.floor(Math.random() * 1000) + 1;
+  randpass = Math.floor(Math.random() * 1000) + 1;
     function readfileautomatically () {
         var client = new XMLHttpRequest();
         client.open('GET', '/html/OAG/Resources/FN.txt');
@@ -29,7 +31,7 @@
                 document.getElementById("line2").innerHTML = txt[linenum2];
                 document.getElementById("line3").innerHTML = txt[linenum3];
                 document.getElementById("line4").innerHTML = txt[randmail];
-                alert(txt[linenum]+txt[linenum2]+txt[linenum3]+txt[randmail]);
+                alert(txt[linenum]+txt[linenum2]+randuser+':'+randpass+txt[linenum3]+'@'+txt[randmail]+'.com');
             }
         }
         client.send();
