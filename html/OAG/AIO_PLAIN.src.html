@@ -2,12 +2,19 @@
 <link rel="stylesheet" href="style.css">
   <p id="file">
     <button onclick="visorcount">visCount</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        if (window.location.href.indexOf("circulation") > -1) {
+          alert("your url contains the word circulation");
+        }
+      });
+    </script>
+    
     <script>
      function visorcount() {
-  visCount = 0;
-  visCount = Number(visitrCount) + 1;
-  alert(visCount);
-  if ( visCount == 1 ) {
+
     window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html/?circulation=true");
   };
 }
