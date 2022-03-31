@@ -4,12 +4,11 @@ body {
 
 h3 {
   color: darkgreen;
-  text-align: right;
 }
 
 h3.right {
   display: block;
-  margin-left: 600;
+  margin-left: 1100;
   margin-right: 100;
   width: 50%;
 }
