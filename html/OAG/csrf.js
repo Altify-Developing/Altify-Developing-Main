@@ -7,6 +7,6 @@ return result;
 }
 csrf = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
 document.getElementById("csrfid").innerHTML = (csrf);
-document.cookie = ("X-CSRF-Token="+crsf);
+document.cookie = 'X-CSRF-Token='+crsf;
 let x = document.cookie;
-alert(x)
+alert(x);
