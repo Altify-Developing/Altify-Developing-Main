@@ -31,7 +31,7 @@
   linenum = Math.floor(Math.random() * 19235) + 1;
   linenum2 = Math.floor(Math.random() * 19235) + 1;
   linenum3 = Math.floor(Math.random() * 19235) + 1;
-  randmail = Math.floor(Math.random() * 19295) + 19240;
+  randmail = Math.floor(Math.random() * 55) + 19240;
     function readfileautomatically () {
         var client = new XMLHttpRequest();
         client.open('GET', '/html/OAG/Resources/FN.txt');
@@ -48,9 +48,9 @@
         }
         client.send();
     }
-  document.getElementById("emailinfo").onload = function(){
+document.getElementById("emailinfo").onload = function(){
   docname = document.getElementById("line2").innerHTML
-  document.getElementById('fourinfo').value = (docname+randmail'@'+'gmail'+'.'+'com');
+  document.getElementById('fourinfo').innerHTML = (docname+randmail'@'+'gmail'+'.'+'com');
   let email = (docname+randmail);
 }
   
