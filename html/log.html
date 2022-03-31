@@ -14,13 +14,18 @@
 <script src="https://releases.transloadit.com/uppy/v2.9.1/uppy.min.js"></script>
 <link href="https://releases.transloadit.com/uppy/v2.9.1/uppy.min.css" rel="stylesheet">
 <script>
-  uppy.use(Form, {
-  target: null,
-  resultName: 'uppyResult',
-  getMetaFromForm: true,
-  addResultToForm: true,
-  submitOnSuccess: false,
-  triggerUploadOnSubmit: false,
-})
+import Uppy from '@uppy/core'
+import React from 'react'
+import Tus from '@uppy/tus'
+import { DashboardModal, useUppy } from '@uppy/react'
+
+function MyComponent () {
+  const uppy = useUppy(() => {
+    return new Uppy()
+      .use(Tus, { endpoint: 'https://tusd.tusdemo.net/files' })
+  })
+
+  return <DashboardModal uppy={uppy} />
+}
 </script>
 
