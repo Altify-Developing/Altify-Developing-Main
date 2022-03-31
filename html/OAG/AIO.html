@@ -4,7 +4,7 @@
 
 <body onload="readfileautomatically();">
 
-  <p id="line1"></p>
+  <p id="listAccs"></p>
 <script>
   var urdate = new Date()
   urdate.getHours();
@@ -23,17 +23,27 @@
             {
                 var txt = client.responseText.split("\n");
                 document.getElementById("line1").innerHTML = txt[linenum];
-                document.getElementById("line1").innerHTML = txt[linenum2];
-                document.getElementById("line1").innerHTML = txt[linenum3];
-                document.getElementById("line1").innerHTML = txt[randmail];
+                document.getElementById("line2").innerHTML = txt[linenum2];
+                document.getElementById("line3").innerHTML = txt[linenum3];
+                document.getElementById("line4").innerHTML = txt[randmail];
             }
         }
         client.send();
     }
+var element1 = document.getElementById("line1");
+element1.id = "linenuma";
   
-  let a = ("Timestamp of Generation: "+urdate);
-  let b = ("Name: "+linenum+" "+linenum2);
-  let c = ("email: "+linenum3+"@"+randmail);
+var element2 = document.getElementById("line2");
+element2.id = "linenumb";
+  
+var element3 = document.getElementById("line3");
+element3.id = "linenumc";
+  
+var element4 = document.getElementById("line4");
+element4.id = "linenumd";
+  let a = ("Timestamp of Generation: "+urdate+" ");
+  let b = ("Name: "+linenuma+" "+linenumb+" ");
+  let c = ("email: "+linenumc+"@"+linenumd+" ");
   let Acc1 = (a+b+c);
   
   const accounts = [Acc1];
