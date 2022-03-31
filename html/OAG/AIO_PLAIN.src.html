@@ -4,7 +4,7 @@
     <button onclick="visorcount">visCount</button>
     <script>
      function visorcount() {
-  visCount = localStorage.getItem("page_view");
+  visCount = 0;
   visCount = Number(visitrCount) + 1;
   alert(visCount);
   if ( visCount == 1 ) {
