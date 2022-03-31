@@ -11,11 +11,11 @@
         var result = '';
         for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
         return result;
+        csrf = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+        alert(csrf);
+        document.getElementById("csrfid").innerHTML = (csrf);
+        window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html/?circulation=true&ref%20count="+refcount+"&csrf-token="+csrf);
       }
-      csrf = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
-      alert(csrf);
-      document.getElementById("csrfid").innerHTML = (csrf);
-      window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html/?circulation=true&ref%20count="+refcount+"&csrf-token="+csrf);
     }
   });
 </script>
