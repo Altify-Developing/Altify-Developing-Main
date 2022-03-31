@@ -2,15 +2,12 @@
 <link rel="stylesheet" href="style.css">
   <p id="file">
     <script>
-    SetTimeout(replwindow, 1000);
-function replwindow() {
   visCount = localStorage.getItem("page_view");
   visCount = Number(visitrCount) + 1;
   alert(visCount);
   if ( visCount == 1 ) {
     window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html/?circulation=true");
   };
-}
     </script>
 
 <body onload="readfileautomatically();">
