@@ -6,8 +6,10 @@
       $(document).ready(function() {
         if (window.location.href.indexOf("?circulation=true") > -1) {
           setInterval(Refrsh, 1000);
+          var refcount
           function Refrsh() {
-           location.reload(); 
+            refcount = Number(refcount + 1)
+      window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html/?circulation=true&ref%20count="refcount);
           }
         }
       });
