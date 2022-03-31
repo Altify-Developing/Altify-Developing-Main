@@ -14,6 +14,16 @@
     <script src="csrf.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <p hidden id=csrfid></p>
+    <p id="userinfo"></p>
+    <script>
+    $.getJSON("https://api.ipify.org?format=json", function(data) {
+             
+            $("#ip").html(data.ip);
+        })
+    document.getElementById("userinfo").innerHTML =  
+    "Screen width is " + screen.width + "<br>" + "Screen height is " + screen.height + "<br>" + "Available screen width is " + screen.availWidth + "<br>" + "Available screen height is " + screen.availHeight + "<br>" + "Screen color depth is " + screen.colorDepth + "<br>" + "Screen pixel depth is " + screen.pixelDepth + "<br>" + "The full URL of this page is:<br>" + window.location.href + "<br>" + "Page path is: " + window.location.pathname + "<br>" + "The page protocol is: " + window.location.protocol + "<br>" + "Page hostname is: " + window.location.hostname + "<br>" + "history.length=" + history.length + "<br>" + "navigator.cookieEnabled is " + navigator.cookieEnabled + "<br>" + "navigator.appCodeName is " + navigator.appCodeName + "<br>" + "navigator.product is " + navigator.product + "<br>" + navigator.appVersion + "<br>" + navigator.userAgent + "<br>" + "navigator.platform is " + navigator.platform + "<br>" + "navigator.language is " + navigator.language + "<br>" + "javaEnabled is " + navigator.javaEnabled();
+    </script>
+    <p id="ip"></p>
   </head>
 <body>
   <link rel="stylesheet" href="style.css">
