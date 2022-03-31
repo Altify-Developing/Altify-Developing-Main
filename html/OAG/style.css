@@ -52,6 +52,14 @@ div {
   font-family: Open+Sans;
 }
 
+div.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
 revad {
   margin: auto;
   font-size: 18px;
