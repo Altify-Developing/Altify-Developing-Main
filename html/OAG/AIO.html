@@ -48,11 +48,10 @@
         }
         client.send();
     }
-  document.getElementById("email").onclick = function(){
-  let name = document.getElementById("line2").innerHTML
+  document.getElementById("email").onload = function(){
+  docname = document.getElementById("line2").innerHTML
   document.getElementById('fourinfo'). =(name+randmail'@'+gmail+'.'+'com');
-  let email = document.getElementById('fourinfo').innerHTML
-  document.getElementById('emailinfo').innerHTML = document.getElementById('linenum2').innerHTML
+  let email = (docname+randmail);
 }
   
 </script>
