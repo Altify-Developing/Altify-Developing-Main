@@ -28,11 +28,11 @@ p10 {
 p {
   color: green;
   font-family: verdana;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 p.small {
-  line-height: 0.5;
+  line-height: 0.35;
 }
 
 box {
