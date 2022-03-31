@@ -5,6 +5,10 @@
 <body onload="readfileautomatically();">
 
   <p id="listAccs"></p>
+  <p id="line1"></p>
+  <p id="line2"></p>
+  <p id="line3"></p>
+  <p id="line4"></p>
 <script>
   var urdate = new Date()
   urdate.getHours();
@@ -30,29 +34,19 @@
         }
         client.send();
     }
-var element1 = document.getElementById("line1");
-element1.id = "linenuma";
-  
-var element2 = document.getElementById("line2");
-element2.id = "linenumb";
-  
-var element3 = document.getElementById("line3");
-element3.id = "linenumc";
-  
-var element4 = document.getElementById("line4");
-element4.id = "linenumd";
+  document.getElementById('line1').value=();
   let a = ("Timestamp of Generation: "+urdate+" ");
-  let b = ("Name: "+linenuma+" "+linenumb+" ");
-  let c = ("email: "+linenumc+"@"+linenumd+" ");
+  let b = ("Name: "+linenum+" "+linenum2+" ");
+  let c = ("email: "+linenum3+"@"+randmail+" ");
   let Acc1 = (a+b+c);
   
   const accounts = [Acc1];
 
-let txt2 = "";
+let txt = "";
 accounts.forEach(Accs);  
-document.getElementById("listAccs").innerHTML = txt2;
+document.getElementById("listAccs").innerHTML = txt;
 function Accs(value, index, array) {
-  txt2 += value + "<br>"; 
+  txt += value + "<br>"; 
 };
 </script>
 </body>
