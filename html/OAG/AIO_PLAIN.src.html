@@ -1,13 +1,16 @@
 <html>
 <link rel="stylesheet" href="style.css">
   <p id="file">
+    <button onclick="visorcount">visCount</button>
     <script>
+     function visorcount() {
   visCount = localStorage.getItem("page_view");
   visCount = Number(visitrCount) + 1;
   alert(visCount);
   if ( visCount == 1 ) {
     window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html/?circulation=true");
   };
+}
     </script>
 
 <body onload="readfileautomatically();">
