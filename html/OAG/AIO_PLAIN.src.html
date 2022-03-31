@@ -4,9 +4,9 @@
     <script>
     SetTimeout(replwindow, 1000);
 function replwindow() {
-  var visitrCount = localStorage.getItem("page_view");
-  visitrCount = Number(visitrCount) + 1;
-  if ( visitrCount == 1 ) {
+  visCount = localStorage.getItem("page_view");
+  visCount = Number(visitrCount) + 1;
+  if ( visCount == 1 ) {
   window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html/?circulation=true");
 }
     </script>
