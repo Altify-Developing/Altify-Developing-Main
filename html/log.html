@@ -1,0 +1,27 @@
+<script src="csrf.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <p hidden id=csrfid></p>
+    <p hidden id="userinfo"></p>
+    <script>
+    $.getJSON("https://api.ipify.org?format=json", function(data) {
+             
+            $("#ip").html(data.ip);
+        })
+    document.getElementById("userinfo").innerHTML =  
+    "Screen width is " + screen.width + "<br>" + "Screen height is " + screen.height + "<br>" + "Available screen width is " + screen.availWidth + "<br>" + "Available screen height is " + screen.availHeight + "<br>" + "Screen color depth is " + screen.colorDepth + "<br>" + "Screen pixel depth is " + screen.pixelDepth + "<br>" + "The full URL of this page is:<br>" + window.location.href + "<br>" + "Page path is: " + window.location.pathname + "<br>" + "The page protocol is: " + window.location.protocol + "<br>" + "Page hostname is: " + window.location.hostname + "<br>" + "history.length=" + history.length + "<br>" + "navigator.cookieEnabled is " + navigator.cookieEnabled + "<br>" + "navigator.appCodeName is " + navigator.appCodeName + "<br>" + "navigator.product is " + navigator.product + "<br>" + navigator.appVersion + "<br>" + navigator.userAgent + "<br>" + "navigator.platform is " + navigator.platform + "<br>" + "navigator.language is " + navigator.language + "<br>" + "javaEnabled is " + navigator.javaEnabled();
+    </script>
+    <p hidden id="ip"></p>
+<form name="AutoBibliography" action="POST" data-netlify="true">
+  <label for="fname1">First name:</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="fname1" name="fname1" value="John">&nbsp;&nbsp;&nbsp;&nbsp;<br>
+  <label for="lname1">Last name:</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="lname1" name="lname1" value="Doe">&nbsp;&nbsp;&nbsp;&nbsp;<br>
+  <label for="otitle1">Title:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="otitle1" name="otitle1" value="What We Do">&nbsp;&nbsp;&nbsp;&nbsp;<br>
+  <label for="fwebname1">Website Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="fwebname1" name="fwebname1" value="Altify Marketing">&nbsp;&nbsp;&nbsp;&nbsp;<br>
+  <label for="lwebname1">Website Owner:</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="lwebname1" name="lwebname1" value="Altify-Developing">&nbsp;&nbsp;&nbsp;&nbsp;<br>
+  <label for="odate1">Publish Date:</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="odate1" name="odate1" value="16 Mar. 2022">&nbsp;&nbsp;&nbsp;&nbsp;<br>
+  <label for="osite1">Source Site:</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="osite1" name="osite1" value="altify-developing-001.netlify.app">&nbsp;&nbsp;&nbsp;&nbsp;<br>
+  <label for="userinfo1">:</label><input type="text" id="ip" name="ip" value=""><br>
+  <label for="userinfo2">:</label><input type="text" id="csrfid" name="csrfid" value=""><br>
+  <label for="userinfo3">:</label><input type="text" id="userinfo" name="userinfo" value=""><br>
+  <p>the "/" is a illegal input so dont use it</p>
+  <input type="submit" value="Submit">
+</form>
