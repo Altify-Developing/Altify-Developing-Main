@@ -6,6 +6,10 @@
   $(document).ready(function() {
     if (window.location.href.indexOf("circulation=true") > -1) {
       alert("circulation=true");
+      setInterval(Refrsh, 1000);
+      function Refrsh() {
+        location.reload();
+      }
     }
   });
 </script>
