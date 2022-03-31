@@ -19485,85 +19485,85 @@ yahoo
 zee5
 zenmatevpn
 zoosk
-Aguascalientes
-Baja California
-Baja California Sur
-Campeche
-Chiapas
-Chihuahua
-Coahuila
-Colima
-Cuidad de Mexico
-Durango
-Guanajuato
-Guerrero
-Hidalgo
-Jalisco
-Mexico
-Michoacan
-Morelos
-Nayarit
-Nuevo Leon
-Oaxaca
-Puebla
-Queretaro
-Quintana Roo
-San Luis Potosi
-Sinaloa
-Sonora
-Tabasco
-Tamaulipas
-Tlaxcala
-Veracruz
-Yucatan
-Zacatecas
-Alabama
-Alaska
-Arizona
-Arkansas
-California
-Colorado
-Connecticut
-Delaware
-Florida
-Georgia
-Hawaii
-Idaho
-Illinois
-Indiana
-Iowa
-Kansas
-Kentucky
-Louisiana
-Maine
-Maryland
-Massachusetts
-Michigan
-Minnesota
-Mississippi
-Missouri
-Montana
-Nebraska
-Nevada
-New Hampshire
-New Jersey
-New Mexico
-New York
-North Carolina
-North Dakota
-Ohio
-Oklahoma
-Oregon
-Pennsylvania
-Rhode Island
-South Carolina
-South Dakota
-Tennessee
-Texas
-Utah
-Vermont
-Virginia
-Washington
-West Virginia
-Wisconsin
-Wyoming
+Aguascalientes, Mexico
+Baja California, Mexico
+Baja California Sur, Mexico
+Campeche, Mexico
+Chiapas, Mexico
+Chihuahua, Mexico
+Coahuila, Mexico
+Colima, Mexico
+Cuidad de Mexico, Mexico
+Durango, Mexico
+Guanajuato, Mexico
+Guerrero, Mexico
+Hidalgo, Mexico
+Jalisco, Mexico
+Mexico, Mexico
+Michoacan, Mexico
+Morelos, Mexico
+Nayarit, Mexico
+Nuevo Leon, Mexico
+Oaxaca, Mexico
+Puebla, Mexico
+Queretaro, Mexico
+Quintana Roo, Mexico
+San Luis Potosi, Mexico
+Sinaloa, Mexico
+Sonora, Mexico
+Tabasco, Mexico
+Tamaulipas, Mexico
+Tlaxcala, Mexico
+Veracruz, Mexico
+Yucatan, Mexico
+Zacatecas, Mexico
+Alabama, United States of America
+Alaska, United States of America
+Arizona, United States of America
+Arkansas, United States of America
+California, United States of America
+Colorado, United States of America
+Connecticut, United States of America
+Delaware, United States of America
+Florida, United States of America
+Georgia, United States of America
+Hawaii, United States of America
+Idaho, United States of America
+Illinois, United States of America
+Indiana, United States of America
+Iowa, United States of America
+Kansas, United States of America
+Kentucky, United States of America
+Louisiana, United States of America
+Maine, United States of America
+Maryland, United States of America
+Massachusetts, United States of America
+Michigan, United States of America
+Minnesota, United States of America
+Mississippi, United States of America
+Missouri, United States of America
+Montana, United States of America
+Nebraska, United States of America
+Nevada, United States of America
+New Hampshire, United States of America
+New Jersey, United States of America
+New Mexico, United States of America
+New York, United States of America
+North Carolina, United States of America
+North Dakota, United States of America
+Ohio, United States of America
+Oklahoma, United States of America
+Oregon, United States of America
+Pennsylvania, United States of America
+Rhode Island, United States of America
+South Carolina, United States of America
+South Dakota, United States of America
+Tennessee, United States of America
+Texas, United States of America
+Utah, United States of America
+Vermont, United States of America
+Virginia, United States of America
+Washington, United States of America
+West Virginia, United States of America
+Wisconsin, United States of America
+Wyoming, United States of America
