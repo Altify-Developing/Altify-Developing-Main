@@ -15,11 +15,14 @@
         csrf = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
         alert(csrf);
         document.getElementById("csrfid").innerHTML = (csrf);
-        window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html/?circulation=true&ref%20count="+refcount+"&csrf-token="+csrf);
+        setInterval(refrsh, 1000);
+        function refrsh() {
+          window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html/?circulation=true&ref%20count="+refcount+"&csrf-token="+csrf);
+        }
     }
   });
 </script>
-  <p id=csrfid></p>
+  <p hidden id=csrfid></p>
 <button onclick="visorcount()">AutoRefresh</button>
 <script>
 function visorcount() {
