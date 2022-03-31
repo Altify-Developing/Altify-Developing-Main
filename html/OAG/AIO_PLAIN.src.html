@@ -13,7 +13,6 @@
         return result;
         }
         csrf = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
-        alert(csrf);
         document.getElementById("csrfid").innerHTML = (csrf);
         setInterval(refrsh, 1000);
         function refrsh() {
