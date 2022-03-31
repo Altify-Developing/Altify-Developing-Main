@@ -6,18 +6,14 @@
   $(document).ready(function() {
     if (window.location.href.indexOf("circulation=true") > -1) {
       alert("circulation=true");
-      setInterval(Refrsh, 1000);
       setInterval(randomString, 1000);
-      function Refrsh() {
-        refcount = Math.floor(Math.random() * 100000) + 1;
-      }
       function randomString(length, chars) {
+        refcount = Math.floor(Math.random() * 100000) + 1;
         var result = '';
         for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
         return result;
       }
       var rString = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
-      document.write(randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'));
       csrf = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
       alert(csrf);
       window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html/?circulation=true&ref%20count="+refcount+"&csrf-token="+csrf);
