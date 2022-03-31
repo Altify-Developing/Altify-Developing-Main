@@ -54,8 +54,8 @@ div {
 
 div.center {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 100px;
+  margin-right: 500px;
   width: 50%;
 }
 
