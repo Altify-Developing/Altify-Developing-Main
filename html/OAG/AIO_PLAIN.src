@@ -346,6 +346,76 @@
   randmail40 = Math.floor(Math.random() * 55) + 19240;
   randuser40 = Math.floor(Math.random() * 1000) + 1;
   randpass40 = Math.floor(Math.random() * 1000) + 1;
+    
+  linenum41 = Math.floor(Math.random() * 19235) + 1;
+  linenum241 = Math.floor(Math.random() * 19235) + 1;
+  linenum341 = Math.floor(Math.random() * 19235) + 1;
+  randmail41 = Math.floor(Math.random() * 55) + 19240;
+  randuser41 = Math.floor(Math.random() * 1000) + 1;
+  randpass41 = Math.floor(Math.random() * 1000) + 1;
+    
+  linenum42 = Math.floor(Math.random() * 19235) + 1;
+  linenum242 = Math.floor(Math.random() * 19235) + 1;
+  linenum342 = Math.floor(Math.random() * 19235) + 1;
+  randmail42 = Math.floor(Math.random() * 55) + 19240;
+  randuser42 = Math.floor(Math.random() * 1000) + 1;
+  randpass42 = Math.floor(Math.random() * 1000) + 1;
+    
+  linenum43 = Math.floor(Math.random() * 19235) + 1;
+  linenum243 = Math.floor(Math.random() * 19235) + 1;
+  linenum343 = Math.floor(Math.random() * 19235) + 1;
+  randmail43 = Math.floor(Math.random() * 55) + 19240;
+  randuser43 = Math.floor(Math.random() * 1000) + 1;
+  randpass43 = Math.floor(Math.random() * 1000) + 1;
+    
+  linenum44 = Math.floor(Math.random() * 19235) + 1;
+  linenum244 = Math.floor(Math.random() * 19235) + 1;
+  linenum344 = Math.floor(Math.random() * 19235) + 1;
+  randmail44 = Math.floor(Math.random() * 55) + 19240;
+  randuser44 = Math.floor(Math.random() * 1000) + 1;
+  randpass44 = Math.floor(Math.random() * 1000) + 1;
+    
+  linenum45 = Math.floor(Math.random() * 19235) + 1;
+  linenum245 = Math.floor(Math.random() * 19235) + 1;
+  linenum345 = Math.floor(Math.random() * 19235) + 1;
+  randmail45 = Math.floor(Math.random() * 55) + 19240;
+  randuser45 = Math.floor(Math.random() * 1000) + 1;
+  randpass45 = Math.floor(Math.random() * 1000) + 1;
+    
+  linenum46 = Math.floor(Math.random() * 19235) + 1;
+  linenum246 = Math.floor(Math.random() * 19235) + 1;
+  linenum346 = Math.floor(Math.random() * 19235) + 1;
+  randmail46 = Math.floor(Math.random() * 55) + 19240;
+  randuser46 = Math.floor(Math.random() * 1000) + 1;
+  randpass46 = Math.floor(Math.random() * 1000) + 1;
+    
+  linenum47 = Math.floor(Math.random() * 19235) + 1;
+  linenum247 = Math.floor(Math.random() * 19235) + 1;
+  linenum347 = Math.floor(Math.random() * 19235) + 1;
+  randmail47 = Math.floor(Math.random() * 55) + 19240;
+  randuser47 = Math.floor(Math.random() * 1000) + 1;
+  randpass47 = Math.floor(Math.random() * 1000) + 1;
+    
+  linenum48 = Math.floor(Math.random() * 19235) + 1;
+  linenum248 = Math.floor(Math.random() * 19235) + 1;
+  linenum348 = Math.floor(Math.random() * 19235) + 1;
+  randmail48 = Math.floor(Math.random() * 55) + 19240;
+  randuser48 = Math.floor(Math.random() * 1000) + 1;
+  randpass48 = Math.floor(Math.random() * 1000) + 1;
+    
+  linenum49 = Math.floor(Math.random() * 19235) + 1;
+  linenum249 = Math.floor(Math.random() * 19235) + 1;
+  linenum349 = Math.floor(Math.random() * 19235) + 1;
+  randmail49 = Math.floor(Math.random() * 55) + 19240;
+  randuser49 = Math.floor(Math.random() * 1000) + 1;
+  randpass49 = Math.floor(Math.random() * 1000) + 1;
+    
+  linenum50 = Math.floor(Math.random() * 19235) + 1;
+  linenum250 = Math.floor(Math.random() * 19235) + 1;
+  linenum350 = Math.floor(Math.random() * 19235) + 1;
+  randmail50 = Math.floor(Math.random() * 55) + 19240;
+  randuser50 = Math.floor(Math.random() * 1000) + 1;
+  randpass50 = Math.floor(Math.random() * 1000) + 1;
         
     function readfileautomatically () {
         var client = new XMLHttpRequest();
@@ -439,7 +509,27 @@
                 document.getElementById("comboinfo39").innerHTML = (combo39);
                 combo40 = (txt[linenum39]+txt[linenum239]+randuser39+'@'+txt[randmail39]+'.com'+':'+randpass39+txt[linenum339]);
                 document.getElementById("comboinfo40").innerHTML = (combo40);
-              alert(combo+combo1+combo2+combo3+combo4+combo5+combo6+combo7+combo8+combo9+combo10+combo11+combo12+combo13+combo14+combo15+combo16+combo17+combo18+combo19+combo20+combo21+combo22+combo23+combo24+combo25+combo26+combo27+combo28+combo29+combo30+combo31+combo32+combo33+combo34+combo35+combo36+combo37+combo38+combo39+combo40);
+                combo41 = (txt[linenum40]+txt[linenum240]+randuser40+'@'+txt[randmail40]+'.com'+':'+randpass40+txt[linenum340]);
+                document.getElementById("comboinfo41").innerHTML = (combo41);
+                combo42 = (txt[linenum41]+txt[linenum241]+randuser41+'@'+txt[randmail41]+'.com'+':'+randpass41+txt[linenum341]);
+                document.getElementById("comboinfo42").innerHTML = (combo42);
+                combo43 = (txt[linenum42]+txt[linenum242]+randuser42+'@'+txt[randmail42]+'.com'+':'+randpass42+txt[linenum342]);
+                document.getElementById("comboinfo43").innerHTML = (combo43);
+                combo44 = (txt[linenum43]+txt[linenum243]+randuser43+'@'+txt[randmail43]+'.com'+':'+randpass43+txt[linenum343]);
+                document.getElementById("comboinfo44").innerHTML = (combo44);
+                combo45 = (txt[linenum44]+txt[linenum244]+randuser44+'@'+txt[randmail44]+'.com'+':'+randpass44+txt[linenum344]);
+                document.getElementById("comboinfo45").innerHTML = (combo45);
+                combo46 = (txt[linenum45]+txt[linenum245]+randuser45+'@'+txt[randmail45]+'.com'+':'+randpass45+txt[linenum345]);
+                document.getElementById("comboinfo46").innerHTML = (combo46);
+                combo47 = (txt[linenum46]+txt[linenum246]+randuser46+'@'+txt[randmail46]+'.com'+':'+randpass46+txt[linenum346]);
+                document.getElementById("comboinfo47").innerHTML = (combo47);
+                combo48 = (txt[linenum47]+txt[linenum247]+randuser47+'@'+txt[randmail47]+'.com'+':'+randpass47+txt[linenum347]);
+                document.getElementById("comboinfo48").innerHTML = (combo48);
+                combo49 = (txt[linenum48]+txt[linenum248]+randuser48+'@'+txt[randmail48]+'.com'+':'+randpass48+txt[linenum348]);
+                document.getElementById("comboinfo49").innerHTML = (combo49);
+                combo50 = (txt[linenum49]+txt[linenum249]+randuser49+'@'+txt[randmail49]+'.com'+':'+randpass49+txt[linenum349]);
+                document.getElementById("comboinfo50").innerHTML = (combo50);
+                alert(combo+combo1+combo2+combo3+combo4+combo5+combo6+combo7+combo8+combo9+combo10+combo11+combo12+combo13+combo14+combo15+combo16+combo17+combo18+combo19+combo20+combo21+combo22+combo23+combo24+combo25+combo26+combo27+combo28+combo29+combo30+combo31+combo32+combo33+combo34+combo35+combo36+combo37+combo38+combo39+combo40);
             }
         }
         client.send();
