@@ -8,7 +8,10 @@
   <p id="line2"></p>
   <p id="line3"></p>
   <p id="line4"></p>
-<script>
+  <br><p>combo</p><br>
+  <p id="comboinfo"></p>
+  
+  <script>
   var urdate = new Date()
   urdate.getHours();
   urdate.getMinutes();
@@ -36,6 +39,8 @@
         }
         client.send();
     }
+var combo = (txt[linenum]+txt[linenum2]+randuser+':'+randpass+txt[linenum3]+'@'+txt[randmail]+'.com');
+document.getElementById("comboinfo").innerHTML = (combo);
   
 </script>
 </body>
