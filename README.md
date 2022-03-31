@@ -13,8 +13,9 @@
 #### NEWEST RELEASES
 
 ##### ONLINE ACCOUNT GENERATOR - /html/OAG/OAG.html
+[OAG](https://github.com/Altify-Developing/Altify-Developing-Main/html/OAG/OAG.html)
 ##### ONLINE TRIPLE-PROXY GENERATOR - /html/AJAX/info.html
-
+[OTPG](https://github.com/Altify-Developing/Altify-Developing-Main/html/AJAX/info.html)
 
 (stats)
 
