@@ -31,6 +31,9 @@ p {
   font-size: 12px;
 }
 
+p.small {
+  line-height: 0.5;
+}
 
 box {
   font-size: 18px;
