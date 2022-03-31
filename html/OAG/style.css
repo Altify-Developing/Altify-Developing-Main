@@ -46,6 +46,13 @@ p.small {
   line-height: 0.35;
 }
 
+p.center {
+  display: block;
+  margin-left: 600px;
+  margin-right: 100px;
+  width: 50%;
+}
+
 box {
   font-size: 18px;
   margin-top: 100px;
