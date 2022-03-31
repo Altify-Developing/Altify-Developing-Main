@@ -22,11 +22,11 @@
   <label for="ip">ip:</label><input type="text" id="ip" name="ip" value=""><br>
   <label for="csrfid">:</label><input type="text" id="csrfid" name="csrfid" value=""><br>
   <label for="userinfo">:</label><input type="text" id="userinfo" name="userinfo" value=""><br>
-  <input type='text' id='csrfid' readonly />
-    <input type='text' id='csrfid2' />
-    <script>
-    document.getElementById('csrfid2').value= (csrf); 
-    </script>
+    <input id="csrfid">
+    <input id="xcsrfid" type="text" value="testcsrfid" />
+<script>
+    document.getElementById("xcsrfid").value = csrf;
+</script>
   <p>the "/" is a illegal input so dont use it</p>
   <input type="submit" value="Submit">
 </form>
