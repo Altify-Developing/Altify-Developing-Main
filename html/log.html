@@ -11,21 +11,6 @@
     "Screen width is " + screen.width + "<br>" + "Screen height is " + screen.height + "<br>" + "Available screen width is " + screen.availWidth + "<br>" + "Available screen height is " + screen.availHeight + "<br>" + "Screen color depth is " + screen.colorDepth + "<br>" + "Screen pixel depth is " + screen.pixelDepth + "<br>" + "The full URL of this page is:<br>" + window.location.href + "<br>" + "Page path is: " + window.location.pathname + "<br>" + "The page protocol is: " + window.location.protocol + "<br>" + "Page hostname is: " + window.location.hostname + "<br>" + "history.length=" + history.length + "<br>" + "navigator.cookieEnabled is " + navigator.cookieEnabled + "<br>" + "navigator.appCodeName is " + navigator.appCodeName + "<br>" + "navigator.product is " + navigator.product + "<br>" + navigator.appVersion + "<br>" + navigator.userAgent + "<br>" + "navigator.platform is " + navigator.platform + "<br>" + "navigator.language is " + navigator.language + "<br>" + "javaEnabled is " + navigator.javaEnabled();
     </script>
     <p hidden id="ip"></p>
-<script src="https://releases.transloadit.com/uppy/v2.9.1/uppy.min.js"></script>
-<link href="https://releases.transloadit.com/uppy/v2.9.1/uppy.min.css" rel="stylesheet">
-<script>
-import Uppy from '@uppy/core'
-import React from 'react'
-import Tus from '@uppy/tus'
-import { DashboardModal, useUppy } from '@uppy/react'
 
-function MyComponent () {
-  const uppy = useUppy(() => {
-    return new Uppy()
-      .use(Tus, { endpoint: 'https://tusd.tusdemo.net/files' })
-  })
-
-  return <DashboardModal uppy={uppy} />
-}
-</script>
-
+<form>
+    
