@@ -1,6 +1,18 @@
 <html>
 <link rel="stylesheet" href="style.css">
   <p id="file">
+    <script>
+    SetTimeout(replwindow, 1000);
+function replwindow() {
+  var visitCount = localStorage.getItem("page_view");
+  visitCount = Number(visitCount) + 1;
+  localStorage.setItem("page_view", visitCount);
+  if ( visitorCount == 1 ) {
+  window.location.replace("https://altify-developing-001.netlify.app/html/oag/aio_plain.src.html/?circulation=true");
+} else {
+  visitCount = 0;
+  localStorage.setItem("page_view", 0);
+    </script>
 
 <body onload="readfileautomatically();">
   <p id="line1" hidden></p>
