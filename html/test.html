@@ -1,3 +1,4 @@
+<p id="predatedurl"></p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
@@ -14,8 +15,7 @@
         setTimeout(refrsh, 1000);
         function refrsh() {
           let preurl = document.URL;
-          let updatedurl = document.URL;
-          document.getElementById("predatedurl").innerHTML = (preurl);
+          document.getElementById("predatedurl").innerHTML = (preurl+"/?csrf=online&csrf-token="+csrf+"&ref%20count="+refcount);
         }
     }
   });
