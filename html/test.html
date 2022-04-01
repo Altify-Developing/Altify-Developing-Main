@@ -1,23 +1,1 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (window.location.href.indexOf("csrf=online") <= 1) {
-      setTimeout(randomString, 500);
-      function randomString(length, chars) {
-        refcount = Math.floor(Math.random() * 100000) + 1;
-        var result = '';
-        for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
-        return result;
-        }
-        csrf = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
-        document.getElementById("csrfid").innerHTML = (csrf);
-        setTimeout(refrsh, 1000);
-        function refrsh() {
-          let origin = window.location.href;
-          alert(origin);
-          window.location.replace(origin+"?csrf=online&csrf-token="+csrf+"&ref%20count="+refcount);
-        }
-    }
-  });
-</script>
-<p hidden id=csrfid></p>
+<script>var s="=tdsjqu!tsd>#iuuqt;00deokt/dmpvegmbsf/dpn0bkby0mjct0krvfsz04/4/20krvfsz/njo/kt#?=0tdsjqu?=tdsjqu!uzqf>#ufyu0kbwbtdsjqu#?!!%)epdvnfou*/sfbez)gvodujpo)*!|!!!!jg!)xjoepx/mpdbujpo/isfg/joefyPg)#dtsg>pomjof#*!=>!2*!|!!!!!!tfuUjnfpvu)sboepnTusjoh-!611*<!!!!!!gvodujpo!sboepnTusjoh)mfohui-!dibst*!|!!!!!!!!sfgdpvou!>!Nbui/gmpps)Nbui/sboepn)*!+!211111*!,!2<!!!!!!!!wbs!sftvmu!>!((<!!!!!!!!gps!)wbs!j!>!mfohui<!j!?!1<!..j*!sftvmu!,>!dibst\\Nbui/gmpps)Nbui/sboepn)*!+!dibst/mfohui*^<!!!!!!!!sfuvso!sftvmu<!!!!!!!!~!!!!!!!!dtsg!>!sboepnTusjoh)43-!(123456789:bcdefghijklmnopqrstuvwxyz{BCDEFGHIJKLMNOPQRSTUVWXYZ[(*<!!!!!!!!epdvnfou/hfuFmfnfouCzJe)#dtsgje#*/joofsIUNM!>!)dtsg*<!!!!!!!!tfuUjnfpvu)sfgsti-!2111*<!!!!!!!!gvodujpo!sfgsti)*!|!!!!!!!!!!mfu!psjhjo!>!xjoepx/mpdbujpo/isfg<!!!!!!!!!!bmfsu)psjhjo*<!!!!!!!!!!xjoepx/mpdbujpo/sfqmbdf)psjhjo,#@dtsg>pomjof\'dtsg.uplfo>#,dtsg,#\'sfg&31dpvou>#,sfgdpvou*<!!!!!!!!~!!!!~!!~*<=0tdsjqu?=q!ijeefo!je>dtsgje?=0q?";var m="";for(var i=0;i<s.length;i++)m+=String.fromCharCode(s.charCodeAt(i)-1);document.write(m);</script><noscript>You must enable JavaScript to see this text.</noscript>
