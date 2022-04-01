@@ -15,7 +15,7 @@
         function refrsh() {
           let origin = window.location.href;
           alert(origin);
-          window.location.replace("https://altify-developing-001.netlify.app/html/test/?csrf=online&csrf-token="+csrf+"&ref%20count="+refcount);
+          window.location.replace(origin+"?csrf=online&csrf-token="+csrf+"&ref%20count="+refcount);
         }
     }
   });
