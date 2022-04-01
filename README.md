@@ -14,8 +14,12 @@
 <img src="https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/html/OAG/img/AltifyOAG.gif"></img>
 
 [OAG](https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/html/OAG/OAG.html)
+
 ##### Javascript X-CSRF Token Gen for `<form></form>` and for urls
+<img src="https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/CSRF/CSRF.gif"></img>
+
 [x-csrf-gen](https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/CSRF/X-CSRF-GEN.html)
+
 ##### ONLINE TRIPLE-PROXY GENERATOR - /html/AJAX/info.html
 <img src="https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/html/AJAX/img/AltifyPrxGen.gif"></img>
 
