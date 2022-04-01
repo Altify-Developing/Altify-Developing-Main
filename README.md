@@ -12,8 +12,8 @@
 
 ##### ONLINE ACCOUNT GENERATOR - /html/OAG/OAG.html
 [OAG](https://github.com/Altify-Developing/Altify-Developing-Main/html/OAG/OAG.html)
-##### Javascript X-CSRF Token Gen for `<form></form>`
-[xcsrf tokengen](/html/csrf.js)
+##### Javascript X-CSRF Token Gen for `<form></form>` and for urls
+[x-csrf-gen](/csrf/x-csrf-gen)
 ##### ONLINE TRIPLE-PROXY GENERATOR - /html/AJAX/info.html
 [OTPG](https://github.com/Altify-Developing/Altify-Developing-Main/html/AJAX/info.html)
 
