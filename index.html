@@ -13,8 +13,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
-    if (window.location.href.indexOf("circulation=true") > -1) {
-      setInterval(randomString, 1000);
+    if (window.location.href.indexOf("csrf=true") > -1) {
+      setTimeout(randomString, 500);
       function randomString(length, chars) {
         refcount = Math.floor(Math.random() * 100000) + 1;
         var result = '';
@@ -23,7 +23,7 @@
         }
         csrf = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
         document.getElementById("csrfid").innerHTML = (csrf);
-        setInterval(refrsh, 1000);
+        setTimeout(refrsh, 1000);
         function refrsh() {
           window.location.replace("https://altify-developing-001.netlify.app/?circulation=true&ref%20count="+refcount+"&csrf-token="+csrf);
         }
