@@ -1,4 +1,4 @@
-<p id="predatedurl"></p><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
     if (window.location.href.indexOf("csrf=online") <= 1) {
@@ -13,10 +13,9 @@
         document.getElementById("csrfid").innerHTML = (csrf);
         setTimeout(refrsh, 1000);
         function refrsh() {
-          let origin = location.origin;
           window.location.replace("https://altify-developing-001.netlify.app/html/test/?csrf=online&csrf-token="+csrf+"&ref%20count="+refcount);
         }
     }
   });
 </script>
-<p id="predatedurl"></p>
+<p hidden id=csrfid></p>
