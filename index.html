@@ -10,9 +10,27 @@
     <meta property="og:url" content="https://altify-developing-001.netlify.app/" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/favicon.png" />
-    <script src="csrf.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <p id=csrfid></p>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (window.location.href.indexOf("circulation=true") > -1) {
+      setInterval(randomString, 1000);
+      function randomString(length, chars) {
+        refcount = Math.floor(Math.random() * 100000) + 1;
+        var result = '';
+        for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+        return result;
+        }
+        csrf = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+        document.getElementById("csrfid").innerHTML = (csrf);
+        setInterval(refrsh, 1000);
+        function refrsh() {
+          window.location.replace("https://altify-developing-001.netlify.app/?circulation=true&ref%20count="+refcount+"&csrf-token="+csrf);
+        }
+    }
+  });
+</script>
+  <p hidden id=csrfid></p>
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/style2.css">
@@ -21,7 +39,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	
 </head>
 <body>
