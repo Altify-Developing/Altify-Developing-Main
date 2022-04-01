@@ -6,6 +6,7 @@
 
 <p hidden id="csrfid2"></p>
 <p hidden id='csrfid4'></p>
+
 */
 setTimeout(randomString, 200);
 function randomString(length, chars) {
