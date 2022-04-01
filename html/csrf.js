@@ -15,4 +15,4 @@ document.getElementById("csrfid2").innerHTML = (csrf2);
 "<p id='csrfid'></p>"
 );*/
 alert(csrf3);
-document.write('<p>'+'csrf='+csrf3+'</p>');
+document.getElementById("csrfid4").innerHTML = ('<p>x-csrf token='+csrf3);
