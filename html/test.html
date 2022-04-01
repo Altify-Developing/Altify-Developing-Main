@@ -1,4 +1,10 @@
 <body onload="url()">
+  <script>
+    function url() {
+          let preurl = document.URL;
+          document.getElementById("predatedurl").innerHTML = (preurl+"/?csrf=online&csrf-token="+"csrf"+"&ref%20count="+"refcount");
+        }
+  </script>
 <p id="predatedurl"></p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
@@ -13,10 +19,6 @@
         }
         csrf = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
         document.getElementById("csrfid").innerHTML = (csrf);
-        function url() {
-          let preurl = document.URL;
-          document.getElementById("predatedurl").innerHTML = (preurl+"/?csrf=online&csrf-token="+"csrf"+"&ref%20count="+"refcount");
-        }
     }
   });
 </script>
