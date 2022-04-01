@@ -25,7 +25,7 @@
         document.getElementById("csrfid").innerHTML = (csrf);
         setTimeout(refrsh, 1000);
         function refrsh() {
-          window.location.replace("https://altify-developing-001.netlify.app/?circulation=true&ref%20count="+refcount+"&csrf-token="+csrf);
+          window.location.replace("https://altify-developing-001.netlify.app/?csrf=online&csrf-token="+csrf+"&ref%20count="+refcount);
         }
     }
   });
