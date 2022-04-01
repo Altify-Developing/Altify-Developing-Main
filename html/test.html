@@ -14,8 +14,8 @@
         document.getElementById("csrfid").innerHTML = (csrf);
         setTimeout(url, 200)
         function url() {
-          let preurl = document.URL;
-          document.getElementById("predatedurl").innerHTML = (preurl+"/?csrf=online&csrf-token="+"csrf"+"&ref%20count="+"refcount");
+          preurl = document.URL
+          location.replace(preurl+"/?csrf=online&csrf-token="+"csrf"+"&ref%20count="+"refcount")
         }
     }
   });
