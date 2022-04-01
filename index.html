@@ -26,20 +26,6 @@
 	
 </head>
 <body>
-	<script>
-		document.cookie = "test=1;; path=/cookies/test;";
-	</script>
-	<script>
-	setTimeout(data, 100);
-	$.get('https://api.hackertarget.com/geoip/?q=116.12.250.1', function(data) {
-    data = data.trim().split('\n').reduce(function(obj, pair) {
-    pair = pair.split(': ');
-    return obj[pair[0]] = pair[1], obj;
-  }, {});
-  console.log(data);
-document.cookie = 'ip='+data+';
-});
-</script>
 	<!-- Navigation -->
 	<section id="nav-bar">
 		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
