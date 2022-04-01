@@ -17,6 +17,7 @@
                 linenum = Math.floor(Math.random() * 10) + 1;
                 key = ("<input type='hidden' name='access_token' value="+txt[linenum]+" />");
                 document.getElementById("postmailkey").innerHTML = (key);
+                alert(key);
                 }
         }
         client.send();
