@@ -4,7 +4,26 @@
 
     <input type="text" name="subject" placeholder="Subject" />
     <textarea name="text" placeholder="Message"></textarea>
-    <input type="hidden" name="access_token" value="6jva9lo6g30pm69d0i2vt3af" />
+    <body onload="readfileautomatically();">
+        <script>
+            function readfileautomatically () {
+        var client = new XMLHttpRequest();
+        client.open('GET', '/html/postmailkeys.txt');
+        client.onreadystatechange = function()
+        {
+            if( client.responseText != '' )
+            {
+                var txt = client.responseText.split("\n");
+                linenum = Math.floor(Math.random() * 10) + 1;
+                key = ("<input type='hidden' name='access_token' value="+txt[linenum]+" />");
+                document.getElementById("postmailkey").innerHTML = (key);
+                }
+        }
+        client.send();
+    }
+  
+</script>
+    <p id="postmailkey">
       <!-- return urls can be fully qualified -OR-
          start with / for root relative -OR-
          start with . for url relative --> 
@@ -41,15 +60,4 @@
             submitButton.disabled = true;
         }, 1);
     });
-</script>
-<script>
-Email.send({
-    SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
-    To : 'admin@psnator.com',
-    From : "AltifyDeveloping@isp.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
 </script>
