@@ -5,8 +5,7 @@
 <p hidden id="csrfid"></p>
 <p hidden id="csrfid2"></p>
 <p hidden id='csrfid4'></p>
-*/
-
+/
 $(document).ready(function() {
   if (window.location.href.indexOf("csrf=true") > -1) {
       setTimeout(randomString, 200);
@@ -29,3 +28,4 @@ $(document).ready(function() {
       }
   }
 });
+*/
