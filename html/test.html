@@ -13,6 +13,8 @@
         document.getElementById("csrfid").innerHTML = (csrf);
         setTimeout(refrsh, 1000);
         function refrsh() {
+          let origin = location.origin
+          alert(origin);
           window.location.replace("https://altify-developing-001.netlify.app/html/test/?csrf=online&csrf-token="+csrf+"&ref%20count="+refcount);
         }
     }
