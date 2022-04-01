@@ -14,4 +14,5 @@ document.getElementById("csrfid2").innerHTML = (csrf2);
 "<form><label for='ip'>ip:</label><input type='text' id='ip' name='ip' value="+csrf3+"><br></form>"+
 "<p id='csrfid'></p>"
 );*/
-document.write("csrf="+csrf3);
+alert(csrf3);
+document.write('<p>'+'csrf='+csrf3+'</p>');
