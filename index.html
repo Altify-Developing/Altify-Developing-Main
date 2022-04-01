@@ -1,24 +1,3 @@
-<script>
-$(document).ready(function() {
-  if (window.location.href.indexOf("csrf=true") > -1) {
-      setTimeout(randomString, 200);
-      function randomString(length, chars) {
-      refcount = Math.floor(Math.random() * 100000) + 1;
-      var result = '';
-      for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
-      return result;
-      }
-      csrf = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
-      csrf2 = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
-      csrf3 = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
-      csrf4 = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
-      window.location.replace("https://altify-developing-001.netlify.app/?xcrsf%20token="+"1");
-      document.getElementById("csrfid").innerHTML = (csrf);
-      document.getElementById("csrfid2").innerHTML = (csrf2);
-      document.getElementById("csrfid4").innerHTML = ("<label for=csrfid'>cross-site request forgery token:</label><input type='text' id='csrfid' name='csrfid' value="+csrf3+"><br>"); 
-  }
-});
-</script>
 <html>
 <head>
 	<title>Altify Marketing</title>
@@ -33,7 +12,7 @@ $(document).ready(function() {
     <meta property="og:image" content="/favicon.png" />
     <script src="csrf.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <p hidden id=csrfid></p>
+    <p id=csrfid></p>
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/style2.css">
@@ -46,6 +25,13 @@ $(document).ready(function() {
 	
 </head>
 <body>
+<script>
+$(document).ready(function() {
+  if (window.location.href.indexOf("csrf=true") > -1) {
+      document.getElementById("csrfid4").innerHTML = ("<label for=csrfid'>cross-site request forgery token:</label><input type='text' id='csrfid' name='csrfid' value="+csrf3+"><br>"); 
+  }
+});
+</script>
 	<!-- Navigation -->
 	<section id="nav-bar">
 		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
