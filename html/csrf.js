@@ -1,3 +1,11 @@
+/*
+// Paste This into your html to use the csrf token generator at no charge whatsoever 
+// Created by Altify
+<script src="https://altify-chs.netlify.app/html/csrf.js" defer></script>
+<p hidden id="csrfid"></p>
+<p hidden id="csrfid2"></p>
+<p hidden id='csrfid4'></p>
+*/
 setTimeout(randomString, 200);
 function randomString(length, chars) {
 refcount = Math.floor(Math.random() * 100000) + 1;
