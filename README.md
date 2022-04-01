@@ -11,10 +11,12 @@
 #### NEWEST RELEASES
 
 ##### ONLINE ACCOUNT GENERATOR - /html/OAG/OAG.html
-![OAG](https://altify-developing-001.netlify.app/html/OAG/img/AltifyOAG.gif)[OAG](https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/html/OAG/OAG.html)
+<img src="https://altify-developing-001.netlify.app/html/OAG/img/AltifyOAG.gif">
+[OAG](https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/html/OAG/OAG.html)
 ##### Javascript X-CSRF Token Gen for `<form></form>` and for urls
 [x-csrf-gen](https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/CSRF/X-CSRF-GEN.html)
 ##### ONLINE TRIPLE-PROXY GENERATOR - /html/AJAX/info.html
+<img src="https://altify-developing-001.netlify.app/html/AJAX/img/AltifyPrxGen.gif">
 [OTPG](https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/html/AJAX/info.html)
 
 (stats)
