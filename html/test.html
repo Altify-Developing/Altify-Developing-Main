@@ -13,10 +13,11 @@
         document.getElementById("csrfid").innerHTML = (csrf);
         setTimeout(refrsh, 1000);
         function refrsh() {
+          let preurl = document.URL;
           let updatedurl = document.URL;
-          alert(updatedurl);
+          document.getElementById("predatedurl").innerHTML = (preurl);
         }
     }
   });
 </script>
-<p>a</p>
+<p id="predatedurl"></p>
