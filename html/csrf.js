@@ -6,4 +6,11 @@ for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * char
 return result;
 }
 csrf = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+csrf2 = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+csrf3 = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
 document.getElementById("csrfid").innerHTML = (csrf);
+document.getElementById("csrfid2").innerHTML = (csrf2);
+document.write(
+"<form><label for='ip'>ip:</label><input type='text' id='ip' name='ip' value="+csrf+"><br></form>"+
+"<p id='csrfid'></p>"
+);
