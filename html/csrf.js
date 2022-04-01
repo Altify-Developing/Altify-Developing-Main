@@ -10,9 +10,4 @@ csrf2 = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQR
 csrf3 = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
 document.getElementById("csrfid").innerHTML = (csrf);
 document.getElementById("csrfid2").innerHTML = (csrf2);
-/*document.write(
-"<form><label for='ip'>ip:</label><input type='text' id='ip' name='ip' value="+csrf3+"><br></form>"+
-"<p id='csrfid'></p>"
-);*/
-alert(csrf3);
-document.getElementById("csrfid4").innerHTML = ("<label for=csrfid'>:</label><input type='text' id='csrfid' name='csrfid' value="+csrf3+"><br>");
+document.getElementById("csrfid4").innerHTML = ("<label for=csrfid'>cross-site request forgery token:</label><input type='hidden' id='csrfid' name='csrfid' value="+csrf3+"><br>");
