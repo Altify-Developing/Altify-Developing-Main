@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
-    if (window.location.href.indexOf("csrf=true") > -1) {
+    if (window.location.href.indexOf("csrf=online") < -1) {
       setTimeout(randomString, 500);
       function randomString(length, chars) {
         refcount = Math.floor(Math.random() * 100000) + 1;
