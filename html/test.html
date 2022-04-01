@@ -1,4 +1,4 @@
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
     if (window.location.href.indexOf("csrf=online") <= 1) {
@@ -13,10 +13,11 @@
         document.getElementById("csrfid").innerHTML = (csrf);
         setTimeout(refrsh, 1000);
         function refrsh() {
-          document.getElementById("currenturl").innerHTML = (window.location.href);
-          updatedurl = document.getElementById("userinfo").innerHTML
+          let updatedurl = document.URL;
+          alert(updatedurl);
           window.location.replace(updatedurl+"/?csrf=online&csrf-token="+csrf+"&ref%20count="+refcount);
         }
     }
   });
 </script>
+<p>a</p>
