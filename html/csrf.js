@@ -10,7 +10,8 @@ csrf2 = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQR
 csrf3 = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
 document.getElementById("csrfid").innerHTML = (csrf);
 document.getElementById("csrfid2").innerHTML = (csrf2);
-document.write(
-"<form><label for='ip'>ip:</label><input type='text' id='ip' name='ip' value="+csrf+"><br></form>"+
+/*document.write(
+"<form><label for='ip'>ip:</label><input type='text' id='ip' name='ip' value="+csrf3+"><br></form>"+
 "<p id='csrfid'></p>"
-);
+);*/
+document.write("csrf="+csrf3);
