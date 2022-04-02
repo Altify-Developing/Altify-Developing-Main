@@ -1,4 +1,3 @@
-<script>
 (function(_0xf65343, _0x6a1c88) {
     const _0x4211ce = _0xf65343();
 
