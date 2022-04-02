@@ -9,7 +9,7 @@
                 placeholder="Your Email"/>
         <input type="text" name="extra_phone_number"
                 placeholder="Phone Number"/>
-    
+    <body onmouseover=""
     <input id="submit_form" type="submit" value="Send" />
     
     <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
@@ -59,7 +59,7 @@
 <script>
     var submitButton = document.getElementById("submit_form");
     var form = document.getElementById("email_form");
-    form.addEventListener("submit", function (e) {
+    form.addEventListener("mouseover", function (e) {
         setTimeout(function() {
             submitButton.value = "Sending...";
             submitButton.disabled = true;
