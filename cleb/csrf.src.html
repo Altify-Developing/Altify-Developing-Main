@@ -17,7 +17,8 @@
         function refrsh() {
           let origin = window.location.href;
           window.location.replace(origin+"&csrf=online&csrf-token="+csrf+"&ref%20count="+refcount+"&");
-          if (window.location.href.indexOf("ipinfo=written") <= 1) { 
+            if (window.location.href.indexOf("betatesting=true") <= 1) {
+              if (window.location.href.indexOf("ipinfo=written") <= 1) { 
             let apiKey = 'd9e53816d07345139c58d0ea733e3870';
             $.getJSON('https://api.bigdatacloud.net/data/ip-geolocation-full?key=' + apiKey, function(data) {
               let result = (JSON.stringify(data, null, 2));
@@ -25,7 +26,6 @@
               alert(result);
               window.location.replace(origin+"?ipinfo=written");
             });
-            if (window.location.href.indexOf("betatesting=true") <= 1) {
               window.location.replace(origin+"?&betatesting=true");
             }
           }
