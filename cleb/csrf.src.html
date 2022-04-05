@@ -1,3 +1,5 @@
+<p id=csrfid></p>
+<p id=ip></p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
@@ -24,7 +26,7 @@
               let result = (JSON.stringify(data, null, 2));
               document.getElementById("ip").innerHTML = (result);
               alert(result);
-              window.location.replace(origin+"/?ipinfo=written");
+              window.location.replace(origin+"?ipinfo=written");
             });
           }
         }
