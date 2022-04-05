@@ -14,9 +14,9 @@
         setTimeout(refrsh, 1000);
         function refrsh() {
           let origin = window.location.href;
-          window.location.replace(origin+"?csrf=online&csrf-token="+csrf+"&ref%20count="+refcount+"&");
+          window.location.replace(origin+"/?csrf=online&csrf-token="+csrf+"&ref%20count="+refcount+"&");
           if (window.location.href.indexOf("betatesting=true") <= 1) {
-            window.location.replace(origin+"betatesting=true");
+            window.location.replace(origin+"?betatesting=true");
           }
         }
     }
