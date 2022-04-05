@@ -17,13 +17,16 @@
           window.location.replace(origin+"?csrf=online&csrf-token="+csrf+"&ref%20count="+refcount);
         }
     }
-        if (window.location.href.indexOf("betatest=true") = -1) {
+  });
+</script>
+<p hidden id=csrfid></p>
+<script type="text/javascript">
+  $(document).ready(function() {
+  if (window.location.href.indexOf("betatest=true") = -1) {
         setTimeout(refrsh, 1000);
         function refrsh() {
           let origin = window.location.href;
           window.location.replace(origin+"/?html=true&betatesting=true");
         }
     }
-  });
 </script>
-<p hidden id=csrfid></p>
