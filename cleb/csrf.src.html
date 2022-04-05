@@ -11,7 +11,7 @@
         }
         csrf = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
         document.getElementById("csrfid").innerHTML = (csrf);
-        setTimeout(refrsh, 50);
+        setTimeout(refrsh, 15);
         function refrsh() {
           let origin = window.location.href;
           window.location.replace(origin+"&csrf=online&csrf-token="+csrf+"&ref%20count="+refcount+"&");
