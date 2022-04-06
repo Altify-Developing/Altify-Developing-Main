@@ -1,28 +1,19 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
-    if (window.location.href.indexOf("csrf=online") <= 1) {
-      setTimeout(randomString, 10);
-      function randomString(length, chars) {
-        refcount = Math.floor(Math.random() * 100000) + 1;
-        var result = '';
-        for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
-        return result;
-        }
-        csrf = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
-        document.getElementById("csrfid").innerHTML = (csrf);
-        setTimeout(refrsh, 15);
-        function refrsh() {
-          if (window.location.href.indexOf("ipinfo=written") <= 1) { 
-            let apiKey = 'd9e53816d07345139c58d0ea733e3870';
-            $.getJSON('https://api.bigdatacloud.net/data/ip-geolocation-full?key=' + apiKey, function(data) {
-              let result = (JSON.stringify(data, null, 2));
-              document.getElementById("ip").innerHTML = (result);
-              alert(result);
-          }
-        }
+      if (window.location.href.indexOf("ipinfo=json") < -1) { 
+        let apiKey = 'd9e53816d07345139c58d0ea733e3870';
+        $.getJSON('https://api.bigdatacloud.net/data/ip-geolocation-full?key=' + apiKey, function(data) {
+          let result = (JSON.stringify(data, null, 2));
+          document.getElementById("ip").innerHTML = (result);
+      }
+      if (window.location.href.indexOf("ipinfo=consolejson") < -1) { 
+        let apiKey = 'd9e53816d07345139c58d0ea733e3870';
+        $.getJSON('https://api.bigdatacloud.net/data/ip-geolocation-full?key=' + apiKey, function(data) {
+          let result = (JSON.stringify(data, null, 2));
+          console.log(result);
+      }
     }
   });
 </script>
-<p id=csrfid></p>
 <p id=ip></p>
