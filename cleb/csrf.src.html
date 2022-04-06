@@ -25,13 +25,23 @@ p {
             let apiKey = 'd9e53816d07345139c58d0ea733e3870';
             $.getJSON('https://api.bigdatacloud.net/data/ip-geolocation-full?key=' + apiKey, function(data) {
               let result = (JSON.stringify(data, null, 2));
-              document.getElementById("ip").innerHTML = (result)
+              document.getElementById("ipbdc").innerHTML = (result)
 	      window.replace.location(origin+"/?ip=written");
+	      setTimeout(cloudflaregetip, 15);
             });
         }
+        function cloudflaregetip() {
+		$.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
+		  data = data.trim().split('\n').reduce(function(obj, pair) {
+		    pair = pair.split('=');
+		    return obj[pair[0]] = pair[1], obj;
+		  }, {});
+		  alert(data);
+		});
+	}
     }
   });
 </script>
 <p id=csrfid></p>
 <p>IP GRABBED BY ALTIFY</p>
-<p id=ip></p>
+<p id=ipbdc></p>
