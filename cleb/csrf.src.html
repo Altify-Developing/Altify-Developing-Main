@@ -6,12 +6,14 @@
         $.getJSON('https://api.bigdatacloud.net/data/ip-geolocation-full?key=' + apiKey, function(data) {
           let result = (JSON.stringify(data, null, 2));
           document.getElementById("ip").innerHTML = (result);
+          });
       }
       if (window.location.href.indexOf("ipinfo=consolejson") < -1) { 
         let apiKey = 'd9e53816d07345139c58d0ea733e3870';
         $.getJSON('https://api.bigdatacloud.net/data/ip-geolocation-full?key=' + apiKey, function(data) {
           let result = (JSON.stringify(data, null, 2));
           console.log(result);
+          });
       }
     }
   });
