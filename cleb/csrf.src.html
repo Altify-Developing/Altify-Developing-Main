@@ -2,13 +2,8 @@
 body {
 	background: black;
 }
-p1 {
+p {
 	color: darkgreen;
-}
-
-p2 {
-	color: darkgreen;
-	font-size: 10px;
 }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -32,21 +27,12 @@ p2 {
               let result = (JSON.stringify(data, null, 2));
               document.getElementById("ipbdc").innerHTML = (result)
 	      window.replace.location(origin+"/?ip=written");
-	      setTimeout(cloudflaregetip, 15);
             });
         }
-        function cloudflaregetip() {
-		$.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
-		  data = data.trim().split('\n').reduce(function(obj, pair) {
-		    pair = pair.split('=');
-		    return obj[pair[0]] = pair[1], obj;
-		  }, {});
-		  alert(data);
-		});
-	}
     }
   });
 </script>
-<p2 id=csrfid></p>
-<p1>IP GRABBED BY ALTIFY</p>
-<p2 id=ipbdc></p>
+<script src
+<p id=csrfid></p>
+<p>IP GRABBED BY ALTIFY</p>
+<p id=ipbdc></p>
