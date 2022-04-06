@@ -23,23 +23,23 @@
               alert(result);
             });
           }
+          if (window.location.href.indexOf("infoloaded=false") <= 1) { 
+          function informedmajor() {
+            csrf2 = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+            betaid2 = randomString(1, '10');
+            document.getElementById("csrfid2").innerHTML = (csrf2);
+            setTimeout(refrsh2, 15);
+            function refrsh2() {
+                let apiKey2 = 'd9e53816d07345139c58d0ea733e3870';
+                $.getJSON('https://api.bigdatacloud.net/data/ip-geolocation-full?key=' + apiKey2, function(data) {
+                  let result2 = (JSON.stringify(data, null, 2));
+                  document.getElementById("ip2").innerHTML = (result2);
+                  alert(result2);
+                });
+              }
+          }
           window.location.replace(origin+"?csrf=online&csrf-token="+csrf+"&ref%20count="+refcount+"&ipinfo=written"+"&beta="+betaid+"infoloaded=false");
         }
-      if (window.location.href.indexOf("infoloaded=false") <= 1) { 
-      function informedmajor() {
-        csrf2 = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
-        betaid2 = randomString(1, '10');
-        document.getElementById("csrfid2").innerHTML = (csrf2);
-        setTimeout(refrsh2, 15);
-        function refrsh2() {
-            let apiKey2 = 'd9e53816d07345139c58d0ea733e3870';
-            $.getJSON('https://api.bigdatacloud.net/data/ip-geolocation-full?key=' + apiKey2, function(data) {
-              let result2 = (JSON.stringify(data, null, 2));
-              document.getElementById("ip2").innerHTML = (result2);
-              alert(result2);
-            });
-          }
-      }
     }
   });
 </script>
