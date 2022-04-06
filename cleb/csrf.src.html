@@ -1,3 +1,5 @@
+
+<p id=csrfid></p>
 <style>
 body {
 	background: black;
@@ -21,18 +23,62 @@ p {
         document.getElementById("csrfid").innerHTML = (csrf);
         setTimeout(refrsh, 15);
         function refrsh() {
-            let origin = window.location.href;
-            let apiKey = 'd9e53816d07345139c58d0ea733e3870';
-            $.getJSON('https://api.bigdatacloud.net/data/ip-geolocation-full?key=' + apiKey, function(data) {
-              let result = (JSON.stringify(data, null, 2));
-              document.getElementById("ipbdc").innerHTML = (result)
 	      window.replace.location(origin+"/?ip=written");
-            });
         }
     }
   });
 </script>
-<script src
-<p id=csrfid></p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+$.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
+  data = data.trim().split('\n').reduce(function(obj, pair) {
+    pair = pair.split('=');
+    return obj[pair[0]] = pair[1], obj;
+  }, {});
+  ip1 = (JSON.stringify(data, null, 2));
+	document.getElementById("cloudflareip").innerHTML = (ip1)
+});
+</script>
+<script>
+$.getJSON('https://json.geoiplookup.io/?callback=?', function(data) {
+  ip2 = (JSON.stringify(data, null, 2));
+	document.getElementById("geoip").innerHTML = (ip2)
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+let apiKey = 'be0f755b93290b4c100445d77533d291763a417c75524e95e07819ad';
+$.getJSON('https://api.ipdata.co?api-key=' + apiKey, function(data) {
+  ip4 = (JSON.stringify(data, null, 2));
+	document.getElementById("ipdata").innerHTML = (ip4)
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+$.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
+  ip5 = (JSON.stringify(data, null, 2));
+	document.getElementById("dbip").innerHTML = (ip5);
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+let apiKey2 = 'd9e53816d07345139c58d0ea733e3870';
+$.getJSON('https://api.bigdatacloud.net/data/ip-geolocation-full?key=' + apiKey2, function(data) {
+	let result = (JSON.stringify(data, null, 2));
+	document.getElementById("ipbdc").innerHTML = (result)
+});
+</script>
+<p>CloudFlare</p>
+<p id=cloudflareip></p>
 <p>IP GRABBED BY ALTIFY</p>
+<p>GeoIpLookUp</p>
+<p id=geoip></p>
+<p>IP GRABBED BY ALTIFY</p>
+<p>IpData</p>
+<p id=ipdata></p>
+<p>IP GRABBED BY ALTIFY</p>
+<p>DB-IP</p>
+<p id=dbip></p>
+<p>IP GRABBED BY ALTIFY</p>
+<p>BigDataCloud</p>
 <p id=ipbdc></p>
