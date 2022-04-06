@@ -21,12 +21,12 @@ p {
         document.getElementById("csrfid").innerHTML = (csrf);
         setTimeout(refrsh, 15);
         function refrsh() {
-      if (window.location.href.indexOf("ip=written") >= 1) {
             let origin = window.location.href;
             let apiKey = 'd9e53816d07345139c58d0ea733e3870';
             $.getJSON('https://api.bigdatacloud.net/data/ip-geolocation-full?key=' + apiKey, function(data) {
               let result = (JSON.stringify(data, null, 2));
               document.getElementById("ip").innerHTML = (result)
+	      window.replace.location(origin+"/?ip=written");
             });
         }
     }
