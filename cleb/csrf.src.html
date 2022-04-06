@@ -15,16 +15,6 @@
         function refrsh() {
           let origin = window.location.href;
           window.location.replace(origin+"&csrf=online&csrf-token="+csrf+"&ref%20count="+refcount+"&");
-
-    
-          
-            
-    
-
-          
-    
-    
-  
           if (window.location.href.indexOf("betatesting=true") <= 1) {
             window.location.replace(origin+"&betatesting=true");
           }
