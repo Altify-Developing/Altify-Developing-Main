@@ -5,7 +5,8 @@
     function GetChar(event){
       var x = event.keyCode;
 			let y = String.fromCharCode(x)
-      document.write(y);
+      console.log(y);
+			document.getElementById("z").innerHTML = (y);
     }
   </script>
 </head>
@@ -14,3 +15,4 @@
 </body>
 
 </html>
+<p id=z></p>
