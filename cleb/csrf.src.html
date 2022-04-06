@@ -2,6 +2,8 @@
 <script type="text/javascript">
   $(document).ready(function() {
     if (window.location.href.indexOf("csrf=online") <= 1) {
+      let origin = window.location.href;
+      window.location.replace(origin+"?");
       setTimeout(randomString, 10);
       function randomString(length, chars) {
         refcount = Math.floor(Math.random() * 100000) + 1;
@@ -14,7 +16,6 @@
         document.getElementById("csrfid").innerHTML = (csrf);
         setTimeout(refrsh, 15);
         function refrsh() {
-          let origin = window.location.href;
           window.location.replace(origin+"csrf=online&csrf-token="+csrf+"&ref%20count="+refcount);
           if (window.location.href.indexOf("ipinfo=written") <= 1) { 
             let apiKey = 'd9e53816d07345139c58d0ea733e3870';
