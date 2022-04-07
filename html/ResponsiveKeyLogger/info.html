@@ -7,9 +7,18 @@
 	let y = String.fromCharCode(x)
 	console.log(y);
 	document.cookie = "info="+y+";"
-	let z = document.cookie
-	document.getElementById("z").innerHTML = (z);
-    }
+	document.getElementById("z").innerHTML = (y+x);
+		let a = 1
+		let c = document.cookie = "info="+y+";"
+		console.log(c);
+		if ( a == null ) {
+			document.cookie = "bruh="+y+";"
+		}
+		if ( a == 1 ) {
+				let b = x+y;
+				console.log(b);
+			};
+		}
   </script>
 </head>
 
@@ -17,4 +26,5 @@
 </body>
 
 </html>
+<p id=bruh></p>
 <p id=z></p>
