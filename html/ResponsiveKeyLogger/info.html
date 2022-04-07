@@ -6,7 +6,9 @@
 	var x = event.keyCode;
 	let y = String.fromCharCode(x)
 	console.log(y);
-	document.getElementById("z").innerHTML = (y);
+	document.cookie = "info="+y+";"
+	let z = document.cookie
+	document.getElementById("z").innerHTML = (z);
     }
   </script>
 </head>
