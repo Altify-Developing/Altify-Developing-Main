@@ -28,8 +28,9 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
+
     - name: Create File
-      run: finnp/create-file-action@1.0.0
+      uses: finnp/create-file-action@1.0.0
       env:
         FILE_NAME: "dir/fileName.txt"
         FILE_DATA: "file content"
