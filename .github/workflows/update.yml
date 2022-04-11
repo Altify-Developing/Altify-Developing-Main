@@ -1,25 +1,20 @@
-name: Publish
-
-on:
-  push:
-    tags:
-      - '*'
-
+name: Resources
+on: repository_dispatch
 jobs:
-  build:
-    name: Publish binaries
-    runs-on: ubuntu-latest
+    resources:
+        name: Update resources
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v1
 
-    steps:
-    - uses: actions/checkout@v2
-    - name: Build
-      run: cargo build --release
-    - name: Upload binaries to release
-      uses: svenstaro/upload-release-action@v2
-      with:
-        repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: target/release/mything
-        asset_name: mything
-        tag: ${{ github.ref }}
-        overwrite: true
-        body: "This is my release text"
+            - uses: actions/setup-node@v1
+
+            - name: Fetch resources
+              run: ./scripts/fetch-resources.sh
+
+            - name: Update resources
+              uses: test-room-7/action-update-file@v1
+              with:
+                  file-path: /.github/workflows/test.txt
+                  commit-msg: Update resources
+                  github-token: ${{ secrets.GITHUB_TOKEN }}
