@@ -1,23 +1,39 @@
-name: Resources
-on: repository_dispatch
+# This is a basic workflow to help you get started with Actions
+
+name: Build GH Pages
+
+# Controls when the action will run. Triggers the workflow on push or pull request 
+# events but only for the master branch
+on:
+  push:
+    branches: ['master']
+    paths: ['build/*.json', 'build/build.php', 'build/extensions/*.php', 'build/*.txt']
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  # This workflow contains a single job called "build"
   build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
-    runs-on: macos-latest
-
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: python ./.github/workflows/todo_List.py
-    - name: switching from HTTPS to SSH
-      run: git remote set-url origin ${{ secrets.ssh }}
-    - name: check for changes
-      run: git status
-    - name: stage changed files
-      run: git add .
-    - name: commit changed files
-      run: git commit -m "Auto updating TODO.txt"
-    - name: fetch from master
-      run: git fetch origin master
-    - name: push code to master
-      run: git push origin HEAD:master
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    # Runs commands using the runners shell
+    - name: Run the build php script
+      run: |
+        cd build
+        php build.php  # This file reads a few json files and then creates a set of html files in the doc folder
+        cd ../
+    - name: Commit files  # transfer the new html files back into the repository
+      run: |
+        git config --local user.name  ${{ github.actor }}
+        git add ./docs
+        git commit -m "Updating the repository GitHub html pages in the docs folder"
+    - name: Push changes  # push the output folder to your repo
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: true
