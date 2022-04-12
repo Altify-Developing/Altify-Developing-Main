@@ -5,16 +5,6 @@
 	"content right": "",
 	"displaycode": true	
 	},
-	"example-subpage-02": {
-		"parent": "template-home",
-		"displayName": "An Example List",
-		"class": "list",
-		"file": "list-example.json",
-		"title": "Another example of a simple sub page",
-		"content": "<p>This example is displaying a list of four entries, displayed four times, demonstrating all four available display formats. An optional table of contents providing links to each of the defined groups has also been included.</p><p>It is an example of a special page that can be added to the [pages.json|pages.json.html] file. To change the objects displayed in this list, modify the <b>list-example.json</b> file found in the <b>build</b> folder in your Github Repository. Further information on types and formats of the lists displayed can be found under [Extensions|lists.html] in the Documentation section of this site.</p>\r\n\r\n[##]",		
-	  "content right": "",
-    "displaycode": true
-		},
 	"example-sub-subpage-01": {
 		"parent": "example-subpage-01",
 		"aliases": "results",
