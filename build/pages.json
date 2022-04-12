@@ -5,17 +5,6 @@
 	"content right": "",
 	"displaycode": true	
 	},
-	"panel-truck-viewer": {
-		"parent": "extensions",
-		"displayName": "Panel Truck Viewer",
-		"aliases": "Panel Truck viewer",
-		"class": "paneltruck",
-		"file": "https://gist.githubusercontent.com/garrettdashnelson/73b32f40cccbe30239838dd3bd63988a/raw/7d4f7efc52ee0bb0929110a4438c37d8c98f0aa5/test-screenplay.json",
-		"title": "Simple Site - The <b>Panel-Truck (IIIF) Extension</b>",
-		"content": "<p>This extension makes use of [IIIF|https:\/\/iiif.io] and the [panel-truck (v0.1)|https:\/\/geoservices.leventhalmap.org\/cartinal\/documentation\/panel-truck.html] viewer, created by the <a href=\"https:\/\/leventhalmap.org\">Leventhal Map and Education Center<\/a> at the Boston Public Library. The panel-truck viewer is a web UI tool which allows users to present interactive storylines using images and maps. It is an example of a special page that can be added to the [pages.json|pages.json.html] file.<\/p>\r\n\r\n<h3>The Example<\/h3>\r\n[##]\r\n<br\/>\r\n<h3>Summary<\/h3>\r\n<div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Extension Variables<\/h4><p>For this extension to work the <b>class<\/b> variable needs to be set to <b>paneltruck<\/b> and the <b>file<\/b> variable needs to give the name of the additional json file including the panel-truck script details as shown below.<\/p><\/div>\r\n\r\n<p>The details included in the <b>content<\/b> and <b>content right<\/b> variable will be presented as [previously described|pages.json.html], however the data included in the named file, in this case <b>test-screenplay.json<\/b> will be processed and displayed in the panel-truck viewer.<\/p>\r\n\r\n<h3>Panel Truck  JSON file<\/h3>\r\n\r\n<p>As with the other JSON files the panel-truck data needs to be organised in a series of JSON objects, an example of which is provided below, for a live presentation of the example of code please see the [test-screenplay.json|https:\/\/gist.githubusercontent.com\/garrettdashnelson\/73b32f40cccbe30239838dd3bd63988a\/raw\/7d4f7efc52ee0bb0929110a4438c37d8c98f0aa5\/test-screenplay.json] file.<\/p>\r\n\r\n<p>The required and optional json variables have all been described as part of the standard [panel-truck documentation|https:\/\/geoservices.leventhalmap.org\/cartinal\/documentation\/panel-truck.html#creating-a-screenplay], but for any more information please [get in touch|https:\/\/www.leventhalmap.org\/about\/people\/garrett-nelson\/] with the original project.<\/p>",
-		"content right": "",
-		"displaycode": true		
-	},
 	"curtain-viewer": {
 		"parent": "extensions",
 		"displayName": "Curtain Viewer",
