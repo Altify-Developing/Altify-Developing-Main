@@ -1,18 +1,7 @@
----
-version: 1
-update_configs:
-  - package_manager: 'javascript'
-    directory: '/'
-    update_schedule: 'daily'
-    commit_message:
-      prefix: 'fix'
-      prefix_development: 'chore'
-      include_scope: true
-    automerged_updates:
-      - match:
-          dependency_type: 'development'
-          update_type: 'all'
-      - match:
-          dependency_type: 'production'
-          update_type: 'semver:patch'
-    version_requirement_updates: widen_ranges
+version: 2
+updates:
+  - package-ecosystem: "github-actions" # See documentation for possible values
+    directory: "/.github/workflows" # Location of package manifests
+    schedule:
+      interval: "daily"
+      versioning-strategy: increase-if-necessary
