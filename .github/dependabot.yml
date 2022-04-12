@@ -4,4 +4,3 @@ updates:
     directory: "/.github/workflows" # Location of package manifests
     schedule:
       interval: "daily"
-      versioning-strategy: increase-if-necessary
