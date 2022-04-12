@@ -1,0 +1,214 @@
+<?php
+
+// Last update 20 July 2021
+
+$extensionList["dynamic-openseadragon"] = "extensionDynamicOpenseadragon";
+
+// Expecting GET Variables in the form of
+/* Array
+(
+    [root] => /md-dev/
+    [display] => home
+    [extra] => 1234 (search term)
+)
+* converted into the following GLOBALS:
+
+$rootDisplayURL = $_GET["root"].$_GET["display"];
+$getExtra = explode("/", $_GET["extra"]);
+
+Uses Mirador Version 3
+
+* a config json file can be used to set:
+
+ 	"search-uri": "REQUIRED: The full search URI which only requires a search term to be added to the end, such as https://example.com/api.php?search=",
+	"limit": 50, // optional extra limit number that can be added to the search uri if needed
+
+The search uri needs to be set up to return a json document including a simple list of IIIF info.json links for the relevant images
+* 
+		"limit": "numerical value of any liimit applied,
+		"limited": "true is the search results are limited,
+		"comment": "short comment that fits into the help text", // Results of "COMMENT TEXT" search for:"
+		"total": "total number of matches,
+		"list": a simple list of image info.json URLs.
+		 
+		info.json list like:
+		"https://NAMESPACE/iiif-server/IMAGEPATHORPID/info.json",
+		"https://NAMESPACE/iiif-server/ANOTHERIMAGEPATHORPID/info.json"
+		
+*/
+
+function extensionDynamicOpenseadragon ($d, $pd)
+  {
+	global $extraHTML, $navExtra, $rootDisplayURL, $getExtra;
+	
+	$workspace = false;
+  $mans = '[]';
+	$wo = '';
+	$codeHTML = "";
+	$codecaption = "";
+	$cats = "";
+	$note = "		<div class=\"container-fluid\"><div class=\"row\"><div class=\"col-12\">";
+	
+	$pd["navExtra"] = '
+	<ul class="navbar-nav justify-content-end w-100" style="padding-right:10px;"><li>
+		'.OSD_buildSearchForm ("submit").'</li></ul>';
+	
+	$limit = 25;
+	$force = false;
+	$tileSources = "[]";
+	$displaying = 0;
+	
+	if (isset($d["file"]) and file_exists($d["file"]))
+		{$config = getRemoteJsonDetails($d["file"], false, true);
+		 if (isset($config["limit"]) and $config["limit"])
+			{$limit = intval($config["limit"]);}}
+	else
+		{$config = array("search-uri" => "");}
+  	 
+  if ($getExtra[0] and $config["search-uri"])
+		{
+		if (isset($getExtra[1]) and intval($getExtra[1]) > 0)
+			{$limit = intval($getExtra[1]);}
+				
+		$extraTerms = "&limit=$limit";	
+		$dets = OSD_getExternalDetails($getExtra[0], $config["search-uri"], $extraTerms);
+		$tileSources = "[ 
+\t\t\t\"".implode("\",\n\t\t\t\"", $dets["list"])."\"
+]";		
+		if ($dets["limited"])
+			{$rows = floor(sqrt($dets["limit"]));
+			 $displaying = $dets["limit"];}
+		else
+			{$rows = floor(sqrt($dets["total"]));
+			 $displaying = $dets["total"];}
+			 
+		if ($displaying > 20)
+			{$exnote = " <span style=\"color: #0d6efd;\">Please note it can take a few minutes for larger sets of images to appear in the viewer.</span>";}
+		else
+			{$exnote = "";}
+			
+		// Just added in as most screens are landscape
+		if ($rows > 4)
+			{$rows = $rows - 1;}
+		
+		$note .= "Results of ".$dets["comment"]." search for: <b>".$getExtra[0]."</b>";
+		if ($dets["limited"])
+			{$note .= " - Please note your search has been limited, attempting to display <b>$dets[limit]</b> of <b>$dets[total]</b> images.$exnote</div></div>";}
+		else if (!$dets["total"])
+			{$note .= "</div></div>".OSD_buildSearchForm ("submit-extra", "Sorry, no results have been found for your search, please try again.");}
+		else
+			{$note .= " - Attempting to display <b>$dets[total]</b> images found.$exnote</div></div>";}
+		}
+	else
+		{$note .= "</div></div>".OSD_buildSearchForm ("submit-extra", "Below is an empty instance of <a href=\"https://openseadragon.github.io/\">OpenSeadragon</a> - images can be loaded in automatically by running a simple search.");
+		 $cats = '"catalog": []';
+		 $rows = 1;}
+		 
+	if (isset($config["viewer"]) and $config["viewer"] == "grid")
+		{$osdMode = "	
+		collectionMode:       true,
+		collectionRows:       $rows, 
+		collectionTileSize:   1024,
+		collectionTileMargin: 256,";}
+	else
+		{$osdMode = "
+		sequenceMode: true,
+		showReferenceStrip: true,";}
+
+	$pd["extra_css"] .= ".fixed-top {z-index:1111;}";
+	
+	$pd["extra_js_scripts"][] = "https://cdn.jsdelivr.net/npm/openseadragon@2.4.2/build/openseadragon/openseadragon.min.js\" integrity=\"sha256-NMxPj6Qf1CWCzNQfKoFU8Jx18ToY4OWgnUO1cJWTWuw=\" crossorigin=\"anonymous";
+
+	ob_start();			
+	echo <<<END
+	
+	var submits = document.getElementsByClassName('searchsubmit');
+	for (var i=0, len=submits.length|0; i<len; i=i+1|0) {
+	  submits[i].addEventListener("click", formatSearchGet);}
+	
+	function formatSearchGet(e) {
+		e.preventDefault();
+		const svalue = document.getElementById(e.target.id+"-search");
+		var vars = [];
+		var pname = window.location.pathname
+		var parts = pname.replace(/([\/])([^\/]+)/gi, function(m,key,value) {
+			vars.push(value);});
+		var new_url = "$rootDisplayURL" + "/" + svalue.value;
+		//alert(new_url);
+		window.location.href = new_url;
+		}
+
+	var myOSDInstance = OpenSeadragon({
+		id: "openseadragonviewerdiv",
+		prefixUrl:     "https://openseadragon.github.io/openseadragon/images/",
+		imageLoaderLimit: 100,
+		$osdMode
+		tileSources:   $tileSources 
+    });
+END;
+	$pd["extra_js"] .= ob_get_contents();
+	ob_end_clean(); // Don't send output to client
+	
+	if ($note)
+		{$note = '<div class="alert alert-warning" role="alert">'.$note.'</div>';}
+	
+	$d = positionExtraContent ($d, '	
+		'.$note.'</div>
+		<div class="row justify-content-center flex-grow-1">
+			<div class="h-100" style="position:relative;min-height:400px;" id="openseadragonviewerdiv">
+			</div>
+		</div>'.$codeHTML);
+
+  return (array("d" => $d, "pd" => $pd));
+  }
+			
+function OSD_buildSearchForm ($id="submit", $comment=false)
+	{
+	if ($comment)
+		{$comment = "<div class=\"col-lg-8 col-md-6 col-sm-12  col-xs-12\">".
+			"$comment</div>";
+		 $dclass = "col-lg-4 col-md-6 col-sm-12  col-xs-12";}
+	else
+		{$dclass = "col-12";}
+			
+	ob_start();
+	echo <<<END
+			<div class="row">
+				$comment
+				<div class="$dclass">
+					<form class="d-flex float-end">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="'.$id.'-search" name="'.$id.'-search">
+						<button class="btn btn-outline-success searchsubmit" id="'.$id.'">Search</button>
+					</form>
+				</div>
+			</div>
+
+		
+END;
+	$searchform = ob_get_contents();
+	ob_end_clean(); // Don't send output to client
+			
+	return ($searchform);
+	}
+
+function OSD_getsslJSONfile ($uri, $decode=true)
+	{
+	$arrContextOptions=array(
+    "ssl"=>array(
+        "verify_peer"=>false,
+        "verify_peer_name"=>false,),);  
+
+	$response = file_get_contents($uri, false, stream_context_create($arrContextOptions));
+	
+	if ($decode)
+		{return (json_decode($response, true));}
+	else
+		{return ($response);}
+	}
+	
+function OSD_getExternalDetails($searchterm, $uri="https://scientific.ng-london.org.uk/tools/md/api.php?search=", $extra="")
+	{$uri = $uri.$searchterm.$extra;
+	 $arr = OSD_getsslJSONfile($uri);
+	 return($arr);}
+
+?>

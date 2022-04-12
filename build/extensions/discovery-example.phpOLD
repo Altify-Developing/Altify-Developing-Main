@@ -1,0 +1,214 @@
+<?php
+
+// Last update 7 Sept 2021
+
+$extensionList["discovery-example"] = "extensionDiscoveryExample";
+	
+function autoChildViewerText ($name, $which=false)
+	{
+	$w1 = false;
+	
+	if (in_array(strtolower($which), array("osd", "openseadragon")))
+		{$w1 = "specific images (IIIF info.json files)";
+		 $w2 = "OpenSeaDragon";}
+	else if (in_array(strtolower($which), array("mirador")))
+		{$w1 = "IIIF manifests";
+		 $w2 = "Mirador";}
+	
+	if ($w1)
+		{$out = array("$name Example ($w2)", "<p>This system has been designed to demonstrate a working implementation of a simple IIIF discovery system, displaying images in relation to paintings within the $name Collection. This page allows users to pull select $w1 based on a simple text search and add them into $w2.</p>");}
+	else
+		{$out = array("$name IIIF Viewer", "<p>This system has been designed to demonstrate a working implementation of a simple IIIF discovery system, displaying images in relation to paintings within the $name Collection. This page allows users to pull select IIIF resources based on a simple text search and add them into either OpenSeaDragon or Mirador V3.</p>");}
+		
+	return($out);	
+	}
+	
+function createViewerData($name, $parent, $uri, $viewer=false)
+	{
+	$m = autoChildViewerText ($name, $viewer);
+	$npage = array(
+			"title" => "",
+			"class" => "dynamic-iiif",
+			"parent" => $parent,
+			"file" => array (
+				"search-uri" => $uri,
+				"limit" => 25, 
+				"viewer" => $viewer,
+				"layout" => "grid"),
+			"displayName" => $m[0],
+			"content" => $m[1],
+			"content right" => "",
+			"fluid" => 1,
+			"displaycode" => false		
+			);	
+			
+	return ($npage);
+	}
+	
+function extensionDiscoveryExample ($d, $pd, $addPages=false)
+  {
+	global $extraHTML, $navExtra, $rootDisplayURL, $getExtra, $rootURL;
+	
+	if (isset($d["file"]) and is_array($d["file"]))
+		{$config = $d["file"];}
+	else if (isset($d["file"]) and file_exists($d["file"]))
+		{$config = getRemoteJsonDetails($d["file"], false, true);}
+	else
+		{$config = array();}
+		
+	if ($addPages)
+		{
+		$xpages["viewer-$config[tag]"] = createViewerData(
+			$d["displayName"], $pd, $config["ep"]);
+		$xpages["viewer-$config[tag]-m"] = createViewerData(
+			$d["displayName"], $pd, $config["ep"], "mirador");
+		$xpages["viewer-$config[tag]-osd"] = createViewerData(
+			$d["displayName"], $pd, $config["ep"], "openseadragon");
+					
+	// Just to add the original aliases for the ng viewers
+	if ($config["tag"] == "ng")
+		{$xpages["viewer-m"] = $xpages["viewer-$config[tag]-m"];
+		 $xpages["viewer-m"]["copy"] = true;
+		 $xpages["viewer-osd"] = $xpages["viewer-$config[tag]-osd"];
+		 $xpages["viewer-osd"]["copy"] = true;}
+	
+		return ($xpages);
+		exit();	
+		}
+		
+	if (is_array($config["logo"]))
+		{
+		$p = "(s)";
+		$x1 = "style=\"text-align:center;\"";
+		$x2 = "</div><br/>";
+		$x3 = "";
+		$ims = "";
+		foreach ($config["logo"] as $lk => $lim)
+			{$ims .= "[<img class=\"float-sm\" src=\"$lim\" style=\"".
+				"margin:2px 10px 0px 0px !important; width: 128px;\" alt=\"".
+				$config["link"][$lk]."\">|".$config["link"][$lk]."]";}
+		$epbuttons = "";
+		foreach ($config["ep"] as $ek => $url)
+			{$epbuttons .= "<a class=\"btn btn-outline-secondary nav-button\" ".
+				" style=\"margin-bottom: 10px;\" id=\"endpoint-link-$ek\" role=\"button\" ".
+				"href=\"$url\">$url</a>";}				
+		$epexample = "";
+		}
+	else
+		{
+		$p = "";
+		$x1 = "";
+		$x2 = "";
+		$x3 = "</div>";
+		$ims = "[<img class=\"float-start\" src=\"$config[logo]\" style=\"".
+			"margin:2px 10px 0px 0px !important; width: 150px;\" alt=\"".
+			"The $d[displayName]\">|$config[link]]";
+		$epbuttons = "<a class=\"btn btn-outline-secondary nav-button\" ".
+			"id=\"endpoint-link\" role=\"button\" ".
+			"href=\"$config[ep]\">$config[ep]</a>";
+		$epexample = "<br/>
+		<figure class=\"figure\">
+			<pre class=\"json-renderer\" style=\"overflow-y: auto;overflow-x: auto; border: 2px solid black;padding: 10px;max-height:400px;\">
+				$config[ep]
+			</pre>
+			<figcaption class=\"figure-caption\">
+				Default response from the $d[displayName] Simple IIIF Discovery end-point.
+			</figcaption>
+		</figure>	";
+		}
+	
+	$sf = buildSearchForm ("", 25, 1, false);
+	
+	ob_start();			
+	echo <<<END
+	
+	var submits = document.getElementsByClassName('searchsubmit');
+	for (var i=0, len=submits.length|0; i<len; i=i+1|0) {
+	  submits[i].addEventListener("click", formatSearchGet);}
+	
+	function formatSearchGet(e) {
+		e.preventDefault();
+		const svalue = document.getElementById(e.target.id+"-search");		
+		const lvalue = document.getElementById(e.target.id+"-limit");
+		
+		if (lvalue.value != "...") {var lstr = "/" + lvalue.value;}
+		else {var lstr = "";}
+		
+		const pvalue = document.getElementById(e.target.id+"-page");
+		const pno = parseInt(pvalue.value)		
+		if (pno) {var pstr = "/" + pno;}
+		else {var pstr = "";}
+		
+		const vvalue = $('#viewer input:radio:checked').val();
+		var vstr = "/" + vvalue;
+		
+		var vars = [];
+		var pname = window.location.pathname
+		var parts = pname.replace(/([\/])([^\/]+)/gi, function(m,key,value) {
+		vars.push(value);});
+		var new_url = "$rootURL" + "viewer-$config[tag]" + "/" + svalue.value + lstr + pstr + vstr;
+
+		window.location.href = new_url;
+		}
+END;
+	$pd["extra_js"] .= ob_get_contents();
+	ob_end_clean(); // Don't send output to client
+		
+	ob_start();			
+		echo <<<END
+		<div class="clearfix" $x1>
+			$ims
+			$x2
+			<p>$d[content]</p>
+		$x3
+		
+		<h5>Search and display the Collection$p:</h5>
+		<!--- <div class="clearfix w-100">
+			<a style="color: #3b5998;" href="./viewer-$config[tag]-osd" role="button" title="OpenSeaDragon">
+				<img class="float-start" src="./graphics/osd_logo.png" style="margin:0px 10px 0px 10px !important; width: 64px;" alt="OpenSeadragon Example">
+			</a>
+			<a style="color: #3b5998;" href="./viewer-$config[tag]-m" role="button"  title="Mirdaor">
+				<img class="float-start" src="./graphics/Mirador%20Logo%20Black.png" style="margin:0px 10px 0px 10px !important; width: 64px;" alt="Project Mirador Example">
+			</a>
+		</div> --->
+		
+		
+		<div class="alert alert-warning" role="alert" style="padding:0px 0.5rem 0px 0.5rem;">
+			$sf
+		</div>
+			
+			
+		
+		
+END;
+		$d["content"] = ob_get_contents();
+		ob_end_clean(); // Don't send output to client			 
+		
+			ob_start();			
+		echo <<<END
+		<figure class="figure">
+			[##]
+			<figcaption class="figure-caption" style="text-align:center;padding-top:5px;">
+				Example images from the $d[displayName] Simple IIIF Discovery end-point.
+			</figcaption>
+		</figure>
+		<h5>Simple IIIF Discovery End-Point$p</h5>
+		$epbuttons
+		$epexample
+END;
+		$d["content right"] = ob_get_contents();
+		ob_end_clean(); // Don't send output to client			 
+	
+	$d["hideIncluded"] = true;
+	$d["file"] = $config["list"];
+	$d["osd-viewer"] = "grid";
+	$d["osd-background"] = "white";
+		
+	$osd = extensionopenseadragon ($d, $pd);
+	$d = $osd["d"];
+	$pd = $osd["pd"];
+
+  return (array("d" => $d, "pd" => $pd));
+  }
+  
+?>
