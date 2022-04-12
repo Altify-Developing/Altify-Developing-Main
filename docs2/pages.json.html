@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Simple system for creating a set of web-pages to support your GitHub repository from a few simple json files." />
+		<meta name="keywords" content="The National Gallery, London, National Gallery London, Scientific, Research, Heritage, Culture, JSON, PHP, Javascript, Github Pages, Dissemination, VRE, IIIF, Mermaid, Timeline, Mirador " />
+    <meta name="author" content="Joseph Padfield| joseph.padfield@ng-london.org.uk |National Gallery | London UK | website@ng-london.org.uk |www.nationalgallery.org.uk" />
+    <meta name="image" content="" />
+    <link rel="icon" href="graphics/favicon.ico">
+    <title>NG Simple Site - pages.json</title>
+    
+	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css" integrity="sha256-BNdodQbWHpU3HT8xGhkEusT4ch4HEjvwzcbDcVuHR+E=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/jquery.json-viewer@1.4.0/json-viewer/jquery.json-viewer.css" integrity="sha256-rXfxviikI1RGZM3px6piq9ZL0YZuO5ETcO8+toY+DDY=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/highlight.js@11.2.0/styles/github.css" integrity="sha256-Oppd74ucMR5a5Dq96FxjEzGF7tTw2fZ/6ksAqDCM8GY=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+    <style>
+    
+    </style>
+    
+  </head>
+
+<body onload="onLoad();">
+	<div id="wrap" class="container h-100">
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container-fluid">
+      <button 
+				class="navbar-toggler navbar-toggler-right" 
+				type="button" 
+				data-bs-toggle="collapse" 
+				data-bs-target="#navbarsExampleDefault" 
+				aria-controls="navbarsExampleDefault" 
+				aria-expanded="false" 
+				aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>    
+      <a class="navbar-brand"  href="./">
+  		<img id="page-logo" class="logo" title="Logo" src="graphics/ng-logo-white-100x40.png" 
+				style="" alt="The National Gallery"/>
+		  </a>
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault"><ul class="navbar-nav">
+
+<!-- Start Normal Item 1 -->
+<li class="nav-item "><a class="nav-link" style="white-space:nowrap;" href="home.html">Home</a>
+</li>
+<!-- End Normal Item 1 -->
+</ul><span class="navbar-text w-100">			<a href="https://github.com/jpadfield/simple-site/" class="float-end">
+				<img id="ex-logo1" class="logo" title="github" src="graphics/github%20logo%20white.png" 
+				style="" alt="GitHub Jpadfield Simple-site"/>
+		  </a></span></div>
+</div>
+    </nav>
+		
+		<div class="row " style="padding-top:80px; padding-bottom:40px; min-height:100%;">				
+			<div class="col-12 col-md-12">  
+				<div class="h-100 d-flex flex-column"> 
+					
+					
+<!-- Start SimpleBDGrid -->
+<div class="p-2 bg-light border rounded-3 jumbotron">
+      <div class="container-fluid py-2"><h3 style="margin-bottom:0px;">Simple Site - The <b>pages.json</b> file</h3></div></div><div class="container-fluid "><div class="row h-100"><div class="col-12">							
+								<div class="h-100 d-flex flex-column">
+									<div class="alert alert-light" role="alert" style="padding:0.5rem 0.5rem 0px 0.5rem;border-color:#dee2e6;">
+		<nav  style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+			<ol class="breadcrumb" style="margin-bottom:0.5rem;">
+				<li class="breadcrumb-item"><a href="json.html">Json</a></li><li class="breadcrumb-item active" aria-current="page">Pages.json</li>
+			</ol>
+		</nav>
+		</div>
+						</div></div><!--/span--></div></div><!--/row-->    <div class="container-fluid "><div class="row h-100"><div class="col-12 flex-grow-1">							
+								<div class="h-100 d-flex flex-column">
+							<p><b>As noted on the main <a href='JSON.html'>JSON</a> page you will need to ensure that your pages.json file is valid JSON, please ensure all double quotes <i>in your added text</i> have a <i>&#47;</i> in front, like this <i>&#47;&#34;</i>, also please ensure that you text is all on one line, with no <i>newlines</i>.</b></p>
+
+<p>The <b>pages.json</b> file is used to define the actual content for your web pages. The file is made up of one or more page objects, an example of which is shown below. The meaning of these fields are relatively straightforward, as described below, though some additional notes are provided below, for an example of real code please see this example <a href='https://github.com/jpadfield/simple-site/blob/master/build/pages.json'>pages.json</a> file.</p>
+
+<figure>
+		<pre style="overflow: hidden;border: 2px solid black;padding: 10px;">
+<code>{
+"<b>pageName</b>": {
+  "<b>title</b>": "Simple text title",
+  "<b>content</b>": "Main page content, this can be added as simple text of can include more complex html as required.",
+  "<b>content right</b>": "Optional second column of text if required.",
+  "<b>parent</b>": "Optional variable only used to indicate a relationship between a sub-page and a parent page - the pageName of the page, or sub-page above this one",
+  "<b>class</b>": "Optional variable only used for extension pages, normally leave blank or omit completely",
+  "<b>file</b>": "Optional variable only used for extension pages, normally leave blank or omit completely",
+  "<b>aliases</b>": "Optional comma separated list of other names for this page. This can be used to ensure consistency of old links. If the page names need to be changed the old names can be listed here and special stub pages will be created to redirect old URLs to the new page names.",
+  "<b>displayName</b>": "Optional- Can be used to substitute a more display friendly name for a given page in all links and dropdowns, for example one could use 'Some great examples' as the displayName for a page simply called 'examples'.",
+  "<b>displaycode</b>": "Optional - true or false (default) value - this option is used for documentation purposes to include the JSON code used to create a page at the bottom of the page."  
+  },
+"<b>AnotherPageName</b>": {
+  "<b>title</b>": "Another simple text title",
+  "<b>content</b>": "Unique page content, this will be different for each page.",
+  "<b>content right</b>": ""
+  }
+}
+</code></pre><figcaption class="figure-caption">Simplified example of two page objects, with the variable names highlighted in bold.</figcaption>
+</figure>
+<p>Each of the values within an object can include simple text information or more complex html, however you must ensure that you follow guidelines included of the main <a href='JSON.html'>JSON</a> page. The parent field allows you to nest pages under other pages, starting with one of the main pages, but you can then nest sub-sub-pages under sub-pages and so on if really required.</p>
+
+<p>The <b>parent</b> field allows you to nest pages under other pages, starting with one of the main pages, but you can then nest sub-sub-pages under sub-pages and so on if really required. The <b>class</b> and <b>file</b> fields are only used for extensions to the simple-site system and more information can be found <a href='extensions.html'>here</a>.</p>
+
+<p>In addition to standard html coding some additional options have been added to make life easier. These do not need to be used if not needed.</p>
+<ul>
+	<li><b>Adding footnotes</b>: Locate footnotes references in your text using <b>&#91;&#64;&#64;Followed by the text of the actual footnote&#93;</b>, see the example below. These will all be automatically processed so that all of the footnotes added to the <b>content</b> or <b>content right</b> are numbered correctly and clickable.</li>
+	<li>Adding links: Links can be added to any word or phrase simply by enclosing them in square brackets, separated with a pipe character: <b>&#91;Display text|https://full.url.com&#93;</b></li>
+</ul>
+
+<h3>Breadcrumb navigation for sub-pages</h3>
+
+<p>Sub-pages are not given there own tabs, as the main pages are, they are nested in dropdown menus below their parent main page. To make it easier to navigate back up a series of nested sub pages an additional <a href='https://en.wikipedia.org/wiki/Breadcrumb_navigation'>breadcrumb navigation bar</a> is automatically added to all sub-pages, as shown below.</p>
+
+<figure class="figure"><img src="graphics/breadcrumb-example.png" class="figure-img img-fluid rounded" alt="An example of the extra breadcrumb navigation used within sub-pages."><figcaption class="figure-caption">An example of the extra breadcrumb navigation used within sub-pages.</figcaption></figure>
+
+<h3>Included pages navigation for sub-pages</h3>
+
+<p>Also to help navigation to nested sub pages an additional list of links in a <b>Include Pages</b> is automatically added for all sub-pages, as shown below.</p>
+
+<figure class="figure"><img src="graphics/children-example.png" class="figure-img img-fluid rounded" alt="An example of the extra navigation links provided to access any related sub-pages."><figcaption class="figure-caption">An example of the extra navigation links provided to access any related sub-pages.</figcaption></figure>
+
+<h3>Example page objects</h3>
+<p>This page object was used to define the content of the <a href='example.html'>Example</a>, one of the actual pages within this demonstration site.</p>
+
+<figure>
+		<pre style="overflow: hidden;border: 2px solid black;padding: 10px;">
+<code>{
+"example": {
+  "title": "Simple Site Example",
+  "content": "&lt;h3&gt;An additional local title can be added&lt;/h3&gt;&lt;br/&gt;&lt;p&gt;This is an example of a small set of related html pages created automatically based on a set of three JSON&#91;&#64;&#64;https://www.json.org&#93; files. This example includes simple text, some basic html code and even some additional Bootstrap options. Please note you can simply just use text, the more complex options are just here as an example.&lt;/p&gt;&lt;div style=\"text-align:center;\"&gt;&lt;a class=\"btn btn-outline-primary nav-button\" style=\"left:80px;\" id=\"nav-models\" role=\"button\" href=\"./\"&gt;Example Button&lt;/a&gt;&lt;/div&gt;&lt;br/&gt;&lt;p&gt;Button or images or any html markup can be added in to form the bulk of the content&#91;&#64;&#64;Here we can place a lot more detail about this issue&#93; and then presented as a simple html page on Github&#91;&#64;&#64;https://github.com/&#93;&lt;/p&gt;&lt;div class=\"alert alert-info\" role=\"alert\"&gt;&lt;h4&gt;For the adventurous you can also use other &#91;Bootstrap|https://getbootstrap.com/&#93; functions&lt;/h4&gt;&lt;p&gt;Extra Bootstrap classes can be used to add colours and emphasis as required.&lt;/p&gt;&lt;/div&gt;",
+  content right": "&lt;p&gt;Additional information &#91;&#64;&#64;This extra foot note should be automatically positioned under the second column&#93; easily be added as a second column without the need for more complex html and even add in an image if required:&lt;/p&gt;&lt;figure class=\"figure\"&gt;&lt;img src=\"https://media.ng-london.org.uk/iiif/009-01DZ-0000/full/512,/0/default.jpg\" class=\"figure-img img-fluid rounded\" alt=\"Hans Holbein the Younger, Jean de Dinteville and Georges de Selve ('The Ambassadors').\"&gt;&lt;figcaption class=\"figure-caption\"&gt;Hans Holbein the Younger, Jean de Dinteville and Georges de Selve ('The Ambassadors') \u00a9 The National Gallery, London. Bought, 1890. This image is licensed under &#91;CC-BY-NC-ND 4.0|https://creativecommons.org/licenses/by-nc-nd/4.0/&#93;.&lt;/figcaption&gt;&lt;/figure&gt;"
+  }
+}
+</code></pre>
+</figure>
+
+<p>This second page object was used to define the content of the <a href='example-subpage-01.html'>example subpages</a>, one of the actual pages within this demonstration site.</p>
+
+<figure>
+		<pre style="overflow: hidden;border: 2px solid black;padding: 10px;">
+<code>{
+&quot;example-subpage-01&quot;: {
+  &quot;parent&quot;: &quot;example&quot;,
+  &quot;title&quot;: &quot;More detail might be needed in some areas&quot;,
+  &quot;content&quot;: &quot;&lt;p&gt;Sub pages can be set up to provide additional content without adding to the list of tabs at the top of the page. These are nested using a simple parent child relationship.&lt;/p&gt;&quot;,
+  &quot;content right&quot;: &quot;&lt;img style=\&quot;position:relative;width:100%;\&quot; src=\&quot;graphics/example_knowledge_graph.png\&quot;/&gt;&quot;
+  }
+}
+</code></pre>
+</figure><div class="foonote"><ul></ul></div>
+						</div></div><!--/span--></div></div><!--/row-->    <div class="container-fluid "><div class="row h-100"><div class="col-12 col-lg-12">							
+								<div class="h-100 d-flex flex-column">
+								<hr/>
+	<details>
+	<summary>Display the full code used to define this page.</summary>
+	<br/>
+		<h3>Page JSON Object</h3>
+	<figure>
+		<pre class="json-renderer" style="overflow-y: auto;overflow-x: auto; border: 2px solid black;padding: 10px;max-height:400px;"><code>{
+    &quot;parent&quot;: &quot;json&quot;,
+    &quot;class&quot;: &quot;&quot;,
+    &quot;file&quot;: &quot;&quot;,
+    &quot;title&quot;: &quot;Simple Site - The &lt;b&gt;pages.json&lt;/b&gt; file&quot;,
+    &quot;content&quot;: &quot;&lt;p&gt;&lt;b&gt;As noted on the main [JSON|JSON.html] page you will need to ensure that your pages.json file is valid JSON, please ensure all double quotes &lt;i&gt;in your added text&lt;/i&gt; have a &lt;i&gt;&amp;#47;&lt;/i&gt; in front, like this &lt;i&gt;&amp;#47;&amp;#34;&lt;/i&gt;, also please ensure that you text is all on one line, with no &lt;i&gt;newlines&lt;/i&gt;.&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;p&gt;The &lt;b&gt;pages.json&lt;/b&gt; file is used to define the actual content for your web pages. The file is made up of one or more page objects, an example of which is shown below. The meaning of these fields are relatively straightforward, as described below, though some additional notes are provided below, for an example of real code please see this example [pages.json|https://github.com/jpadfield/simple-site/blob/master/build/pages.json] file.&lt;/p&gt;\r\n\r\n&lt;figure&gt;\r\n\t\t&lt;pre style=\&quot;overflow: hidden;border: 2px solid black;padding: 10px;\&quot;&gt;\r\n&lt;code&gt;{\r\n\&quot;&lt;b&gt;pageName&lt;/b&gt;\&quot;: {\r\n  \&quot;&lt;b&gt;title&lt;/b&gt;\&quot;: \&quot;Simple text title\&quot;,\r\n  \&quot;&lt;b&gt;content&lt;/b&gt;\&quot;: \&quot;Main page content, this can be added as simple text of can include more complex html as required.\&quot;,\r\n  \&quot;&lt;b&gt;content right&lt;/b&gt;\&quot;: \&quot;Optional second column of text if required.\&quot;,\r\n  \&quot;&lt;b&gt;parent&lt;/b&gt;\&quot;: \&quot;Optional variable only used to indicate a relationship between a sub-page and a parent page - the pageName of the page, or sub-page above this one\&quot;,\r\n  \&quot;&lt;b&gt;class&lt;/b&gt;\&quot;: \&quot;Optional variable only used for extension pages, normally leave blank or omit completely\&quot;,\r\n  \&quot;&lt;b&gt;file&lt;/b&gt;\&quot;: \&quot;Optional variable only used for extension pages, normally leave blank or omit completely\&quot;,\r\n  \&quot;&lt;b&gt;aliases&lt;/b&gt;\&quot;: \&quot;Optional comma separated list of other names for this page. This can be used to ensure consistency of old links. If the page names need to be changed the old names can be listed here and special stub pages will be created to redirect old URLs to the new page names.\&quot;,\r\n  \&quot;&lt;b&gt;displayName&lt;/b&gt;\&quot;: \&quot;Optional- Can be used to substitute a more display friendly name for a given page in all links and dropdowns, for example one could use &#039;Some great examples&#039; as the displayName for a page simply called &#039;examples&#039;.\&quot;,\r\n  \&quot;&lt;b&gt;displaycode&lt;/b&gt;\&quot;: \&quot;Optional - true or false (default) value - this option is used for documentation purposes to include the JSON code used to create a page at the bottom of the page.\&quot;  \r\n  },\r\n\&quot;&lt;b&gt;AnotherPageName&lt;/b&gt;\&quot;: {\r\n  \&quot;&lt;b&gt;title&lt;/b&gt;\&quot;: \&quot;Another simple text title\&quot;,\r\n  \&quot;&lt;b&gt;content&lt;/b&gt;\&quot;: \&quot;Unique page content, this will be different for each page.\&quot;,\r\n  \&quot;&lt;b&gt;content right&lt;/b&gt;\&quot;: \&quot;\&quot;\r\n  }\r\n}\r\n&lt;/code&gt;&lt;/pre&gt;&lt;figcaption class=\&quot;figure-caption\&quot;&gt;Simplified example of two page objects, with the variable names highlighted in bold.&lt;/figcaption&gt;\r\n&lt;/figure&gt;\r\n&lt;p&gt;Each of the values within an object can include simple text information or more complex html, however you must ensure that you follow guidelines included of the main [JSON|JSON.html] page. The parent field allows you to nest pages under other pages, starting with one of the main pages, but you can then nest sub-sub-pages under sub-pages and so on if really required.&lt;/p&gt;\r\n\r\n&lt;p&gt;The &lt;b&gt;parent&lt;/b&gt; field allows you to nest pages under other pages, starting with one of the main pages, but you can then nest sub-sub-pages under sub-pages and so on if really required. The &lt;b&gt;class&lt;/b&gt; and &lt;b&gt;file&lt;/b&gt; fields are only used for extensions to the simple-site system and more information can be found [here|extensions.html].&lt;/p&gt;\r\n\r\n&lt;p&gt;In addition to standard html coding some additional options have been added to make life easier. These do not need to be used if not needed.&lt;/p&gt;\r\n&lt;ul&gt;\r\n\t&lt;li&gt;&lt;b&gt;Adding footnotes&lt;/b&gt;: Locate footnotes references in your text using &lt;b&gt;&amp;#91;&amp;#64;&amp;#64;Followed by the text of the actual footnote&amp;#93;&lt;/b&gt;, see the example below. These will all be automatically processed so that all of the footnotes added to the &lt;b&gt;content&lt;/b&gt; or &lt;b&gt;content right&lt;/b&gt; are numbered correctly and clickable.&lt;/li&gt;\r\n\t&lt;li&gt;Adding links: Links can be added to any word or phrase simply by enclosing them in square brackets, separated with a pipe character: &lt;b&gt;&amp;#91;Display text|https://full.url.com&amp;#93;&lt;/b&gt;&lt;/li&gt;\r\n&lt;/ul&gt;\r\n\r\n&lt;h3&gt;Breadcrumb navigation for sub-pages&lt;/h3&gt;\r\n\r\n&lt;p&gt;Sub-pages are not given there own tabs, as the main pages are, they are nested in dropdown menus below their parent main page. To make it easier to navigate back up a series of nested sub pages an additional [breadcrumb navigation bar|https://en.wikipedia.org/wiki/Breadcrumb_navigation] is automatically added to all sub-pages, as shown below.&lt;/p&gt;\r\n\r\n&lt;figure class=\&quot;figure\&quot;&gt;&lt;img src=\&quot;graphics/breadcrumb-example.png\&quot; class=\&quot;figure-img img-fluid rounded\&quot; alt=\&quot;An example of the extra breadcrumb navigation used within sub-pages.\&quot;&gt;&lt;figcaption class=\&quot;figure-caption\&quot;&gt;An example of the extra breadcrumb navigation used within sub-pages.&lt;/figcaption&gt;&lt;/figure&gt;\r\n\r\n&lt;h3&gt;Included pages navigation for sub-pages&lt;/h3&gt;\r\n\r\n&lt;p&gt;Also to help navigation to nested sub pages an additional list of links in a &lt;b&gt;Include Pages&lt;/b&gt; is automatically added for all sub-pages, as shown below.&lt;/p&gt;\r\n\r\n&lt;figure class=\&quot;figure\&quot;&gt;&lt;img src=\&quot;graphics/children-example.png\&quot; class=\&quot;figure-img img-fluid rounded\&quot; alt=\&quot;An example of the extra navigation links provided to access any related sub-pages.\&quot;&gt;&lt;figcaption class=\&quot;figure-caption\&quot;&gt;An example of the extra navigation links provided to access any related sub-pages.&lt;/figcaption&gt;&lt;/figure&gt;\r\n\r\n&lt;h3&gt;Example page objects&lt;/h3&gt;\r\n&lt;p&gt;This page object was used to define the content of the [Example|example.html], one of the actual pages within this demonstration site.&lt;/p&gt;\r\n\r\n&lt;figure&gt;\r\n\t\t&lt;pre style=\&quot;overflow: hidden;border: 2px solid black;padding: 10px;\&quot;&gt;\r\n&lt;code&gt;{\r\n\&quot;example\&quot;: {\r\n  \&quot;title\&quot;: \&quot;Simple Site Example\&quot;,\r\n  \&quot;content\&quot;: \&quot;&amp;lt;h3&amp;gt;An additional local title can be added&amp;lt;/h3&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;p&amp;gt;This is an example of a small set of related html pages created automatically based on a set of three JSON&amp;#91;&amp;#64;&amp;#64;https://www.json.org&amp;#93; files. This example includes simple text, some basic html code and even some additional Bootstrap options. Please note you can simply just use text, the more complex options are just here as an example.&amp;lt;/p&amp;gt;&amp;lt;div style=\\\&quot;text-align:center;\\\&quot;&amp;gt;&amp;lt;a class=\\\&quot;btn btn-outline-primary nav-button\\\&quot; style=\\\&quot;left:80px;\\\&quot; id=\\\&quot;nav-models\\\&quot; role=\\\&quot;button\\\&quot; href=\\\&quot;./\\\&quot;&amp;gt;Example Button&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;p&amp;gt;Button or images or any html markup can be added in to form the bulk of the content&amp;#91;&amp;#64;&amp;#64;Here we can place a lot more detail about this issue&amp;#93; and then presented as a simple html page on Github&amp;#91;&amp;#64;&amp;#64;https://github.com/&amp;#93;&amp;lt;/p&amp;gt;&amp;lt;div class=\\\&quot;alert alert-info\\\&quot; role=\\\&quot;alert\\\&quot;&amp;gt;&amp;lt;h4&amp;gt;For the adventurous you can also use other &amp;#91;Bootstrap|https://getbootstrap.com/&amp;#93; functions&amp;lt;/h4&amp;gt;&amp;lt;p&amp;gt;Extra Bootstrap classes can be used to add colours and emphasis as required.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;\&quot;,\r\n  content right\&quot;: \&quot;&amp;lt;p&amp;gt;Additional information &amp;#91;&amp;#64;&amp;#64;This extra foot note should be automatically positioned under the second column&amp;#93; easily be added as a second column without the need for more complex html and even add in an image if required:&amp;lt;/p&amp;gt;&amp;lt;figure class=\\\&quot;figure\\\&quot;&amp;gt;&amp;lt;img src=\\\&quot;https://media.ng-london.org.uk/iiif/009-01DZ-0000/full/512,/0/default.jpg\\\&quot; class=\\\&quot;figure-img img-fluid rounded\\\&quot; alt=\\\&quot;Hans Holbein the Younger, Jean de Dinteville and Georges de Selve (&#039;The Ambassadors&#039;).\\\&quot;&amp;gt;&amp;lt;figcaption class=\\\&quot;figure-caption\\\&quot;&amp;gt;Hans Holbein the Younger, Jean de Dinteville and Georges de Selve (&#039;The Ambassadors&#039;) \\u00a9 The National Gallery, London. Bought, 1890. This image is licensed under &amp;#91;CC-BY-NC-ND 4.0|https://creativecommons.org/licenses/by-nc-nd/4.0/&amp;#93;.&amp;lt;/figcaption&amp;gt;&amp;lt;/figure&amp;gt;\&quot;\r\n  }\r\n}\r\n&lt;/code&gt;&lt;/pre&gt;\r\n&lt;/figure&gt;\r\n\r\n&lt;p&gt;This second page object was used to define the content of the [example subpages|example-subpage-01.html], one of the actual pages within this demonstration site.&lt;/p&gt;\r\n\r\n&lt;figure&gt;\r\n\t\t&lt;pre style=\&quot;overflow: hidden;border: 2px solid black;padding: 10px;\&quot;&gt;\r\n&lt;code&gt;{\r\n&amp;quot;example-subpage-01&amp;quot;: {\r\n  &amp;quot;parent&amp;quot;: &amp;quot;example&amp;quot;,\r\n  &amp;quot;title&amp;quot;: &amp;quot;More detail might be needed in some areas&amp;quot;,\r\n  &amp;quot;content&amp;quot;: &amp;quot;&amp;lt;p&amp;gt;Sub pages can be set up to provide additional content without adding to the list of tabs at the top of the page. These are nested using a simple parent child relationship.&amp;lt;/p&amp;gt;&amp;quot;,\r\n  &amp;quot;content right&amp;quot;: &amp;quot;&amp;lt;img style=\\&amp;quot;position:relative;width:100%;\\&amp;quot; src=\\&amp;quot;graphics/example_knowledge_graph.png\\&amp;quot;/&amp;gt;&amp;quot;\r\n  }\r\n}\r\n&lt;/code&gt;&lt;/pre&gt;\r\n&lt;/figure&gt;&quot;,
+    &quot;content right&quot;: &quot;&quot;,
+    &quot;copy&quot;: false,
+    &quot;displaycode&quot;: true
+}</code></pre>
+		<figcaption class="figure-caption">The complete JSON object used to define this content and layout of this page.</figcaption>
+	</figure>	
+	</details>
+						</div></div><!--/span--></div></div><!--/row-->    
+<!-- End SimpleBDGrid -->
+
+			</div></div><!--/span-->
+			
+			
+		</div><!--/row-->
+			
+		  <footer class="fixed-bottom bg-light">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-5" style="text-align:left;">&copy; The National Gallery 2021</div>
+				<div class="col-2" style="text-align:center;"></div>
+				<div class="col-5" style="text-align:right;"><a href='http://rightsstatements.org/vocab/InC-EDU/1.0/'><img height='16' alt='In Copyright - Educational Use Permitted' title='In Copyright - Educational Use Permitted' src='graphics/InC-EDU.dark-white-interior-blue-type.png'/></a><a rel='license' href='https://creativecommons.org/licenses/by-nc/4.0/'><img alt='Creative Commons Licence' style='border-width:0' src='https://i.creativecommons.org/l/by-nc/4.0/88x31.png' /></a></div>
+			</div>
+		</div>        
+  </footer>
+    
+	</div><!--/.container-->
+    
+	
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/tether@2.0.0/dist/js/tether.min.js" integrity="sha256-cExSEm1VrovuDNOSgLk0xLue2IXxIvbKV1gXuCqKPLE=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha256-d+FygkWgwt59CFkWPuCB4RE6p1/WiUYCy16w1+c5vKk=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.json-viewer@1.4.0/json-viewer/jquery.json-viewer.js" integrity="sha256-klSHtWPkZv4zG4darvDEpAQ9hJFDqNbQrM+xDChm8Fo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+	<script>
+		
+		
+		function onLoad() {
+			hljs.highlightAll();			
+	$('pre.json-renderer').each(function(index, value) {			
+			var vtext = $(value).text()
+			var jsonResult;
+			
+			try {jsonResult = JSON.parse(vtext);}
+			catch (e) {
+				//console.log("\""+vtext+"\" " + "is not valid JSON: "+e);
+				};
+		
+			if (jsonResult) {$(value).jsonViewer(jsonResult);}
+			else
+				{let vurl = new URL(vtext);
+				 if (vurl.origin != "null") {
+				 $.getJSON({
+						url: vtext
+						}).done(function (result, status, xhr) {
+								$(value).jsonViewer(result)
+								}).fail(function (xhr, status, error) {									
+									$(value).jsonViewer(JSON.parse('{"string":"'+vtext+
+										'","error":"The supplied text does not seems to be' +
+										' valid JSON or a valid URL"}'));
+									});
+							}
+				else
+					{$(value).jsonViewer(JSON.parse('{"string":"'+vtext+
+					 '","error":"The supplied text does not seems to be valid '+
+					 'JSON or a valid URL"}'));}
+				}		
+		});
+		$(function() {
+  // ------------------------------------------------------- //
+  // Multi Level dropdowns
+  // ------------------------------------------------------ //
+  $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    $(this).siblings().toggleClass("show");
+
+
+    if (!$(this).next().hasClass('show')) {
+      $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+    }
+    $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+      $('.dropdown-submenu .show').removeClass("show");
+    });
+
+  });
+});
+			}
+	</script>
+</body>
+
+</html>

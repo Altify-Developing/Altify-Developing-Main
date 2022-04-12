@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Simple system for creating a set of web-pages to support your GitHub repository from a few simple json files." />
+		<meta name="keywords" content="The National Gallery, London, National Gallery London, Scientific, Research, Heritage, Culture, JSON, PHP, Javascript, Github Pages, Dissemination, VRE, IIIF, Mermaid, Timeline, Mirador " />
+    <meta name="author" content="Joseph Padfield| joseph.padfield@ng-london.org.uk |National Gallery | London UK | website@ng-london.org.uk |www.nationalgallery.org.uk" />
+    <meta name="image" content="" />
+    <link rel="icon" href="graphics/favicon.ico">
+    <title>NG Simple Site - example-subpage-02</title>
+    
+	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css" integrity="sha256-BNdodQbWHpU3HT8xGhkEusT4ch4HEjvwzcbDcVuHR+E=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/jquery.json-viewer@1.4.0/json-viewer/jquery.json-viewer.css" integrity="sha256-rXfxviikI1RGZM3px6piq9ZL0YZuO5ETcO8+toY+DDY=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/highlight.js@11.2.0/styles/github.css" integrity="sha256-Oppd74ucMR5a5Dq96FxjEzGF7tTw2fZ/6ksAqDCM8GY=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+    <style>
+    
+.card-img {
+  width: auto;
+  max-width: 100%;
+  max-height:200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.card-img-top {
+  width: auto;
+  max-width: 100%;    
+  max-height:128px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.nodec:link, .nodec:visited, .nodec:hover, .nodec:active {
+  text-decoration: none;
+  color: inherit;
+  }
+
+.card-hov:hover {
+  opacity: 0.7;
+}
+
+.offsetanchor {
+  position: relative;
+  top: -75px;
+}
+
+.pcontainer {
+   position: relative;
+   width: 100%;
+   padding-top: 56.25%; /* 16:9 Aspect Ratio */
+	}
+	
+.preview {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+	}
+
+
+    </style>
+    
+  </head>
+
+<body onload="onLoad();">
+	<div id="wrap" class="container h-100">
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container-fluid">
+      <button 
+				class="navbar-toggler navbar-toggler-right" 
+				type="button" 
+				data-bs-toggle="collapse" 
+				data-bs-target="#navbarsExampleDefault" 
+				aria-controls="navbarsExampleDefault" 
+				aria-expanded="false" 
+				aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>    
+      <a class="navbar-brand"  href="./">
+  		<img id="page-logo" class="logo" title="Logo" src="graphics/ng-logo-white-100x40.png" 
+				style="" alt="The National Gallery"/>
+		  </a>
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault"><ul class="navbar-nav">
+
+<!-- Start Normal Item 1 -->
+<li class="nav-item "><a class="nav-link" style="white-space:nowrap;" href="home.html">Home</a>
+</li>
+<!-- End Normal Item 1 -->
+</ul><span class="navbar-text w-100">			<a href="https://github.com/jpadfield/simple-site/" class="float-end">
+				<img id="ex-logo1" class="logo" title="github" src="graphics/github%20logo%20white.png" 
+				style="" alt="GitHub Jpadfield Simple-site"/>
+		  </a></span></div>
+</div>
+    </nav>
+		
+		<div class="row " style="padding-top:80px; padding-bottom:40px; min-height:100%;">				
+			<div class="col-12 col-md-12">  
+				<div class="h-100 d-flex flex-column"> 
+					
+					
+<!-- Start SimpleBDGrid -->
+<div class="p-2 bg-light border rounded-3 jumbotron">
+      <div class="container-fluid py-2"><h3 style="margin-bottom:0px;">Another example of a simple sub page</h3></div></div><div class="container-fluid "><div class="row h-100"><div class="col-12">							
+								<div class="h-100 d-flex flex-column">
+									<div class="alert alert-light" role="alert" style="padding:0.5rem 0.5rem 0px 0.5rem;border-color:#dee2e6;">
+		<nav  style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+			<ol class="breadcrumb" style="margin-bottom:0.5rem;">
+				<li class="breadcrumb-item"><a href="template.html">Template</a></li><li class="breadcrumb-item"><a href="template-home.html">Example Home</a></li><li class="breadcrumb-item active" aria-current="page">An Example List</li>
+			</ol>
+		</nav>
+		</div>
+						</div></div><!--/span--></div></div><!--/row-->    <div class="container-fluid "><div class="row h-100"><div class="col-12 flex-grow-1">							
+								<div class="h-100 d-flex flex-column">
+							<p>This example is displaying a list of four entries, displayed four times, demonstrating all four available display formats. An optional table of contents providing links to each of the defined groups has also been included.</p><p>It is an example of a special page that can be added to the <a href='pages.json.html'>pages.json</a> file. To change the objects displayed in this list, modify the <b>list-example.json</b> file found in the <b>build</b> folder in your Github Repository. Further information on types and formats of the lists displayed can be found under <a href='lists.html'>Extensions</a> in the Documentation section of this site.</p>
+
+<h3>Contents</h3><ul><li><a id="full+card+format-TBC" class="offsetanchor"></a><a href="#full+card+format">Full Card Format</a></li><li><a id="simple+card+format-TBC" class="offsetanchor"></a><a href="#simple+card+format">Simple Card Format</a></li><li><a id="image+only+format-TBC" class="offsetanchor"></a><a href="#image+only+format">Image Only Format</a></li><li><a id="list+format-TBC" class="offsetanchor"></a><a href="#list+format">List Format</a></li><li><a id="presentations-TBC" class="offsetanchor"></a><a href="#presentations">Presentations</a></li></ul><h3><a id="full+card+format" class="anchor offsetanchor" aria-hidden="true" href="#full+card+format-TBC"></a><a class="anchor nodec" aria-hidden="true" href="#full+card+format-TBC">Full Card Format</a></h3><p>This the most complex formatting provided presenting all of the main details in an interactive card like presentation</p><div class="row">
+<div class="card mb-3 card-hov">
+  <a href="https://tanc-ahrc.github.io/IIIF-TNC" class="stretched-link nodec"><div class="row no-gutters">
+    <div class="col-md-4  my-auto" >
+      <img src="graphics/TANC%20-%20IIIF.png" class="card-img" alt="The IIIF - TANC Project">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title">The IIIF - TANC Project</h4>
+        <h5 class="card-title">Practical applications of IIIF as a building block towards a digital National Collection</h5>
+        <p class="card-text">AHRC funded - IIIF-TNC | Practical applications of IIIF as a building block towards a digital National Collection - IIIF - TNC</p>
+      </div>
+    </div>
+  </div></a>
+</div>
+
+<div class="card mb-3 card-hov">
+  <a href="https://tanc-ahrc.github.io/HeritagePIDs" class="stretched-link nodec"><div class="row no-gutters">
+    <div class="col-md-4  my-auto" >
+      <img src="graphics/TANC%20-%20PIDS.png" class="card-img" alt="The HeritagePIDs Project">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title">The HeritagePIDs Project</h4>
+        <h5 class="card-title">Persistent Identifiers as IRO Infrastructure</h5>
+        <p class="card-text">AHRC funded - HeritagePIDs | Persistent Identifiers as IRO Infrastructure - HeritagePIDs</p>
+      </div>
+    </div>
+  </div></a>
+</div>
+
+<div class="card mb-3 card-hov">
+  <a href="https://www.sshopencloud.eu/" class="stretched-link nodec"><div class="row no-gutters">
+    <div class="col-md-4  my-auto" >
+      <img src="graphics/sshoc-logo.png" class="card-img" alt="The SSHOC Project">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title">The SSHOC Project</h4>
+        <h5 class="card-title">Social Sciences & Humanities Open Cloud</h5>
+        <p class="card-text">Social Sciences & Humanities Open Cloud (SSHOC)is a project funded by the EU framework programme Horizon 2020 and unites 20 partner organisations and their 27 associates in developing the social sciences and humanities area of the European Open Science Cloud (EOSC) - SSHOC</p>
+      </div>
+    </div>
+  </div></a>
+</div>
+
+<div class="card mb-3 card-hov">
+  <a href="https://research.ng-london.org.uk/external/ARTICT" class="stretched-link nodec"><div class="row no-gutters">
+    <div class="col-md-4  my-auto" >
+      <img src="graphics/UKRI_EPSR_Council-Logo_Horiz-RGB.png" class="card-img" alt="The ARTICT Project">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title">The ARTICT Project</h4>
+        <h5 class="card-title">Art Through the ICT Lens</h5>
+        <p class="card-text">EPSRC funded - ARTICT | Art Through the ICT Lens: Big Data Processing Tools to Support the Technical Study, Preservation and Conservation of Old Master Paintings - ARTICT</p>
+      </div>
+    </div>
+  </div></a>
+</div>
+</div><br/><h3><a id="simple+card+format" class="anchor offsetanchor" aria-hidden="true" href="#simple+card+format-TBC"></a><a class="anchor nodec" aria-hidden="true" href="#simple+card+format-TBC">Simple Card Format</a></h3><p>This is a simplified version of the full card, the sizes of the image is generally limited, the second title is not shown and the cards are arrange in columns rather than rows.</p><div class="row">      
+  <div class="col-lg-6 col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
+    <div class="card" title="The IIIF - TANC Project">
+      <a href="https://tanc-ahrc.github.io/IIIF-TNC" class="stretched-link nodec">
+      <img class="card-img-top" src="graphics/TANC%20-%20IIIF.png" alt="The IIIF - TANC Project">
+      </a>
+      <div class="card-body">
+        <h5 class="card-title">The IIIF - TANC Project</h5>
+        <p class="card-text">AHRC funded - IIIF-TNC | Practical applications of IIIF as a building block towards a digital National Collection - IIIF - TNC</p>
+      </div>
+    </div>
+  </div>
+      
+  <div class="col-lg-6 col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
+    <div class="card" title="The HeritagePIDs Project">
+      <a href="https://tanc-ahrc.github.io/HeritagePIDs" class="stretched-link nodec">
+      <img class="card-img-top" src="graphics/TANC%20-%20PIDS.png" alt="The HeritagePIDs Project">
+      </a>
+      <div class="card-body">
+        <h5 class="card-title">The HeritagePIDs Project</h5>
+        <p class="card-text">AHRC funded - HeritagePIDs | Persistent Identifiers as IRO Infrastructure - HeritagePIDs</p>
+      </div>
+    </div>
+  </div>
+      
+  <div class="col-lg-6 col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
+    <div class="card" title="The SSHOC Project">
+      <a href="https://www.sshopencloud.eu/" class="stretched-link nodec">
+      <img class="card-img-top" src="graphics/sshoc-logo.png" alt="The SSHOC Project">
+      </a>
+      <div class="card-body">
+        <h5 class="card-title">The SSHOC Project</h5>
+        <p class="card-text">Social Sciences & Humanities Open Cloud (SSHOC)is a project funded by the EU framework programme Horizon 2020 and unites 20 partner organisations and their 27 associates in developing the social sciences and humanities area of the European Open Science Cloud (EOSC) - SSHOC</p>
+      </div>
+    </div>
+  </div>
+      
+  <div class="col-lg-6 col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
+    <div class="card" title="The ARTICT Project">
+      <a href="https://research.ng-london.org.uk/external/ARTICT" class="stretched-link nodec">
+      <img class="card-img-top" src="graphics/UKRI_EPSR_Council-Logo_Horiz-RGB.png" alt="The ARTICT Project">
+      </a>
+      <div class="card-body">
+        <h5 class="card-title">The ARTICT Project</h5>
+        <p class="card-text">EPSRC funded - ARTICT | Art Through the ICT Lens: Big Data Processing Tools to Support the Technical Study, Preservation and Conservation of Old Master Paintings - ARTICT</p>
+      </div>
+    </div>
+  </div>
+</div><br/><h3><a id="image+only+format" class="anchor offsetanchor" aria-hidden="true" href="#image+only+format-TBC"></a><a class="anchor nodec" aria-hidden="true" href="#image+only+format-TBC">Image Only Format</a></h3><p>This is simplest card format, limited to a clickable image with the primary title shown as hover text.</p><div class="row">    
+  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
+    <div class="card" title="The IIIF - TANC Project">
+      <a href="https://tanc-ahrc.github.io/IIIF-TNC" class="stretched-link nodec">
+      <img class="card-img-top" src="graphics/TANC%20-%20IIIF.png" alt="The IIIF - TANC Project">
+      </a>
+    </div>
+  </div>
+    
+  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
+    <div class="card" title="The HeritagePIDs Project">
+      <a href="https://tanc-ahrc.github.io/HeritagePIDs" class="stretched-link nodec">
+      <img class="card-img-top" src="graphics/TANC%20-%20PIDS.png" alt="The HeritagePIDs Project">
+      </a>
+    </div>
+  </div>
+    
+  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
+    <div class="card" title="The SSHOC Project">
+      <a href="https://www.sshopencloud.eu/" class="stretched-link nodec">
+      <img class="card-img-top" src="graphics/sshoc-logo.png" alt="The SSHOC Project">
+      </a>
+    </div>
+  </div>
+    
+  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
+    <div class="card" title="The ARTICT Project">
+      <a href="https://research.ng-london.org.uk/external/ARTICT" class="stretched-link nodec">
+      <img class="card-img-top" src="graphics/UKRI_EPSR_Council-Logo_Horiz-RGB.png" alt="The ARTICT Project">
+      </a>
+    </div>
+  </div>
+</div><br/><h3><a id="list+format" class="anchor offsetanchor" aria-hidden="true" href="#list+format-TBC"></a><a class="anchor nodec" aria-hidden="true" href="#list+format-TBC">List Format</a></h3><p>The list format only display clickable titles and the comment for each entry, arranged as a simple bulet point list.</p><ul><li><a href="https://tanc-ahrc.github.io/IIIF-TNC" class="">The IIIF - TANC Project</a> - AHRC funded - IIIF-TNC | Practical applications of IIIF as a building block towards a digital National Collection - IIIF - TNC<span style="font-size:0.75em">  ( no checked date )</span></li><li><a href="https://tanc-ahrc.github.io/HeritagePIDs" class="">The HeritagePIDs Project</a> - AHRC funded - HeritagePIDs | Persistent Identifiers as IRO Infrastructure - HeritagePIDs<span style="font-size:0.75em">  ( no checked date )</span></li><li><a href="https://www.sshopencloud.eu/" class="">The SSHOC Project</a> - Social Sciences & Humanities Open Cloud (SSHOC)is a project funded by the EU framework programme Horizon 2020 and unites 20 partner organisations and their 27 associates in developing the social sciences and humanities area of the European Open Science Cloud (EOSC) - SSHOC<span style="font-size:0.75em">  ( last checked 04/02/2021 )</span></li><li><a href="https://research.ng-london.org.uk/external/ARTICT" class="">The ARTICT Project</a> - EPSRC funded - ARTICT | Art Through the ICT Lens: Big Data Processing Tools to Support the Technical Study, Preservation and Conservation of Old Master Paintings - ARTICT<span style="font-size:0.75em">  ( no checked date )</span></li></ul><br/><h3><a id="presentations" class="anchor offsetanchor" aria-hidden="true" href="#presentations-TBC"></a><a class="anchor nodec" aria-hidden="true" href="#presentations-TBC">Presentations</a></h3><p>This additional format, requires additional variables and is specifically for formatting the resources used to present a lecture or presentation, video, slides, pdf, transcript, etc.</p><div class="row"><div class="card mb-3" style="width: 100%;">
+  <div class="row no-gutters">
+    <div class="col-md-4  my-auto" >
+      <div class="pcontainer"><iframe class="preview" src="https://www.youtube.com/embed/W1BoGtzvYVM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title">Introduction and Welcome</h4>
+        <a href="https://twitter.com/JoePadfield"><h5 class="card-title">Joe Padfield</h5></a>
+        <p class="card-text"></p>        
+        <p>The slides for this presentation can be downloaded <a href="https://tanc-ahrc.github.io/IIIF-TNC/files/IIIF%20TaNC%20Webinar1%20-%20S01%2001%20-%20Jpadfield%20-%20%20Introduction.pdf">here</a></p><p>The transcript for this presentation can be downloaded <a href="https://tanc-ahrc.github.io/IIIF-TNC/files/IIIF%20TaNC%20Webinar1%20-%20S01%2001%20-%20Jpadfield%20-%20Introduction%20-%20Transcript.txt">here</a></p>
+      </div>      
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="width: 100%;">
+  <div class="row no-gutters">
+    <div class="col-md-4  my-auto" >
+      <div class="pcontainer"><iframe class="preview" src="https://www.youtube.com/embed/emS-4n7cxwo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title">Re-using IIIF resources in documentation solutions</h4>
+        <a href="https://twitter.com/JoePadfield"><h5 class="card-title">Joe Padfield</h5></a>
+        <p class="card-text">Joe Padfield will present details of how IIIF has been used as the basis for the National Gallery’s internal image sharing and presentation system and how these resources have been re-used to create a digital documentation system to record the delicate process of sampling old master paintings.</p>        
+        <p>The slides for this presentation can be downloaded <a href="https://tanc-ahrc.github.io/IIIF-TNC/files/IIIF%20TaNC%20%20-%20S01%2004%20-%20Jpadfield%20-%20%20Re-using%20IIIF%20resources.pdf">here</a></p>
+      </div>      
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="width: 100%;">
+  <div class="row no-gutters">
+    <div class="col-md-4  my-auto" >
+      <div class="pcontainer"><iframe class="preview" src="https://www.youtube.com/embed/xsuj4SQ1w2Y" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title">Using existing IIIF resources to create your own IIIF presentations</h4>
+        <a href="https://twitter.com/JoePadfield"><h5 class="card-title">Joe Padfield</h5></a>
+        <p class="card-text">Joe Padfield will present details of the Simple Site GitHub project and how it can be used by researchers to create their own IIIF workspace to explore, compare and present their own arrangement of existing IIIF resources.</p>        
+        <p>The slides for this presentation can be downloaded <a href="https://tanc-ahrc.github.io/IIIF-TNC/files/IIIF%20TaNC%20Webinar1%20-%20S02%2004%20-%20Jpadfield%20-%20SimpleSite.pdf">here</a></p>
+      </div>      
+    </div>
+  </div>
+</div>
+</div><br/><div class="foonote"><ul></ul></div>
+						</div></div><!--/span--></div></div><!--/row-->    <div class="container-fluid "><div class="row h-100"><div class="col-12 col-lg-12">							
+								<div class="h-100 d-flex flex-column">
+								<hr/>
+	<details>
+	<summary>Display the full code used to define this page.</summary>
+	<br/>
+		<h3>Page JSON Object</h3>
+	<figure>
+		<pre class="json-renderer" style="overflow-y: auto;overflow-x: auto; border: 2px solid black;padding: 10px;max-height:400px;"><code>{
+    &quot;parent&quot;: &quot;template-home&quot;,
+    &quot;class&quot;: &quot;list&quot;,
+    &quot;file&quot;: &quot;list-example.json&quot;,
+    &quot;title&quot;: &quot;Another example of a simple sub page&quot;,
+    &quot;content&quot;: &quot;&lt;p&gt;This example is displaying a list of four entries, displayed four times, demonstrating all four available display formats. An optional table of contents providing links to each of the defined groups has also been included.&lt;/p&gt;&lt;p&gt;It is an example of a special page that can be added to the [pages.json|pages.json.html] file. To change the objects displayed in this list, modify the &lt;b&gt;list-example.json&lt;/b&gt; file found in the &lt;b&gt;build&lt;/b&gt; folder in your Github Repository. Further information on types and formats of the lists displayed can be found under [Extensions|lists.html] in the Documentation section of this site.&lt;/p&gt;\r\n\r\n[##]&quot;,
+    &quot;content right&quot;: &quot;&quot;,
+    &quot;copy&quot;: false,
+    &quot;displayName&quot;: &quot;An Example List&quot;,
+    &quot;displaycode&quot;: true
+}</code></pre>
+		<figcaption class="figure-caption">The complete JSON object used to define this content and layout of this page.</figcaption>
+	</figure>		<h3>Extra extension file</h3>
+	<figure>
+		<pre class="json-renderer" style="overflow-y: auto;overflow-x: auto; border: 2px solid black;padding: 10px;max-height:400px;"><code>{
+    &quot;defaultcard&quot;: &quot;full&quot;,
+    &quot;displaychecked&quot;: true,
+    &quot;tableofcontents&quot;: true,
+    &quot;groups&quot;: {
+        &quot;Full Card Format&quot;: {
+            &quot;comment&quot;: &quot;This the most complex formatting provided presenting all of the main details in an interactive card like presentation&quot;,
+            &quot;card&quot;: &quot;full&quot;
+        },
+        &quot;Simple Card Format&quot;: {
+            &quot;comment&quot;: &quot;This is a simplified version of the full card, the sizes of the image is generally limited, the second title is not shown and the cards are arrange in columns rather than rows.&quot;,
+            &quot;card&quot;: &quot;simple&quot;,
+            &quot;maxcols&quot;: 2
+        },
+        &quot;Image Only Format&quot;: {
+            &quot;comment&quot;: &quot;This is simplest card format, limited to a clickable image with the primary title shown as hover text.&quot;,
+            &quot;card&quot;: &quot;image&quot;,
+            &quot;maxcols&quot;: 3
+        },
+        &quot;List Format&quot;: {
+            &quot;comment&quot;: &quot;The list format only display clickable titles and the comment for each entry, arranged as a simple bulet point list.&quot;,
+            &quot;card&quot;: &quot;list&quot;
+        },
+        &quot;Presentations&quot;: {
+            &quot;comment&quot;: &quot;This additional format, requires additional variables and is specifically for formatting the resources used to present a lecture or presentation, video, slides, pdf, transcript, etc.&quot;,
+            &quot;card&quot;: &quot;presentation&quot;
+        }
+    },
+    &quot;list&quot;: [
+        {
+            &quot;groups&quot;: [
+                &quot;Full Card Format&quot;,
+                &quot;Simple Card Format&quot;,
+                &quot;Image Only Format&quot;,
+                &quot;List Format&quot;
+            ],
+            &quot;ptitle&quot;: &quot;The IIIF - TANC Project&quot;,
+            &quot;stitle&quot;: &quot;Practical applications of IIIF as a building block towards a digital National Collection&quot;,
+            &quot;comment&quot;: &quot;AHRC funded - IIIF-TNC | Practical applications of IIIF as a building block towards a digital National Collection - IIIF - TNC&quot;,
+            &quot;image&quot;: &quot;graphics/TANC%20-%20IIIF.png&quot;,
+            &quot;checked&quot;: &quot;&quot;,
+            &quot;link&quot;: &quot;https://tanc-ahrc.github.io/IIIF-TNC&quot;
+        },
+        {
+            &quot;groups&quot;: [
+                &quot;Full Card Format&quot;,
+                &quot;Simple Card Format&quot;,
+                &quot;Image Only Format&quot;,
+                &quot;List Format&quot;
+            ],
+            &quot;ptitle&quot;: &quot;The HeritagePIDs Project&quot;,
+            &quot;stitle&quot;: &quot;Persistent Identifiers as IRO Infrastructure&quot;,
+            &quot;comment&quot;: &quot;AHRC funded - HeritagePIDs | Persistent Identifiers as IRO Infrastructure - HeritagePIDs&quot;,
+            &quot;image&quot;: &quot;graphics/TANC%20-%20PIDS.png&quot;,
+            &quot;checked&quot;: &quot;&quot;,
+            &quot;link&quot;: &quot;https://tanc-ahrc.github.io/HeritagePIDs&quot;
+        },
+        {
+            &quot;groups&quot;: [
+                &quot;Full Card Format&quot;,
+                &quot;Simple Card Format&quot;,
+                &quot;Image Only Format&quot;,
+                &quot;List Format&quot;
+            ],
+            &quot;ptitle&quot;: &quot;The SSHOC Project&quot;,
+            &quot;stitle&quot;: &quot;Social Sciences &amp; Humanities Open Cloud&quot;,
+            &quot;comment&quot;: &quot;Social Sciences &amp; Humanities Open Cloud (SSHOC)is a project funded by the EU framework programme Horizon 2020 and unites 20 partner organisations and their 27 associates in developing the social sciences and humanities area of the European Open Science Cloud (EOSC) - SSHOC&quot;,
+            &quot;image&quot;: &quot;graphics/sshoc-logo.png&quot;,
+            &quot;checked&quot;: &quot;04/02/2021&quot;,
+            &quot;link&quot;: &quot;https://www.sshopencloud.eu/&quot;
+        },
+        {
+            &quot;groups&quot;: [
+                &quot;Full Card Format&quot;,
+                &quot;Simple Card Format&quot;,
+                &quot;Image Only Format&quot;,
+                &quot;List Format&quot;
+            ],
+            &quot;ptitle&quot;: &quot;The ARTICT Project&quot;,
+            &quot;stitle&quot;: &quot;Art Through the ICT Lens&quot;,
+            &quot;comment&quot;: &quot;EPSRC funded - ARTICT | Art Through the ICT Lens: Big Data Processing Tools to Support the Technical Study, Preservation and Conservation of Old Master Paintings - ARTICT&quot;,
+            &quot;image&quot;: &quot;graphics/UKRI_EPSR_Council-Logo_Horiz-RGB.png&quot;,
+            &quot;checked&quot;: &quot;&quot;,
+            &quot;link&quot;: &quot;https://research.ng-london.org.uk/external/ARTICT&quot;
+        },
+        {
+            &quot;groups&quot;: [
+                &quot;Presentations&quot;
+            ],
+            &quot;ptitle&quot;: &quot;Introduction and Welcome&quot;,
+            &quot;stitle&quot;: &quot;Joe Padfield&quot;,
+            &quot;comment&quot;: &quot;&quot;,
+            &quot;video&quot;: &quot;https://www.youtube.com/embed/W1BoGtzvYVM&quot;,
+            &quot;slides&quot;: &quot;https://tanc-ahrc.github.io/IIIF-TNC/files/IIIF%20TaNC%20Webinar1%20-%20S01%2001%20-%20Jpadfield%20-%20%20Introduction.pdf&quot;,
+            &quot;transcript&quot;: &quot;https://tanc-ahrc.github.io/IIIF-TNC/files/IIIF%20TaNC%20Webinar1%20-%20S01%2001%20-%20Jpadfield%20-%20Introduction%20-%20Transcript.txt&quot;,
+            &quot;link&quot;: &quot;https://twitter.com/JoePadfield&quot;
+        },
+        {
+            &quot;groups&quot;: [
+                &quot;Presentations&quot;
+            ],
+            &quot;ptitle&quot;: &quot;Re-using IIIF resources in documentation solutions&quot;,
+            &quot;stitle&quot;: &quot;Joe Padfield&quot;,
+            &quot;video&quot;: &quot;https://www.youtube.com/embed/emS-4n7cxwo&quot;,
+            &quot;comment&quot;: &quot;Joe Padfield will present details of how IIIF has been used as the basis for the National Gallery\u2019s internal image sharing and presentation system and how these resources have been re-used to create a digital documentation system to record the delicate process of sampling old master paintings.&quot;,
+            &quot;slides&quot;: &quot;https://tanc-ahrc.github.io/IIIF-TNC/files/IIIF%20TaNC%20%20-%20S01%2004%20-%20Jpadfield%20-%20%20Re-using%20IIIF%20resources.pdf&quot;,
+            &quot;link&quot;: &quot;https://twitter.com/JoePadfield&quot;
+        },
+        {
+            &quot;groups&quot;: [
+                &quot;Presentations&quot;
+            ],
+            &quot;ptitle&quot;: &quot;Using existing IIIF resources to create your own IIIF presentations&quot;,
+            &quot;stitle&quot;: &quot;Joe Padfield&quot;,
+            &quot;comment&quot;: &quot;Joe Padfield will present details of the Simple Site GitHub project and how it can be used by researchers to create their own IIIF workspace to explore, compare and present their own arrangement of existing IIIF resources.&quot;,
+            &quot;video&quot;: &quot;https://www.youtube.com/embed/xsuj4SQ1w2Y&quot;,
+            &quot;slides&quot;: &quot;https://tanc-ahrc.github.io/IIIF-TNC/files/IIIF%20TaNC%20Webinar1%20-%20S02%2004%20-%20Jpadfield%20-%20SimpleSite.pdf&quot;,
+            &quot;link&quot;: &quot;https://twitter.com/JoePadfield&quot;
+        }
+    ]
+}</code></pre>
+		<figcaption class="figure-caption">The complete extension file used to define extra content included in this page.</figcaption>
+	</figure>	
+	</details>
+						</div></div><!--/span--></div></div><!--/row-->    
+<!-- End SimpleBDGrid -->
+
+			</div></div><!--/span-->
+			
+			
+		</div><!--/row-->
+			
+		  <footer class="fixed-bottom bg-light">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-5" style="text-align:left;">&copy; The National Gallery 2021</div>
+				<div class="col-2" style="text-align:center;"></div>
+				<div class="col-5" style="text-align:right;"><a href='http://rightsstatements.org/vocab/InC-EDU/1.0/'><img height='16' alt='In Copyright - Educational Use Permitted' title='In Copyright - Educational Use Permitted' src='graphics/InC-EDU.dark-white-interior-blue-type.png'/></a><a rel='license' href='https://creativecommons.org/licenses/by-nc/4.0/'><img alt='Creative Commons Licence' style='border-width:0' src='https://i.creativecommons.org/l/by-nc/4.0/88x31.png' /></a></div>
+			</div>
+		</div>        
+  </footer>
+    
+	</div><!--/.container-->
+    
+	
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/tether@2.0.0/dist/js/tether.min.js" integrity="sha256-cExSEm1VrovuDNOSgLk0xLue2IXxIvbKV1gXuCqKPLE=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha256-d+FygkWgwt59CFkWPuCB4RE6p1/WiUYCy16w1+c5vKk=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.json-viewer@1.4.0/json-viewer/jquery.json-viewer.js" integrity="sha256-klSHtWPkZv4zG4darvDEpAQ9hJFDqNbQrM+xDChm8Fo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+	<script>
+		
+		
+		function onLoad() {
+			hljs.highlightAll();			
+	$('pre.json-renderer').each(function(index, value) {			
+			var vtext = $(value).text()
+			var jsonResult;
+			
+			try {jsonResult = JSON.parse(vtext);}
+			catch (e) {
+				//console.log("\""+vtext+"\" " + "is not valid JSON: "+e);
+				};
+		
+			if (jsonResult) {$(value).jsonViewer(jsonResult);}
+			else
+				{let vurl = new URL(vtext);
+				 if (vurl.origin != "null") {
+				 $.getJSON({
+						url: vtext
+						}).done(function (result, status, xhr) {
+								$(value).jsonViewer(result)
+								}).fail(function (xhr, status, error) {									
+									$(value).jsonViewer(JSON.parse('{"string":"'+vtext+
+										'","error":"The supplied text does not seems to be' +
+										' valid JSON or a valid URL"}'));
+									});
+							}
+				else
+					{$(value).jsonViewer(JSON.parse('{"string":"'+vtext+
+					 '","error":"The supplied text does not seems to be valid '+
+					 'JSON or a valid URL"}'));}
+				}		
+		});
+		$(function() {
+  // ------------------------------------------------------- //
+  // Multi Level dropdowns
+  // ------------------------------------------------------ //
+  $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    $(this).siblings().toggleClass("show");
+
+
+    if (!$(this).next().hasClass('show')) {
+      $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+    }
+    $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+      $('.dropdown-submenu .show').removeClass("show");
+    });
+
+  });
+});
+			}
+	</script>
+</body>
+
+</html>

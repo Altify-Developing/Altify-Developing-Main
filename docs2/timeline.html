@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Simple system for creating a set of web-pages to support your GitHub repository from a few simple json files." />
+		<meta name="keywords" content="The National Gallery, London, National Gallery London, Scientific, Research, Heritage, Culture, JSON, PHP, Javascript, Github Pages, Dissemination, VRE, IIIF, Mermaid, Timeline, Mirador " />
+    <meta name="author" content="Joseph Padfield| joseph.padfield@ng-london.org.uk |National Gallery | London UK | website@ng-london.org.uk |www.nationalgallery.org.uk" />
+    <meta name="image" content="" />
+    <link rel="icon" href="graphics/favicon.ico">
+    <title>NG Simple Site - timeline</title>
+    
+	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css" integrity="sha256-BNdodQbWHpU3HT8xGhkEusT4ch4HEjvwzcbDcVuHR+E=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/jquery.json-viewer@1.4.0/json-viewer/jquery.json-viewer.css" integrity="sha256-rXfxviikI1RGZM3px6piq9ZL0YZuO5ETcO8+toY+DDY=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/highlight.js@11.2.0/styles/github.css" integrity="sha256-Oppd74ucMR5a5Dq96FxjEzGF7tTw2fZ/6ksAqDCM8GY=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+    <style>
+    
+g a {
+	color:inherit;}
+	
+#int0-text {
+	display:none;}
+
+#tooltip {
+  background: cornsilk;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2px 5px 2px 5px;
+  font-size: 0.75em;
+  font-weight: bold;}
+
+
+    </style>
+    
+  </head>
+
+<body onload="onLoad();">
+	<div id="wrap" class="container h-100">
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container-fluid">
+      <button 
+				class="navbar-toggler navbar-toggler-right" 
+				type="button" 
+				data-bs-toggle="collapse" 
+				data-bs-target="#navbarsExampleDefault" 
+				aria-controls="navbarsExampleDefault" 
+				aria-expanded="false" 
+				aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>    
+      <a class="navbar-brand"  href="./">
+  		<img id="page-logo" class="logo" title="Logo" src="graphics/ng-logo-white-100x40.png" 
+				style="" alt="The National Gallery"/>
+		  </a>
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault"><ul class="navbar-nav">
+
+<!-- Start Normal Item 1 -->
+<li class="nav-item "><a class="nav-link" style="white-space:nowrap;" href="home.html">Home</a>
+</li>
+<!-- End Normal Item 1 -->
+</ul><span class="navbar-text w-100">			<a href="https://github.com/jpadfield/simple-site/" class="float-end">
+				<img id="ex-logo1" class="logo" title="github" src="graphics/github%20logo%20white.png" 
+				style="" alt="GitHub Jpadfield Simple-site"/>
+		  </a></span></div>
+</div>
+    </nav>
+		
+		<div class="row " style="padding-top:80px; padding-bottom:40px; min-height:100%;">				
+			<div class="col-12 col-md-12">  
+				<div class="h-100 d-flex flex-column"> 
+					
+					
+<!-- Start SimpleBDGrid -->
+<div class="p-2 bg-light border rounded-3 jumbotron">
+      <div class="container-fluid py-2"><h3 style="margin-bottom:0px;">Simple Site - The <b>Timeline Extension</b></h3></div></div><div class="container-fluid "><div class="row h-100"><div class="col-12">							
+								<div class="h-100 d-flex flex-column">
+									<div class="alert alert-light" role="alert" style="padding:0.5rem 0.5rem 0px 0.5rem;border-color:#dee2e6;">
+		<nav  style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+			<ol class="breadcrumb" style="margin-bottom:0.5rem;">
+				<li class="breadcrumb-item"><a href="extensions.html">Extensions</a></li><li class="breadcrumb-item active" aria-current="page">Timeline</li>
+			</ol>
+		</nav>
+		</div>
+						</div></div><!--/span--></div></div><!--/row-->    <div class="container-fluid "><div class="row h-100"><div class="col-12 flex-grow-1">							
+								<div class="h-100 d-flex flex-column">
+							<p>This extension uses the <a href='https://mermaid-js.github.io/mermaid/#/'>Mermaid</a> library to produce a customised timeline gantt chart. It is an example of a special page that can be added to the <a href='pages.json.html'>pages.json</a> file.</p>
+
+<h3>The Example</h3>
+	<div id="gantt" class="mermaid">
+gantt
+       dateFormat  YYYY-MM-DD
+       title Simple Site Time Line Example	
+       	section Initial discussion and planning
+		Add as a margin :int0, 2019-11-01, 2019-11-01
+		Literature/website/software review :int1, 2020-04-01, 2020-10-01
+		Establish communications, collaborative environments and links with related interest groups :int2, 2020-02-01, 2020-06-01
+		Recruit Project Researcher :crit, int3, 2020-05-03, 2020-08-01
+		Project Researcher In Post :crit, int4, 2020-08-01, 2021-11-01
+	section Workshops
+		Organise Workshop 1 :ws0, 2020-04-01, 2020-07-20
+		Workshop 1 - The Beginning :crit, ws1, 2020-07-20, 2020-07-21
+		Organise Workshop 2 :ws2, 2020-08-01, 2020-11-01
+		Workshop 2 - The Middle :crit, active, ws3, 2020-11-01, 2020-12-01
+		Organise Workshop 3 – Document available resources and development ideas :ws4, 2020-12-01, 2021-08-01
+		Workshop 3 - The End :crit, active, ws5, 2021-08-01, 2021-09-01
+	section Collaborative Research
+		Assessing the output of Workshop 1 :cr0, 2020-07-21, 2020-09-01
+		Assessing the output of Workshop 2 :cr1, 2020-12-01, 2021-02-01
+		Project Resource survey :cr2, 2020-08-01, 2020-12-01
+		Evaluate selection of identified project Resources :cr3, 2020-12-01, 2021-01-01
+		Assessing the output of Workshop 3 :cr4, 2021-09-01, 2021-10-01
+	section Placements
+		Secondments (some may be virtual) for researcher :pl0, 2020-11-01, 2021-07-01
+	section Public demonstrations
+		Evaluation of demonstration deliverables :crit, active, pd0, 2021-09-01, 2021-10-01
+		Presentation of demonstration deliverables :crit, active, pd1, 2021-10-01, 2021-11-01
+	section Reporting
+		Complete and Deliver Final Rreport :crit, active, rp0, 2021-10-01, 2021-11-01
+
+	</div>	 
+
+<h3>Summary</h3>
+<div class="alert alert-info" role="alert"><h4 class="alert-heading">Extension Variables</h4><p>For this extension to work the <b>class</b> variable needs to be set to <b>timeline</b> and the <b>file</b> variable needs to give the name of the additional json file including the timeline data as shown below.</p></div>
+
+<figure>
+		<pre style="overflow: hidden;border: 2px solid black;padding: 10px;">
+<code>...  
+  "<b>timeline</b>": {
+    "<b>parent</b>": "extensions",
+    "<b>class</b>": "timeline",
+    "<b>file</b>": "timeline.json",
+    "<b>title</b>": "Simple Site - The &lt;b&gt;Timeline Extension&lt;/b&gt;",
+    "<b>content</b>": "&lt;p&gt;This extension uses the &#91;Mermaid|https://mermaid-js.github.io/mermaid/#/&#93; library to produce a customised timeline gantt chart. It is an example of a special page that can be added to the ... ",
+    "<b>content right</b>": ""		
+	}
+...
+</code></pre><figcaption class="figure-caption">Simplified version of the JSON object used to describe this page.</figcaption>
+</figure>
+
+<p>The details included in the <b>content</b> and <b>content right</b> variable will be presented as <a href='pages.json.html'>previously described</a>, however the data included in the named file, in this case <b>timeline.json</b> will be processed to add a formatted timeline to the page.</p>
+
+<h3>Timeline JSON file</h3>
+
+<p>As with the other JSON files the timeline data needs to be organised in a series of JSON objects, an example of which is provided below, for an example of real code please see the <a href='https://github.com/jpadfield/simple-site/blob/master/build/timeline.json'>timeline.json</a> file.</p>
+
+<figure>
+		<pre style="overflow: hidden;border: 2px solid black;padding: 10px;">
+<code>{
+  "<b>project</b>": "Simple title for time line",
+  "<b>start date</b>": "Start date of your project in the 2020-12-31 format",
+  "<b>margin</b>": -3, /* negative number of months - adds a margin to the left of your timeline to leave room for the group titles.*/
+...
+</code></pre><figcaption class="figure-caption">The top three variable required in the timeline JSON file.</figcaption>
+</figure>
+
+<p>The rest of the data within the JSON file relates to a series of event organised in <b>groups</b>, it is ok just to have a single group, but the system automatically applies different background colours to each group, which allows an easy method of breaking up or organising a longer list of events. Each is identified with a unique short tag, and then within each individual group you have a group title and list of events called <b>stages</b>.</p>
+
+<p>Each stage is made up of four unnamed variables which equate to:</p>
+<ul>
+<li>The display text that describes the particular stage or event</li>
+<li>An optional styling class - at this time only three options are used in the example below;
+<ul>
+<li><b>""</b>: (basically empty) a mid blue with a dark blue outline</li>
+<li><b>"crit"</b>: a red with a lighter read outline</li>
+<li><b>"crit, active"</b>: a lighter blue with a red outline.</li>
+</ul></li>
+<li>The start of the event: given in a number of months from the start date, or a number of months and days if formatted as "3,3" - three months and three days.</li>
+<li>The end of the event: given in a number of months from the start date, or a number of months and days if formatted as "3,3" - three months and three days.</li>
+</ul>
+<figure>
+		<pre style="overflow: hidden;border: 2px solid black;padding: 10px;">
+<code>
+... 
+  "<b>groups</b>": { 
+    "<b>tag1</b>": {
+      "<b>title</b>": "Tag1 Title",
+      "<b>stages</b>" : [
+        ["Text string describing the stage", "", 1, 2],
+        ["Text string describing a critical stage", "crit", 2, 4],
+        ["Text string describing an active stage", "crit, active", 3, 8]
+      ]}
+    }
+...
+</code></pre><figcaption class="figure-caption">The first few objects in the <a href='https://github.com/jpadfield/simple-site/blob/master/build/timeline.json'>JSON file</a> used to describe the example timeline are shown below.</figcaption>
+</figure>
+
+<figure>
+		<pre style="overflow: hidden;border: 2px solid black;padding: 10px;">
+<code>{
+  "<b>project</b>": "Simple Site Time Line Example",
+  "<b>start date</b>": "2020-02-01",
+  "<b>margin</b>": -3,
+  "<b>groups</b>": {
+    "<b>int</b>": {
+      "<b>title</b>": "Initial discussion and planning",
+      "<b>stages</b>" : [
+        ["Literature/website/software review", "", 2, 8],
+        ["Establish communications, collaborative environments and links with related interest groups",	"", 0, 4],				
+        ["Recruit Project Researcher", "crit", "3,3", 6],
+        ["Project Researcher In Post", "crit", 6, 21]
+      ]},
+    "<b>ws</b>": {
+      "<b>title</b>": "Workshops",
+       "<b>stages</b>": [
+        ["Organise Workshop 1", "", 2, "5,20"],
+        ["Workshop 1 - The Beginning", "crit", "5,20", "5,21"],
+        ["Organise Workshop 2",	"", 6, 9],
+        ["Workshop 2 - The Middle", "crit, active", 9, 10],
+        ["Organise Workshop 3 – Document available resources and development ideas", "", 10, 18],
+        ["Workshop 3 - The End", "crit, active", 18, 19]
+      ]},
+			
+...
+
+    }
+  }
+</code></pre><figcaption class="figure-caption">The first few objects in the <a href='https://github.com/jpadfield/simple-site/blob/master/build/timeline.json'>JSON file</a> used to describe the example timeline.</figcaption>
+</figure><div class="foonote"><ul></ul></div>
+						</div></div><!--/span--></div></div><!--/row-->    <div class="container-fluid "><div class="row h-100"><div class="col-12 col-lg-12">							
+								<div class="h-100 d-flex flex-column">
+								<hr/>
+	<details>
+	<summary>Display the full code used to define this page.</summary>
+	<br/>
+		<h3>Page JSON Object</h3>
+	<figure>
+		<pre class="json-renderer" style="overflow-y: auto;overflow-x: auto; border: 2px solid black;padding: 10px;max-height:400px;"><code>{
+    &quot;parent&quot;: &quot;extensions&quot;,
+    &quot;class&quot;: &quot;timeline&quot;,
+    &quot;file&quot;: &quot;timeline.json&quot;,
+    &quot;title&quot;: &quot;Simple Site - The &lt;b&gt;Timeline Extension&lt;/b&gt;&quot;,
+    &quot;content&quot;: &quot;&lt;p&gt;This extension uses the [Mermaid|https://mermaid-js.github.io/mermaid/#/] library to produce a customised timeline gantt chart. It is an example of a special page that can be added to the [pages.json|pages.json.html] file.&lt;/p&gt;\r\n\r\n&lt;h3&gt;The Example&lt;/h3&gt;\r\n[##]\r\n\r\n&lt;h3&gt;Summary&lt;/h3&gt;\r\n&lt;div class=\&quot;alert alert-info\&quot; role=\&quot;alert\&quot;&gt;&lt;h4 class=\&quot;alert-heading\&quot;&gt;Extension Variables&lt;/h4&gt;&lt;p&gt;For this extension to work the &lt;b&gt;class&lt;/b&gt; variable needs to be set to &lt;b&gt;timeline&lt;/b&gt; and the &lt;b&gt;file&lt;/b&gt; variable needs to give the name of the additional json file including the timeline data as shown below.&lt;/p&gt;&lt;/div&gt;\r\n\r\n&lt;figure&gt;\r\n\t\t&lt;pre style=\&quot;overflow: hidden;border: 2px solid black;padding: 10px;\&quot;&gt;\r\n&lt;code&gt;...  \r\n  \&quot;&lt;b&gt;timeline&lt;/b&gt;\&quot;: {\r\n    \&quot;&lt;b&gt;parent&lt;/b&gt;\&quot;: \&quot;extensions\&quot;,\r\n    \&quot;&lt;b&gt;class&lt;/b&gt;\&quot;: \&quot;timeline\&quot;,\r\n    \&quot;&lt;b&gt;file&lt;/b&gt;\&quot;: \&quot;timeline.json\&quot;,\r\n    \&quot;&lt;b&gt;title&lt;/b&gt;\&quot;: \&quot;Simple Site - The &amp;lt;b&amp;gt;Timeline Extension&amp;lt;/b&amp;gt;\&quot;,\r\n    \&quot;&lt;b&gt;content&lt;/b&gt;\&quot;: \&quot;&amp;lt;p&amp;gt;This extension uses the &amp;#91;Mermaid|https://mermaid-js.github.io/mermaid/#/&amp;#93; library to produce a customised timeline gantt chart. It is an example of a special page that can be added to the ... \&quot;,\r\n    \&quot;&lt;b&gt;content right&lt;/b&gt;\&quot;: \&quot;\&quot;\t\t\r\n\t}\r\n...\r\n&lt;/code&gt;&lt;/pre&gt;&lt;figcaption class=\&quot;figure-caption\&quot;&gt;Simplified version of the JSON object used to describe this page.&lt;/figcaption&gt;\r\n&lt;/figure&gt;\r\n\r\n&lt;p&gt;The details included in the &lt;b&gt;content&lt;/b&gt; and &lt;b&gt;content right&lt;/b&gt; variable will be presented as [previously described|pages.json.html], however the data included in the named file, in this case &lt;b&gt;timeline.json&lt;/b&gt; will be processed to add a formatted timeline to the page.&lt;/p&gt;\r\n\r\n&lt;h3&gt;Timeline JSON file&lt;/h3&gt;\r\n\r\n&lt;p&gt;As with the other JSON files the timeline data needs to be organised in a series of JSON objects, an example of which is provided below, for an example of real code please see the [timeline.json|https://github.com/jpadfield/simple-site/blob/master/build/timeline.json] file.&lt;/p&gt;\r\n\r\n&lt;figure&gt;\r\n\t\t&lt;pre style=\&quot;overflow: hidden;border: 2px solid black;padding: 10px;\&quot;&gt;\r\n&lt;code&gt;{\r\n  \&quot;&lt;b&gt;project&lt;/b&gt;\&quot;: \&quot;Simple title for time line\&quot;,\r\n  \&quot;&lt;b&gt;start date&lt;/b&gt;\&quot;: \&quot;Start date of your project in the 2020-12-31 format\&quot;,\r\n  \&quot;&lt;b&gt;margin&lt;/b&gt;\&quot;: -3, /* negative number of months - adds a margin to the left of your timeline to leave room for the group titles.*/\r\n...\r\n&lt;/code&gt;&lt;/pre&gt;&lt;figcaption class=\&quot;figure-caption\&quot;&gt;The top three variable required in the timeline JSON file.&lt;/figcaption&gt;\r\n&lt;/figure&gt;\r\n\r\n&lt;p&gt;The rest of the data within the JSON file relates to a series of event organised in &lt;b&gt;groups&lt;/b&gt;, it is ok just to have a single group, but the system automatically applies different background colours to each group, which allows an easy method of breaking up or organising a longer list of events. Each is identified with a unique short tag, and then within each individual group you have a group title and list of events called &lt;b&gt;stages&lt;/b&gt;.&lt;/p&gt;\r\n\r\n&lt;p&gt;Each stage is made up of four unnamed variables which equate to:&lt;/p&gt;\r\n&lt;ul&gt;\r\n&lt;li&gt;The display text that describes the particular stage or event&lt;/li&gt;\r\n&lt;li&gt;An optional styling class - at this time only three options are used in the example below;\r\n&lt;ul&gt;\r\n&lt;li&gt;&lt;b&gt;\&quot;\&quot;&lt;/b&gt;: (basically empty) a mid blue with a dark blue outline&lt;/li&gt;\r\n&lt;li&gt;&lt;b&gt;\&quot;crit\&quot;&lt;/b&gt;: a red with a lighter read outline&lt;/li&gt;\r\n&lt;li&gt;&lt;b&gt;\&quot;crit, active\&quot;&lt;/b&gt;: a lighter blue with a red outline.&lt;/li&gt;\r\n&lt;/ul&gt;&lt;/li&gt;\r\n&lt;li&gt;The start of the event: given in a number of months from the start date, or a number of months and days if formatted as \&quot;3,3\&quot; - three months and three days.&lt;/li&gt;\r\n&lt;li&gt;The end of the event: given in a number of months from the start date, or a number of months and days if formatted as \&quot;3,3\&quot; - three months and three days.&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;figure&gt;\r\n\t\t&lt;pre style=\&quot;overflow: hidden;border: 2px solid black;padding: 10px;\&quot;&gt;\r\n&lt;code&gt;\r\n... \r\n  \&quot;&lt;b&gt;groups&lt;/b&gt;\&quot;: { \r\n    \&quot;&lt;b&gt;tag1&lt;/b&gt;\&quot;: {\r\n      \&quot;&lt;b&gt;title&lt;/b&gt;\&quot;: \&quot;Tag1 Title\&quot;,\r\n      \&quot;&lt;b&gt;stages&lt;/b&gt;\&quot; : [\r\n        [\&quot;Text string describing the stage\&quot;, \&quot;\&quot;, 1, 2],\r\n        [\&quot;Text string describing a critical stage\&quot;, \&quot;crit\&quot;, 2, 4],\r\n        [\&quot;Text string describing an active stage\&quot;, \&quot;crit, active\&quot;, 3, 8]\r\n      ]}\r\n    }\r\n...\r\n&lt;/code&gt;&lt;/pre&gt;&lt;figcaption class=\&quot;figure-caption\&quot;&gt;The first few objects in the [JSON file|https://github.com/jpadfield/simple-site/blob/master/build/timeline.json] used to describe the example timeline are shown below.&lt;/figcaption&gt;\r\n&lt;/figure&gt;\r\n\r\n&lt;figure&gt;\r\n\t\t&lt;pre style=\&quot;overflow: hidden;border: 2px solid black;padding: 10px;\&quot;&gt;\r\n&lt;code&gt;{\r\n  \&quot;&lt;b&gt;project&lt;/b&gt;\&quot;: \&quot;Simple Site Time Line Example\&quot;,\r\n  \&quot;&lt;b&gt;start date&lt;/b&gt;\&quot;: \&quot;2020-02-01\&quot;,\r\n  \&quot;&lt;b&gt;margin&lt;/b&gt;\&quot;: -3,\r\n  \&quot;&lt;b&gt;groups&lt;/b&gt;\&quot;: {\r\n    \&quot;&lt;b&gt;int&lt;/b&gt;\&quot;: {\r\n      \&quot;&lt;b&gt;title&lt;/b&gt;\&quot;: \&quot;Initial discussion and planning\&quot;,\r\n      \&quot;&lt;b&gt;stages&lt;/b&gt;\&quot; : [\r\n        [\&quot;Literature/website/software review\&quot;, \&quot;\&quot;, 2, 8],\r\n        [\&quot;Establish communications, collaborative environments and links with related interest groups\&quot;,\t\&quot;\&quot;, 0, 4],\t\t\t\t\r\n        [\&quot;Recruit Project Researcher\&quot;, \&quot;crit\&quot;, \&quot;3,3\&quot;, 6],\r\n        [\&quot;Project Researcher In Post\&quot;, \&quot;crit\&quot;, 6, 21]\r\n      ]},\r\n    \&quot;&lt;b&gt;ws&lt;/b&gt;\&quot;: {\r\n      \&quot;&lt;b&gt;title&lt;/b&gt;\&quot;: \&quot;Workshops\&quot;,\r\n       \&quot;&lt;b&gt;stages&lt;/b&gt;\&quot;: [\r\n        [\&quot;Organise Workshop 1\&quot;, \&quot;\&quot;, 2, \&quot;5,20\&quot;],\r\n        [\&quot;Workshop 1 - The Beginning\&quot;, \&quot;crit\&quot;, \&quot;5,20\&quot;, \&quot;5,21\&quot;],\r\n        [\&quot;Organise Workshop 2\&quot;,\t\&quot;\&quot;, 6, 9],\r\n        [\&quot;Workshop 2 - The Middle\&quot;, \&quot;crit, active\&quot;, 9, 10],\r\n        [\&quot;Organise Workshop 3 \u2013 Document available resources and development ideas\&quot;, \&quot;\&quot;, 10, 18],\r\n        [\&quot;Workshop 3 - The End\&quot;, \&quot;crit, active\&quot;, 18, 19]\r\n      ]},\r\n\t\t\t\r\n...\r\n\r\n    }\r\n  }\r\n&lt;/code&gt;&lt;/pre&gt;&lt;figcaption class=\&quot;figure-caption\&quot;&gt;The first few objects in the [JSON file|https://github.com/jpadfield/simple-site/blob/master/build/timeline.json] used to describe the example timeline.&lt;/figcaption&gt;\r\n&lt;/figure&gt;&quot;,
+    &quot;content right&quot;: &quot;&quot;,
+    &quot;copy&quot;: false,
+    &quot;displaycode&quot;: true
+}</code></pre>
+		<figcaption class="figure-caption">The complete JSON object used to define this content and layout of this page.</figcaption>
+	</figure>		<h3>Extra extension file</h3>
+	<figure>
+		<pre class="json-renderer" style="overflow-y: auto;overflow-x: auto; border: 2px solid black;padding: 10px;max-height:400px;"><code>{
+    &quot;project&quot;: &quot;Simple Site Time Line Example&quot;,
+    &quot;start date&quot;: &quot;2020-02-01&quot;,
+    &quot;margin&quot;: -3,
+    &quot;groups&quot;: {
+        &quot;int&quot;: {
+            &quot;title&quot;: &quot;Initial discussion and planning&quot;,
+            &quot;stages&quot;: [
+                [
+                    &quot;Literature/website/software review&quot;,
+                    &quot;&quot;,
+                    2,
+                    8
+                ],
+                [
+                    &quot;Establish communications, collaborative environments and links with related interest groups&quot;,
+                    &quot;&quot;,
+                    0,
+                    4
+                ],
+                [
+                    &quot;Recruit Project Researcher&quot;,
+                    &quot;crit&quot;,
+                    &quot;3,3&quot;,
+                    6
+                ],
+                [
+                    &quot;Project Researcher In Post&quot;,
+                    &quot;crit&quot;,
+                    6,
+                    21
+                ]
+            ]
+        },
+        &quot;ws&quot;: {
+            &quot;title&quot;: &quot;Workshops&quot;,
+            &quot;stages&quot;: [
+                [
+                    &quot;Organise Workshop 1&quot;,
+                    &quot;&quot;,
+                    2,
+                    &quot;5,20&quot;
+                ],
+                [
+                    &quot;Workshop 1 - The Beginning&quot;,
+                    &quot;crit&quot;,
+                    &quot;5,20&quot;,
+                    &quot;5,21&quot;
+                ],
+                [
+                    &quot;Organise Workshop 2&quot;,
+                    &quot;&quot;,
+                    6,
+                    9
+                ],
+                [
+                    &quot;Workshop 2 - The Middle&quot;,
+                    &quot;crit, active&quot;,
+                    9,
+                    10
+                ],
+                [
+                    &quot;Organise Workshop 3 \u2013 Document available resources and development ideas&quot;,
+                    &quot;&quot;,
+                    10,
+                    18
+                ],
+                [
+                    &quot;Workshop 3 - The End&quot;,
+                    &quot;crit, active&quot;,
+                    18,
+                    19
+                ]
+            ]
+        },
+        &quot;cr&quot;: {
+            &quot;title&quot;: &quot;Collaborative Research&quot;,
+            &quot;stages&quot;: [
+                [
+                    &quot;Assessing the output of Workshop 1&quot;,
+                    &quot;&quot;,
+                    &quot;5,21&quot;,
+                    7
+                ],
+                [
+                    &quot;Assessing the output of Workshop 2&quot;,
+                    &quot;&quot;,
+                    10,
+                    12
+                ],
+                [
+                    &quot;Project Resource survey&quot;,
+                    &quot;&quot;,
+                    6,
+                    10
+                ],
+                [
+                    &quot;Evaluate selection of identified project Resources&quot;,
+                    &quot;&quot;,
+                    10,
+                    11
+                ],
+                [
+                    &quot;Assessing the output of Workshop 3&quot;,
+                    &quot;&quot;,
+                    19,
+                    20
+                ]
+            ]
+        },
+        &quot;pl&quot;: {
+            &quot;title&quot;: &quot;Placements&quot;,
+            &quot;stages&quot;: [
+                [
+                    &quot;Secondments (some may be virtual) for researcher&quot;,
+                    &quot;&quot;,
+                    9,
+                    17
+                ]
+            ]
+        },
+        &quot;pd&quot;: {
+            &quot;title&quot;: &quot;Public demonstrations&quot;,
+            &quot;stages&quot;: [
+                [
+                    &quot;Evaluation of demonstration deliverables&quot;,
+                    &quot;crit, active&quot;,
+                    19,
+                    20
+                ],
+                [
+                    &quot;Presentation of demonstration deliverables&quot;,
+                    &quot;crit, active&quot;,
+                    20,
+                    21
+                ]
+            ]
+        },
+        &quot;rp&quot;: {
+            &quot;title&quot;: &quot;Reporting&quot;,
+            &quot;stages&quot;: [
+                [
+                    &quot;Complete and Deliver Final Rreport&quot;,
+                    &quot;crit, active&quot;,
+                    20,
+                    21
+                ]
+            ]
+        }
+    }
+}</code></pre>
+		<figcaption class="figure-caption">The complete extension file used to define extra content included in this page.</figcaption>
+	</figure>	
+	</details>
+						</div></div><!--/span--></div></div><!--/row-->    
+<!-- End SimpleBDGrid -->
+
+			</div></div><!--/span-->
+			
+			
+		</div><!--/row-->
+			
+		  <footer class="fixed-bottom bg-light">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-5" style="text-align:left;">&copy; The National Gallery 2021</div>
+				<div class="col-2" style="text-align:center;"></div>
+				<div class="col-5" style="text-align:right;"><a href='http://rightsstatements.org/vocab/InC-EDU/1.0/'><img height='16' alt='In Copyright - Educational Use Permitted' title='In Copyright - Educational Use Permitted' src='graphics/InC-EDU.dark-white-interior-blue-type.png'/></a><a rel='license' href='https://creativecommons.org/licenses/by-nc/4.0/'><img alt='Creative Commons Licence' style='border-width:0' src='https://i.creativecommons.org/l/by-nc/4.0/88x31.png' /></a></div>
+			</div>
+		</div>        
+  </footer>
+    
+	</div><!--/.container-->
+    
+	
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/tether@2.0.0/dist/js/tether.min.js" integrity="sha256-cExSEm1VrovuDNOSgLk0xLue2IXxIvbKV1gXuCqKPLE=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha256-d+FygkWgwt59CFkWPuCB4RE6p1/WiUYCy16w1+c5vKk=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.json-viewer@1.4.0/json-viewer/jquery.json-viewer.js" integrity="sha256-klSHtWPkZv4zG4darvDEpAQ9hJFDqNbQrM+xDChm8Fo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mermaid@8.10.1/dist/mermaid.min.js" integrity="sha256-aQCGsx3/OLAXwNyOUrAedielIQAjIrMFkcWdXMlIkGc=" crossorigin="anonymous"></script>
+	<script>
+		
+var rectIDs = [];
+rectIDs["int0"] = "2019-11-01 - 2019-11-01";
+rectIDs["int1"] = "2020-04-01 - 2020-10-01";
+rectIDs["int2"] = "2020-02-01 - 2020-06-01";
+rectIDs["int3"] = "2020-05-03 - 2020-08-01";
+rectIDs["int4"] = "2020-08-01 - 2021-11-01";
+rectIDs["ws0"] = "2020-04-01 - 2020-07-20";
+rectIDs["ws1"] = "2020-07-20 - 2020-07-21";
+rectIDs["ws2"] = "2020-08-01 - 2020-11-01";
+rectIDs["ws3"] = "2020-11-01 - 2020-12-01";
+rectIDs["ws4"] = "2020-12-01 - 2021-08-01";
+rectIDs["ws5"] = "2021-08-01 - 2021-09-01";
+rectIDs["cr0"] = "2020-07-21 - 2020-09-01";
+rectIDs["cr1"] = "2020-12-01 - 2021-02-01";
+rectIDs["cr2"] = "2020-08-01 - 2020-12-01";
+rectIDs["cr3"] = "2020-12-01 - 2021-01-01";
+rectIDs["cr4"] = "2021-09-01 - 2021-10-01";
+rectIDs["pl0"] = "2020-11-01 - 2021-07-01";
+rectIDs["pd0"] = "2021-09-01 - 2021-10-01";
+rectIDs["pd1"] = "2021-10-01 - 2021-11-01";
+rectIDs["rp0"] = "2021-10-01 - 2021-11-01";
+
+
+var ttdiv = false;
+	
+function showTooltip(evt, cid) {
+
+	if (!ttdiv)
+		{let div = document.createElement('div');
+		 div.id = "tooltip";
+		 div.display = "none";
+		 div.style = "position: absolute; display: none;";
+		 document.body.append(div);
+		 ttdiv = true;}	
+
+	var daterange = "Date Range";
+	if (cid in rectIDs)
+		{daterange = rectIDs[cid];}
+	
+				
+  let tooltip = document.getElementById("tooltip");
+  tooltip.innerHTML = daterange;
+  tooltip.style.display = "block";
+  tooltip.style.left = evt.pageX + 10 + 'px';
+  tooltip.style.top = evt.pageY + 10 + 'px';
+	}
+
+function hideTooltip() {
+  var tooltip = document.getElementById("tooltip");
+  tooltip.style.display = "none";
+	}
+
+// Select the node that will be observed for mutations
+const targetNode = document.getElementById('gantt');
+
+// Options for the observer (which mutations to observe)
+const config = { attributes: true, childList: true, subtree: true };
+
+// Callback function to execute when mutations are observed
+const callback = function(mutationsList, observer) {
+	// Use traditional 'for loops' for IE 11
+  for(let mutation of mutationsList) {
+		if (mutation.type === 'attributes' &&
+				mutation.attributeName == 'id' &&
+				mutation.target.tagName == 'rect') {			
+
+			$( "#"+mutation.target.id ).mousemove(function( event ) {
+				showTooltip(event, mutation.target.id);});
+			$( "#"+mutation.target.id ).mouseout(function( event ) {
+				hideTooltip();});
+				
+			$( "#"+mutation.target.id+"-text" ).mousemove(function( event ) {
+				showTooltip(event, mutation.target.id);});
+			$( "#"+mutation.target.id+"-text" ).mouseout(function( event ) {
+				hideTooltip();});					
+			}
+    }
+	};
+
+// Create an observer instance linked to the callback function
+const observer = new MutationObserver(callback);
+
+// Start observing the target node for configured mutations
+observer.observe(targetNode, config);
+	
+		
+		function onLoad() {
+			hljs.highlightAll();			
+	$('pre.json-renderer').each(function(index, value) {			
+			var vtext = $(value).text()
+			var jsonResult;
+			
+			try {jsonResult = JSON.parse(vtext);}
+			catch (e) {
+				//console.log("\""+vtext+"\" " + "is not valid JSON: "+e);
+				};
+		
+			if (jsonResult) {$(value).jsonViewer(jsonResult);}
+			else
+				{let vurl = new URL(vtext);
+				 if (vurl.origin != "null") {
+				 $.getJSON({
+						url: vtext
+						}).done(function (result, status, xhr) {
+								$(value).jsonViewer(result)
+								}).fail(function (xhr, status, error) {									
+									$(value).jsonViewer(JSON.parse('{"string":"'+vtext+
+										'","error":"The supplied text does not seems to be' +
+										' valid JSON or a valid URL"}'));
+									});
+							}
+				else
+					{$(value).jsonViewer(JSON.parse('{"string":"'+vtext+
+					 '","error":"The supplied text does not seems to be valid '+
+					 'JSON or a valid URL"}'));}
+				}		
+		});
+		
+	
+	mermaid.ganttConfig = {
+    titleTopMargin:25,
+    barHeight:20,
+    barGap:4,
+    topPadding:50,
+    sidePadding:50
+		}
+  //console.log(mermaid.render);
+  mermaid.initialize({startOnLoad:true, flowchart: { 
+    curve: 'basis' 
+  }});$(function() {
+  // ------------------------------------------------------- //
+  // Multi Level dropdowns
+  // ------------------------------------------------------ //
+  $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    $(this).siblings().toggleClass("show");
+
+
+    if (!$(this).next().hasClass('show')) {
+      $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+    }
+    $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+      $('.dropdown-submenu .show').removeClass("show");
+    });
+
+  });
+});
+			}
+	</script>
+</body>
+
+</html>
