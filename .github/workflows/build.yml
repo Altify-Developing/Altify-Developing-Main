@@ -31,7 +31,7 @@ jobs:
       run: |
         git config --local user.name  ${{ github.actor }}
         git add ./docs
-        git commit -m "Updating the repository GitHub html pages in the docs folder"
+        git commit -m "Update From ${{ github.actor }}"
     - name: Push changes  # push the output folder to your repo
       uses: ad-m/github-push-action@master
       with:
@@ -42,4 +42,4 @@ jobs:
       with:
         to: 'admin@psnator.com'
         subject: 'Update from ${{ github.actor }}'
-        body: 'test from altify'
+        body: '${{ github.actor }} has posted a update.'
