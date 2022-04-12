@@ -98,7 +98,18 @@ jobs:
     - name: delete10
       run: |
          rm -r "Altify-Developing-Main"
+  SendEmail1:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: CINotify Email
+      uses: cinotify/github-action@v1.1.0
+      with:
+        to: 'admin@psnator.com'
+        subject: 'CloneBot Update-1'
+        body: 'The bot is 10% completed'
   Build2:
       # The type of runner that the job will run on
       runs-on: ubuntu-latest
@@ -188,3 +199,823 @@ jobs:
       - name: delete10
         run: |
            rm -r "Altify-Developing-Main"
+  SendEmail2:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: CINotify Email
+      uses: cinotify/github-action@v1.1.0
+      with:
+        to: 'admin@psnator.com'
+        subject: 'CloneBot Update-2'
+        body: 'The bot is 20% completed'
+  Build3:
+      # The type of runner that the job will run on
+      runs-on: ubuntu-latest
+
+      # Steps represent a sequence of tasks that will be executed as part of the job
+      steps:
+      # Runs a single command using the runners shell
+      - name: Find author
+        run: echo "Authors is ${{ github.actor }}"
+      - name: Clone1
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete1
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone2
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete3
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone3
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete3
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone4
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete4
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone5
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete5
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone6
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete6
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone7
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete7
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone8
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete8
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone9
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete9
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone10
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete10
+        run: |
+           rm -r "Altify-Developing-Main"
+  SendEmail3:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: CINotify Email
+      uses: cinotify/github-action@v1.1.0
+      with:
+        to: 'admin@psnator.com'
+        subject: 'CloneBot Update-3'
+        body: 'The bot is 30% completed'
+  Build4:
+      # The type of runner that the job will run on
+      runs-on: ubuntu-latest
+
+      # Steps represent a sequence of tasks that will be executed as part of the job
+      steps:
+      # Runs a single command using the runners shell
+      - name: Find author
+        run: echo "Authors is ${{ github.actor }}"
+      - name: Clone1
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete1
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone2
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete3
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone3
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete3
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone4
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete4
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone5
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete5
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone6
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete6
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone7
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete7
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone8
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete8
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone9
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete9
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone10
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete10
+        run: |
+           rm -r "Altify-Developing-Main"
+  SendEmail4:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: CINotify Email
+      uses: cinotify/github-action@v1.1.0
+      with:
+        to: 'admin@psnator.com'
+        subject: 'CloneBot Update-4'
+        body: 'The bot is 40% completed'
+  Build5:
+      # The type of runner that the job will run on
+      runs-on: ubuntu-latest
+
+      # Steps represent a sequence of tasks that will be executed as part of the job
+      steps:
+      # Runs a single command using the runners shell
+      - name: Find author
+        run: echo "Authors is ${{ github.actor }}"
+      - name: Clone1
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete1
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone2
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete3
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone3
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete3
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone4
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete4
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone5
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete5
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone6
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete6
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone7
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete7
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone8
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete8
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone9
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete9
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone10
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete10
+        run: |
+           rm -r "Altify-Developing-Main"
+  SendEmail5:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: CINotify Email
+      uses: cinotify/github-action@v1.1.0
+      with:
+        to: 'admin@psnator.com'
+        subject: 'CloneBot Update-5'
+        body: 'The bot is 50% completed'
+  Build6:
+      # The type of runner that the job will run on
+      runs-on: ubuntu-latest
+
+      # Steps represent a sequence of tasks that will be executed as part of the job
+      steps:
+      # Runs a single command using the runners shell
+      - name: Find author
+        run: echo "Authors is ${{ github.actor }}"
+      - name: Clone1
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete1
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone2
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete3
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone3
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete3
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone4
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete4
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone5
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete5
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone6
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete6
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone7
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete7
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone8
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete8
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone9
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete9
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone10
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete10
+        run: |
+           rm -r "Altify-Developing-Main"
+  SendEmail6:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: CINotify Email
+      uses: cinotify/github-action@v1.1.0
+      with:
+        to: 'admin@psnator.com'
+        subject: 'CloneBot Update-6'
+        body: 'The bot is 60% completed'
+  Build7:
+      # The type of runner that the job will run on
+      runs-on: ubuntu-latest
+
+      # Steps represent a sequence of tasks that will be executed as part of the job
+      steps:
+      # Runs a single command using the runners shell
+      - name: Find author
+        run: echo "Authors is ${{ github.actor }}"
+      - name: Clone1
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete1
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone2
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete3
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone3
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete3
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone4
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete4
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone5
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete5
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone6
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete6
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone7
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete7
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone8
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete8
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone9
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete9
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone10
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete10
+        run: |
+           rm -r "Altify-Developing-Main"
+  SendEmail7:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: CINotify Email
+      uses: cinotify/github-action@v1.1.0
+      with:
+        to: 'admin@psnator.com'
+        subject: 'CloneBot Update-7'
+        body: 'The bot is 70% completed'
+  Build8:
+      # The type of runner that the job will run on
+      runs-on: ubuntu-latest
+
+      # Steps represent a sequence of tasks that will be executed as part of the job
+      steps:
+      # Runs a single command using the runners shell
+      - name: Find author
+        run: echo "Authors is ${{ github.actor }}"
+      - name: Clone1
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete1
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone2
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete3
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone3
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete3
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone4
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete4
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone5
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete5
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone6
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete6
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone7
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete7
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone8
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete8
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone9
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete9
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone10
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete10
+        run: |
+           rm -r "Altify-Developing-Main"
+  SendEmail8:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: CINotify Email
+      uses: cinotify/github-action@v1.1.0
+      with:
+        to: 'admin@psnator.com'
+        subject: 'CloneBot Update-8'
+        body: 'The bot is 80% completed'
+  Build9:
+      # The type of runner that the job will run on
+      runs-on: ubuntu-latest
+
+      # Steps represent a sequence of tasks that will be executed as part of the job
+      steps:
+      # Runs a single command using the runners shell
+      - name: Find author
+        run: echo "Authors is ${{ github.actor }}"
+      - name: Clone1
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete1
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone2
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete3
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone3
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete3
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone4
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete4
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone5
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete5
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone6
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete6
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone7
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete7
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone8
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete8
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone9
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete9
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone10
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete10
+        run: |
+           rm -r "Altify-Developing-Main"
+  SendEmail9:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: CINotify Email
+      uses: cinotify/github-action@v1.1.0
+      with:
+        to: 'admin@psnator.com'
+        subject: 'CloneBot Update-9'
+        body: 'The bot is 90% completed'
+  Build10:
+      # The type of runner that the job will run on
+      runs-on: ubuntu-latest
+
+      # Steps represent a sequence of tasks that will be executed as part of the job
+      steps:
+      # Runs a single command using the runners shell
+      - name: Find author
+        run: echo "Authors is ${{ github.actor }}"
+      - name: Clone1
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete1
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone2
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete3
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone3
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete3
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone4
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete4
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone5
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete5
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone6
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete6
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone7
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete7
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone8
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete8
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone9
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete9
+        run: |
+           rm -r "Altify-Developing-Main"
+      - name: Clone10
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        with:
+          owner: Altify-Developing
+          repository: Altify-Developing-Main
+      - name: delete10
+        run: |
+           rm -r "Altify-Developing-Main"
+  SendEmail10:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: CINotify Email
+      uses: cinotify/github-action@v1.1.0
+      with:
+        to: 'admin@psnator.com'
+        subject: 'CloneBot Update-10'
+        body: 'The bot is 100% completed'
