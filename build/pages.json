@@ -5,16 +5,6 @@
 	"content right": "",
 	"displaycode": true	
 	},
-	"mirador-example": {
-    "parent": "template-home",
-    "displayName": "A Mirador Viewer",
-    "class": "mirador",
-    "file": "mirador.json",
-    "title": "Simple Site - The <b>IIIF Mirador Extension</b>",
-    "content": "<p>This extension uses the [IIIF|https://iiif.io] image viewer [Mirador|https://projectmirador.org/] to produce a customised presentation of a bespoke selection of IIIF manifests[@@IIIF manifests are simply a structured list of web based images resources that can be viewed in a IIIF compliant viewer, for more details see https://iiif.io/api/presentation/2.1/#table-of-contents]. It is an example of a special page that can be added to the [pages.json|pages.json.html] file. To change the objects displayed in this viewer, modify the <b>mirador.json</b> file found in the <b>build</b> folder in your Github Repository. Further information on the function of the viewer can be found under [Extensions|mirador-viewer.html] in the Documentation section of this site.</p>\r\n\r\n<h3>The Example</h3>\r\n[##]",
-    "content right": "",
-    "displaycode": true
-		},
 	"example-subpage-02": {
 		"parent": "template-home",
 		"displayName": "An Example List",
