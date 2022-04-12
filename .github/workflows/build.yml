@@ -51,14 +51,15 @@ jobs:
         subject: 'Update from ${{ github.actor }}'
         body: '${{ github.actor }} has posted a update.'
 
-  CreatePR:
-    # The type of runner that the job will run on
+  creating-PR:
+    name: Create Pull Request
     runs-on: ubuntu-latest
 
     steps:
-      - name: Create PR
-        uses: funivan/github-autopr@0.2.0
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Creating Pull Request
+        uses: heitorpolidoro/autocreate-pr@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          args: .head_commit.message .*Update.*
+          <user>: ${{ secrets.<USER_PERSONAL_ACCESS_TOKEN> }}
