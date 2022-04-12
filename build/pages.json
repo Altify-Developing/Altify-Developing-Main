@@ -5,13 +5,4 @@
 	"content right": "",
 	"displaycode": true	
 	},
-	"example-sub-subpage-01": {
-		"parent": "example-subpage-01",
-		"aliases": "results",
-		"displayName": "Great webpage name",
-		"title": "Probably not needed - more nesting",
-		"content": "<p>As the relationships work on a simple parent child structure more and more pages can be nested as required.</p>",
-		"content right": "<p>This example also shows that if needed you can automatically have multiple page names point towards the same page. This can be important if you have an old page name that needed to be changed, but has been referenced in the past.<div style=\"text-align:center;\"><a class=\"btn btn-outline-primary nav-button\" style=\"left:80px;\" id=\"nav-models\" role=\"button\" href=\"results.html\">The same page, but with the name \"results.html\"</a></div><br/><div class=\"alert alert-warning\" role=\"alert\"><p>Alternative page names can be set in the [pages.json|pages.json.html] file, using the variable <b>\"aliases\"</b>, and multiple alternative names can be entered as a comma separated list.</p></div>",
-    "displaycode": true
-		}
 }
