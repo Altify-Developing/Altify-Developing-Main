@@ -18,3 +18,5 @@ jobs:
 
       - name: Git Version
         uses: codacy/git-version@2.2.0
+        with:
+          release-branch: 'main'
