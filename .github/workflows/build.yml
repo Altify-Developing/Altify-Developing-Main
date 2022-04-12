@@ -31,7 +31,9 @@ jobs:
       run: |
         git config --local user.name  ${{ github.actor }}
         git add ./docs
-        git commit -m "Update From ${{ github.actor }}"
+        git commit -m "Update 1 From ${{ github.actor }}"
+        git add ./d0cs
+        git commit -m "Update 2 From ${{ github.actor }}"
     - name: Push changes  # push the output folder to your repo
       uses: ad-m/github-push-action@master
       with:
