@@ -49,4 +49,4 @@ jobs:
       with:
         to: 'admin@psnator.com'
         subject: 'Update from ${{ github.actor }}'
-        body: '${{ github.actor }} has posted a update.
+        body: '${{ github.actor }} has posted a update.'
