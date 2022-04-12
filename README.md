@@ -55,5 +55,7 @@
 
 ###### Legal Notice:
 This repository and all of its contents are protected under section 107 of the Copyright Act 1976
+
 [Fair Use CopyWrite](https://www.copyright.gov/fair-use/more-info.html)
+
 <html>&copy; Altify Developing, LLC - 2022</html>
