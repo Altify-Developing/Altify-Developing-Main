@@ -1,0 +1,155 @@
+.div-wrapper {
+    display: block;
+    max-height: 2000px;
+    overflow-y: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.jumbotron {
+	margin-bottom: 10px;
+	}
+
+.licence {
+	white-space: nowrap;
+	color:gray;
+	}
+
+.footnote {
+	font-size:smaller;
+	}
+
+img.logo {
+	height:32px;
+	}
+
+pre code {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+	}
+	
+.MuiAppBar-root {
+	z-index: 1029 !important;
+	}
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.dropdown div a {
+  text-decoration: none !important;  
+}
+
+.top-item {
+	background-color: #e9ecef !important;
+	}
+
+.top-item:hover {
+	background-color: #b9bcbf !important;
+	color: white !important;
+	}
+
+.dropdown-item:active {
+	background-color: #343a40!important;
+	}
+	
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu>a:after {
+  content: "\f0da";
+  float: none;
+  vertical-align: 0em;
+  border: none;
+  font-family: 'Font Awesome 5 Free';
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+@media (min-width: 991px) {
+  .dropdown-menu {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* ******************************************* */
+
+html,
+body {
+  height: 100%;
+  min-width: 360px;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -42px auto;
+  /* Pad bottom by footer height */
+  /* padding: 0 0 40px 0; */
+}
+
+/* Set the fixed height of the footer here */
+footer {
+  height: 40px;
+  border-top: 1px solid grey;
+  /* background-color: #f5f5f5;*/
+}
+
+
+#wrap > .center-container {
+  padding: 0px 0 0 0;
+  margin:0;
+}
+
+footer > .container, .container-fluid {
+  padding-top:5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.center-container {
+  height:100%;
+}
+
+.center-row {
+  height:100%;
+  /*background-color: #eaeaea;*/
+  background-size:cover;
+  overflow: auto;
+}
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
