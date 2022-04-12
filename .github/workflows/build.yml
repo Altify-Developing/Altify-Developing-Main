@@ -62,4 +62,4 @@ jobs:
       - name: Creating Pull Request
         uses: heitorpolidoro/autocreate-pr@v1
         env:
-          <user>: ${{ secrets.<USER_PERSONAL_ACCESS_TOKEN> }}
+          Altify-Development: ${{ secrets.<USER_PERSONAL_ACCESS_TOKEN> }}
