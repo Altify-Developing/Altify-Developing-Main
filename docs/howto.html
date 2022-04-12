@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Simple a system for creating a set of web-pages to support your GitHub repository from a few simple json files." />
+		<meta name="keywords" content="The National Gallery, London, National Gallery London, Scientific, Research, Heritage, Culture, JSON, PHP, Javascript, Github Pages, Dissemination, VRE, IIIF, Mermaid, Timeline, Mirador " />
+    <meta name="author" content="Joseph Padfield| joseph.padfield@ng-london.org.uk |National Gallery | London UK | website@ng-london.org.uk |www.nationalgallery.org.uk" />
+    <meta name="image" content="" />
+    <link rel="icon" href="graphics/favicon.ico">
+    <title>NG Simple Site - howto</title>
+    
+	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css" integrity="sha256-BNdodQbWHpU3HT8xGhkEusT4ch4HEjvwzcbDcVuHR+E=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/jquery.json-viewer@1.4.0/json-viewer/jquery.json-viewer.css" integrity="sha256-rXfxviikI1RGZM3px6piq9ZL0YZuO5ETcO8+toY+DDY=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/highlight.js@11.2.0/styles/github.css" integrity="sha256-Oppd74ucMR5a5Dq96FxjEzGF7tTw2fZ/6ksAqDCM8GY=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+    <style>
+    
+    </style>
+    
+  </head>
+
+<body onload="onLoad();">
+	<div id="wrap" class="container h-100">
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container-fluid">
+      <button 
+				class="navbar-toggler navbar-toggler-right" 
+				type="button" 
+				data-bs-toggle="collapse" 
+				data-bs-target="#navbarsExampleDefault" 
+				aria-controls="navbarsExampleDefault" 
+				aria-expanded="false" 
+				aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>    
+      <a class="navbar-brand"  href="./">
+  		<img id="page-logo" class="logo" title="Logo" src="graphics/ng-logo-white-100x40.png" 
+				style="" alt="The National Gallery"/>
+		  </a>
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault"><ul class="navbar-nav">
+
+<!-- Start Normal Item 1 -->
+<li class="nav-item "><a class="nav-link" style="white-space:nowrap;" href="home.html">Home</a>
+</li>
+<!-- End Normal Item 1 -->
+
+<!-- Start Normal Item 2 -->
+<li class="nav-item active"><a class="nav-link" style="white-space:nowrap;" href="howto.html">How To<span class="sr-only">(current)</span></a>
+</li>
+<!-- End Normal Item 2 -->
+
+<!-- Start Loop Item 3 -->
+<li class="nav-item dropdown ">
+<div class="btn-group"><a href="documentation.html" class="nav-link" style="white-space:nowrap;" title="Click to open the &ldquo;Documentation&rdquo; page">
+  Documentation</a><button type="button" class="btn nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"  title="Click to open the &ldquo;Documentation&rdquo; menu">
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+	<ul class="dropdown-menu"><!-- Dropdown Loop 3-1 --><li class="dropdown-submenu">
+		<a id="dropdownMenu3-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle" title="Click to open the &ldquo;JSON Files&rdquo; menu">JSON Files
+		&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
+		
+		<ul aria-labelledby="dropdownMenu3-1" class="dropdown-menu border-0 shadow">
+			<li><a href="json.html" class="dropdown-item  top-item" title="Click to open the &ldquo;JSON Files&rdquo; page">
+				JSON Files</a></li>
+		<li class="dropdown-divider"></li><li><a href="site.json.html" class="dropdown-item">Site.json</a></li><li><a href="pages.json.html" class="dropdown-item">Pages.json</a></li></ul></li><!-- End Loop 3-1 --><!-- Dropdown Loop 3-2 --><li class="dropdown-submenu">
+		<a id="dropdownMenu3-2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle" title="Click to open the &ldquo;Extensions&rdquo; menu">Extensions
+		&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
+		
+		<ul aria-labelledby="dropdownMenu3-2" class="dropdown-menu border-0 shadow">
+			<li><a href="extensions.html" class="dropdown-item  top-item" title="Click to open the &ldquo;Extensions&rdquo; page">
+				Extensions</a></li>
+		<li class="dropdown-divider"></li><li><a href="timeline.html" class="dropdown-item">Timeline</a></li><li><a href="lists.html" class="dropdown-item">Galleries and Lists</a></li><li><a href="mirador-viewer.html" class="dropdown-item">Mirador IIIF viewer</a></li><li><a href="panel-truck-viewer.html" class="dropdown-item">Panel Truck Viewer</a></li><li><a href="curtain-viewer.html" class="dropdown-item">Curtain Viewer</a></li><li><a href="openseadragon-viewer.html" class="dropdown-item">OpenSeadragon Viewer</a></li></ul></li><!-- End Loop 3-2 --><!-- Dropdown Loop 3-3 --><li class="dropdown-submenu">
+		<a id="dropdownMenu3-3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle" title="Click to open the &ldquo;Template&rdquo; menu">Template
+		&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
+		
+		<ul aria-labelledby="dropdownMenu3-3" class="dropdown-menu border-0 shadow">
+			<li><a href="template.html" class="dropdown-item  top-item" title="Click to open the &ldquo;Template&rdquo; page">
+				Template</a></li>
+		<li class="dropdown-divider"></li><!-- Dropdown Loop 3-3-1 --><li class="dropdown-submenu">
+		<a id="dropdownMenu3-3-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle" title="Click to open the &ldquo;Example Home&rdquo; menu">Example Home
+		&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
+		
+		<ul aria-labelledby="dropdownMenu3-3-1" class="dropdown-menu border-0 shadow">
+			<li><a href="template-home.html" class="dropdown-item  top-item" title="Click to open the &ldquo;Example Home&rdquo; page">
+				Example Home</a></li>
+		<li class="dropdown-divider"></li><!-- Dropdown Loop 3-3-1-1 --><li class="dropdown-submenu">
+		<a id="dropdownMenu3-3-1-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle" title="Click to open the &ldquo;Nice display pagename&rdquo; menu">Nice display pagename
+		&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
+		
+		<ul aria-labelledby="dropdownMenu3-3-1-1" class="dropdown-menu border-0 shadow">
+			<li><a href="example-subpage-01.html" class="dropdown-item  top-item" title="Click to open the &ldquo;Nice display pagename&rdquo; page">
+				Nice display pagename</a></li>
+		<li class="dropdown-divider"></li><li><a href="example-sub-subpage-01.html" class="dropdown-item">Great webpage name</a></li></ul></li><!-- End Loop 3-3-1-1 --><li><a href="mirador-example.html" class="dropdown-item">A Mirador Viewer</a></li><li><a href="example-subpage-02.html" class="dropdown-item">An Example List</a></li></ul></li><!-- End Loop 3-3-1 --></ul></li><!-- End Loop 3-3 -->
+	</ul>
+</div>
+</li>
+<!-- End Loop Item 3 -->
+
+<!-- Start Normal Item 4 -->
+<li class="nav-item "><a class="nav-link" style="white-space:nowrap;" href="about.html">About</a>
+</li>
+<!-- End Normal Item 4 -->
+</ul><span class="navbar-text w-100">			<a href="https://github.com/jpadfield/simple-site/" class="float-end">
+				<img id="ex-logo1" class="logo" title="github" src="graphics/github%20logo%20white.png" 
+				style="" alt="GitHub Jpadfield Simple-site"/>
+		  </a></span></div>
+</div>
+    </nav>
+		
+		<div class="row " style="padding-top:80px; padding-bottom:40px; min-height:100%;">				
+			<div class="col-12 col-md-12">  
+				<div class="h-100 d-flex flex-column"> 
+					
+					
+<!-- Start SimpleBDGrid -->
+<div class="p-2 bg-light border rounded-3 jumbotron">
+      <div class="container-fluid py-2"><h3 style="margin-bottom:0px;">Simple Site - HowTo</h3></div></div><div class="container-fluid "><div class="row h-100"><div class="col-12">							
+								<div class="h-100 d-flex flex-column">
+							
+						</div></div><!--/span--></div></div><!--/row-->    <div class="container-fluid "><div class="row h-100"><div class="col-lg-6 col-md-6 col-sm-12  col-xs-12">							
+								<div class="h-100 d-flex flex-column">
+							<h4>To set-up this system it is recommended that you</h4>
+<ul>
+	<li><a href='https://github.com/join'>Join GitHub</a></li>
+	<li><a href='https://help.github.com/en/github/getting-started-with-github/fork-a-repo'>Copy/Fork</a> the repository.</li>
+	<li>Re-enable <a href='https://help.github.com/en/actions'>GitHub Actions</a>, which are disabled during the Fork process:
+		<ul>
+			<li>Click on the <b>Actions</b> option at the top of your repository page.</li>
+			<li>A warning message will appear indicating that workflows have been disabled during the fork process.</li>
+			<li>Click on the green “I understand...” button to re-enable the GitHub Actions</li>
+		</ul></li>
+	<li>Enable GitHub Pages:<ul>
+		<li>Click on the <b>Settings</b> tab, which should be towards the upper right corner of the page.</li>
+		<li>Select <b>Pages</b> in the new menu down the left.</li>
+		<li>Select <b>master or main</b> in the <b>Source</b> <b>Select branch</b> dropdown.</li>
+		<li>Select <b>/docs</b> in the new <b>Select folder</b> dropdown.
+		<li>Click on the “Save” button to continue.</li>
+		<li>There will be a slight pause and the screen should be updated to indicate the URL for your website.</li>
+		</ul></li>
+	<li>Edit and then save the <a href='pages.json.html'>pages</a> and <a href='site.json.html'>site</a> JSON files found in the <b>build</b> folder of your GitHub Repository and your new project will be automatically updated.</li>	
+</ul>
+
+<h4>To make changes to your web-site</h4>
+<ul>
+	<li>Edit and then save the <a href='pages.json.html'>pages</a> and <a href='site.json.html'>site</a> JSON files found in the <b>build</b> folder of your GitHub Repository and your new project will be automatically updated.</li>	
+</ul>
+
+<div class="alert alert-info" role="alert">
+	<h4>You may have to wait a minute or two after an update</h4>
+	<p>Although the process of updating your webpages, after each edit of your pages and site JSON files, can take a few minutes to take effect. This is a result of the internal processes of GitHub, but it should not take too long.</p>
+</div><p>Any issues or comments can be added to the Issues section of this GitHub project: <a href='https://github.com/jpadfield/simple-site/issues'>here</a>.</p><div class="foonote"><ul></ul></div>
+						</div></div><!--/span--><div class="col-lg-6 col-md-6 col-sm-12  col-xs-12">							
+								<div class="h-100 d-flex flex-column">
+							<h4>An example Home page</h4><figure class="figure"><img style="position:relative;width:100%;" src="graphics/example-template-home.png"><figcaption style="padding-left:16px;padding-right:16px;" class="figure-caption">An example screenshot of the Simple Site home page created from the <b>pages-template.json</b> file included in the <b>build</b> folder.</figcaption></figure><div class="foonote"><ul></ul></div>
+						</div></div><!--/span--></div></div><!--/row-->    <div class="container-fluid "><div class="row h-100"><div class="col-12 col-lg-12">							
+								<div class="h-100 d-flex flex-column">
+								<hr/>
+	<details>
+	<summary>Display the full code used to define this page.</summary>
+	<br/>
+		<h3>Page JSON Object</h3>
+	<figure>
+		<pre class="json-renderer" style="overflow-y: auto;overflow-x: auto; border: 2px solid black;padding: 10px;max-height:400px;"><code>{
+    &quot;parent&quot;: &quot;&quot;,
+    &quot;class&quot;: &quot;&quot;,
+    &quot;file&quot;: &quot;&quot;,
+    &quot;title&quot;: &quot;Simple Site - HowTo&quot;,
+    &quot;content&quot;: &quot;&lt;h4&gt;To set-up this system it is recommended that you&lt;/h4&gt;\r\n&lt;ul&gt;\r\n\t&lt;li&gt;[Join GitHub|https://github.com/join]&lt;/li&gt;\r\n\t&lt;li&gt;[Copy/Fork|https://help.github.com/en/github/getting-started-with-github/fork-a-repo] the repository.&lt;/li&gt;\r\n\t&lt;li&gt;Re-enable [GitHub Actions|https://help.github.com/en/actions], which are disabled during the Fork process:\r\n\t\t&lt;ul&gt;\r\n\t\t\t&lt;li&gt;Click on the &lt;b&gt;Actions&lt;/b&gt; option at the top of your repository page.&lt;/li&gt;\r\n\t\t\t&lt;li&gt;A warning message will appear indicating that workflows have been disabled during the fork process.&lt;/li&gt;\r\n\t\t\t&lt;li&gt;Click on the green \u201cI understand...\u201d button to re-enable the GitHub Actions&lt;/li&gt;\r\n\t\t&lt;/ul&gt;&lt;/li&gt;\r\n\t&lt;li&gt;Enable GitHub Pages:&lt;ul&gt;\r\n\t\t&lt;li&gt;Click on the &lt;b&gt;Settings&lt;/b&gt; tab, which should be towards the upper right corner of the page.&lt;/li&gt;\r\n\t\t&lt;li&gt;Select &lt;b&gt;Pages&lt;/b&gt; in the new menu down the left.&lt;/li&gt;\r\n\t\t&lt;li&gt;Select &lt;b&gt;master or main&lt;/b&gt; in the &lt;b&gt;Source&lt;/b&gt; &lt;b&gt;Select branch&lt;/b&gt; dropdown.&lt;/li&gt;\r\n\t\t&lt;li&gt;Select &lt;b&gt;/docs&lt;/b&gt; in the new &lt;b&gt;Select folder&lt;/b&gt; dropdown.\r\n\t\t&lt;li&gt;Click on the \u201cSave\u201d button to continue.&lt;/li&gt;\r\n\t\t&lt;li&gt;There will be a slight pause and the screen should be updated to indicate the URL for your website.&lt;/li&gt;\r\n\t\t&lt;/ul&gt;&lt;/li&gt;\r\n\t&lt;li&gt;Edit and then save the [pages|pages.json.html] and [site|site.json.html] JSON files found in the &lt;b&gt;build&lt;/b&gt; folder of your GitHub Repository and your new project will be automatically updated.&lt;/li&gt;\t\r\n&lt;/ul&gt;\r\n\r\n&lt;h4&gt;To make changes to your web-site&lt;/h4&gt;\r\n&lt;ul&gt;\r\n\t&lt;li&gt;Edit and then save the [pages|pages.json.html] and [site|site.json.html] JSON files found in the &lt;b&gt;build&lt;/b&gt; folder of your GitHub Repository and your new project will be automatically updated.&lt;/li&gt;\t\r\n&lt;/ul&gt;\r\n\r\n&lt;div class=\&quot;alert alert-info\&quot; role=\&quot;alert\&quot;&gt;\r\n\t&lt;h4&gt;You may have to wait a minute or two after an update&lt;/h4&gt;\r\n\t&lt;p&gt;Although the process of updating your webpages, after each edit of your pages and site JSON files, can take a few minutes to take effect. This is a result of the internal processes of GitHub, but it should not take too long.&lt;/p&gt;\r\n&lt;/div&gt;&lt;p&gt;Any issues or comments can be added to the Issues section of this GitHub project: [here|https://github.com/jpadfield/simple-site/issues].&lt;/p&gt;&quot;,
+    &quot;content right&quot;: &quot;&lt;h4&gt;An example Home page&lt;/h4&gt;&lt;figure class=\&quot;figure\&quot;&gt;&lt;img style=\&quot;position:relative;width:100%;\&quot; src=\&quot;graphics/example-template-home.png\&quot;&gt;&lt;figcaption style=\&quot;padding-left:16px;padding-right:16px;\&quot; class=\&quot;figure-caption\&quot;&gt;An example screenshot of the Simple Site home page created from the &lt;b&gt;pages-template.json&lt;/b&gt; file included in the &lt;b&gt;build&lt;/b&gt; folder.&lt;/figcaption&gt;&lt;/figure&gt;&quot;,
+    &quot;copy&quot;: false,
+    &quot;displayName&quot;: &quot;How To&quot;,
+    &quot;displaycode&quot;: true
+}</code></pre>
+		<figcaption class="figure-caption">The complete JSON object used to define this content and layout of this page.</figcaption>
+	</figure>	
+	</details>
+						</div></div><!--/span--></div></div><!--/row-->    
+<!-- End SimpleBDGrid -->
+
+			</div></div><!--/span-->
+			
+			
+		</div><!--/row-->
+			
+		  <footer class="fixed-bottom bg-light">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-5" style="text-align:left;">&copy; The National Gallery 2021</div>
+				<div class="col-2" style="text-align:center;"></div>
+				<div class="col-5" style="text-align:right;"><a href='http://rightsstatements.org/vocab/InC-EDU/1.0/'><img height='16' alt='In Copyright - Educational Use Permitted' title='In Copyright - Educational Use Permitted' src='graphics/InC-EDU.dark-white-interior-blue-type.png'/></a><a rel='license' href='https://creativecommons.org/licenses/by-nc/4.0/'><img alt='Creative Commons Licence' style='border-width:0' src='https://i.creativecommons.org/l/by-nc/4.0/88x31.png' /></a></div>
+			</div>
+		</div>        
+  </footer>
+    
+	</div><!--/.container-->
+    
+	
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/tether@2.0.0/dist/js/tether.min.js" integrity="sha256-cExSEm1VrovuDNOSgLk0xLue2IXxIvbKV1gXuCqKPLE=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha256-d+FygkWgwt59CFkWPuCB4RE6p1/WiUYCy16w1+c5vKk=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.json-viewer@1.4.0/json-viewer/jquery.json-viewer.js" integrity="sha256-klSHtWPkZv4zG4darvDEpAQ9hJFDqNbQrM+xDChm8Fo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+	<script>
+		
+		
+		function onLoad() {
+			hljs.highlightAll();			
+	$('pre.json-renderer').each(function(index, value) {			
+			var vtext = $(value).text()
+			var jsonResult;
+			
+			try {jsonResult = JSON.parse(vtext);}
+			catch (e) {
+				//console.log("\""+vtext+"\" " + "is not valid JSON: "+e);
+				};
+		
+			if (jsonResult) {$(value).jsonViewer(jsonResult);}
+			else
+				{let vurl = new URL(vtext);
+				 if (vurl.origin != "null") {
+				 $.getJSON({
+						url: vtext
+						}).done(function (result, status, xhr) {
+								$(value).jsonViewer(result)
+								}).fail(function (xhr, status, error) {									
+									$(value).jsonViewer(JSON.parse('{"string":"'+vtext+
+										'","error":"The supplied text does not seems to be' +
+										' valid JSON or a valid URL"}'));
+									});
+							}
+				else
+					{$(value).jsonViewer(JSON.parse('{"string":"'+vtext+
+					 '","error":"The supplied text does not seems to be valid '+
+					 'JSON or a valid URL"}'));}
+				}		
+		});
+		$(function() {
+  // ------------------------------------------------------- //
+  // Multi Level dropdowns
+  // ------------------------------------------------------ //
+  $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    $(this).siblings().toggleClass("show");
+
+
+    if (!$(this).next().hasClass('show')) {
+      $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+    }
+    $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+      $('.dropdown-submenu .show').removeClass("show");
+    });
+
+  });
+});
+			}
+	</script>
+</body>
+
+</html>

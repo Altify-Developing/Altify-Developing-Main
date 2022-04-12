@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Simple a system for creating a set of web-pages to support your GitHub repository from a few simple json files." />
+		<meta name="keywords" content="The National Gallery, London, National Gallery London, Scientific, Research, Heritage, Culture, JSON, PHP, Javascript, Github Pages, Dissemination, VRE, IIIF, Mermaid, Timeline, Mirador " />
+    <meta name="author" content="Joseph Padfield| joseph.padfield@ng-london.org.uk |National Gallery | London UK | website@ng-london.org.uk |www.nationalgallery.org.uk" />
+    <meta name="image" content="" />
+    <link rel="icon" href="graphics/favicon.ico">
+    <title>NG Simple Site - Mirador_IIIF_viewer</title>
+    
+	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css" integrity="sha256-BNdodQbWHpU3HT8xGhkEusT4ch4HEjvwzcbDcVuHR+E=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/jquery.json-viewer@1.4.0/json-viewer/jquery.json-viewer.css" integrity="sha256-rXfxviikI1RGZM3px6piq9ZL0YZuO5ETcO8+toY+DDY=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/highlight.js@11.2.0/styles/github.css" integrity="sha256-Oppd74ucMR5a5Dq96FxjEzGF7tTw2fZ/6ksAqDCM8GY=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+    <style>
+    .fixed-top {z-index:1111;}
+    </style>
+    
+  </head>
+
+<body onload="onLoad();">
+	<div id="wrap" class="container h-100">
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container-fluid">
+      <button 
+				class="navbar-toggler navbar-toggler-right" 
+				type="button" 
+				data-bs-toggle="collapse" 
+				data-bs-target="#navbarsExampleDefault" 
+				aria-controls="navbarsExampleDefault" 
+				aria-expanded="false" 
+				aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>    
+      <a class="navbar-brand"  href="./">
+  		<img id="page-logo" class="logo" title="Logo" src="graphics/ng-logo-white-100x40.png" 
+				style="" alt="The National Gallery"/>
+		  </a>
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault"><ul class="navbar-nav">
+
+<!-- Start Normal Item 1 -->
+<li class="nav-item "><a class="nav-link" style="white-space:nowrap;" href="home.html">Home</a>
+</li>
+<!-- End Normal Item 1 -->
+
+<!-- Start Normal Item 2 -->
+<li class="nav-item "><a class="nav-link" style="white-space:nowrap;" href="howto.html">How To</a>
+</li>
+<!-- End Normal Item 2 -->
+
+<!-- Start Loop Item 3 -->
+<li class="nav-item dropdown active">
+<div class="btn-group"><a href="documentation.html" class="nav-link" style="white-space:nowrap;" title="Click to open the &ldquo;Documentation&rdquo; page">
+  Documentation<span class="sr-only">(current)</span></a><button type="button" class="btn nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"  title="Click to open the &ldquo;Documentation&rdquo; menu">
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+	<ul class="dropdown-menu"><!-- Dropdown Loop 3-1 --><li class="dropdown-submenu">
+		<a id="dropdownMenu3-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle" title="Click to open the &ldquo;JSON Files&rdquo; menu">JSON Files
+		&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
+		
+		<ul aria-labelledby="dropdownMenu3-1" class="dropdown-menu border-0 shadow">
+			<li><a href="json.html" class="dropdown-item  top-item" title="Click to open the &ldquo;JSON Files&rdquo; page">
+				JSON Files</a></li>
+		<li class="dropdown-divider"></li><li><a href="site.json.html" class="dropdown-item">Site.json</a></li><li><a href="pages.json.html" class="dropdown-item">Pages.json</a></li></ul></li><!-- End Loop 3-1 --><!-- Dropdown Loop 3-2 --><li class="dropdown-submenu">
+		<a id="dropdownMenu3-2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle" title="Click to open the &ldquo;Extensions&rdquo; menu">Extensions
+		&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
+		
+		<ul aria-labelledby="dropdownMenu3-2" class="dropdown-menu border-0 shadow">
+			<li><a href="extensions.html" class="dropdown-item  top-item" title="Click to open the &ldquo;Extensions&rdquo; page">
+				Extensions</a></li>
+		<li class="dropdown-divider"></li><li><a href="timeline.html" class="dropdown-item">Timeline</a></li><li><a href="lists.html" class="dropdown-item">Galleries and Lists</a></li><li><a href="mirador-viewer.html" class="dropdown-item">Mirador IIIF viewer</a></li><li><a href="panel-truck-viewer.html" class="dropdown-item">Panel Truck Viewer</a></li><li><a href="curtain-viewer.html" class="dropdown-item">Curtain Viewer</a></li><li><a href="openseadragon-viewer.html" class="dropdown-item">OpenSeadragon Viewer</a></li></ul></li><!-- End Loop 3-2 --><!-- Dropdown Loop 3-3 --><li class="dropdown-submenu">
+		<a id="dropdownMenu3-3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle" title="Click to open the &ldquo;Template&rdquo; menu">Template
+		&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
+		
+		<ul aria-labelledby="dropdownMenu3-3" class="dropdown-menu border-0 shadow">
+			<li><a href="template.html" class="dropdown-item  top-item" title="Click to open the &ldquo;Template&rdquo; page">
+				Template</a></li>
+		<li class="dropdown-divider"></li><!-- Dropdown Loop 3-3-1 --><li class="dropdown-submenu">
+		<a id="dropdownMenu3-3-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle" title="Click to open the &ldquo;Example Home&rdquo; menu">Example Home
+		&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
+		
+		<ul aria-labelledby="dropdownMenu3-3-1" class="dropdown-menu border-0 shadow">
+			<li><a href="template-home.html" class="dropdown-item  top-item" title="Click to open the &ldquo;Example Home&rdquo; page">
+				Example Home</a></li>
+		<li class="dropdown-divider"></li><!-- Dropdown Loop 3-3-1-1 --><li class="dropdown-submenu">
+		<a id="dropdownMenu3-3-1-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle" title="Click to open the &ldquo;Nice display pagename&rdquo; menu">Nice display pagename
+		&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
+		
+		<ul aria-labelledby="dropdownMenu3-3-1-1" class="dropdown-menu border-0 shadow">
+			<li><a href="example-subpage-01.html" class="dropdown-item  top-item" title="Click to open the &ldquo;Nice display pagename&rdquo; page">
+				Nice display pagename</a></li>
+		<li class="dropdown-divider"></li><li><a href="example-sub-subpage-01.html" class="dropdown-item">Great webpage name</a></li></ul></li><!-- End Loop 3-3-1-1 --><li><a href="mirador-example.html" class="dropdown-item">A Mirador Viewer</a></li><li><a href="example-subpage-02.html" class="dropdown-item">An Example List</a></li></ul></li><!-- End Loop 3-3-1 --></ul></li><!-- End Loop 3-3 -->
+	</ul>
+</div>
+</li>
+<!-- End Loop Item 3 -->
+
+<!-- Start Normal Item 4 -->
+<li class="nav-item "><a class="nav-link" style="white-space:nowrap;" href="about.html">About</a>
+</li>
+<!-- End Normal Item 4 -->
+</ul><span class="navbar-text w-100">			<a href="https://github.com/jpadfield/simple-site/" class="float-end">
+				<img id="ex-logo1" class="logo" title="github" src="graphics/github%20logo%20white.png" 
+				style="" alt="GitHub Jpadfield Simple-site"/>
+		  </a></span></div>
+</div>
+    </nav>
+		
+		<div class="row " style="padding-top:80px; padding-bottom:40px; min-height:100%;">				
+			<div class="col-12 col-md-12">  
+				<div class="h-100 d-flex flex-column"> 
+					
+					
+<!-- Start SimpleBDGrid -->
+<div class="p-2 bg-light border rounded-3 jumbotron">
+      <div class="container-fluid py-2"><h3 style="margin-bottom:0px;">Simple Site - The <b>IIIF Mirador Extension</b></h3></div></div><div class="container-fluid "><div class="row h-100"><div class="col-12">							
+								<div class="h-100 d-flex flex-column">
+									<div class="alert alert-light" role="alert" style="padding:0.5rem 0.5rem 0px 0.5rem;border-color:#dee2e6;">
+		<nav  style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+			<ol class="breadcrumb" style="margin-bottom:0.5rem;">
+				<li class="breadcrumb-item"><a href="documentation.html">Documentation</a></li><li class="breadcrumb-item"><a href="extensions.html">Extensions</a></li><li class="breadcrumb-item active" aria-current="page">Mirador IIIF viewer</li>
+			</ol>
+		</nav>
+		</div>
+						</div></div><!--/span--></div></div><!--/row-->    <div class="container-fluid "><div class="row h-100"><div class="col-12 flex-grow-1">							
+								<div class="h-100 d-flex flex-column">
+							<p>This extension uses the <a href='https://iiif.io'>IIIF</a> image viewer <a href='https://projectmirador.org/'>Mirador</a> to produce a customised presentation of a bespoke selection of IIIF manifests<sup><a id="ref1" href="#section1">[1]</a></sup>. It is an example of a special page that can be added to the <a href='pages.json.html'>pages.json</a> file.</p>
+
+<h3>The Example</h3>
+<div class="row" style="padding-left:16px;padding-right:16px;"><div class="col-12 col-lg-12"><div style="height:500px;position:relative;min-width:324px;" id="mirador"></div></div></div>
+<br/>
+<h3>Summary</h3>
+<div class="alert alert-info" role="alert"><h4 class="alert-heading">Extension Variables</h4><p>For this extension to work the <b>class</b> variable needs to be set to <b>mirador</b> and the <b>file</b> variable needs to give the name of the additional json file including the IIIF manifest list data as shown below.</p></div>
+
+<figure>
+		<pre style="overflow: hidden;border: 2px solid black;padding: 10px;">
+<code>...  
+  "<b>mirador</b>": {
+    "<b>parent</b>": "extensions",
+    "<b>class</b>": "mirador",
+    "<b>file</b>": "mirador.json",
+    "<b>title</b>": "Simple Site - The &lt;b&gt;IIIF Mirador Extension&lt;/b&gt;",
+    "<b>content</b>": "&lt;p&gt;This extension uses the &#91;IIIF|https://iiif.io&#93; to produce a customised presentation of a bespoke selection of &#91;IIIF manifests ... ",
+    "<b>content right</b>": ""		
+  }
+...
+</code></pre><figcaption class="figure-caption">Simplified version of the JSON object used to describe this page.</figcaption>
+</figure>
+
+<p>The details included in the <b>content</b> and <b>content right</b> variable will be presented as <a href='pages.json.html'>previously described</a>, however the data included in the named file, in this case <b>mirador.json</b> will be processed to add a populated Mirador image viewer to the page.</p>
+
+<h3>Mirador JSON file</h3>
+
+<p>As with the other JSON files the mirador data needs to be organised in a series of JSON objects, an example of which is provided below, for an example of real code please see the <a href='https://github.com/jpadfield/simple-site/blob/master/build/mirador.json'>mirador.json</a> file. The expected data can be split into two parts, the first is required and the second, more complex section is optional.</p>
+
+<h4>Section one - <b>catalog</b> object</h4>
+
+<p>This object is composed of a simple list of manifests URIs that should be preloaded into the viewer. If only the catalog object is provided Mirador is setup to autoload in the first image of the first manifest listed.</p>
+<figure>
+		<pre style="overflow: hidden;border: 2px solid black;padding: 10px;">
+<code>...
+  "<b>catalog</b>": [
+    { "manifestId": "<b>https://web.address/of/a/manifest you want to include"</b> }, 
+    { "manifestId": "<b>https://you.can.include/a/number/of/manifests/as/required</b>" }
+    ]
+...
+</code></pre><figcaption class="figure-caption">A commented example of a catalog object with two manifests listed.</figcaption>
+</figure>
+<br/>
+<h4>Section two - the <b>windows</b> object</h4>
+<p>As noted above this section is optional, it can also be a bit more complex. This object id intended to allow users to make use of some of the standard Mirador options to define which manifests and images are automatically loaded into the viewer and how they are arranged.</p>
+<figure>
+		<pre style="overflow: hidden;border: 2px solid black;padding: 10px;">
+<code>...
+  "<b>windows</b>": [
+    {
+    "<b>manifestId</b>": "URI of the manifest, from the included list, that you would like to load into a given slot by default",
+    "<b>canvasIndex</b>":"The number, starting from 0, of the image, as listed in the manifest, to be loaded in first",
+    "<b>view</b>": "The optional variable to define the initial view of this slot, enter one of <b>single</b>(default) or <b>gallery</b>",
+    "<b>id</b>: "Option variable to define a unique id for this slot, can be used in conjunction with more complex options to define the order and position in which listed slots will appear."
+    }
+  ]
+...
+</code></pre><figcaption class="figure-caption">A commented version of a windows object with a single slot defined. More information about these various values can be found on the main <a href='https://github.com/ProjectMirador/mirador/wiki/Configuration-Guides'>Mirador webpage</a>.</figcaption>
+</figure>
+<br/>
+<h3>Mirador Text file</h3>
+
+<p>Although the JSON format described above is preferred and provides additional functions, in order to make this extension as simple an accessible as possible, it is also possible to provide details of required manifests as simple text list, with one manifest per line.</p>
+
+<figure>
+		<pre style="overflow: hidden;border: 2px solid black;padding: 10px;">
+<code>https://manifests.britishart.yale.edu/manifest/34
+https://iiif.harvardartmuseums.org/manifests/object/299843
+https://media.nga.gov/public/manifests/nga_highlights.json
+</code></pre><figcaption class="figure-caption">An example of the simplest way of passing manifests to simple-site page builder, a simple list of manifest urls saved as a text file with one manifest url per line.</figcaption>
+</figure><div class="foonote"><hr/><ul><li id="section1"><a href="#ref1">[1]</a> IIIF manifests are simply a structured list of web based images resources that can be viewed in a IIIF compliant viewer, for more details see <a href='https://iiif.io/api/presentation/2.1/#table-of-contents'>https://iiif.io/api/presentation/2.1/#table-of-contents</a></li></ul></div>
+						</div></div><!--/span--></div></div><!--/row-->    <div class="container-fluid "><div class="row h-100"><div class="col-12 col-lg-12">							
+								<div class="h-100 d-flex flex-column">
+								<hr/>
+	<details>
+	<summary>Display the full code used to define this page.</summary>
+	<br/>
+		<h3>Page JSON Object</h3>
+	<figure>
+		<pre class="json-renderer" style="overflow-y: auto;overflow-x: auto; border: 2px solid black;padding: 10px;max-height:400px;"><code>{
+    &quot;parent&quot;: &quot;extensions&quot;,
+    &quot;class&quot;: &quot;mirador&quot;,
+    &quot;file&quot;: &quot;mirador.json&quot;,
+    &quot;title&quot;: &quot;Simple Site - The &lt;b&gt;IIIF Mirador Extension&lt;/b&gt;&quot;,
+    &quot;content&quot;: &quot;&lt;p&gt;This extension uses the [IIIF|https://iiif.io] image viewer [Mirador|https://projectmirador.org/] to produce a customised presentation of a bespoke selection of IIIF manifests[@@IIIF manifests are simply a structured list of web based images resources that can be viewed in a IIIF compliant viewer, for more details see https://iiif.io/api/presentation/2.1/#table-of-contents]. It is an example of a special page that can be added to the [pages.json|pages.json.html] file.&lt;/p&gt;\r\n\r\n&lt;h3&gt;The Example&lt;/h3&gt;\r\n[##]\r\n&lt;br/&gt;\r\n&lt;h3&gt;Summary&lt;/h3&gt;\r\n&lt;div class=\&quot;alert alert-info\&quot; role=\&quot;alert\&quot;&gt;&lt;h4 class=\&quot;alert-heading\&quot;&gt;Extension Variables&lt;/h4&gt;&lt;p&gt;For this extension to work the &lt;b&gt;class&lt;/b&gt; variable needs to be set to &lt;b&gt;mirador&lt;/b&gt; and the &lt;b&gt;file&lt;/b&gt; variable needs to give the name of the additional json file including the IIIF manifest list data as shown below.&lt;/p&gt;&lt;/div&gt;\r\n\r\n&lt;figure&gt;\r\n\t\t&lt;pre style=\&quot;overflow: hidden;border: 2px solid black;padding: 10px;\&quot;&gt;\r\n&lt;code&gt;...  \r\n  \&quot;&lt;b&gt;mirador&lt;/b&gt;\&quot;: {\r\n    \&quot;&lt;b&gt;parent&lt;/b&gt;\&quot;: \&quot;extensions\&quot;,\r\n    \&quot;&lt;b&gt;class&lt;/b&gt;\&quot;: \&quot;mirador\&quot;,\r\n    \&quot;&lt;b&gt;file&lt;/b&gt;\&quot;: \&quot;mirador.json\&quot;,\r\n    \&quot;&lt;b&gt;title&lt;/b&gt;\&quot;: \&quot;Simple Site - The &amp;lt;b&amp;gt;IIIF Mirador Extension&amp;lt;/b&amp;gt;\&quot;,\r\n    \&quot;&lt;b&gt;content&lt;/b&gt;\&quot;: \&quot;&amp;lt;p&amp;gt;This extension uses the &amp;#91;IIIF|https://iiif.io&amp;#93; to produce a customised presentation of a bespoke selection of &amp;#91;IIIF manifests ... \&quot;,\r\n    \&quot;&lt;b&gt;content right&lt;/b&gt;\&quot;: \&quot;\&quot;\t\t\r\n  }\r\n...\r\n&lt;/code&gt;&lt;/pre&gt;&lt;figcaption class=\&quot;figure-caption\&quot;&gt;Simplified version of the JSON object used to describe this page.&lt;/figcaption&gt;\r\n&lt;/figure&gt;\r\n\r\n&lt;p&gt;The details included in the &lt;b&gt;content&lt;/b&gt; and &lt;b&gt;content right&lt;/b&gt; variable will be presented as [previously described|pages.json.html], however the data included in the named file, in this case &lt;b&gt;mirador.json&lt;/b&gt; will be processed to add a populated Mirador image viewer to the page.&lt;/p&gt;\r\n\r\n&lt;h3&gt;Mirador JSON file&lt;/h3&gt;\r\n\r\n&lt;p&gt;As with the other JSON files the mirador data needs to be organised in a series of JSON objects, an example of which is provided below, for an example of real code please see the [mirador.json|https://github.com/jpadfield/simple-site/blob/master/build/mirador.json] file. The expected data can be split into two parts, the first is required and the second, more complex section is optional.&lt;/p&gt;\r\n\r\n&lt;h4&gt;Section one - &lt;b&gt;catalog&lt;/b&gt; object&lt;/h4&gt;\r\n\r\n&lt;p&gt;This object is composed of a simple list of manifests URIs that should be preloaded into the viewer. If only the catalog object is provided Mirador is setup to autoload in the first image of the first manifest listed.&lt;/p&gt;\r\n&lt;figure&gt;\r\n\t\t&lt;pre style=\&quot;overflow: hidden;border: 2px solid black;padding: 10px;\&quot;&gt;\r\n&lt;code&gt;...\r\n  \&quot;&lt;b&gt;catalog&lt;/b&gt;\&quot;: [\r\n    { \&quot;manifestId\&quot;: \&quot;&lt;b&gt;https://web.address/of/a/manifest you want to include\&quot;&lt;/b&gt; }, \r\n    { \&quot;manifestId\&quot;: \&quot;&lt;b&gt;https://you.can.include/a/number/of/manifests/as/required&lt;/b&gt;\&quot; }\r\n    ]\r\n...\r\n&lt;/code&gt;&lt;/pre&gt;&lt;figcaption class=\&quot;figure-caption\&quot;&gt;A commented example of a catalog object with two manifests listed.&lt;/figcaption&gt;\r\n&lt;/figure&gt;\r\n&lt;br/&gt;\r\n&lt;h4&gt;Section two - the &lt;b&gt;windows&lt;/b&gt; object&lt;/h4&gt;\r\n&lt;p&gt;As noted above this section is optional, it can also be a bit more complex. This object id intended to allow users to make use of some of the standard Mirador options to define which manifests and images are automatically loaded into the viewer and how they are arranged.&lt;/p&gt;\r\n&lt;figure&gt;\r\n\t\t&lt;pre style=\&quot;overflow: hidden;border: 2px solid black;padding: 10px;\&quot;&gt;\r\n&lt;code&gt;...\r\n  \&quot;&lt;b&gt;windows&lt;/b&gt;\&quot;: [\r\n    {\r\n    \&quot;&lt;b&gt;manifestId&lt;/b&gt;\&quot;: \&quot;URI of the manifest, from the included list, that you would like to load into a given slot by default\&quot;,\r\n    \&quot;&lt;b&gt;canvasIndex&lt;/b&gt;\&quot;:\&quot;The number, starting from 0, of the image, as listed in the manifest, to be loaded in first\&quot;,\r\n    \&quot;&lt;b&gt;view&lt;/b&gt;\&quot;: \&quot;The optional variable to define the initial view of this slot, enter one of &lt;b&gt;single&lt;/b&gt;(default) or &lt;b&gt;gallery&lt;/b&gt;\&quot;,\r\n    \&quot;&lt;b&gt;id&lt;/b&gt;: \&quot;Option variable to define a unique id for this slot, can be used in conjunction with more complex options to define the order and position in which listed slots will appear.\&quot;\r\n    }\r\n  ]\r\n...\r\n&lt;/code&gt;&lt;/pre&gt;&lt;figcaption class=\&quot;figure-caption\&quot;&gt;A commented version of a windows object with a single slot defined. More information about these various values can be found on the main [Mirador webpage|https://github.com/ProjectMirador/mirador/wiki/Configuration-Guides].&lt;/figcaption&gt;\r\n&lt;/figure&gt;\r\n&lt;br/&gt;\r\n&lt;h3&gt;Mirador Text file&lt;/h3&gt;\r\n\r\n&lt;p&gt;Although the JSON format described above is preferred and provides additional functions, in order to make this extension as simple an accessible as possible, it is also possible to provide details of required manifests as simple text list, with one manifest per line.&lt;/p&gt;\r\n\r\n&lt;figure&gt;\r\n\t\t&lt;pre style=\&quot;overflow: hidden;border: 2px solid black;padding: 10px;\&quot;&gt;\r\n&lt;code&gt;https://manifests.britishart.yale.edu/manifest/34\r\nhttps://iiif.harvardartmuseums.org/manifests/object/299843\r\nhttps://media.nga.gov/public/manifests/nga_highlights.json\r\n&lt;/code&gt;&lt;/pre&gt;&lt;figcaption class=\&quot;figure-caption\&quot;&gt;An example of the simplest way of passing manifests to simple-site page builder, a simple list of manifest urls saved as a text file with one manifest url per line.&lt;/figcaption&gt;\r\n&lt;/figure&gt;&quot;,
+    &quot;content right&quot;: &quot;&quot;,
+    &quot;copy&quot;: true,
+    &quot;displayName&quot;: &quot;Mirador IIIF viewer&quot;,
+    &quot;displaycode&quot;: true
+}</code></pre>
+		<figcaption class="figure-caption">The complete JSON object used to define this content and layout of this page.</figcaption>
+	</figure>		<h3>Extra extension file</h3>
+	<figure>
+		<pre class="json-renderer" style="overflow-y: auto;overflow-x: auto; border: 2px solid black;padding: 10px;max-height:400px;"><code>{
+    &quot;catalog&quot;: [
+        {
+            &quot;manifestID&quot;: &quot;https://iiif.harvardartmuseums.org/manifests/object/299843&quot;
+        },
+        {
+            &quot;manifestID&quot;: &quot;https://media.nga.gov/public/manifests/nga_highlights.json&quot;
+        }
+    ],
+    &quot;windows&quot;: [
+        {
+            &quot;manifestId&quot;: &quot;https://media.nga.gov/public/manifests/nga_highlights.json&quot;,
+            &quot;canvasIndex&quot;: 0
+        },
+        {
+            &quot;manifestId&quot;: &quot;https://iiif.harvardartmuseums.org/manifests/object/299843&quot;,
+            &quot;canvasIndex&quot;: 3
+        }
+    ]
+}</code></pre>
+		<figcaption class="figure-caption">The complete extension file used to define extra content included in this page.</figcaption>
+	</figure>	
+	</details>
+						</div></div><!--/span--></div></div><!--/row-->    
+<!-- End SimpleBDGrid -->
+
+			</div></div><!--/span-->
+			
+			
+		</div><!--/row-->
+			
+		  <footer class="fixed-bottom bg-light">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-5" style="text-align:left;">&copy; The National Gallery 2021</div>
+				<div class="col-2" style="text-align:center;"></div>
+				<div class="col-5" style="text-align:right;"><a href='http://rightsstatements.org/vocab/InC-EDU/1.0/'><img height='16' alt='In Copyright - Educational Use Permitted' title='In Copyright - Educational Use Permitted' src='graphics/InC-EDU.dark-white-interior-blue-type.png'/></a><a rel='license' href='https://creativecommons.org/licenses/by-nc/4.0/'><img alt='Creative Commons Licence' style='border-width:0' src='https://i.creativecommons.org/l/by-nc/4.0/88x31.png' /></a></div>
+			</div>
+		</div>        
+  </footer>
+    
+	</div><!--/.container-->
+    
+	
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/tether@2.0.0/dist/js/tether.min.js" integrity="sha256-cExSEm1VrovuDNOSgLk0xLue2IXxIvbKV1gXuCqKPLE=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha256-d+FygkWgwt59CFkWPuCB4RE6p1/WiUYCy16w1+c5vKk=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.json-viewer@1.4.0/json-viewer/jquery.json-viewer.js" integrity="sha256-klSHtWPkZv4zG4darvDEpAQ9hJFDqNbQrM+xDChm8Fo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mirador@3.2.0/dist/mirador.min.js" integrity="sha256-e11UQD1U7ifc8OK9X0rVMshTXSKl7MafRxi3PTwXDHs=" crossorigin="anonymous"></script>
+	<script>
+			$(function() {
+
+var myMiradorInstance = Mirador.viewer({
+       id: "mirador",
+       windows: [{"manifestId":"https:\/\/media.nga.gov\/public\/manifests\/nga_highlights.json","canvasIndex":0},{"manifestId":"https:\/\/iiif.harvardartmuseums.org\/manifests\/object\/299843","canvasIndex":3}],
+       manifests: [],
+       "catalog": [{"manifestID":"https:\/\/iiif.harvardartmuseums.org\/manifests\/object\/299843"},{"manifestID":"https:\/\/media.nga.gov\/public\/manifests\/nga_highlights.json"}],
+       
+       });     
+     });
+		
+		function onLoad() {
+			hljs.highlightAll();			
+	$('pre.json-renderer').each(function(index, value) {			
+			var vtext = $(value).text()
+			var jsonResult;
+			
+			try {jsonResult = JSON.parse(vtext);}
+			catch (e) {
+				//console.log("\""+vtext+"\" " + "is not valid JSON: "+e);
+				};
+		
+			if (jsonResult) {$(value).jsonViewer(jsonResult);}
+			else
+				{let vurl = new URL(vtext);
+				 if (vurl.origin != "null") {
+				 $.getJSON({
+						url: vtext
+						}).done(function (result, status, xhr) {
+								$(value).jsonViewer(result)
+								}).fail(function (xhr, status, error) {									
+									$(value).jsonViewer(JSON.parse('{"string":"'+vtext+
+										'","error":"The supplied text does not seems to be' +
+										' valid JSON or a valid URL"}'));
+									});
+							}
+				else
+					{$(value).jsonViewer(JSON.parse('{"string":"'+vtext+
+					 '","error":"The supplied text does not seems to be valid '+
+					 'JSON or a valid URL"}'));}
+				}		
+		});
+		$(function() {
+  // ------------------------------------------------------- //
+  // Multi Level dropdowns
+  // ------------------------------------------------------ //
+  $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    $(this).siblings().toggleClass("show");
+
+
+    if (!$(this).next().hasClass('show')) {
+      $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+    }
+    $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+      $('.dropdown-submenu .show').removeClass("show");
+    });
+
+  });
+});
+			}
+	</script>
+</body>
+
+</html>

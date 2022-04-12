@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Simple a system for creating a set of web-pages to support your GitHub repository from a few simple json files." />
+		<meta name="keywords" content="The National Gallery, London, National Gallery London, Scientific, Research, Heritage, Culture, JSON, PHP, Javascript, Github Pages, Dissemination, VRE, IIIF, Mermaid, Timeline, Mirador " />
+    <meta name="author" content="Joseph Padfield| joseph.padfield@ng-london.org.uk |National Gallery | London UK | website@ng-london.org.uk |www.nationalgallery.org.uk" />
+    <meta name="image" content="" />
+    <link rel="icon" href="graphics/favicon.ico">
+    <title>NG Simple Site - documentation</title>
+    
+	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css" integrity="sha256-BNdodQbWHpU3HT8xGhkEusT4ch4HEjvwzcbDcVuHR+E=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/jquery.json-viewer@1.4.0/json-viewer/jquery.json-viewer.css" integrity="sha256-rXfxviikI1RGZM3px6piq9ZL0YZuO5ETcO8+toY+DDY=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/highlight.js@11.2.0/styles/github.css" integrity="sha256-Oppd74ucMR5a5Dq96FxjEzGF7tTw2fZ/6ksAqDCM8GY=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+    <style>
+    
+    </style>
+    
+  </head>
+
+<body onload="onLoad();">
+	<div id="wrap" class="container h-100">
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container-fluid">
+      <button 
+				class="navbar-toggler navbar-toggler-right" 
+				type="button" 
+				data-bs-toggle="collapse" 
+				data-bs-target="#navbarsExampleDefault" 
+				aria-controls="navbarsExampleDefault" 
+				aria-expanded="false" 
+				aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>    
+      <a class="navbar-brand"  href="./">
+  		<img id="page-logo" class="logo" title="Logo" src="graphics/ng-logo-white-100x40.png" 
+				style="" alt="The National Gallery"/>
+		  </a>
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault"><ul class="navbar-nav">
+
+<!-- Start Normal Item 1 -->
+<li class="nav-item "><a class="nav-link" style="white-space:nowrap;" href="home.html">Home</a>
+</li>
+<!-- End Normal Item 1 -->
+
+<!-- Start Normal Item 2 -->
+<li class="nav-item "><a class="nav-link" style="white-space:nowrap;" href="howto.html">How To</a>
+</li>
+<!-- End Normal Item 2 -->
+
+<!-- Start Loop Item 3 -->
+<li class="nav-item dropdown active">
+<div class="btn-group"><a href="documentation.html" class="nav-link" style="white-space:nowrap;" title="Click to open the &ldquo;Documentation&rdquo; page">
+  Documentation<span class="sr-only">(current)</span></a><button type="button" class="btn nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"  title="Click to open the &ldquo;Documentation&rdquo; menu">
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+	<ul class="dropdown-menu"><!-- Dropdown Loop 3-1 --><li class="dropdown-submenu">
+		<a id="dropdownMenu3-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle" title="Click to open the &ldquo;JSON Files&rdquo; menu">JSON Files
+		&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
+		
+		<ul aria-labelledby="dropdownMenu3-1" class="dropdown-menu border-0 shadow">
+			<li><a href="json.html" class="dropdown-item  top-item" title="Click to open the &ldquo;JSON Files&rdquo; page">
+				JSON Files</a></li>
+		<li class="dropdown-divider"></li><li><a href="site.json.html" class="dropdown-item">Site.json</a></li><li><a href="pages.json.html" class="dropdown-item">Pages.json</a></li></ul></li><!-- End Loop 3-1 --><!-- Dropdown Loop 3-2 --><li class="dropdown-submenu">
+		<a id="dropdownMenu3-2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle" title="Click to open the &ldquo;Extensions&rdquo; menu">Extensions
+		&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
+		
+		<ul aria-labelledby="dropdownMenu3-2" class="dropdown-menu border-0 shadow">
+			<li><a href="extensions.html" class="dropdown-item  top-item" title="Click to open the &ldquo;Extensions&rdquo; page">
+				Extensions</a></li>
+		<li class="dropdown-divider"></li><li><a href="timeline.html" class="dropdown-item">Timeline</a></li><li><a href="lists.html" class="dropdown-item">Galleries and Lists</a></li><li><a href="mirador-viewer.html" class="dropdown-item">Mirador IIIF viewer</a></li><li><a href="panel-truck-viewer.html" class="dropdown-item">Panel Truck Viewer</a></li><li><a href="curtain-viewer.html" class="dropdown-item">Curtain Viewer</a></li><li><a href="openseadragon-viewer.html" class="dropdown-item">OpenSeadragon Viewer</a></li></ul></li><!-- End Loop 3-2 --><!-- Dropdown Loop 3-3 --><li class="dropdown-submenu">
+		<a id="dropdownMenu3-3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle" title="Click to open the &ldquo;Template&rdquo; menu">Template
+		&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
+		
+		<ul aria-labelledby="dropdownMenu3-3" class="dropdown-menu border-0 shadow">
+			<li><a href="template.html" class="dropdown-item  top-item" title="Click to open the &ldquo;Template&rdquo; page">
+				Template</a></li>
+		<li class="dropdown-divider"></li><!-- Dropdown Loop 3-3-1 --><li class="dropdown-submenu">
+		<a id="dropdownMenu3-3-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle" title="Click to open the &ldquo;Example Home&rdquo; menu">Example Home
+		&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
+		
+		<ul aria-labelledby="dropdownMenu3-3-1" class="dropdown-menu border-0 shadow">
+			<li><a href="template-home.html" class="dropdown-item  top-item" title="Click to open the &ldquo;Example Home&rdquo; page">
+				Example Home</a></li>
+		<li class="dropdown-divider"></li><!-- Dropdown Loop 3-3-1-1 --><li class="dropdown-submenu">
+		<a id="dropdownMenu3-3-1-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle" title="Click to open the &ldquo;Nice display pagename&rdquo; menu">Nice display pagename
+		&nbsp;&nbsp;<i class="fas fa-caret-right"></i></a>
+		
+		<ul aria-labelledby="dropdownMenu3-3-1-1" class="dropdown-menu border-0 shadow">
+			<li><a href="example-subpage-01.html" class="dropdown-item  top-item" title="Click to open the &ldquo;Nice display pagename&rdquo; page">
+				Nice display pagename</a></li>
+		<li class="dropdown-divider"></li><li><a href="example-sub-subpage-01.html" class="dropdown-item">Great webpage name</a></li></ul></li><!-- End Loop 3-3-1-1 --><li><a href="mirador-example.html" class="dropdown-item">A Mirador Viewer</a></li><li><a href="example-subpage-02.html" class="dropdown-item">An Example List</a></li></ul></li><!-- End Loop 3-3-1 --></ul></li><!-- End Loop 3-3 -->
+	</ul>
+</div>
+</li>
+<!-- End Loop Item 3 -->
+
+<!-- Start Normal Item 4 -->
+<li class="nav-item "><a class="nav-link" style="white-space:nowrap;" href="about.html">About</a>
+</li>
+<!-- End Normal Item 4 -->
+</ul><span class="navbar-text w-100">			<a href="https://github.com/jpadfield/simple-site/" class="float-end">
+				<img id="ex-logo1" class="logo" title="github" src="graphics/github%20logo%20white.png" 
+				style="" alt="GitHub Jpadfield Simple-site"/>
+		  </a></span></div>
+</div>
+    </nav>
+		
+		<div class="row " style="padding-top:80px; padding-bottom:40px; min-height:100%;">				
+			<div class="col-12 col-md-12">  
+				<div class="h-100 d-flex flex-column"> 
+					
+					
+<!-- Start SimpleBDGrid -->
+<div class="p-2 bg-light border rounded-3 jumbotron">
+      <div class="container-fluid py-2"><h3 style="margin-bottom:0px;">Simple Site - Technical Details and Documentation</h3></div></div><div class="container-fluid "><div class="row h-100"><div class="col-12">							
+								<div class="h-100 d-flex flex-column">
+							
+						</div></div><!--/span--></div></div><!--/row-->    <div class="container-fluid "><div class="row h-100"><div class="col-12 flex-grow-1">							
+								<div class="h-100 d-flex flex-column">
+							<div class="alert alert-warning" role="alert"><p>The pages included below this one contain further technical details of how the Simple Site system works. The two key files <a href='pages.json.html'>pages.json</a> and <a href='site.json.html'>site.json</a>, used to control and define the new webpages, are described in detail, along with the various <a href='extensions.html'>extensions</a> to Simple Site, that have been created to add more complex functionality, like adding IIIF viewers.</p><p>The other set of template pages have been included to provide some more simple examples of how "pages" can be defined. A copy of these page have also been included as the <b>pages-template.json</b> file found in the <b>build</b> folder in your Github Repository.</p></div><div class="foonote"><ul></ul></div>
+						</div></div><!--/span--></div></div><!--/row-->    <div class="container-fluid "><div class="row h-100"><div class="col-12 col-lg-12">							
+								<div class="h-100 d-flex flex-column">
+									<div class="alert alert-light" role="alert">
+			<h3>Included Pages</h3>
+			<div class="list-group">			
+				<a class="list-group-item list-group-item-action" href="json.html">JSON Files</a><a class="list-group-item list-group-item-action" href="extensions.html">Extensions</a><a class="list-group-item list-group-item-action" href="template.html">Template</a>
+			</div>
+		</div>
+						</div></div><!--/span--></div></div><!--/row-->    <div class="container-fluid "><div class="row h-100"><div class="col-12 col-lg-12">							
+								<div class="h-100 d-flex flex-column">
+								<hr/>
+	<details>
+	<summary>Display the full code used to define this page.</summary>
+	<br/>
+		<h3>Page JSON Object</h3>
+	<figure>
+		<pre class="json-renderer" style="overflow-y: auto;overflow-x: auto; border: 2px solid black;padding: 10px;max-height:400px;"><code>{
+    &quot;parent&quot;: &quot;&quot;,
+    &quot;class&quot;: &quot;&quot;,
+    &quot;file&quot;: &quot;&quot;,
+    &quot;title&quot;: &quot;Simple Site - Technical Details and Documentation&quot;,
+    &quot;content&quot;: &quot;&lt;div class=\&quot;alert alert-warning\&quot; role=\&quot;alert\&quot;&gt;&lt;p&gt;The pages included below this one contain further technical details of how the Simple Site system works. The two key files [pages.json|pages.json.html] and [site.json|site.json.html], used to control and define the new webpages, are described in detail, along with the various [extensions|extensions.html] to Simple Site, that have been created to add more complex functionality, like adding IIIF viewers.&lt;/p&gt;&lt;p&gt;The other set of template pages have been included to provide some more simple examples of how \&quot;pages\&quot; can be defined. A copy of these page have also been included as the &lt;b&gt;pages-template.json&lt;/b&gt; file found in the &lt;b&gt;build&lt;/b&gt; folder in your Github Repository.&lt;/p&gt;&lt;/div&gt;&quot;,
+    &quot;content right&quot;: &quot;&quot;,
+    &quot;copy&quot;: false,
+    &quot;aliases&quot;: &quot;instructions&quot;,
+    &quot;displaycode&quot;: true
+}</code></pre>
+		<figcaption class="figure-caption">The complete JSON object used to define this content and layout of this page.</figcaption>
+	</figure>	
+	</details>
+						</div></div><!--/span--></div></div><!--/row-->    
+<!-- End SimpleBDGrid -->
+
+			</div></div><!--/span-->
+			
+			
+		</div><!--/row-->
+			
+		  <footer class="fixed-bottom bg-light">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-5" style="text-align:left;">&copy; The National Gallery 2021</div>
+				<div class="col-2" style="text-align:center;"></div>
+				<div class="col-5" style="text-align:right;"><a href='http://rightsstatements.org/vocab/InC-EDU/1.0/'><img height='16' alt='In Copyright - Educational Use Permitted' title='In Copyright - Educational Use Permitted' src='graphics/InC-EDU.dark-white-interior-blue-type.png'/></a><a rel='license' href='https://creativecommons.org/licenses/by-nc/4.0/'><img alt='Creative Commons Licence' style='border-width:0' src='https://i.creativecommons.org/l/by-nc/4.0/88x31.png' /></a></div>
+			</div>
+		</div>        
+  </footer>
+    
+	</div><!--/.container-->
+    
+	
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/tether@2.0.0/dist/js/tether.min.js" integrity="sha256-cExSEm1VrovuDNOSgLk0xLue2IXxIvbKV1gXuCqKPLE=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha256-d+FygkWgwt59CFkWPuCB4RE6p1/WiUYCy16w1+c5vKk=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.json-viewer@1.4.0/json-viewer/jquery.json-viewer.js" integrity="sha256-klSHtWPkZv4zG4darvDEpAQ9hJFDqNbQrM+xDChm8Fo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+	<script>
+		
+		
+		function onLoad() {
+			hljs.highlightAll();			
+	$('pre.json-renderer').each(function(index, value) {			
+			var vtext = $(value).text()
+			var jsonResult;
+			
+			try {jsonResult = JSON.parse(vtext);}
+			catch (e) {
+				//console.log("\""+vtext+"\" " + "is not valid JSON: "+e);
+				};
+		
+			if (jsonResult) {$(value).jsonViewer(jsonResult);}
+			else
+				{let vurl = new URL(vtext);
+				 if (vurl.origin != "null") {
+				 $.getJSON({
+						url: vtext
+						}).done(function (result, status, xhr) {
+								$(value).jsonViewer(result)
+								}).fail(function (xhr, status, error) {									
+									$(value).jsonViewer(JSON.parse('{"string":"'+vtext+
+										'","error":"The supplied text does not seems to be' +
+										' valid JSON or a valid URL"}'));
+									});
+							}
+				else
+					{$(value).jsonViewer(JSON.parse('{"string":"'+vtext+
+					 '","error":"The supplied text does not seems to be valid '+
+					 'JSON or a valid URL"}'));}
+				}		
+		});
+		$(function() {
+  // ------------------------------------------------------- //
+  // Multi Level dropdowns
+  // ------------------------------------------------------ //
+  $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    $(this).siblings().toggleClass("show");
+
+
+    if (!$(this).next().hasClass('show')) {
+      $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+    }
+    $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+      $('.dropdown-submenu .show').removeClass("show");
+    });
+
+  });
+});
+			}
+	</script>
+</body>
+
+</html>
