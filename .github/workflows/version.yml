@@ -24,5 +24,3 @@ jobs:
         uses: funivan/github-autopr@0.2.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          args: .head_commit.message .*-Updating
