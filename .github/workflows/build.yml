@@ -49,17 +49,4 @@ jobs:
       with:
         to: 'admin@psnator.com'
         subject: 'Update from ${{ github.actor }}'
-        body: '${{ github.actor }} has posted a update.'
-
-  creating-PR:
-    name: Create Pull Request
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Creating Pull Request
-        uses: heitorpolidoro/autocreate-pr@v1
-        env:
-          Altify-Development: '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'
+        body: '${{ github.actor }} has posted a update.
