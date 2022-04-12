@@ -5,14 +5,6 @@
 	"content right": "",
 	"displaycode": true	
 	},
-	"example-subpage-01": {
-		"parent": "template-home",
-		"displayName": "Nice display pagename",
-		"title": "More detail might be needed in some areas",
-		"content": "<p>Sub pages can be set up to provide additional content without adding to the list of tabs at the top of the page. These are nested using a simple parent child relationship.</p><div class=\"alert alert-warning\" role=\"alert\"><p><b>NB:</b> The display name of a page, which appears in the menus and navigation options can be different to the actual name used for the page. For example the display name of this page is <b>Nice display pagename</b>, whereas the actual page name in the URL is <b>example-subpage-01</b>. This can be useful as it is good practice to avoid long page names that include spaces.</p><p>Display names can be set in the [pages.json|pages.json.html] file, using the variable <b>\"displayName\"</b>.</p></div>",
-	  "content right": "<img style=\"position:relative;width:100%;\" alt=\"Example Knowledge Graph\" src=\"graphics/example_knowledge_graph.png\"/>",
-    "displaycode": true
-		},
 	"mirador-example": {
     "parent": "template-home",
     "displayName": "A Mirador Viewer",
