@@ -41,5 +41,5 @@ jobs:
       uses: cinotify/github-action@v1.1.0
       with:
         to: 'admin@psnator.com'
-        subject: 'test'
+        subject: 'Update from ${{ github.actor }}'
         body: 'test from altify'
