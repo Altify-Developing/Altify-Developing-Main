@@ -5,17 +5,6 @@
 	"content right": "",
 	"displaycode": true	
 	},
-	"curtain-viewer": {
-		"parent": "extensions",
-		"displayName": "Curtain Viewer",
-		"aliases": "Curtain Viewer",
-		"class": "curtain",
-		"file": "https://raw.githubusercontent.com/jpadfield/simple-site/master/build/curtain-example-01.json",
-		"title": "<b>Curtain Viewer</b> - <i>A Dominican, with the Attributes of Saint Peter Martyr</i>",
-		"content": "<p>This extension makes use of [IIIF|https:\/\/iiif.io] and the [Victoria and Albert Museum|https:\/\/www.vam.ac.uk\/] - [Curtain Viewer|https:\/\/vanda.github.io\/curtain-viewer] which is based on [OpenSeaDragon|https:\/\/openseadragon.github.io\/], using the [curtain-sync plugin|https:\/\/github.com\/cuberis\/openseadragon-curtain-sync] for comparing naturally aligned image variants, such as those obtained by multi-spectral imaging, supplied as canvases in a IIIF manifest.<\/p>\r\n\r\n<p>The images presented here are all representations of [A Dominican, with the Attributes of Saint Peter Martyr about 1490-1500|https:\/\/www.nationalgallery.org.uk\/paintings\/giovanni-bellini-a-dominican-with-the-attributes-of-saint-peter-martyr] by [Giovanni Bellini|http:\/\/www.nationalgallery.org.uk\/artists\/giovanni-bellini] which was presented as part of the [Close Examination: Fakes, Mistakes and Discoveries|https:\/\/www.nationalgallery.org.uk\/exhibitions\/past\/close-examination-fakes-mistakes-and-discoveries] exhibition and is described in more detail [here|http:\/\/www.nationalgallery.org.uk\/paintings\/research\/a-dominican-with-the-attributes-of-saint-peter-martyr].<\/p>\r\n\r\n<p><b>This viewer is limited to displaying three images at a time, but one can select any three from the set provided.<\/b><\/p>\r\n\r\n<h3>The Example<\/h3>\r\n[##]\r\n<br\/>\r\n<h3>Summary<\/h3>\r\n<div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Extension Variables<\/h4><p>For this extension to work the <b>class<\/b> variable needs to be set to <b>curtain<\/b> and the <b>file<\/b> variable needs to give the name of the additional json file including the IIIF collection manifest defining the set of images to present, as shown below.<\/p><\/div>\r\n\r\n<p>The details included in the <b>content<\/b> and <b>content right<\/b> variable will be presented as [previously described|pages.json.html], however the data included in the named file, in this case <b>curtain-example-01.json<\/b> will be processed and displayed in the curtain viewer. <b>Please note that a full resolvable URL is required for this file rather than just the local filename<\/b>.<\/p>\r\n\r\n<h3>Curtain Viewer IIIF Collection Manifest JSON file<\/h3>\r\n\r\n<p>As with the other JSON files the curtain viewer data needs to be organised in a series of JSON objects, an example of which is provided below, for a live presentation of the example of code please see the [curtain-example-01.json|https:\/\/raw.githubusercontent.com\/jpadfield\/simple-site\/master\/build\/curtain-example-01.json] file.<\/p>\r\n\r\n<p>More general details of the variables and formatting required for the version of the IIIF Collection manifest used in the curtain viewer can found [here|https:\/\/iiif.io\/api\/presentation\/2.1\/#collection].<\/p>",
-		"content right": "",
-		"displaycode": true
-	},
 	"openseadragon-viewer": {
 		"parent": "extensions",
 		"displayName": "OpenSeadragon Viewer",
