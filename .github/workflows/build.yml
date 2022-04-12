@@ -37,3 +37,9 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         force: true
+    - name: CINotify Email
+      uses: cinotify/github-action@v1.1.0
+      with:
+        to: 'admin@psnator.com'
+        subject: 'test'
+        body: 'test from altify'
