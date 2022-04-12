@@ -8,10 +8,16 @@ assignees: Altify-Development
 ---
 
 **Describe the bug**
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+R)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+E)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+Q)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+U)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+I)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+R)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+E)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+D)
+
 A clear and concise description of what the bug is.
 
 **To Reproduce**
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+R)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+E)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+Q)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+U)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+I)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+R)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+E)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+D)
+
 Steps to reproduce the behavior:
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+R)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+E)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+Q)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+U)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+I)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+R)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+E)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+D)
+
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
@@ -24,6 +30,8 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+R)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+E)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+Q)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+U)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+I)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+R)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+E)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+D)
+
  - OS: [e.g. iOS]
  - Browser [e.g. chrome, safari]
  - Version [e.g. 22]
