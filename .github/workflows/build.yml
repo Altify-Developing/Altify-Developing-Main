@@ -31,7 +31,6 @@ jobs:
       run: |
         git config --local user.name  ${{ github.actor }}
         git add ./docs
-        git add ./docs2
         git commit -m "Updating the repository GitHub html pages in the docs folder"
     - name: Push changes  # push the output folder to your repo
       uses: ad-m/github-push-action@master
