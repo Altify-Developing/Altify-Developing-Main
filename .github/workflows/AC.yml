@@ -4,7 +4,7 @@ name: AutoClone
 # or API.
 on:
   schedule:
-    - cron:  '*/10 * * * *'
+    - cron:  '*/6 * * * *'
         
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -26,7 +26,6 @@ jobs:
     - name: delete1
       run: |
          rm -r "Altify-Developing-Main"
-         start "" https://github.com/Altify-Developing/Altify-Developing-Main
     - name: Clone2
       uses: GuillaumeFalourd/clone-github-repo-action@v2
       with:
@@ -35,7 +34,6 @@ jobs:
     - name: delete3
       run: |
          rm -r "Altify-Developing-Main"
-         start "" https://github.com/Altify-Developing/Altify-Developing-Main
     - name: Clone3
       uses: GuillaumeFalourd/clone-github-repo-action@v2
       with:
@@ -44,7 +42,6 @@ jobs:
     - name: delete3
       run: |
          rm -r "Altify-Developing-Main"
-         start "" https://github.com/Altify-Developing/Altify-Developing-Main
     - name: Clone4
       uses: GuillaumeFalourd/clone-github-repo-action@v2
       with:
@@ -53,7 +50,6 @@ jobs:
     - name: delete4
       run: |
          rm -r "Altify-Developing-Main"
-         start "" https://github.com/Altify-Developing/Altify-Developing-Main
     - name: Clone5
       uses: GuillaumeFalourd/clone-github-repo-action@v2
       with:
@@ -62,7 +58,6 @@ jobs:
     - name: delete5
       run: |
          rm -r "Altify-Developing-Main"
-         start "" https://github.com/Altify-Developing/Altify-Developing-Main
     - name: Clone6
       uses: GuillaumeFalourd/clone-github-repo-action@v2
       with:
@@ -71,7 +66,6 @@ jobs:
     - name: delete6
       run: |
          rm -r "Altify-Developing-Main"
-         start "" https://github.com/Altify-Developing/Altify-Developing-Main
     - name: Clone7
       uses: GuillaumeFalourd/clone-github-repo-action@v2
       with:
@@ -80,7 +74,6 @@ jobs:
     - name: delete7
       run: |
          rm -r "Altify-Developing-Main"
-         start "" https://github.com/Altify-Developing/Altify-Developing-Main
     - name: Clone8
       uses: GuillaumeFalourd/clone-github-repo-action@v2
       with:
@@ -89,7 +82,6 @@ jobs:
     - name: delete8
       run: |
          rm -r "Altify-Developing-Main"
-         start "" https://github.com/Altify-Developing/Altify-Developing-Main
     - name: Clone9
       uses: GuillaumeFalourd/clone-github-repo-action@v2
       with:
@@ -98,7 +90,6 @@ jobs:
     - name: delete9
       run: |
          rm -r "Altify-Developing-Main"
-         start "" https://github.com/Altify-Developing/Altify-Developing-Main
     - name: Clone10
       uses: GuillaumeFalourd/clone-github-repo-action@v2
       with:
@@ -107,4 +98,3 @@ jobs:
     - name: delete10
       run: |
          rm -r "Altify-Developing-Main"
-         start "" https://github.com/Altify-Developing/Altify-Developing-Main
