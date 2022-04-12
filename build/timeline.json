@@ -1,0 +1,50 @@
+	{
+	"project": "Simple Site Time Line Example",
+	"start date": "2020-02-01",
+	"margin": -3,
+	"groups": {
+		"int": {
+			"title": "Initial discussion and planning",
+			"stages" : [
+				["Literature/website/software review", "", 2, 8],
+				["Establish communications, collaborative environments and links with related interest groups",	"", 0, 4],				
+				["Recruit Project Researcher", "crit", "3,3", 6],
+				["Project Researcher In Post", "crit", 6, 21]
+			]},
+		"ws": {
+			"title": "Workshops",
+			"stages": [
+				["Organise Workshop 1", "", 2, "5,20"],
+				["Workshop 1 - The Beginning", "crit", "5,20", "5,21"],
+				["Organise Workshop 2",	"", 6, 9],
+				["Workshop 2 - The Middle", "crit, active", 9, 10],
+				["Organise Workshop 3 – Document available resources and development ideas", "", 10, 18],
+				["Workshop 3 - The End", "crit, active", 18, 19]
+			]},
+		"cr": {
+			"title": "Collaborative Research",
+			"stages": [
+				["Assessing the output of Workshop 1", "", "5,21", 7],
+				["Assessing the output of Workshop 2", "", 10, 12],
+				["Project Resource survey", "", 6, 10],
+				["Evaluate selection of identified project Resources", "", 10, 11],
+				["Assessing the output of Workshop 3", "", 19, 20] 
+			]},
+		"pl": {
+			"title": "Placements",
+			"stages": [
+				["Secondments (some may be virtual) for researcher", "", 9, 17] 
+			]},
+		"pd": {
+			"title": "Public demonstrations",
+			"stages": [
+				["Evaluation of demonstration deliverables", "crit, active", 19, 20], 
+				["Presentation of demonstration deliverables", "crit, active", 20, 21] 
+			]},
+		"rp": {
+			"title": "Reporting",
+			"stages": [
+				["Complete and Deliver Final Rreport",	"crit, active", 20, 21] 
+			]}
+		}
+	}

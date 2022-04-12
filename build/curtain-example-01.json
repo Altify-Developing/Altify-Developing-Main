@@ -1,0 +1,31 @@
+
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://raw.githubusercontent.com/jpadfield/simple-mirador/master/build/curtain-example-01.json",
+    "@type": "sc:Collection",
+    "label": "The National Gallery Registered Image Examples",
+    "attribution": "The National Gallery",
+    "description": "The images presented here are all representations of <a href=\"https:\/\/www.nationalgallery.org.uk\/paintings\/giovanni-bellini-a-dominican-with-the-attributes-of-saint-peter-martyr\">A Dominican, with the Attributes of Saint Peter Martyr about 1490-1500<\/a> by <a href=\"http:\/\/www.nationalgallery.org.uk\/artists\/giovanni-bellini\">Giovanni Bellini<\/a> which was presented as part of the <a href=\"https:\/\/www.nationalgallery.org.uk\/exhibitions\/past\/close-examination-fakes-mistakes-and-discoveries\">Close Examination: Fakes, Mistakes and Discoveries<\/a> exhibition and is described in more detail <a href=\"http:\/\/www.nationalgallery.org.uk\/paintings\/research\/a-dominican-with-the-attributes-of-saint-peter-martyr\">here<\/a>.",
+    "logo": "https://research.ng-london.org.uk/ng/graphics/ng_logo_tr_125.png",
+    "viewingDirection": "left-to-right",
+    "related": [
+        {
+            "@id": "https://www.nationalgallery.org.uk/"
+        }
+    ],
+    "manifests": [
+        {
+            "@id": "https://research.ng-london.org.uk/iiif-exp/manifests/bellini-petermartyr",
+            "@type": "sc:Manifest",
+            "label": "A Dominican, with the Attributes of Saint Peter Martyr",
+            "service": [
+                {
+                    "@context": "http://www.nationalgallery.org.uk/paintings/research/a-dominican-with-the-attributes-of-saint-peter-martyr",
+                    "@id": "http://a-dominican-with-the-attributes-of-saint-peter-martyr",
+                    "label": "National Gallery  Example",
+                    "terms": ""
+                }
+            ]
+        }
+    ]
+}

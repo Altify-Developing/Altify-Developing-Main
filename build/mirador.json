@@ -1,0 +1,15 @@
+{
+	"catalog": [
+		{ "manifestID": "https://iiif.harvardartmuseums.org/manifests/object/299843" }, 
+		{ "manifestID": "https://media.nga.gov/public/manifests/nga_highlights.json" }		
+	],
+	"windows": [{
+			"manifestId": "https://media.nga.gov/public/manifests/nga_highlights.json",
+			"canvasIndex": 0
+		},
+		{
+			"manifestId": "https://iiif.harvardartmuseums.org/manifests/object/299843",
+			"canvasIndex": 3
+		}
+	]
+}

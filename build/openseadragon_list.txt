@@ -1,0 +1,4 @@
+https://ids.lib.harvard.edu/ids/iiif/47174896/info.json
+https://data.ng-london.org.uk/0F6J-0001-0000-0000.iiif
+https://media.nga.gov/public/manifests/nga_highlights.json
+https://images.britishart.yale.edu/iiif/2e789b5b-3172-4540-bd73-0d3c7c845389/info.json

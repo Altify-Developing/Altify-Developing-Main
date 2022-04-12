@@ -1,0 +1,48 @@
+	{	
+	"home": {
+		"displayName": "Home",
+		"title": "YOUR PAGE TILE APPEARS HERE",
+		"class": "openseadragon",
+		"file": "https://data.ng-london.org.uk/0CWR-0001-0000-0000.iiif",
+		"content": "<h4>SECTION TITLE CAN BE ADDED LIKE THIS</h4><br/><p>This is an example of a small set of related html pages created automatically based on a set of three JSON[@@https://www.json.org] files. This example includes simple text, some basic html code and even some additional Bootstrap options. Please note you can simply just use text, the more complex options are just here as an example.</p><div style=\"text-align:center;\"><a class=\"btn btn-outline-primary nav-button\" style=\"left:80px;\" id=\"nav-models\" role=\"button\" href=\"./\">Example Button</a></div><br/><p>Button or images or any html markup can be added in to form the bulk of the content[@@Here we could place a lot more detail about this issue] and then presented as a simple html page on Github[@@https://github.com/]</p><div class=\"alert alert-info\" role=\"alert\"><h4>For the adventurous you can also use other [Bootstrap|https://getbootstrap.com/] functions</h4><p>Extra Bootstrap classes can be used to add colours and emphasis as required.</p></div><p>N.B. The logos used on this page and the link to the Github repository above can all be modified. See [site.json|site.json.html] in the Documentation section for further details.</p><p>Additional information[@@This extra foot note should be automatically positioned under the second column] can be easily added as a second column without the need for more complex html and one can even add in an image if required:</p><h4>Images</h4><p>TO ADD AN IMAGE TO A PAGE THERE ARE TWO OPTIONS:</p>",
+		"content right": "<p><b>To insert a static image:</b></p><p>Replace the URL in the centre of this code and update the alternative text and caption (if either is desired): <figure class=\"figure\"><img src=\"https://data.ng-london.org.uk/iiif/image/02NS-0001-0000-0000/full/256,/0/default.jpg\" class=\"figure-img img-fluid rounded\" alt=\"This is where you can add the alternative text for the image\"><figcaption class=\"figure-caption\">There is also the option to add a caption to any image. - Georges Seurat ('Bathers at Asnières') \u00a9 The National Gallery, London. Bought, Courtauld Fund, 1924. This image is licensed under [CC-BY-NC-ND 4.0|https://creativecommons.org/licenses/by-nc-nd/4.0/].</figcaption></figure><p><b>To insert a 'zoom-able' image:</b></p> <p> First, you need a IIIF manifest. Ensure you have <b>\"class\":\"openseadragon\"</b> and <b>\"file\":\"IIIF manifest goes here\"</b> enabled on the page on which you'd like to display the image.</p><p>Given the above conditions you can use this code, amended as you'd like to display the desired image: <figure class=\"figure\">[##]<figcaption style=\"padding-left:16px;padding-right:16px;\" class=\"figure-caption\">Hans Holbein the Younger, Jean de Dinteville and Georges de Selve ('The Ambassadors') \u00a9 The National Gallery, London. Bought, 1890. This image is licensed under [CC-BY-NC-ND 4.0|https://creativecommons.org/licenses/by-nc-nd/4.0/].</figcaption></figure>",
+		"displaycode": true	
+		},
+	"example-subpage-01": {
+		"parent": "home",
+		"displayName": "Nice display pagename",
+		"title": "More detail might be needed in some areas",
+		"content": "<p>Sub pages can be set up to provide additional content without adding to the list of tabs at the top of the page. These are nested using a simple parent child relationship.</p><div class=\"alert alert-warning\" role=\"alert\"><p><b>NB:</b> The display name of a page, which appears in the menus and navigation options can be different to the actual name used for the page. For example the display name of this page is <b>Nice display pagename</b>, whereas the actual page name in the URL is <b>example-subpage-01</b>. This can be useful as it is good practice to avoid long page names that include spaces.</p><p>Display names can be set in the [pages.json|pages.json.html] file, using the variable <b>\"displayName\"</b>.</p></div>",
+	  "content right": "<img style=\"position:relative;width:100%;\" alt=\"Example Knowledge Graph\" src=\"graphics/example_knowledge_graph.png\"/>",
+    "displaycode": true
+		},
+	"mirador-example": {
+    "parent": "home",
+    "displayName": "A Mirador Viewer",
+    "class": "mirador",
+    "file": "mirador.json",
+    "title": "Simple Site - The <b>IIIF Mirador Extension</b>",
+    "content": "<p>This extension uses the [IIIF|https://iiif.io] image viewer [Mirador|https://projectmirador.org/] to produce a customised presentation of a bespoke selection of IIIF manifests[@@IIIF manifests are simply a structured list of web based images resources that can be viewed in a IIIF compliant viewer, for more details see https://iiif.io/api/presentation/2.1/#table-of-contents]. It is an example of a special page that can be added to the [pages.json|pages.json.html] file. To change the objects displayed in this viewer, modify the <b>mirador.json</b> file found in the <b>build</b> folder in your Github Repository. Further information on the function of the viewer can be found under [Extensions|mirador-viewer.html] in the Documentation section of this site.</p>\r\n\r\n<h3>The Example</h3>\r\n[##]",
+    "content right": "",
+    "displaycode": true
+		},
+	"example-subpage-02": {
+		"parent": "home",
+		"displayName": "An Example List",
+		"class": "list",
+		"file": "list-example.json",
+		"title": "Another example of a simple sub page",
+		"content": "<p>This example is displaying a list of four entries, displayed four times, demonstrating all four available display formats. An optional table of contents providing links to each of the defined groups has also been included.</p><p>It is an example of a special page that can be added to the [pages.json|pages.json.html] file. To change the objects displayed in this list, modify the <b>list-example.json</b> file found in the <b>build</b> folder in your Github Repository. Further information on types and formats of the lists displayed can be found under [Extensions|lists.html] in the Documentation section of this site.</p>\r\n\r\n[##]",		
+	  "content right": "",
+    "displaycode": true
+		},
+	"example-sub-subpage-01": {
+		"parent": "example-subpage-01",
+		"aliases": "results",
+		"displayName": "Great webpage name",
+		"title": "Probably not needed - more nesting",
+		"content": "<p>As the relationships work on a simple parent child structure more and more pages can be nested as required.</p>",
+		"content right": "<p>This example also shows that if needed you can automatically have multiple page names point towards the same page. This can be important if you have an old page name that needed to be changed, but has been referenced in the past.<div style=\"text-align:center;\"><a class=\"btn btn-outline-primary nav-button\" style=\"left:80px;\" id=\"nav-models\" role=\"button\" href=\"results.html\">The same page, but with the name \"results.html\"</a></div><br/><div class=\"alert alert-warning\" role=\"alert\"><p>Alternative page names can be set in the [pages.json|pages.json.html] file, using the variable <b>\"aliases\"</b>, and multiple alternative names can be entered as a comma separated list.</p></div>",
+    "displaycode": true
+		}
+	}

@@ -1,0 +1,83 @@
+{
+  "defaultcard": "full",
+  "displaychecked": true,
+  "tableofcontents": true,
+  "groups": {
+    "Full Card Format" : {
+      "comment": "This the most complex formatting provided presenting all of the main details in an interactive card like presentation",
+      "card": "full"},
+    "Simple Card Format" : {
+      "comment": "This is a simplified version of the full card, the sizes of the image is generally limited, the second title is not shown and the cards are arrange in columns rather than rows.",
+      "card": "simple",
+      "maxcols": 2},
+    "Image Only Format" : {
+      "comment": "This is simplest card format, limited to a clickable image with the primary title shown as hover text.",
+      "card": "image",
+      "maxcols": 3},
+    "List Format" : {
+      "comment": "The list format only display clickable titles and the comment for each entry, arranged as a simple bulet point list.",
+      "card": "list"},
+    "Presentations" : {
+      "comment": "This additional format, requires additional variables and is specifically for formatting the resources used to present a lecture or presentation, video, slides, pdf, transcript, etc.",
+      "card": "presentation"}
+    	},
+  "list": [{
+	"groups": ["Full Card Format", "Simple Card Format", "Image Only Format", "List Format"],
+	"ptitle": "The IIIF - TANC Project",
+	"stitle": "Practical applications of IIIF as a building block towards a digital National Collection",
+	"comment": "AHRC funded - IIIF-TNC | Practical applications of IIIF as a building block towards a digital National Collection - IIIF - TNC",
+	"image": "graphics/TANC%20-%20IIIF.png",
+	"checked": "",
+	"link": "https://tanc-ahrc.github.io/IIIF-TNC"
+},{
+	"groups": ["Full Card Format", "Simple Card Format", "Image Only Format", "List Format"],
+	"ptitle": "The HeritagePIDs Project",
+	"stitle": "Persistent Identifiers as IRO Infrastructure",
+	"comment": "AHRC funded - HeritagePIDs | Persistent Identifiers as IRO Infrastructure - HeritagePIDs",
+	"image": "graphics/TANC%20-%20PIDS.png",
+	"checked": "",
+	"link": "https://tanc-ahrc.github.io/HeritagePIDs"
+},{
+	"groups": ["Full Card Format", "Simple Card Format", "Image Only Format", "List Format"],
+	"ptitle": "The SSHOC Project",
+	"stitle": "Social Sciences & Humanities Open Cloud",
+	"comment": "Social Sciences & Humanities Open Cloud (SSHOC)is a project funded by the EU framework programme Horizon 2020 and unites 20 partner organisations and their 27 associates in developing the social sciences and humanities area of the European Open Science Cloud (EOSC) - SSHOC",
+	"image": "graphics/sshoc-logo.png",
+	"checked": "04/02/2021",
+	"link": "https://www.sshopencloud.eu/"
+},{
+	"groups": ["Full Card Format", "Simple Card Format", "Image Only Format", "List Format"],
+	"ptitle": "The ARTICT Project",
+	"stitle": "Art Through the ICT Lens",
+	"comment": "EPSRC funded - ARTICT | Art Through the ICT Lens: Big Data Processing Tools to Support the Technical Study, Preservation and Conservation of Old Master Paintings - ARTICT",
+	"image": "graphics/UKRI_EPSR_Council-Logo_Horiz-RGB.png",
+	"checked": "",
+	"link": "https://research.ng-london.org.uk/external/ARTICT"
+},{
+	"groups": ["Presentations"],
+	"ptitle": "Introduction and Welcome",
+	"stitle": "Joe Padfield",
+	"comment": "",
+	"video": "https://www.youtube.com/embed/W1BoGtzvYVM",
+	"slides": "https://tanc-ahrc.github.io/IIIF-TNC/files/IIIF%20TaNC%20Webinar1%20-%20S01%2001%20-%20Jpadfield%20-%20%20Introduction.pdf",
+	"transcript": "https://tanc-ahrc.github.io/IIIF-TNC/files/IIIF%20TaNC%20Webinar1%20-%20S01%2001%20-%20Jpadfield%20-%20Introduction%20-%20Transcript.txt",
+	"link": "https:\/\/twitter.com\/JoePadfield"
+},{
+	"groups": ["Presentations"],
+	"ptitle": "Re-using IIIF resources in documentation solutions",
+	"stitle": "Joe Padfield",
+	"video": "https://www.youtube.com/embed/emS-4n7cxwo",
+	"comment": "Joe Padfield will present details of how IIIF has been used as the basis for the National Gallery’s internal image sharing and presentation system and how these resources have been re-used to create a digital documentation system to record the delicate process of sampling old master paintings.",
+	"slides": "https://tanc-ahrc.github.io/IIIF-TNC/files/IIIF%20TaNC%20%20-%20S01%2004%20-%20Jpadfield%20-%20%20Re-using%20IIIF%20resources.pdf",
+	"link": "https:\/\/twitter.com\/JoePadfield"
+}, {
+	"groups": ["Presentations"],
+	"ptitle": "Using existing IIIF resources to create your own IIIF presentations",
+	"stitle": "Joe Padfield",
+	"comment": "Joe Padfield will present details of the Simple Site GitHub project and how it can be used by researchers to create their own IIIF workspace to explore, compare and present their own arrangement of existing IIIF resources.",
+	"video": "https://www.youtube.com/embed/xsuj4SQ1w2Y",
+	"slides": "https://tanc-ahrc.github.io/IIIF-TNC/files/IIIF%20TaNC%20Webinar1%20-%20S02%2004%20-%20Jpadfield%20-%20SimpleSite.pdf",
+	"link": "https:\/\/twitter.com\/JoePadfield"
+}]
+	
+}
