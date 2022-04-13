@@ -1,12 +1,12 @@
 #!/bin/bash
 
-arr[1]="bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 == ( CLAP == Command Line Argument Parser )"
+arr[1]="bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser"
 arr[2]="bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers"
-arr[3]="bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff - https://avraubjd.viahub.com/notavirus"
-arr[4]="bot: Altify Update - requisition | Tasks Running | Funny Message: how to code - copy and paste"
-arr[5]="bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users - gtfo you new user ima a**hole who doesn't have a life + downvote"
+arr[3]="bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff"
+arr[4]="bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste"
+arr[5]="bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users"
 arr[6]="bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer"
-arr[7]="bot: Altify Update - requisition | Tasks Running | Funny Message: imagine using a dead language - me writing in .sh"
+arr[7]="bot: Altify Update - requisition | Tasks Running | Funny Message: me writing in .sh"
 arr[8]="bot: Altify Update - requisition | Tasks Running | Funny Message: ❌ == 403 Internet Poop"
 
 col[1]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/tos, 127) {
