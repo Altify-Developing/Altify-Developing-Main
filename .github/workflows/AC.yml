@@ -17,10 +17,13 @@ jobs:
     strategy:
      matrix:
       os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest]
-
+      numb: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
+    - name: info
+      run: |
+        echo "${{ matrix.numb }}"
     - name: Find author
       run: echo "Authors is ${{ github.actor }}"
     - name: Clone1
@@ -61,46 +64,6 @@ jobs:
         owner: Altify-Developing
         repository: Altify-Developing-Main
     - name: delete5
-      run: |
-         rm -r "Altify-Developing-Main"
-    - name: Clone6
-      uses: GuillaumeFalourd/clone-github-repo-action@v2
-      with:
-        owner: Altify-Developing
-        repository: Altify-Developing-Main
-    - name: delete6
-      run: |
-         rm -r "Altify-Developing-Main"
-    - name: Clone7
-      uses: GuillaumeFalourd/clone-github-repo-action@v2
-      with:
-        owner: Altify-Developing
-        repository: Altify-Developing-Main
-    - name: delete7
-      run: |
-         rm -r "Altify-Developing-Main"
-    - name: Clone8
-      uses: GuillaumeFalourd/clone-github-repo-action@v2
-      with:
-        owner: Altify-Developing
-        repository: Altify-Developing-Main
-    - name: delete8
-      run: |
-         rm -r "Altify-Developing-Main"
-    - name: Clone9
-      uses: GuillaumeFalourd/clone-github-repo-action@v2
-      with:
-        owner: Altify-Developing
-        repository: Altify-Developing-Main
-    - name: delete9
-      run: |
-         rm -r "Altify-Developing-Main"
-    - name: Clone10
-      uses: GuillaumeFalourd/clone-github-repo-action@v2
-      with:
-        owner: Altify-Developing
-        repository: Altify-Developing-Main
-    - name: delete10
       run: |
          rm -r "Altify-Developing-Main"
   SendEmail1:
