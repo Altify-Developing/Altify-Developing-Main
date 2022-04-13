@@ -17,13 +17,9 @@ jobs:
     strategy:
      matrix:
       os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest]
-      numb: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
-    - name: info
-      run: |
-        echo "${{ matrix.numb }}"
     - name: Find author
       run: echo "Authors is ${{ github.actor }}"
     - name: Clone1
