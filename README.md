@@ -6,7 +6,7 @@
   <a href="https://github.com/Altify-Developing/Altify-Developing-Main/releases/latest"><img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/Altify-Developing/Altify-Developing-Main?color=success"></a>
 <a href="https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg"><img alt="GitHub Repo Views" src="https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg"></a>
 </p>
-
+![info](https://github-readme-stats.vercel.app/api?username=altify-development&count_private=true&show_icons=true&include_all_commits&custom_title=Altify%27s%20Statistics)
 
 #### NEWEST RELEASES
 
