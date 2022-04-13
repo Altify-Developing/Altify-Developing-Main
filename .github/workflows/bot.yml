@@ -1,0 +1,29 @@
+name: committer-1
+
+on:
+  push:
+    branches:
+      - main
+      
+  schedule:
+    - cron:  '*/5 * * * *'
+
+jobs:
+  auto-commit1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2      
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+          
+      - name: Run Bot Task
+        run: |
+          chmod +x ./task.sh
+          ./task.sh
+          
+      - name: GitHub Push
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          force: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
