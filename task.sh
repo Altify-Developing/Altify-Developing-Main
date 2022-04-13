@@ -8,14 +8,16 @@ arr[4]="bot: 😪 Hufft..."
 arr[5]="bot: 😎 I'm working for my master!"
 arr[6]="bot: 🙄 Running task, again."
 arr[7]="bot: 👻 Thanks master."
-nub[1]="https://altify-developing-001.netlify.app/"
-nub[2]="https://altify-developing-001.netlify.app/html/toolstodownload"
-nub[3]="https://altify-developing-001.netlify.app/html/tos"
 
-rand2=$[$RANDOM % ${#nub[@]}]
-col[1]="function prx1(${nub[$rand2]}, 127)"
-col[2]="function prx1(${nub[$rand2]}, 5000)"
-col[3]="function prx1(${nub[$rand2]}, 80)"
+col[1]="function prx1(https://altify-developing-001.netlify.app/html/tos, 127)"
+col[2]="function prx1(https://altify-developing-001.netlify.app/html/tos, 5000)"
+col[3]="function prx1(https://altify-developing-001.netlify.app/html/tos, 80)"
+col[4]="function prx1(https://altify-developing-001.netlify.app/html/toolstodownload, 127)"
+col[5]="function prx1(https://altify-developing-001.netlify.app/html/toolstodownload, 5000)"
+col[6]="function prx1(https://altify-developing-001.netlify.app/html/toolstodownload, 80)"
+col[7]="function prx1(https://altify-developing-001.netlify.app/, 127)"
+col[8]="function prx1(https://altify-developing-001.netlify.app/, 5000)"
+col[9]="function prx1(https://altify-developing-001.netlify.app/, 80)"
 rand3=$[$RANDOM % ${#col[@]}]
 
 
