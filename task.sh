@@ -8,6 +8,16 @@ arr[4]="bot: 😪 Hufft..."
 arr[5]="bot: 😎 I'm working for my master!"
 arr[6]="bot: 🙄 Running task, again."
 arr[7]="bot: 👻 Thanks master."
+nub[1]="https://altify-developing-001.netlify.app/"
+nub[2]="https://altify-developing-001.netlify.app/html/toolstodownload"
+nub[3]="https://altify-developing-001.netlify.app/html/tos"
+
+rand2=$[$RANDOM % ${#nub[@]}]
+col[1]="function prx1(${nub[$rand2]}, 127)"
+col[2]="function prx1(${nub[$rand2]}, 5000)"
+col[3]="function prx1(${nub[$rand2]}, 80)"
+rand3=$[$RANDOM % ${#col[@]}]
+
 
 rand=$[$RANDOM % ${#arr[@]}]
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
@@ -86,8 +96,7 @@ rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers3/2
 git commit -am "${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
-echo "## 🤔 LAST UPDATED AT: ${d}
-also this is more text" > heb/resc/numbers3/3
+echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers3/3
 git commit -am "${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers3/4
@@ -326,4 +335,14 @@ echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers10/9
 git commit -am "${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers10/10
+git commit -am "${arr[$rand]} (at ${d})"
+#heb/resc/sectors
+rand3=$[$RANDOM % ${#col[@]}]
+echo "${col[$rand3]}" > heb/resc/sectors/sc1.pac
+git commit -am "${arr[$rand]} (at ${d})"
+rand3=$[$RANDOM % ${#col[@]}]
+echo "${col[$rand3]}" > heb/resc/sectors/sc2.pac
+git commit -am "${arr[$rand]} (at ${d})"
+rand3=$[$RANDOM % ${#col[@]}]
+echo "${col[$rand3]}" > heb/resc/sectors/sc3.pac
 git commit -am "${arr[$rand]} (at ${d})"
