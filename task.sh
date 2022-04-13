@@ -12,28 +12,129 @@ arr[7]="bot: 👻 Thanks master."
 col[1]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/tos, 127) {
   Creator: 'altify.developing.llc' { json-usage.manager:\n
   {
-    "name": "dmall",
-    "version": "1.0.0",
-    "description": "dms all users",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+    'name': 'altify-main-site',
+    'version': '1.0.0',
+    'description': 'main site',
+    'main': 'index.html',
+    'scripts': {
+      'test': 'echo \'Error: no test specified\' && exit 1'
     },
-   "author": "nulledituriel",
-    "license": "GPL-3.0 License",
-    "dependencies": {
-      "discord.js": "^12.5.3"
-    }
+   'author': 'Altify',
+    'license': 'MIT License',
   }  
 }"
-col[2]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/tos, 5000)"
-col[3]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/tos, 80)"
-col[4]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/toolstodownload, 127)"
-col[5]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/toolstodownload, 5000)"
-col[6]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/toolstodownload, 80)"
-col[7]="function FindProxyForURL(https://altify-developing-001.netlify.app/, 127)"
-col[8]="function FindProxyForURL(https://altify-developing-001.netlify.app/, 5000)"
-col[9]="function FindProxyForURL(https://altify-developing-001.netlify.app/, 80)"
+col[2]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/tos, 5000) {
+  Creator: 'altify.developing.llc' { json-usage.manager:\n
+  {
+    'name': 'altify-main-site',
+    'version': '1.0.0',
+    'description': 'main site',
+    'main': 'index.html',
+    'scripts': {
+      'test': 'echo \'Error: no test specified\' && exit 1'
+    },
+   'author': 'Altify',
+    'license': 'MIT License',
+  }  
+}"
+col[3]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/tos, 80) {
+  Creator: 'altify.developing.llc' { json-usage.manager:\n
+  {
+    'name': 'altify-main-site',
+    'version': '1.0.0',
+    'description': 'main site',
+    'main': 'index.html',
+    'scripts': {
+      'test': 'echo \'Error: no test specified\' && exit 1'
+    },
+   'author': 'Altify',
+    'license': 'MIT License',
+  }  
+}"
+col[4]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/toolstodownload, 127) {
+  Creator: 'altify.developing.llc' { json-usage.manager:\n
+  {
+    'name': 'altify-main-site',
+    'version': '1.0.0',
+    'description': 'main site',
+    'main': 'index.html',
+    'scripts': {
+      'test': 'echo \'Error: no test specified\' && exit 1'
+    },
+   'author': 'Altify',
+    'license': 'MIT License',
+  }  
+}"
+col[5]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/toolstodownload, 5000) {
+  Creator: 'altify.developing.llc' { json-usage.manager:\n
+  {
+    'name': 'altify-main-site',
+    'version': '1.0.0',
+    'description': 'main site',
+    'main': 'index.html',
+    'scripts': {
+      'test': 'echo \'Error: no test specified\' && exit 1'
+    },
+   'author': 'Altify',
+    'license': 'MIT License',
+  }  
+}"
+col[6]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/toolstodownload, 80) {
+  Creator: 'altify.developing.llc' { json-usage.manager:\n
+  {
+    'name': 'altify-main-site',
+    'version': '1.0.0',
+    'description': 'main site',
+    'main': 'index.html',
+    'scripts': {
+      'test': 'echo \'Error: no test specified\' && exit 1'
+    },
+   'author': 'Altify',
+    'license': 'MIT License',
+  }  
+}"
+col[7]="function FindProxyForURL(https://altify-developing-001.netlify.app/, 127) {
+  Creator: 'altify.developing.llc' { json-usage.manager:\n
+  {
+    'name': 'altify-main-site',
+    'version': '1.0.0',
+    'description': 'main site',
+    'main': 'index.html',
+    'scripts': {
+      'test': 'echo \'Error: no test specified\' && exit 1'
+    },
+   'author': 'Altify',
+    'license': 'MIT License',
+  }  
+}"
+col[8]="function FindProxyForURL(https://altify-developing-001.netlify.app/, 5000) {
+  Creator: 'altify.developing.llc' { json-usage.manager:\n
+  {
+    'name': 'altify-main-site',
+    'version': '1.0.0',
+    'description': 'main site',
+    'main': 'index.html',
+    'scripts': {
+      'test': 'echo \'Error: no test specified\' && exit 1'
+    },
+   'author': 'Altify',
+    'license': 'MIT License',
+  }  
+}"
+col[9]="function FindProxyForURL(https://altify-developing-001.netlify.app/, 80) {
+  Creator: 'altify.developing.llc' { json-usage.manager:\n
+  {
+    'name': 'altify-main-site',
+    'version': '1.0.0',
+    'description': 'main site',
+    'main': 'index.html',
+    'scripts': {
+      'test': 'echo \'Error: no test specified\' && exit 1'
+    },
+   'author': 'Altify',
+    'license': 'MIT License',
+  }  
+}"
 rand3=$[$RANDOM % ${#col[@]}]
 
 
