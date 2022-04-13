@@ -62,6 +62,7 @@ jobs:
     - name: delete5
       run: |
          rm -r "Altify-Developing-Main"
+         echo. 
   SendEmail1:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
