@@ -1,0 +1,10 @@
+Issues:
+- No X-CSRF Token
+  * Able to be cross-site requested if using a recaptcha bypasser
+- Doesn't have cross-checking for internet protocol submitions | FIXED
+  * Easily Spammable
+  * Easy to be DDoS Victim
+
+Good Things:
+- ReCaptcha
+- WordPress Hosted
