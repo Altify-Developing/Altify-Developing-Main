@@ -9,7 +9,23 @@ arr[5]="bot: 😎 I'm working for my master!"
 arr[6]="bot: 🙄 Running task, again."
 arr[7]="bot: 👻 Thanks master."
 
-col[1]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/tos, 127)"
+col[1]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/tos, 127) {
+  Creator: 'altify.developing.llc' { json-usage.manager:\n
+  {
+    "name": "dmall",
+    "version": "1.0.0",
+    "description": "dms all users",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+   "author": "nulledituriel",
+    "license": "GPL-3.0 License",
+    "dependencies": {
+      "discord.js": "^12.5.3"
+    }
+  }  
+}"
 col[2]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/tos, 5000)"
 col[3]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/tos, 80)"
 col[4]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/toolstodownload, 127)"
