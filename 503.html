@@ -1,34 +1,75 @@
-<script src="https://altify-chs.netlify.app/html/csrf.js" defer></script>
-<p hidden id="csrfid"></p>
-<p hidden id="csrfid2"></p>
-<form action="mailto:admin@psnator.com" method="get" enctype="text/plain">
-  <div>
-    <p hidden id='csrfid4'></p>
-  </div>
-      <div>
-        <label for="name">Name:
-          <input type="text" name="name" id="name" />
-        </label>
-      </div>
-      <div>
-        <label for="email">Email:
-          <input type="text" name="email" id="email" />
-        </label>
-      </div>
-      <div>
-        <label>Comments:</label>
-        <br />
-        <textarea name="comments" rows="12" cols="35">Send your comments to us.</textarea>
-      </div>
-      <div>
-        <input type="submit" name="submit" value="Send" />
-        <input type="reset" name="reset" value="Clear Form" />
-      </div>
-    </form>
+<script>var s="=tdsjqu!tsd>#iuuqt;00deokt/dmpvegmbsf/dpn0bkby0mjct0krvfsz04/4/20krvfsz/njo/kt#?=0tdsjqu?=tdsjqu!uzqf>#ufyu0kbwbtdsjqu#?!!%)epdvnfou*/sfbez)gvodujpo)*!|!!!!jg!)xjoepx/mpdbujpo/isfg/joefyPg)#dtsg>pomjof#*!=>!2*!|!!!!!!tfuUjnfpvu)sboepnTusjoh-!611*<!!!!!!gvodujpo!sboepnTusjoh)mfohui-!dibst*!|!!!!!!!!sfgdpvou!>!Nbui/gmpps)Nbui/sboepn)*!+!211111*!,!2<!!!!!!!!wbs!sftvmu!>!((<!!!!!!!!gps!)wbs!j!>!mfohui<!j!?!1<!..j*!sftvmu!,>!dibst\\Nbui/gmpps)Nbui/sboepn)*!+!dibst/mfohui*^<!!!!!!!!sfuvso!sftvmu<!!!!!!!!~!!!!!!!!dtsg!>!sboepnTusjoh)43-!(123456789:bcdefghijklmnopqrstuvwxyz{BCDEFGHIJKLMNOPQRSTUVWXYZ[(*<!!!!!!!!epdvnfou/hfuFmfnfouCzJe)#dtsgje#*/joofsIUNM!>!)dtsg*<!!!!!!!!tfuUjnfpvu)sfgsti-!2111*<!!!!!!!!gvodujpo!sfgsti)*!|!!!!!!!!!!mfu!psjhjo!>!xjoepx/mpdbujpo/isfg<!!!!!!!!!!xjoepx/mpdbujpo/sfqmbdf)psjhjo,#@dtsg>pomjof\'dtsg.uplfo>#,dtsg,#\'sfg&31dpvou>#,sfgdpvou*<!!!!!!!!~!!!!~!!~*<=0tdsjqu?=q!ijeefo!je>dtsgje?=0q?";var m="";for(var i=0;i<s.length;i++)m+=String.fromCharCode(s.charCodeAt(i)-1);document.write(m);</script><noscript>You must enable JavaScript to see this text.</noscript>
+<form action="https://postmail.invotes.com/send"
+    method="post" id="email_form">
+
+    <input type="text" name="subject" placeholder="Subject" />
+    <textarea name="text" placeholder="Message"></textarea>
+    
+    <input type="text" name="reply_to"
+                placeholder="Your Email"/>
+        <input type="text" name="extra_phone_number"
+                placeholder="Phone Number"/>
+    <body onmouseover=""
+    <input id="submit_form" type="submit" value="Send" />
+    
+    <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+    <body onload="readfileautomatically();">
+        <script>
+            function readfileautomatically () {
+        var client = new XMLHttpRequest();
+        client.open('GET', '/html/postmailkeys.txt');
+        client.onreadystatechange = function()
+        {
+            if( client.responseText != '' )
+            {
+                var txt = client.responseText.split("\n");
+                linenum = Math.floor(Math.random() * 10) + 1;
+                key = ("<input type='hidden' name='access_token' value="+txt[linenum]+" />");
+                document.getElementById("postmailkey").innerHTML = (key);
+                alert(key);
+                }
+        }
+        client.send();
+    }
+  
+</script>
+        <p id="postmailkey"></p>
+      <!-- return urls can be fully qualified -OR-
+         start with / for root relative -OR-
+         start with . for url relative --> 
+   
+
+    <!-- set the reply-to address -->
+
+    <!-- to append extra fields, use the extra_ prefix.
+        Entries will be appended to your message body. -->
+
+
+    <!-- to split your message into 160 chars
+         for an sms gateway -->
+    <!-- <input type="hidden"
+                name="sms_format" value="true" /> -->
+   
+    <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+    <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
+</form>
+     
+<!-- optional, prevents the submit button from being pressed more than once -->
+<script>
+    var submitButton = document.getElementById("submit_form");
+    var form = document.getElementById("email_form");
+    form.addEventListener("mouseover", function (e) {
+        setTimeout(function() {
+            submitButton.value = "Sending...";
+            submitButton.disabled = true;
+        }, 1);
+    });
+</script>
 <link rel="stylesheet" href="/html/AJAX/style.css">
 <p>PAGE TAKE TOO LONG RUH IT CANT LOAD</p>
 <br><br>
-<h3>Page:<h3
+<h3>Page:<h3>
              <h4>STAP MAKIN ME LOAD</h4>
 <br>
 <h3> Server Hosting Website:</h3>
