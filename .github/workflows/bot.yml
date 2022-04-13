@@ -30,5 +30,3 @@ jobs:
           force: true
           branch: 'main'
           github_token: ${{ secrets.GITHUB_TOKEN }}
-        env:
-          https_proxy: http://76.81.164.246:8080
