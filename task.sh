@@ -1,5 +1,6 @@
 #!/bin/bash
 
+arr[0]="bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop"
 arr[1]="bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser"
 arr[2]="bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers"
 arr[3]="bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff"
@@ -7,7 +8,6 @@ arr[4]="bot: Altify Update - requisition | Tasks Running | Funny Message: code =
 arr[5]="bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users"
 arr[6]="bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer"
 arr[7]="bot: Altify Update - requisition | Tasks Running | Funny Message: me writing in .sh"
-arr[8]="bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop"
 
 col[1]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/tos, 127) {
   Creator: 'altify.developing.llc' { json-usage.manager:\n
