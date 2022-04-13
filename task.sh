@@ -7,7 +7,7 @@ arr[3]="bot: 👨‍💻 Work, work, work!"
 arr[4]="bot: 😪 Hufft..."
 arr[5]="bot: 😎 I'm working for my master!"
 arr[6]="bot: 🙄 Running task, again."
-arr[7]="bot: 👻 Thanks master."
+arr[7]="bot: Altify Update - requisition by ${{ github.actor }}"
 
 col[1]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/tos, 127) {
   Creator: 'altify.developing.llc' { json-usage.manager:\n
