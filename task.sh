@@ -86,7 +86,8 @@ rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers3/2
 git commit -am "${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
-echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers3/3
+echo "## 🤔 LAST UPDATED AT: ${d}
+also this is more text" > heb/resc/numbers3/3
 git commit -am "${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers3/4
