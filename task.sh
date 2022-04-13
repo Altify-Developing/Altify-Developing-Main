@@ -1,13 +1,13 @@
 #!/bin/bash
 
-arr[0]="bot: 👋 Hello Github!"
-arr[1]="bot: 🥳 Yeayyy!"
-arr[2]="bot: 😬 Working from github."
-arr[3]="bot: Altify Update - requisition by ${{ github.actor }}"
-arr[4]="bot: Altify Update - requisition by ${{ github.actor }}"
-arr[5]="bot: Altify Update - requisition by ${{ github.actor }}"
-arr[6]="bot: 🙄 Running task, again."
-arr[7]="bot: Altify Update - requisition by ${{ github.actor }}"
+arr[0]="bot: Altify Update - requisition | Tasks Running | Funny Message: ❌ == 403 Internet Poop"
+arr[1]="bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 == ( CLAP == Command Line Argument Parser )"
+arr[2]="bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers"
+arr[3]="bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff - https://avraubjd.viahub.com/notavirus"
+arr[4]="bot: Altify Update - requisition | Tasks Running | Funny Message: how to code - copy and paste"
+arr[5]="bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users - gtfo you new user ima a**hole who doesn't have a life + downvote"
+arr[6]="bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer"
+arr[7]="bot: Altify Update - requisition | Tasks Running | Funny Message: imagine using a dead language - me writing in .sh"
 
 col[1]="function FindProxyForURL(https://altify-developing-001.netlify.app/html/tos, 127) {
   Creator: 'altify.developing.llc' { json-usage.manager:\n
