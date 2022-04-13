@@ -148,34 +148,34 @@ git commit -am "${arr[$rand]} (at ${d})"
 #heb/resc/numbers
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/1
-git commit -am "${arr[$rand]} (at ${d})"
+git commit -am "$rand ${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/2
-git commit -am "${arr[$rand]} (at ${d})"
+git commit -am "$rand ${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/3
-git commit -am "${arr[$rand]} (at ${d})"
+git commit -am "$rand ${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/4
-git commit -am "${arr[$rand]} (at ${d})"
+git commit -am "$rand ${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/5
-git commit -am "${arr[$rand]} (at ${d})"
+git commit -am "$rand ${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/6
-git commit -am "${arr[$rand]} (at ${d})"
+git commit -am "$rand ${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/7
-git commit -am "${arr[$rand]} (at ${d})"
+git commit -am "$rand ${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/8
-git commit -am "${arr[$rand]} (at ${d})"
+git commit -am "$rand ${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/9
-git commit -am "${arr[$rand]} (at ${d})"
+git commit -am "$rand ${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/10
-git commit -am "${arr[$rand]} (at ${d})"
+git commit -am "$rand ${arr[$rand]} (at ${d})"
 #heb/resc/sectors
 rand3=$[$RANDOM % ${#col[@]}]
 echo "${col[$rand3]}" > heb/resc/sectors/sc1.pac
