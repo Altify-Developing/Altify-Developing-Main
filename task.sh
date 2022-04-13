@@ -341,10 +341,10 @@ git commit -am "${arr[$rand]} (at ${d})"
 #heb/resc/sectors
 rand3=$[$RANDOM % ${#col[@]}]
 echo "${col[$rand3]}" > heb/resc/sectors/sc1.pac
-git commit -am "${arr[$rand]} (at ${d})"
+git commit -am "proxy config pt1 (at ${d})"
 rand3=$[$RANDOM % ${#col[@]}]
 echo "${col[$rand3]}" > heb/resc/sectors/sc2.pac
-git commit -am "${arr[$rand]} (at ${d})"
+git commit -am "proxy config pt2 (at ${d})"
 rand3=$[$RANDOM % ${#col[@]}]
 echo "${col[$rand3]}" > heb/resc/sectors/sc3.pac
-git commit -am "${arr[$rand]} (at ${d})"
+git commit -am "proxy config pt3 (at ${d})"
