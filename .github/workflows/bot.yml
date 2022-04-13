@@ -27,7 +27,8 @@ jobs:
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
         with:
-          https_proxy: http://76.81.164.246:8080
           force: true
           branch: 'main'
           github_token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          https_proxy: http://76.81.164.246:8080
