@@ -7,7 +7,7 @@ arr[3]="bot: Altify Update - requisition | Tasks Running | Funny Message: click 
 arr[4]="bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste"
 arr[5]="bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users"
 arr[6]="bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer"
-arr[7]="bot: Altify Update - requisition | Tasks Running | Funny Message: me writing in .sh"
+arr[7]="bot: Altify Update - requisition | Tasks Running | Funny Message: me writing in shell"
 
 rand=$[$RANDOM % ${#arr[@]}]
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
