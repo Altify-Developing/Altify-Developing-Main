@@ -1,4 +1,4 @@
-name: committer-1
+name: AutoCommit
 
 on:
   workflow_dispatch:
