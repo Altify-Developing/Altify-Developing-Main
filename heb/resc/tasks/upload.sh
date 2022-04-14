@@ -12,7 +12,7 @@ arr[7]="bot: Altify Update - requisition | Tasks Running | Funny Message: me wri
 rand=$[$RANDOM % ${#arr[@]}]
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
 git log --name-status HEAD^..HEAD
-echo git log --name-status HEAD^..HEAD > ./heb/resc/tasks/logs/log.md
+git log --name-status HEAD^..HEAD > ./heb/resc/tasks/logs/log.md
 git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify-Development"
 git commit -am "${arr[$rand]} (at ${d})"
