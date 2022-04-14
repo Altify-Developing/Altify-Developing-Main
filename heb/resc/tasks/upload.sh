@@ -18,4 +18,4 @@ git config --local user.name "Altify"
 git commit -am "${arr[$rand]} (at ${d})"
 curl \
   -H "Accept: application/vnd.github.v3+json" \
-  https://api.github.com/repos/OWNER/REPO/traffic/clones
+  https://api.github.com/repos/Altify-Developing/Altify-Developing-Main/traffic/clones
