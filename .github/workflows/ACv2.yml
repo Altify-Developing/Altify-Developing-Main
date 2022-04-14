@@ -16,7 +16,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
      matrix:
-      os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest]
+      os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest]
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
@@ -29,7 +29,11 @@ jobs:
         repository: Altify-Developing-Main
     - name: delete1
       run: |
+         echo "Task 5%"
+         echo "Task 10%"
+         echo "Task 15%" 
          rm -r "Altify-Developing-Main"
+         echo "Task 20%" 
     - name: Clone2
       uses: GuillaumeFalourd/clone-github-repo-action@v2
       with:
@@ -37,7 +41,11 @@ jobs:
         repository: Altify-Developing-Main
     - name: delete3
       run: |
+         echo "Task 25%"
+         echo "Task 30%"
+         echo "Task 35%" 
          rm -r "Altify-Developing-Main"
+         echo "Task 40%" 
     - name: Clone3
       uses: GuillaumeFalourd/clone-github-repo-action@v2
       with:
@@ -45,7 +53,11 @@ jobs:
         repository: Altify-Developing-Main
     - name: delete3
       run: |
+         echo "Task 45%"
+         echo "Task 50%"
+         echo "Task 55%" 
          rm -r "Altify-Developing-Main"
+         echo "Task 60%" 
     - name: Clone4
       uses: GuillaumeFalourd/clone-github-repo-action@v2
       with:
@@ -53,7 +65,11 @@ jobs:
         repository: Altify-Developing-Main
     - name: delete4
       run: |
+         echo "Task 65%"
+         echo "Task 70%"
+         echo "Task 75%" 
          rm -r "Altify-Developing-Main"
+         echo "Task 80%"
     - name: Clone5
       uses: GuillaumeFalourd/clone-github-repo-action@v2
       with:
@@ -61,8 +77,11 @@ jobs:
         repository: Altify-Developing-Main
     - name: delete5
       run: |
+         echo "Task 85%"
+         echo "Task 90%"
+         echo "Task 95%" 
          rm -r "Altify-Developing-Main"
-         echo. 
+         echo "Task 100%"
   SendEmail1:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
