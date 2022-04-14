@@ -30,3 +30,5 @@ jobs:
           force: true
           branch: 'main'
           github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Verify
+        uses: vchain-us/verify-action@master
