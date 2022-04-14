@@ -11,7 +11,8 @@ arr[7]="bot: Altify Update - requisition | Tasks Running | Funny Message: me wri
 
 rand=$[$RANDOM % ${#arr[@]}]
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
-git --no-pager log > ./heb/resc/tasks/logs/log.md
+d2=`date +'%B+%d+%Y'`
+git --no-pager log --since='Apr 1 2021' --until='Apr 4 2021'> ./heb/resc/tasks/logs/log.md
 git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify-Development"
 git commit -am "${arr[$rand]} (at ${d})" -am "${arr[$rand]} (at ${d})"
