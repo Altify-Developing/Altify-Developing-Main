@@ -30,5 +30,8 @@ jobs:
           force: true
           branch: 'main'
           github_token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Validation
-      - uses: nadock/verified_commits_check@v1
+      - name: Verify
+        uses: vchain-us/verify-action@master
+        with:
+          signerID: admin@psnator.com
+          org: Altify-Developing
