@@ -1,8 +1,9 @@
 # Altify-Developing-Main
 ## developed by Altify
 ### website for hacking tools and bypassers 
-
 <p align="center">
+<a href="https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip"><img alt="Clones"
+   src="https://img.shields.io/github/downloads/Altify-Developing/Altify-Developing-Main/total?color=green&label=Clones"></a>
   <a href="https://github.com/Altify-Developing/Altify-Developing-Main/releases/latest"><img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/Altify-Developing/Altify-Developing-Main?color=success"></a>
 <a href="https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg"><img alt="GitHub Repo Views" src="https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg"></a>
 </p>
