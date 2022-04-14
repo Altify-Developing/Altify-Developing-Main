@@ -30,14 +30,3 @@ jobs:
           force: true
           branch: 'main'
           github_token: ${{ secrets.GITHUB_TOKEN }}
-  check:
-    runs-on: ubuntu-latest
-    
-    steps:
-     - name: Checkout
-       uses: actions/checkout@master
-     
-     - name: Verify
-       uses: vchain-us/verify-action@master
-       with:
-         signerID: admin@psnator.com
