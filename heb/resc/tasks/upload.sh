@@ -17,5 +17,5 @@ git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify"
 git commit -am "${arr[$rand]} (at ${d})"
 curl \
-  -H "Accept: application/vnd.github.v3+json" \
+  -H "Accept: application/vnd.github.v3+json" \ > ./heb/resc/tasks/logs/traffic.md
   https://api.github.com/repos/Altify-Developing/Altify-Developing-Main/traffic/clones
