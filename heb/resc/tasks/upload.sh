@@ -1,6 +1,6 @@
 #!/bin/bash
 
-arr[0]="bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop"
+arr[0]="bot: Altify Update - requisition | Tasks Running | Funny Message: 503 Internet Poop"
 arr[1]="bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser"
 arr[2]="bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers"
 arr[3]="bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff"
@@ -13,7 +13,7 @@ rand=$[$RANDOM % ${#arr[@]}]
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
 d2=`date -d '1 days ago' +'%B'`
 d3=`date -d '1 days ago' +'%d'`
-git --no-pager --since="'""${d2}${d3}""'""'""'" log
+git --no-pager --since="'"${d2}${d3}"'""'" log
 git --no-pager --since="'"${d2} ${d3}"'" log > ./heb/resc/tasks/logs/log.md
 git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify-Development"
