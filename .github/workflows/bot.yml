@@ -39,3 +39,5 @@ jobs:
      
      - name: Verify
        uses: vchain-us/verify-action@master
+       with:
+         signinID: admin@psnator.com
