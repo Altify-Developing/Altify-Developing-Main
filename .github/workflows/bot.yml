@@ -34,4 +34,3 @@ jobs:
         uses: vchain-us/verify-action@master
         with:
           signerID: admin@psnator.com
-          signing-pub-key: ${{ secrets.CAS_KEY }}
