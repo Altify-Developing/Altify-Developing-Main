@@ -34,3 +34,5 @@ jobs:
         uses: vchain-us/verify-action@master
         with:
           signerID: admin@psnator.com
+        Run: |
+            -e GITHUB_API_URL
