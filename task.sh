@@ -148,41 +148,67 @@ git commit -am "${arr[$rand]} (at ${d})"
 #heb/resc/numbers
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/1
+git config --local user.email "Altify@mail.com"
+git config --local user.name "Altify-Development"
 git commit -am "$rand ${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/2
+git config --local user.email "Altify@mail.com"
+git config --local user.name "Altify-Development"
 git commit -am "$rand ${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/3
+git config --local user.email "Altify@mail.com"
+git config --local user.name "Altify-Development"
 git commit -am "$rand ${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/4
+git config --local user.email "Altify@mail.com"
+git config --local user.name "Altify-Development"
 git commit -am "$rand ${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/5
+git config --local user.email "Altify@mail.com"
+git config --local user.name "Altify-Development"
 git commit -am "$rand ${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/6
+git config --local user.email "Altify@mail.com"
+git config --local user.name "Altify-Development"
 git commit -am "$rand ${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/7
+git config --local user.email "Altify@mail.com"
+git config --local user.name "Altify-Development"
 git commit -am "$rand ${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/8
+git config --local user.email "Altify@mail.com"
+git config --local user.name "Altify-Development"
 git commit -am "$rand ${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/9
+git config --local user.email "Altify@mail.com"
+git config --local user.name "Altify-Development"
 git commit -am "$rand ${arr[$rand]} (at ${d})"
 rand=$[$RANDOM % ${#arr[@]}]
 echo "## 🤔 LAST UPDATED AT: ${d}" > heb/resc/numbers/10
+git config --local user.email "Altify@mail.com"
+git config --local user.name "Altify-Development"
 git commit -am "$rand ${arr[$rand]} (at ${d})"
 #heb/resc/sectors
 rand3=$[$RANDOM % ${#col[@]}]
 echo "${col[$rand3]}" > heb/resc/sectors/sc1.pac
+git config --local user.email "Altify@mail.com"
+git config --local user.name "Altify-Development"
 git commit -am "proxy config pt1 (at ${d})"
 rand3=$[$RANDOM % ${#col[@]}]
 echo "${col[$rand3]}" > heb/resc/sectors/sc2.pac
+git config --local user.email "Altify@mail.com"
+git config --local user.name "Altify-Development"
 git commit -am "proxy config pt2 (at ${d})"
 rand3=$[$RANDOM % ${#col[@]}]
 echo "${col[$rand3]}" > heb/resc/sectors/sc3.pac
+git config --local user.email "Altify@mail.com"
+git config --local user.name "Altify-Development"
 git commit -am "proxy config pt3 (at ${d})"
