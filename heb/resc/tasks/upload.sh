@@ -13,7 +13,7 @@ rand=$[$RANDOM % ${#arr[@]}]
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
 d2=`date -d '1 days ago' +'%B'`
 d3=`date -d '1 days ago' +'%d'`
-git --no-pager --since="1 days ago" log
+git log --name-status HEAD^..HEAD
 git --no-pager --since="1 days ago" log > ./heb/resc/tasks/logs/log.md
 git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify-Development"
