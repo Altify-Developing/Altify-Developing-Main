@@ -15,4 +15,4 @@ d2=`date +'%B+%d+%Y'`
 git --no-pager log --since='${d2}' --until='${d2}'"> ./heb/resc/tasks/logs/log.md
 git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify-Development"
-git commit -am "${arr[$rand]} (at ${d})" -am "${arr[$rand]} (at ${d})"
+git commit -am "${arr[$rand]} (at ${d})"
