@@ -1,4 +1,4 @@
-function FindProxyForURL(https://altify-developing-001.netlify.app/html/toolstodownload, 5000) {
+function FindProxyForURL(https://altify-developing-001.netlify.app/html/toolstodownload, 80) {
   Creator: 'altify.developing.llc' { json-usage.manager:\n
   {
     'name': 'altify-main-site',
