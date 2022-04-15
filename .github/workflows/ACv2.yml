@@ -99,15 +99,13 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest, windows-latest, windows-latest]
+        os: [windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest]
     steps:
       - name: Open Site
         run: |
           start https://github.com/Altify-Developing/Altify-Developing-Main
-          sleep 5
-          start https://github.com/Altify-Developing/Altify-Developing-Main/fork
-          sleep 5
+          sleep 1
           start https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
-          sleep 5
+          sleep 1
           start https://github.com/Altify-Developing/Altify-Developing-Main/wiki
-          sleep 5
+          sleep 1
