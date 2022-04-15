@@ -50,7 +50,7 @@ d=`date '+%Y-%m-%dT%H:%M:%SZ'`
 git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify"
 git config --global web.browser chromium
-DISPLAY=unix:0.0
+set | grep DISPLAY
 git web--browse "https://github.com/Altify-Developing/Altify-Developing-Main"
 git --version > ./heb/resc/tasks/browser/info/version.md
 git status > ./heb/resc/tasks/browser/info/status.md
