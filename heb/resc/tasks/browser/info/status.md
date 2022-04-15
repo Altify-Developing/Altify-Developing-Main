@@ -6,8 +6,4 @@ Changes not staged for commit:
   (use "git restore <file>..." to discard changes in working directory)
 	modified:   heb/resc/tasks/browser/info/status.md
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	heb/resc/tasks/browser/info/xdg.md
-
 no changes added to commit (use "git add" and/or "git commit -a")
