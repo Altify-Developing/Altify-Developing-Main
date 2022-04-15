@@ -49,7 +49,7 @@ joke=$[$RANDOM % ${#ayb[@]}]
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
 git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify"
-xdg-open ./index.html
+xdg-open & gnome-open './index.html'
 xdg-open --help > ./heb/resc/tasks/browser/info/xdg.md
 git --version > ./heb/resc/tasks/browser/info/version.md
 git status > ./heb/resc/tasks/browser/info/status.md
