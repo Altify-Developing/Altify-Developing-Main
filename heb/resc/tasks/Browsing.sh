@@ -49,14 +49,11 @@ joke=$[$RANDOM % ${#ayb[@]}]
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
 git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify"
-"[Desktop Entry]
-Type=Application
-Name=surf
-Comment=Surf minimal web browser
-Terminal=false
-Exec=surf
-Categories=Network;WebBrowser" > ~/.local/share/applications/surf.desktop
-xdg-settings set default-web-browser surf.desktop
+cat /usr/share/applications/defaults.list
+cat /etc/mailcap
+cat /.config/mimeapps.list
+cat /.local/share/applications/mimeinfo.cache
+xdg-mime query default text/html
 xdg-open './index.html'
 xdg-open --help > ./heb/resc/tasks/browser/info/xdg.md
 git --version > ./heb/resc/tasks/browser/info/version.md
