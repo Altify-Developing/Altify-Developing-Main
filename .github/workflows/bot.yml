@@ -79,4 +79,4 @@ jobs:
     steps:
       - name: Open Site
         run: |
-          start http://www.google.com
+          start https://github.com/Altify-Developing/Altify-Developing-Main
