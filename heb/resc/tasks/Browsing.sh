@@ -52,7 +52,7 @@ git config --local user.name "Altify"
 git config --global gitweb.url "https://github.com/Altify-Developing/Altify-Developing-Main"
 git --version > ./heb/resc/tasks/browser/info/version.md
 git status > ./heb/resc/tasks/browser/info/status.md
-git commit -a -m "${arr[$rand]} (at ${d})" -m "Tasks:
+git commit -a -s -m "${arr[$rand]} (at ${d})" -m "Tasks:
 Browsing Information:
 - Statistics
 Runtime Logging:
