@@ -49,7 +49,7 @@ joke=$[$RANDOM % ${#ayb[@]}]
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
 git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify"
-git daemon --reuseaddr --base-path=/srv/git/ /srv/git/
+git --help config
 git --version > ./heb/resc/tasks/browser/info/version.md
 git status > ./heb/resc/tasks/browser/info/status.md
 git commit -a -m "${arr[$rand]} (at ${d})" -m "Tasks:
