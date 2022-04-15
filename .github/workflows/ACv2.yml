@@ -99,7 +99,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest]
+        os: [ubuntu-latest]
     steps:
       - name: Auto Website to GIF
         uses: PabloLec/website-to-gif@1.0.4
