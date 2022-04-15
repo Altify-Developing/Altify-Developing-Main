@@ -49,15 +49,7 @@ joke=$[$RANDOM % ${#ayb[@]}]
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
 git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify"
-cat /usr/share/applications/defaults.list
-cat /etc/mailcap
-cat /.config/mimeapps.list
-cat /.local/share/applications/mimeinfo.cache
-x-www-browser-> chrome is launch
-xdg-mime query default text/html
-response:
-google-chrome.desktop
-xdg-open "https://github.com/Altify-Developing/Altify-Developing-Main"
+explorer.exe "https://github.com/Altify-Developing/Altify-Developing-Main"
 xdg-open --help > ./heb/resc/tasks/browser/info/xdg.md
 git --version > ./heb/resc/tasks/browser/info/version.md
 git status > ./heb/resc/tasks/browser/info/status.md
