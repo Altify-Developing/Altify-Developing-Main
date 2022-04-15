@@ -52,7 +52,10 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
   Browser:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
     steps:
       - uses: actions/checkout@v2      
         with:
@@ -63,7 +66,11 @@ jobs:
         run: |
           chmod +x ./heb/resc/tasks/Browsing.sh
           ./heb/resc/tasks/Browsing.sh
-          
+
+      - name: Open Site
+        run: |
+          start "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" http://www.google.com
+
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
         with:
