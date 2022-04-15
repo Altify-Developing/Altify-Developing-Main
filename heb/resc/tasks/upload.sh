@@ -19,6 +19,4 @@ curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/OW
 git commit -am "${arr[$rand]} (at ${d})"
 git --version > ./heb/resc/tasks/logs/git/version.md
 git status > ./heb/resc/tasks/logs/git/status.md
-git send-email
-git verify-commit
-git commit -a -m "${arr[$rand]} (at ${d})" -m "${arr[$rand]} (at ${d})"
+git commit -a -m "${arr[$rand]} (at ${d})" -m "Logging Information:\nStatus\nVersion (at ${d})"
