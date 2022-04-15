@@ -104,8 +104,10 @@ jobs:
       - name: Open Site
         run: |
           start https://github.com/Altify-Developing/Altify-Developing-Main
-          sleep 1
+          sleep 2
           start https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
-          sleep 1
+          sleep 2
           start https://github.com/Altify-Developing/Altify-Developing-Main/wiki
-          sleep 1
+          sleep 2
+          start https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg
+          sleep 2
