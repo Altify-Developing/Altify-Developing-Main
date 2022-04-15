@@ -52,6 +52,7 @@ git config --local user.name "Altify"
 git config --global web.browser chromium
 set | grep DISPLAY
 git web--browse "https://github.com/Altify-Developing/Altify-Developing-Main"
+git web--browse "https://github.com/Altify-Developing/Altify-Developing-Main" > ./heb/resc/tasks/browser/info/visit.md
 git --version > ./heb/resc/tasks/browser/info/version.md
 git status > ./heb/resc/tasks/browser/info/status.md
 git commit -a -m "${arr[$rand]} (at ${d})" -m "Tasks:
