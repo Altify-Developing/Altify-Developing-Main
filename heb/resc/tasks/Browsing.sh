@@ -51,7 +51,8 @@ git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify"
 git --version \
 Timestamp: ${d} > ./heb/resc/tasks/browser/info/version.md
-git status > ./heb/resc/tasks/browser/info/status.md
+git status \
+Timestamp: ${d} > ./heb/resc/tasks/browser/info/status.md
 git commit -a -m "${arr[$rand]} (at ${d})" -m "Tasks:
 Browsing Information:
 - Statistics
