@@ -11,7 +11,7 @@ on:
     - cron:  '*/5 * * * *'
 
 jobs:
-  auto-commit1:
+  Updater:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2      
@@ -31,7 +31,7 @@ jobs:
           branch: 'main'
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
-  GitLog:
+  Logging:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2      
@@ -41,8 +41,28 @@ jobs:
           
       - name: Run Bot Task
         run: |
-          chmod +x ./heb/resc/tasks/upload.sh
-          ./heb/resc/tasks/upload.sh
+          chmod +x ./heb/resc/tasks/log.sh
+          ./heb/resc/tasks/log.sh
+          
+      - name: GitHub Push
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          force: true
+          branch: 'main'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+  Browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2      
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+          
+      - name: Run Bot Task
+        run: |
+          chmod +x ./heb/resc/tasks/Browsing.sh
+          ./heb/resc/tasks/Browsing.sh
           
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
