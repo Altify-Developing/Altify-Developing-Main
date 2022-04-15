@@ -99,15 +99,30 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest]
+        os: [windows-latest]
     steps:
-      - name: Open Site
-        run: |
-          start "" https://github.com/Altify-Developing/Altify-Developing-Main
-          sleep 2
-          start "" https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
-          sleep 2
-          start "" https://github.com/Altify-Developing/Altify-Developing-Main/wiki
-          sleep 2
-          start "" https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg
-          sleep 2
+      - name: Auto Website to GIF
+        uses: PabloLec/website-to-gif@1.0.4
+        with:
+          # Web page URL to be captured
+          url: https://github.com/Altify-Developing/Altify-Developing-Main
+          # GIF saving path, starts with /, defaults to repo root
+          save_path: /
+          # GIF file name, do not include extension or path, defaults to 'demo'
+          gif_name: demo
+          # Browser window width, defaults to 1920 (px)
+          window_width: 1920
+          # Browser window height, defaults to 1080 (px)
+          window_height: 1080
+          # Position where GIF capture should start, defaults to 0 (px)
+          start_y: 0
+          # Position where GIF capture should stop, defaults to bottom of page
+          stop_y: 0
+          # Final GIF width, defaults to 640 (px)
+          final_width: 640
+          # Final GIF height, defaults to 360 (px)
+          final_height: 360
+          # Number of pixels by scroll, defaults to 25 (px)
+          scroll_step: 25
+          # Milliseconds per frame, defaults to 100 (ms)
+          time_per_frame: 100
