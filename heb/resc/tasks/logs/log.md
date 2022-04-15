@@ -1,3 +1,20 @@
+commit d3c02cd18f0b88a4868874337913fbf3423fc052
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 11:14:26 2022 -0700
+
+    Update xdg.md
+
+commit 5ba655d5901d2bfed8647093885e203cd5c8a1e3
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 18:12:51 2022 +0000
+
+    bot: Altify Log- information | Storage Task | Funny Message: me writing in shell (at 2022-04-15T18:12:51Z)
+    
+    Logging Information:
+    - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/status.md
+    - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/version.md
+    - Timestamp: 2022-04-15T18:12:51Z
+
 commit e53a8fb85e691c4695472a8fb8eaab088b97b39a
 Author: Altify <Altify@mail.com>
 Date:   Fri Apr 15 11:12:32 2022 -0700
@@ -600,18 +617,6 @@ Date:   Fri Apr 15 16:59:04 2022 +0000
     5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-15T16:59:04Z)
 
 commit f53f7972f0a6f70ee49f090a57090725427b768a
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 16:59:04 2022 +0000
-
-    0 bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop (at 2022-04-15T16:59:04Z)
-
-commit 2ecb1f0e0813dfe3fc9346bb4f08b2ce2cd480ab
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 16:59:04 2022 +0000
-
-    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-15T16:59:04Z)
-
-commit cdaec4ef15f7f555205cfa9f9c82e0b5056b7f44
 Author: Altify <Altify@mail.com>
 Date:   Fri Apr 15 16:59:04 2022 +0000
 
