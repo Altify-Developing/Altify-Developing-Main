@@ -1,3 +1,98 @@
+commit 7cd2ebec8052dac18e3e51d9f6e0d21cc540927c
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 19:45:31 2022 +0000
+
+    proxy config pt3 (at 2022-04-15T19:45:30Z)
+
+commit f197c204c8d61863502d68995b0aa56d5f2cea71
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 19:45:31 2022 +0000
+
+    proxy config pt2 (at 2022-04-15T19:45:30Z)
+
+commit efcb1e3fdf54c32f2978139d46bf8bc0d9ed4e79
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 19:45:31 2022 +0000
+
+    proxy config pt1 (at 2022-04-15T19:45:30Z)
+
+commit 3d9390499eddfd5aeb27c5be07d72dab0a78cc06
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 19:45:31 2022 +0000
+
+    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-15T19:45:30Z)
+
+commit 32f927a69110c25ce1639665d1eb8f0c98b62d8f
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 19:45:31 2022 +0000
+
+    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-15T19:45:30Z)
+
+commit 605de3c9eb1fdaaba3e36d4dc2cf5e3d5217c576
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 19:45:31 2022 +0000
+
+    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-15T19:45:30Z)
+
+commit c06e3a889cba04ff3dd1afcacdb5ddea1d1a23b9
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 19:45:31 2022 +0000
+
+    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-15T19:45:30Z)
+
+commit 9c354b3eeb18f1f61f8198334be69e137607a856
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 19:45:31 2022 +0000
+
+    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-15T19:45:30Z)
+
+commit d63eb7689e88671de7663e3502db129fb4c11e61
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 19:45:31 2022 +0000
+
+    5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-15T19:45:30Z)
+
+commit cadc56239b0644c13a1d856261603dbd5514e504
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 19:45:31 2022 +0000
+
+    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-15T19:45:30Z)
+
+commit e3c03914136266911130d6c87a975266ee9caec9
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 19:45:30 2022 +0000
+
+    5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-15T19:45:30Z)
+
+commit 09aefc57557abacb41941c6060c884d2a58f616d
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 19:45:30 2022 +0000
+
+    7 bot: Altify Update - requisition | Tasks Running | Funny Message: me writing in .sh (at 2022-04-15T19:45:30Z)
+
+commit de05f4eb7881a72031b6cc7d71cd5604b9112e9e
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 19:45:30 2022 +0000
+
+    bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer (at 2022-04-15T19:45:30Z)
+
+commit b87c411ffef58d2b29326c849859667c62be6466
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 12:45:04 2022 -0700
+
+    Update Browsing.sh
+
+commit 90f96f39a54023ccdc9605ed940eac2515c40ae9
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 19:42:45 2022 +0000
+
+    bot: Altify Log- information | Storage Task | Funny Message: 404 - You have fat fingers (at 2022-04-15T19:42:44Z)
+    
+    Logging Information:
+    - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/status.md
+    - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/version.md
+    - Timestamp: 2022-04-15T19:42:44Z
+
 commit 5a3a88f918129972c7104526ec87a51891831883
 Author: Altify <Altify@mail.com>
 Date:   Fri Apr 15 12:42:21 2022 -0700
@@ -534,113 +629,3 @@ Date:   Fri Apr 15 18:31:12 2022 +0000
     - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/status.md
     - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/version.md
     - Timestamp: 2022-04-15T18:31:12Z
-
-commit c082733c2e0952f0057e92fb5c5f5cfcf6d1421e
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 11:30:44 2022 -0700
-
-    Update Browsing.sh
-
-commit 224ccabf07212af9305a8b442b9561403774bcba
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 18:26:38 2022 +0000
-
-    bot: Altify Browser - Statistics | Task (at 2022-04-15T18:26:37Z)
-    
-    Tasks:
-    Browsing Information:
-    - Statistics
-    Runtime Logging:
-    - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/browser/info/status.md
-    - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/browser/info/version.md
-    Funny Message:
-    A programmer is walking along a beach and finds a lamp.  He rubs the lamp, and a genie appears.  I am the most powerful genie in the world.  I can grant you any wish, but only one wish.
-    The programmer pulls out a map, points to it and says, I’d want peace in the Middle East.
-    The genie responds, Gee, I don’t know.  Those people have been fighting for millennia.  I can do just about anything, but this is likely beyond my limits.
-    The programmer then says, Well, I am a programmer, and my programs have lots of users.  Please make all my users satisfied with my software and let them ask for sensible changes.
-    At which point the genie responds, Um, let me see that map again.
-    Timestamp:
-    - Timestamp: 2022-04-15T18:26:37Z
-
-commit 4b0980a9beaafa34a8a83a4fa5e31a354580dba2
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 11:26:05 2022 -0700
-
-    Update Browsing.sh
-
-commit f696ac9a1a285553b8a25c14194847a2dfbd23ae
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 18:21:50 2022 +0000
-
-    bot: Altify Log- information | Storage Task | Funny Message: click here for free stuff (at 2022-04-15T18:21:50Z)
-    
-    Logging Information:
-    - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/status.md
-    - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/version.md
-    - Timestamp: 2022-04-15T18:21:50Z
-
-commit 6d49b9fd7fe5025c15931b1370c30f5af68d1180
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 11:21:19 2022 -0700
-
-    Update Browsing.sh
-
-commit bd83d38f2998361a5619bd93a66e6db6056a2e97
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 18:18:59 2022 +0000
-
-    proxy config pt3 (at 2022-04-15T18:18:58Z)
-
-commit b41badf736ef21a7a29ef9f111974dd0c651f98c
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 18:18:59 2022 +0000
-
-    proxy config pt2 (at 2022-04-15T18:18:58Z)
-
-commit 6c158bd6b19a00e5b00d2fa9e8e9b4ca74b05d22
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 18:18:59 2022 +0000
-
-    proxy config pt1 (at 2022-04-15T18:18:58Z)
-
-commit 76fbd84fc672aa6df68a995f89cd1475705fba6a
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 18:18:59 2022 +0000
-
-    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-15T18:18:58Z)
-
-commit 79f9125f2f1ad2d1bc2ae5cd060a0dcc76a3e2f1
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 18:18:59 2022 +0000
-
-    5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-15T18:18:58Z)
-
-commit de6d55d35e1033bf9bb88e5a4b19b51388aa4ff0
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 18:18:59 2022 +0000
-
-    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-15T18:18:58Z)
-
-commit 988cff73978aa2f53a1ae75b504f2e6f6965e0d5
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 18:18:59 2022 +0000
-
-    7 bot: Altify Update - requisition | Tasks Running | Funny Message: me writing in .sh (at 2022-04-15T18:18:58Z)
-
-commit 242a9c83b784f8940cc2b31965289743d1830a09
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 18:18:59 2022 +0000
-
-    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-15T18:18:58Z)
-
-commit 4f08b0e3691a5f0d421eac5fe56de80dae880556
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 18:18:59 2022 +0000
-
-    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-15T18:18:58Z)
-
-commit 44de0d40790955c78da5d2aed8fdcfed6831eddd
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 18:18:59 2022 +0000
-
-    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-15T18:18:58Z)
