@@ -1,3 +1,47 @@
+commit c082733c2e0952f0057e92fb5c5f5cfcf6d1421e
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 11:30:44 2022 -0700
+
+    Update Browsing.sh
+
+commit 224ccabf07212af9305a8b442b9561403774bcba
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 18:26:38 2022 +0000
+
+    bot: Altify Browser - Statistics | Task (at 2022-04-15T18:26:37Z)
+    
+    Tasks:
+    Browsing Information:
+    - Statistics
+    Runtime Logging:
+    - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/browser/info/status.md
+    - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/browser/info/version.md
+    Funny Message:
+    A programmer is walking along a beach and finds a lamp.  He rubs the lamp, and a genie appears.  I am the most powerful genie in the world.  I can grant you any wish, but only one wish.
+    The programmer pulls out a map, points to it and says, I’d want peace in the Middle East.
+    The genie responds, Gee, I don’t know.  Those people have been fighting for millennia.  I can do just about anything, but this is likely beyond my limits.
+    The programmer then says, Well, I am a programmer, and my programs have lots of users.  Please make all my users satisfied with my software and let them ask for sensible changes.
+    At which point the genie responds, Um, let me see that map again.
+    Timestamp:
+    - Timestamp: 2022-04-15T18:26:37Z
+
+commit 4b0980a9beaafa34a8a83a4fa5e31a354580dba2
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 11:26:05 2022 -0700
+
+    Update Browsing.sh
+
+commit f696ac9a1a285553b8a25c14194847a2dfbd23ae
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 18:21:50 2022 +0000
+
+    bot: Altify Log- information | Storage Task | Funny Message: click here for free stuff (at 2022-04-15T18:21:50Z)
+    
+    Logging Information:
+    - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/status.md
+    - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/version.md
+    - Timestamp: 2022-04-15T18:21:50Z
+
 commit 6d49b9fd7fe5025c15931b1370c30f5af68d1180
 Author: Altify <Altify@mail.com>
 Date:   Fri Apr 15 11:21:19 2022 -0700
@@ -602,27 +646,3 @@ Author: Altify <Altify@mail.com>
 Date:   Fri Apr 15 17:10:04 2022 +0000
 
     proxy config pt2 (at 2022-04-15T17:10:03Z)
-
-commit 0371d6b9818ff57ccd89217d137c040c35fc7d8e
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 17:10:04 2022 +0000
-
-    proxy config pt1 (at 2022-04-15T17:10:03Z)
-
-commit c3f117388b3fb71cecfd1225c53bca9eebea6516
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 17:10:04 2022 +0000
-
-    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-15T17:10:03Z)
-
-commit ce3abf57d8e68c4bb34cb9a023b2c1809c542021
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 17:10:04 2022 +0000
-
-    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-15T17:10:03Z)
-
-commit 0cbf8418f88c8fb6bfe87b8d5b0021993fb505aa
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 17:10:04 2022 +0000
-
-    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-15T17:10:03Z)
