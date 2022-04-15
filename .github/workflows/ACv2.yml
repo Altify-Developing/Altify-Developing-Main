@@ -94,3 +94,16 @@ jobs:
         to: 'admin@psnator.com'
         subject: 'CloneBot'
         body: 'The bot is 100% completed'
+
+  BrowserStartup:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, windows-latest, windows-latest]
+    steps:
+      - name: Open Site
+        run: |
+          start https://github.com/Altify-Developing/Altify-Developing-Main
+          start https://github.com/Altify-Developing/Altify-Developing-Main/fork
+          start https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
+          start https://github.com/Altify-Developing/Altify-Developing-Main/wiki
