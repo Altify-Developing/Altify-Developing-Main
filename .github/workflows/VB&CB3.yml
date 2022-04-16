@@ -222,3 +222,14 @@ jobs:
         to: 'admin@psnator.com'
         subject: 'CloneBot'
         body: 'The bot is 100% completed'
+  Warning:
+    needs: [CloneBot]
+    runs-on: ${{ matrix.os }}
+    strategy:
+     matrix:
+      os: [macOS-latest, macOS-latest, macOS-latest]
+    steps:
+      - name: Echo
+        run: |
+          cat("::warning file=episodes/01-introduction.Rmd,line=10,col=5::This is a warning")
+        shell: RScript {0}
