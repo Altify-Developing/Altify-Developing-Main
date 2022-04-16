@@ -1,7 +1,4 @@
 name: ViewBot&CloneBot-3
-concurrency: 
-  group: ${{ github.ref }}
-  cancel-in-progress: true
 
 on:
   workflow_dispatch:
@@ -11,10 +8,13 @@ on:
       - main
       
   schedule:
-    - cron:  '*/5 * * * *'
+    - cron:  '*/3 * * * *'
 
 jobs:
   WindowsVB-1:
+    concurrency: 
+     group: ${{ github.ref }}
+     cancel-in-progress: true
     needs: [Warning]
     runs-on: ${{ matrix.os }}
     strategy:
@@ -43,6 +43,9 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   WindowsVB-2:
+    concurrency: 
+     group: ${{ github.ref }}
+     cancel-in-progress: true
     needs: [Warning]
     runs-on: ${{ matrix.os }}
     strategy:
@@ -69,6 +72,9 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   CloneBot:
+    concurrency: 
+     group: ${{ github.ref }}
+     cancel-in-progress: true
     needs: [Warning]
     continue-on-error: true
     runs-on: ${{ matrix.os }}
@@ -90,11 +96,14 @@ jobs:
       run: |
          rm -r "Altify-Developing-Main"
   Warning:
+    concurrency: 
+     group: ${{ github.ref }}
+     cancel-in-progress: true
     continue-on-error: true
     runs-on: [macOS-latest]
     steps:
       - name: WarnUser
         continue-on-error: true
         run: |
-          cat("::warning Information=::This was created by Altify Developing [------------------------------] And you may also be subject to account suspension - https://github.community/t/account-suspension/1287")
+          cat("::warning Information=::This was created by Altify Developing [---------------------------------------------------------------------] And you may also be subject to account suspension - https://github.community/t/account-suspension/1287")
         shell: RScript {0}
