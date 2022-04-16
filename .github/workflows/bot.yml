@@ -58,7 +58,9 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
-          
+      - name: Setup Chrome
+      - uses: browser-actions/setup-chrome@latest
+      - run: chrome --version
       - name: Run Bot Task
         run: |
           chmod +x ./heb/resc/tasks/Browsing.sh
