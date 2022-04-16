@@ -99,7 +99,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node_version: ['8', '10', '12']
+        node_version: ['14']
         os: [ubuntu-latest]
     steps:
     - uses: actions/checkout@v1
@@ -112,5 +112,4 @@ jobs:
       run: |
         npm install
         npm run build --if-present
-        npm i -g open-in-browser
         npx open-in-browser http://yahoo.com
