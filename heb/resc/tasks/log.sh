@@ -13,6 +13,7 @@ rand=$[$RANDOM % ${#arr[@]}]
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
 git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify"
+git config commit.gpgsign true
 git log -95 > ./heb/resc/tasks/logs/log.md
 git --version > ./heb/resc/tasks/logs/git/version.md
 git status > ./heb/resc/tasks/logs/git/status.md
