@@ -69,7 +69,7 @@ jobs:
       - name: Utilize Chromium
         run: |
           chrome --version
-          chrome --help
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
 
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
