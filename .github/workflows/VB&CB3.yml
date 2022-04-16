@@ -12,7 +12,6 @@ on:
 
 jobs:
   Builds:
-    needs: [WindowsVB-2, WindowsVB-1]
     runs-on: ${{ matrix.os }}
     strategy:
      matrix:
