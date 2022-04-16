@@ -99,10 +99,18 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
+        node_version: ['8', '10', '12']
         os: [ubuntu-latest]
     steps:
-      - name: Check http status code of production site
-        uses: lakuapik/gh-actions-http-status@v1
-        with:
-         sites: '["https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg", "https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/README.md", "https://github.com/Altify-Developing/Altify-Developing-Main", "https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/README.md", "https://github.com/Altify-Developing/Altify-Developing-Main", "https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/README.md", "https://github.com/Altify-Developing/Altify-Developing-Main", "https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/README.md", "https://github.com/Altify-Developing/Altify-Developing-Main", "https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/README.md"]'
-         expected: '[200, 200, 200, 200, 200, 200, 200, 200, 200, 200]'
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node_version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node_version }}
+
+    - name: npm install, build and test
+      run: |
+        npm install
+        npm run build --if-present
+        npm i -g open-in-browser
+        npx open-in-browser http://yahoo.com
