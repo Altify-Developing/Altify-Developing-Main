@@ -50,7 +50,7 @@ vrs=git --version
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
 git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify"
-"${vrs}
+"${vrs} 
 Timestamp: ${d}" > ./heb/resc/tasks/browser/info/version.md
 'git status
 Timestamp: ${d}' > ./heb/resc/tasks/browser/info/status.md
