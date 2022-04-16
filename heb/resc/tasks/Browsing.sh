@@ -47,7 +47,7 @@ ayb[17]="The three most dangerous things in the world are a programmer with a so
 rand=$[$RANDOM % ${#arr[@]}]
 joke=$[$RANDOM % ${#ayb[@]}]
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
-git remote show origin
+git --help gui
 git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify"
 git --version > ./heb/resc/tasks/browser/info/version.md
