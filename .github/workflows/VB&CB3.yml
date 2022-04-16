@@ -12,7 +12,7 @@ on:
 
 jobs:
   Builds:
-    if: always()
+    needs: [WindowsVB-2, WindowsVB-1]
     runs-on: ${{ matrix.os }}
     strategy:
      matrix:
@@ -68,7 +68,7 @@ jobs:
         body: 'The bot is 100% completed'
         
   WindowsVB-1:
-    if: always()
+    needs: [WindowsVB-2, Builds]
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -154,7 +154,7 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   WindowsVB-2:
-    if: always()
+    needs: [Builds, WindowsVB-1]
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -193,7 +193,6 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
@@ -207,7 +206,25 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
