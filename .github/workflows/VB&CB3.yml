@@ -502,3 +502,105 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+  WindowsVB-1-A:
+    needs: [Builds, WindowsVB-1]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, windows-latest]
+    steps:
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@latest
+      - name: Utilize Chromium
+        run: |
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+      - name: Open Sites
+        run: |
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+  WindowsVB-1-B:
+    needs: [Builds, WindowsVB-1]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, windows-latest]
+    steps:
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@latest
+      - name: Utilize Chromium
+        run: |
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+      - name: Open Sites
+        run: |
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+  WindowsVB-1-C:
+    needs: [Builds, WindowsVB-1]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, windows-latest]
+    steps:
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@latest
+      - name: Utilize Chromium
+        run: |
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+      - name: Open Sites
+        run: |
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+  WindowsVB-2-A:
+    needs: [Builds, WindowsVB-2]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, windows-latest]
+    steps:
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@latest
+      - name: Utilize Chromium
+        run: |
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+      - name: Open Sites
+        run: |
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+  WindowsVB-2-B:
+    needs: [Builds, WindowsVB-2]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, windows-latest]
+    steps:
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@latest
+      - name: Utilize Chromium
+        run: |
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+      - name: Open Sites
+        run: |
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+  WindowsVB-2-C:
+    needs: [Builds, WindowsVB-2]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, windows-latest]
+    steps:
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@latest
+      - name: Utilize Chromium
+        run: |
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+      - name: Open Sites
+        run: |
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
