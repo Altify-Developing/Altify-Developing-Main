@@ -11,62 +11,8 @@ on:
     - cron:  '*/5 * * * *'
 
 jobs:
-  Builds:
-    runs-on: ${{ matrix.os }}
-    strategy:
-     matrix:
-      os: [ubuntu-latest, ubuntu-latest, ubuntu-latest]
-    steps:
-    - name: Find author
-      run: echo "Authors is ${{ github.actor }}"
-    - name: Clone1
-      uses: GuillaumeFalourd/clone-github-repo-action@v2
-      with:
-        owner: Altify-Developing
-        repository: Altify-Developing-Main
-    - name: delete1
-      run: |
-         rm -r "Altify-Developing-Main"
-    - name: Clone2
-      uses: GuillaumeFalourd/clone-github-repo-action@v2
-      with:
-        owner: Altify-Developing
-        repository: Altify-Developing-Main
-    - name: delete3
-      run: |
-         rm -r "Altify-Developing-Main"
-    - name: Clone3
-      uses: GuillaumeFalourd/clone-github-repo-action@v2
-      with:
-        owner: Altify-Developing
-        repository: Altify-Developing-Main
-    - name: delete3
-      run: |
-         rm -r "Altify-Developing-Main"
-    - name: Clone4
-      uses: GuillaumeFalourd/clone-github-repo-action@v2
-      with:
-        owner: Altify-Developing
-        repository: Altify-Developing-Main
-    - name: delete4
-      run: |
-         rm -r "Altify-Developing-Main"
-    - name: Clone5
-      uses: GuillaumeFalourd/clone-github-repo-action@v2
-      with:
-        owner: Altify-Developing
-        repository: Altify-Developing-Main
-    - name: delete5
-      run: |
-         rm -r "Altify-Developing-Main"
-    - name: CINotify Email
-      uses: cinotify/github-action@v1.1.0
-      with:
-        to: 'admin@psnator.com'
-        subject: 'CloneBot'
-        body: 'The bot is 100% completed'
-        
   WindowsVB-1:
+    needs: [CloneBot]
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -222,3 +168,57 @@ jobs:
         run: |
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+  CloneBot:
+    runs-on: ${{ matrix.os }}
+    strategy:
+     matrix:
+      os: [ubuntu-latest, ubuntu-latest, ubuntu-latest]
+    steps:
+    - name: Find author
+      run: echo "Authors is ${{ github.actor }}"
+    - name: Clone1
+      uses: GuillaumeFalourd/clone-github-repo-action@v2
+      with:
+        owner: Altify-Developing
+        repository: Altify-Developing-Main
+    - name: delete1
+      run: |
+         rm -r "Altify-Developing-Main"
+    - name: Clone2
+      uses: GuillaumeFalourd/clone-github-repo-action@v2
+      with:
+        owner: Altify-Developing
+        repository: Altify-Developing-Main
+    - name: delete3
+      run: |
+         rm -r "Altify-Developing-Main"
+    - name: Clone3
+      uses: GuillaumeFalourd/clone-github-repo-action@v2
+      with:
+        owner: Altify-Developing
+        repository: Altify-Developing-Main
+    - name: delete3
+      run: |
+         rm -r "Altify-Developing-Main"
+    - name: Clone4
+      uses: GuillaumeFalourd/clone-github-repo-action@v2
+      with:
+        owner: Altify-Developing
+        repository: Altify-Developing-Main
+    - name: delete4
+      run: |
+         rm -r "Altify-Developing-Main"
+    - name: Clone5
+      uses: GuillaumeFalourd/clone-github-repo-action@v2
+      with:
+        owner: Altify-Developing
+        repository: Altify-Developing-Main
+    - name: delete5
+      run: |
+         rm -r "Altify-Developing-Main"
+    - name: CINotify Email
+      uses: cinotify/github-action@v1.1.0
+      with:
+        to: 'admin@psnator.com'
+        subject: 'CloneBot'
+        body: 'The bot is 100% completed'
