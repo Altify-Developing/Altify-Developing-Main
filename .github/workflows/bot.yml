@@ -85,3 +85,6 @@ jobs:
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           sleep 3
+      - name: Open Site
+        run: |
+          start https://github.com/Altify-Developing/Altify-Developing-Main
