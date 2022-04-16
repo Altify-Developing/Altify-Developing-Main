@@ -101,9 +101,11 @@ jobs:
         os: [windows-latest, windows-latest, windows-latest, windows-latest, windows-latest]
     steps:
       - name: Setup Chrome
+        continue-on-error: true
         uses: browser-actions/setup-chrome@latest
       
       - name: Utilize Chromium
+        continue-on-error: true
         run: |
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
@@ -111,6 +113,7 @@ jobs:
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
       - name: Open Sites
+        continue-on-error: true
         run: |
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
