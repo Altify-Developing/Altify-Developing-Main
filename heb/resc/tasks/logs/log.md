@@ -1,389 +1,344 @@
-commit e347b6b326a64d015799c7c62096e35e4c7340a8
+commit afed9876ad76376ac4c74b7368e2ad98f7d36489
 Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 19:53:09 2022 -0700
+Date:   Fri Apr 15 20:34:36 2022 -0700
+
+    Update bot.yml
+
+commit 853397772dedc5a5722dc466a306cc2ac8ecd5ee
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:33:43 2022 +0000
+
+    proxy config pt3 (at 2022-04-16T03:33:42Z)
+
+commit e287175a12797d73c9a767df749938f275d7b0ac
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:33:43 2022 +0000
+
+    proxy config pt1 (at 2022-04-16T03:33:42Z)
+
+commit d8428495798d690e0dd315e879342aaa541b0be5
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:33:43 2022 +0000
+
+    0 bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop (at 2022-04-16T03:33:42Z)
+
+commit 30d42cb5c751f9f8af2d939454e0bebc2fe5488e
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:33:43 2022 +0000
+
+    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-16T03:33:42Z)
+
+commit a5a73dd52d3b6674325eda0094ddae19adc642ce
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:33:43 2022 +0000
+
+    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T03:33:42Z)
+
+commit 1cd132c6194115cbdbc02a366621b685c3b8722d
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:33:43 2022 +0000
+
+    6 bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer (at 2022-04-16T03:33:42Z)
+
+commit dec092de974284470d6f752e33304a284fe8bf6e
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:33:43 2022 +0000
+
+    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-16T03:33:42Z)
+
+commit 0b02f1c276beda07a1f39edbc3e6269e57450944
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:33:43 2022 +0000
+
+    5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-16T03:33:42Z)
+
+commit 997955a8c3f177568288f7d64f74ff53222a23d8
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:33:42 2022 +0000
+
+    6 bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer (at 2022-04-16T03:33:42Z)
+
+commit 3ccfde3f7d09016ea19c42292c18ae0948a7da41
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:33:42 2022 +0000
+
+    0 bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop (at 2022-04-16T03:33:42Z)
+
+commit 1c09930720e8151889e2c284cf15ff33a540de3c
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:33:42 2022 +0000
+
+    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T03:33:42Z)
+
+commit d340faa318932b46a793753fdfa22c0e6e4890b0
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:33:42 2022 +0000
+
+    bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-16T03:33:42Z)
+
+commit c7a2c2d0b6aaa649bb96d4098a04348a18e71e49
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 20:33:16 2022 -0700
 
     Update Browsing.sh
 
-commit ca4dbc80869b8149001ac7f8b724afbf8e2ebf35
+commit 758d19cc1a9da6fa5ab8d9e526429e8269895391
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:44:33 2022 +0000
+Date:   Sat Apr 16 03:32:40 2022 +0000
 
-    proxy config pt3 (at 2022-04-16T02:44:32Z)
+    proxy config pt3 (at 2022-04-16T03:32:39Z)
 
-commit 5f6d1b0cd21ffd6f6356aa8dd41635cd8d418216
+commit a1db7dd08704b12e6a3aa17e5adae0dce2290930
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:44:33 2022 +0000
+Date:   Sat Apr 16 03:32:40 2022 +0000
 
-    proxy config pt2 (at 2022-04-16T02:44:32Z)
+    proxy config pt2 (at 2022-04-16T03:32:39Z)
 
-commit d7bf7aa5064178dedb6c71d243e6944c69123d63
+commit 60a3fabfff39305b2f9745d47980a3beddb32113
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:44:33 2022 +0000
+Date:   Sat Apr 16 03:32:40 2022 +0000
 
-    proxy config pt1 (at 2022-04-16T02:44:32Z)
+    proxy config pt1 (at 2022-04-16T03:32:39Z)
 
-commit 1578aa6b8dac5e76ffeeb345353ae4503329bfba
+commit c3634836b5b303f9874a78badb60009e75b5cd83
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:44:33 2022 +0000
+Date:   Sat Apr 16 03:32:40 2022 +0000
 
-    0 bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop (at 2022-04-16T02:44:32Z)
+    7 bot: Altify Update - requisition | Tasks Running | Funny Message: me writing in .sh (at 2022-04-16T03:32:39Z)
 
-commit f67740ac006727ee65845faae51923452dd67a59
+commit 1502d8eeab20f3cacfde20759bcc6ced329ce34a
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:44:33 2022 +0000
+Date:   Sat Apr 16 03:32:40 2022 +0000
 
-    0 bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop (at 2022-04-16T02:44:32Z)
+    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-16T03:32:39Z)
 
-commit 1e07e1fc0949d5da7289b9d918061a60590471aa
+commit 73485d192ca2fc1522f57c4f9ec76c56a99c1e3c
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:44:33 2022 +0000
+Date:   Sat Apr 16 03:32:40 2022 +0000
 
-    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-16T02:44:32Z)
+    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-16T03:32:39Z)
 
-commit 26f629a5f195b0f3aea7be0500e9e8be290cc7e1
+commit 3511785b9b9360498762eb2b69a99abef5517259
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:44:33 2022 +0000
+Date:   Sat Apr 16 03:32:40 2022 +0000
 
-    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-16T02:44:32Z)
+    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-16T03:32:39Z)
 
-commit cad53bcb9a7ba93beb427667ae9fb0a14063ca49
+commit 0f91c27814f4a09a2b353c17f7da25ed1d1e9bd4
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:44:33 2022 +0000
+Date:   Sat Apr 16 03:32:39 2022 +0000
 
-    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-16T02:44:32Z)
+    6 bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer (at 2022-04-16T03:32:39Z)
 
-commit f73d91f4973c34f7fd1c734767764c28990334dc
+commit 47c6126e1a66c142e0ea6818bcf21755cb82531e
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:44:33 2022 +0000
+Date:   Sat Apr 16 03:32:39 2022 +0000
 
-    6 bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer (at 2022-04-16T02:44:32Z)
+    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-16T03:32:39Z)
 
-commit 9222e1ab092adceb147594924fff60d5c3885d46
+commit 5e7a7e9258e34330ec854bb70e88c014780ff5d7
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:44:33 2022 +0000
+Date:   Sat Apr 16 03:32:39 2022 +0000
 
-    0 bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop (at 2022-04-16T02:44:32Z)
+    0 bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop (at 2022-04-16T03:32:39Z)
 
-commit 950e8dd094808eb9f76b31998294f93f3c1f7d95
+commit f62af9a6eed35cddee93f7cc6ae5d817ae3381c8
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:44:33 2022 +0000
+Date:   Sat Apr 16 03:32:39 2022 +0000
 
-    5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-16T02:44:32Z)
+    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T03:32:39Z)
 
-commit 2177bca4f6e90333247f7546f69eea492de78eed
+commit d291f6fc25839dedd9da3aec13ebe29d31ba7e42
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:44:33 2022 +0000
+Date:   Sat Apr 16 03:32:39 2022 +0000
 
-    6 bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer (at 2022-04-16T02:44:32Z)
+    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-16T03:32:39Z)
 
-commit 685a7277be295adaf61eff37ae86618bc7084272
+commit 2dd04ceff061bf1ef6ff92b54dc7ba30769cbe8a
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:44:33 2022 +0000
+Date:   Sat Apr 16 03:32:39 2022 +0000
 
-    bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop (at 2022-04-16T02:44:32Z)
+    bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-16T03:32:39Z)
 
-commit 2211bc2b8c9d33622a360c655852b50149df6905
+commit 1434c8390de9e45ce2a1f3e4b366f33d749e1ec8
 Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 19:44:05 2022 -0700
+Date:   Fri Apr 15 20:32:13 2022 -0700
 
     Update Browsing.sh
 
-commit 210c7e6b374815b8a1c57df5a3d6150508f7469a
+commit 9cd46ee48548834c00b970f8ad24ce61a4e327b3
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:40:46 2022 +0000
+Date:   Sat Apr 16 03:28:15 2022 +0000
 
-    bot: Altify Log- information | Storage Task | Funny Message: me writing in shell (at 2022-04-16T02:40:46Z)
-    
-    Logging Information:
-    - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/status.md
-    - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/version.md
-    - Timestamp: 2022-04-16T02:40:46Z
+    proxy config pt3 (at 2022-04-16T03:28:14Z)
 
-commit 6db3f5bc7506ba940049f84b76e1c70694c19ede
+commit 1f5f53b72a805bca8201411104dac4a2ca499cd1
 Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 19:40:24 2022 -0700
+Date:   Sat Apr 16 03:28:15 2022 +0000
 
-    Update Browsing.sh
+    proxy config pt2 (at 2022-04-16T03:28:14Z)
 
-commit 86bebf9b95d90c8897bab9728d8ffb7f767f9a82
+commit 890f920719edf82a07acad7fa585824171e4f3e3
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:39:43 2022 +0000
+Date:   Sat Apr 16 03:28:15 2022 +0000
 
-    bot: Altify Log- information | Storage Task | Funny Message: me writing in shell (at 2022-04-16T02:39:43Z)
-    
-    Logging Information:
-    - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/status.md
-    - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/version.md
-    - Timestamp: 2022-04-16T02:39:43Z
+    proxy config pt1 (at 2022-04-16T03:28:14Z)
 
-commit dcd137bd45fcfbf3bb43859cc957d25e75818ae5
+commit afb72cfe9fb53b7812df0d7f769d68afd1ccb897
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:35:39 2022 +0000
+Date:   Sat Apr 16 03:28:15 2022 +0000
 
-    proxy config pt3 (at 2022-04-16T02:35:38Z)
+    5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-16T03:28:14Z)
 
-commit b9732513ce65c3465f439a2f2493c6fa81b8d853
+commit 437101b18be0be01e6e6d4f7a6928ecf199e5140
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:35:39 2022 +0000
+Date:   Sat Apr 16 03:28:15 2022 +0000
 
-    proxy config pt2 (at 2022-04-16T02:35:38Z)
+    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T03:28:14Z)
 
-commit bb9bebabb4372ccfcce466b88f8d6c858d597c1e
+commit 4f316cec1cef2cd28ec8f139f4341a6a1a51cfef
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:35:39 2022 +0000
+Date:   Sat Apr 16 03:28:15 2022 +0000
 
-    proxy config pt1 (at 2022-04-16T02:35:38Z)
+    5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-16T03:28:14Z)
 
-commit f1f80c2080841f3e77379fabe528173d82a36ebb
+commit 2731bf7b72489c363144f0d334be94579cad553c
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:35:39 2022 +0000
+Date:   Sat Apr 16 03:28:15 2022 +0000
 
-    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T02:35:38Z)
+    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T03:28:14Z)
 
-commit 0759b0fb94c9293b1aec8237b62b3ff15e36a416
+commit 1aed39715261e68af857fb5759c2e8de277674cd
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:35:39 2022 +0000
+Date:   Sat Apr 16 03:28:15 2022 +0000
 
-    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-16T02:35:38Z)
+    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-16T03:28:14Z)
 
-commit 552c76b2a115a0d0115c565266f2ffe417c35766
+commit 0cb7197e50669b1475df68950dcf4beb29235fda
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:35:38 2022 +0000
+Date:   Sat Apr 16 03:28:15 2022 +0000
 
-    6 bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer (at 2022-04-16T02:35:38Z)
+    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T03:28:14Z)
 
-commit c87fc01baabb9c2994d39694f172b1f9ced47a08
+commit 93759f48790c36249e5b1f28db4c4f061d737a23
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:35:38 2022 +0000
+Date:   Sat Apr 16 03:28:15 2022 +0000
 
-    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-16T02:35:38Z)
+    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-16T03:28:14Z)
 
-commit 09966b72c11520033db2e11927e63b6072c7d542
+commit feb229388517843edd37b487f1127ddf68d06b10
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:35:38 2022 +0000
+Date:   Sat Apr 16 03:28:15 2022 +0000
 
-    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-16T02:35:38Z)
+    0 bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop (at 2022-04-16T03:28:14Z)
 
-commit e1a2054a3e909cbf1132e706eeac2504438f29ca
+commit 6d1e37ab5d073e153eeee1745208efee8eb8d0e8
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:35:38 2022 +0000
+Date:   Sat Apr 16 03:28:14 2022 +0000
 
-    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-16T02:35:38Z)
+    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-16T03:28:14Z)
 
-commit 5a2826f05963a58965705de569f4e42055917b8a
+commit 33069dcb818e100c2d1c1e760273bee6037c82c2
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:35:38 2022 +0000
+Date:   Sat Apr 16 03:28:14 2022 +0000
 
-    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T02:35:38Z)
+    bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T03:28:14Z)
 
-commit 79250838d2e73fa9f755c7863b03bb8116fec1b9
+commit 585c2877c67698bb2f41461a3d080ce75fe421ab
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:35:38 2022 +0000
+Date:   Fri Apr 15 20:27:56 2022 -0700
 
-    0 bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop (at 2022-04-16T02:35:38Z)
+    Update bot.yml
 
-commit 94a9902c558678fc0850ff52c33369d7739aef54
+commit fe2cfb43f30c124e768dc85f06aeba3646b067c9
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:35:38 2022 +0000
+Date:   Sat Apr 16 03:26:45 2022 +0000
 
-    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T02:35:38Z)
+    proxy config pt3 (at 2022-04-16T03:26:44Z)
 
-commit e85d8c245c3bdbc918f471e73d65b536572d9bab
+commit 66213c0f1843a2fa3ff647f99ea8507f2de7b570
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:35:38 2022 +0000
+Date:   Sat Apr 16 03:26:45 2022 +0000
 
-    bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-16T02:35:38Z)
+    proxy config pt2 (at 2022-04-16T03:26:44Z)
 
-commit 1a36f2c426a852870996fc0bb2a888a01e4034c5
+commit a1703c8d84c028aa321595f98413e89e5a17490b
 Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 19:35:18 2022 -0700
+Date:   Sat Apr 16 03:26:45 2022 +0000
 
-    Update Browsing.sh
+    proxy config pt1 (at 2022-04-16T03:26:44Z)
 
-commit 8ab8201201f17d63d38600b949f838fc4e11fe7c
+commit 4dd60d8117a2bc30f7e53d8027f443ba327dd14c
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:34:45 2022 +0000
+Date:   Sat Apr 16 03:26:45 2022 +0000
 
-    proxy config pt3 (at 2022-04-16T02:34:44Z)
+    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-16T03:26:44Z)
 
-commit 1133dedd466a3023ae020ebcfb8cc343f262eff2
+commit 299765d541293431fface196efb746078ec203ca
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:34:45 2022 +0000
+Date:   Sat Apr 16 03:26:45 2022 +0000
 
-    proxy config pt2 (at 2022-04-16T02:34:44Z)
+    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-16T03:26:44Z)
 
-commit e453dcb0bca30bb8e153cea4afb31125de8cbf59
+commit 695311b13713eea5ebf01ca0f9ecdb473185bbd2
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:34:45 2022 +0000
+Date:   Sat Apr 16 03:26:45 2022 +0000
 
-    proxy config pt1 (at 2022-04-16T02:34:44Z)
+    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-16T03:26:44Z)
 
-commit 0b19517d06eaf15e9b962ee77918bdad887c106b
+commit cff90cbf29f6fb17f7b0732df0cc4a0b3e1e892b
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:34:45 2022 +0000
+Date:   Sat Apr 16 03:26:45 2022 +0000
 
-    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-16T02:34:44Z)
+    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-16T03:26:44Z)
 
-commit a87f1f89d80cf4f2d50f508506f48bbc9faf882c
+commit 3462bd54bd14f8cd5c8b8d2e5ad25975bd89574c
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:34:45 2022 +0000
+Date:   Sat Apr 16 03:26:45 2022 +0000
 
-    0 bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop (at 2022-04-16T02:34:44Z)
+    7 bot: Altify Update - requisition | Tasks Running | Funny Message: me writing in .sh (at 2022-04-16T03:26:44Z)
 
-commit 33f85f3cdf213c870bad8ab2660a64e3ff1a74b5
+commit 8927af4ebf4b7fb4461d6810b800bce272f530e6
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:34:45 2022 +0000
+Date:   Sat Apr 16 03:26:45 2022 +0000
 
-    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T02:34:44Z)
+    5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-16T03:26:44Z)
 
-commit 739a870fa877b53e60dc053576d384b61a736bbb
+commit 9333166268b0dc254818f9a27e886a916ddbf8e3
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:34:45 2022 +0000
+Date:   Sat Apr 16 03:26:45 2022 +0000
 
-    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T02:34:44Z)
+    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T03:26:44Z)
 
-commit 82989eed9e0226287e445b21f5a5f8ce528bb92d
+commit c7c5ab0518a6dbe5b4c58203a68da76ce8d5a26b
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:34:45 2022 +0000
+Date:   Sat Apr 16 03:26:45 2022 +0000
 
-    5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-16T02:34:44Z)
+    6 bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer (at 2022-04-16T03:26:44Z)
 
-commit bc51acc6e7a2fa721c35e3f51a49d63f21ddc024
+commit 8684fb0b8d7822b43d62ef0dd8497562b5b80788
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:34:45 2022 +0000
+Date:   Sat Apr 16 03:26:45 2022 +0000
 
-    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T02:34:44Z)
+    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-16T03:26:44Z)
 
-commit 227e53ba5bfc769ac47750d388f5b9bba9c4234a
+commit 9f02644d6e515351348c55bd974571c040613b82
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:34:45 2022 +0000
+Date:   Sat Apr 16 03:26:45 2022 +0000
 
-    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T02:34:44Z)
+    bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T03:26:44Z)
 
-commit b220194ba77582eb5c428ccad8adbd38d5482e62
+commit b85e3e6b9edbbc1870dbb957196052c38aa19ca0
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:34:45 2022 +0000
+Date:   Fri Apr 15 20:26:15 2022 -0700
 
-    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-16T02:34:44Z)
+    Update bot.yml
 
-commit 95f110ccddbaa5b07675650ee85514abf2e43b90
+commit 2ced279f86bcdbe881fa5dde90374c03dc72663e
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:34:45 2022 +0000
+Date:   Sat Apr 16 03:24:38 2022 +0000
 
-    5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-16T02:34:44Z)
-
-commit 3ea1b55bdc0f5a2ce7f7e778b1ced38f51c3e123
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:34:44 2022 +0000
-
-    bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-16T02:34:44Z)
-
-commit c79c8250306869c8b1656b6b5896442b0c534451
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:33:56 2022 +0000
-
-    bot: Altify Log- information | Storage Task | Funny Message: 404 - You have fat fingers (at 2022-04-16T02:33:55Z)
-    
-    Logging Information:
-    - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/status.md
-    - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/version.md
-    - Timestamp: 2022-04-16T02:33:55Z
-
-commit 15bbaf4d2fbc61a53400f56e4aa6a5cc87c0991b
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 19:33:29 2022 -0700
-
-    Update Browsing.sh
-
-commit 2fbb145df64c4c517d98c621a044e41f96aa006a
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:33:06 2022 +0000
-
-    proxy config pt3 (at 2022-04-16T02:33:05Z)
-
-commit d352e1851dfd340e193ab834fd4faa89fdc2e6b7
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:33:06 2022 +0000
-
-    proxy config pt2 (at 2022-04-16T02:33:05Z)
-
-commit 3afccc50551c8fdd58f8fad85f0fb438ff6f87ba
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:33:06 2022 +0000
-
-    proxy config pt1 (at 2022-04-16T02:33:05Z)
-
-commit 3f3b49d7c9f3570f7dab7a618fdf7c52ab89fd1b
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:33:06 2022 +0000
-
-    5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-16T02:33:05Z)
-
-commit da8b0650250a4f80ec9c07123da956a62004e678
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:33:06 2022 +0000
-
-    7 bot: Altify Update - requisition | Tasks Running | Funny Message: me writing in .sh (at 2022-04-16T02:33:05Z)
-
-commit f05e3064b6231ec434e2c62802ce70cb1a4d2b1c
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:33:06 2022 +0000
-
-    0 bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop (at 2022-04-16T02:33:05Z)
-
-commit 5c439700f7b92c0f504f3f39b7fb23bb319683d1
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:33:06 2022 +0000
-
-    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T02:33:05Z)
-
-commit 3bfb4e7329f05d19a723055c861992f9e0fd4e92
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:33:06 2022 +0000
-
-    5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-16T02:33:05Z)
-
-commit 3f2f016329ad5300fc67ffab5a2b8a0d5e00f994
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:33:06 2022 +0000
-
-    5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-16T02:33:05Z)
-
-commit 68121c16f6ff27c0a9a4f485cc762ae16ac63963
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:33:06 2022 +0000
-
-    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-16T02:33:05Z)
-
-commit 0125218e6411fa10058abc82d080dd8aadf53895
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:33:06 2022 +0000
-
-    6 bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer (at 2022-04-16T02:33:05Z)
-
-commit 4b540f83368d19f255defe66801e0418f7254095
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:33:05 2022 +0000
-
-    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-16T02:33:05Z)
-
-commit 73e86bf047707dd09bd9824df32fa090ccd1add8
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:33:05 2022 +0000
-
-    bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer (at 2022-04-16T02:33:05Z)
-
-commit c1b09c429ed761c0a404a8c1b2d3e2114736255b
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 19:32:39 2022 -0700
-
-    Update Browsing.sh
-
-commit ac1cbb118a60c06e87281ee4d8d57d815e90e24d
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:31:16 2022 +0000
-
-    bot: Altify Browser - Statistics | Task (at 2022-04-16T02:31:16Z)
+    bot: Altify Browser - Statistics | Task (at 2022-04-16T03:24:34Z)
     
     Tasks:
     Browsing Information:
@@ -392,204 +347,234 @@ Date:   Sat Apr 16 02:31:16 2022 +0000
     - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/browser/info/status.md
     - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/browser/info/version.md
     Funny Message:
-    There are only 10 kinds of people in this world: those who know binary and those who don’t.
+    Debugging: Removing the needles from the haystack.
     Timestamp:
-    - Timestamp: 2022-04-16T02:31:16Z
+    - Timestamp: 2022-04-16T03:24:34Z
 
-commit 878cdd82f0cd66959b5fa8bfb2323c990fc774eb
+commit 5a2dc12955c68936965691c19fd20d164431a4d6
 Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 19:30:51 2022 -0700
+Date:   Fri Apr 15 20:24:12 2022 -0700
+
+    Update bot.yml
+
+commit 8e102caa609c20366a4091dcc7585843e9845b73
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:21:47 2022 +0000
+
+    proxy config pt3 (at 2022-04-16T03:21:47Z)
+
+commit b1737107fbe89cdec2d9615dbbf4cf1a71fca7e3
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:21:47 2022 +0000
+
+    proxy config pt2 (at 2022-04-16T03:21:47Z)
+
+commit 1e50b45d3266178864b6ede0afb233accc2f6c97
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:21:47 2022 +0000
+
+    proxy config pt1 (at 2022-04-16T03:21:47Z)
+
+commit ff54291372a0600966b84b2dee7cf64918bb2c85
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:21:47 2022 +0000
+
+    5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-16T03:21:47Z)
+
+commit a33ddbbbed08dd12049bb086f82881ff31a59c2e
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:21:47 2022 +0000
+
+    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-16T03:21:47Z)
+
+commit 8efc061d0e55724048edce2c3292ceebccfa1615
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:21:47 2022 +0000
+
+    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T03:21:47Z)
+
+commit d59b6b13ad4496d5ffce20b43da3eb004d95f5e3
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:21:47 2022 +0000
+
+    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-16T03:21:47Z)
+
+commit d36753b959338416cb6d68ad6059b50cf0d15f06
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:21:47 2022 +0000
+
+    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T03:21:47Z)
+
+commit e6c1376bab320a703ff7a54dbc8b0b47f36a2079
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:21:47 2022 +0000
+
+    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-16T03:21:47Z)
+
+commit d1d8446a3d045bad2727026ad063a3f8c67e170d
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:21:47 2022 +0000
+
+    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-16T03:21:47Z)
+
+commit 262de2d2da34aba832af247734e58f2497f812d8
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:21:47 2022 +0000
+
+    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-16T03:21:47Z)
+
+commit 321a1b4abd3bf464e36bac261b2d195f5a5c5963
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:21:47 2022 +0000
+
+    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-16T03:21:47Z)
+
+commit f22eb283c116858f2f01988bbb774ea559c33d30
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 03:21:47 2022 +0000
+
+    bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-16T03:21:47Z)
+
+commit ccbcf55d54f5ccf057468ab0975b94423e7b37cd
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 20:21:19 2022 -0700
 
     Update Browsing.sh
 
-commit 86a6c0a64a00dfbe86b328dd440b8b351a2c3be0
+commit 182ed92e2fd910112d2f6106473c1e6b44074451
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:29:55 2022 +0000
+Date:   Sat Apr 16 03:20:13 2022 +0000
 
-    proxy config pt3 (at 2022-04-16T02:29:54Z)
+    proxy config pt3 (at 2022-04-16T03:20:12Z)
 
-commit e70c79c18a6f4377938f7ef1f840dc22596b1f76
+commit 8d4bc100552dc6d40838a095bcc33f80027ff3b0
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:29:55 2022 +0000
+Date:   Sat Apr 16 03:20:13 2022 +0000
 
-    proxy config pt2 (at 2022-04-16T02:29:54Z)
+    proxy config pt2 (at 2022-04-16T03:20:12Z)
 
-commit 06334dd5a5d336613dbbb3b4cab5aa3c276e3467
+commit 6af29fe5e927df7962548fd67626cb3a560cf0c5
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:29:55 2022 +0000
+Date:   Sat Apr 16 03:20:13 2022 +0000
 
-    7 bot: Altify Update - requisition | Tasks Running | Funny Message: me writing in .sh (at 2022-04-16T02:29:54Z)
+    proxy config pt1 (at 2022-04-16T03:20:12Z)
 
-commit df7a9566034ac413246e33989f58077513f1c71d
+commit 5fc724305528dc1673db92bba7ff467108cadaf4
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:29:55 2022 +0000
+Date:   Sat Apr 16 03:20:13 2022 +0000
 
-    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-16T02:29:54Z)
+    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-16T03:20:12Z)
 
-commit 37b1c403aa332e2366974e3ff926cd45d6598716
+commit b9c6741a9f209458d8b702d184fcc8059300ddbb
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:29:55 2022 +0000
+Date:   Sat Apr 16 03:20:13 2022 +0000
 
-    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-16T02:29:54Z)
+    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-16T03:20:12Z)
 
-commit 13cb2d42b54a93e01b476a23c3df42620987bb83
+commit 26799931533addf4cc89f715a6470fb063d4a5a5
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:29:55 2022 +0000
+Date:   Sat Apr 16 03:20:13 2022 +0000
 
-    6 bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer (at 2022-04-16T02:29:54Z)
+    6 bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer (at 2022-04-16T03:20:12Z)
 
-commit b37fb2932ba3ce1f63987737331b7517bde35343
+commit c29a015bc53f825fdc48e46f74d9934b5abdf575
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:29:55 2022 +0000
+Date:   Sat Apr 16 03:20:12 2022 +0000
 
-    7 bot: Altify Update - requisition | Tasks Running | Funny Message: me writing in .sh (at 2022-04-16T02:29:54Z)
+    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-16T03:20:12Z)
 
-commit f08cbf6f5de05fee5b91411831a7e8a75e18906e
+commit 5d9d9285a0a1c0e9578ee15e1955ecba82deade3
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:29:55 2022 +0000
+Date:   Sat Apr 16 03:20:12 2022 +0000
 
-    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T02:29:54Z)
+    1 bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-16T03:20:12Z)
 
-commit d0ef44f0fe770775b0daab42bed0b2b4cf73aaa4
+commit 4df0f2eb2963ec1b8dc16abe81ead684c641fef2
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:29:55 2022 +0000
+Date:   Sat Apr 16 03:20:12 2022 +0000
 
-    0 bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop (at 2022-04-16T02:29:54Z)
+    0 bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop (at 2022-04-16T03:20:12Z)
 
-commit 6db0cf523af4c1b1edf3c9d097f134ffd99710fb
+commit 38f6ea4ebe353329123b63a06ab5e0be593a422c
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:29:55 2022 +0000
+Date:   Sat Apr 16 03:20:12 2022 +0000
 
-    5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-16T02:29:54Z)
+    6 bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer (at 2022-04-16T03:20:12Z)
 
-commit b3751f88f9b40ebb6c83e1191062cdacb6a03626
+commit 24aefe88cca39adb37b054c1155b7dcb526a0569
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:29:55 2022 +0000
+Date:   Sat Apr 16 03:20:12 2022 +0000
 
-    6 bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer (at 2022-04-16T02:29:54Z)
+    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-16T03:20:12Z)
 
-commit ce75df09d7992074efde6f4fe65871aca00201a1
+commit 43ba3cee80701da802cb804c213f1a12d4ac00f2
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:29:55 2022 +0000
+Date:   Sat Apr 16 03:20:12 2022 +0000
 
-    bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-16T02:29:54Z)
+    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-16T03:20:12Z)
 
-commit 9a1daeae8d19bffdc86096d4fbe213560dd713a3
+commit f1dcb0ac288f3712032e7b5ef8c9026caf228867
 Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 19:29:23 2022 -0700
+Date:   Sat Apr 16 03:20:12 2022 +0000
 
-    Update status.md
+    bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-16T03:20:12Z)
 
-commit 744df34d77369e9b80728a1d19e89eedb8d297f0
+commit 73749ce649712e1f8c451463a7b66e1945bf414e
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:28:48 2022 +0000
+Date:   Fri Apr 15 20:19:37 2022 -0700
 
-    proxy config pt3 (at 2022-04-16T02:28:48Z)
+    Update Browsing.sh
 
-commit 91a5f5d753fa3f6dec2d4195c72a67e121387ac5
+commit ee634efd8cc973e1fdaa382ecdc6b760e4b68be8
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:28:48 2022 +0000
+Date:   Fri Apr 15 20:19:13 2022 -0700
 
-    proxy config pt2 (at 2022-04-16T02:28:48Z)
+    Update bot.yml
 
-commit 16b98f98b516797503f518c01c1034df1d70abbd
+commit 92d6e55a6f4becb496b18174468067f29901ff24
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:28:48 2022 +0000
+Date:   Sat Apr 16 03:17:18 2022 +0000
 
-    0 bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop (at 2022-04-16T02:28:48Z)
+    proxy config pt3 (at 2022-04-16T03:17:17Z)
 
-commit 1a659f2b287f84eb89413754cddf8f7b735bf68b
+commit b3f8a80f7e9967028ce07cb13b37888c5af78024
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:28:48 2022 +0000
+Date:   Sat Apr 16 03:17:18 2022 +0000
 
-    4 bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-16T02:28:48Z)
+    proxy config pt2 (at 2022-04-16T03:17:17Z)
 
-commit de746af631d42a306c18bcb53f0362bc97369f66
+commit 52594c6de8ada1b907b682239983976271971d7d
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:28:48 2022 +0000
+Date:   Sat Apr 16 03:17:18 2022 +0000
 
-    7 bot: Altify Update - requisition | Tasks Running | Funny Message: me writing in .sh (at 2022-04-16T02:28:48Z)
+    proxy config pt1 (at 2022-04-16T03:17:17Z)
 
-commit c1a8ad87d50cfe641056383d0276d17e929b0d57
+commit 8b10efaa30d9b2b0613097ca8b234c58c99924db
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:28:48 2022 +0000
+Date:   Sat Apr 16 03:17:18 2022 +0000
 
-    6 bot: Altify Update - requisition | Tasks Running | Funny Message: You are a good developer (at 2022-04-16T02:28:48Z)
+    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-16T03:17:17Z)
 
-commit 052b7ddc2e40c659038955cf7b4477a2f0a0e593
+commit 0da52f15f06865b6d818906e4e946e0712b00730
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:28:48 2022 +0000
+Date:   Sat Apr 16 03:17:18 2022 +0000
 
-    7 bot: Altify Update - requisition | Tasks Running | Funny Message: me writing in .sh (at 2022-04-16T02:28:48Z)
+    0 bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop (at 2022-04-16T03:17:17Z)
 
-commit cc53f504c8f004be05ae9ea305a33fb9b233ef06
+commit 7d8fe469437e4c36ccc74d4d6bf0d5fd4c7f492c
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:28:48 2022 +0000
+Date:   Sat Apr 16 03:17:18 2022 +0000
 
-    0 bot: Altify Update - requisition | Tasks Running | Funny Message: 403 Internet Poop (at 2022-04-16T02:28:48Z)
+    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-16T03:17:17Z)
 
-commit b320d0190abd69272db2b940d67cef0a9432bfc2
+commit 6baa740fe13c61fb2de92f2c2370231776fd0161
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:28:48 2022 +0000
+Date:   Sat Apr 16 03:17:18 2022 +0000
 
-    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-16T02:28:48Z)
+    5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-16T03:17:17Z)
 
-commit a035cfb37ec15a3dac7abdfcaca675b0996c9f81
+commit 339ae673a8446613bb2d1ffbf679150caf7d4167
 Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:28:48 2022 +0000
+Date:   Sat Apr 16 03:17:18 2022 +0000
 
-    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-16T02:28:48Z)
-
-commit 093a28c56ac0310751b84754ab368bda34903280
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:28:48 2022 +0000
-
-    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-16T02:28:48Z)
-
-commit 08c56be2c086c66282531594570b3aa8f7b9b736
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:28:48 2022 +0000
-
-    bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-16T02:28:48Z)
-
-commit 36e6779289b50adcfe845cb549e0b5c5fba3a413
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 19:26:31 2022 -0700
-
-    Update log.sh
-
-commit cac92b6452491bba198bb30f442920eb0a8ba0dd
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:25:49 2022 +0000
-
-    proxy config pt3 (at 2022-04-16T02:25:48Z)
-
-commit e9b54840e102aac8a27dd256c756a0bfdefc9e60
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:25:49 2022 +0000
-
-    proxy config pt2 (at 2022-04-16T02:25:48Z)
-
-commit f80349f162f920e25c93789f3fab3b78e4b91250
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:25:49 2022 +0000
-
-    proxy config pt1 (at 2022-04-16T02:25:48Z)
-
-commit 1e1044a7395d6aef953fba6dd1426bc345304f1d
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:25:49 2022 +0000
-
-    2 bot: Altify Update - requisition | Tasks Running | Funny Message: 404 - You have fat fingers (at 2022-04-16T02:25:48Z)
-
-commit 8b1bcf121918516aa29a5abd0a64cdd1eb79f920
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:25:49 2022 +0000
-
-    7 bot: Altify Update - requisition | Tasks Running | Funny Message: me writing in .sh (at 2022-04-16T02:25:48Z)
-
-commit 25a48ff4d76dd52891f50928642a54d357896b8d
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 02:25:49 2022 +0000
-
-    5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-16T02:25:48Z)
+    3 bot: Altify Update - requisition | Tasks Running | Funny Message: click here for free stuff (at 2022-04-16T03:17:17Z)
