@@ -228,6 +228,6 @@ jobs:
     steps:
       - name: WarnUser
         run: |
-          cat("::warning Information=This was created by::Altify Developing - [Github Repo](https://github.com/Altify-Developing/Altify-Developing-Main)")
-          cat("::warning Information=:YOU MAY BE BANNED FROM GITHUB FOR USING THIS, USE WITH PRECAUTION AND WAS MADE FOR EDUCATIONAL USES:")
+          cat("::warning Information=This was created by::Altify Developing
+          And you may also be subject to account suspension - https://github.community/t/account-suspension/1287")
         shell: RScript {0}
