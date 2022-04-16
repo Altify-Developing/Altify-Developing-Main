@@ -227,9 +227,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
      matrix:
-      os: [macOS-latest, macOS-latest, macOS-latest]
+      os: [windows-latest, macOS-latest, ubuntu-latest]
     steps:
       - name: Echo
         run: |
-          cat("::warning file=episodes/01-introduction.Rmd,line=10,col=5::This is a warning")
+          cat("::warning Information=This was created by::Altify Developing - [Github Repo](https://github.com/Altify-Developing/Altify-Developing-Main)")
         shell: RScript {0}
