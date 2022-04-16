@@ -65,7 +65,11 @@ jobs:
 
       - name: Setup Chrome
         uses: browser-actions/setup-chrome@latest
-      - run: chrome --version
+      
+      - name: Utilize Chromium
+        run: |
+          chrome --version
+          chrome --help
 
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
