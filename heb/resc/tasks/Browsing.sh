@@ -46,11 +46,12 @@ ayb[17]="The three most dangerous things in the world are a programmer with a so
 
 rand=$[$RANDOM % ${#arr[@]}]
 joke=$[$RANDOM % ${#ayb[@]}]
+vrs=git --version
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
 git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify"
-'git --version
-Timestamp: ${d}' > ./heb/resc/tasks/browser/info/version.md
+"${vrs}
+Timestamp: ${d}" > ./heb/resc/tasks/browser/info/version.md
 'git status
 Timestamp: ${d}' > ./heb/resc/tasks/browser/info/status.md
 git commit -a -m "${arr[$rand]} (at ${d})" -m "Tasks:
