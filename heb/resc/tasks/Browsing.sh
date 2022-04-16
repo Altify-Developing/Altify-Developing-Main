@@ -50,9 +50,7 @@ d=`date '+%Y-%m-%dT%H:%M:%SZ'`
 git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify"
 git --version > ./heb/resc/tasks/browser/info/version.md
-Timestamp: ${d} > ./heb/resc/tasks/browser/info/version.md
 git status > ./heb/resc/tasks/browser/info/status.md
-Timestamp: ${d} > ./heb/resc/tasks/browser/info/status.md
 git commit -a -m "${arr[$rand]} (at ${d})" -m "Tasks:
 Browsing Information:
 - Statistics
