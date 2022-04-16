@@ -63,14 +63,6 @@ jobs:
           chmod +x ./heb/resc/tasks/Browsing.sh
           ./heb/resc/tasks/Browsing.sh
 
-      - name: Setup Chrome
-        uses: browser-actions/setup-chrome@latest
-      
-      - name: Utilize Chromium
-        run: |
-          chrome --version
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
         with:
@@ -87,3 +79,10 @@ jobs:
       - name: Open Site
         run: |
           start https://github.com/Altify-Developing/Altify-Developing-Main
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@latest
+      
+      - name: Utilize Chromium
+        run: |
+          chrome --version
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
