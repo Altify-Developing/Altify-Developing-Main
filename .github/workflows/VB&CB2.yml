@@ -70,47 +70,13 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest, windows-latest, windows-latest, windows-latest, windows-latest]
+        os: [windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest]
     steps:
       - name: Setup Chrome
         uses: browser-actions/setup-chrome@latest
       
       - name: Utilize Chromium
         run: |
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
