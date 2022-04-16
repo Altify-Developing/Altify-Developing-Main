@@ -126,3 +126,37 @@ jobs:
           to: 'admin@psnator.com'
           subject: 'ViewBot-2'
           body: 'The bot is 100% completed'
+  BrowserStartup-Ubuntu:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest]
+    steps:
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@latest
+      
+      - name: Utilize Chromium
+        run: |
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
+      - name: Email
+        uses: cinotify/github-action@v1.1.0
+        with:
+          to: 'admin@psnator.com'
+          subject: 'ViewBot-2'
+          body: 'The bot is 100% completed'
