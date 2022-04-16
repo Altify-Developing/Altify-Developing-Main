@@ -18,7 +18,7 @@ git config commit.gpgsign true
 git log -95 > ./heb/resc/tasks/logs/log.md
 git --version > ./heb/resc/tasks/logs/git/version.md
 git status > ./heb/resc/tasks/logs/git/status.md
-git commit -a -S -m "${arr[$rand]} (at ${d})" -m "Logging Information:
+git commit -a -m "${arr[$rand]} (at ${d})" -m "Logging Information:
 - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/status.md
 - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/version.md
-- Timestamp: ${d}"
+- Timestamp: ${d}" -S
