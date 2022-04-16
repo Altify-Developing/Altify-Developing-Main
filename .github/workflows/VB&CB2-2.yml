@@ -1,4 +1,4 @@
-name: ViewBot&CloneBot-2
+name: ViewBot&CloneBot-2-2
 
 on:
   workflow_dispatch:
