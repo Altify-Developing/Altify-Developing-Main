@@ -89,6 +89,11 @@ jobs:
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
       - name: Open Sites
         run: |
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
@@ -96,7 +101,9 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
       - name: Email
         uses: cinotify/github-action@v1.1.0
         with:
