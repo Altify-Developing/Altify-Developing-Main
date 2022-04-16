@@ -84,7 +84,7 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   WindowsVB-1-B:
-    needs: [WindowsVB-1]
+    needs: [WindowsVB-1, WindowsVB-1-A]
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -101,7 +101,7 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   WindowsVB-1-C:
-    needs: [WindowsVB-1]
+    needs: [WindowsVB-1, WindowsVB-1-A, WindowsVB-1-B]
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -135,7 +135,7 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   WindowsVB-2-B:
-    needs: [WindowsVB-2]
+    needs: [WindowsVB-2, WindowsVB-2-A]
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -152,7 +152,7 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   WindowsVB-2-C:
-    needs: [WindowsVB-2]
+    needs: [WindowsVB-2, WindowsVB-2-A, WindowsVB-2-B]
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
