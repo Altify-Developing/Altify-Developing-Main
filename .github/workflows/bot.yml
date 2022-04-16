@@ -87,4 +87,5 @@ jobs:
           sleep 3
       - name: Open Site
         run: |
-          start https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64" https://github.com/Altify-Developing/Altify-Developing-Main
