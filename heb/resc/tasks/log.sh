@@ -13,11 +13,10 @@ rand=$[$RANDOM % ${#arr[@]}]
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
 git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify"
-git show HEAD^1
 git log -95 > ./heb/resc/tasks/logs/log.md
 git --version > ./heb/resc/tasks/logs/git/version.md
 git status > ./heb/resc/tasks/logs/git/status.md
-git commit -a -m "${arr[$rand]} (at ${d})" -m "Logging Information:
+git commit -a -m --verify "${arr[$rand]} (at ${d})" -m "Logging Information:
 - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/status.md
 - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/version.md
-- Timestamp: ${d}" -S
+- Timestamp: ${d}"
