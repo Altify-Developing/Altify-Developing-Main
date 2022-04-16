@@ -22,8 +22,6 @@ jobs:
         shell: RScript {0}
   WindowsVB-1:
     continue-on-error: true
-    concurrency: 
-     group: ${{ github.ref }}
     needs: [Warning]
     runs-on: ${{ matrix.os }}
     strategy:
@@ -51,10 +49,7 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-  WindowsVB-2:
-    concurrency: 
-     group: ${{ github.ref }}
-     
+  WindowsVB--2:
     needs: [Warning]
     runs-on: ${{ matrix.os }}
     strategy:
@@ -81,8 +76,6 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   CloneBot:
-    concurrency: 
-     group: ${{ github.ref }}
     needs: [Warning]
     continue-on-error: true
     runs-on: ${{ matrix.os }}
