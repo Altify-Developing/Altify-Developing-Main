@@ -67,7 +67,7 @@ jobs:
         body: 'The bot is 100% completed'
         
   WindowsVB-1:
-    needs: [WindowsVB-2, Builds]
+    needs: [Builds]
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -417,7 +417,7 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   WindowsVB-2:
-    needs: [Builds, WindowsVB-1]
+    needs: [WindowsVB-1]
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
