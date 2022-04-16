@@ -99,8 +99,24 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest]
+        os: [windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest]
     steps:
+      - name: Open Site
+        run: |
+          start https://github.com/Altify-Developing/Altify-Developing-Main
+          sleep 2
+          start https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip
+          sleep 2
+          start https://github.com/Altify-Developing/Altify-Developing-Main/wiki
+          sleep 2
+          start https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg
+          sleep 2
+  BrowserStartup-Ubuntu:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest]
+    steps: 
       - name: Check http status code of production site
         uses: lakuapik/gh-actions-http-status@v1
         with:
