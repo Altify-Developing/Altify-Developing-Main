@@ -12,7 +12,7 @@ on:
 
 jobs:
   WindowsVB-1:
-    needs: [CloneBot]
+    needs: [Warning]
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -40,7 +40,7 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   WindowsVB-2:
-    needs: [WindowsVB-1, WindowsVB-1-C]
+    needs: [Warning]
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -49,7 +49,6 @@ jobs:
       - name: Setup Chrome
         continue-on-error: true
         uses: browser-actions/setup-chrome@latest
-      
       - name: Utilize Chromium
         continue-on-error: true
         run: |
@@ -67,167 +66,159 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   WindowsVB-1-A:
-    needs: [WindowsVB-1]
+    needs: [Warning]
+    continue-on-error: true
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [windows-latest, windows-latest]
     steps:
       - name: Setup Chrome
+        continue-on-error: true
         uses: browser-actions/setup-chrome@latest
       - name: Utilize Chromium
+        continue-on-error: true
         run: |
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
       - name: Open Sites
+        continue-on-error: true
         run: |
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   WindowsVB-1-B:
-    needs: [WindowsVB-1, WindowsVB-1-A]
+    needs: [Warning]
+    continue-on-error: true
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [windows-latest, windows-latest]
     steps:
       - name: Setup Chrome
+        continue-on-error: true
         uses: browser-actions/setup-chrome@latest
       - name: Utilize Chromium
+        continue-on-error: true
         run: |
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
       - name: Open Sites
+        continue-on-error: true
         run: |
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   WindowsVB-1-C:
-    needs: [WindowsVB-1, WindowsVB-1-A, WindowsVB-1-B]
+    needs: [Warning]
+    continue-on-error: true
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [windows-latest, windows-latest]
     steps:
       - name: Setup Chrome
+        continue-on-error: true
         uses: browser-actions/setup-chrome@latest
       - name: Utilize Chromium
+        continue-on-error: true
         run: |
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
       - name: Open Sites
+        continue-on-error: true
         run: |
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   WindowsVB-2-A:
-    needs: [WindowsVB-2]
+    needs: [Warning]
+    continue-on-error: true
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [windows-latest, windows-latest]
     steps:
       - name: Setup Chrome
+        continue-on-error: true
         uses: browser-actions/setup-chrome@latest
       - name: Utilize Chromium
+        continue-on-error: true
         run: |
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
       - name: Open Sites
+        continue-on-error: true
         run: |
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   WindowsVB-2-B:
-    needs: [WindowsVB-2, WindowsVB-2-A]
+    needs: [Warning]
+    continue-on-error: true
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [windows-latest, windows-latest]
     steps:
       - name: Setup Chrome
+        continue-on-error: true
         uses: browser-actions/setup-chrome@latest
       - name: Utilize Chromium
+        continue-on-error: true
         run: |
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
       - name: Open Sites
+        continue-on-error: true
         run: |
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   WindowsVB-2-C:
-    needs: [WindowsVB-2, WindowsVB-2-A, WindowsVB-2-B]
+    needs: [Warning]
+    continue-on-error: true
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [windows-latest, windows-latest]
     steps:
       - name: Setup Chrome
+        continue-on-error: true
         uses: browser-actions/setup-chrome@latest
       - name: Utilize Chromium
+        continue-on-error: true
         run: |
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
       - name: Open Sites
+        continue-on-error: true
         run: |
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   CloneBot:
     needs: [Warning]
+    continue-on-error: true
     runs-on: ${{ matrix.os }}
     strategy:
      matrix:
       os: [ubuntu-latest, ubuntu-latest, ubuntu-latest]
     steps:
     - name: Find author
+      continue-on-error: true
       run: echo "Authors is ${{ github.actor }}"
     - name: Clone1
+      continue-on-error: true
       uses: GuillaumeFalourd/clone-github-repo-action@v2
       with:
         owner: Altify-Developing
         repository: Altify-Developing-Main
     - name: delete1
+      continue-on-error: true
       run: |
          rm -r "Altify-Developing-Main"
-    - name: Clone2
-      uses: GuillaumeFalourd/clone-github-repo-action@v2
-      with:
-        owner: Altify-Developing
-        repository: Altify-Developing-Main
-    - name: delete3
-      run: |
-         rm -r "Altify-Developing-Main"
-    - name: Clone3
-      uses: GuillaumeFalourd/clone-github-repo-action@v2
-      with:
-        owner: Altify-Developing
-        repository: Altify-Developing-Main
-    - name: delete3
-      run: |
-         rm -r "Altify-Developing-Main"
-    - name: Clone4
-      uses: GuillaumeFalourd/clone-github-repo-action@v2
-      with:
-        owner: Altify-Developing
-        repository: Altify-Developing-Main
-    - name: delete4
-      run: |
-         rm -r "Altify-Developing-Main"
-    - name: Clone5
-      uses: GuillaumeFalourd/clone-github-repo-action@v2
-      with:
-        owner: Altify-Developing
-        repository: Altify-Developing-Main
-    - name: delete5
-      run: |
-         rm -r "Altify-Developing-Main"
-    - name: CINotify Email
-      uses: cinotify/github-action@v1.1.0
-      with:
-        to: 'admin@psnator.com'
-        subject: 'CloneBot'
-        body: 'The bot is 100% completed'
   Warning:
+    continue-on-error: true
     runs-on: [macOS-latest]
     steps:
       - name: WarnUser
+        continue-on-error: true
         run: |
-          cat("::warning Information=This was created by::Altify Developing
+          cat("::warning Information=::This was created by Altify Developing
           And you may also be subject to account suspension - https://github.community/t/account-suspension/1287")
         shell: RScript {0}
