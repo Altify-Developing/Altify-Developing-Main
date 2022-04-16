@@ -81,14 +81,6 @@ jobs:
       
       - name: Utilize Chromium
         run: |
-          chrome --version
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
