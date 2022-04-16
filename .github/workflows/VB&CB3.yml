@@ -135,7 +135,7 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   WindowsVB-1-B:
-    needs: [Builds, WindowsVB-1]
+    needs: [WindowsVB-1]
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
