@@ -74,7 +74,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest]
+        os: [windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest]
     steps:
       - name: Setup Chrome
         uses: browser-actions/setup-chrome@latest
@@ -85,8 +85,11 @@ jobs:
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
-
-      - name: Open Site
-        run: |
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          sleep 5
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          sleep 3
