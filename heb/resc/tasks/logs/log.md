@@ -1,3 +1,20 @@
+commit 4328fbe2d874a496eeb569ddd609b67dc6544a18
+Author: Altify <Altify@mail.com>
+Date:   Fri Apr 15 22:27:26 2022 -0700
+
+    Update VB&CB2.yml
+
+commit fb4041b6fa3018c17ee8d9bc303664fb49fa2d34
+Author: Altify <Altify@mail.com>
+Date:   Sat Apr 16 05:26:50 2022 +0000
+
+    bot: Altify Log- information | Storage Task | Funny Message: 503 Internet Poop (at 2022-04-16T05:26:50Z)
+    
+    Logging Information:
+    - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/status.md
+    - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/version.md
+    - Timestamp: 2022-04-16T05:26:50Z
+
 commit 249dbd271b9282a454b6a358e223ffffef60112c
 Author: Altify <Altify@mail.com>
 Date:   Sat Apr 16 05:23:05 2022 +0000
@@ -565,15 +582,3 @@ Author: Altify <Altify@mail.com>
 Date:   Sat Apr 16 03:54:44 2022 +0000
 
     5 bot: Altify Update - requisition | Tasks Running | Funny Message: StackOverflow users (at 2022-04-16T03:54:44Z)
-
-commit 46e852d1db9cdeacb2b0b5fc74bbdf9a9f4737ec
-Author: Altify <Altify@mail.com>
-Date:   Sat Apr 16 03:54:44 2022 +0000
-
-    bot: Altify Update - requisition | Tasks Running | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-16T03:54:44Z)
-
-commit 712688b0c9fad7e8cfb6e75806992cf244909d1a
-Author: Altify <Altify@mail.com>
-Date:   Fri Apr 15 20:50:30 2022 -0700
-
-    Update bot.yml
