@@ -85,7 +85,15 @@ jobs:
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           sleep 3
-      - name: Open Site
+      - name: Open Sites
         run: |
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
+          start "C:\hostedtoolcache\windows\chromium\latest\x64" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64" https://github.com/Altify-Developing/Altify-Developing-Main
