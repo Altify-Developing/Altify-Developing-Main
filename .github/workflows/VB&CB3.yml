@@ -169,6 +169,7 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
   CloneBot:
+    needs: [Warning]
     runs-on: ${{ matrix.os }}
     strategy:
      matrix:
@@ -223,7 +224,6 @@ jobs:
         subject: 'CloneBot'
         body: 'The bot is 100% completed'
   Warning:
-    needs: [CloneBot]
     runs-on: ${{ matrix.os }}
     strategy:
      matrix:
