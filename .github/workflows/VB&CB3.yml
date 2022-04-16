@@ -224,12 +224,10 @@ jobs:
         subject: 'CloneBot'
         body: 'The bot is 100% completed'
   Warning:
-    runs-on: ${{ matrix.os }}
-    strategy:
-     matrix:
-      os: [macOS-latest]
+    runs-on: [macOS-latest]
     steps:
-      - name: Echo
+      - name: WarnUser
         run: |
           cat("::warning Information=This was created by::Altify Developing - [Github Repo](https://github.com/Altify-Developing/Altify-Developing-Main)")
+          cat("::warning Information=:YOU MAY BE BANNED FROM GITHUB FOR USING THIS, USE WITH PRECAUTION AND WAS MADE FOR EDUCATIONAL USES:")
         shell: RScript {0}
