@@ -83,12 +83,10 @@ jobs:
         run: |
           chrome --version
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome https://github.com/Altify-Developing/Altify-Developing-Main
 
       - name: Open Site
         run: |
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
           sleep 5
