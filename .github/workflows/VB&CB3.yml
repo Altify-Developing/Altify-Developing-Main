@@ -14,7 +14,6 @@ jobs:
   WindowsVB-1:
     concurrency: 
      group: ${{ github.ref }}
-     cancel-in-progress: true
     needs: [Warning]
     runs-on: ${{ matrix.os }}
     strategy:
@@ -45,7 +44,7 @@ jobs:
   WindowsVB-2:
     concurrency: 
      group: ${{ github.ref }}
-     cancel-in-progress: true
+     
     needs: [Warning]
     runs-on: ${{ matrix.os }}
     strategy:
@@ -74,7 +73,6 @@ jobs:
   CloneBot:
     concurrency: 
      group: ${{ github.ref }}
-     cancel-in-progress: true
     needs: [Warning]
     continue-on-error: true
     runs-on: ${{ matrix.os }}
@@ -98,7 +96,6 @@ jobs:
   Warning:
     concurrency: 
      group: ${{ github.ref }}
-     cancel-in-progress: true
     continue-on-error: true
     runs-on: [macOS-latest]
     steps:
