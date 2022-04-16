@@ -12,6 +12,7 @@ on:
 
 jobs:
   Builds:
+    if: always()
     runs-on: ${{ matrix.os }}
     strategy:
      matrix:
@@ -67,6 +68,7 @@ jobs:
         body: 'The bot is 100% completed'
         
   WindowsVB-1:
+    if: always()
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -108,6 +110,7 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
 
   WindowsVB-2:
+    if: always()
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -149,6 +152,7 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
 
   WindowsVB-3:
+    if: always()
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
