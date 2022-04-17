@@ -835,10 +835,11 @@ setTimeout(() => {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function() {
-    if (window.location.href.indexOf("https") > -1) {
+    if (window.location.href.indexOf("?count=") > -1) {
         setInterval(refrsh, 1000);
         function refrsh() {
-          window.location.replace("https://altify-developing-001.netlify.app/heb/resc/pingertool/prepostseo.com/url.index);
+	  refcount = Math.floor(Math.random() * 1000000000000) + 1;
+          window.location.replace("https://altify-developing-001.netlify.app/heb/resc/pingertool/prepostseo.com/url.index?count="+refcount);
         }
     }
   });
