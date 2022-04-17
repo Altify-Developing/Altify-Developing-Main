@@ -1,3 +1,14 @@
+commit d608275d3780950dddd899ceb38df2ddf96f7d72
+Author: Altify <Altify@mail.com>
+Date:   Sun Apr 17 19:37:38 2022 +0000
+
+    bot: Altify Log- information | Storage Task | Funny Message: me writing in shell (at 2022-04-17T19:37:38Z)
+    
+    Logging Information:
+    - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/status.md
+    - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/version.md
+    - Timestamp: 2022-04-17T19:37:38Z
+
 commit afe0e389f9e579cad3992f18f3177344a2243b47
 Author: Altify <Altify@mail.com>
 Date:   Sun Apr 17 19:27:23 2022 +0000
@@ -581,14 +592,3 @@ Date:   Sun Apr 17 16:29:01 2022 +0000
     - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/status.md
     - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/version.md
     - Timestamp: 2022-04-17T16:29:00Z
-
-commit 417a5f64f72eb7c5fb4017c8cc5149ec8e94377f
-Author: Altify <Altify@mail.com>
-Date:   Sun Apr 17 15:58:46 2022 +0000
-
-    bot: Altify Log- information | Storage Task | Funny Message: You are a good developer (at 2022-04-17T15:58:45Z)
-    
-    Logging Information:
-    - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/status.md
-    - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/version.md
-    - Timestamp: 2022-04-17T15:58:45Z
