@@ -1,3 +1,14 @@
+commit 70a5a97c8cd2ec79fe695cf568606c3b313c5655
+Author: Altify <Altify@mail.com>
+Date:   Sun Apr 17 19:47:59 2022 +0000
+
+    bot: Altify Log- information | Storage Task | Funny Message: 404 - You have fat fingers (at 2022-04-17T19:47:58Z)
+    
+    Logging Information:
+    - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/status.md
+    - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/version.md
+    - Timestamp: 2022-04-17T19:47:58Z
+
 commit d608275d3780950dddd899ceb38df2ddf96f7d72
 Author: Altify <Altify@mail.com>
 Date:   Sun Apr 17 19:37:38 2022 +0000
@@ -581,14 +592,3 @@ Author: Altify <Altify@mail.com>
 Date:   Sun Apr 17 16:56:25 2022 +0000
 
     bot: Altify Update - requisition | Tasks Running | Funny Message: code = copy and paste (at 2022-04-17T16:56:25Z)
-
-commit cc6c462163c7f3d07fecac28be83dc79f47dd440
-Author: Altify <Altify@mail.com>
-Date:   Sun Apr 17 16:29:01 2022 +0000
-
-    bot: Altify Log- information | Storage Task | Funny Message: 👋 = Command Line Argument Parser (at 2022-04-17T16:29:00Z)
-    
-    Logging Information:
-    - Status: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/status.md
-    - Version: https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/heb/resc/tasks/logs/git/version.md
-    - Timestamp: 2022-04-17T16:29:00Z
