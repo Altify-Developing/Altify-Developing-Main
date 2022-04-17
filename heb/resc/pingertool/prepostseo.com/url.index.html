@@ -1,0 +1,819 @@
+
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam-cell.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1055386772",accountID:"2115560",trustKey:"2115560",xpid:"VgcGVFNVCBABVFRXBAkBUF0B",licenseKey:"ca07248735",applicationID:"1055386690"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(32),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(33),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError";if(!c.disabled){var l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(14),t(13),"addEventListener"in window&&t(7),c.xhrWrappable&&t(15),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){U++,L=g.hash,this[u]=y.now()}function o(){U--,g.hash!==L&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable&&!y.disabled){var x=t(11),b=t(12),E=t(9),R=t(7),O=t(14),T=t(8),S=t(15),P=t(10),M=t("ee"),C=M.get("tracer"),N=t(23);t(17),y.features.spa=!0;var L,U=0;M.on(u,r),b.on(p,r),P.on(p,r),M.on(d,o),b.on(l,o),P.on(l,o),M.buffer([u,d,"xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+c,"clearTimeout"+s,u]),S.buffer([u,"new-xhr","send-xhr"+s]),T.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",p,l,"executor-err","resolve"+s]),C.buffer([u,"no-"+u]),P.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,m+s),a(T,m+"-done"),a(P,"new-jsonp"),a(P,"jsonp-end"),a(P,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,N(!0)),w[v]("load",i,N(!0)),w[v]("popstate",function(){i(0,U>1)},N(!0))}},{}],5:[function(t,e,n){function r(){var t=new PerformanceObserver(function(t,e){var n=t.getEntries();s(v,[n])});try{t.observe({entryTypes:["resource"]})}catch(e){}}function o(t){if(s(v,[window.performance.getEntriesByType(w)]),window.performance["c"+p])try{window.performance[h](m,o,!1)}catch(t){}else try{window.performance[h]("webkit"+m,o,!1)}catch(t){}}function i(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var a=t("ee"),s=t("handle"),c=t(14),f=t(13),u=t(6),d=t(23),p="learResourceTimings",l="addEventListener",h="removeEventListener",m="resourcetimingbufferfull",v="bstResource",w="resource",g="-start",y="-end",x="fn"+g,b="fn"+y,E="bstTimer",R="pushState",O=t("loader");if(!O.disabled){O.features.stn=!0,t(9),"addEventListener"in window&&t(7);var T=NREUM.o.EV;a.on(x,function(t,e){var n=t[0];n instanceof T&&(this.bstStart=O.now())}),a.on(b,function(t,e){var n=t[0];n instanceof T&&s("bst",[n,e,this.bstStart,O.now()])}),c.on(x,function(t,e,n){this.bstStart=O.now(),this.bstType=n}),c.on(b,function(t,e){s(E,[e,this.bstStart,O.now(),this.bstType])}),f.on(x,function(){this.bstStart=O.now()}),f.on(b,function(t,e){s(E,[e,this.bstStart,O.now(),"requestAnimationFrame"])}),a.on(R+g,function(t){this.time=O.now(),this.startPath=location.pathname+location.hash}),a.on(R+y,function(t){s("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u()?(s(v,[window.performance.getEntriesByType("resource")]),r()):l in window.performance&&(window.performance["c"+p]?window.performance[l](m,o,d(!1)):window.performance[l]("webkit"+m,o,d(!1))),document[l]("scroll",i,d(!1)),document[l]("keypress",i,d(!1)),document[l]("click",i,d(!1))}}},{}],6:[function(t,e,n){e.exports=function(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}},{}],7:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],8:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return o.emit(n+"start",[t,a],s),s.then(function(t){return o.emit(n+"end",[null,t],s),t},function(t){throw o.emit(n+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(33),a=t(32);e.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,p=s.Response,l=s.fetch,h="prototype",m="nr@context";d&&p&&l&&(a(u,function(t,e){r(d[h],e,f),r(p[h],e,f)}),r(s,"fetch",c),o.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(c+"done",[null,e],n)}else o.emit(c+"done",[t],n)}))},{}],9:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],10:[function(t,e,n){function r(t){function e(){f.emit("jsonp-end",[],l),t.removeEventListener("load",e,c(!1)),t.removeEventListener("error",n,c(!1))}function n(){f.emit("jsonp-error",[],l),f.emit("jsonp-end",[],l),t.removeEventListener("load",e,c(!1)),t.removeEventListener("error",n,c(!1))}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var d=s(a),p="function"==typeof d.parent[d.key];if(p){var l={};u.inPlace(d.parent,[d.key],"cb-",l),t.addEventListener("load",e,c(!1)),t.addEventListener("error",n,c(!1)),f.emit("new-jsonp",[t.src],l)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(d);return e?e[1]:null}function a(t,e){var n=t.match(l),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(p);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t(23),f=t("ee").get("jsonp"),u=t("wrap-function")(f);if(e.exports=f,o()){var d=/[?&](?:callback|cb)=([^&#]+)/,p=/(.*)\.([^.]+)/,l=/^(\w+)(\.|$)(.*)$/,h=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?u.inPlace(Node.prototype,h,"dom-"):(u.inPlace(HTMLElement.prototype,h,"dom-"),u.inPlace(HTMLHeadElement.prototype,h,"dom-"),u.inPlace(HTMLBodyElement.prototype,h,"dom-")),f.on("dom-start",function(t){r(t[0])})}},{}],11:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],12:[function(t,e,n){function r(t){var e=i.context(),n=s(t,"executor-",e,null,!1),r=new f(n);return i.context(r).getCtx=function(){return e},r}var o=t("wrap-function"),i=t("ee").get("promise"),a=t("ee").getOrSetContext,s=o(i),c=t(32),f=NREUM.o.PR;e.exports=i,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){i.emit("propagate",[null,!o],a,!1,!1),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var a=e.apply(f,arguments),s=f.resolve(a);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&i.emit("propagate",[t,!0],n,!1,!1),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),o.wrapInPlace(f.prototype,"then",function(t){return function(){var e=this,n=o.argsToArray.apply(this,arguments),r=a(e);r.promise=e,n[0]=s(n[0],"cb-",r,null,!1),n[1]=s(n[1],"cb-",r,null,!1);var c=t.apply(this,n);return r.nextPromise=c,i.emit("propagate",[e,!0],c,!1,!1),c}}),i.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this,null,!1),t[1]=s(t[1],"resolve-",this,null,!1)}),i.on("executor-err",function(t,e,n){t[1](n)}),i.on("cb-end",function(t,e,n){i.emit("propagate",[n,!0],this.nextPromise,!1,!1)}),i.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=i.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],13:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],14:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],15:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){x.push(t),m&&(E?E.then(a):w?w(a):(R=-R,O.data=R))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(7);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),p=t(23),l=NREUM.o,h=l.XHR,m=l.MO,v=l.PR,w=l.SI,g="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,o,p(!1))}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(h,b),b.prototype=h.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),m){var E=v&&v.resolve();if(!w&&!v){var R=1,O=document.createTextNode(R);new m(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],16:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=l.generateSpanId(),m=l.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&p())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",s=1,c="",f="";return o+"@nr="+i+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function p(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var l=t(29),h=t(18);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],17:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(d[r],this.listener,!1);return e.protocol&&"data"===e.protocol?void g("Ajax/DataUrl/Excluded"):void(e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,s("xhr",[e,n,this.startTime,this.endTime,"xhr"],this)))}}function o(t,e){var n=c(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(18),f=t(16).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],p=d.length,l=t("id"),h=t(24),m=t(22),v=t(19),w=t(23),g=t(25).recordSupportability,y=NREUM.o.REQ,x=window.XMLHttpRequest;a.features.xhr=!0,t(15),t(8),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){i(e,t)},w(!1)),h&&(h>34||h<10)||t.addEventListener("progress",function(t){e.lastSize=t.loaded},w(!1))}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<p;s++)e.addEventListener(d[s],this.listener,w(!1))}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("xhr-resolved",function(){this.endTime=a.now()}),u.on("addEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof x&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=f(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},i=this.target;if("string"==typeof i?n=i:"object"==typeof i&&i instanceof y?n=i.url:window.URL&&"object"==typeof i&&i instanceof URL&&(n=i.href),o(this,n),"data"!==this.params.protocol){var s=(""+(i&&i instanceof y&&i.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}}),u.on("fetch-done",function(t,e){if(this.endTime=a.now(),this.params||(this.params={}),"data"===this.params.protocol)return void g("Ajax/DataUrl/Excluded");this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime,this.endTime,"fetch"],this)})}},{}],18:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];if(0===(t||"").indexOf("data:"))return{protocol:"data"};var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],19:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(22);e.exports=r},{}],20:[function(t,e,n){function r(){}function o(t,e,n,r){return function(){return u.recordSupportability("API/"+e+"/called"),i(t+e,[f.now()].concat(s(arguments)),n?null:this,r),n?void 0:this}}var i=t("handle"),a=t(32),s=t(33),c=t("ee").get("tracer"),f=t("loader"),u=t(25),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",h=l+"ixn-";a(p,function(t,e){d[e]=o(l,e,!0,"api")}),d.addPageAction=o(l,"addPageAction",!0),d.setCurrentRouteName=o(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(h+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=o(h,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),u.recordSupportability("API/noticeError/called"),i("err",[t,f.now(),!1,e])}},{}],21:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],22:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],23:[function(t,e,n){var r=!1;try{var o=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,o),window.removeEventListener("testPassive",null,o)}catch(i){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],24:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],25:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return i("storeMetric",n,null,"api"),n}function o(t,e){var n=[s,t,{name:t},e];return i("storeEventMetrics",n,null,"api"),n}var i=t("handle"),a="sm",s="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:s},recordSupportability:r,recordCustom:o}},{}],26:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,s=t(34);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],27:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],28:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;var o=[r],i=a({});i&&o.push(i),l("lcp",o)}}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function s(t){if(t instanceof w&&!y){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=h.now()?n.fid=h.now()-e:e>h.offset&&e<=Date.now()?(e-=h.offset,n.fid=h.now()-e):e=h.now(),y=!0,l("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=h.now(),l("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,d,p,l=t("handle"),h=t("loader"),m=t(31),v=t(23),w=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(g){}d=new PerformanceObserver(o);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(g){}p=new PerformanceObserver(i);try{p.observe({type:"layout-shift",buffered:!0})}catch(g){}}if("addEventListener"in document){var y=!1,x=["click","keydown","mousedown","pointerdown","touchstart"];x.forEach(function(t){document.addEventListener(t,s,v(!1))})}m(c)}},{}],29:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(31)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],30:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],31:[function(t,e,n){function r(t){function e(){t(s&&document[s]?document[s]:document[i]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,o(!1))}var o=t(23);e.exports=r;var i,a,s;"undefined"!=typeof document.hidden?(i="hidden",a="visibilitychange",s="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",a="webkitvisibilitychange",s="webkitVisibilityState")},{}],32:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],33:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],34:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,o,i,a){if(a!==!1&&(a=!0),!l.aborted||i){t&&a&&t(n,r,o);for(var s=e(o),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var p=d[y[n]];return p&&p.push([x,n,r,s]),s}}function i(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return p[t]=p[t]||o(n)}function w(t,e){l.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:i,addEventListener:i,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function i(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",f=t("gos"),u=t(32),d={},p={},l=e.exports=o();e.exports.getOrSetContext=i,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!S++){var t=T.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(R,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+T.offset],null,"api"),s("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=h+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===v.readyState&&i()}function i(){s("mark",["domContent",a()+T.offset],null,"api")}var a=t(26),s=t("handle"),c=t(32),f=t("ee"),u=t(30),d=t(27),p=t(21),l=t(23),h=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,w="addEventListener",g="attachEvent",y=m.XMLHttpRequest,x=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var E=""+location,R={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1215.min.js"},O=y&&x&&x[w]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:u,disabled:b};if(!b){t(20),t(28),v[w]?(v[w]("DOMContentLoaded",i,l(!1)),m[w]("load",r,l(!1))):(v[g]("onreadystatechange",o),m[g]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var S=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var i,a,u,p;try{a=this,i=d(arguments),u="function"==typeof r?r(i,a):r||{}}catch(l){o([l,"",[i,a,c],u],t)}s(n+"start",[i,a,c],u,f);try{return p=e.apply(a,i)}catch(h){throw s(n+"err",[i,a,h],u,f),h}finally{s(n+"end",[i,a,p],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,i(e,nrWrapper,t),nrWrapper)}function r(t,e,r,o,i){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,o,c,i))}function s(n,r,i,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,i,e,a)}catch(c){o([c,n,r,i],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=p,n}function o(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function i(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(i){o([i],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function s(t,e){var n=e(t);return n[p]=t,i(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(33),p="nr@original",l=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,17,5,3,4]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ping Website Tool / Google Indexer - Ping URLs to Search Engines</title>
+<meta name="description" content="Bulk  Online Ping Website Tool helps you to ping URLs  and webpages to 60+ search engines. Best Online Google, Bing, Yahoo indexer Tool.">
+<meta property="og:image" content="https://www.prepostseo.com/imgs/social-imgs/ping-multiple-urls-online.png" />
+<meta name="Robots" content="INDEX, FOLLOW">
+<meta name="Publisher" content="PrePost SEO"><meta name="Revisit-After" content="7 Days"><meta name="Rating" content="General">
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link rel="dns-prefetch" href="https://ajax.googleapis.com">
+<link rel="dns-prefetch" href='https://apis.google.com'>
+<link rel="dns-prefetch" href='https://www.gstatic.com'>
+<link rel="dns-prefetch" href='https://fonts.googleapis.com'>
+<link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link href="https://www.prepostseo.com/imgs/icon-2.png" rel="icon" type="image/x-icon" />
+<link href="https://www.prepostseo.com/assets/pps-frontend/lib/theme.css?v=5.7.0.9.22" rel="stylesheet">
+<script src="https://www.prepostseo.com/assets/lib/js/jquery-3.4.1.min.js"></script>
+<link rel="canonical" href="https://www.prepostseo.com/ping-multiple-urls-online" /><link rel="alternate" hreflang="x-default" href="https://www.prepostseo.com/ping-multiple-urls-online" /><link rel="alternate" hreflang="en" href="https://www.prepostseo.com/ping-multiple-urls-online" /><script type="text/javascript">
+function docReady(fn){"complete"===document.readyState||"interactive"===document.readyState?setTimeout(fn,1):document.addEventListener("DOMContentLoaded",fn)}
+var base_url = "https://www.prepostseo.com/";
+var tool_name = "Ping Multiple URLs";
+var adblocker = 0;
+var tool_title = "Ping URLs ";
+
+</script>
+</head>
+<body class="">
+<div class="fw">
+<div class="model-bg"></div><div class="model-box"><span class="model-heading"></span><div class="model-body"> </div> <div class="line"></div> <span class="close-model">X</span><div class="model-footer">If you need any help please <a href="https://www.prepostseo.com/contact" target="_blank">contact us</a></div> </div>
+<script>
+	docReady(function(e) {
+		$(".model-bg").click(function(){$(".model-box").hide();$(this).fadeOut(800);});
+		$(".close-model").click(function(){$(".model-box").hide();$(".model-bg").fadeOut(800);});
+		
+	});
+		function showModel(title, data){$(".model-heading").html(title);$(".model-body").html(data);$(".model-box").fadeIn(500);$(".model-bg").show();}
+</script>
+<header class="mb-2">
+<div class="container-fluid top-bar clear" style="position:relative;">
+
+<div class="col-sm-9 col-xs-12 noP">
+<nav class="navbar nav navbar-default" role="navigation" style="margin-bottom:0;line-height: normal; height:auto">
+
+<div class="navbar-header">
+<a href="https://www.prepostseo.com/"><img src="https://www.prepostseo.com/imgs/prepostseo.png?v=1" alt="PrePost SEO" width="133.8" height="36" class="pull-left logo"></a>
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+<div class="navbar-collapse collapse noP " id="bs-example-navbar-collapse-1" aria-expanded="false">
+<ul class="nav navbar-nav">
+<li class="nav-menu"><a href="https://www.prepostseo.com/plagiarism-checker">Plagiarism Checker</a></li><li class="nav-menu"><a href="https://www.prepostseo.com/domain-authority-checker">DA Checker</a></li><li class="nav-menu"><a href="https://www.prepostseo.com/paraphrasing-tool">Paraphrasing Tool</a></li>
+<li class="nav-menu"><a href="https://www.prepostseo.com/plans"><i class="fa fa-star text-primary"></i> Premium Plans</a></li>
+<li class="nav-menu"><a href="https://www.prepostseo.com/ad-free-plan" class=""><img src="https://www.prepostseo.com/imgs/remove-ad-sm.png" width="16px" height="16px" alt="no ads" /> Ads-Free Plan</a></li>
+<li class="nav-menu hidden-lg hidden-md hidden-sm"><a href="https://www.prepostseo.com/contact"><i class="fa fa-phone"></i> Contact Us</a></li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="pull-right col-sm-3 col-xs-12 text-right" style="padding:0;" id="searchSec">
+<a href="javascript:void(0)" aria-label="darkmode" onclick="toggleDarkMode(this)" class="logregBtn">
+<i class="fa fa-moon-o"></i>
+</a>
+<a href="https://www.prepostseo.com/login" class="logregBtn">Register</a>
+<a href="https://www.prepostseo.com/login" class="logregBtn">Login</a>
+<i class="fa fa-search pull-right topsearch"></i>
+</div>
+
+<div class="sbNew">
+<div class="container">
+<div class="col-md-12 noP">
+<div class="col-md-8 col-md-offset-2 noP sbNewinner" id="h_top_search">
+<input class="inputSN" id="inputSN" type="search" />
+<span class="cross" id="crossNS">X</span>
+<div class="search-results" style="display:none;">
+<div class="withlangSearch"></div>
+<div class="withoutlangSearch"></div>
+<div class="noresult"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="clear:both;"></div>
+<script>
+  docReady(function(e) {
+      $(".navbar-toggle").click(function(){
+        $("#bs-example-navbar-collapse-1").toggleClass("collapse");
+      });
+  });
+</script>
+<style>@media (max-width:768px) {.navbar-collapse{position:relative;background:#fff;z-index:2;box-shadow: inset -2px -2px 5px 1px #ddd}}</style>
+</header>
+<style>
+.checkServices .fa{
+	display:none;
+}
+.checkServices.checked .fa{
+	display:inline-block !important;
+}
+</style>
+
+
+<div class="text-center pps-spr pps-spr-lumba-daba pps-spr-after-heading" style="display:flex;align-items:center;height:100px;margin:5px auto !important;flex-flow: column;justify-content: center;position:relative">
+<span style="font-size:12px;display: block;position: absolute;top: -8px;font-family:system-ui">ADVERTISEMENT</span>
+
+<div id="ezoic-pub-ad-placeholder-101">
+<div id="adngin-top_leaderboard-0"></div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="container noP">
+<div class="leftcol">
+<div class="col-md-12 shadowBox">
+<h1 class="h_tool">Ping Website URLs & Backlinks</h1>
+<p class="text16 text-center">
+To use prepostseo <strong>Google Indexer / Ping Urls</strong>, Paste upto 50 Urls in the input box given below and click on <strong>Ping Urls</strong> Button. </p>
+<div class="col-xs-12 text-center pps-spr pps-spr-lumba-daba" id="after_title_ad" style="margin:5px 0;min-height:310px;min-width:336px;">
+<span style="font-size:12px;display:block;font-family:system-ui">ADVERTISEMENT</span>
+
+<div id="ezoic-pub-ad-placeholder-104">
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-7155931151667823" data-ad-slot="3954599603"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+</div>
+<div class="col-xs-12 form">
+<div class="text-sec">
+<form action="https://www.prepostseo.com/ping-multiple-urls-online" method="post" id="detailsForm">
+<div class="col-sm-12" style="min-height:50px; margin-bottom:0;">
+<p>
+Select Category:
+</p>
+<div class="form-group bigInput-sec">
+<div class="input-group" style="width:100%;">
+<select class="form-control green-border" style="height:auto;  padding:10px;" autocomplete="off" id="cat">
+<option value="Art">Art</option>
+<option value="Automotive">Automotive</option>
+<option value="Business">Business</option>
+<option value="Clothing & Accessories">Clothing & Accessories</option>
+<option value="Computer & Electronics">Computer & Electronics</option>
+<option value="Education">Education</option>
+ <option value="Entertainment">Entertainment</option>
+<option value="Family">Family</option>
+<option value="Financial Services">Financial Services</option>
+<option value="Food & Drink">Food & Drink</option>
+<option value="Free Services">Free Services</option>
+<option value="Games & Toys">Games & Toys</option>
+<option value="Gifts & Flowers">Gifts & Flowers</option>
+<option value="Health & Beauty">Health & Beauty</option>
+<option value="Hobbies & Collectibles">Hobbies & Collectibles</option>
+<option value="Home & Garden">Home & Garden</option>
+<option value="Information">Information</option>
+<option value="Internet & Online">Internet & Online</option>
+<option value="Marketing">Marketing</option>
+<option value="Office">Office</option>
+<option value="Other" selected="selected">Other</option>
+<option value="Outdoors">Outdoors</option>
+<option value="Photography">Photography</option>
+<option value="Search Engine Optimization">Search Engine Optimization</option>
+<option value="Shopping">Shopping</option>
+<option value="Sports & Fitness">Sports & Fitness</option>
+<option value="Telecommunications">Telecommunications</option>
+<option value="Tips & Tricks">Tips & Tricks</option>
+<option value="Travel">Travel</option>
+<option value="Website Tools">Website Tools</option>
+</select>
+</div>
+</div>
+</div>
+<div class="from-sec col-sm-12" style="min-height:50px; margin-bottom:0;">
+<p>
+Paste up to 10 urls to ping online: <span class="pull-right"><a href="https://chrome.google.com/webstore/detail/prepostseo-tools-for-chro/ijjoomidleehpnpjdknmidmibcbehegc" target="_blank" rel="nofollow"><i class="fa fa-chrome"></i> Get Google Chrome Extension</a></span>
+</p>
+<div class="form-group bigInput-sec">
+<div class="input-group">
+<div class="input-group-addon"><i class="glyphicon glyphicon-link"></i></div>
+<textarea placeholder="Webpages urls" class="form-control green-bdr" style="height:200px;" id="urls" name="urls">https://altify-developing-001.netlify.app/
+https://altify-developing-001.netlify.app/#1
+https://altify-developing-001.netlify.app/#2
+https://altify-developing-001.netlify.app/#3
+https://altify-developing-001.netlify.app/#4
+https://altify-developing-001.netlify.app/#5</textarea>
+</div>
+</div>
+</div>
+</form>
+<div class="com-md-12 text-center">
+<span style="width:100%;font-size:12px;" class="text-uppercase text-muted">Advertisement</span>
+
+ </div>
+<p class="text-center" style="display:none;">
+<span class="btn btn-lg btn-success active" style="margin:20px 0;" id="checkBtn">Ping Now</span>
+</p>
+<p class="text-center stepOne">
+<span class="btn btn-lg btn-success" style="margin:20px 0;" id="stepOne">Ping Now</span>
+</p>
+<p class="text-center selectServices" style="display:none;">
+<label>Please Select Search Enignes where you want to submit your URL..</label>
+<br>
+<span class="btn btn-default checkServices checked"><i class="fa fa-check text-success"></i> All 50+ Google Search Engines</span>
+<span class="btn btn-default checkServices checked"><i class="fa fa-check text-success"></i> Yandex</span>
+<span class="btn btn-default checkServices checked"><i class="fa fa-check text-success"></i> Bing</span>
+<span class="btn btn-default checkServices checked"><i class="fa fa-check text-success"></i> Yahoo</span>
+<br>
+<span class="btn btn-default checkServices checked"><i class="fa fa-check text-success"></i> Blogpeople</span>
+<span class="btn btn-default checkServices checked"><i class="fa fa-check text-success"></i> All Other Search Engines</span>
+<br>
+<span class="btn btn-lg btn-success" style="margin:20px 0;" id="pingConfirm">Start Pinging</span>
+</p>
+</div>
+</div>
+<form action="https://www.prepostseo.com/ping-urls-report" method="post" target="_blank" id="reportForm">
+<input class="reportUrl" type="hidden" name="url" value="" />
+</form>
+<script>
+                        $(".checkServices").click(function(){
+                            $(this).toggleClass("checked");
+                        });
+                        $("#stepOne").click(function(){
+                            $(".stepOne").hide();
+                            $(".selectServices").show();	
+                        });
+                        $("#pingConfirm").click(function(){
+                            var textarea = $("#urls").val();
+                            var links = textarea.split("\n");
+                            
+                            linkArr = new Array();
+                            $.each(links, function(index, value){
+                                
+                                if(validateURL(value) && jQuery.inArray(value, linkArr) < 0)
+                                {
+                                    linkArr.push(value);
+                                }
+                            });
+                            
+                            if(linkArr.length < 1)
+                            {
+                                showModel("Error", "Please enter atleast 1 valid url where you want to verify link");
+                                return false;
+                            }
+                            if(linkArr.length > 10)
+                            {
+                                showModel("Error", "No more than 10 webpages per search");
+                                return false;
+                            }
+                            $("#pingConfirm").html('<i class="fa fa-refresh fa-spin"></i> Processing..');
+                            $("#detailsForm").submit();
+                        });
+                        
+                    </script>
+<div class="col-xs-12 text-center pps-spr pps-spr-lumba-daba pps-spr-after-button p-sm-0" id="after_button_ad_desktop" style="min-height:250px;min-width:300px">
+<span style="font-size:12px;display: block;">ADVERTISEMENT</span>
+
+<div id="ezoic-pub-ad-placeholder-105">
+<div id="adngin-incontent_after_button-0"></div>
+</div>
+</div>
+
+<style>
+                        #resultsTable th {
+                            text-align:center;
+                        }
+                        #resultsTable td {
+                            text-align:center;
+                        }
+                        #resultsTable td:first-child 
+                        {
+                            text-align:left;
+                        }
+                        .pingBox {
+                            width:100%;
+                            height:150px;
+                            border:1px solid #B4B4B4;
+                            background:#FDFCF3;
+                            text-align:left;
+                            overflow:hidden;
+                            padding:5px;
+                            position:relative;
+                        }
+						.pingurl{
+							clear: both;
+							padding: 10px;
+							background: #f5f5f5;
+						}
+                    </style>
+
+<div class="plg-res" id="ressultSec" style="display:none;">
+<span class="sub-heading feature-tab">Results:</span>
+<span class="line"></span>
+<div class="col-sm-12 noP">
+<table class="table table-bordered" id="resultsTable">
+<thead>
+<tr>
+<th width="40%">
+Web Page </th>
+<th width="60%">
+Ping Status </th>
+</tr>
+<tr><td colspan="2" style="text-align:center;"><div id="in_result_ad" style="position: relative;width:728px;min-height:90px;display:block;margin:0 auto;margin-top: 20px;margin-bottom:10px;clear: both">
+<span style="font-size:12px;display:block;top:-12px;position: absolute;left: 50%;transform: translate(-50%, 1px);">ADVERTISEMENT</span>
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-7155931151667823" data-ad-slot="2301855164"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+</td></tr> </thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+
+</div>
+<div class="col-md-12 tool-content bdr">
+<style>
+.toc_container{width:100%;}
+.toc_container .shareit{text-align: center;padding-top: 0px!important;}
+</style>
+<div class="row">
+<div class="col-sm-6">
+<div class='toc_container'><p class='toc_title'>Table of Contents:</p><ul class='toc_list'><li class="d-block pb-1"><a href="#ping-bulk-mass-urls-to-search-engines">Ping Bulk/Mass URLs to Search Engines</a></li><li class="d-block pb-1"><a href="#why-is-crawling-and-indexing-is-important">Why is crawling and indexing is important?</a></li></ul></div> </div>
+<div class="col-sm-6">
+<form>
+<div class="toc_container improveContainer">
+<p class="toc_title">Is this tool helpful?</p>
+<p id="improveerrorp"></p>
+<div class="dhide form-group" style="margin-bottom:0px;">
+<input type="hidden" id="toolMode" value="">
+<label><input type="radio" name="helpful" value="Yes" checked />&nbsp;Yes</label> &nbsp;
+<label><input type="radio" name="helpful" value="No" />&nbsp;No</label> &nbsp;
+<label><input type="radio" name="helpful" value="Maybe" />&nbsp;Maybe</label> &nbsp;
+</div>
+<div class="dhide form-group">
+<label class="light" for="improveBody">How can we improve it?</label>
+<textarea class="form-control" name="improvements" id="improveBody"></textarea>
+</div>
+<div class="form-group" style="display: none;" id="emailDiv">
+<p>Enter E-mail to get response?</p>
+<input type="email" name="user_email" class="form-control" id="user_email">
+</div>
+<button class="g-recaptcha" id="improve-captcha" data-sitekey="6LfjKgwbAAAAAMd8iXCoFyQG2Ffimymba_D0su14" style="display:none;" data-callback="onSubmitImprove"></button>
+<span class="btn btn-success" id="improveTool" style="margin:10px 0;">Submit</span>
+</div>
+</form>
+</div>
+</div>
+<h2 style="text-align:center" id="ping-bulk-mass-urls-to-search-engines">Ping Bulk/Mass URLs to Search Engines</h2> <p>Prepostseo ping website tool is widly used by webmaster to submit site to search engines. Pinging your websites URLs to the search engine is very important in many cases. It Helps you submit site to google quickly. Google or any other search engine won&rsquo;t be able to know itself about the changes or updates, you have made to your website. So this step is very important. This not only goes for the alteration but as well as, a new URL or web page can also be pinged for the Google to update the database. Search engines normally take the time to recognize and index your data without pinging. For example, You have written an article and updated it in your link but didn&rsquo;t submitted it to google. Now, what can happen? It can be stolen by someone else before Google even reach to it and he or she can post it as their own unique content and index it from google. Now where this leads you? Well, your content will be treated as plagiarized if you try to ping it later. So ping your content or new URLs because it&rsquo;s extremely important.</p> <p><strong>100% Free</strong>: With all premium features, our ping urls tool allows you to submit unlimited web pages</p> <p><strong>65+ Search Engines</strong>: Our submit url to google tool submit site to google and 65 others search engines with just one click</p> <p><strong>Bulk Submission</strong>: Bulk ping sites means you can add up to 10 URLs at once to add those web pages to search engines</p> <p>Don&rsquo;t wait for the search engines to recognize the changes in your website. You must submit online web pages to google, Bing and Yahoo ASAP. <strong>Reading following reasons why you should google ping blog urls quickly</strong></p> <ul> <li>To index your new content asap, before someone else grab that content and use it in any other website.</li> <li>Fresh content improves your ranking in the search engines, so why wait.</li> <li>This tool can send 650 (10x65) ping url requests at one time hence a lot of your time saved.</li> </ul> <hr /> <h2 id="why-is-crawling-and-indexing-is-important">Why is crawling and indexing is important?</h2> <p>Crawling and indexing is Google&rsquo;s way of welcoming you to the club. This means that once you are on Google&rsquo;s database, it will start to show you in its search engine results. If your content quality is great and you align with what is the general definition of a decent website, you can get paid through Adsense. But this all is only possible if you appear on Google&rsquo;s search engine. And indexing is the only way to appear on Google&rsquo;s search engine.</p> <hr /> <h3>How to use Google indexer Tool:</h3> <p>PrePostSEO <a href="https://www.prepostseo.com/google-index-tool">Google Index Tool</a> is facilitating you widely in this matter. Simply copy/paste the URLs and press the button ping blog to get them instantaneously pinged. This online ping tool can send requests up to the number 650 (65*10) at one time. The use of this tool is very easy and hence it ends up saving you a lot of time. Plus you can paste up to 10 URLs at a single time.</p> <hr /> <h3>How Online Ping Tool Works:</h3> <p>This tool will fetch urls one by one and then ping those links to the 65+ search engines. Title of the url is used as the name of the pinged url.</p> <hr /> <h3>Ping backlinks: How it helps in Google Ranking?</h3> <p>If you got a quality backlink from a high authority website, first thing that must be done is to submit that webpage to search engines. Pinging backlinks also become important when a specific webpage is not being crawled by Google, Bing and Yahoo.</p> <p>After you submitted url for indexation in google, you can check if that specific post listed in search engines or not by using our <a href="https://www.prepostseo.com/google-index-checker">google indexed pages checker</a> tool. Please note sometimes Google took 24-48 hours to add new urls in its database</p> </div>
+</div>
+<div class="rightcol">
+<div class="sidebarR">
+<div class="rtbg clear greybox">
+<span class="h">Related Tools</span>
+<a href="https://www.prepostseo.com/reverse-image-search">Reverse Image Search</a>
+<a href="https://www.prepostseo.com/bulk-domain-age-checker">Domain Age Checker</a>
+<a href="https://www.prepostseo.com/reverse-ip-domain-checker">Reverse Ip Domains</a>
+<a href="https://www.prepostseo.com/google-index-tool">Google Index</a>
+</div>
+<div class="text-center">
+</div><div class="col-xs-12 text-center clear noP pps-spr pps-spr-choras-daba pps-spr-sidebar" id="sidebar_ad" style="margin:10px 0;height:600px;margin-bottom: 34px;">
+<span style="font-size:12px;color:#000">ADVERTISEMENT</span>
+
+<div id="ezoic-pub-ad-placeholder-107">
+<div id="adngin-sidebar_top-0" style="height:600px;"></div>
+</div>
+</div>
+<style>#carbonads{position:relative;display:flex;width:300px;height:250px;background-color:#fff;box-shadow:inset 0 0 1px 1px hsla(0,0%,0%,.15);text-align:center;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",Helvetica,Arial,sans-serif;justify-content:center;align-items:center}#carbonads a{color:#111;text-decoration:none}#carbonads a:hover{color:#111}#carbonads span{display:block;overflow:hidden}.carbon-img{display:block;margin:0 0 8px;line-height:1}.carbon-img img{max-width:150px!important;width:150px;height:auto}.carbon-text{display:block;margin-bottom:8px;padding:0 10px;font-weight:500;font-size:16px;line-height:1.35}.carbon-poweredby{position:absolute;right:10px;bottom:10px;display:block;padding:5px 6px;border-radius:2.5px;background-color:hsl(246,93%,69%);color:#fff!important;text-transform:uppercase;letter-spacing:.5px;font-weight:600;font-size:8px;line-height:1}</style>
+<div id="carbon-block"></div>
+<div class="col-md-12 clear text-center text16 rbs greybox" style="overflow:hidden;">
+<h3>Chrome Extension</h3>
+<p>
+Get our new chrome extension and access all popular seo tools with just one click.
+</p>
+<br />
+<a href="https://chrome.google.com/webstore/detail/prepostseo-tools-for-chro/ijjoomidleehpnpjdknmidmibcbehegc" class="brnb-r" target="_blank" rel="noreferrer nofollow">GET IT FREE</a>
+<img data-src="https://www.prepostseo.com/imgs/google-chrome-webstore2.png" alt="Chrome Extension" class="mkimg lazy" />
+</div>
+<div class="col-md-12 noP rtbg clear greybox">
+<span class="h">Popular Tools</span>
+<a href="https://www.prepostseo.com/paraphrasing-tool">Paraphrasing Tool</a>
+<a href="https://www.prepostseo.com/domain-authority-checker">Domain Authority Checker</a>
+<a href="https://www.prepostseo.com/backlinks-maker">Backlink Maker</a>
+<a href="https://www.prepostseo.com/what-is-my-ip">What is my IP</a>
+</div>
+</div>
+</div>
+<div class="rightcol sticky">
+<div class="col-xs-12 text-center pps-spr pps-spr-choras-daba pps-spr-sidebar noP" id="sidebar_ad_big" style="margin-top:0px;min-height:250px">
+<span style="font-size:12px;color:#000">ADVERTISEMENT</span>
+
+<div id="ezoic-pub-ad-placeholder-102">
+<div id="adngin-sidebar_1-0"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="container">
+</div>
+</div>
+<script>
+		$(document).ready(function(e) {
+        
+    
+	var linkno = 0;
+	var title = 'No title';
+	var category = '';
+	var linkArr = new Array();
+	var pingArr = new Array(
+		"blogsearch.google.ae/ping/RPC2",
+		"blogsearch.google.at/ping/RPC2",
+		"blogsearch.google.be/ping/RPC2",
+		"blogsearch.google.bg/ping/RPC2",
+		"blogsearch.google.ca/ping/RPC2",
+		"blogsearch.google.ch/ping/RPC2",
+		"blogsearch.google.cl/ping/RPC2",
+		"blogsearch.google.co.cr/ping/RPC2",
+		"blogsearch.google.co.hu/ping/RPC2",
+		"blogsearch.google.co.id/ping/RPC2",
+		"blogsearch.google.co.il/ping/RPC2",
+		"blogsearch.google.co.in/ping/RPC2",
+		"blogsearch.google.co.jp/ping/RPC2",
+		"blogsearch.google.co.ma/ping/RPC2",
+		"blogsearch.google.co.nz/ping/RPC2",
+		"blogsearch.google.co.th/ping/RPC2",
+		"blogsearch.google.co.uk/ping/RPC2",
+		"blogsearch.google.co.ve/ping/RPC2",
+		"blogsearch.google.co.za/ping/RPC2",
+		"blogsearch.google.com.ar/ping/RPC2",
+		"blogsearch.google.com.au/ping/RPC2",
+		"blogsearch.google.com.br/ping/RPC2",
+		"blogsearch.google.com.co/ping/RPC2",
+		"blogsearch.google.com.do/ping/RPC2",
+		"blogsearch.google.com.mx/ping/RPC2",
+		"blogsearch.google.com.my/ping/RPC2",
+		"blogsearch.google.com.pe/ping/RPC2",
+		"blogsearch.google.com.sa/ping/RPC2",
+		"blogsearch.google.com.sg/ping/RPC2",
+		"blogsearch.google.com.tr/ping/RPC2",
+		"blogsearch.google.com.tw/ping/RPC2",
+		"blogsearch.google.com.ua/ping/RPC2",
+		"blogsearch.google.com.uy/ping/RPC2",
+		"blogsearch.google.com.vn/ping/RPC2",
+		"blogsearch.google.com/ping/RPC2",
+		"blogsearch.google.de/ping/RPC2",
+		"blogsearch.google.es/ping/RPC2",
+		"blogsearch.google.fi/ping/RPC2",
+		"blogsearch.google.fr/ping/RPC2",
+		"blogsearch.google.gr/ping/RPC2",
+		"blogsearch.google.hr/ping/RPC2",
+		"blogsearch.google.ie/ping/RPC2",
+		"blogsearch.google.it/ping/RPC2",
+		"blogsearch.google.jp/ping/RPC2",
+		"blogsearch.google.lt/ping/RPC2",
+		"blogsearch.google.nl/ping/RPC2",
+		"blogsearch.google.pl/ping/RPC2",
+		"blogsearch.google.pt/ping/RPC2",
+		"blogsearch.google.ro/ping/RPC2",
+		"blogsearch.google.ru/ping/RPC2",
+		"blogsearch.google.se/ping/RPC2",
+		"blogsearch.google.sk/ping/RPC2",
+		"blogsearch.google.us/ping/RPC2",
+		"blog.goo.ne.jp/XMLRPC",
+		"blogpeople.net/ping",
+		"ping.blo.gs/",
+		"ping.blogs.yandex.ru/RPC2",
+		"rpc.aitellu.com",
+		"rpc.bloggerei.de/ping/",
+		"rpc.pingomatic.com",
+		"rpc.reader.livedoor.com/ping",
+		"www.blogpeople.net/servlet/weblogUpdates",
+		"xping.pubsub.com/ping/"
+	);
+	function stopActions()
+	{
+		$("#checkBtn").removeClass("active");
+	}
+	
+	function allowActions()
+	{
+		$("#checkBtn").addClass("active");
+	}
+	
+	$("#checkBtn").click(function()
+	{
+		if ($(this).hasClass("active"))
+		{
+			
+			
+			var textarea = $("#urls").val();
+			var links = textarea.split("\n");
+			
+			linkArr = new Array();
+			$.each(links, function(index, value){
+				
+				if(validateURL(value) && jQuery.inArray(value, linkArr) < 0)
+				{
+					linkArr.push(value);
+				}
+			});
+			
+			if(linkArr.length < 1)
+			{
+				showModel("Error", "Please enter atleast 1 valid url where you want to verify link");
+				return false;
+			}
+			if(linkArr.length > 10)
+			{
+				showModel("Error", "No more than 30 webpages per search");
+				return false;
+			}
+			
+			var newVal = "";
+			newVal += linkArr[0];
+			for (i = 1; i < linkArr.length; i++) {
+				newVal += "\n"+linkArr[i];
+			}
+			
+			$("#urls").val(newVal);
+			
+			
+			
+			$(this).removeClass("active");
+			
+			
+			
+			$("#ressultSec").show();
+			$( "#resultsTable tbody" ).html("");
+			$.each(linkArr, function(index, value){
+				 
+					var html = '<tr><td>'+ value+ '</td>'
+						+ '<td class="pingStatus"><div class="pingBox"></div></td> </tr>';
+					$( "#resultsTable tbody" ).append(html);
+								
+			});
+			
+			var elemOff = $("#ressultSec").offset().top;
+			elemOff = elemOff-100;
+			$("html, body").animate({ scrollTop: elemOff }, 500);
+			pingLinks();
+			
+		}
+	});
+	
+	function pingLinks()
+	{
+		var verifyingLink = $("#inputURL").val();
+		var tatal = linkArr.length;
+		var i = 0;
+		checkStatus(i);
+		function checkStatus(i)
+		{
+			linkno = i;
+			if(i >= tatal)
+			{
+				allowActions();
+				return false;
+			}
+			$( "#resultsTable" ).find( ".pingBox" ).eq( i ).html('<strong>Started pinging Url :</strong> '+ linkArr[i]);
+			var j = 0;
+			ping(j);
+		}
+		
+		function ping(j)
+		{
+			if(j >= pingArr.length)
+			{
+				var htmlR = '<div style="background:rgba(255,255,255,0.50); width:100%; height:100%; position:absolute; padding:30px 0; text-align:center;"><span class="btn btn-primary btn-lg viewreport" href="'+linkArr[i]+'">View Report</span></div>'; 
+				$( "#resultsTable" ).find( ".pingBox" ).eq( i ).prepend(htmlR);
+				i++;
+				checkStatus(i);
+				return false;
+			}
+			var No = j+1;
+			setTimeout(function(){
+				$( "#resultsTable" ).find( ".pingBox" ).eq( i ).prepend('<strong>'+No+'</strong> : '+pingArr[j]+' :: ' + '<strong class="text-success">Success</strong><br>');
+				j++;
+				ping(j);
+			},300);
+			
+		}
+		
+	}
+	
+	$("#ressultSec").on("click", ".viewreport", function(){
+		var url = $(this).attr("href");
+		$(".reportUrl").val(url);
+		$("#reportForm").submit();
+	});
+	
+	$("#checkBtn").click();
+	});
+		
+</script>
+<footer>
+<style>
+.d-flex{display:-webkit-box;display:-ms-flexbox;display:flex}
+.flex-center{-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+.row-wrap{display: -ms-flexbox;display: -webkit-box;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;clear: both} 
+.col-xs-auto,.col-auto {-ms-flex: 0 0 auto;-webkit-box-flex: 0;flex: 0 0 auto;width: auto;max-width: 100%}
+.justify-content-center {-ms-flex-pack: center!important;-webkit-box-pack: center!important;justify-content: center!important}
+.justify-content-between {-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+.align-self-center {-ms-flex-item-align: center!important;-ms-grid-row-align: center!important;align-self: center!important}
+.align-self-end {-webkit-box-align: end;-ms-flex-align: end;align-items: end}
+.shadowBox #checkBtn,.shadowBox .btn.tool_btn_submit,.shadowBox .btn.btn-lg.btn-success,
+.shadowBox .btn.btn-lg.btn-success.active{margin-right: 10px;margin-top: 20px !important;
+margin-bottom: 20px!important;min-width: 260px !important;padding: 11px 20px !important;font-size: 20px !important;outline: none !important;}
+.shadowBox #checkBtn:last-child,.shadowBox .btn.btn-lg.btn-success:last-child,.shadowBox .btn.btn-lg.btn-success.active:last-child{ margin-right: 10px;}
+.shadowBox #checkBtn.btn.btn-danger.btn-lg{box-shadow: 3px 3px 0px 0px #ac2925} 
+div.text-uppercase.text-muted,span.text-uppercase.text-muted{display:none}
+@media (max-width:768px) {
+.shadowBox #checkBtn,.shadowBox .btn.tool_btn_submit,.shadowBox .btn.btn-lg.btn-success,
+.shadowBox .btn.btn-lg.btn-success.active{min-width: 180px; padding: 11px 15px}
+.p-sm-0{padding:0!important}
+}
+@media (max-width:576px) {.col-auto {width: 100%;padding: 0 15px}.hide-xs{display:none}}
+@media (max-width:452px) {
+.shadowBox #checkBtn,.shadowBox .btn.tool_btn_submit,.shadowBox .btn.btn-lg.btn-success,
+.shadowBox .btn.btn-lg.btn-success.active{min-width: auto; padding: 10px;  }
+}
+@media (max-width:360px) {
+.shadowBox #checkBtn,.shadowBox .btn.tool_btn_submit,.shadowBox .btn.btn-lg.btn-success,
+.shadowBox .btn.btn-lg.btn-success.active{ font-size: 16px;}
+}
+@media (max-width:1200px) { 
+.navbar-collapse.collapse{width:auto !important}
+}
+@media (max-width:992px) { 
+.navbar-collapse.collapse{width:100% !important}
+}
+.btn.active, .btn:active{box-shadow: 0 3px 5px rgb(0 0 0 / 13%)}
+.g-recaptcha{
+-ms-transform: scale(0.85);transform: scale(0.85);-webkit-transform: scale(0.85);
+width:304px !important;height:78px !important;margin: 0 auto;
+}
+.mb-2{margin-bottom:.5rem!important}
+.my-0{margin:0 auto}
+.bdr{border:1px solid #eee}
+.g-recaptcha-wrap{position: relative;align-self: center;text-align:center}
+.g-recaptcha-wrap .rid-captcha-free{position: absolute;font-size: 12px;width: 234.08px;transform: translate(-50% , -10px)}
+#floorad-wrapper{background:#f2f7f9!important;width:100%;bottom:0;position:fixed;box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);text-align: center;padding-top:4px;z-index:12}
+#close-floorad-btn{color:#000!important;display:inline-block;height:18px;padding:2px;background:#fff;cursor:pointer;float:right;box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);border-radius: 8px 0 0 0;margin-top: -28px;}
+</style>
+<div class="container">
+<div class="col-sm-12" style="padding:10px 0px;">
+<div class="col-sm-4 noP" style="padding-right:20px;">
+<img src="https://www.prepostseo.com/imgs/prepostseo-logo-white.webp" width="107" height="30" alt="prepostseo">
+<hr>
+<p>By Developing 75+ online tools for students, writers and SEO experts, PREPOSTSEO is one of the top free tools websites.</p>
+<p>2019 &copy; PrePost SEO</p>
+<img src="https://www.prepostseo.com/imgs/ssl-badge-120x37.png" width="120" height="37" alt="Prepostseo SSL" />
+</div>
+<div class="col-sm-5 noP" style="padding-right:20px;">
+<p class="fh">Prepostseo Services</p> <hr style=" margin:10px 0;" /> <a style="color:#3ACD99;" href="/blog/"><strong>PREPOSTSEO BLOG</strong></a><a href="/plagiarism-checker-api">Plagiarism APIs</a><a href="https://wordpress.org/plugins/prepost-seo/" target="_blank" rel="nofollow noreferrer">Wordpress PrePost SEO Plugin</a><a href="/seo-tools-widgets">SEO Tools Widgets</a><a href="https://www.prepostseo.com/tool/">More Tools</a>
+<hr style=" margin:10px 0;" />
+<a href="https://www.facebook.com/prepostseo/" rel="noopener" aria-label="facebook" target="_blank" class="fbtn"><i class="fa fa-facebook"></i></a>
+<a href="https://twitter.com/prepostseo" rel="noopener" aria-label="twitter" target="_blank" class="fbtn"><i class="fa fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/prepostseo/" rel="noopener" aria-label="linkedin" target="_blank" class="fbtn"><i class="fa fa-linkedin"></i></a>
+<a href="https://play.google.com/store/apps/developer?id=prepostseo.com" rel="noopener" aria-label="android" target="_blank" class="fbtn"><i class="fa fa-android"></i></a>
+<a href="https://apps.apple.com/us/app/plagiarism-checker-prepostseo/id1463941368" rel="noopener" aria-label="apple" target="_blank" class="fbtn"><i class="fa fa-apple"></i></a>
+</div>
+<div class="col-sm-3 noP" style="padding-right:20px; padding-bottom:80px;">
+<p class="fh">Resources</p> <hr style=" margin:10px 0;" /> <a href="/about">About us</a><a href="/contact">Contact us </a><a href="/advertise">Advertise</a><a href="/faqs">FAQs</a><a href="/privacy-policy">Privacy Policy</a><a href="/refund-policy">Refund Policy</a><a href="/terms-of-use">Terms of use</a>
+</div>
+</div>
+</div>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-67516616-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-67516616-1');
+</script>
+<style>
+body.dark_mode_ui{background:#333!important;color:#fff!important}
+body.dark_mode_ui div:not(.pps-spr-lumba-daba):not(.pps-spr-choras-daba),body.dark_mode_ui div:before,body.dark_mode_ui span:not(.btn),body.dark_mode_ui a,body.dark_mode_ui textarea,body.dark_mode_ui footer,body.dark_mode_ui input,body.dark_mode_ui select,body.dark_mode_ui form{background:#333!important;color:#fff!important;border-color:#aaa!important;box-shadow:none!important}
+body.dark_mode_ui footer{border:0}
+body.dark_mode_ui .btn.btn-ad-share,body.dark_mode_ui .loadfeedbackwrapper{background:#fff!important;color:#333!important;border-color:#aaa!important}
+body.dark_mode_ui #feedback{border:0;background:#333!important}
+body.dark_mode_ui .btn:not(#feedback) .fa{color:#333}
+body.dark_mode_ui .fa,body.dark_mode_ui h1,body.dark_mode_ui h2,body.dark_mode_ui h3,body.dark_mode_ui h4,body.dark_mode_ui h5,body.dark_mode_ui label{color:#fff}
+body.dark_mode_ui .logo,body.dark_mode_ui .shareit img{filter:grayscale(1) invert(1)!important}
+body.dark_mode_ui img{opacity:.7!important}
+body.dark_mode_ui .hh{background:linear-gradient(90deg,#666,#333)!important}
+body.dark_mode_ui .leftcol,body.dark_mode_ui .toc_container{border:1px solid #333!important}
+body.dark_mode_ui .model-box{border: 1px solid #eee}
+</style>
+<script>
+// Set a Cookie
+function setCookie(cName, cValue, expDays) {
+	let date = new Date();
+	date.setTime(date.getTime() + (expDays*24*60*60*1000));
+	const expires = "expires=" + date.toUTCString();
+	document.cookie = cName + "=" + (cValue || "") + "; " + expires + "; path=/";
+}
+
+/** DARK MODE */
+function toggleDarkMode(el){
+	var darkIcon = '<i class="fa fa-moon-o"></i>';
+	var lightIcon = '<i class="fa fa-sun-o" style="color:yellow"></i>';
+	var mode = "0", elval = darkIcon;
+	if($(el).html().trim() == darkIcon){
+		elval = lightIcon;mode = "1";
+	}
+	setCookie('pps_dark_mode', mode , 7);
+	$(el).html(elval);
+	$('body').toggleClass('dark_mode_ui');
+}
+</script>
+<script async src="https://cdn.snigelweb.com/adengine/prepostseo.com/loader.js" type="text/javascript"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7155931151667823" crossorigin="anonymous"></script>
+<script type="text/javascript">(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script type="text/javascript">
+	setTimeout(function(){
+		$('.pps-spr').css("background","transparent");
+	},1e3)
+</script>
+<script>
+
+function loadAdBlocker(){
+		var adcheckCode = `<script>
+		fetch('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7155931151667823')
+		.catch(() => adblockDetected());
+		fetch('https://www.prepostseo.com/ad.js')
+		.catch(() => adblockDetected());
+		function adblockDetected() {
+			$('body .text-sec .btn-success').unbind( "click" ).attr("onclick","showDabay2();return false;").attr("id","newone");
+			adblocker = 1;
+			var carbonScript = document.createElement("script");
+			carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CE7DC53I&placement=wwwprepostseocom";
+			carbonScript.id = "_carbonads_js";
+			document.getElementById("carbon-block").appendChild(carbonScript);
+		}
+		function showDabay2(){
+				$.ajax({
+					url : "https://www.prepostseo.com/frontend/adblockerView",
+					data : {'url':"https://www.prepostseo.com/ping-multiple-urls-online"},
+					success: function(resp){
+						var MsgB = resp;
+						if(typeof tool_title !== 'undefined'){
+							$(".bg-dark").html(MsgB).show();
+						}
+						$(".bg-dark").on('click', '.gotit', function(){$(".bg-dark").hide();});
+						return false;
+					}
+				});
+			}
+	</\script>`;
+	$('footer').append(adcheckCode);
+	}
+docReady(() => { loadAdBlocker() });
+</script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-67516616-1', 'auto');ga('send', 'pageview');</script>
+<script src="https://use.fontawesome.com/43844833b2.js"></script>
+<script src="https://www.prepostseo.com/assets/lib/js/functions.js?v=26.0.9"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<script type="application/javascript">
+function showAllTools(){$(".showAllBox").toggleClass("showAllBoxShow");}	
+docReady(function(){
+
+	
+		var uperSelectBox = $('.uperSelectBox');
+	var langGlob = $('.langGlob');
+	langGlob.on('click', function(){
+		// uperSelectBox.toggleClass('active')
+		uperSelectBox.slideToggle('slow');
+	});
+		
+	/* //scrollinview on hover
+	var uperSelectBox = $('.uperSelectBox') var optionHeight = uperSelectBox.attr('data-o-height'); console.log("optionHeight", optionHeight)
+	uperSelectBox.on('mousedown ', function(){ _topClient = $(this).get(0).getBoundingClientRect().y; // console.log('uperSelectBox', _topClient)
+	if(_topClient > optionHeight){ console.log("up") // $(this).get(0).scrollIntoView(275)$('html, body').animate({scrollTop: $("#usBoxTop").offset().top -20}, 200); }
+	});*/
+
+		var shareItHtml = '<div class="shareit" style="padding-top: 30px; clear: both;"><img width="150" height="30" alt="shareitt" src="https://www.prepostseo.com/imgs/shareitt.png?v=3.0"/><a class="btn btn-primary btn-ad-share" aria-label="facebook" rel="noopener" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.prepostseo.com/ping-multiple-urls-online"><i class="fa fa-facebook"></i></a><a class="btn btn-primary btn-twitter btn-ad-share" aria-label="twitter" rel="noopener" target="_blank" href="https://twitter.com/share?url=https://www.prepostseo.com/ping-multiple-urls-online"><i class="fa fa-twitter"></i></a><a class="btn btn-primary btn-ad-share" aria-label="share" rel="noopener" target="_blank" href="https://www.linkedin.com/cws/share?url=https://www.prepostseo.com/ping-multiple-urls-online"><i class="fa fa-linkedin"></i></a></div>';
+	$('.shadowBox').first().append(shareItHtml);
+		$("#h_top_search #inputSN").on("keyup" , function(){
+		var search = $(this).val().replace(/[^\w\s\-|_^.,]/gi, '');
+		$(this).val(search);
+		var langSearch = "";
+		if(search.length < 2) return false;
+		search_bar(search,langSearch,"#h_top_search");
+	});
+	});
+</script>
+
+<script>
+$(function() {
+jQuery.cachedScript=function(e,c){return c=$.extend(c||{},{dataType:"script",cache:!0,url:e}),jQuery.ajax(c)};
+setTimeout(() => { 
+ 	$.cachedScript('https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js').done(function (script, textStatus) {
+		console.log('firebase load', textStatus);
+	});
+	$.cachedScript('https://www.gstatic.com/firebasejs/7.16.1/firebase-messaging.js').done(function (script, textStatus) {
+		console.log('firebase messaging load', textStatus);
+		var mycl_url = "";function getCookie(e) { return document.cookie && -1 != document.cookie.indexOf(e) ? decodeURIComponent(document.cookie.split("; ").find(o => o.startsWith(e + "=")).split("=")[1]) : "" }const firebaseConfig = { messagingSenderId: "71929956929", apiKey: "AIzaSyAtTlBIwAjgbUT4JfFkhLastfVNg4M4ySw", projectId: "prepostnotif", appId: "1:71929956929:web:e1285e730ec72f0664d4c0" };firebase.initializeApp(firebaseConfig);const messaging = firebase.messaging();messaging.requestPermission().then(function () { return console.log("Notification permission granted."), messaging.getToken() }).then(function (e) { console.log(e); var o = getCookie("push_token"); console.log("yeh " + o), "" != o && "notfound" != o ? o != e && saveTokn(e, "updated") : saveTokn(e, "saved") }).catch(function (e) { console.log("Unable to get permission to notify.", e) });let enableForegroundNotification = !0;var current_base_url = "https://www.prepostseo.com/ping-multiple-urls-online";function saveTokn(e, o) { var n = { submit: !0, token: e, state: o, reg_page: current_base_url };$.post(base_url + "frontend/savePushToken", n).done(e => console.log("token", o)) } messaging.onMessage(function (e) { console.log("Message received. ", e);var o = JSON.parse(e.data.notification);if (mycl_url = o.click_action, enableForegroundNotification) { const { title: o, ...n } = JSON.parse(e.data.notification);navigator.serviceWorker.getRegistrations().then(e => { e[0].showNotification(o, n) }) } });
+	});
+}, 10000); 
+});
+</script>
+</footer>
+<div class="bg-dark" style="display:none"></div>
+<div class="loadfeedbackwrapper"><span onclick="gotofeedBack()" id="feedback" class="btn border-0 btn-sm" data-toggle="tooltip" data-placement="right" title="Send Us Feedback"><span class="hidden-xs">Feedback&nbsp;</span><i class="fa fa-comments"></i></span> </div>
+<div id="loadFeedback"></div>
+<div id="mainOverlay"><div class="lds-dual-ring" style="top: 46%;left: 48%;"><img src="https://www.prepostseo.com/imgs/pps.svg" /></div></div>
+</div>
+<div id="floorad-wrapper"><a id="close-floorad-btn" onClick="this.parentElement.remove()" href="javascript:void(0)">&#10006;</a>
+<div id="sticky-ad-background"></div><div id="adngin-footer_sticky-0"></div>
+</div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"ca07248735","applicationID":"1055386690","transactionName":"YldTZxcHXUZSWxELXVsdcFARD1xbHGwKDV4aQVlcEhJcWl93CQY=","queueTime":0,"applicationTime":9,"atts":"ThBQEV8dTkg=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>
