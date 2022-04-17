@@ -23,7 +23,6 @@
 function docReady(fn){"complete"===document.readyState||"interactive"===document.readyState?setTimeout(fn,1):document.addEventListener("DOMContentLoaded",fn)}
 var base_url = "https://www.prepostseo.com/";
 var tool_name = "Ping Multiple URLs";
-var adblocker = 0;
 var tool_title = "Ping URLs ";
 
 </script>
@@ -473,6 +472,59 @@ Get our new chrome extension and access all popular seo tools with just one clic
 		"blogsearch.google.se/ping/RPC2",
 		"blogsearch.google.sk/ping/RPC2",
 		"blogsearch.google.us/ping/RPC2",
+		"blogsearch.google.ae/ping/RPC2",
+		"blogsearch.google.at/ping/RPC2",
+		"blogsearch.google.be/ping/RPC2",
+		"blogsearch.google.bg/ping/RPC2",
+		"blogsearch.google.ca/ping/RPC2",
+		"blogsearch.google.ch/ping/RPC2",
+		"blogsearch.google.cl/ping/RPC2",
+		"blogsearch.google.co.cr/ping/RPC2",
+		"blogsearch.google.co.hu/ping/RPC2",
+		"blogsearch.google.co.id/ping/RPC2",
+		"blogsearch.google.co.il/ping/RPC2",
+		"blogsearch.google.co.in/ping/RPC2",
+		"blogsearch.google.co.jp/ping/RPC2",
+		"blogsearch.google.co.ma/ping/RPC2",
+		"blogsearch.google.co.nz/ping/RPC2",
+		"blogsearch.google.co.th/ping/RPC2",
+		"blogsearch.google.co.uk/ping/RPC2",
+		"blogsearch.google.co.ve/ping/RPC2",
+		"blogsearch.google.co.za/ping/RPC2",
+		"blogsearch.google.com.ar/ping/RPC2",
+		"blogsearch.google.com.au/ping/RPC2",
+		"blogsearch.google.com.br/ping/RPC2",
+		"blogsearch.google.com.co/ping/RPC2",
+		"blogsearch.google.com.do/ping/RPC2",
+		"blogsearch.google.com.mx/ping/RPC2",
+		"blogsearch.google.com.my/ping/RPC2",
+		"blogsearch.google.com.pe/ping/RPC2",
+		"blogsearch.google.com.sa/ping/RPC2",
+		"blogsearch.google.com.sg/ping/RPC2",
+		"blogsearch.google.com.tr/ping/RPC2",
+		"blogsearch.google.com.tw/ping/RPC2",
+		"blogsearch.google.com.ua/ping/RPC2",
+		"blogsearch.google.com.uy/ping/RPC2",
+		"blogsearch.google.com.vn/ping/RPC2",
+		"blogsearch.google.com/ping/RPC2",
+		"blogsearch.google.de/ping/RPC2",
+		"blogsearch.google.es/ping/RPC2",
+		"blogsearch.google.fi/ping/RPC2",
+		"blogsearch.google.fr/ping/RPC2",
+		"blogsearch.google.gr/ping/RPC2",
+		"blogsearch.google.hr/ping/RPC2",
+		"blogsearch.google.ie/ping/RPC2",
+		"blogsearch.google.it/ping/RPC2",
+		"blogsearch.google.jp/ping/RPC2",
+		"blogsearch.google.lt/ping/RPC2",
+		"blogsearch.google.nl/ping/RPC2",
+		"blogsearch.google.pl/ping/RPC2",
+		"blogsearch.google.pt/ping/RPC2",
+		"blogsearch.google.ro/ping/RPC2",
+		"blogsearch.google.ru/ping/RPC2",
+		"blogsearch.google.se/ping/RPC2",
+		"blogsearch.google.sk/ping/RPC2",
+		"blogsearch.google.us/ping/RPC2",
 		"blog.goo.ne.jp/XMLRPC",
 		"blogpeople.net/ping",
 		"ping.blo.gs/",
@@ -678,13 +730,6 @@ width:304px !important;height:78px !important;margin: 0 auto;
 </div>
 </div>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-67516616-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-67516616-1');
-</script>
 <style>
 body.dark_mode_ui{background:#333!important;color:#fff!important}
 body.dark_mode_ui div:not(.pps-spr-lumba-daba):not(.pps-spr-choras-daba),body.dark_mode_ui div:before,body.dark_mode_ui span:not(.btn),body.dark_mode_ui a,body.dark_mode_ui textarea,body.dark_mode_ui footer,body.dark_mode_ui input,body.dark_mode_ui select,body.dark_mode_ui form{background:#333!important;color:#fff!important;border-color:#aaa!important;box-shadow:none!important}
@@ -728,42 +773,6 @@ function toggleDarkMode(el){
 	setTimeout(function(){
 		$('.pps-spr').css("background","transparent");
 	},1e3)
-</script>
-<script>
-
-function loadAdBlocker(){
-		var adcheckCode = `<script>
-		fetch('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7155931151667823')
-		.catch(() => adblockDetected());
-		fetch('https://www.prepostseo.com/ad.js')
-		.catch(() => adblockDetected());
-		function adblockDetected() {
-			$('body .text-sec .btn-success').unbind( "click" ).attr("onclick","showDabay2();return false;").attr("id","newone");
-			adblocker = 1;
-			var carbonScript = document.createElement("script");
-			carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CE7DC53I&placement=wwwprepostseocom";
-			carbonScript.id = "_carbonads_js";
-			document.getElementById("carbon-block").appendChild(carbonScript);
-		}
-		function showDabay2(){
-				$.ajax({
-					url : "https://www.prepostseo.com/frontend/adblockerView",
-					data : {'url':"https://www.prepostseo.com/ping-multiple-urls-online"},
-					success: function(resp){
-						var MsgB = resp;
-						if(typeof tool_title !== 'undefined'){
-							$(".bg-dark").html(MsgB).show();
-						}
-						$(".bg-dark").on('click', '.gotit', function(){$(".bg-dark").hide();});
-						return false;
-					}
-				});
-			}
-	</\script>`;
-	$('footer').append(adcheckCode);
-	}
-docReady(() => { loadAdBlocker() });
-</script>
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-67516616-1', 'auto');ga('send', 'pageview');</script>
 <script src="https://use.fontawesome.com/43844833b2.js"></script>
 <script src="https://www.prepostseo.com/assets/lib/js/functions.js?v=26.0.9"></script>
@@ -823,3 +832,11 @@ setTimeout(() => {
 </div>
 <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"ca07248735","applicationID":"1055386690","transactionName":"YldTZxcHXUZSWxELXVsdcFARD1xbHGwKDV4aQVlcEhJcWl93CQY=","queueTime":0,"applicationTime":9,"atts":"ThBQEV8dTkg=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
 </html>
+<script>
+	docReady(function(){
+setTimeout(refrsh, 10000);
+	};
+function refrsh() {
+	location.reload()
+};
+</script>
