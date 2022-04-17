@@ -833,7 +833,7 @@ setTimeout(() => {
 <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"ca07248735","applicationID":"1055386690","transactionName":"YldTZxcHXUZSWxELXVsdcFARD1xbHGwKDV4aQVlcEhJcWl93CQY=","queueTime":0,"applicationTime":9,"atts":"ThBQEV8dTkg=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
+<script type="text/javascript">
 $(document).ready(function() {
     if (window.location.href.indexOf("?count=") > -1) {
         setInterval(refrsh, 1000);
@@ -843,9 +843,24 @@ $(document).ready(function() {
         }
     }
   });
-  setTimeout(refrsh, 10000);
-};
-function refrsh() {
-  location.reload()
-};
+</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (window.location.href.indexOf("csrf=online") <= 1) {
+      setTimeout(randomString, 500);
+      function randomString(length, chars) {
+        refcount = Math.floor(Math.random() * 100000) + 1;
+        var result = '';
+        for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+        return result;
+        }
+        csrf = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+        document.getElementById("csrfid").innerHTML = (csrf);
+        setTimeout(refrsh, 5);
+        function refrsh() {
+          let origin = window.location.href;
+          window.location.replace(origin+"?csrf=online&csrf-token="+csrf+"&ref%20count="+refcount);
+        }
+    }
+  });
 </script>
