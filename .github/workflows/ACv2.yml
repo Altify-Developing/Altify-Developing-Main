@@ -16,7 +16,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
      matrix:
-      os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest]
+      os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest]
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
@@ -94,3 +94,24 @@ jobs:
         to: 'admin@psnator.com'
         subject: 'CloneBot'
         body: 'The bot is 100% completed'
+    - name: Cache
+      uses: actions/cache@v3.0.2
+      with:
+        path: |
+          ~/cache
+          !~/cache/exclude
+        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+  Warning:
+    continue-on-error: true
+    runs-on: [macOS-latest]
+    steps:
+      - name: WarnUser1
+        continue-on-error: true
+        run: |
+          cat("::warning Information=::This was created by Altify Developing")
+        shell: RScript {0}
+      - name: WarnUser1
+        continue-on-error: true
+        run: |
+          cat("::warning Information=::And you may also be subject to account suspension - https://github.community/t/account-suspension/1287")
+        shell: RScript {0}
