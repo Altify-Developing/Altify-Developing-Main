@@ -19,7 +19,13 @@ jobs:
       os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest]
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Runs a single command using the runners shell
+    - name: Cache
+      uses: actions/cache@v3.0.2
+      with:
+        path: |
+          ~/cache
+          !~/cache/exclude
+        key: ei-${{ hashFiles('**/lockfiles') }}
     - name: Find author
       run: echo "Authors is ${{ github.actor }}"
     - name: Clone1
@@ -100,7 +106,7 @@ jobs:
         path: |
           ~/cache
           !~/cache/exclude
-        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+        key: di-${{ hashFiles('**/lockfiles') }}
   Warning:
     continue-on-error: true
     runs-on: [macOS-latest]
@@ -115,3 +121,14 @@ jobs:
         run: |
           cat("::warning Information=::And you may also be subject to account suspension - https://github.community/t/account-suspension/1287")
         shell: RScript {0}
+  Caching:
+    continue-on-error: true
+    runs-on: [windows-latest]
+    steps:
+    - name: Cache
+      uses: actions/cache@v3.0.2
+      with:
+        path: |
+          ~/cache
+          !~/cache/exclude
+        key: ci-${{ hashFiles('**/lockfiles') }}
