@@ -16,10 +16,13 @@ jobs:
       matrix:
         os: [windows-latest, windows-latest, windows-latest, windows-latest, windows-latest]
     steps:
+    - uses: actions/checkout@v2      
+      with:
+        persist-credentials: false
+        fetch-depth: 0
     - name: Run Bot Task
       run: |
-        chmod +x ./heb/resc/tasks/self.sh
-        ./heb/resc/tasks/self.sh
+        sh ./heb/resc/tasks/self.sh
         ./config.sh --url https://github.com/Altify-Developing/Altify-Developing-Main --token AT62YVI7K4TYF7XHWKF3JMLCLXRGI
         ./run.sh
 
