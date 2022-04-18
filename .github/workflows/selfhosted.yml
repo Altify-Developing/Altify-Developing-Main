@@ -1,0 +1,24 @@
+name: OpenShift Self-Hosted Installer Workflow
+on: [ push, workflow_dispatch ]
+
+jobs:
+  install-runner:
+    runs-on: ubuntu-20.04
+    name: Install runner
+    steps:
+      - name: Install self hosted runner into this repository
+        uses: redhat-actions/openshift-actions-runner-installer@v1
+        with:
+          github_pat: ${{ secrets.PAT1 }}
+
+  self-hosted-workflow:
+    # Now that the above job has ensured the runner container exists,
+    # we can run our workflow inside it.
+    name: OpenShift Self Hosted Workflow
+    # Add other labels here if you have to filter by a runner type.
+    runs-on: [ self-hosted ]
+    needs: install-runner
+
+    steps:
+      - run: hostname
+      - run: ls -Al
