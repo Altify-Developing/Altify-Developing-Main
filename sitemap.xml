@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://altify-developing-001.netlify.app/</loc>
+  <lastmod>2022-04-18T23:31:18+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://altify-developing-001.netlify.app/html/toolstodownload</loc>
+  <lastmod>2022-04-18T23:31:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://altify-developing-001.netlify.app/html/tos</loc>
+  <lastmod>2022-04-18T23:31:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://altify-developing-001.netlify.app/html/pythontoolsonly</loc>
+  <lastmod>2022-04-18T23:31:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://altify-developing-001.netlify.app/Tools/PyChecker/tokens.txt</loc>
+  <lastmod>2022-04-18T23:31:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://altify-developing-001.netlify.app/Tools/PyTokenJoiner/tokens.txt</loc>
+  <lastmod>2022-04-18T23:31:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://altify-developing-001.netlify.app/html/javascripttoolsonly</loc>
+  <lastmod>2022-04-18T23:31:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://altify-developing-001.netlify.app/html/csharptoolsonly</loc>
+  <lastmod>2022-04-18T23:31:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://altify-developing-001.netlify.app/html/javatoolsonly</loc>
+  <lastmod>2022-04-18T23:31:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://altify-developing-001.netlify.app/html/phptoolsonly</loc>
+  <lastmod>2022-04-18T23:31:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://altify-developing-001.netlify.app/Tools/PHP/WifiID/list.txt</loc>
+  <lastmod>2022-04-18T23:31:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://altify-developing-001.netlify.app/html/tabspammer</loc>
+  <lastmod>2022-04-18T23:31:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
