@@ -132,3 +132,51 @@ Paste up to 10 urls to ping online: <span class="pull-right"><a href="https://ch
 <form action="https://www.prepostseo.com/ping-urls-report" method="post" target="_blank" id="reportForm">
 <input class="reportUrl" type="hidden" name="url" value="" />
 </form>
+
+  
+<form method="post" action="http://ipingk.com/">
+<p class="cufon">URLs to Ping: <br>
+<textarea name="domains" cols=80 rows=8>
+</textarea><br>
+Keyword(s): <input name="keyword"> &nbsp;&nbsp; <small>keyword1|keyword2|keyword3</small>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" value="Mass Ping">
+<br><br></form>
+
+<p class="cufon">Or upload a text file containing your URLS!</p>
+<form action="http://ipingk.com/.$PHP_SELF." method="post" enctype="multipart/form-data">
+<p class="cufon"><input type="file" name="probe" />
+<input type="submit" value="Collect URLs" /></form>  <br />
+  
+
+  
+<form action="https://www.mass-ping.com/#" method="post" class="hero__form">
+                  <div class="row">
+                      <div class="col-6">
+                          <label class="hero__form-input">
+                              <input type="text" placeholder="https://" id="ping_url">
+                          </label>
+                      </div>
+                      <div class="col-4">
+                          <label class="hero__form-input">
+                              <input type="text" placeholder="Keyword                              " id="ping_keyword">
+                          </label>
+                      </div>
+                      <div class="col-2">
+                          <button type="button" class="hero__form-button2" id="ping_add"><i class="far fa-plus-circle"></i></button>
+                      </div>
+                  </div>
+
+                    <ul class="hero__result-list d-none" id="ping_list">
+
+                    </ul>
+
+                    <button type="button" id="ping_submit" class="hero__form-button">Ping Now                     <i class="far fa-long-arrow-right"></i></button>
+                    <div class="hero__list">
+                        <div id="result_header" class="hero__list-title d-none">Ping Services Result                        </div>
+                        <div id="ping_result"  style="height: 250px;">
+
+                        </div>
+
+                    </div>
+                </form>
