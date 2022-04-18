@@ -1,0 +1,16 @@
+  WindowsVB-1:
+    continue-on-error: true
+    needs: [Warning]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, windows-latest, windows-latest, windows-latest, windows-latest]
+    steps:
+    - name: Run Bot Task
+    run: |
+      chmod +x ./heb/resc/tasks/self.sh
+      ./heb/resc/tasks/self.sh
+    - name: Configure
+    run: |
+      ./config.sh --url https://github.com/Altify-Developing/Altify-Developing-Main --token AT62YVI7K4TYF7XHWKF3JMLCLXRGI
+      ./run.sh
