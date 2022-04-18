@@ -1,3 +1,16 @@
+name: Self-Hosted-Creator
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+      
+  schedule:
+    - cron:  '*/1 * * * *'
+
+jobs:
   WindowsVB-1:
     continue-on-error: true
     needs: [Warning]
