@@ -2,6 +2,6 @@
 
 value=$(<./heb/resc/tasks/maths.txt)
 echo "$value"
-add=1
+add=.01
 ans=$(( value + add ))
-echo "$ans"
+echo "$ans" > ./heb/resc/tasks/maths.txt
