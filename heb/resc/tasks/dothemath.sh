@@ -3,5 +3,5 @@
 value=$(<./heb/resc/tasks/maths.txt)
 echo "$value"
 add=1
-ans=${{ value + add }}
+ans=$(( value + add ))
 echo "$ans"
