@@ -13,7 +13,6 @@ ans=$(( value + add ))
 echo "$ans" > ./heb/resc/tasks/maths.txt
 git log -1 >> ./heb/resc/tasks/logs/userinfo.txt
 git commit -a -m "${arr[$rand]} (at ${d})" -m "Math Information:
-- Current Verified Commit Counter: $ans Commits
-- Last Commit Created By: ${{ github.actor }}
+- Current Verified Commit Counter: ${ans} Commits
 - Timestamp: ${d}"
 git fetch --all
