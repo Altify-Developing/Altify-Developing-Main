@@ -1,1 +1,6 @@
 Info
+commit 6f1fe638292bf9e6b3c2ad86503038f60a3eaef0
+Author: Altify <Altify@mail.com>
+Date:   Tue Apr 19 10:01:25 2022 -0700
+
+    Update dothemath.sh
