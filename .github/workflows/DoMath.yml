@@ -1,0 +1,32 @@
+name: Maths
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+      
+  schedule:
+    - cron:  '*/10 * * * *'
+
+jobs:
+  Updater:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2      
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+          
+      - name: Run Bot Task
+        run: |
+          chmod +x ./heb/resc/tasks/dothemath.sh
+          ./heb/resc/tasks/dothemath.sh
+          
+      - name: GitHub Push
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          force: true
+          branch: 'main'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
