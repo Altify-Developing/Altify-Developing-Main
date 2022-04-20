@@ -239,3 +239,8 @@ Author: Altify <Z3K3Gaming_YT@email.com>
 Date:   Tue Apr 19 21:45:10 2022 -0700
 
     Add files via upload
+commit 62e20b1fcb67c6e8d8b19a2695798a98c8bcb0ee
+Author: Altify <Altify@mail.com>
+Date:   Tue Apr 19 21:51:19 2022 -0700
+
+    Update robots.txt
