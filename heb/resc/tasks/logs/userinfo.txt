@@ -254,3 +254,8 @@ Author: Altify <Altify@mail.com>
 Date:   Tue Apr 19 22:06:32 2022 -0700
 
     Update AutoSEO.yml
+commit 352347a33df6980f3558a4cdc40a7dd689d3fa96
+Author: Altify <Altify@mail.com>
+Date:   Tue Apr 19 22:18:20 2022 -0700
+
+    add canonical link
