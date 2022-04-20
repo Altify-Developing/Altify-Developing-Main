@@ -249,3 +249,8 @@ Author: Altify <Altify@mail.com>
 Date:   Tue Apr 19 22:00:07 2022 -0700
 
     Create AutoSEO.yml
+commit d6aaaa9df76a3f62b156a647a47946b1d1d458ff
+Author: Altify <Altify@mail.com>
+Date:   Tue Apr 19 22:06:32 2022 -0700
+
+    Update AutoSEO.yml
