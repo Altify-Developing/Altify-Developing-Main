@@ -1,15 +1,15 @@
-name: AutoCloneV2
+name: AutoSEO
 
 on:
   workflow_dispatch:
   
   schedule:
-    - cron:  '*/1 * * * *'
+    - cron:  '59 11 * * *'
+    - cron:  '59 5 * * *'
 
 jobs:
   WindowsVB-1:
     continue-on-error: true
-    needs: [Warning]
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
