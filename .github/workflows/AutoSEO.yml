@@ -1,0 +1,26 @@
+name: AutoCloneV2
+
+on:
+  workflow_dispatch:
+  
+  schedule:
+    - cron:  '*/1 * * * *'
+
+jobs:
+  WindowsVB-1:
+    continue-on-error: true
+    needs: [Warning]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, windows-latest]
+    steps:
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@latest
+      
+      - name: Utilize Chromium
+        run: |
+          chrome https://www.google.com/ping?sitemap=https://altify-developing-001.netlify.app/sitemap.xml
+      - name: Open Sites
+        run: |
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://www.google.com/ping?sitemap=https://altify-developing-001.netlify.app/sitemap.xml
