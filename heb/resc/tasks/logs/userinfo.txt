@@ -476,3 +476,8 @@ Author: Altify <Altify@mail.com>
 Date:   Wed Apr 20 11:54:21 2022 -0700
 
     Update sitemap.xml
+commit 6fb989069631bc1d4066e22c23b78de2e64aa80a
+Author: Altify <Altify@mail.com>
+Date:   Wed Apr 20 11:56:35 2022 -0700
+
+    Update index.html
