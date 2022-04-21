@@ -1,4 +1,6 @@
 # Altify-Developing-Main
+# Search Altify Developing on Bing or Yahoo And I should be the first thing there
+# Find me that way so I grow my analytics and prove the fact that money is not necessary for good SEO
 ## developed by Altify
 ### website for hacking tools and bypassers 
 <p align="center">
