@@ -645,3 +645,8 @@ Author: Altify <Altify@mail.com>
 Date:   Wed Apr 20 18:31:29 2022 -0700
 
     update keywords
+commit 8f699129a1644fc9adaca29183e7872ec7596b6b
+Author: Altify <Altify@mail.com>
+Date:   Wed Apr 20 18:39:17 2022 -0700
+
+    csrf-seo fix.3
