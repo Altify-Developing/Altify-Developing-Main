@@ -1,4 +1,4 @@
-name: AutoSEO
+name: AutoSEO-1
 
 on:
   workflow_dispatch:
