@@ -1,8 +1,7 @@
 # Altify-Developing-Main
-# Search Altify Developing on Bing or Yahoo And I should be the first thing there
-# Find me that way so I grow my analytics and prove the fact that money is not necessary for good SEO
 ## developed by Altify
 ### website for hacking tools and bypassers 
+### Search Altify Developing on Bing or Yahoo And I should be the first thing there | Find me that way so I grow my analytics and prove the fact that money is not necessary for good SEO
 <p align="center">
 <a href="https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip"><img alt="Clones"
    src="https://img.shields.io/github/downloads/Altify-Developing/Altify-Developing-Main/total?color=green&label=Clones"></a>
