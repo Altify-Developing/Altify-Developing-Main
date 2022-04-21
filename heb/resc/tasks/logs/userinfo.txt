@@ -630,3 +630,8 @@ Author: Altify <Altify@mail.com>
 Date:   Wed Apr 20 18:19:23 2022 -0700
 
     SEO fix
+commit d9f451180e11231b712f7205e930a5ad83182ef1
+Author: Altify <Altify@mail.com>
+Date:   Wed Apr 20 18:22:31 2022 -0700
+
+    SEO Fix.2
