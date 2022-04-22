@@ -20,4 +20,4 @@ jobs:
       - name: Utilize FireFox
         run: |
           firefox --help
-          firefox --help --display
+          firefox --display=0
