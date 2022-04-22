@@ -18,6 +18,7 @@ jobs:
       
       - name: Utilize Chromium
         run: |
+          chrome --help
           chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
           chrome "https://www.bing.com/search?q=altify&PC=U316&FORM=CHROMN&adlt=strict"
           chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20developing&vm=r"
@@ -74,61 +75,3 @@ jobs:
           start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"  "https://www.bing.com/search?q=altify-developing&PC=U316&FORM=CHROMN&adlt=strict"
           start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20develop&vm=r"
           start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"  "https://www.bing.com/search?q=altify+developing+tools&PC=U316&FORM=CHROMN&adlt=strict"
-  FireFoxVB:
-    continue-on-error: true
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        firefox: [ '84.0', 'latest-beta', 'latest-devedition', 'latest-esr', 'latest' ]
-    name: Firefox ${{ matrix.firefox }}
-    steps:
-      - name: Setup firefox
-        uses: browser-actions/setup-firefox@latest
-        with:
-          firefox-version: ${{ matrix.firefox }}
-      - name: Utilize FireFox
-        run: |
-          firefox --help
-          firefox --display=
-          firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
-          firefox "https://www.bing.com/search?q=altify&PC=U316&FORM=CHROMN&adlt=strict"
-          firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20developing&vm=r"
-          firefox "https://www.bing.com/search?q=altify%20developing&PC=U316&FORM=CHROMN&adlt=strict"
-          firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20develop&vm=r"
-          firefox "https://www.bing.com/search?q=altify%20develop&PC=U316&FORM=CHROMN&adlt=strict"
-          firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20hacks&vm=r"
-          firefox "https://www.bing.com/search?q=altify%20hacks&PC=U316&FORM=CHROMN&adlt=strict"
-          firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20loic&vm=r"
-          firefox "https://www.bing.com/search?q=altify%20loic&PC=U316&FORM=CHROMN&adlt=strict"
-          firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify-developing&vm=r"
-          firefox "https://www.bing.com/search?q=altify-developing&PC=U316&FORM=CHROMN&adlt=strict"
-          firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify+developing+tools&vm=r"
-          firefox "https://www.bing.com/search?q=altify+developing+tools&PC=U316&FORM=CHROMN&adlt=strict"
-  
-  GeckoVB:
-    continue-on-error: true
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest]
-    name: Gecko
-    steps:
-      - name: Setup Gecko
-        uses: browser-actions/setup-geckodriver@latest
-      - name: Utilize Gecko
-        run: |
-          geckodriver --help
-          geckodriver "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
-          geckodriver "https://www.bing.com/search?q=altify&PC=U316&FORM=CHROMN&adlt=strict"
-          geckodriver "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20developing&vm=r"
-          geckodriver "https://www.bing.com/search?q=altify%20developing&PC=U316&FORM=CHROMN&adlt=strict"
-          geckodriver "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20develop&vm=r"
-          geckodriver "https://www.bing.com/search?q=altify%20develop&PC=U316&FORM=CHROMN&adlt=strict"
-          geckodriver "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20hacks&vm=r"
-          geckodriver "https://www.bing.com/search?q=altify%20hacks&PC=U316&FORM=CHROMN&adlt=strict"
-          geckodriver "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20loic&vm=r"
-          geckodriver "https://www.bing.com/search?q=altify%20loic&PC=U316&FORM=CHROMN&adlt=strict"
-          geckodriver "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify-developing&vm=r"
-          geckodriver "https://www.bing.com/search?q=altify-developing&PC=U316&FORM=CHROMN&adlt=strict"
-          geckodriver "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify+developing+tools&vm=r"
-          geckodriver "https://www.bing.com/search?q=altify+developing+tools&PC=U316&FORM=CHROMN&adlt=strict"  
