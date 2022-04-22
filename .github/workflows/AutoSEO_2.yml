@@ -57,24 +57,8 @@ jobs:
     steps:
       - name: Setup Chrome
         uses: browser-actions/setup-edge@latest
-      
+  
       - name: Utilize Edge
-        run: |
-          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
-          chrome "https://www.bing.com/search?q=altify&PC=U316&FORM=CHROMN&adlt=strict"
-          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20developing&vm=r"
-          chrome "https://www.bing.com/search?q=altify%20developing&PC=U316&FORM=CHROMN&adlt=strict"
-          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20develop&vm=r"
-          chrome "https://www.bing.com/search?q=altify%20develop&PC=U316&FORM=CHROMN&adlt=strict"
-          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20hacks&vm=r"
-          chrome "https://www.bing.com/search?q=altify%20hacks&PC=U316&FORM=CHROMN&adlt=strict"
-          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20loic&vm=r"
-          chrome "https://www.bing.com/search?q=altify%20loic&PC=U316&FORM=CHROMN&adlt=strict"
-          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify-developing&vm=r"
-          chrome "https://www.bing.com/search?q=altify-developing&PC=U316&FORM=CHROMN&adlt=strict"
-          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify+developing+tools&vm=r"
-          chrome "https://www.bing.com/search?q=altify+developing+tools&PC=U316&FORM=CHROMN&adlt=strict"
-      - name: Open Sites
         run: |
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify+developing+tools&vm=r"
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify&PC=U316&FORM=CHROMN&adlt=strict"
