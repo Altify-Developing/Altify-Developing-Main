@@ -20,4 +20,4 @@ jobs:
       - name: Utilize FireFox
         run: |
           firefox --help
-          firefox --display=0
+          firefox --display=localhost:0.0
