@@ -89,6 +89,7 @@ jobs:
       - name: Utilize FireFox
         run: |
           firefox --help
+          firefox --display=
           firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
           firefox "https://www.bing.com/search?q=altify&PC=U316&FORM=CHROMN&adlt=strict"
           firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20developing&vm=r"
