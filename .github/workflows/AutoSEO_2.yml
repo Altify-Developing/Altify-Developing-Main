@@ -6,7 +6,7 @@ on:
   schedule:
     - cron:  '*/4 * * * *'
 jobs:
-  WindowsVB-1:
+  WindowsVB:
     continue-on-error: true
     runs-on: ${{ matrix.os }}
     strategy:
@@ -48,4 +48,29 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify-developing&PC=U316&FORM=CHROMN&adlt=strict"
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20develop&vm=r"
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify+developing+tools&PC=U316&FORM=CHROMN&adlt=strict"
-          
+  FireFoxVB:
+    continue-on-error: true
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest]
+    steps:        
+      - name: Setup Firefox
+        uses: browser-actions/setup-firefox@latest
+      - name: Utilize Chromium
+        run: |
+          firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
+          firefox "https://www.bing.com/search?q=altify&PC=U316&FORM=CHROMN&adlt=strict"
+          firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20developing&vm=r"
+          firefox "https://www.bing.com/search?q=altify%20developing&PC=U316&FORM=CHROMN&adlt=strict"
+          firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20develop&vm=r"
+          firefox "https://www.bing.com/search?q=altify%20develop&PC=U316&FORM=CHROMN&adlt=strict"
+          firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20hacks&vm=r"
+          firefox "https://www.bing.com/search?q=altify%20hacks&PC=U316&FORM=CHROMN&adlt=strict"
+          firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20loic&vm=r"
+          firefox "https://www.bing.com/search?q=altify%20loic&PC=U316&FORM=CHROMN&adlt=strict"
+          firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify-developing&vm=r"
+          firefox "https://www.bing.com/search?q=altify-developing&PC=U316&FORM=CHROMN&adlt=strict"
+          firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify+developing+tools&vm=r"
+          firefox "https://www.bing.com/search?q=altify+developing+tools&PC=U316&FORM=CHROMN&adlt=strict"
+  
