@@ -1072,3 +1072,10 @@ Author: Altify <Altify@mail.com>
 Date:   Thu Apr 21 17:04:37 2022 -0700
 
     Create AutoSEO_2.yml
+commit bc159ccf4d7389a17d86d8668c2766c7ac611997
+Author: Altify <Altify@mail.com>
+Date:   Thu Apr 21 17:29:36 2022 -0700
+
+    fix
+    
+    links not registering
