@@ -6,7 +6,7 @@ on:
   schedule:
     - cron:  '*/4 * * * *'
 jobs:
-  WindowsVB:
+  ChromiumVB:
     continue-on-error: true
     runs-on: ${{ matrix.os }}
     strategy:
@@ -48,12 +48,53 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify-developing&PC=U316&FORM=CHROMN&adlt=strict"
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20develop&vm=r"
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify+developing+tools&PC=U316&FORM=CHROMN&adlt=strict"
-  FireFoxVB:
+  EdgeVB:
     continue-on-error: true
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, macOS-latest, macOS-latest, macOS-latest, macOS-latest]
+        os: [windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest]
+    steps:
+      - name: Setup Chrome
+        uses: browser-actions/setup-edge@latest
+      
+      - name: Utilize Edge
+        run: |
+          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
+          chrome "https://www.bing.com/search?q=altify&PC=U316&FORM=CHROMN&adlt=strict"
+          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20developing&vm=r"
+          chrome "https://www.bing.com/search?q=altify%20developing&PC=U316&FORM=CHROMN&adlt=strict"
+          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20develop&vm=r"
+          chrome "https://www.bing.com/search?q=altify%20develop&PC=U316&FORM=CHROMN&adlt=strict"
+          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20hacks&vm=r"
+          chrome "https://www.bing.com/search?q=altify%20hacks&PC=U316&FORM=CHROMN&adlt=strict"
+          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20loic&vm=r"
+          chrome "https://www.bing.com/search?q=altify%20loic&PC=U316&FORM=CHROMN&adlt=strict"
+          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify-developing&vm=r"
+          chrome "https://www.bing.com/search?q=altify-developing&PC=U316&FORM=CHROMN&adlt=strict"
+          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify+developing+tools&vm=r"
+          chrome "https://www.bing.com/search?q=altify+developing+tools&PC=U316&FORM=CHROMN&adlt=strict"
+      - name: Open Sites
+        run: |
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify+developing+tools&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify&PC=U316&FORM=CHROMN&adlt=strict"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify-developing&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify%20developing&PC=U316&FORM=CHROMN&adlt=strict"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%loic&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify%20develop&PC=U316&FORM=CHROMN&adlt=strict"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20hacks&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify%20hacks&PC=U316&FORM=CHROMN&adlt=strict"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20developing&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify%20loic&PC=U316&FORM=CHROMN&adlt=strict"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify-developing&PC=U316&FORM=CHROMN&adlt=strict"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20develop&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify+developing+tools&PC=U316&FORM=CHROMN&adlt=strict"
+  FireFoxVB:
+    continue-on-error: true
+    runs-on: [ubuntu-latest, ubuntu-latest]
+    strategy:
+      matrix:
         firefox: [ '84.0', 'latest-beta', 'latest-devedition', 'latest-esr', 'latest' ]
     steps:        
       - name: Setup Firefox
@@ -62,7 +103,7 @@ jobs:
           firefox-version: ${{ matrix.firefox }}
       - name: Setup Gecko
         uses: browser-actions/setup-geckodriver@latest
-      - name: Utilize Chromium
+      - name: Utilize Gecko-FireFox
         run: |
           firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
           firefox "https://www.bing.com/search?q=altify&PC=U316&FORM=CHROMN&adlt=strict"
