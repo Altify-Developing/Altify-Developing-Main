@@ -1079,3 +1079,10 @@ Date:   Thu Apr 21 17:29:36 2022 -0700
     fix
     
     links not registering
+commit 370523176c642bd29e4f38f280c8613d23172a7a
+Author: Altify <Altify@mail.com>
+Date:   Thu Apr 21 17:50:59 2022 -0700
+
+    improvement
+    
+    10x windows vm, 10 minutes inbetween each launch for maximum cooldown and randomization for the search analysis to make sure they don't find any botting. Also, the virtual machine randomization for github will auto proxitize it, now with both yahoo and bing indexing, google is harder to bot because of their crazy [anti-csrf](https://en.wikipedia.org/wiki/Cross-site_request_forgery)
