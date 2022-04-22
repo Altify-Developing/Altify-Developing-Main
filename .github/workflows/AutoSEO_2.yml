@@ -18,7 +18,7 @@ jobs:
       
       - name: Guide Chromium
         run: |
-          chrome --help
+          chrome -NoProfile 
       
       - name: Utilize Chromium
         run: |
