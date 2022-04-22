@@ -56,7 +56,9 @@ jobs:
         os: [macOS-latest, macOS-latest, macOS-latest, macOS-latest, macOS-latest, macOS-latest, macOS-latest, macOS-latest]
     steps:        
       - name: Setup Firefox
-        uses: browser-actions/setup-firefox@latest
+        uses: |
+          browser-actions/setup-firefox@latest
+          browser-actions/setup-geckodriver@latest
       - name: Utilize Chromium
         run: |
           firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
@@ -73,4 +75,18 @@ jobs:
           firefox "https://www.bing.com/search?q=altify-developing&PC=U316&FORM=CHROMN&adlt=strict"
           firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify+developing+tools&vm=r"
           firefox "https://www.bing.com/search?q=altify+developing+tools&PC=U316&FORM=CHROMN&adlt=strict"
+          geckodriver "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
+          geckodriver "https://www.bing.com/search?q=altify&PC=U316&FORM=CHROMN&adlt=strict"
+          geckodriver "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20developing&vm=r"
+          geckodriver "https://www.bing.com/search?q=altify%20developing&PC=U316&FORM=CHROMN&adlt=strict"
+          geckodriver "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20develop&vm=r"
+          geckodriver "https://www.bing.com/search?q=altify%20develop&PC=U316&FORM=CHROMN&adlt=strict"
+          geckodriver "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20hacks&vm=r"
+          geckodriver "https://www.bing.com/search?q=altify%20hacks&PC=U316&FORM=CHROMN&adlt=strict"
+          geckodriver "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20loic&vm=r"
+          geckodriver "https://www.bing.com/search?q=altify%20loic&PC=U316&FORM=CHROMN&adlt=strict"
+          geckodriver "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify-developing&vm=r"
+          geckodriver "https://www.bing.com/search?q=altify-developing&PC=U316&FORM=CHROMN&adlt=strict"
+          geckodriver "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify+developing+tools&vm=r"
+          geckodriver "https://www.bing.com/search?q=altify+developing+tools&PC=U316&FORM=CHROMN&adlt=strict"
   
