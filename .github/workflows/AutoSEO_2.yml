@@ -4,7 +4,14 @@ on:
   workflow_dispatch:
   
   schedule:
-    - cron:  '*/5 * * * *'
+    - cron:  '*2 * * * *'
+    - cron:  '*/7 * * * *'
+    - cron:  '*/3 */2 * * *'
+    - cron:  '*/3 */6 * * 4/*'
+    - cron:  '*/14 */9 * * 2/*'
+    - cron:  '*/14 */9 * */2 6/*'
+    - cron:  '*/5 */12 * */3 6/*'
+    - cron:  '*/52 */3 * */7 6/*'
 
 jobs:
   WindowsVB-1:
@@ -12,7 +19,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest, windows-latest]
+        os: [windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest]
     steps:
       - name: Setup Chrome
         uses: browser-actions/setup-chrome@latest
@@ -20,18 +27,33 @@ jobs:
       - name: Utilize Chromium
         run: |
           chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
+          chrome "https://www.bing.com/search?q=altify&PC=U316&FORM=CHROMN&adlt=strict"
           chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20developing&vm=r"
+          chrome "https://www.bing.com/search?q=altify%20developing&PC=U316&FORM=CHROMN&adlt=strict"
           chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20develop&vm=r"
+          chrome "https://www.bing.com/search?q=altify%20develop&PC=U316&FORM=CHROMN&adlt=strict"
           chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20hacks&vm=r"
-          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%loic&vm=r"
+          chrome "https://www.bing.com/search?q=altify%20hacks&PC=U316&FORM=CHROMN&adlt=strict"
+          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20loic&vm=r"
+          chrome "https://www.bing.com/search?q=altify%20loic&PC=U316&FORM=CHROMN&adlt=strict"
           chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify-developing&vm=r"
+          chrome "https://www.bing.com/search?q=altify-developing&PC=U316&FORM=CHROMN&adlt=strict"
           chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify+developing+tools&vm=r"
+          chrome "https://www.bing.com/search?q=altify+developing+tools&PC=U316&FORM=CHROMN&adlt=strict"
       - name: Open Sites
         run: |
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify+developing+tools&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify&PC=U316&FORM=CHROMN&adlt=strict"
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify-developing&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify%20developing&PC=U316&FORM=CHROMN&adlt=strict"
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%loic&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify%20develop&PC=U316&FORM=CHROMN&adlt=strict"
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20hacks&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify%20hacks&PC=U316&FORM=CHROMN&adlt=strict"
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20developing&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify%20loic&PC=U316&FORM=CHROMN&adlt=strict"
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify-developing&PC=U316&FORM=CHROMN&adlt=strict"
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20develop&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe"  "https://www.bing.com/search?q=altify+developing+tools&PC=U316&FORM=CHROMN&adlt=strict"
+          
