@@ -53,7 +53,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest]
+        os: [macOS-latest, macOS-latest, macOS-latest, macOS-latest, macOS-latest, macOS-latest, macOS-latest, macOS-latest]
     steps:        
       - name: Setup Firefox
         uses: browser-actions/setup-firefox@latest
