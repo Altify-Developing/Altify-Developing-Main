@@ -16,9 +16,12 @@ jobs:
       - name: Setup Chrome
         uses: browser-actions/setup-chrome@latest
       
-      - name: Utilize Chromium
+      - name: Guide Chromium
         run: |
           chrome --help
+      
+      - name: Utilize Chromium
+        run: |
           chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
           chrome "https://www.bing.com/search?q=altify&PC=U316&FORM=CHROMN&adlt=strict"
           chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20developing&vm=r"
