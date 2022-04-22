@@ -88,6 +88,7 @@ jobs:
           firefox-version: ${{ matrix.firefox }}
       - name: Utilize FireFox
         run: |
+          firefox --help
           firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
           firefox "https://www.bing.com/search?q=altify&PC=U316&FORM=CHROMN&adlt=strict"
           firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20developing&vm=r"
@@ -115,6 +116,7 @@ jobs:
         uses: browser-actions/setup-geckodriver@latest
       - name: Utilize Gecko
         run: |
+          geckodriver --help
           geckodriver "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
           geckodriver "https://www.bing.com/search?q=altify&PC=U316&FORM=CHROMN&adlt=strict"
           geckodriver "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20developing&vm=r"
