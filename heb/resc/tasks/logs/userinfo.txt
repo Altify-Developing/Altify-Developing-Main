@@ -1103,3 +1103,8 @@ Date:   Thu Apr 21 18:34:11 2022 -0700
     fix
     
     `f***` what i said about the random times, it didn't work because yml is a piece of crap `s***bird`
+commit 3067dc06471a8571cdd8177bf50eaff5308e2de0
+Author: Altify <Altify@mail.com>
+Date:   Thu Apr 21 18:49:12 2022 -0700
+
+    Add FireFox
