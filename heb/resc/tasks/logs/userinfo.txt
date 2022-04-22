@@ -1108,3 +1108,8 @@ Author: Altify <Altify@mail.com>
 Date:   Thu Apr 21 18:49:12 2022 -0700
 
     Add FireFox
+commit d4835e54b0932ecc0a66b77dd15c79d703f03f02
+Author: Altify <Altify@mail.com>
+Date:   Thu Apr 21 18:50:48 2022 -0700
+
+    fix.replace.os
