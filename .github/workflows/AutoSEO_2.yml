@@ -19,19 +19,19 @@ jobs:
       
       - name: Utilize Chromium
         run: |
-          chrome https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r
-          chrome https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20developing&vm=r
-          chrome https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20develop&vm=r
-          chrome https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20hacks&vm=r
-          chome https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%loic&vm=r
-          chrome https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify-developing&vm=r
-          chrome https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify+developing+tools&vm=r
+          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
+          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20developing&vm=r"
+          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20develop&vm=r"
+          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20hacks&vm=r"
+          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%loic&vm=r"
+          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify-developing&vm=r"
+          chrome "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify+developing+tools&vm=r"
       - name: Open Sites
         run: |
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify+developing+tools&vm=r
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify-developing&vm=r
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%loic&vm=r
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20hacks&vm=r
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20developing&vm=r
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20develop&vm=r
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify+developing+tools&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify-developing&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%loic&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20hacks&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20developing&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20develop&vm=r"
