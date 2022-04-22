@@ -53,7 +53,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macOS-latest, macOS-latest, macOS-latest, macOS-latest, macOS-latest, macOS-latest, macOS-latest, macOS-latest]
+        os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, macOS-latest, macOS-latest, macOS-latest, macOS-latest]
+        firefox: [ '84.0', 'latest-beta', 'latest-devedition', 'latest-esr', 'latest' ]
     steps:        
       - name: Setup Firefox
         uses: |
