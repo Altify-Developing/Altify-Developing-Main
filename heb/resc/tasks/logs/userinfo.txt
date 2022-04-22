@@ -1201,3 +1201,8 @@ Author: Altify <Altify@mail.com>
 Date:   Thu Apr 21 21:23:12 2022 -0700
 
     Update index.html
+commit 56fde78ed7b8dbe99d6ae65136f3ad8233f23725
+Author: Altify <Altify@mail.com>
+Date:   Thu Apr 21 21:28:12 2022 -0700
+
+    fix img alt tags
