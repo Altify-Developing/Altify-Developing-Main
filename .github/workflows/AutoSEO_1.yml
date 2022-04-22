@@ -20,7 +20,9 @@ jobs:
       
       - name: Utilize Chromium
         run: |
+          chrome "https://www.bing.com/webmaster/ping.aspx?siteMap=https://altify-developing-001.netlify.app/sitemap.xml"
           chrome https://www.google.com/ping?sitemap=https://altify-developing-001.netlify.app/sitemap.xml
       - name: Open Sites
         run: |
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://www.bing.com/webmaster/ping.aspx?siteMap=https://altify-developing-001.netlify.app/sitemap.xml"
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://www.google.com/ping?sitemap=https://altify-developing-001.netlify.app/sitemap.xml
