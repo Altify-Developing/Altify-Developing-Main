@@ -57,9 +57,11 @@ jobs:
         firefox: [ '84.0', 'latest-beta', 'latest-devedition', 'latest-esr', 'latest' ]
     steps:        
       - name: Setup Firefox
-        uses: |
-          browser-actions/setup-firefox@latest
-          browser-actions/setup-geckodriver@latest
+        uses: browser-actions/setup-firefox@latest
+        with:
+          firefox-version: ${{ matrix.firefox }}
+      - name: Setup Gecko
+        uses: browser-actions/setup-geckodriver@latest
       - name: Utilize Chromium
         run: |
           firefox "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify&vm=r"
