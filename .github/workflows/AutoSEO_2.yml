@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
   
   schedule:
-    - cron:  '*2 * * * *'
     - cron:  '*/7 * * * *'
     - cron:  '*/3 */2 * * *'
     - cron:  '*/3 */6 * * 4/*'
