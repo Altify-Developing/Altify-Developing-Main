@@ -21,3 +21,13 @@ jobs:
         run: |
           firefox --help
           firefox --headless
+  Gecko:
+    continue-on-error: true
+    runs-on: ${{ martrix.os }}
+    strategy:
+      matrix:
+          os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest]
+    name: GeckoRun
+    steps:
+      - uses: browser-actions/setup-geckodriver@latest
+      - run: geckodriver --version
