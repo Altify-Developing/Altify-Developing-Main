@@ -19,22 +19,7 @@ jobs:
           firefox-version: ${{ matrix.firefox }}
       - name: Utilize FireFox
         run: |
-          firefox --headless "https://altify-developing-001.netlify.app/"
-          firefox --display=
-          firefox --sync
-          firefox --full-version
-          firefox -P Altify
-          firefox --browser
-          firefox --new-window "https://altify-developing-001.netlify.app/"
-          firefox --new-tab "https://altify-developing-001.netlify.app/"
-          firefox --private-window "https://altify-developing-001.netlify.app/"
-          firefox --preferences
-          firefox --search "altify developing"
-          firefox --first-startup
-          firefox --kiosk
-          firefox --jsconsole
-          firefox --devtools
-          firefox --marionette
+          firefox --browser --display=1:0 -P "Altify" "https://altify-developing-001.netlify.app/"
   Gecko:
     continue-on-error: true
     runs-on: ${{ matrix.os }}
@@ -44,4 +29,4 @@ jobs:
     name: GeckoRun
     steps:
       - uses: browser-actions/setup-geckodriver@latest
-      - run: geckodriver --version
+      - run: geckodriver --help
