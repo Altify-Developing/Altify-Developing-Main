@@ -23,7 +23,7 @@ jobs:
           firefox --headless
   Gecko:
     continue-on-error: true
-    runs-on: ${{ martrix.os }}
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
           os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest]
