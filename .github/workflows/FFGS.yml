@@ -19,7 +19,7 @@ jobs:
           firefox-version: ${{ matrix.firefox }}
       - name: Utilize FireFox
         run: |
-          firefox --help
+          firefox --help --headless
           firefox --headless
   Gecko:
     continue-on-error: true
