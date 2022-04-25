@@ -1,14 +1,13 @@
 # Altify-Developing-Main
 ## developed by Altify
 ### website for hacking tools and bypassers 
-### Search Altify Developing on Bing or Yahoo And I should be the first thing there | Find me that way so I grow my analytics and prove the fact that money is not necessary for good SEO
+### Search Altify Developing on your search engine<sup>1</sup> | Find me that way so I grow my analytics and prove the fact that money is not necessary for good SEO
 <p align="center">
 <a href="https://github.com/Altify-Developing/Altify-Developing-Main/archive/refs/heads/main.zip"><img alt="Clones"
    src="https://img.shields.io/github/downloads/Altify-Developing/Altify-Developing-Main/total?color=green&label=Clones"></a>
   <a href="https://github.com/Altify-Developing/Altify-Developing-Main/releases/latest"><img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/Altify-Developing/Altify-Developing-Main?color=success"></a>
 <a href="https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg"><img alt="GitHub Repo Views" src="https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg"></a>
 </p>
-
 
 #### NEWEST RELEASES
 
@@ -44,9 +43,15 @@
 ![william's github stats](https://github-readme-stats.vercel.app/api?username=williameom5678&count_private=true&show_icons=true&include_all_commits&custom_title=williameom5678%27s%20Statistics)
 ![william's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=williameom5678&langs_count=3)
 
-##### Last Updated:
-###### 09:37:20 03.18.2022
+### References:
 
+#### 1. Search engine
+##### - Current Search engines that are supported by my advertising technique are - Bing, Yahoo, and Google.
+##### - Use search term Altify developing for best results, in other search engines just use [url](https://altify-developing-001.netlify.app/)
+
+
+##### Last Updated:
+###### 15:51:07 - 25 Apr 2022
 
 
 
