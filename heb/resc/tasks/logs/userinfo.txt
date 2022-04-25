@@ -1633,3 +1633,8 @@ Author: Altify <Altify@mail.com>
 Date:   Mon Apr 25 15:22:51 2022 -0700
 
     Update dothemath.sh
+commit 39bc431cc802975edb6971755f7a1845a17d9d15
+Author: Altify <Altify@mail.com>
+Date:   Mon Apr 25 15:25:52 2022 -0700
+
+    Update dothemath.sh
