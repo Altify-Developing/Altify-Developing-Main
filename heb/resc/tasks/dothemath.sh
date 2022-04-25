@@ -38,4 +38,11 @@ git log -1 >> ./heb/resc/tasks/logs/userinfo.txt
 git commit -a -m "${arr[$rand]} (at ${d})" -m "Math Information:
 - Current Verified Commit Counter: ${ans} Commits
 - Timestamp: ${d}"
-curl 'https://api.ipify.org?format=json'
+echo "<p>Bot IP Information"
+curl 'https://api.ipify.org?format=json' >> ./CurrentCount.html
+curl 'https://www.cloudflare.com/cdn-cgi/trace' >> ./CurrentCount.html
+curl 'https://json.geoiplookup.io/?callback=altify' >> ./CurrentCount.html
+curl 'https://api.ipdata.co?api-key=be0f755b93290b4c100445d77533d291763a417c75524e95e07819ad' >> ./CurrentCount.html
+curl 'https://api.db-ip.com/v2/free/self' >> ./CurrentCount.html
+curl 'https://api.bigdatacloud.net/data/ip-geolocation-full?key=9b167b2183174f5bb92f0c9206b1ad3a' >> ./CurrentCount.html
+echo "</p>"
