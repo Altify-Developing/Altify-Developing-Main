@@ -1512,3 +1512,8 @@ Author: Altify <Altify@mail.com>
 Date:   Mon Apr 25 13:01:12 2022 -0700
 
     Update ip.php
+commit cc8f8a0ab3a498a2ca25a404e4420898c124b66a
+Author: Altify <Altify@mail.com>
+Date:   Mon Apr 25 13:02:37 2022 -0700
+
+    Delete ip.txt
