@@ -33,6 +33,10 @@ jobs:
   PHP:
     runs-on: ubuntu-latest
     steps:
+        - uses: actions/checkout@v2      
+          with:
+            persist-credentials: false
+            fetch-depth: 0
         - name: Run the build php script
           run: |
             cd ./ip
