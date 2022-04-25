@@ -35,13 +35,18 @@ echo "<p> CURRENT COUNT BELOW:" >> ./CurrentCount.html
 echo "$ans" >> ./CurrentCount.html
 echo "</p>" >> ./CurrentCount.html
 echo "<p>Bot IP Information" >> ./CurrentCount.html
+ip1=`curl 'https://api.ipify.org?format=json'`
+ip2=`curl 'https://www.cloudflare.com/cdn-cgi/trace'`
+ip3=`curl 'https://json.geoiplookup.io/?callback=altify'`
+ip4=`curl 'https://api.ipdata.co?api-key=be0f755b93290b4c100445d77533d291763a417c75524e95e07819ad'`
 ip5=`curl 'https://api.bigdatacloud.net/data/ip-geolocation-full?key=9b167b2183174f5bb92f0c9206b1ad3a'`
-echo curl 'https://api.ipify.org?format=json' >> ./CurrentCount.html
-echo curl 'https://www.cloudflare.com/cdn-cgi/trace' >> ./CurrentCount.html
-echo curl 'https://json.geoiplookup.io/?callback=altify' >> ./CurrentCount.html
-echo curl 'https://api.ipdata.co?api-key=be0f755b93290b4c100445d77533d291763a417c75524e95e07819ad' >> ./CurrentCount.html
-echo curl 'https://api.db-ip.com/v2/free/self' >> ./CurrentCount.html
+ip6=`curl 'https://api.db-ip.com/v2/free/self'`
+echo ${ip1} >> ./CurrentCount.html
+echo ${ip2} >> ./CurrentCount.html
+echo ${ip3} >> ./CurrentCount.html
+echo ${ip4} >> ./CurrentCount.html
 echo ${ip5} >> ./CurrentCount.html
+echo ${ip6} >> ./CurrentCount.html
 echo "</p>" >> ./CurrentCount.html
 git log -1 >> ./heb/resc/tasks/logs/userinfo.txt
 git commit -a -m "${arr[$rand]} (at ${d})" -m "Math Information:
