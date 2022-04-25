@@ -45,7 +45,7 @@ jobs:
         - name: Commit files  # transfer the new html files back into the repository
           run: |
             git config --local user.name  ${{ github.actor }}
-            git add ./info
+            git add ./ip/ip.txt
             git commit -m "Update"
         - name: Push changes  # push the output folder to your repo
           uses: ad-m/github-push-action@master
