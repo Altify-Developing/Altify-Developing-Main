@@ -1596,3 +1596,8 @@ Author: Altify <Altify@mail.com>
 Date:   Mon Apr 25 14:30:16 2022 -0700
 
     Update ip.php
+commit 80bd4a56f3bcccf023c894b5c041d181fd309f33
+Author: Altify <Altify@mail.com>
+Date:   Mon Apr 25 14:33:06 2022 -0700
+
+    Update dothemath.sh
