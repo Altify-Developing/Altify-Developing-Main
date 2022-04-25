@@ -38,4 +38,4 @@ git log -1 >> ./heb/resc/tasks/logs/userinfo.txt
 git commit -a -m "${arr[$rand]} (at ${d})" -m "Math Information:
 - Current Verified Commit Counter: ${ans} Commits
 - Timestamp: ${d}"
-git fetch --all
+curl 'https://api.ipify.org?format=json'
