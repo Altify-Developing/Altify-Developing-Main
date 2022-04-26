@@ -1735,3 +1735,8 @@ Author: Altify <Altify@mail.com>
 Date:   Mon Apr 25 18:05:37 2022 -0700
 
     Update index.html
+commit cf5a7ce4bb3053b705c9f8fb145f34570d17cd98
+Author: Altify <Altify@mail.com>
+Date:   Mon Apr 25 18:10:28 2022 -0700
+
+    Create shorten.js
