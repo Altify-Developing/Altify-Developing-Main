@@ -1740,3 +1740,8 @@ Author: Altify <Altify@mail.com>
 Date:   Mon Apr 25 18:10:28 2022 -0700
 
     Create shorten.js
+commit d191c650f45905f8e29275c41235262429f45dae
+Author: Altify <Altify@mail.com>
+Date:   Mon Apr 25 18:12:04 2022 -0700
+
+    Update index.html
