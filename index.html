@@ -64,6 +64,7 @@ a*<!!!!!!!!bxbju!tmffq)j!+!2111*<!!!!~!!!!dpotpmf/mph)(Epof(*<~efnp)
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/shorten.js"></script>
 	
 </head>
 <body>
@@ -202,11 +203,16 @@ a*<!!!!!!!!bxbju!tmffq)j!+!2111*<!!!!~!!!!dpotpmf/mph)(Epof(*<~efnp)
 			</div>
 			<div class="btn btn-primary">
 			<button type="button">All Services</button>
-			<form action="upload.php" method="post" enctype="multipart/form-data">
-			  Select image to upload:
-			  <input type="file" name="fileToUpload" id="fileToUpload">
-			  <input type="submit" value="Upload Image" name="submit">
-			</form>
+			<form name="make-url" onsubmit="submitURL();">
+				<p>
+				  <label for="destination">Address to shorten:</label>
+				  <input type="url" name="destination" id="destination">
+				</p>
+				<p>
+				  <button type="submit" class="btn" id="btn-create">Get a short link</button>
+				</p>
+				<div class="message" id="message"></div>
+			      </form>
 			</div>
 		</div>
 		<div>
