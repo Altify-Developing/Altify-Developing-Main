@@ -30,26 +30,3 @@ jobs:
           force: true
           branch: 'main'
           github_token: ${{ secrets.GITHUB_TOKEN }}
-  PHP:
-    runs-on: ubuntu-latest
-    steps:
-        - uses: actions/checkout@v2      
-          with:
-            persist-credentials: false
-            fetch-depth: 0
-        - name: Run the build php script
-          run: |
-            cd ./ip
-            php ip.php  # This file reads a few json files and then creates a set of html files in the doc folder
-            cd ../
-        - name: Commit files  # transfer the new html files back into the repository
-          run: |
-            git config --local user.name  ${{ github.actor }}
-            git add ./ip/ip.txt
-            git commit -m "Update"
-        - name: Push changes  # push the output folder to your repo
-          uses: ad-m/github-push-action@master
-          with:
-            branch: 'main'
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            force: true
