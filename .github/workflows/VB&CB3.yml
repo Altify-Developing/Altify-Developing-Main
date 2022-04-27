@@ -8,7 +8,7 @@ on:
       - main
       
   schedule:
-    - cron:  '*/1 * * * *'
+    - cron:  '*/5 * * * *'
 
 jobs:
   Warning:
