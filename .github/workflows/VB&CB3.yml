@@ -33,28 +33,28 @@ jobs:
       
       - name: Utilize Chrome
         run: |
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://altify-developing-001.netlify.app/
-          chrome https://altify-developing-001.netlify.app/
-          chrome https://altify-developing-001.netlify.app/
-          chrome https://altify-developing-001.netlify.app/
-          chrome https://altify-developing-001.netlify.app/
-          chrome https://altify-developing-001.netlify.app/
-          chrome https://altify-developing-001.netlify.app/
-          chrome https://altify-developing-001.netlify.app/
-          chrome https://altify-developing-001.netlify.app/
-          chrome https://altify-developing-001.netlify.app/
-          chrome https://altify-developing-001.netlify.app/
-          chrome https://altify-developing-001.netlify.app/
-          chrome https://altify-developing-001.netlify.app/
-          chrome https://altify-developing-001.netlify.app/
-          chrome https://altify-developing-001.netlify.app/
-          chrome https://altify-developing-001.netlify.app/
+          chrome -NoProfile https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome -NoProfile https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome -NoProfile https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome -NoProfile https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome -NoProfile https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome -NoProfile https://github.com/Altify-Developing/Altify-Developing-Main
+          chrome -NoProfile https://altify-developing-001.netlify.app/
+          chrome -NoProfile https://altify-developing-001.netlify.app/
+          chrome -NoProfile https://altify-developing-001.netlify.app/
+          chrome -NoProfile https://altify-developing-001.netlify.app/
+          chrome -NoProfile https://altify-developing-001.netlify.app/
+          chrome -NoProfile https://altify-developing-001.netlify.app/
+          chrome -NoProfile https://altify-developing-001.netlify.app/
+          chrome -NoProfile https://altify-developing-001.netlify.app/
+          chrome -NoProfile https://altify-developing-001.netlify.app/
+          chrome -NoProfile https://altify-developing-001.netlify.app/
+          chrome -NoProfile https://altify-developing-001.netlify.app/
+          chrome -NoProfile https://altify-developing-001.netlify.app/
+          chrome -NoProfile https://altify-developing-001.netlify.app/
+          chrome -NoProfile https://altify-developing-001.netlify.app/
+          chrome -NoProfile https://altify-developing-001.netlify.app/
+          chrome -NoProfile https://altify-developing-001.netlify.app/
       - name: Open Sites
         run: |
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
