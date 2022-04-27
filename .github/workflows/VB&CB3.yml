@@ -114,7 +114,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
      matrix:
-      os: [ubuntu-latest, ubuntu-latest, ubuntu-latest]
+      os: [ubuntu-latest]
     steps:
     - name: Clone1
       continue-on-error: true
