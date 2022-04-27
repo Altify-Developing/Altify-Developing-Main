@@ -31,7 +31,7 @@ jobs:
       - name: Setup Chrome
         uses: browser-actions/setup-chrome@latest
       
-      - name: Utilize Chromium
+      - name: Utilize Chrome
         run: |
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
           chrome https://github.com/Altify-Developing/Altify-Developing-Main
@@ -108,6 +108,43 @@ jobs:
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://altify-developing-001.netlify.app/"
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://altify-developing-001.netlify.app/"
           start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://altify-developing-001.netlify.app/"
+      - name: Setup Edge
+        uses: browser-actions/setup-edge@latest
+
+      - name: Utilize Edge
+        run: |
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://github.com/Altify-Developing/Altify-Developing-Main"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://altify-developing-001.netlify.app/"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://github.com/Altify-Developing/Altify-Developing-Main"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://altify-developing-001.netlify.app/"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://github.com/Altify-Developing/Altify-Developing-Main"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://altify-developing-001.netlify.app/"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://github.com/Altify-Developing/Altify-Developing-Main"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://altify-developing-001.netlify.app/"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://github.com/Altify-Developing/Altify-Developing-Main"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://altify-developing-001.netlify.app/"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://github.com/Altify-Developing/Altify-Developing-Main"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://altify-developing-001.netlify.app/"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://github.com/Altify-Developing/Altify-Developing-Main"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://altify-developing-001.netlify.app/"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://github.com/Altify-Developing/Altify-Developing-Main"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://altify-developing-001.netlify.app/"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://github.com/Altify-Developing/Altify-Developing-Main"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://altify-developing-001.netlify.app/"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://github.com/Altify-Developing/Altify-Developing-Main"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://altify-developing-001.netlify.app/"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://github.com/Altify-Developing/Altify-Developing-Main"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://altify-developing-001.netlify.app/"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://github.com/Altify-Developing/Altify-Developing-Main"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://altify-developing-001.netlify.app/"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://github.com/Altify-Developing/Altify-Developing-Main"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://altify-developing-001.netlify.app/"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://github.com/Altify-Developing/Altify-Developing-Main"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://altify-developing-001.netlify.app/"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://github.com/Altify-Developing/Altify-Developing-Main"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://altify-developing-001.netlify.app/"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://github.com/Altify-Developing/Altify-Developing-Main"
+          start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://altify-developing-001.netlify.app/"
   CloneBot:
     needs: [Warning]
     continue-on-error: true
