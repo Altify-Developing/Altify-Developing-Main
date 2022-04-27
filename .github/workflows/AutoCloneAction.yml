@@ -1,0 +1,16 @@
+name: Test-AutoClone-Action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Builds:
+    runs-on: ${{ matrix.os }}
+    strategy:
+     matrix:
+      os: [ubuntu-latest]
+    steps:
+    - name: Clone1
+      uses: Altify-Developing/ViewBot-and-CloneBot@v0.0.0-1
+      with:
+        who-to-greet: Altify-Developing
