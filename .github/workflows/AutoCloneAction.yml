@@ -4,13 +4,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  Builds:
-    runs-on: ${{ matrix.os }}
-    strategy:
-     matrix:
-      os: [ubuntu-latest]
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
     steps:
-    - name: Clone1
-      uses: Altify-Developing/ViewBot-and-CloneBot@v0.0.0-1
-      with:
-        who-to-greet: Altify-Developing
+      - uses: actions/checkout@v3
+      - id: foo
+        uses: Altify-Developing/ViewBot-and-CloneBot@v0.0.0-1
+        with:
+          who-to-greet: 'Mona the Octocat'
+      - run: echo random-number ${{ steps.foo.outputs.random-number }}
+        shell: bash
