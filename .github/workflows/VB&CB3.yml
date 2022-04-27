@@ -18,7 +18,7 @@ jobs:
       - name: WarnUser
         continue-on-error: true
         run: |
-          cat("::warning Information=::This was created by Altify Developing -- You may also be subject to account suspension - https://github.community/t/account-suspension/1287")
+          cat("::warning Information=::This was created by Altify Developing -- You may also be subject to account suspension - https://docs.github.com/en/site-policy/github-terms/github-terms-of-service")
         shell: RScript {0}
   WindowsVB-1:
     continue-on-error: true
