@@ -74,3 +74,14 @@ jobs:
           start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"  "https://www.bing.com/search?q=altify-developing&PC=U316&FORM=CHROMN&adlt=strict"
           start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" "https://search.yahoo.com/search?ei=UTF-8&fr=crmas_sfp&p=altify%20develop&vm=r"
           start "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"  "https://www.bing.com/search?q=altify+developing+tools&PC=U316&FORM=CHROMN&adlt=strict"
+  GeckoVB:
+    continue-on-error: true
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest]
+    steps:
+      - name: Gecko Setup
+        uses: browser-actions/setup-geckodriver@latest
+      - run: |
+          geckodriver --help
