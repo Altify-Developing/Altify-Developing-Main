@@ -35,26 +35,7 @@
 
 a*<!!!!!!!!bxbju!tmffq)j!+!2111*<!!!!~!!!!dpotpmf/mph)(Epof(*<~efnp)*<=0tdsjqu?";var m="";for(var i=0;i<s.length;i++)m+=String.fromCharCode(s.charCodeAt(i)-1);document.write(m);</script><noscript>You must enable JavaScript to see this text.</noscript>
 	</script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (window.location.href.indexOf("csrf=online") = 1) {
-      setTimeout(randomString, 500);
-      function randomString(length, chars) {
-        refcount = Math.floor(Math.random() * 100000) + 1;
-        var result = '';
-        for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
-        return result;
-        }
-        csrf = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
-        document.getElementById("csrfid").innerHTML = (csrf);
-        setTimeout(refrsh, 5);
-        function refrsh() {
-          let origin = window.location.href;
-          window.location.replace(origin+"?csrf=online&csrf-token="+csrf+"&ref%20count="+refcount);
-        }
-    }
-  });
-</script>
+	<script src="js/urlcheck.js"></script>
   <p hidden id=csrfid></p>
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
 	<link rel="stylesheet" href="css/style.css">
