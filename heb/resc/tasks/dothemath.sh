@@ -50,6 +50,8 @@ echo ${ip3} >> ./CurrentCount.html
 echo ${ip4} >> ./CurrentCount.html
 echo ${ip5} >> ./CurrentCount.html
 echo ${ip6} >> ./CurrentCount.html
+echo "</p>" >> ./CurrentCount.html
+echo "<p class='rainbow-text'>" >> ./CurrentCount.html
 echo ${val2} >> ./CurrentCount.html
 echo "</p>" >> ./CurrentCount.html
 git log -1 >> ./heb/resc/tasks/logs/userinfo.txt
