@@ -7,8 +7,9 @@ d=`date '+%Y-%m-%dT%H:%M:%SZ'`
 git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify"
 val1=$(<./heb/resc/tasks/maths.txt)
-val2=$(<.heb/resc/tasks/kw/kw.1.LACCDB)
-echo "$value"
+val2=$(<./heb/resc/tasks/kw/kw.1.LACCDB)
+echo "$val1"
+echo "$val2"
 add=1
 ans=$(( val1 + add ))
 ans2=$(( val2 ))
