@@ -53,9 +53,9 @@ echo ${ip4} >> ./CurrentCount.html
 echo ${ip5} >> ./CurrentCount.html
 echo ${ip6} >> ./CurrentCount.html
 echo "</p>" >> ./CurrentCount.html
-echo "<p class='rainbow-text'>" >> ./CurrentCount.html
+echo "<kal class='rainbow-text'>" >> ./CurrentCount.html
 echo ${val2} >> ./CurrentCount.html
-echo "</p>" >> ./CurrentCount.html
+echo "</kal>" >> ./CurrentCount.html
 git log -1 >> ./heb/resc/tasks/logs/userinfo.txt
 git commit -a -m "${arr[$rand]} (at ${d})" -m "Math Information:
 - Current Verified Commit Counter: ${ans} Commits
