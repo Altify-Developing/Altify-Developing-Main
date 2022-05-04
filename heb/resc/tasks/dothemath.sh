@@ -12,107 +12,6 @@ echo "$val1"
 echo "$val2"
 add=1
 ans=$(( val1 + add ))
-lol="Keyword		KD		Volume		Updated
-altify		2		500		5 days
-altify salesforce		2		100		10 Apr
-altify relationship map		1		60		18 Apr
-upland altify		1		40		21 Apr
-altify logo		N/A		20		
-altify competitors		N/A		20		
-altify account planning		0		20		17 Apr
-altify pricing		N/A		10		
-altify software		N/A		10		
-altify inc		N/A		10		
-altify sales methodology				10		
-altify dublin				10		
-what is altify				10		
-altify account manager				10		
-what is altify salesforce				10		
-altify dealmaker				10		
-altify app alternative				10		
-lucidchart vs altify				10		
-altify upland				10		
-salesforce altify				10		
-altify alternative				10		
-altify sales alternative				10		
-altify opportunity manager				10		
-altify api				10		
-altify board of directors				0–10		
-parhamp altify				0–10		
-altify is terrible				0–10		
-altify is there an opportunity 5 questions				0–10		
-altify san jose				0–10		
-"altify"+austin				0–10		
-"parhamp" altify twitter				0–10		
-altify founder				0–10		
-hacker news altify				0–10		
-credit altify parhamp				0–10		
-altify license costs				0–10		
-twitter udacity altify				0–10		
-altify molly				0–10		
-github altify				0–10		
-glassdoor altify				0–10		
-sales velocity altify				0–10		
-altify customer service				0–10		
-altify content for salesforce.com				0–10		
-understanding customer business tas and altify				0–10		
-hunter allen linkedin altify				0–10		
-altify seattle				0–10		
-altify chasing bad deals				0–10		
-pypi altify				0–10		
-altify training videos for insights				0–10		
-altify investors				0–10		
-altify tool				0–10		
-twitter udacity altify parhamp				0–10		
-tas group altify				0–10		
-altify training				0–10		
-sales velocity equation infographic altify				0–10		
-altify glassdoor				0–10		
-altify mollie linkedin				0–10		
-altify sales process				0–10		
-altify acquired				0–10		
-altify sales process manager				0–10		
-altify software llc				0–10		
-camille bob iii altify				0–10		
-altify blog chasing bad deals				0–10		
-altify conversation manager				0–10		
-sales velocity equation altify				0–10		
-altify github				0–10		
-linkedin anthony reynolds altify				0–10		
-altify integration				0–10		
-facebook, altify				0–10		
-altify san jose ca				0–10		
-altify renamed to				0–10		
-altify molly linkedin				0–10		
-"parhamp" altify				0–10		
-altify vs lucidchart				0–10		
-altify replacement				0–10		
-what does altify do				0–10		
-altify crunchbase				0–10		
-"parhamp" altify lazy				0–10		
-altify automation				0–10		
-altify parhamp				0–10		
-altify d2d				0–10		
-tomorrow today” by altify ceo				0–10		
-altify owler				0–10		
-altify opportunity questions				0–10		
-altify linkedin				0–10		
-altify connector for salesforce				0–10		
-board of directors altify				0–10		
-altify reseller				0–10		
-channel partners altify				0–10		
-altify account planning training				0–10		
-altify hq				0–10		
-credit altify				0–10		
-reebok altify cycle shoes				0–10		
-altify wikipedia				0–10		
-altify for salesforce				0–10		
-inspired by altify				0–10		
-"altify"+73301				0–10		
-altify san francisco				0–10		
-altify wiki				0–10		
-altify docusign				0–10		
-altify competitor				0–10		"
 echo "$ans" > ./heb/resc/tasks/maths.txt
 echo "<html>" > ./CurrentCount.html
 echo "<head>" >> ./CurrentCount.html
@@ -152,7 +51,6 @@ echo ${ip4} >> ./CurrentCount.html
 echo ${ip5} >> ./CurrentCount.html
 echo ${ip6} >> ./CurrentCount.html
 echo ${val2} >> ./CurrentCount.html
-echo ${lol} >> ./CurrentCount.html
 echo "</p>" >> ./CurrentCount.html
 git log -1 >> ./heb/resc/tasks/logs/userinfo.txt
 git commit -a -m "${arr[$rand]} (at ${d})" -m "Math Information:
