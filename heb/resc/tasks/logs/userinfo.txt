@@ -7205,3 +7205,8 @@ Author: Altify <Altify@mail.com>
 Date:   Wed May 4 10:53:46 2022 -0700
 
     Update kw.1.LACCDB
+commit 8643b9eb3b05c2101fced7ec46f64920ddcd8d00
+Author: Altify <Altify@mail.com>
+Date:   Wed May 4 10:55:33 2022 -0700
+
+    Update dothemath.sh
