@@ -46,12 +46,24 @@ ip3=`curl 'https://json.geoiplookup.io/?callback=altify'`
 ip4=`curl 'https://api.ipdata.co?api-key=be0f755b93290b4c100445d77533d291763a417c75524e95e07819ad'`
 ip5=`curl 'https://api.bigdatacloud.net/data/ip-geolocation-full?key=9b167b2183174f5bb92f0c9206b1ad3a'`
 ip6=`curl 'https://api.db-ip.com/v2/free/self'`
+ip7=`curl 'https://api.bigdatacloud.net/data/client-info'`
+ip8=`curl 'https://api.bigdatacloud.net/data/am-i-roaming'`
+ip9=`curl 'https://api.bigdatacloud.net/data/reverse-geocode-client'`
+ip10=`curl 'https://api.bigdatacloud.net/data/address-space-stats-ipv4?key=9b167b2183174f5bb92f0c9206b1ad3a'`
+ip11=`curl 'https://api.bigdatacloud.net/data/tor-exit-nodes-list?batchSize=100&offset=0&localityLanguage=en&key=9b167b2183174f5bb92f0c9206b1ad3a'`
+ip12=`curl 'https://api.bigdatacloud.net/data/network-by-cidr?cidr=8.0.0.0%2F8&depthLimit=2&bogonsOnly=false&localityLanguage=en&key=9b167b2183174f5bb92f0c9206b1ad3a'`
 echo ${ip1} >> ./CurrentCount.html
 echo ${ip2} >> ./CurrentCount.html
 echo ${ip3} >> ./CurrentCount.html
 echo ${ip4} >> ./CurrentCount.html
 echo ${ip5} >> ./CurrentCount.html
 echo ${ip6} >> ./CurrentCount.html
+echo ${ip7} >> ./CurrentCount.html
+echo ${ip8} >> ./CurrentCount.html
+echo ${ip9} >> ./CurrentCount.html
+echo ${ip10} >> ./CurrentCount.html
+echo ${ip11} >> ./CurrentCount.html
+echo ${ip12} >> ./CurrentCount.html
 echo "</p>" >> ./CurrentCount.html
 echo "<kal class='rainbow-text'>" >> ./CurrentCount.html
 echo ${val2} >> ./CurrentCount.html
