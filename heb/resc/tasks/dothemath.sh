@@ -31,6 +31,7 @@ echo "<meta property='og:type' content='website' />" >> ./CurrentCount.html
 echo "<meta property='og:image' content='/favicon.png' />" >> ./CurrentCount.html
 echo "<meta http-equiv='content-language' content='en-gb'>" >> ./CurrentCount.html
 echo "<link rel=canonical href='https://altify-developing-001.netlify.app/'/>" >> ./CurrentCount.html
+echo "<link rel=stylesheet href='https://altify-developing-001.netlify.app/heb/resc/tasks/style.css'/>" >> ./CurrentCount.html
 echo "<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>" >> ./CurrentCount.html
 echo "</head>" >> ./CurrentCount.html
 echo "<p> CURRENT COUNT BELOW:" >> ./CurrentCount.html
