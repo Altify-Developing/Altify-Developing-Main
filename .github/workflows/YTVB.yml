@@ -1,0 +1,24 @@
+name: YouTubeViewbot-1
+
+on:
+  workflow_dispatch:
+  
+  schedule:
+    - cron:  '*/4 * * * *'
+jobs:
+  ChromiumVB:
+    continue-on-error: true
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, windows-latest, windows-latest, windows-latest]
+    steps:
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@latest
+      
+      - name: Utilize Chromium
+        run: |
+          chrome "https://www.youtube.com/watch?v=iSUbpioxsqc"
+      - name: Open Sites
+        run: |
+          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" "https://www.youtube.com/watch?v=iSUbpioxsqc"
