@@ -6,10 +6,12 @@ rand=$[$RANDOM % ${#arr[@]}]
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
 git config --local user.email "Altify@mail.com"
 git config --local user.name "Altify"
-value=$(<./heb/resc/tasks/maths.txt)
+val1=$(<./heb/resc/tasks/maths.txt)
+val2=$(<.heb/resc/tasks/kw/kw.1.LACCDB)
 echo "$value"
 add=1
-ans=$(( value + add ))
+ans=$(( val1 + add ))
+ans2=$(( val2 ))
 echo "$ans" > ./heb/resc/tasks/maths.txt
 echo "<html>" > ./CurrentCount.html
 echo "<head>" >> ./CurrentCount.html
@@ -33,6 +35,7 @@ echo "<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.mi
 echo "</head>" >> ./CurrentCount.html
 echo "<p> CURRENT COUNT BELOW:" >> ./CurrentCount.html
 echo "$ans" >> ./CurrentCount.html
+echo "$ans2" >> ./CurrentCount.html
 echo "</p>" >> ./CurrentCount.html
 echo "<p>Bot IP Information" >> ./CurrentCount.html
 ip1=`curl 'https://api.ipify.org?format=json'`
