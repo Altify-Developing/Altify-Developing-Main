@@ -7108,3 +7108,8 @@ Author: Altify <Altify@mail.com>
 Date:   Wed May 4 09:05:46 2022 -0700
 
     Update index.html
+commit 8416d31158de9f02de0a86b6d906e82708d40ecc
+Author: Altify <Altify@mail.com>
+Date:   Wed May 4 09:07:23 2022 -0700
+
+    Delete netlify.toml
