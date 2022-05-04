@@ -7132,3 +7132,8 @@ Author: Altify <Altify@mail.com>
 Date:   Wed May 4 09:55:02 2022 -0700
 
     Rename heb/resc/tasks/kw.1.LACCDB to heb/resc/tasks/kw/kw.1.LACCDB
+commit 44a05aa60dba0ad869d0ae9d6927f061d0c0dd11
+Author: Altify <Altify@mail.com>
+Date:   Wed May 4 09:56:46 2022 -0700
+
+    Update dothemath.sh
