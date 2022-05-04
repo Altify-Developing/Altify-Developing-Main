@@ -35,7 +35,8 @@ echo "<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.mi
 echo "</head>" >> ./CurrentCount.html
 echo "<p> CURRENT COUNT BELOW:" >> ./CurrentCount.html
 echo "$ans" >> ./CurrentCount.html
-echo "$ans2" >> ./CurrentCount.html
+echo "CurrentLeak Provided by: <a href='https://altify-developing-001.netlify.app/'>Altify Developing</a>" >> ./CurrentCount.html
+echo "CurrentLeakSourceLink=https://altify-developing-001.netlify.app/currentcount" >> ./CurrentCount.html
 echo "</p>" >> ./CurrentCount.html
 echo "<p>Bot IP Information" >> ./CurrentCount.html
 ip1=`curl 'https://api.ipify.org?format=json'`
