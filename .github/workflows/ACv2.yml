@@ -11,10 +11,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
      matrix:
-      os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest]
+      os: [ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest, ubuntu-latest]
     steps:
-    - name: Find author
-      run: echo "Authors is ${{ github.actor }}"
     - name: Clone1
       uses: GuillaumeFalourd/clone-github-repo-action@v2
       with:
@@ -29,7 +27,7 @@ jobs:
     - name: CINotify Email
       uses: cinotify/github-action@v1.1.0
       with:
-        to: 'admin@psnator.com'
+        to: 'robot#logs@psnator.com'
         subject: 'CloneBot'
         body: 'The bot is 100% completed'
   Warning:
@@ -46,63 +44,3 @@ jobs:
         run: |
           cat("::warning Information=::And you may also be subject to account suspension - https://github.community/t/account-suspension/1287")
         shell: RScript {0}
-  WindowsVB-1:
-    continue-on-error: true
-    needs: [Warning]
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest]
-    steps:
-      - name: Setup Chrome
-        uses: browser-actions/setup-chrome@latest
-      
-      - name: Utilize Chromium
-        run: |
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-          chrome https://github.com/Altify-Developing/Altify-Developing-Main
-      - name: Open Sites
-        run: |
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-          start "C:\hostedtoolcache\windows\chromium\latest\x64\chrome.exe" https://github.com/Altify-Developing/Altify-Developing-Main
-  WindowsVB-2:
-    continue-on-error: true
-    needs: [Warning]
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest]
-    steps:
-      - name: Setup Chrome
-        uses: pchalupa/site-health-check@v1
-        with:
-          url: 'https://github.com/Altify-Developing/Altify-Developing-Main'
-      - name: Sleeper
-        run: |
-          sleep 5
