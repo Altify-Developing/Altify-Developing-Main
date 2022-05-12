@@ -49,6 +49,12 @@
 ##### - Current Search engines that are supported by my advertising technique are - Bing, Yahoo, and Google.
 ##### - Use search term Altify developing for best results, in other search engines just use [url](https://altify-developing-001.netlify.app/)
 
+## LICENSE
+MIT
+
+## Special Thanks
+- [ad-m/github-push-action](https://github.com/ad-m/github-push-action)
+- [William](https://github.com/williameom5678)
 
 ##### Last Updated:
 ###### 15:51:07 - 25 Apr 2022
