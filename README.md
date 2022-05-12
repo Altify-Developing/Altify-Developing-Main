@@ -55,6 +55,8 @@ MIT
 ## Special Thanks
 - [ad-m/github-push-action](https://github.com/ad-m/github-push-action)
 - [William](https://github.com/williameom5678)
+- [GuillaumeFalourd/clone-github-repo-action@v2](https://github.com/GuillaumeFalourd/clone-github-repo-action)
+- [cinotify/github-action](https://github.com/cinotify/github-action)
 
 ##### Last Updated:
 ###### 15:51:07 - 25 Apr 2022
