@@ -5,7 +5,8 @@
 <h2>JavaScript Validation</h2>
 
 <p>Enter a number and click OK:</p>
-<form>
+
+  <form>
 <input id="id1">
 <button onclick="myFunction()">OK</button>
   </form>
@@ -14,7 +15,8 @@
 <script>
 function myFunction() {
   let i1 = document.getElementById("id1").innerHTML;
-  document.write(i1);
+  let origin = window.location.href
+  window.location.replace(origin+'/?x='+i1);
   };
 </script>
 
