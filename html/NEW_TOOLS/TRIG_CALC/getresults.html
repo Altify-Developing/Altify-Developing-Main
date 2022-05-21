@@ -41,9 +41,9 @@ function getAllUrlParams(url) {
 
   return obj;
 }
-let origin = window.location.href
-let h = getAllUrlParams('origin').h
-let o = getAllUrlParams('origin').o
-let a = getAllUrlParams('origin').a
+var origin = window.location.href
+let h = getAllUrlParams(origin).h
+let o = getAllUrlParams(origin).o
+let a = getAllUrlParams(origin).a
 document.getElementById("answer").innerHTML = 'tanθ = '+(Math.tan(a/o))+'<br>sinθ = '+(Math.sin(o/h))+'<br>cosθ = '+(Math.cos(a/h));
 </script>
