@@ -1,9 +1,9 @@
-<input type="number" id="opposite" name="opposite" value="1">
 <label for="opposite">Opposite:</label><br>
-<input type="number" id="hypotenuse" name="hypotenuse" value="1">
+<input type="number" id="opposite" name="opposite" value="1">
 <label for="hypotenuse">Hypotenuse:</label><br>
-<input type="number" id="adjacent" name="adjacent" value="1">
+<input type="number" id="hypotenuse" name="hypotenuse" value="1">
 <label for="adjacent">Adjacent:</label><br>
+<input type="number" id="adjacent" name="adjacent" value="1">
 <a id="c" href="">Send</a>
 
 <script>
@@ -11,6 +11,6 @@
     var i1 = document.getElementById("opposite").value;
     var i2 = document.getElementById("hypotenuse").value;
     var i3 = document.getElementById("adjacent").value;
-    this.setAttribute("href", "/html/new_tools/trig_calc/f/?o="+i1+'&h='+i2+'&a='+i3);
+    this.setAttribute("href", "/html/new_tools/trig_calc/getresults/?o="+i1+'&h='+i2+'&a='+i3);
   });
 </script>
