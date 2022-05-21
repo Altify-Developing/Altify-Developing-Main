@@ -1,0 +1,9 @@
+<input type="number" id="b" name="b" value="1">
+<a id="c" href="">Send</a>
+
+<script>
+  document.getElementById("c").addEventListener("click", function() {
+    var i = document.getElementById("b").value;
+    this.setAttribute("href", "/t" + i);
+  });
+</script>
