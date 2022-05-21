@@ -206,7 +206,7 @@
   <changefreq>never</changefreq>
 </url>
 <url>
-  <loc>https://altify-developing-001.netlify.app/html/SOCKS5</loc>
+  <loc>https://altify-developing-001.netlify.app/html/AJAX/SOCKS5</loc>
   <priority>0.3</priority>
   <changefreq>never</changefreq>
 </url>
@@ -216,7 +216,7 @@
   <changefreq>never</changefreq>
 </url>
 <url>
-  <loc>https://altify-developing-001.netlify.app/html/OAG/AIO_PLAIN.src.html</loc>
+  <loc>https://altify-developing-001.netlify.app/html/OAG/AIO_PLAIN.src</loc>
   <priority>0.8</priority>
   <changefreq>weekly</changefreq>
 </url>
@@ -239,9 +239,9 @@
   <loc>https://altify-developing-001.netlify.app/html/AutoAds/AltifyMarketing</loc>
   <priority>0.4</priority>
   <changefreq>never</changefreq>
-</url>ajax
+</url>
 <url>
-  <loc>https://altify-developing-001.netlify.app/html/AutoAds/prepostseo.com.html</loc>
+  <loc>https://altify-developing-001.netlify.app/html/AutoAds/prepostseo.com</loc>
   <priority>0.4</priority>
   <changefreq>never</changefreq>
 </url>
@@ -261,12 +261,12 @@
   <changefreq>never</changefreq>
 </url>
 <url>
-  <loc>https://altify-developing-001.netlify.app/heb/resc/pingertool/ping.html</loc>
+  <loc>https://altify-developing-001.netlify.app/heb/resc/pingertool/ping</loc>
   <priority>0.5</priority>
   <changefreq>never</changefreq>
 </url>
 <url>
-  <loc>https://altify-developing-001.netlify.app/heb/resc/pingertool/prepostseo.com/url.index.html</loc>
+  <loc>https://altify-developing-001.netlify.app/heb/resc/pingertool/prepostseo.com/url.index</loc>
   <priority>0.3</priority>
   <changefreq>never</changefreq>
 </url>
