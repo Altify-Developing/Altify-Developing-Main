@@ -1,194 +1,194 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+s<?xml version="1.0" encoding="UTF-8"?> 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
   <loc>https://altify-developing-001.netlify.app/html/toolstodownload</loc>
   <priority>0.5</priority>
-  <changefreq>always</changefreq>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://altify-developing-001.netlify.app/html/ToS.html</loc>
   <priority>0.3</priority>
-  <changefreq>always</changefreq>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/html/pythontoolsonly</loc>
-  <priority>0.2</priority>
-  <changefreq>always</changefreq>
+  <priority>0.4</priority>
+  <changefreq>yearly</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/PyChecker/online.py</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/PyChecker/tokens.txt</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/PyTokenJoiner/joiner.py</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/PyTokenJoiner/tokens.txt</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/Discord-Account-Generator-main.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/TwitchAccGen/TwitchAccountCreator-main.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/HTBC/Hacking-tools-main.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/html/JavaScripttoolsonly</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>yearly</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/JavaScript/account-generator-master.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/html/CSharptoolsonly</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/CSharp/Discord-Nitro-QR-master.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/CSharp/FraftSpotifyGen-master.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/CSharp/Nike-Account-Generator-written-in-Csharp-main.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/CSharp/OutlookAccountGenerator-master.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/CSharp/Shopify-Account-Generator-master.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/CSharp/Steam-Account-Creator-master.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/CSharp/TheAltening-Account-Generator-master.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/CSharp/TwitterAccountGenerator-master.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/CSharp/fluffy-disco-main.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/CSharp/instagram-account-creator-master.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/html/Javatoolsonly</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/Java/InstagramAccountGenerator-master.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/Java/RuneScape-Account-Generator-master.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/Java/steam-gen-master.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/html/PHPtoolsonly</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/PHP/Genshin-Impact-Account-Generator-main.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/PHP/cpanel-email-generator-master.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/PHP/csvGenerator4ScratchAccount-master.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/PHP/twitter-account-generator-master.zip</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/PHP/Spotify/spotify.php</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/PHP/WifiID/wifi.php</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/Tools/PHP/WifiID/list.txt</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/html/tabspammer</loc>
-  <priority>0.1</priority>
-  <changefreq>always</changefreq>
+  <priority>0.3</priority>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/csrf/x-csrf-gen</loc>
   <priority>0.5</priority>
-  <changefreq>always</changefreq>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/docs/home</loc>
   <priority>0.3</priority>
-  <changefreq>always</changefreq>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/heb/resc/tasks/maths.txt</loc>
@@ -198,86 +198,146 @@
 <url>
   <loc>https://altify-developing-001.netlify.app/html/AJAX/HTTP</loc>
   <priority>0.3</priority>
-  <changefreq>always</changefreq>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/html/AJAX/SOCKS4</loc>
   <priority>0.3</priority>
-  <changefreq>always</changefreq>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/html/SOCKS5</loc>
   <priority>0.3</priority>
-  <changefreq>always</changefreq>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/html/AJAX/info</loc>
   <priority>0.8</priority>
-  <changefreq>always</changefreq>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/html/OAG/AIO_PLAIN.src.html</loc>
   <priority>0.8</priority>
-  <changefreq>always</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/html/OAG/AIO_COMBO</loc>
   <priority>0.8</priority>
-  <changefreq>always</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/html/OAG/OAG</loc>
   <priority>1.0</priority>
-  <changefreq>always</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/html/ResponsiveKeyLogger/info</loc>
   <priority>1.0</priority>
-  <changefreq>always</changefreq>
+  <changefreq>yearly</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/html/AutoAds/AltifyMarketing</loc>
   <priority>0.4</priority>
-  <changefreq>always</changefreq>
-</url>
+  <changefreq>never</changefreq>
+</url>ajax
 <url>
   <loc>https://altify-developing-001.netlify.app/html/AutoAds/prepostseo.com.html</loc>
   <priority>0.4</priority>
-  <changefreq>always</changefreq>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/html/calculator/calc</loc>
   <priority>0.3</priority>
-  <changefreq>always</changefreq>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/html/Bibliography-Formatting-Tool</loc>
   <priority>0.4</priority>
-  <changefreq>always</changefreq>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/html/ResponseTest</loc>
   <priority>0.4</priority>
-  <changefreq>always</changefreq>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/heb/resc/pingertool/ping.html</loc>
   <priority>0.5</priority>
-  <changefreq>always</changefreq>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/heb/resc/pingertool/prepostseo.com/url.index.html</loc>
   <priority>0.3</priority>
-  <changefreq>always</changefreq>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/heb/resc/issues/mbr/contactform.txt</loc>
   <priority>0.3</priority>
-  <changefreq>always</changefreq>
+  <changefreq>never</changefreq>
 </url>
 <url>
   <loc>https://altify-developing-001.netlify.app/</loc>
   <priority>1.0</priority>
-  <changefreq>always</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
+  <url>
+    <loc>https://altify-developing-001.netlify.app/html/new_tools/trig_calc/calculator/</loc>
+    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://altify-developing-001.netlify.app/html/new_tools/trig_calc/f</loc>
+    <priority>0.4</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://altify-developing-001.netlify.app/html/new_tools/trig_calc/getresults</loc>
+    <priority>0.4</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://altify-developing-001.netlify.app/csrf/csrf.gif</loc>
+    <priority>0.5</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://altify-developing-001.netlify.app/CSRF/X-CSRF-GEN</loc>
+    <priority>0.5</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://altify-developing-001.netlify.app/build/curtain-example-01.json</loc>
+    <priority>0.4</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://altify-developing-001.netlify.app/cleb/csrf.src</loc>
+    <priority>1.0</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://altify-developing-001.netlify.app/html/NEW_TOOLS/ProxyGen</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://altify-developing-001.netlify.app/html/NEW_TOOLS/http</loc>
+    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://altify-developing-001.netlify.app/404</loc>
+    <priority>0.3</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://altify-developing-001.netlify.app/503</loc>
+    <priority>0.3</priority>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://altify-developing-001.netlify.app/CurrentCount</loc>
+    <priority>1.0</priority>
+    <changefreq>always</changefreq>
+  </url>
 </urlset>
