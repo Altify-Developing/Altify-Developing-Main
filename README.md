@@ -31,6 +31,11 @@
 
 [RKL](https://altify-developing-001.netlify.app/html/responsivekeylogger/info)
 
+##### Trigonometry Calculator - /html/NEW_TOOLS/TRIG_CALC/calculator.html
+<img src="https://github.com/Altify-Developing/Altify-Developing-Main/raw/main/html/NEW_TOOLS/TRIG_CALC/PR.TrigCalc.gif"></img>
+
+[Trig Calculator](https://altify-developing-001.netlify.app/html/new_tools/trig_calc/calculator)
+
 (stats)
 
 [Altify](https://github.com/Altify-Development)
