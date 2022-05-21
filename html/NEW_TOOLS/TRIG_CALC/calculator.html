@@ -5,17 +5,16 @@
 <h2>JavaScript Validation</h2>
 
 <p>Enter a number and click OK:</p>
-
+<form action="getresults.html">
 <input id="id1">
-<button onclick="myFunction()">OK</button>
-
+<button type='submit' onclick="myFunction()">OK</button>
+  </form>
 
 
 <script>
 function myFunction() {
   let i1 = document.getElementById("id1").innerHTML;
-  let origin = window.location.href
-  window.location.replace(origin+"?"+(document.getElementById("id1").innerHTML));
+  window.location.replace('https://altify-developing-001.netlify.app/html/new_tools/trig_calc/getresults'+"/?"+(document.getElementById("id1").innerHTML));
   };
 </script>
 
