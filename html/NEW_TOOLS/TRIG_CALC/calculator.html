@@ -1,20 +1,45 @@
-<!DOCTYPE html>
 <html>
-<body>
-
-<h2>JavaScript Validation</h2>
-
-<p>Enter a number and click OK:</p>
-
-<input id="id1">
-<button>OK</button>
-
+<head>
+	<title>Altify | Trigonometry Calculator</title>
+        <meta charset="utf-8"/>
+    <meta name="google-site-verification" content="MnF2J3kLyQ_GADcfaY-LaGiOQMe23dwsvIfHHnbrih4" />
+    <meta name="msvalidate.01" content="4CEA3A5E8030C3BE543E880766463233" />
+    <meta name="robots" content="index, follow"/>
+    <meta name="author" content="Altify Developing"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+    <meta name="description" content="simple trig calculator, just put in the opposite, adjacent, and hypotenuse values in and BOOM! Best part is it is ad free and is as simple as humanly possible"/>
+    <meta name="keywords" content="alt, ify, al, it, fy,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,alt ify, atify, dleovping, deveingp, developign,altigy, deviejmngl, altifty,altify,Altify,Developing,autoclone,clonebot,cloner,git clone, git commit, autocommit, commiter, automatic clone, github stats, stats bot, statbot, tracert, ip, grabber, grab, grabbing, indexer, google, chrome, ubuntu, latest, newest, recent, popular, how to, how, when, tut, tutorial, easy hacking, copy paste, copy, paste, copy & paste, Altify hacking tools for free,altify developing,altify dev,altify,free hacking tools,hacking tools,tools,autoclone,viewbot,github hacks,github shortcuts,github tools,free advertising,free,hacking,bots,botnets,temp gmail,temporary gmail address,disposable gmail,disposable gmail address,temporary gmail,create gmail address,disposable mail,free gmail address,gmail generator,email address generator,temp mail,throwaway email,throwaway gmail,throwaway gmail,temporary email address,free gmail addres,free email address,anonymous email account,anonymous gmail account"/>
+    <meta property="og:title" content="Altify | Trigonometry Calculator" />
+    <meta property="og:description" content="simple trig calculator, just put in the opposite, adjacent, and hypotenuse values in and BOOM! Best part is it is ad free and is as simple as humanly possible" />
+    <meta property="og:url" content="https://altify-developing-001.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/favicon.png" />
+    <meta property="og:citation" content="Altify, LLC & William. - (2022, April 2). Altify Developing. - GitHub - https://github.com/Altify-Developing/Altify-Developing-Main - Retrieved April 7, 2022, from https://github.com/Altify-Developing/Altify-Developing-Main" />
+    <meta http-equiv='content-language' content='en-gb'>
+    <link rel=canonical href=https://altify-developing-001.netlify.app/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Clarity tracking code for https://altify-developing-001.netlify.app/ -->
+	<script>
+	    (function(c,l,a,r,i,t,y){
+		c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+		t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+		y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+	    })(window, document, "clarity", "script", "bk3655ppi4");
+	</script>
+  
+<label for="opposite">Opposite:</label>
+<input type="number" id="opposite" name="opposite" value="1"><br>
+<label for="hypotenuse">Hypotenuse:</label>
+<input type="number" id="hypotenuse" name="hypotenuse" value="1"><br>
+<label for="adjacent">Adjacent:</label>
+<input type="number" id="adjacent" name="adjacent" value="1"><br>
+<a id="c" href="">Send</a>
 
 <script>
-  let i1 = document.getElementById("id1").innerHTML;
-  window.location.replace('https://altify-developing-001.netlify.app/html/new_tools/trig_calc/getresults'+"/?"+(document.getElementById("id1").innerHTML));
-  };
+  document.getElementById("c").addEventListener("click", function() {
+    var i1 = document.getElementById("opposite").value;
+    var i2 = document.getElementById("hypotenuse").value;
+    var i3 = document.getElementById("adjacent").value;
+    this.setAttribute("href", "/html/new_tools/trig_calc/getresults/?o="+i1+'&h='+i2+'&a='+i3);
+  });
 </script>
-
-</body>
-</html>
