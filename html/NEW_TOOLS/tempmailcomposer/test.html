@@ -1,0 +1,27 @@
+<form action="https://www.smartnator.com/compose-mail" method="POST">
+               <input id="csrf_token" type="hidden" name="csrf_gmailnator_token" value="a957e5795ee2f033684a438eba021796" />
+               <div class="col-xs-6 form-group">
+                  <label for="usr">From <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" value="fbqyidw@smartnator.com" name="from" placeholder="Name" readonly>
+               </div>
+              <div class="col-xs-6 form-group">
+                 <label for="email">To <span class="text-danger">*</span></label>
+                 <input type="email" value="" required class="form-control" name="email" placeholder="Email Address">
+              </div>
+              <div class="col-xs-6 form-group">
+                 <label for="usr">Name <span class="text-danger">*</span></label>
+                 <input type="text" required value="" class="form-control" name="name" placeholder="Name">
+              </div>
+              <div class="col-xs-6 form-group">
+                 <label for="usr">Subject <span class="text-danger">*</span></label>
+                 <input type="text" required value="" class="form-control" name="subject" placeholder="Subject">
+              </div>
+              <div class="col-xs-12 form-group">
+                 <label for="comment">Message <span class="text-danger">*</span></label>
+                 <textarea maxlength="6000" class="form-control textContent" name="message" class="Description"></textarea>
+              </div>
+              <div class="text-center mb-2">
+                <div class="g-recaptcha d-inline-block" data-sitekey="6LeGjaIaAAAAAG5iKkqQlkWPZX95JaNq_7NnZMMp"></div>
+              </div>
+              <button name="submit" id="contact-send" class="text-center btn btn-primary form-control">Send</button>
+           </form>
