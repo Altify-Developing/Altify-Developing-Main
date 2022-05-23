@@ -52,7 +52,7 @@
 
 #### 1. Search engine
 ##### - Current Search engines that are supported by my advertising technique are - Bing, Yahoo, and Google.
-##### - Use search term Altify developing for best results, in other search engines just use [url](https://altify-developing-001.netlify.app/)
+##### - Use search term Altify developing for best results, in other search engines just use [url](https://altify-developing-001.netlify.app/?ref=github)
 
 ## LICENSE
 MIT
