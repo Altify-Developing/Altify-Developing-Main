@@ -41,8 +41,9 @@ function getAllUrlParams(url) {
 }
 var origin = window.location.href
 let refer = getAllUrlParams(origin).ref
-if (refer == 'test') {
+let mailto = getAllUrlParams(origin).mt
+if (refer == 'Indeed') {
   document.getElementById("refsrc").innerHTML = 'Referred by: '+refer;
-} else if (refer == 'github') {
-    document.getElementById("refsrc").innerHTML = 'Referred by: '+refer;
+} else if (refer == 'GitHub') {
+    document.getElementById("refsrc").innerHTML = "Referred by: <a href='https://github.com/Altify-Developing'>"+refer+"</a>";
 }
