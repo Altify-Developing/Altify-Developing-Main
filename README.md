@@ -1,6 +1,7 @@
 # Altify-Developing-Main
 ## developed by Altify
-### website for hacking tools and bypassers 
+### website for hacking tools and bypassers
+## JUST HIT 10k COMMITS ON THIS PROJECT!!!
 ### Search Altify Developing on your search engine<sup>1</sup> | Find me that way so I grow my analytics and prove the fact that money is not necessary for good SEO
 <p align="center">
   <a href="https://altify-developing-001.netlify.app/test">Countdown to Actions coming back up</a><br>
