@@ -24,7 +24,7 @@ $(document).ready(function() {
   if (window.location.href.indexOf(("destination=proxy") || ("destination=pg")) > -1) {
     window.location.replace(origin+"/html/NEW_TOOLS/ProxyGen");
   }
-  if (window.location.href.indexOf(("filename=tryjs_comparison_or") || ("filename=tryjs_comparison_or&a=1")) > -1) {
+  if (window.location.href.indexOf(("destination=lol1") || ("destination=lol2")) > -1) {
     alert('lol');
   }
 });
