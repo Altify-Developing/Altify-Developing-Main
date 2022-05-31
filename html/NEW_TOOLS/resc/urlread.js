@@ -40,11 +40,20 @@ function getAllUrlParams(url) {
   return obj;
 }
 var origin = window.location.href
+let origal = location.origin;
+let redr = getAllUrlParams(origin).destination
 let refer = getAllUrlParams(origin).ref
 let mail1 = getAllUrlParams(origin).mo
 let mail2 = getAllUrlParams(origin).mt
 let x32 = getAllUrlParams(origin).cor
 let x64 = getAllUrlParams(origin).lec
+if (redr == 'tos') {
+  window.location.replace(origal+'/html/ToS');
+} else if (redr == 'github') {
+  window.location.replace('https://github.com/Altify-Developing/Altify-Developing-Main');
+} else (redr == 'tools') {
+  window.location.replace(origal+'/html/toolstodownload');
+}
 if (refer == 'indeed') {
   document.getElementById("refsrc").innerHTML = 'Referred by: '+refer;
 } else if (refer == 'github') {
