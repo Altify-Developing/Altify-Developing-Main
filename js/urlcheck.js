@@ -21,7 +21,7 @@ $(document).ready(function() {
   if (window.location.href.indexOf("destination=calculator") > -1) {
     window.location.replace(origin+"/html/new_tools/trig_calc/calculator");
   }
-  if (window.location.href.indexOf("destination=proxy") || ("destination=pg") > -1) {
+  if (window.location.href.indexOf(("destination=proxy") || ("destination=pg")) > -1) {
     window.location.replace(origin+"/html/NEW_TOOLS/ProxyGen");
   }
 });
