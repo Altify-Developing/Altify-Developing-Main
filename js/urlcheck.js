@@ -1,14 +1,5 @@
 $(document).ready(function() {
   let origin = location.origin;
-  if (window.location.href.indexOf("destination=tos") > -1) {
-    window.location.replace(origin+"/html/ToS.html");
-  }
-  if (window.location.href.indexOf("destination=github") > -1) {
-    window.location.replace("https://github.com/Altify-Developing/Altify-Developing-Main");
-  }
-  if (window.location.href.indexOf("destination=tools") > -1) {
-    window.location.replace(origin+"/html/toolstodownload");
-  }
   if (window.location.href.indexOf("destination=current") > -1) {
     window.location.replace(origin+"/currentcount");
   }
