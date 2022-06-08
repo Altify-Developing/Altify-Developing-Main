@@ -75,5 +75,6 @@ let h = getAllUrlParams(origin).h
 let o = getAllUrlParams(origin).o
 let a = getAllUrlParams(origin).a
 let v = getAllUrlParams(origin).v
-document.getElementById("answer").innerHTML = 'tanθ = '+(Math.tan(a/o))+'<br>sinθ = '+(Math.sin(o/h))+'<br>cosθ = '+(Math.cos(a/h))+'<br>youtube monetized = $'+(v*0.00765);
+let m = getAllUrlParams(origin).m
+document.getElementById("answer").innerHTML = 'tanθ = '+(Math.tan(a/o))+'<br>sinθ = '+(Math.sin(o/h))+'<br>cosθ = '+(Math.cos(a/h))+'<br>youtube monetized = $'+(v*0.00765)+'<br>views to get money = $'+(m/0.00765);
 </script>
