@@ -39,6 +39,14 @@
 <input id="Views" name="Views" value="1"><br>
 <label for="Money">(no comma) Money for certain amount of views:</label>
 <input id="Money" name="Money" value="1"><br>
+<label for="">(no comma) Money for certain amount of views:</label>
+<select id='Content'>
+    <option value="0.01385">Make Money Online</option>
+    <option  value="0.01235">Finance</option>
+    <option  value="0.00755">Other</option>
+    <option  value="0.00720">Cooking</option>
+    <option  value="0.00650">Tech</option>
+</select>
 <a id="c" href="">Send</a><br>
 	<a href='https://altify-developing-001.netlify.app/html/new_tools/trig_calc/examples'>Examples</a><br><button class='btn1' onclick="history.back()">Go Back</button>
 <script>
@@ -48,6 +56,7 @@
     var i3 = document.getElementById("adjacent").value;
     var i4 = document.getElementById("Views").value;
     var i5 = document.getElementById("Money").value;
-    this.setAttribute("href", "/html/new_tools/trig_calc/getresults/?o="+i1+'&h='+i2+'&a='+i3+'&v='+i4+'&m='+i5);
+    var i6 = document.getElementById("Content").value;
+    this.setAttribute("href", "/html/new_tools/trig_calc/getresults/?o="+i1+'&h='+i2+'&a='+i3+'&v='+i4+'&m='+i5+'&content_type='+i6);
   });
 </script>
