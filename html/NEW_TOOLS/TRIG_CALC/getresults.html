@@ -77,8 +77,8 @@ let o = getAllUrlParams(origin).o
 let a = getAllUrlParams(origin).a
 let v = getAllUrlParams(origin).v
 let m = getAllUrlParams(origin).m
-let mod = getAllUrlParams(origin).content_type
-let arg = mod.toExponential(v);
+let mod = getAllUrlParams(origin).type
+let arg = mod.toExponential(1.001);
 let product1 = (v*arg)
 let product2 = (m*arg)
 document.getElementById("answer").innerHTML = 'tanθ = '+(Math.tan(a/o))+'<br>sinθ = '+(Math.sin(o/h))+'<br>cosθ = '+(Math.cos(a/h))+'<br>youtube monetized = ~ $'+product1+'<br>views to get money = ~'+product2;
