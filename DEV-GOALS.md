@@ -23,3 +23,4 @@ Requirments:
 #### 3. SEO Resources
 Requirments:
 - Create [addthis.com](https://www.addthis.com/) account
+- Create [hotjar](https://www.hotjar.com/) account
