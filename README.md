@@ -37,6 +37,12 @@
 
 [Trig Calculator](https://altify-developing-001.netlify.app/html/new_tools/trig_calc/calculator)
 
+##### YouTube Monetization Calculator - /html/NEW_TOOLS/TRIG_CALC/calculator.html
+<p>YouTube Monetization Calculator | Find out how much money you will make | 2-Way Conversions | 89-95% Accuracy | 100% FREE AND WORKS ON ALL DEVICES</p>
+<img src="https://github.com/Altify-Developing/Altify-Developing-Main/raw/main/html/NEW_TOOLS/TRIG_CALC/YT.Calc.gif"></img>
+
+[YouTube Monetization Calculator](https://altify-developing-001.netlify.app/html/new_tools/trig_calc/calculator)
+
 (stats)
 
 [Altify](https://github.com/Altify-Development)
