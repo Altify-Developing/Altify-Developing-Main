@@ -5,7 +5,6 @@
 ## JUST HIT 10k COMMITS ON THIS PROJECT!!!
 ### Search Altify Developing on your search engine<sup>1</sup> | Find me that way so I grow my analytics and prove the fact that money is not necessary for good SEO
 <p align="center">
-  <a href="https://altify-developing-001.netlify.app/test">Countdown to Actions coming back up</a><br>
   <a href="https://github.com/Altify-Developing/Altify-Developing-Main/releases/latest"><img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/Altify-Developing/Altify-Developing-Main?color=success"></a>
 <a href="https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg"><img alt="GitHub Repo Views" src="https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg"></a>
 </p>
