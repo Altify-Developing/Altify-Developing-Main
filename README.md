@@ -71,11 +71,11 @@ MIT
 - [cinotify/github-action](https://github.com/cinotify/github-action)
 
 ##### Last Updated:
-###### 5/24/22
+###### 8/24/22
 
 
 
-
+Views as of 8/24/22 - 308,284
 
 
 
