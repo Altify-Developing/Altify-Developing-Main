@@ -1,6 +1,7 @@
 # Altify-Developing-Main
 # Download the online runner - [download](https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/AllTools.zip?raw=true)
 # Current Online Version: v1.0.7-1 - Official Release 7.1
+# Join discord - [Discord Link](https://joindiscord.netlify.app)
 ## developed by Altify
 ### website for hacking tools and bypassers
 ## JUST HIT 10k COMMITS ON THIS PROJECT!!!
@@ -11,6 +12,8 @@
 </p>
 
 #### NEWEST RELEASES
+
+##### My Newest Tool: [Fake Person Creator](https://github.com/Altify-Development/Fake-Person-Generator)
 
 ##### ONLINE ACCOUNT GENERATOR - /html/OAG/OAG.html
 <img src="https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/html/OAG/img/AltifyOAG.gif"></img>
