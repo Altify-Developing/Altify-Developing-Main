@@ -70,10 +70,102 @@
 MIT
 
 ## Special Thanks
-- [ad-m/github-push-action](https://github.com/ad-m/github-push-action)
-- [William](https://github.com/williameom5678)
-- [GuillaumeFalourd/clone-github-repo-action@v2](https://github.com/GuillaumeFalourd/clone-github-repo-action)
-- [cinotify/github-action](https://github.com/cinotify/github-action)
+```
+@cinotify
+cinotify / github-action cinotify/github-action
+1.1.0
+@GuillaumeFalourd
+GuillaumeFalourd / clone-github-repo-action GuillaumeFalourd/clone-github-repo-action
+2
+@actions
+actions / checkout actions/checkout
+3
+@Altify-Developing
+Altify-Developing / ViewBot-and-CloneBot Altify-Developing/ViewBot-and-CloneBot
+0.0.0-2
+@browser-actions
+browser-actions / setup-chrome browser-actions/setup-chrome
+latest
+@browser-actions
+browser-actions / setup-chrome browser-actions/setup-chrome
+latest
+@browser-actions
+browser-actions / setup-edge browser-actions/setup-edge
+latest
+@actions
+actions / checkout actions/checkout
+2
+@ad-m
+ad-m / github-push-action ad-m/github-push-action
+0.6.0
+@browser-actions
+browser-actions / setup-chrome browser-actions/setup-chrome
+latest
+@actions
+actions / checkout actions/checkout
+2
+@ad-m
+ad-m / github-push-action ad-m/github-push-action
+master
+@cinotify
+cinotify / github-action cinotify/github-action
+1.1.0
+@actions
+actions / checkout actions/checkout
+3
+@github
+github / codeql-action github/codeql-action/analyze
+2
+@github
+github / codeql-action github/codeql-action/autobuild
+2
+@github
+github / codeql-action github/codeql-action/init
+2
+@actions
+actions / github-script actions/github-script
+2.0.0
+@atlassian
+atlassian / gajira-create atlassian/gajira-create
+2.0.1
+@atlassian
+atlassian / gajira-login atlassian/gajira-login
+2.0.0
+@actions
+actions / checkout actions/checkout
+2
+@ad-m
+ad-m / github-push-action ad-m/github-push-action
+0.6.0
+@browser-actions
+browser-actions / setup-firefox browser-actions/setup-firefox
+latest
+@browser-actions
+browser-actions / setup-geckodriver browser-actions/setup-geckodriver
+latest
+@browser-actions
+browser-actions / setup-chrome browser-actions/setup-chrome
+latest
+@GuillaumeFalourd
+GuillaumeFalourd / clone-github-repo-action GuillaumeFalourd/clone-github-repo-action
+2
+@browser-actions
+browser-actions / setup-chrome browser-actions/setup-chrome
+latest
+@browser-actions
+browser-actions / setup-edge browser-actions/setup-edge
+latest
+@GuillaumeFalourd
+GuillaumeFalourd / clone-github-repo-action GuillaumeFalourd/clone-github-repo-action
+2
+@browser-actions
+browser-actions / setup-chrome browser-actions/setup-chrome
+latest
+@2captcha
+2captcha / 2captcha-python
+@psf
+psf / requests
+```
 
 ##### Last Updated:
 ###### 8/24/22
