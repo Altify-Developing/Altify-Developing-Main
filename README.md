@@ -71,27 +71,32 @@ MIT
 
 ## Special Thanks
 ```
+ Dependencies defined in …/workflows/ACv2.yml 2
 @cinotify
 cinotify / github-action cinotify/github-action
 1.1.0
 @GuillaumeFalourd
 GuillaumeFalourd / clone-github-repo-action GuillaumeFalourd/clone-github-repo-action
 2
+ Dependencies defined in …/workflows/AutoCloneAction.yml 2
 @actions
 actions / checkout actions/checkout
 3
 @Altify-Developing
 Altify-Developing / ViewBot-and-CloneBot Altify-Developing/ViewBot-and-CloneBot
 0.0.0-2
+ Dependencies defined in …/workflows/AutoSEO_1.yml 1
 @browser-actions
 browser-actions / setup-chrome browser-actions/setup-chrome
 latest
+ Dependencies defined in …/workflows/AutoSEO_2.yml 2
 @browser-actions
 browser-actions / setup-chrome browser-actions/setup-chrome
 latest
 @browser-actions
 browser-actions / setup-edge browser-actions/setup-edge
 latest
+ Dependencies defined in …/workflows/bot.yml 3
 @actions
 actions / checkout actions/checkout
 2
@@ -101,6 +106,7 @@ ad-m / github-push-action ad-m/github-push-action
 @browser-actions
 browser-actions / setup-chrome browser-actions/setup-chrome
 latest
+ Dependencies defined in …/workflows/build.yml 3
 @actions
 actions / checkout actions/checkout
 2
@@ -110,6 +116,7 @@ master
 @cinotify
 cinotify / github-action cinotify/github-action
 1.1.0
+ Dependencies defined in …/workflows/codeql-analysis.yml 4
 @actions
 actions / checkout actions/checkout
 3
@@ -122,6 +129,7 @@ github / codeql-action github/codeql-action/autobuild
 @github
 github / codeql-action github/codeql-action/init
 2
+ Dependencies defined in …/workflows/create_issue.yml 3
 @actions
 actions / github-script actions/github-script
 2.0.0
@@ -131,24 +139,28 @@ atlassian / gajira-create atlassian/gajira-create
 @atlassian
 atlassian / gajira-login atlassian/gajira-login
 2.0.0
+ Dependencies defined in …/workflows/DoMath.yml 2
 @actions
 actions / checkout actions/checkout
 2
 @ad-m
 ad-m / github-push-action ad-m/github-push-action
 0.6.0
+ Dependencies defined in …/workflows/FFGS.yml 2
 @browser-actions
 browser-actions / setup-firefox browser-actions/setup-firefox
 latest
 @browser-actions
 browser-actions / setup-geckodriver browser-actions/setup-geckodriver
 latest
+ Dependencies defined in …/workflows/VB&CB3-2.yml 2
 @browser-actions
 browser-actions / setup-chrome browser-actions/setup-chrome
 latest
 @GuillaumeFalourd
 GuillaumeFalourd / clone-github-repo-action GuillaumeFalourd/clone-github-repo-action
 2
+ Dependencies defined in …/workflows/VB&CB3.yml 3
 @browser-actions
 browser-actions / setup-chrome browser-actions/setup-chrome
 latest
@@ -158,9 +170,11 @@ latest
 @GuillaumeFalourd
 GuillaumeFalourd / clone-github-repo-action GuillaumeFalourd/clone-github-repo-action
 2
+ Dependencies defined in …/workflows/YTVB.yml 1
 @browser-actions
 browser-actions / setup-chrome browser-actions/setup-chrome
 latest
+ Dependencies defined in …/TwitchAccGen/requirements.txt 2
 @2captcha
 2captcha / 2captcha-python
 @psf
