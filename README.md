@@ -1,5 +1,4 @@
 # Altify-Developing-Main
-# Download the online runner - [download](https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/AllTools.zip?raw=true)
 # Current Online Version: v1.0.7-1 - Official Release 7.1
 # Join discord - [Discord Link](https://joindiscord.netlify.app)
 ## developed by Altify
@@ -18,27 +17,27 @@
 <img src='https://altify-developing-001.netlify.app/img/fpc.gif'>
 
 ##### ONLINE ACCOUNT GENERATOR - /html/OAG/OAG.html
-<img src="https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/html/OAG/img/AltifyOAG.gif"></img>
+<img src="https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/html/OAG/img/AltifyOAG.gif">
 
 [OAG](https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/html/OAG/OAG.html)
 
 ##### Javascript X-CSRF Token Gen for `<form></form>` and for urls
-<img src="https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/CSRF/CSRF.gif"></img>
+<img src="https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/CSRF/CSRF.gif">
 
 [x-csrf-gen](https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/CSRF/X-CSRF-GEN.html)
 
 ##### ONLINE TRIPLE-PROXY GENERATOR - /html/AJAX/info.html
-<img src="https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/html/AJAX/img/AltifyPrxGen.gif"></img>
+<img src="https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/html/AJAX/img/AltifyPrxGen.gif">
 
 [OTPG](https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/html/AJAX/info.html)
 
 ##### Responsive KeyLogger Online ( DOESN'T SAVE ) - /html/ResponsiveKeyLogger/info.html
-<img src="https://raw.githubusercontent.com/Altify-Developing/Altify-Developing-Main/main/html/ResponsiveKeyLogger/Example.gif"></img>
+<img src="https://raw.githubusercontent.com/Altify-Developing/Altify-Developing-Main/main/html/ResponsiveKeyLogger/Example.gif">
 
 [RKL](https://altify-developing-001.netlify.app/html/responsivekeylogger/info)
 
 ##### Trigonometry Calculator - /html/NEW_TOOLS/TRIG_CALC/calculator.html
-<img src="https://github.com/Altify-Developing/Altify-Developing-Main/raw/main/html/NEW_TOOLS/TRIG_CALC/PR.TrigCalc.gif"></img>
+<img src="https://github.com/Altify-Developing/Altify-Developing-Main/raw/main/html/NEW_TOOLS/TRIG_CALC/PR.TrigCalc.gif">
 
 [Trig Calculator](https://altify-developing-001.netlify.app/html/new_tools/trig_calc/calculator)
 
