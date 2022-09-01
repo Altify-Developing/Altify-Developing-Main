@@ -12,9 +12,5 @@ Requirments:
 - Create a self hosted runner that isn't really self hosted
   - Please help me if you can i am really stuck here, i am trying to make a windows emulator to do so, but onworks is very user-disfriendly
 
-#### 3. SEO Resources
-Requirments:
-- Create [addthis.com](https://www.addthis.com/) account
-- Create [hotjar](https://www.hotjar.com/) account
 
 Monetization - https://shorte.st/register/
