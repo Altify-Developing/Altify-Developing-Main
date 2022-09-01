@@ -48,6 +48,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+	<script>
+    /* Author: AdGlare Ad Server (https://www.adglare.com) */
+    function hasAdblock() {
+        var a = document.createElement('div');
+        a.innerHTML = '&nbsp;';
+        a.className = 'ads ad adsbox doubleclick ad-placement carbon-ads adglare';
+        a.style = 'width: 1px !important; height: 1px !important; position: absolute !important; left: -5000px !important; top: -5000px !important;';
+        var r = false;
+        try {
+            document.body.appendChild(a);
+            var e = document.getElementsByClassName('adsbox')[0];
+            if(e.offsetHeight === 0 || e.clientHeight === 0) r = true;
+            if(window.getComputedStyle !== undefined) {
+                var tmp = window.getComputedStyle(e, null);
+                if(tmp && (tmp.getPropertyValue('display') == 'none' || tmp.getPropertyValue('visibility') == 'hidden')) r = true;
+            }
+            document.body.removeChild(a);
+        } catch (e) {}
+        return r;
+    }
+    alert('Please Disable Your Adblocker: ' + hasAdblock());
+</script>
 	<script src="js/urlcheck.js"></script>
 	<script src='js/read.plugin.js' defer></script>
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
