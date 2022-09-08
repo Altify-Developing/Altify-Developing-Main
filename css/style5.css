@@ -1,6 +1,6 @@
 .btn-latest .latestbutton {
-  background-color: #4CAF50; /* Green */
-  border: 1px solid purple;
+  background-color: #aa57d4;
+  border: 1px solid green;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -11,8 +11,8 @@
   display: block;
 }
 .btn-latest .latest2button {
-  background-color: #4CAF50; /* Green */
-  border: 1px solid purple;
+  background-color: #aa57d4;
+  border: 1px solid green;
   color: white;
   padding: 15px 32px;
   text-align: center;
