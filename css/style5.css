@@ -10,7 +10,7 @@
   width: 150px;
   display: block;
 }
-.btn-latest .latest2button {
+.btn-latest .rowbutton {
   background-color: #aa57d4;
   border: 1px solid green;
   color: white;
@@ -20,8 +20,8 @@
   font-size: 16px;
   cursor: pointer;
   width: 150px;
+  float: right;
   display: block;
-  float: left;
 }
 
 .btn-latest .latestbutton:not(:last-child) {
@@ -32,10 +32,10 @@
   background-color: #3e8e41;
 }
 
-.btn-latest .latest2button:not(:last-child) {
+.btn-latest .rowbutton:not(:last-child) {
   border-bottom: none; /* Prevent double borders */
 }
 
-.btn-latest .latest2button:hover {
+.btn-latest .rowbutton:hover {
   background-color: #3e8e41;
 }
