@@ -31,3 +31,11 @@
 .btn-latest .latestbutton:hover {
   background-color: #3e8e41;
 }
+
+.btn-latest .latest2button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn-latest .latest2button:hover {
+  background-color: #3e8e41;
+}
