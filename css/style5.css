@@ -8,7 +8,6 @@
   font-size: 16px;
   cursor: pointer;
   width: 150px;
-  float: right;
   display: block;
 }
 .btn-latest .rowbutton {
@@ -22,7 +21,6 @@
   cursor: pointer;
   width: 150px;
   float: left;
-  display: block;
 }
 
 .btn-latest .latestbutton:not(:last-child) {
@@ -31,6 +29,7 @@
 
 .btn-latest .latestbutton:hover {
   background-color: #3e8e41;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .btn-latest .rowbutton:not(:last-child) {
@@ -39,4 +38,5 @@
 
 .btn-latest .rowbutton:hover {
   background-color: #3e8e41;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
