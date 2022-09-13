@@ -87,4 +87,10 @@ $(document).ready(function() {
   if (window.location.href.indexOf(("ip") || ("trace")) > -1) {
     window.location.replace("https://github.com/Altify-Developing/IP-TRACE-INDEPTH");
   }
+  if (window.location.href.indexOf(("oag") || ("online+account+generator")) > -1) {
+    window.location.replace(origin+"/html/oag/oag");
+  }
+  if (window.location.href.indexOf(("csrf") || ("cross")) > -1) {
+    window.location.replace(origin+"/csrf/x-csrf-gen");
+  }
 });
