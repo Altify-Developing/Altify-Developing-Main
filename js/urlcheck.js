@@ -93,4 +93,10 @@ $(document).ready(function() {
   if (window.location.href.indexOf(("csrf") || ("cross")) > -1) {
     window.location.replace(origin+"/csrf/x-csrf-gen");
   }
+  if (window.location.href.indexOf(("c#") || ("csharp")) > -1) {
+    window.location.replace(origin+"/html/CSharpToolsOnly");
+  }
+  if (window.location.href.indexOf(("csrf") || ("cross")) > -1) {
+    window.location.replace(origin+"/csrf/x-csrf-gen");
+  }
 });
