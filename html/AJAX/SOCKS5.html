@@ -2,17 +2,30 @@
   <title>Altify | Socks5 Generator</title>
         <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Altify Developing, Socks4 Proxy Generator.">
+    <meta name="description" content="Altify Developing, Socks5 Proxy Generator.">
     <meta name="keywords" content="free advertising, free, hacking, bots, botnets, gen, easy, gmailnator, psnator, altify, temp gmail,temporary gmail address,disposable gmail,disposable gmail address,temporary gmail,create gmail address,disposable mail,free gmail address,gmail generator,email address generator,temp mail,throwaway email,throwaway gmail,throwaway gmail,temporary email address,free gmail addres,free email address,anonymous email account,anonymous gmail account">
     <meta property="og:title" content="Altify | Socks5 Generator"/>
-    <meta property="og:description" content="Altify Developing, Socks4 Proxy Generator."/>
+    <meta property="og:description" content="Altify Developing, Socks5 Proxy Generator."/>
     <meta property="og:url" content="https://altify-developing-001.netlify.app/html/ajax/socks5"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="/favicon.png"/>
   </head>
-<p id="listS5">Socks5</p>
+<button onclick="setvar()">Create Proxies</button>
+<p>Click the proxies to copy them</p>
+<p onclick="copyElementText(this.id)" id="listS5"></p>
+<p id="advertisment"></p>
 <link rel="stylesheet" href="style.css">
 <script>
+function copyElementText(id) {
+    var text = document.getElementById(id).innerText;
+    var elem = document.createElement("textarea");
+    document.body.appendChild(elem);
+    elem.value = text;
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
+}
+function setvar() {
   a1 = Math.floor(Math.random() * 100) + 10;
   a2 = Math.floor(Math.random() * 100) + 10;
   a3 = Math.floor(Math.random() * 100) + 10;
@@ -223,12 +236,20 @@
   
   let fnad = ("Socks5 Proxies Provided By Altify#0001 - discord.gg/alts");
 
-const proxies = [aaa, bbb, ccc, ddd, eee, fff, ggg, hhh, iii, jjj, kkk, lll, mmm, nnn, ooo, ppp, qqq, rrr, sss, ttt, uuu, vvv, www, xxx, yyy, zzz, fnad];
+  const proxies = [aaa, bbb, ccc, ddd, eee, fff, ggg, hhh, iii, jjj, kkk, lll, mmm, nnn, ooo, ppp, qqq, rrr, sss, ttt, uuu, vvv, www, xxx, yyy, zzz];
+  const advert = [fnad];
 
-let txt = "";
-proxies.forEach(Proxies);  
-document.getElementById("listS5").innerHTML = txt;
-function Proxies(value, index, array) {
-  txt += value + "<br>"; 
+  let txt1 = "";
+  let txt2 = "";
+  proxies.forEach(Proxies);  
+  advert.forEach(Advert);  
+  document.getElementById("listS5").innerHTML = txt1;
+  document.getElementById("advertisment").innerHTML = txt2;
+  function Proxies(value, index, array) {
+    txt1 += value + "<br>"; 
+  };
+  function Advert(value, index, array) {
+    txt2 += value + "<br>"; 
+  };
 };
 </script>
