@@ -102,4 +102,13 @@ $(document).ready(function() {
   if (window.location.href.indexOf(("socks") || ("pg")) > -1) {
     window.location.replace(origin+"/html/ajax/info");
   }
+  if (window.location.href.indexOf("httpprox") > -1) {
+    window.location.replace(origin+"/html/ajax/http");
+  }
+  if (window.location.href.indexOf("s4") > -1) {
+    window.location.replace(origin+"/html/ajax/socks4");
+  }
+  if (window.location.href.indexOf("s5") > -1) {
+    window.location.replace(origin+"/html/ajax/socks5");
+  }
 });
