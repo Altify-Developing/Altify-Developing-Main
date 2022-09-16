@@ -10,9 +10,22 @@
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="/favicon.png"/>
   </head>
-<p id="listS4">Socks4</p>
+<button onclick="setvar()">Create Proxies</button>
+<p>Click the proxies to copy them</p>
+<p onclick="copyElementText(this.id)" id="listS4"></p>
+<p id="advertisment"></p>
 <link rel="stylesheet" href="style.css">
 <script>
+function copyElementText(id) {
+    var text = document.getElementById(id).innerText;
+    var elem = document.createElement("textarea");
+    document.body.appendChild(elem);
+    elem.value = text;
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
+}
+function setvar() {
   a1 = Math.floor(Math.random() * 100) + 10;
   a2 = Math.floor(Math.random() * 100) + 10;
   a3 = Math.floor(Math.random() * 100) + 10;
@@ -223,12 +236,20 @@
   
   let fnad = ("Socks4 Proxies Provided By Altify#0001 - discord.gg/alts");
 
-const proxies = [aaa, bbb, ccc, ddd, eee, fff, ggg, hhh, iii, jjj, kkk, lll, mmm, nnn, ooo, ppp, qqq, rrr, sss, ttt, uuu, vvv, www, xxx, yyy, zzz, fnad];
+  const proxies = [aaa, bbb, ccc, ddd, eee, fff, ggg, hhh, iii, jjj, kkk, lll, mmm, nnn, ooo, ppp, qqq, rrr, sss, ttt, uuu, vvv, www, xxx, yyy, zzz];
+  const advert = [fnad];
 
-let txt = "";
-proxies.forEach(Proxies);  
-document.getElementById("listS4").innerHTML = txt;
-function Proxies(value, index, array) {
-  txt += value + "<br>"; 
+  let txt1 = "";
+  let txt2 = "";
+  proxies.forEach(Proxies);  
+  advert.forEach(Advert);  
+  document.getElementById("listS4").innerHTML = txt1;
+  document.getElementById("advertisment").innerHTML = txt2;
+  function Proxies(value, index, array) {
+    txt1 += value + "<br>"; 
+  };
+  function Advert(value, index, array) {
+    txt2 += value + "<br>"; 
+  };
 };
 </script>
