@@ -12,7 +12,7 @@ $(document).ready(function() {
   if (window.location.href.indexOf("calculator") > -1) {
     window.location.replace(origin+"/html/new_tools/trig_calc/calculator");
   }
-  if (window.location.href.indexOf(("proxy") || ("pg")) > -1) {
+  if (window.location.href.indexOf(("oldproxy") || ("oldgen")) > -1) {
     window.location.replace(origin+"/html/NEW_TOOLS/ProxyGen");
   }
   if (window.location.href.indexOf(("new") || ("latest")) > -1) {
@@ -96,7 +96,10 @@ $(document).ready(function() {
   if (window.location.href.indexOf(("c#") || ("csharp")) > -1) {
     window.location.replace(origin+"/html/CSharpToolsOnly");
   }
-  if (window.location.href.indexOf(("csrf") || ("cross")) > -1) {
-    window.location.replace(origin+"/csrf/x-csrf-gen");
+  if (window.location.href.indexOf(("proxy") || ("triple")) > -1) {
+    window.location.replace(origin+"/html/ajax/info");
+  }
+  if (window.location.href.indexOf(("socks") || ("pg")) > -1) {
+    window.location.replace(origin+"/html/ajax/info");
   }
 });
