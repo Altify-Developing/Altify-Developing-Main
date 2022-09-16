@@ -10,9 +10,18 @@
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="/favicon.png"/>
   </head>
+<button onclick="gethttpclip()">Copy text</button>
 <p id="listHTTP"></p>
+<p id="advertisment"></p>
 <link rel="stylesheet" href="style.css">
 <script>
+  function gethttpclip() {
+  var proxyhttp = document.getElementById("listHTTP");
+  proxyhttp.select();
+  proxyhttp.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(proxyhttp.value);
+  alert("Copied the text: " + proxyhttp.value);
+}
   a1 = Math.floor(Math.random() * 100) + 10;
   a2 = Math.floor(Math.random() * 100) + 10;
   a3 = Math.floor(Math.random() * 100) + 10;
@@ -223,12 +232,19 @@
   
   let fnad = ("HTTP Proxies Provided By Altify#0001 - discord.gg/alts");
 
-const proxies = [aaa, bbb, ccc, ddd, eee, fff, ggg, hhh, iii, jjj, kkk, lll, mmm, nnn, ooo, ppp, qqq, rrr, sss, ttt, uuu, vvv, www, xxx, yyy, zzz, fnad];
+const proxies = [aaa, bbb, ccc, ddd, eee, fff, ggg, hhh, iii, jjj, kkk, lll, mmm, nnn, ooo, ppp, qqq, rrr, sss, ttt, uuu, vvv, www, xxx, yyy, zzz];
+const advert = [fnad];
 
-let txt = "";
+let txt1 = "";
+let txt2 = "";
 proxies.forEach(Proxies);  
-document.getElementById("listHTTP").innerHTML = txt;
+advert.forEach(Advert);  
+document.getElementById("listHTTP").innerHTML = txt1;
+document.getElementById("advertisment").innerHTML = txt2;
 function Proxies(value, index, array) {
-  txt += value + "<br>"; 
+  txt1 += value + "<br>"; 
+};
+function Advert(value, index, array) {
+  txt2 += value + "<br>"; 
 };
 </script>
