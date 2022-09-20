@@ -79,6 +79,11 @@ function setvar() {
         wn3 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
         wn4 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
         let wnin = (wn1+'-'+wn2+'-'+wn3+'-'+wn4);
+        wm1 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+        wm2 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+        wm3 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+        wm4 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+        let wnin = (wm1+'-'+wm2+'-'+wm3+'-'+wm4);
         wo1 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
         wo2 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
         wo3 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
@@ -145,6 +150,7 @@ function setvar() {
   const proxies = [wain, wbin, wcin, wdin, wein, wfin, wgin, wfin, wgin, whin, whin, wiin, wjin, wkin, wlin, wmin, wnin, woin, wpin, wqin, wrin, wsin, wtin, wuin, wvin, wwin, wxin, wyin, wzin];
   
   let txt1 = "";
+  let txt2 = "";
   proxies.forEach(Proxies);
   document.getElementById("wintotal").innerHTML = txt1;
   function Proxies(value, index, array) {
