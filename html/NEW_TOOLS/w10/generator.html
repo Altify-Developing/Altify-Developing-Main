@@ -1,0 +1,14 @@
+<script>
+  function randomString(length, chars) {
+    refcount = Math.floor(Math.random() * 100000) + 1;
+    var result = '';
+    for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+    return result;
+    }
+    w1 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    w2 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    w3 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    w4 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    document.getElementById("win1").innerHTML = (w1+"-"w2+"-"w3+"-"w4+"-");
+</script>
+<p id='win1'></p>
