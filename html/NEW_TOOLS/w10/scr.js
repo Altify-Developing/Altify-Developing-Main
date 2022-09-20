@@ -14,7 +14,7 @@ function copyElementText(id) {
     return result;
   }
 function spam() {
-    setInterval(setvarcapture, 1000)
+    setInterval(setvarcapture, 200)
 }
 function setvarcapture() {
         wa1 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
