@@ -83,7 +83,7 @@ function setvar() {
         wm2 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
         wm3 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
         wm4 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
-        let wnin = (wm1+'-'+wm2+'-'+wm3+'-'+wm4);
+        let wmin = (wm1+'-'+wm2+'-'+wm3+'-'+wm4);
         wo1 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
         wo2 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
         wo3 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
@@ -152,7 +152,9 @@ function setvar() {
   let txt1 = "";
   let txt2 = "";
   proxies.forEach(Proxies);
+  advert.forEach(Advert);
   document.getElementById("wintotal").innerHTML = txt1;
+  document.getElementById("advert").innerHTML = txt2;
   function Proxies(value, index, array) {
     txt1 += value + "<br>"; 
   };
