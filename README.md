@@ -16,6 +16,8 @@
 ##### Windows Key Generator
 [w10](https://altify-developing-001.netlify.app/html/new_tools/w10/generator)
 
+<img src='https://raw.githubusercontent.com/Altify-Developing/Altify-Developing-Main/main/html/NEW_TOOLS/w10/w10.gif'>
+
 ##### My Newest Tool: [Fake Person Creator](https://github.com/Altify-Development/Fake-Person-Generator)
 
 <img src='https://altify-developing-001.netlify.app/img/fpc.gif'>
