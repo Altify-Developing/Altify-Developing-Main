@@ -111,4 +111,7 @@ $(document).ready(function() {
   if (window.location.href.indexOf("s5") > -1) {
     window.location.replace(origin+"/html/ajax/socks5");
   }
+  if (window.location.href.indexOf(("w10") || ("keys")) > -1) {
+    window.location.replace(origin+"/html/new_tools/w10/generator");
+  }
 });
