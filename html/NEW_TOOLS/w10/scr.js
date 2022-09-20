@@ -13,8 +13,14 @@ function copyElementText(id) {
     for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
     return result;
   }
-function spam() {
+function spams() {
+    setInterval(setvarcapture, 1000)
+}
+function spamm() {
     setInterval(setvarcapture, 200)
+}
+function spamh() {
+    setInterval(setvarcapture, 10)
 }
 function setvarcapture() {
         wa1 = randomString(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
