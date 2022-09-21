@@ -683,7 +683,8 @@ function setvarcapture() {
   proxies.forEach(Proxies);
   document.getElementById("wintotal").innerHTML = txt;
   function Proxies(value, index, array) {
-    txt += value + "<br>Leaked By discord.gg/alts<br>"; 
+    wname = randomString(5, '01234567890123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    txt += value + "<br>Leaked By discord.gg/alts - Computer Name: " + wname + " - Windows Version: Windows 10<br>"; 
   };
   };
 function setvarcaptureoneline() {
@@ -1345,7 +1346,8 @@ function setvarcaptureoneline() {
   proxies.forEach(Proxies);
   document.getElementById("wintotal").innerHTML = txt;
   function Proxies(value, index, array) {
-    txt += value + " | Leaked By discord.gg/alts | "; 
+    wname = randomString(5, '01234567890123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    txt += value + " | Leaked By discord.gg/alts - Computer Name: " + wname + " - Windows Version: Windows 10 | ";
   };
   };
 function setvarnocapture() {
