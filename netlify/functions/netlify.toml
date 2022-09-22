@@ -1,0 +1,40 @@
+# Production context:
+# All deploys from the main repository branch
+# will inherit these settings. Be mindful
+# when using this option and avoid committing
+# sensitive values to public source repositories.
+[context.production]
+  command = "make production"
+  # Deploys from main branch run this plugin in the build.
+  # Plugins context requires double brackets.
+  [[context.production.plugins]]
+    package = "@netlify/plugin-sitemap"
+
+# Deploy Preview context:
+# All deploys generated from a pull/merge request
+# will inherit these settings. Be mindful
+# when using this option and avoid committing
+# sensitive values to public source repositories.
+
+# Branch deploy context:
+# All deploys that are not from a pull/merge request
+# or from the production branch will inherit these settings.
+[context.branch-deploy]
+  command = "make staging"
+
+# Dev context:
+# Environment variables set here are available for local
+# development environments run using Netlify Dev. These
+# values can be overwritten on branches that have a more
+# specific branch context configured.
+[context.dev.environment]
+  NODE_ENV = "development"
+
+# Specific branch context:
+# Deploys from this branch will take these settings
+# and override their current ones.
+[context.feature]
+  command = "make feature"
+
+[context."features/branch"]
+  command = "docs"
