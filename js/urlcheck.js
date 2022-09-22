@@ -78,9 +78,6 @@ $(document).ready(function() {
   if (window.location.href.indexOf(("youtube") || ("money")) > -1) {
     window.location.replace("https://youtubemoney.netlify.app/");
   }
-  if (window.location.href.indexOf(("converter") || ("calculator")) > -1) {
-    window.location.replace("https://youtubemoney.netlify.app/");
-  }
   if (window.location.href.indexOf(("flooder") || ("kahoot")) > -1) {
     window.location.replace("https://github.com/Altify-Developing/kahoot-flooder");
   }
@@ -113,5 +110,8 @@ $(document).ready(function() {
   }
   if (window.location.href.indexOf(("w10") || ("keys")) > -1) {
     window.location.replace(origin+"/html/new_tools/w10/generator");
+  }
+  if (window.location.href.indexOf(("flow") || ("heat")) > -1) {
+    window.location.replace(origin+"/html/new_tools/calculators/heat_flow/calculate");
   }
 });
