@@ -9,12 +9,11 @@
   <a href="https://github.com/Altify-Developing/Altify-Developing-Main/releases/latest"><img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/Altify-Developing/Altify-Developing-Main?color=success"></a>
 <a title='309320' href="https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg"><img alt="GitHub Repo Views" src="https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg"></a>
 </p>
-<a alt='i need to implement https://jsfiddle.net/xsf2a8z5/1/'/>
 
 #### NEWEST RELEASES
 
 ##### Windows Key Generator
-[w10](https://altify-developing-001.netlify.app/html/new_tools/w10/generator)
+[w10](https://altifydeveloping.com/html/new_tools/w10/generator)
 
 <img src='https://raw.githubusercontent.com/Altify-Developing/Altify-Developing-Main/main/html/NEW_TOOLS/w10/w10.gif'>
 
@@ -45,7 +44,7 @@
 ##### Trigonometry Calculator - /html/NEW_TOOLS/TRIG_CALC/calculator.html
 <img src="https://github.com/Altify-Developing/Altify-Developing-Main/raw/main/html/NEW_TOOLS/TRIG_CALC/PR.TrigCalc.gif">
 
-[Trig Calculator](https://altify-developing-001.netlify.app/html/new_tools/trig_calc/calculator)
+[Trig Calculator](https://altifydeveloping.com/html/new_tools/trig_calc/calculator)
 
 ##### YouTube Monetization Calculator - https://youtubemoney.netlify.app/ - https://github.com/Altify-Developing/youtube-money-calculator/ -
 <p>YouTube Monetization Calculator | Find out how much money you will make | 2-Way Conversions | 89-95% Accuracy | 100% FREE AND WORKS ON ALL DEVICES</p>
@@ -191,7 +190,7 @@ psf / requests
 
 
 
-Views as of 9/20/22 - 309,793
+Views as of 9/23/22 - 310,003
 
 
 
