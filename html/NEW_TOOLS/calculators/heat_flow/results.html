@@ -76,8 +76,8 @@ let m = getAllUrlParams(origin).m
 let s = getAllUrlParams(origin).s
 let cc = getAllUrlParams(origin).cc
 let cf = getAllUrlParams(origin).cf
-document.getElementById("answer1").innerHTML = ("<p>When Measured In Celsius</p> "m*s*cc+"<p>C<sup>o</sup></p>");
+document.getElementById("answer1").innerHTML = ("<p>When Measured In Celsius</p> "+m*s*cc+"<p>C<sup>o</sup></p>");
 let c1 = (cf-32);
 let c2 = (c1*0.555555556);
-document.getElementById("answer2").innerHTML = ("<p>When Measured In Fahrenheit</p> "m*s*c2+"<p>C<sup>o</sup></p>");
+document.getElementById("answer2").innerHTML = ("<p>When Measured In Fahrenheit</p> "+m*s*c2+"<p>C<sup>o</sup></p>");
 </script>
