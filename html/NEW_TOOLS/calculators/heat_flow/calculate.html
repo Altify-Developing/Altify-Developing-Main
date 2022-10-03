@@ -8,10 +8,10 @@
     <meta name="robots" content="index, follow"/>
     <meta name="author" content="Altify Developing"/>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/>
-    <meta name="description" content="just put in the money you want to get and it tells you how many views you need to get. Best part is it is ad free and is as simple as humanly possible"/>
+    <meta name="description" content="Put in the numbers, get the results"/>
     <meta name="keywords" content="alt, ify, al, it, fy,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,alt ify, atify, dleovping, deveingp, developign,altigy, deviejmngl, altifty,altify,Altify,Developing,autoclone,clonebot,cloner,git clone, git commit, autocommit, commiter, automatic clone, github stats, stats bot, statbot, tracert, ip, grabber, grab, grabbing, indexer, google, chrome, ubuntu, latest, newest, recent, popular, how to, how, when, tut, tutorial, easy hacking, copy paste, copy, paste, copy & paste, Altify hacking tools for free,altify developing,altify dev,altify,free hacking tools,hacking tools,tools,autoclone,viewbot,github hacks,github shortcuts,github tools,free advertising,free,hacking,bots,botnets,temp gmail,temporary gmail address,disposable gmail,disposable gmail address,temporary gmail,create gmail address,disposable mail,free gmail address,gmail generator,email address generator,temp mail,throwaway email,throwaway gmail,throwaway gmail,temporary email address,free gmail addres,free email address,anonymous email account,anonymous gmail account"/>
     <meta property="og:title" content="Altify | Heat Flow Calculator" />
-    <meta property="og:description" content="just put in the money you want to get and it tells you how many views you need to get. Best part is it is ad free and is as simple as humanly possible" />
+    <meta property="og:description" content="Put in the numbers, get the results" />
     <meta property="og:url" content="https://altifydeveloping.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/favicon.png" />
@@ -36,18 +36,18 @@
 <input id="mass" name="mass" value="1"><br>
 <label for="spec">spec heat:</label>
 <input id="spec" name="spec" value="1"><br>
-<label for="changec">change in temp ( celsius ):</label><p>Leave '1' if fahrenheit</p>
-<input id="changec" name="changec" value="1"><br>
-<label for="changef">change in temp ( fahrenheit ):</label><p>Leave '1' if celsius</p>
-<input id="changef" name="changef" value="1"><br>
+<label for="init">initial temperature of system ( celsius ):</label>
+<input id="init" name="init" value="1"><br>
+<label for="final">final temperature of system ( celsius ):</label>
+<input id="final" name="final" value="1"><br>
 <a id="c" href="">Send</a><br>
-	<a href='/html/new_tools/trig_calc/examples'>Examples</a><br><button class='btn1' onclick="history.back()">Go Back</button>
+<button class='btn1' onclick="history.back()">Go Back</button>
 <script>
   document.getElementById("c").addEventListener("click", function() {
     var i1 = document.getElementById("mass").value;
     var i2 = document.getElementById("spec").value;
-    var i3 = document.getElementById("changec").value;
-    var i4 = document.getElementById("changef").value;
-    this.setAttribute("href", "/html/new_tools/calculators/heat_flow/results/?m="+i1+'&s='+i2+'&cc='+i3+'&cf='+i4);
+    var i3 = document.getElementById("init").value;
+    var i4 = document.getElementById("final").value;
+    this.setAttribute("href", "/html/new_tools/calculators/heat_flow/results/?m="+i1+'&s='+i2+'&i='+i3+'&f='+i4);
   });
 </script>
