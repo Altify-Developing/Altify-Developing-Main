@@ -17,7 +17,7 @@
 
 <img src='https://raw.githubusercontent.com/Altify-Developing/Altify-Developing-Main/main/html/NEW_TOOLS/w10/w10.gif'>
 
-#####[Fake Person Creator](https://github.com/Altify-Development/Fake-Person-Generator)
+##### [Fake Person Creator](https://github.com/Altify-Development/Fake-Person-Generator)
 
 <img src='https://altify-developing-001.netlify.app/img/fpc.gif'>
 
