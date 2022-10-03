@@ -1,6 +1,6 @@
 # Altify-Developing-Main
 # Current Online Version: v1.0.7-1 - Official Release 7.1
-# Join discord - [Discord Link](https://joindiscord.netlify.app)
+# Join discord - [Discord Link](https://discord.altifydeveloping.com/)
 ## developed by Altify
 ### website for hacking tools and bypassers
 ## JUST HIT 10k COMMITS ON THIS PROJECT!!!
