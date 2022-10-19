@@ -4,7 +4,7 @@
 ## developed by Altify
 ### website for hacking tools and bypassers
 ## JUST HIT 10k COMMITS ON THIS PROJECT!!!
-### Search Altify Developing on your search engine<sup>1</sup> | Find me that way so I grow my analytics and prove the fact that money is not necessary for good SEO
+### <a href='https://altifydeveloping.com/'>https://altifydeveloping.com/</a>
 <p align="center">
   <a href="https://github.com/Altify-Developing/Altify-Developing-Main/releases/latest"><img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/Altify-Developing/Altify-Developing-Main?color=success"></a>
 <a title='309320' href="https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg"><img alt="GitHub Repo Views" src="https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg"></a>
