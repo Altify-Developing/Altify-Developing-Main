@@ -34,4 +34,4 @@ User-agent: yahoo-blogs/v3.9
 Disallow: 
 User-agent: *
 Disallow: 
-Sitemap: http://altifydeveloping.com/sitemap.xml
+Sitemap: https://www.altifydeveloping.com/sitemap.xml
