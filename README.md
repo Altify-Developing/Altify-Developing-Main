@@ -19,7 +19,7 @@
 
 ##### [Fake Person Creator](https://github.com/Altify-Development/Fake-Person-Generator)
 
-<img src='https://altify-developing-001.netlify.app/img/fpc.gif'>
+<img src='https://www.altifydeveloping.com/img/fpc.gif'>
 
 ##### ONLINE ACCOUNT GENERATOR - /html/OAG/OAG.html
 <img src="https://github.com/Altify-Developing/Altify-Developing-Main/blob/main/html/OAG/img/AltifyOAG.gif?raw=true">
@@ -39,18 +39,18 @@
 ##### Responsive KeyLogger Online ( DOESN'T SAVE ) - /html/ResponsiveKeyLogger/info.html
 <img src="https://raw.githubusercontent.com/Altify-Developing/Altify-Developing-Main/main/html/ResponsiveKeyLogger/Example.gif">
 
-[RKL](https://altify-developing-001.netlify.app/html/responsivekeylogger/info)
+[RKL](https://www.altifydeveloping.com/html/responsivekeylogger/info)
 
 ##### Trigonometry Calculator - /html/NEW_TOOLS/TRIG_CALC/calculator.html
 <img src="https://github.com/Altify-Developing/Altify-Developing-Main/raw/main/html/NEW_TOOLS/TRIG_CALC/PR.TrigCalc.gif">
 
-[Trig Calculator](https://altifydeveloping.com/html/new_tools/trig_calc/calculator)
+[Trig Calculator](https://www.altifydeveloping.com/html/new_tools/trig_calc/calculator)
 
-##### YouTube Monetization Calculator - https://youtubemoney.netlify.app/ - https://github.com/Altify-Developing/youtube-money-calculator/ -
+##### YouTube Monetization Calculator - https://yt.altifydeveloping.com/ - https://github.com/Altify-Developing/youtube-money-calculator/ -
 <p>YouTube Monetization Calculator | Find out how much money you will make | 2-Way Conversions | 89-95% Accuracy | 100% FREE AND WORKS ON ALL DEVICES</p>
 <img src="https://github.com/Altify-Developing/Altify-Developing-Main/raw/main/html/NEW_TOOLS/TRIG_CALC/YT.Calc.gif"></img>
 
-[YouTube Monetization Calculator](https://youtubemoney.netlify.app/)
+[YouTube Monetization Calculator](https://yt.altifydeveloping.com/)
 
 (stats)
 
@@ -68,7 +68,7 @@
 
 #### 1. Search engine
 ##### - Current Search engines that are supported by my advertising technique are - Bing, Yahoo, and Google.
-##### - Use search term Altify developing for best results, in other search engines just use [url](https://altify-developing-001.netlify.app/?ref=github)
+##### - Use search term Altify developing for best results, in other search engines just use [url](https://www.altifydeveloping.com/?ref=github)
 
 ## LICENSE
 MIT
