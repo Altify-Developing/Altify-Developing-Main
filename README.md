@@ -10,6 +10,9 @@
 <a title='309320' href="https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg"><img alt="GitHub Repo Views" src="https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg"></a>
 </p>
 
+### Goal
+If we hit 25 Stars, I will make a tool that creates a unique encoder ( random randomness ) that only you have ( 1 in 4.1 quintillion chance).
+
 #### NEWEST RELEASES
 
 ##### My Newest Tool:  Windows Key Generator
