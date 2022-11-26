@@ -11,7 +11,7 @@
 </p>
 
 ### Goal
-If we hit 25 Stars, I will make a tool that creates a unique encoder ( random randomness ) that only you have ( 1 in 4.1 quintillion chance).
+25 Stars - ✅ - [View Tool](https://github.com/Altify-Developing/Multi-Encoder)
 
 #### NEWEST RELEASES
 
