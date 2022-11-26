@@ -10,7 +10,8 @@
 <a title='309320' href="https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg"><img alt="GitHub Repo Views" src="https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg"></a>
 </p>
 
-### Goal
+### Goals
+30 Stars - ❌ - Full Combo Cleaner for UHQ Combolists
 25 Stars - ✅ - [View Tool](https://github.com/Altify-Developing/Multi-Encoder)
 
 #### NEWEST RELEASES
