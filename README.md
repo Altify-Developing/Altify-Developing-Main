@@ -11,7 +11,9 @@
 </p>
 
 ### Goals
+
 30 Stars - ❌ - Full Combo Cleaner for UHQ Combolists
+
 25 Stars - ✅ - [View Tool](https://github.com/Altify-Developing/Multi-Encoder)
 
 #### NEWEST RELEASES
