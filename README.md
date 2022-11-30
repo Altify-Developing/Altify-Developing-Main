@@ -14,7 +14,7 @@
 
 30 Stars - ❌ - Full Combo Cleaner for UHQ Combolists
 
-25 Stars - ✅ - [View Tool](https://github.com/Altify-Developing/Multi-Encoder)
+25 Stars - ✅ - [View Tool](https://github.com/Altify-Developing/Multi-Encoder) ( Multi Encoder )
 
 #### NEWEST RELEASES
 
