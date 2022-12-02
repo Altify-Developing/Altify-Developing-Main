@@ -12,6 +12,14 @@
 
 ### Goals
 
+50 Stars - ❌ - Discord.js Custom Generator bot
+
+45 Stars - ❌ - Free Large File Storage ( 30gb per file limit )
+
+40 Stars - ❌ - Photo Voting Game
+
+35 Stars - ❌ - Blogging Website Template
+
 30 Stars - ❌ - Full Combo Cleaner for UHQ Combolists
 
 25 Stars - ✅ - [View Tool](https://github.com/Altify-Developing/Multi-Encoder) ( Multi Encoder )
