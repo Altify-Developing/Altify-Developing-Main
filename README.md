@@ -20,9 +20,9 @@
 
 35 Stars - ❌ - Blogging Website Template
 
-30 Stars - ❌ - Full Combo Cleaner for UHQ Combolists
+30 Stars - ❌ - [View Tool](https://github.com/Altify-Development/combocleaner-custom) ( Full Combo Cleaner for UHQ Combolists ) Unlocked 12/7/22
 
-25 Stars - ✅ - [View Tool](https://github.com/Altify-Developing/Multi-Encoder) ( Multi Encoder )
+25 Stars - ✅ - [View Tool](https://github.com/Altify-Developing/Multi-Encoder) ( Multi Encoder ) Unlocked 11/28/22
 
 #### NEWEST RELEASES
 
