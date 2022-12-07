@@ -14,7 +14,7 @@
 
 50 Stars - ❌ - Discord.js Custom Generator bot
 
-45 Stars - ❌ - Free Large File Storage ( 30gb per file limit )
+45 Stars - ❌ - Free Large File Storage ( Unlimited uploads, no limits )
 
 40 Stars - ❌ - Photo Voting Game
 
