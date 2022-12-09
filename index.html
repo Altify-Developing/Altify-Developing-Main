@@ -52,6 +52,22 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+	
+  <script>
+    window.MashSettings = {
+      id: "41a8d91f-a701-4f3a-8ea1-52793ca299e2"
+    };
+    var loader = function () {
+      window.Mash.init();
+    };
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.defer = true;
+    script.onload = loader;
+    script.src = "https://wallet.getmash.com/sdk/sdk.js";
+    var head = document.getElementsByTagName("head")[0];
+    head.appendChild(script);
+  </script>
 	<script src="js/urlcheck.js"></script>
 	<script src='js/read.plugin.js' defer></script>
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
