@@ -14,11 +14,11 @@
 
 50 Stars - ❌ - Discord.js Custom Generator bot
 
-45 Stars - ❌ - Free Large File Storage ( Unlimited uploads, no limits )
+45 Stars - ❌ - Free Large File Storage ( Unlimited uploads, no limits {as long as you dont set them} )
 
 40 Stars - ❌ - Photo Voting Game
 
-35 Stars - ❌ - Blogging Website Template
+35 Stars - ✅ - [View Tool](https://github.com/Altify-Developing/Blogging-Service-Template) ( Blogging Website Template ) Unlocked 12/14/22
 
 30 Stars - ✅ - [View Tool](https://github.com/Altify-Development/combocleaner-custom) ( Full Combo Cleaner for UHQ Combolists ) Unlocked 12/7/22
 
