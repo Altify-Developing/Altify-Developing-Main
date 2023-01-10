@@ -1,5 +1,5 @@
 # Altify-Developing-Main
-# Current Online Version: v1.0.7-1 - Official Release 7.1
+# Current Online Version: v1.4.5.7 - Official Release 8.4
 # Join discord - [Discord Link](https://discord.altifydeveloping.com/)
 ## developed by Altify
 ### website for hacking tools and bypassers
