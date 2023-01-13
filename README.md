@@ -24,7 +24,7 @@
 
 45 Stars - ❌ - Free Large File Storage ( Unlimited uploads, no limits {as long as you dont set them} )
 
-40 Stars - ✅ - Photo Voting Game [View Tool](https://github.com/Altify-Developing/Photo-Voting-Website) Unlocked 1/12/23
+40 Stars - ✅ - [View Tool](https://github.com/Altify-Developing/Photo-Voting-Website) ( Photo Voting Game ) Unlocked 1/12/23
 
 35 Stars - ✅ - [View Tool](https://github.com/Altify-Developing/Blogging-Service-Template) ( Blogging Website Template ) Unlocked 12/14/22
 
