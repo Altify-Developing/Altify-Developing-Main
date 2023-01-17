@@ -12,6 +12,8 @@
 
 ### Goals
 
+75 Stars - ❌ - GitHub Auto Cloner ( for stats )
+
 70 Stars - ❌ - Email Bomber Discord Bot ( Not Source )
 
 65 Stars - ❌ - Discord Account Onliner ( Works for normal accounts and bots )
