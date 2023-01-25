@@ -37,10 +37,10 @@ $(document).ready(function() {
     window.location.replace("https://github.com/Altify-Development/Gmail-Generator-Python");
   }
   if (window.location.href.indexOf(("discord") || ("join")) > -1) {
-    window.location.replace("https://joindiscord.netlify.app/");
+    window.location.replace("https://discord.altifydeveloping.com/");
   }
   if (window.location.href.indexOf(("help") || ("faq")) > -1) {
-    window.location.replace("https://joindiscord.netlify.app/");
+    window.location.replace("https://discord.altifydeveloping.com/");
   }
   if (window.location.href.indexOf(("input") || ("blocker")) > -1) {
     window.location.replace("https://github.com/Altify-Development/Keyboard-and-mouse-Input-Blocker");
@@ -69,7 +69,7 @@ $(document).ready(function() {
   if (window.location.href.indexOf("google") > -1) {
     window.location.replace("https://github.com/Altify-Development/Google-Account-Generator-Python");
   }
-  if (window.location.href.indexOf(("anticlose") || ("")) > -1) {
+  if (window.location.href.indexOf("anticlose") > -1) {
     window.location.replace("https://github.com/Altify-Development/Anti-Close-Keylogger-AutoHotKey");
   }
   if (window.location.href.indexOf("main") > -1) {
@@ -113,5 +113,26 @@ $(document).ready(function() {
   }
   if (window.location.href.indexOf(("flow") || ("heat")) > -1) {
     window.location.replace(origin+"/html/new_tools/calculators/heat_flow/calculate");
+  }
+  if (window.location.href.indexOf(("encoder") || ("encrypt")) > -1) {
+    window.location.replace("https://replit.com/@Altify-Developm/Multi-encoder?v=1");
+  }
+  if (window.location.href.indexOf("blog") > -1) {
+    window.location.replace("https://blogging-service-template.altify-developm.repl.co/");
+  }
+  if (window.location.href.indexOf(("file") || ("storage")) > -1) {
+    window.location.replace("https://storage.altifydeveloping.com");
+  }
+  if (window.location.href.indexOf(("wheel") || ("names")) > -1) {
+    window.location.replace("https://wheel.altifydeveloping.com");
+  }
+  if (window.location.href.indexOf(("blocked") || ("goguardian")) > -1) {
+    window.location.replace("https://Fake-GoGuardian-Blocked-Page.altify-developm.repl.co");
+  }
+  if (window.location.href.indexOf(("game") || ("chicken")) > -1) {
+    window.location.replace("https://Ballistic-Chickens-but-everything-is-much-cheaper.altify-developm.repl.co");
+  }
+  if (window.location.href.indexOf(("shortener") || ("url")) > -1) {
+    window.location.replace("https://URL-Shortener.altify-developm.repl.co");
   }
 });
