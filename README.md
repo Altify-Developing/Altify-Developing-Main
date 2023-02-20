@@ -13,15 +13,15 @@
 
 ### Goals
 
-75 Stars - ❌ - GitHub Auto Cloner ( for stats )
+175 Stars - ❌ - GitHub Auto Cloner ( for stats )
 
-70 Stars - ❌ - Email Bomber Discord Bot ( Not Source )
+150 Stars - ❌ - Email Bomber Discord Bot ( Not Source )
 
-65 Stars - ❌ - Discord Account Onliner ( Works for normal accounts and bots )
+100 Stars - ❌ - Discord Account Onliner ( Works for normal accounts and bots )
 
-60 Stars - ❌ - Fake GoGuardian Block Page
+75 Stars - ❌ - Fake GoGuardian Block Page
 
-55 Stars - ❌ - Wheel of names without ads and customizable
+70 Stars - ❌ - Wheel of names without ads and customizable
 
 50 Stars - ❌ - Discord.js Custom Generator bot ( Not Source )
 
