@@ -23,7 +23,7 @@
 
 70 Stars - ❌ - Wheel of names without ads and customizable
 
-50 Stars - ✅ - [View Source](https://github.com/Altify-Developing/Generator) Discord.js Custom Generator bot ( Basic source )
+50 Stars - ✅ - [View Source](https://github.com/Altify-Developing/Generator) Discord.js Custom Generator bot ( Basic source ) Unlocked 3/21/23
 
 45 Stars - ✅ - [View Source](https://github.com/Altify-Developing/File-Storage-System) [View Example](https://storage.altifydeveloping.com/) Free Large File Storage ( Unlimited uploads, no limits {as long as you dont set them} )
 
