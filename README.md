@@ -15,7 +15,7 @@
 
 175 Stars - ❌ - GitHub Auto Cloner ( for stats )
 
-150 Stars - ❌ - Email Bomber Discord Bot ( Not Source )
+150 Stars - ❌ - Email Bomber Discord.js Bot ( Source & Bot Invite )
 
 100 Stars - ❌ - Discord Account Onliner ( Works for normal accounts and bots )
 
