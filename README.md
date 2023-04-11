@@ -1,4 +1,4 @@
-###### people from patched.to did not create this tool! Altify#0016
+###### Altify#0016 created this, if people try selling it to you, your getting scammed
 # Altify-Developing-Main
 # Current Online Version: v1.4.5.7 - Official Release 8.4
 # Join discord - [Discord Link](https://discord.altifydeveloping.com/)
