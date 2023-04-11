@@ -13,6 +13,8 @@
 
 ### Goals
 
+200 Stars - ❌ - Discord.js DM Bot ( no perms needed )
+
 175 Stars - ❌ - GitHub Auto Cloner ( for stats )
 
 150 Stars - ❌ - Email Bomber Discord.js Bot ( Source & Bot Invite )
