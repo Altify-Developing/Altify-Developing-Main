@@ -6,7 +6,7 @@
 ```javascript
 /* Origional Code From Altify */
 ```
-`ahk` *( insert in beginning of script )*
+`ahk` *( insert in beginning of script before compiling )*
 ```autohotkey
 /*@Ahk2Exe-Keep
 Menu, Tray, Add
