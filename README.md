@@ -39,7 +39,12 @@
 
 #### NEWEST RELEASES
 
-##### My Newest Tool:  Windows Key Generator
+##### My Newest Tool: URL Shortener ( PHP )
+[URL Shortener](https://shorten.altifydeveloping.com)
+![image](https://user-images.githubusercontent.com/83733589/232129177-5d841ba3-6129-4779-ab9b-5a94947a1508.png)
+
+
+##### Windows Key Generator
 [w10](https://w10.altifydeveloping.com/)
 
 <img src='https://raw.githubusercontent.com/Altify-Developing/Altify-Developing-Main/main/html/NEW_TOOLS/w10/w10.gif'>
