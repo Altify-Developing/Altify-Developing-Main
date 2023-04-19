@@ -1,10 +1,11 @@
 ###### Altify#0016 created this, if people try selling it to you, your getting scammed
 # Altify-Developing-Main
-# Current Online Version: v1.4.5.7 - Official Release 8.4
+# Current Online Version: v1.5 - Official Release 8.4
 # Join discord - [Discord Link](https://discord.altifydeveloping.com/)
 ## developed by Altify
+# LOOK IN RELEASES FOR A FREE AIO TOOL!
 ### website for hacking tools and bypassers
-## 10.4k Commits woo
+## 10.5k Commits
 ### <a href='https://www.altifydeveloping.com/'>https://www.altifydeveloping.com/</a>
 <p align="center">
   <a href="https://github.com/Altify-Developing/Altify-Developing-Main/releases/latest"><img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/Altify-Developing/Altify-Developing-Main?color=success"></a>
