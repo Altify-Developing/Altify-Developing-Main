@@ -3,7 +3,6 @@
 # Current Online Version: v1.5 - Official Release 8.4
 # Join discord - [Discord Link](https://discord.altifydeveloping.com/)
 ## developed by Altify
-# LOOK IN RELEASES FOR A FREE AIO TOOL!
 ### website for hacking tools and bypassers
 ## 10.5k Commits
 ### <a href='https://www.altifydeveloping.com/'>https://www.altifydeveloping.com/</a>
