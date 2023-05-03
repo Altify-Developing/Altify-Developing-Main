@@ -5,7 +5,7 @@
 ## developed by Altify
 ### website for hacking tools and bypassers
 ## 10.5k Commits
-### <a href='https://www.altifydeveloping.com/'>https://www.altifydeveloping.com/</a>
+### <a href='https://altifydeveloping.com/'>https://altifydeveloping.com/</a>
 <p align="center">
   <a href="https://github.com/Altify-Developing/Altify-Developing-Main/releases/latest"><img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/Altify-Developing/Altify-Developing-Main?color=success"></a>
 <a title='309320' href="https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg"><img alt="GitHub Repo Views" src="https://views.whatilearened.today/views/github/Altify-Developing/altify-developing-chs.svg"></a>
