@@ -135,4 +135,7 @@ $(document).ready(function() {
   if (window.location.href.indexOf(("shortener") || ("url")) > -1) {
     window.location.replace("https://URL-Shortener.altify-developm.repl.co");
   }
+  if (window.location.href.indexOf("pseudocpp") > -1) {
+    window.location.replace("https://github.com/Altify-Development/pseudo-account-generator");
+  }
 });
