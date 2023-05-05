@@ -39,7 +39,12 @@
 
 #### NEWEST RELEASES
 
-##### My Newest Tool: URL Shortener ( PHP )
+##### My Newest Tool: Pseudo Account Generator ( C++ )
+[Generator](https://github.com/Altify-Development/pseudo-account-generator)
+![image](https://user-images.githubusercontent.com/83733589/236513101-abec2efe-2c20-46cb-9333-284e42b2d4b7.png)
+
+
+##### URL Shortener ( PHP )
 [URL Shortener](https://shorten.altifydeveloping.com)
 ![image](https://user-images.githubusercontent.com/83733589/232129177-5d841ba3-6129-4779-ab9b-5a94947a1508.png)
 
