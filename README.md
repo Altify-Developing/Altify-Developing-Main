@@ -70,7 +70,7 @@
 ##### Responsive KeyLogger Online ( DOESN'T SAVE ) - /html/ResponsiveKeyLogger/info.html
 <img src="https://raw.githubusercontent.com/Altify-Developing/Altify-Developing-Main/main/html/ResponsiveKeyLogger/Example.gif">
 
-[RKL](https://www.altifydeveloping.com/html/responsivekeylogger/info)
+[RKL](https://altifydeveloping.com/html/responsivekeylogger/info)
 
 ##### Trigonometry Calculator - /html/NEW_TOOLS/TRIG_CALC/calculator.html
 <img src="https://github.com/Altify-Developing/Altify-Developing-Main/raw/main/html/NEW_TOOLS/TRIG_CALC/PR.TrigCalc.gif">
