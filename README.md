@@ -13,17 +13,17 @@
 
 ### Goals
 
-200 Stars - ❌ - Discord.js DM Bot ( no perms needed )
+300 Stars - ❌ - Discord.js DM Bot ( no perms needed )
 
-175 Stars - ❌ - GitHub Auto Cloner ( for stats )
+250 Stars - ❌ - GitHub Auto Cloner ( for stats )
 
-150 Stars - ❌ - Email Bomber Discord.js Bot ( Source & Bot Invite )
+200 Stars - ❌ - Email Bomber Discord.js Bot ( Source & Bot Invite )
 
-100 Stars - ❌ - Discord Account Onliner ( Works for normal accounts and bots )
+150 Stars - ❌ - Discord Account Onliner ( Works for normal accounts and bots )
 
-75 Stars - ❌ - Fake GoGuardian Block Page
+100 Stars - ❌ - Fake GoGuardian Block Page
 
-70 Stars - ❌ - Wheel of names without ads and customizable
+75 Stars - ❌ - Wheel of names without ads and customizable
 
 50 Stars - ✅ - [View Source](https://github.com/Altify-Developing/Generator) Discord.js Custom Generator bot ( Basic source ) Unlocked 3/21/23
 
