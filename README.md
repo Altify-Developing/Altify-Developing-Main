@@ -24,7 +24,7 @@
 
 100 Stars - ❌ - Fake GoGuardian Block Page
 
-75 Stars - ❌ - Wheel of names without ads and customizable
+75 Stars - ✅ - [View Tool](https://wheel.altifydeveloping.com/)Wheel of names without ads and customizable
 
 50 Stars - ✅ - [View Source](https://github.com/Altify-Developing/Generator) Discord.js Custom Generator bot ( Basic source ) Unlocked 3/21/23
 
@@ -225,11 +225,12 @@ psf / requests
 ```
 
 ##### Last Updated:
-###### 3/22/23
+###### 9/07/23
 
 
 
-Views as of 3/22/23 - 318,209
+Views as of 9/07/23 - 324,320
+###### <s>318,209</s>
 
 
 
