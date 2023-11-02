@@ -12,7 +12,7 @@ $(document).ready(function() {
   if (window.location.href.indexOf("calculator") > -1) {
     window.location.replace(origin+"/html/new_tools/trig_calc/calculator");
   }
-  if (window.location.href.indexOf(("oldproxy") || ("oldgen")) > -1) {
+  if (window.location.href.indexOf("oldproxy" || "oldgen") > -1) {
     window.location.replace(origin+"/html/NEW_TOOLS/ProxyGen");
   }
   if (window.location.href.indexOf(("new") || ("latest")) > -1) {
