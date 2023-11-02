@@ -41,12 +41,13 @@ function getAllUrlParams(url) {
 }
 var origin = window.location.href
 let origal = location.origin;
-let redr = getAllUrlParams(origin).destination
+let redr = getAllUrlParams(origin).togo
 if (redr == 'tos') {
   window.location.replace(origal+'/html/ToS');
-} else if (redr == 'github') {
+} else if (redr == 'github' || 'main') {
   window.location.replace('https://github.com/Altify-Developing/Altify-Developing-Main');
+} else if (redr == 'oldproxy' || 'oldgen') {
+  window.location.replace(origal+"/html/NEW_TOOLS/ProxyGen");
 } else (redr == 'tools') {
-  
   window.location.replace(origal+'/html/toolstodownload');
 }
