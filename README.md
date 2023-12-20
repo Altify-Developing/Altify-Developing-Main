@@ -1,5 +1,4 @@
 ###### Altify#0016 created this, if people try selling it to you, your getting scammed
-# Sponsored by Salad - Refferal code: I3HVEZ - https://salad.com
 # Altify-Developing-Main
 # Current Online Version: v1.5 - Official Release 8.4
 # Join discord - [Discord Link](https://discord.altifydeveloping.com/)
