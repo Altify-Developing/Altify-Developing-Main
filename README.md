@@ -1,7 +1,6 @@
-###### Altify#0016 created this, if people try selling it to you, your getting scammed
 # Altify-Developing-Main
 # Current Online Version: v1.5 - Official Release 8.4
-# Join discord - [Discord Link](https://discord.altifydeveloping.com/)
+<!-- Join discord - [Discord Link](https://discord.altifydeveloping.com/) -->
 ## developed by Altify
 ### website for hacking tools and bypassers
 ## 10.5k Commits
