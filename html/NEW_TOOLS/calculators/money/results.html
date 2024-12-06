@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Altify | Heat Flow Results</title>
+	<title>Altify | USD Money Results</title>
         <meta charset="utf-8"/>
     <meta name="google-site-verification" content="MnF2J3kLyQ_GADcfaY-LaGiOQMe23dwsvIfHHnbrih4" />
     <meta name="msvalidate.01" content="4CEA3A5E8030C3BE543E880766463233" />
@@ -83,7 +83,6 @@ let quartersb = getAllUrlParams(origin).25c
 let dimesb = getAllUrlParams(origin).10c
 let nickelsb = getAllUrlParams(origin).5c
 let penniesb = getAllUrlParams(origin).1c
-let halfs = (halfsb*50/100);
-let total = ();
+let total = (hundreds+fifties+twenties+tens+fives+twos+ones+dollarc+.5(halfsb)+.25(quartersb)+.10(dimesb)+.05(nickelsb)+.01(penniesb));
 document.getElementById("answer1").innerHTML = ("<p>Total:</p> "+total+"<p><sup></sup></p>");
 </script>
