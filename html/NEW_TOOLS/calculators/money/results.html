@@ -70,19 +70,21 @@ function getAllUrlParams(url) {
   return obj;
 }
 var origin = window.location.href
-let hundreds = getAllUrlParams(origin).100
-let fifties = getAllUrlParams(origin).50
-let twenties = getAllUrlParams(origin).20
-let tens = getAllUrlParams(origin).10
-let fives = getAllUrlParams(origin).5
-let twos = getAllUrlParams(origin).2
-let ones = getAllUrlParams(origin).1
-let dollarc = getAllUrlParams(origin).100c
-let halfsb = getAllUrlParams(origin).50c
-let quartersb = getAllUrlParams(origin).25c
-let dimesb = getAllUrlParams(origin).10c
-let nickelsb = getAllUrlParams(origin).5c
-let penniesb = getAllUrlParams(origin).1c
-let total = 'hundreds+fifties+twenties+tens+fives+twos+ones+dollarc+.5*halfsb+.25*quartersb+.10*dimesb+.05*nickelsb+.01*penniesb';
+let hundreds = getAllUrlParams(origin).a
+let fifties = getAllUrlParams(origin).b
+let twenties = getAllUrlParams(origin).c
+let tens = getAllUrlParams(origin).d
+let fives = getAllUrlParams(origin).e
+let twos = getAllUrlParams(origin).f
+let ones = getAllUrlParams(origin).g
+let dollarc = getAllUrlParams(origin).h
+let dol = (hundreds*100)+(fifties*50)+(twenties*20)+(tens*10)+(fives*5)+(twos*2)+(ones*1)+(dollarc*1)
+let halfsb = getAllUrlParams(origin).i
+let quartersb = getAllUrlParams(origin).j
+let dimesb = getAllUrlParams(origin).k
+let nickelsb = getAllUrlParams(origin).l
+let penniesb = getAllUrlParams(origin).m
+let cents = (halfsb*.5)+(quartersb*.25)+(dimesb*.1)+(nickelsb*.05)+(penniesb*.01);
+let total = dol+cents;
 document.getElementById("answer1").innerHTML = ("<p>Total:</p> "+total+"<p><sup></sup></p>");
 </script>
