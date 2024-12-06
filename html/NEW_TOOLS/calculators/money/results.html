@@ -83,6 +83,6 @@ let quartersb = getAllUrlParams(origin).25c
 let dimesb = getAllUrlParams(origin).10c
 let nickelsb = getAllUrlParams(origin).5c
 let penniesb = getAllUrlParams(origin).1c
-let total = (hundreds+fifties+twenties+tens+fives+twos+ones+dollarc+.5(halfsb)+.25(quartersb)+.10(dimesb)+.05(nickelsb)+.01(penniesb));
+let total = 'hundreds+fifties+twenties+tens+fives+twos+ones+dollarc+.5*halfsb+.25*quartersb+.10*dimesb+.05*nickelsb+.01*penniesb';
 document.getElementById("answer1").innerHTML = ("<p>Total:</p> "+total+"<p><sup></sup></p>");
 </script>
