@@ -1,9 +1,18 @@
+# Hey IM BACK!
+
+## WHATS CHANGED!
+### - All links dont work except https://altify-developing-001.netlify.app ( I LOST ACCESS TO THE DOMAIN CUZ IM BROKE ASF )
+### - I made a new tool for people struggling with DMV tests all around the US, with 0 ads ( you can even download it and run it offline )
+### If you have suggestions, DO NOT leave an issue, I will probably never see it due to GitHub signing me out EVERY SINGLE TIME I CLOSE IT ON MY PC AND PHONE, but rather instead hit up either one of my main business emails - altifydeveloping@gmail.com or alts@null.net, i suggest you try the gmail first, because i only look at null.net mail once a month if that.
+
+
 # Altify-Developing-Main
 # Current Online Version: v1.5 - Official Release 8.4
 <!-- Join discord - [Discord Link](https://discord.altifydeveloping.com/) -->
 ## developed by Altify
 ### website for hacking tools and bypassers
 ## 10.5k Commits
+
 <!--### <a href='https://altifydeveloping.com/'>https://altifydeveloping.com/</a>-->
 <p align="center">
   <a href="https://github.com/Altify-Developing/Altify-Developing-Main/releases/latest"><img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/Altify-Developing/Altify-Developing-Main?color=success"></a>
