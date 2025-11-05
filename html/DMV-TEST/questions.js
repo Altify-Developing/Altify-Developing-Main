@@ -2,165 +2,74 @@ window.QUESTIONS = [
   {
     "id": "gen-001",
     "category": "General",
-    "q": "At a four-way stop, two vehicles arrive at the same time. Who has the right of way?",
+    "q": "At a four‑way stop where two vehicles arrive simultaneously, who proceeds first?",
     "choices": [
-      "The driver on the right",
-      "The driver on the left",
+      "The driver on your right",
       "The larger vehicle",
-      "The vehicle going straight regardless of side"
+      "The one going straight",
+      "The driver on your left"
     ],
     "answerIndex": 0,
-    "explanation": "When two vehicles arrive at the same time, the driver on the right has the right of way."
+    "explanation": "When arrival is simultaneous, yield to the vehicle on your right."
   },
   {
     "id": "safe-001",
     "category": "Safety",
-    "q": "You should increase your following distance when:",
+    "q": "Under which circumstances should you extend following distance beyond the minimum?",
     "choices": [
-      "Driving in heavy rain or fog",
-      "Following a motorcycle",
-      "Being tailgated",
-      "All of the above"
+      "Rain/fog, motorcyclists ahead, or if you’re being tailgated",
+      "Only at night",
+      "Only with ABS",
+      "Only below 25 mph"
     ],
-    "answerIndex": 3,
-    "explanation": "Poor conditions, motorcycles, and tailgaters all call for extra space."
+    "answerIndex": 0,
+    "explanation": "Poor traction and vulnerable users warrant extra space; space also defuses tailgaters."
   },
   {
     "id": "law-001",
     "category": "Laws",
-    "q": "In California, headlights are required:",
+    "q": "Headlights in CA are legally required:",
     "choices": [
       "30 min after sunset to 30 min before sunrise or when visibility is poor",
-      "Only at night on highways",
-      "Only when using high beams",
+      "Only at night on freeways",
+      "Only with high beams",
       "Only on rural roads"
     ],
     "answerIndex": 0,
-    "explanation": "Headlights are required at night and whenever visibility is insufficient."
+    "explanation": "Use lights in darkness and any time visibility is reduced."
   },
   {
     "id": "sign-001",
     "category": "Signs",
-    "q": "A triangular red-and-white sign means:",
+    "q": "A triangular red‑and‑white sign indicates:",
     "choices": [
       "Yield",
       "Do Not Enter",
-      "No U-Turn",
+      "No U‑Turn",
       "Stop"
     ],
     "answerIndex": 0,
-    "explanation": "Inverted triangle in red and white indicates YIELD.",
+    "explanation": "Inverted triangle uniquely means YIELD.",
     "image": "signs/sign-001.png"
-  },
-  {
-    "id": "safe-002",
-    "category": "Safety",
-    "q": "When merging onto a freeway, you should be driving:",
-    "choices": [
-      "At or near the speed of traffic",
-      "10 mph slower than traffic",
-      "At any speed as long as you signal",
-      "As fast as possible to get ahead"
-    ],
-    "answerIndex": 0,
-    "explanation": "Match freeway traffic speed while yielding to vehicles already on the freeway."
-  },
-  {
-    "id": "law-002",
-    "category": "Laws",
-    "q": "When a school bus has flashing red lights on an undivided road:",
-    "choices": [
-      "All vehicles must stop",
-      "Only vehicles behind must stop",
-      "Slow to 10 mph",
-      "Stop only if children are visible"
-    ],
-    "answerIndex": 0,
-    "explanation": "On undivided roads, traffic in both directions must stop."
-  },
-  {
-    "id": "gen-002",
-    "category": "General",
-    "q": "If your brake pedal suddenly sinks to the floor, you should first:",
-    "choices": [
-      "Pump the brake pedal",
-      "Shift into Park",
-      "Turn off the engine",
-      "Open your door to slow down"
-    ],
-    "answerIndex": 0,
-    "explanation": "Pumping may restore brake pressure."
   },
   {
     "id": "sign-002",
     "category": "Signs",
-    "q": "An orange diamond-shaped sign warns of:",
+    "q": "An orange diamond warning indicates:",
     "choices": [
-      "Construction or maintenance",
-      "Hospital",
-      "Railroad crossing",
+      "Road work / maintenance",
+      "Hospital ahead",
+      "Rail crossing",
       "School zone"
     ],
     "answerIndex": 0,
-    "explanation": "Orange diamonds are construction warnings.",
+    "explanation": "Orange diamonds warn of work zones.",
     "image": "signs/sign-002.png"
-  },
-  {
-    "id": "law-003",
-    "category": "Laws",
-    "q": "A solid red traffic signal means:",
-    "choices": [
-      "Stop until green",
-      "Stop, then proceed if clear",
-      "Proceed with caution",
-      "Right turn always prohibited"
-    ],
-    "answerIndex": 0,
-    "explanation": "At solid red, stop. Right turns permitted unless posted otherwise."
-  },
-  {
-    "id": "safe-003",
-    "category": "Safety",
-    "q": "To avoid highway hypnosis on long trips:",
-    "choices": [
-      "Take breaks and scan actively",
-      "Stare at the center line",
-      "Turn up music only",
-      "Use cruise control and relax completely"
-    ],
-    "answerIndex": 0,
-    "explanation": "Regular breaks and active scanning help stay alert."
-  },
-  {
-    "id": "gen-003",
-    "category": "General",
-    "q": "Parallel parking distance from the curb should be within:",
-    "choices": [
-      "18 inches",
-      "6 inches",
-      "24 inches",
-      "3 feet"
-    ],
-    "answerIndex": 0,
-    "explanation": "California requires within 18 inches of the curb."
-  },
-  {
-    "id": "law-004",
-    "category": "Laws",
-    "q": "In a roundabout, who has the right of way?",
-    "choices": [
-      "Vehicles already in the circle",
-      "Vehicles entering",
-      "The fastest vehicle",
-      "Rightmost vehicle"
-    ],
-    "answerIndex": 0,
-    "explanation": "Yield to traffic already circulating."
   },
   {
     "id": "sign-003",
     "category": "Signs",
-    "q": "Red circle with slash over a left arrow means:",
+    "q": "A red circle with a slash over a left arrow means:",
     "choices": [
       "No left turn",
       "Yield to left turners",
@@ -168,184 +77,41 @@ window.QUESTIONS = [
       "Left turn only"
     ],
     "answerIndex": 0,
-    "explanation": "Standard prohibition for left turn.",
+    "explanation": "Standard prohibition symbol.",
     "image": "signs/sign-003.png"
-  },
-  {
-    "id": "safe-004",
-    "category": "Safety",
-    "q": "Flashing red lights at railroad crossing mean:",
-    "choices": [
-      "Stop and do not proceed until safe",
-      "Proceed if no train",
-      "Stop only if gate is down",
-      "Slow and look"
-    ],
-    "answerIndex": 0,
-    "explanation": "Stop until signals stop or directed by flagger."
-  },
-  {
-    "id": "gen-004",
-    "category": "General",
-    "q": "When backing out of a driveway, you should:",
-    "choices": [
-      "Look over shoulder and back slowly",
-      "Rely on camera only",
-      "Honk and back quickly",
-      "Roll down windows and listen"
-    ],
-    "answerIndex": 0,
-    "explanation": "Use mirrors and physically look around."
-  },
-  {
-    "id": "law-005",
-    "category": "Laws",
-    "q": "You may use a cell phone while driving only if:",
-    "choices": [
-      "Using hands-free mode",
-      "Holding the phone below window level",
-      "Texting at red lights",
-      "Only on the freeway"
-    ],
-    "answerIndex": 0,
-    "explanation": "California law requires hands\u2011free operation while driving."
-  },
-  {
-    "id": "safe-005",
-    "category": "Safety",
-    "q": "When driving in fog, you should use:",
-    "choices": [
-      "Low-beam headlights",
-      "High-beam headlights",
-      "Parking lights only",
-      "Hazard lights"
-    ],
-    "answerIndex": 0,
-    "explanation": "Low beams reduce glare in fog."
-  },
-  {
-    "id": "gen-005",
-    "category": "General",
-    "q": "If your accelerator sticks, the first thing to try is:",
-    "choices": [
-      "Shift to neutral",
-      "Turn off ignition immediately",
-      "Pump brakes repeatedly",
-      "Put car in reverse"
-    ],
-    "answerIndex": 0,
-    "explanation": "Shifting to neutral allows you to slow safely."
   },
   {
     "id": "sign-004",
     "category": "Signs",
-    "q": "A yellow pentagon sign indicates:",
+    "q": "A yellow pentagon sign alerts you to:",
     "choices": [
-      "School zone or crossing",
+      "School zone/crossing",
       "Railroad crossing",
-      "No passing zone",
+      "No‑passing zone",
       "Slow vehicle lane"
     ],
     "answerIndex": 0,
-    "explanation": "Yellow pentagon signs mark school areas.",
+    "explanation": "Pentagon shape marks school areas.",
     "image": "signs/sign-004.png"
-  },
-  {
-    "id": "law-006",
-    "category": "Laws",
-    "q": "You must signal at least how far before turning:",
-    "choices": [
-      "100 feet",
-      "25 feet",
-      "500 feet",
-      "1 block"
-    ],
-    "answerIndex": 0,
-    "explanation": "CA law requires signaling at least 100 feet before turns."
-  },
-  {
-    "id": "safe-006",
-    "category": "Safety",
-    "q": "If you hydroplane, you should:",
-    "choices": [
-      "Ease off the accelerator",
-      "Brake hard",
-      "Steer sharply",
-      "Accelerate to regain traction"
-    ],
-    "answerIndex": 0,
-    "explanation": "Reduce speed gradually and avoid sudden inputs."
-  },
-  {
-    "id": "gen-006",
-    "category": "General",
-    "q": "Before changing lanes, the most important action is:",
-    "choices": [
-      "Check mirrors and blind spot",
-      "Honk twice",
-      "Speed up",
-      "Slow to 15 mph"
-    ],
-    "answerIndex": 0,
-    "explanation": "Always check blind spots before lane changes."
   },
   {
     "id": "sign-005",
     "category": "Signs",
-    "q": "A yellow diamond showing two arrows passing a block indicates:",
+    "q": "Two opposite arrows separated by a block (yellow diamond) warns:",
     "choices": [
       "Divided highway ahead",
-      "Merge left",
+      "Two‑way traffic",
       "Lane ends",
-      "Two-way traffic"
+      "Merge"
     ],
     "answerIndex": 0,
-    "explanation": "Indicates divided highway approaching.",
+    "explanation": "Indicates a median/divided highway ahead.",
     "image": "signs/sign-005.png"
-  },
-  {
-    "id": "law-007",
-    "category": "Laws",
-    "q": "You must yield to pedestrians in crosswalks:",
-    "choices": [
-      "At all times",
-      "Only if they have a walk signal",
-      "Only in residential areas",
-      "Only during the day"
-    ],
-    "answerIndex": 0,
-    "explanation": "Drivers must yield to pedestrians in crosswalks at all times."
-  },
-  {
-    "id": "safe-007",
-    "category": "Safety",
-    "q": "If your vehicle begins to skid, you should:",
-    "choices": [
-      "Steer in the direction you want the front to go",
-      "Brake hard",
-      "Turn opposite direction",
-      "Accelerate"
-    ],
-    "answerIndex": 0,
-    "explanation": "Steer smoothly in direction of desired movement."
-  },
-  {
-    "id": "gen-007",
-    "category": "General",
-    "q": "When approaching a parked emergency vehicle with flashing lights:",
-    "choices": [
-      "Move over or slow down",
-      "Maintain speed",
-      "Honk and pass",
-      "Weave to warn others"
-    ],
-    "answerIndex": 0,
-    "explanation": "California\u2019s Move Over/Slow Down law applies."
   },
   {
     "id": "sign-006",
     "category": "Signs",
-    "q": "A sign with a red octagon shape always means:",
+    "q": "A red octagon always means:",
     "choices": [
       "Stop",
       "Yield",
@@ -353,520 +119,91 @@ window.QUESTIONS = [
       "Wrong Way"
     ],
     "answerIndex": 0,
-    "explanation": "Octagon shape is unique to stop signs.",
+    "explanation": "Octagon is exclusive to STOP signs.",
     "image": "signs/sign-006.png"
-  },
-  {
-    "id": "law-008",
-    "category": "Laws",
-    "q": "You may not park within how many feet of a fire hydrant?",
-    "choices": [
-      "15 feet",
-      "5 feet",
-      "50 feet",
-      "25 feet"
-    ],
-    "answerIndex": 0,
-    "explanation": "California requires at least 15 feet clearance unless otherwise posted."
-  },
-  {
-    "id": "safe-008",
-    "category": "Safety",
-    "q": "Driving slower than traffic in the fast lane is:",
-    "choices": [
-      "Dangerous and illegal impeding traffic",
-      "Safer for new drivers",
-      "Allowed anytime",
-      "Required when unsure"
-    ],
-    "answerIndex": 0,
-    "explanation": "You must not impede normal traffic flow."
-  },
-  {
-    "id": "gen-008",
-    "category": "General",
-    "q": "If you need to stop suddenly and have ABS brakes:",
-    "choices": [
-      "Apply firm continuous pressure",
-      "Pump the brakes",
-      "Shift to neutral",
-      "Turn off ABS"
-    ],
-    "answerIndex": 0,
-    "explanation": "ABS allows firm pressure while steering control is maintained."
   },
   {
     "id": "sign-007",
     "category": "Signs",
-    "q": "A sign showing a deer silhouette means:",
+    "q": "A yellow diamond with a deer silhouette means:",
     "choices": [
       "Animal crossing",
-      "Hunting zone",
-      "Farm equipment ahead",
-      "Zoo area"
+      "Hunting area",
+      "Farm equipment",
+      "Zoo nearby"
     ],
     "answerIndex": 0,
-    "explanation": "Indicates likely animal crossing.",
+    "explanation": "Expect animals on/near roadway.",
     "image": "signs/sign-007.png"
-  },
-  {
-    "id": "law-009",
-    "category": "Laws",
-    "q": "You must use your headlights when visibility is less than:",
-    "choices": [
-      "1000 feet",
-      "500 feet",
-      "200 feet",
-      "2000 feet"
-    ],
-    "answerIndex": 0,
-    "explanation": "Headlights are required when visibility is poor."
-  },
-  {
-    "id": "safe-009",
-    "category": "Safety",
-    "q": "When driving near a large truck, avoid driving:",
-    "choices": [
-      "In its blind spots",
-      "Behind it",
-      "Beside it briefly",
-      "Ahead of it"
-    ],
-    "answerIndex": 0,
-    "explanation": "Large trucks have large blind spots on all sides."
-  },
-  {
-    "id": "gen-009",
-    "category": "General",
-    "q": "If an oncoming vehicle has high beams on, you should:",
-    "choices": [
-      "Look to the right edge of your lane",
-      "Stare into the lights",
-      "Close your eyes briefly",
-      "Flash high beams continuously"
-    ],
-    "answerIndex": 0,
-    "explanation": "Looking to the right edge reduces glare."
   },
   {
     "id": "sign-008",
     "category": "Signs",
-    "q": "A sign with a circle and an X with two R's means:",
+    "q": "A round yellow sign with an X and two R’s indicates:",
     "choices": [
       "Railroad crossing ahead",
-      "Restricted roundabout",
-      "Rest area ahead",
+      "Roundabout",
+      "Rest area",
       "Road closed"
     ],
     "answerIndex": 0,
-    "explanation": "Standard railroad crossing warning.",
+    "explanation": "Standard advance RR warning.",
     "image": "signs/sign-008.png"
-  },
-  {
-    "id": "law-010",
-    "category": "Laws",
-    "q": "If a driver is under 21, their BAC must be below:",
-    "choices": [
-      "0.01%",
-      "0.08%",
-      "0.05%",
-      "0.10%"
-    ],
-    "answerIndex": 0,
-    "explanation": "Zero tolerance law applies under 21."
-  },
-  {
-    "id": "safe-010",
-    "category": "Safety",
-    "q": "Driving too slowly can be:",
-    "choices": [
-      "As dangerous as speeding",
-      "Always safer",
-      "Always legal",
-      "Required when nervous"
-    ],
-    "answerIndex": 0,
-    "explanation": "Impeded flow creates hazards."
-  },
-  {
-    "id": "gen-010",
-    "category": "General",
-    "q": "When entering a freeway from an on-ramp, you should:",
-    "choices": [
-      "Accelerate to match flow",
-      "Stop at end of ramp",
-      "Merge at any speed",
-      "Drive on shoulder first"
-    ],
-    "answerIndex": 0,
-    "explanation": "Match freeway speed while merging safely."
   },
   {
     "id": "sign-009",
     "category": "Signs",
-    "q": "A yellow diamond with a curved arrow indicates:",
+    "q": "A yellow diamond with a curved arrow means:",
     "choices": [
       "Curve ahead",
-      "Passing allowed",
+      "Passing zone",
       "End of median",
       "Truck route"
     ],
     "answerIndex": 0,
-    "explanation": "Warns of an upcoming road curve.",
+    "explanation": "Warns of roadway curvature.",
     "image": "signs/sign-009.png"
-  },
-  {
-    "id": "law-011",
-    "category": "Laws",
-    "q": "Failing to stop for a stopped school bus with flashing red lights can result in:",
-    "choices": [
-      "Fines and license penalties",
-      "Nothing",
-      "Only a warning",
-      "Immediate imprisonment"
-    ],
-    "answerIndex": 0,
-    "explanation": "Violation carries significant penalties."
-  },
-  {
-    "id": "safe-011",
-    "category": "Safety",
-    "q": "To prevent drowsy driving, you should:",
-    "choices": [
-      "Take breaks every 1\u20132 hours",
-      "Drink only coffee",
-      "Drive with windows down",
-      "Play loud music"
-    ],
-    "answerIndex": 0,
-    "explanation": "Regular rests are the most reliable prevention."
-  },
-  {
-    "id": "gen-011",
-    "category": "General",
-    "q": "If a tire blows out, you should:",
-    "choices": [
-      "Grip steering wheel and ease off gas",
-      "Brake hard",
-      "Turn sharply",
-      "Accelerate"
-    ],
-    "answerIndex": 0,
-    "explanation": "Maintain control and slow gradually."
   },
   {
     "id": "sign-010",
     "category": "Signs",
-    "q": "A sign showing a truck going downhill means:",
+    "q": "A truck descending on a yellow diamond warns:",
     "choices": [
-      "Steep grade ahead",
-      "Truck route",
+      "Steep downgrade ahead",
       "Truck stop",
-      "Runaway zone"
+      "Runaway ramp only",
+      "Truck route"
     ],
     "answerIndex": 0,
-    "explanation": "Warns of steep downhill grade.",
+    "explanation": "Prepare for long/downhill grade.",
     "image": "signs/sign-010.png"
-  },
-  {
-    "id": "law-012",
-    "category": "Laws",
-    "q": "Left turns on red are permitted:",
-    "choices": [
-      "Only from a one-way street onto another one-way street",
-      "Never",
-      "Anytime if clear",
-      "Only when posted"
-    ],
-    "answerIndex": 0,
-    "explanation": "In CA, left on red only permitted from one-way to one-way unless prohibited."
-  },
-  {
-    "id": "safe-012",
-    "category": "Safety",
-    "q": "When driving in heavy rain, your tires may lose contact. This is called:",
-    "choices": [
-      "Hydroplaning",
-      "Drafting",
-      "Downshifting",
-      "Crabbing"
-    ],
-    "answerIndex": 0,
-    "explanation": "Water lifts tires from road reducing control."
-  },
-  {
-    "id": "gen-012",
-    "category": "General",
-    "q": "When approaching a flashing yellow traffic signal, you should:",
-    "choices": [
-      "Proceed with caution",
-      "Stop fully",
-      "Speed up",
-      "Ignore it"
-    ],
-    "answerIndex": 0,
-    "explanation": "Flashing yellow means slow and proceed carefully."
   },
   {
     "id": "sign-011",
     "category": "Signs",
-    "q": "A rectangular white sign with black lettering usually indicates:",
+    "q": "A white rectangle with black lettering is generally:",
     "choices": [
-      "Regulatory information",
+      "Regulatory",
       "Warning",
       "Guide",
-      "Construction"
+      "Work zone"
     ],
     "answerIndex": 0,
-    "explanation": "White rectangular signs are regulatory rules.",
+    "explanation": "Regulatory signs state rules.",
     "image": "signs/sign-011.png"
-  },
-  {
-    "id": "law-013",
-    "category": "Laws",
-    "q": "When must you turn on your headlights if wipers are in continuous use?",
-    "choices": [
-      "Whenever wipers are on",
-      "Only during snow",
-      "Only at night",
-      "Only below 25 mph"
-    ],
-    "answerIndex": 0,
-    "explanation": "CA law: use headlights when using wipers continuously."
-  },
-  {
-    "id": "safe-013",
-    "category": "Safety",
-    "q": "When passing a bicyclist, you must leave at least:",
-    "choices": [
-      "3 feet of space",
-      "1 foot",
-      "10 feet",
-      "No requirement"
-    ],
-    "answerIndex": 0,
-    "explanation": "3-foot minimum passing distance recommended/required in CA."
-  },
-  {
-    "id": "gen-013",
-    "category": "General",
-    "q": "If you see road rage drivers, the best response is:",
-    "choices": [
-      "Avoid interaction and create space",
-      "Honk back",
-      "Chase them",
-      "Stare at them"
-    ],
-    "answerIndex": 0,
-    "explanation": "Do not engage; increase distance."
-  },
-  {
-    "id": "gen-014",
-    "category": "General",
-    "q": "When entering a residential street from a driveway, you must:",
-    "choices": [
-      "Yield to pedestrians and traffic",
-      "Enter quickly",
-      "Honk twice",
-      "Speed up immediately"
-    ],
-    "answerIndex": 0,
-    "explanation": "Vehicles entering the road from driveways must yield."
-  },
-  {
-    "id": "gen-015",
-    "category": "General",
-    "q": "You should dim your high beams when:",
-    "choices": [
-      "Another vehicle is approaching",
-      "Driving faster than 45 mph",
-      "Driving alone",
-      "Below 25 mph"
-    ],
-    "answerIndex": 0,
-    "explanation": "High beams can blind oncoming drivers."
-  },
-  {
-    "id": "gen-016",
-    "category": "General",
-    "q": "Before starting your vehicle, you should:",
-    "choices": [
-      "Adjust seat and mirrors",
-      "Turn on headlights",
-      "Shift into drive",
-      "Open the hood"
-    ],
-    "answerIndex": 0,
-    "explanation": "Proper seating and visibility are essential."
-  },
-  {
-    "id": "gen-017",
-    "category": "General",
-    "q": "When driving on a one-way street, you may park:",
-    "choices": [
-      "Only in the direction of traffic flow",
-      "Against traffic",
-      "On the sidewalk",
-      "Anywhere"
-    ],
-    "answerIndex": 0,
-    "explanation": "Parking must follow the direction of traffic flow."
-  },
-  {
-    "id": "gen-018",
-    "category": "General",
-    "q": "When approaching a blind intersection, you should:",
-    "choices": [
-      "Move forward slowly until you can see",
-      "Stop completely no matter what",
-      "Accelerate",
-      "Honking is required"
-    ],
-    "answerIndex": 0,
-    "explanation": "Cautiously move forward to improve visibility."
-  },
-  {
-    "id": "safe-014",
-    "category": "Safety",
-    "q": "If your engine overheats, you should:",
-    "choices": [
-      "Pull over and turn off engine",
-      "Open radiator cap immediately",
-      "Drive faster",
-      "Pour cold water on engine"
-    ],
-    "answerIndex": 0,
-    "explanation": "Let the engine cool before opening radiator."
-  },
-  {
-    "id": "safe-015",
-    "category": "Safety",
-    "q": "When driving downhill, you should:",
-    "choices": [
-      "Shift to a lower gear",
-      "Shift to neutral",
-      "Turn off engine",
-      "Use cruise control only"
-    ],
-    "answerIndex": 0,
-    "explanation": "Lower gear reduces brake wear and increases control."
-  },
-  {
-    "id": "safe-016",
-    "category": "Safety",
-    "q": "The safest hand position on the steering wheel is:",
-    "choices": [
-      "9 and 3 o\u2019clock",
-      "10 and 2 o\u2019clock",
-      "12 and 6 o\u2019clock",
-      "Any position"
-    ],
-    "answerIndex": 0,
-    "explanation": "Modern airbag standards recommend 9 and 3."
-  },
-  {
-    "id": "safe-017",
-    "category": "Safety",
-    "q": "The most effective way to avoid accidents caused by fatigue is to:",
-    "choices": [
-      "Rest",
-      "Drink coffee only",
-      "Turn up music",
-      "Roll down windows"
-    ],
-    "answerIndex": 0,
-    "explanation": "Sleep is the only reliable solution."
-  },
-  {
-    "id": "safe-018",
-    "category": "Safety",
-    "q": "If your vehicle starts to drift off the road, you should:",
-    "choices": [
-      "Ease back onto the road gently",
-      "Steer sharply back",
-      "Brake hard",
-      "Accelerate"
-    ],
-    "answerIndex": 0,
-    "explanation": "Re-enter gradually to avoid overcorrection."
-  },
-  {
-    "id": "law-014",
-    "category": "Laws",
-    "q": "A broken yellow line means:",
-    "choices": [
-      "Passing allowed if safe",
-      "No passing",
-      "Two-way left turn lane",
-      "Road closed"
-    ],
-    "answerIndex": 0,
-    "explanation": "Broken yellow allows passing when clear."
-  },
-  {
-    "id": "law-015",
-    "category": "Laws",
-    "q": "A solid yellow line means:",
-    "choices": [
-      "No passing",
-      "Passing allowed",
-      "Lane closed",
-      "Road narrows"
-    ],
-    "answerIndex": 0,
-    "explanation": "Solid yellow prohibits passing."
-  },
-  {
-    "id": "law-016",
-    "category": "Laws",
-    "q": "California\u2019s basic speed law means:",
-    "choices": [
-      "Never drive faster than safe for conditions",
-      "Always drive posted speed",
-      "Drive with flow of traffic only",
-      "Reduce speed only in rain"
-    ],
-    "answerIndex": 0,
-    "explanation": "Conditions can override posted limits."
-  },
-  {
-    "id": "law-017",
-    "category": "Laws",
-    "q": "When a traffic signal is out, you should treat the intersection as:",
-    "choices": [
-      "A four\u2011way stop",
-      "Uncontrolled",
-      "A merge",
-      "A yield for pedestrians only"
-    ],
-    "answerIndex": 0,
-    "explanation": "All drivers should stop and proceed in turn."
-  },
-  {
-    "id": "law-018",
-    "category": "Laws",
-    "q": "Right-on-red is allowed unless:",
-    "choices": [
-      "A sign prohibits it",
-      "Pedestrians are present",
-      "It is daylight",
-      "You use your turn signal"
-    ],
-    "answerIndex": 0,
-    "explanation": "Signs may prohibit right turns on red."
   },
   {
     "id": "sign-012",
     "category": "Signs",
-    "q": "A yellow sign with a pedestrian silhouette indicates:",
+    "q": "A yellow sign with a pedestrian symbol indicates:",
     "choices": [
       "Pedestrian crossing",
-      "School bus stop",
-      "Jogging area",
-      "Playground only"
+      "Jogging trail",
+      "Playground",
+      "Park entrance"
     ],
     "answerIndex": 0,
-    "explanation": "Indicates pedestrian crosswalk area.",
+    "explanation": "Expect pedestrians crossing.",
     "image": "signs/sign-012.png"
   },
   {
@@ -874,703 +211,1366 @@ window.QUESTIONS = [
     "category": "Signs",
     "q": "A green rectangular sign typically provides:",
     "choices": [
-      "Direction or distance information",
-      "Warning",
+      "Direction/distance guidance",
       "Regulations",
-      "Construction"
+      "Work warnings",
+      "Recreation only"
     ],
     "answerIndex": 0,
-    "explanation": "Green signs are guide signs.",
+    "explanation": "Green = guide/directions.",
     "image": "signs/sign-013.png"
   },
   {
     "id": "sign-014",
     "category": "Signs",
-    "q": "A blue sign with a white \u201cH\u201d indicates:",
+    "q": "A blue sign with a white 'H' indicates:",
     "choices": [
-      "Hospital nearby",
-      "Helicopter zone",
-      "Hotel parking",
+      "Hospital services",
+      "Helicopter pad",
+      "Hotel",
       "Hiking trail"
     ],
     "answerIndex": 0,
-    "explanation": "Blue service signs indicate services like hospitals.",
+    "explanation": "Blue service signs show facilities.",
     "image": "signs/sign-014.png"
   },
   {
-    "id": "gen-x19",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "row-001",
+    "category": "Laws",
+    "q": "At an uncontrolled T‑intersection, right‑of‑way belongs to:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Traffic on the through road",
+      "The vehicle on the terminating road",
+      "Whoever arrives faster",
+      "Vehicles turning left"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Vehicles on the through roadway proceed first."
   },
   {
-    "id": "gen-x20",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "row-002",
+    "category": "Laws",
+    "q": "When turning left across oncoming traffic, you must yield to:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Oncoming vehicles and crossing pedestrians",
+      "Vehicles behind you",
+      "Vehicles to your left only",
+      "Bikes behind you only"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Left turns yield to oncoming and pedestrians."
   },
   {
-    "id": "gen-x21",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "row-003",
+    "category": "Laws",
+    "q": "On a steep narrow grade where passing is impossible, which vehicle must yield and back up?",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "The downhill vehicle",
+      "The uphill vehicle",
+      "The larger vehicle",
+      "The faster vehicle"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Downhill vehicle yields; uphill has better control."
   },
   {
-    "id": "gen-x22",
+    "id": "row-004",
     "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "q": "At a multi‑way stop, if two vehicles arrive at the exact same time from perpendicular streets, who goes first?",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "The driver on your right",
+      "The bigger vehicle",
+      "The one signaling first",
+      "The faster one"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Yield to the vehicle on your right."
   },
   {
-    "id": "gen-x23",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "row-005",
+    "category": "Laws",
+    "q": "At a malfunctioning traffic signal (dark), you must treat the intersection as:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "An all‑way stop",
+      "Uncontrolled—proceed freely",
+      "Yield only to the right",
+      "Green if clear"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Treat as four‑way stop; proceed in turn."
   },
   {
-    "id": "gen-x24",
+    "id": "row-006",
     "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "q": "When entering a roadway from a driveway or alley, you must:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Stop/yield to traffic and pedestrians before crossing the sidewalk",
+      "Ease out without stopping",
+      "Enter quickly to match flow",
+      "Rely on mirrors only"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Yield to sidewalk users and traffic."
   },
   {
-    "id": "gen-x25",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "row-007",
+    "category": "Laws",
+    "q": "A flashing red signal at an intersection requires:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "A full stop; proceed when clear",
+      "Slowing only",
+      "Proceeding with caution without stopping",
+      "Right turn only"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Flashing red = stop sign."
   },
   {
-    "id": "gen-x26",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "pass-001",
+    "category": "Laws",
+    "q": "You may pass on the right only when:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "There are two or more lanes in your direction or the vehicle ahead is turning left",
+      "You are late",
+      "On narrow two‑lane roads",
+      "The vehicle ahead is under the limit"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Legal when lanes allow or vehicle ahead turns left."
   },
   {
-    "id": "gen-x27",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "pass-002",
+    "category": "Laws",
+    "q": "Crossing a double solid yellow centerline is permitted only:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "To turn left at an intersection/driveway or make a lawful U‑turn",
+      "To pass slow vehicles",
+      "When traffic is light",
+      "On curves if clear"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Crossing is restricted to turning or U‑turns where allowed."
   },
   {
-    "id": "gen-x28",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "pass-003",
+    "category": "Laws",
+    "q": "A single broken yellow centerline between opposing directions means:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Passing is permitted if safe",
+      "No passing for either direction",
+      "Passing only with permit",
+      "Right lane must pass"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Broken yellow allows passing when clear."
   },
   {
-    "id": "gen-x29",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "pass-004",
+    "category": "Laws",
+    "q": "A double solid white line between lanes means:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "No lane changes",
+      "Lane change allowed",
+      "HOV entry permitted",
+      "Bike lane"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Double solid white prohibits crossing."
   },
   {
-    "id": "gen-x30",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "turn-001",
+    "category": "Laws",
+    "q": "You must signal at least this distance before turning in CA:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "100 feet",
+      "50 feet",
+      "200 feet",
+      "1 block"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Minimum of 100 feet."
   },
   {
-    "id": "gen-x31",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "turn-002",
+    "category": "Laws",
+    "q": "A left turn on red is legal in CA only when turning:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "From a one‑way street onto another one‑way street (unless prohibited)",
+      "From any street if clear",
+      "During daylight only",
+      "When a cop waves you through"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Only one‑way to one‑way unless signed otherwise."
   },
   {
-    "id": "gen-x32",
+    "id": "turn-003",
     "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "q": "Before turning right on red where permitted, you must:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Stop fully and yield to all traffic and pedestrians",
+      "Slow and roll through",
+      "Honk then go",
+      "Enter from any lane"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Full stop and yield first."
   },
   {
-    "id": "gen-x33",
+    "id": "turn-004",
     "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "q": "When turning into a multi‑lane road, you should enter:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "The nearest legal lane",
+      "Any lane you prefer",
+      "The lane with least traffic",
+      "Center lane immediately"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Enter the closest legal lane, then change if needed."
   },
   {
-    "id": "gen-x34",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "turn-005",
+    "category": "Laws",
+    "q": "Right turns must generally be made from:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "The lane nearest the right curb/edge",
+      "Any open lane",
+      "The left lane",
+      "The center lane"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Turn from the proper approach lane."
   },
   {
-    "id": "gen-x35",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "spd-001",
+    "category": "Laws",
+    "q": "California’s Basic Speed Law requires you to:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Never exceed a speed reasonable for conditions—even if below the limit",
+      "Always match traffic",
+      "Always drive the posted limit",
+      "Drive at least 25 mph"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Conditions can require speeds below the posted limit."
   },
   {
-    "id": "gen-x36",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "spd-002",
+    "category": "Laws",
+    "q": "The maximum speed on most CA highways is:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "65 mph unless posted otherwise",
+      "55 mph statewide",
+      "75 mph statewide",
+      "60 mph urban"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Many segments are 65 unless posted differently."
   },
   {
-    "id": "gen-x37",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "spd-003",
+    "category": "Safety",
+    "q": "On wet pavement your stopping distance can increase by:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "2–10× compared to dry",
+      "About the same",
+      "Only 10%",
+      "Half"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Traction loss greatly increases stopping distance."
   },
   {
-    "id": "gen-x38",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "spd-004",
+    "category": "Safety",
+    "q": "Hydroplaning is most likely at speeds:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Above ~35 mph on standing water",
+      "Below 15 mph",
+      "Only at 80+ mph",
+      "Only with worn tires"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Even moderate speeds can hydroplane tires in water."
   },
   {
-    "id": "gen-x39",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "lit-001",
+    "category": "Laws",
+    "q": "You must use headlights when visibility is less than:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "1,000 feet",
+      "500 feet",
+      "200 feet",
+      "A quarter‑mile"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Turn on lights when you cannot see adequately."
   },
   {
-    "id": "gen-x40",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "lit-002",
+    "category": "Laws",
+    "q": "Dim high beams when approaching oncoming traffic within:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "500 feet",
+      "200 feet",
+      "300 feet",
+      "700 feet"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Prevent glare for opposing traffic."
   },
   {
-    "id": "gen-x41",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "lit-003",
+    "category": "Laws",
+    "q": "Headlights must also be on when windshield wipers are in continuous use because:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "You must be seen as well as see",
+      "It protects the wipers",
+      "It preserves the battery",
+      "It reduces cabin glare"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Law requires lights with continuous wiper use."
   },
   {
-    "id": "gen-x42",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "lit-004",
+    "category": "Safety",
+    "q": "In heavy fog you should use:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Low beams and slow speed",
+      "High beams",
+      "Parking lights only",
+      "Hazard lights while moving"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "High beams reflect back in fog."
   },
   {
-    "id": "gen-x43",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "ped-001",
+    "category": "Laws",
+    "q": "Pedestrians have right‑of‑way:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "At both marked and unmarked crosswalks",
+      "Only when a walk signal shows",
+      "Only at marked crosswalks",
+      "Only in daylight"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Unmarked crosswalks exist at most intersections."
   },
   {
-    "id": "gen-x44",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "bike-001",
+    "category": "Laws",
+    "q": "When passing a bicyclist, leave at least:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "3 feet",
+      "1 foot",
+      "No minimum",
+      "6 inches"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Three‑foot minimum passing law."
   },
   {
-    "id": "gen-x45",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "moto-001",
+    "category": "Safety",
+    "q": "When sharing the road with motorcycles, you should:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Allow extra following space",
+      "Follow closely to draft",
+      "Pass within the lane",
+      "Use high beams to be seen"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Motorcycles can stop/turn quickly; space is safety."
   },
   {
-    "id": "gen-x46",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "bus-001",
+    "category": "Laws",
+    "q": "On an undivided road, a school bus with flashing red lights requires:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "All traffic in both directions to stop",
+      "Only vehicles behind to stop",
+      "Only oncoming to stop",
+      "Slowing to 10 mph"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Stop until lights stop flashing or driver signals you to proceed."
   },
   {
-    "id": "gen-x47",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "rr-001",
+    "category": "Safety",
+    "q": "Flashing red lights or lowered gates at a railroad crossing mean:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Stop; proceed only when signals stop and it’s safe",
+      "Slow and look only",
+      "Proceed if no train is visible",
+      "Stop only at night"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Do not cross until the crossing is cleared."
   },
   {
-    "id": "gen-x48",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "emer-001",
+    "category": "Laws",
+    "q": "When an emergency vehicle approaches with lights and siren, you must:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Pull to the right and stop",
+      "Maintain speed",
+      "Stop in your lane",
+      "Speed up to clear it"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Yield the right‑of‑way immediately."
   },
   {
-    "id": "gen-x49",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "move-001",
+    "category": "Laws",
+    "q": "Approaching a stationary emergency or tow truck with flashing lights on a freeway, you must:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Move over or slow to a safe speed",
+      "Honk and pass",
+      "Stop in lane",
+      "Maintain speed"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Move Over/Slow Down law."
   },
   {
-    "id": "gen-x50",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "emer-002",
+    "category": "Laws",
+    "q": "Following within how many feet of an emergency vehicle with lights on is illegal?",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Within 300 feet",
+      "Within 50 feet",
+      "Within 1000 feet",
+      "Within 150 feet"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Keep at least 300 ft back."
   },
   {
-    "id": "gen-x51",
+    "id": "frwy-001",
     "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "q": "Best practice for freeway merging from an on‑ramp is to:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Match the speed of traffic and merge when a gap opens",
+      "Stop at ramp end",
+      "Enter the shoulder first",
+      "Accelerate 20 mph faster than traffic"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Blend smoothly at traffic speed."
   },
   {
-    "id": "gen-x52",
+    "id": "frwy-002",
     "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "q": "If you miss your freeway exit you should:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Continue to the next exit",
+      "Stop on the shoulder",
+      "Reverse along the shoulder",
+      "Cross the gore point"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Never stop/reverse on freeways."
   },
   {
-    "id": "gen-x53",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "frwy-003",
+    "category": "Safety",
+    "q": "On a freeway, good scanning distance is:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "At least 1/4 mile ahead",
+      "One car length",
+      "Just beyond the hood",
+      "Only your mirrors"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Look far ahead to anticipate hazards."
   },
   {
-    "id": "gen-x54",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "park-001",
+    "category": "Laws",
+    "q": "When parking uphill with a curb, turn your front wheels:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Away from the curb",
+      "Toward the curb",
+      "Straight",
+      "It doesn’t matter"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "So a roll will contact the curb, not the street."
   },
   {
-    "id": "gen-x55",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "park-002",
+    "category": "Laws",
+    "q": "When parking downhill with a curb, wheels should be:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Toward the curb",
+      "Away from the curb",
+      "Straight",
+      "Pointed uphill"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Turn toward the curb downhill."
   },
   {
-    "id": "gen-x56",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "park-003",
+    "category": "Laws",
+    "q": "You may not park:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "In front of a driveway",
+      "Next to a green curb",
+      "At a white curb temporarily",
+      "At a yellow curb during loading hours"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Blocking driveways is prohibited."
   },
   {
-    "id": "gen-x57",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "park-004",
+    "category": "Laws",
+    "q": "A red curb indicates:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "No stopping, standing, or parking",
+      "Passenger loading",
+      "Commercial loading",
+      "Short stops allowed"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "No stopping permitted."
   },
   {
-    "id": "gen-x58",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "park-005",
+    "category": "Laws",
+    "q": "A green curb generally means:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Limited‑time parking",
+      "No stopping",
+      "Disabled parking only",
+      "Tow‑away area"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Observe posted time limits."
   },
   {
-    "id": "gen-x59",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "park-006",
+    "category": "Laws",
+    "q": "A white curb indicates:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Passenger loading/unloading only",
+      "Commercial loading",
+      "Bus zone",
+      "No stopping at any time"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Short passenger stops allowed."
   },
   {
-    "id": "gen-x60",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "ctrl-001",
+    "category": "Safety",
+    "q": "If your rear wheels start to skid, you should:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Steer in the direction you want the front to go",
+      "Brake hard immediately",
+      "Steer away from the skid sharply",
+      "Accelerate hard"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Steer smoothly toward intended path."
   },
   {
-    "id": "gen-x61",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "ctrl-002",
+    "category": "Safety",
+    "q": "With ABS during an emergency stop, you should:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Apply firm, continuous pressure while steering",
+      "Pump the brake pedal",
+      "Turn off the ignition",
+      "Shift to neutral and coast"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "ABS works with steady pressure."
   },
   {
-    "id": "gen-x62",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "ctrl-003",
+    "category": "Safety",
+    "q": "If your accelerator sticks, your first action should be:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Shift to neutral",
+      "Turn off the ignition and lock steering",
+      "Brake hard immediately",
+      "Open the hood latch"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Neutral disengages power safely."
   },
   {
-    "id": "gen-x63",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "ctrl-004",
+    "category": "Safety",
+    "q": "If a tire blows out at speed, you should first:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Grip the wheel, ease off gas, and stabilize",
+      "Brake hard",
+      "Turn sharply off the road",
+      "Accelerate to lift weight"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Stabilize before slowing and pulling off."
   },
   {
-    "id": "gen-x64",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "phone-001",
+    "category": "Laws",
+    "q": "Using a handheld phone while driving in CA is:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Illegal—use hands‑free only",
+      "Legal below 25 mph",
+      "Legal at red lights",
+      "Allowed on freeways"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Hands‑free required; no holding device in hand."
   },
   {
-    "id": "gen-x65",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "phone-002",
+    "category": "Safety",
+    "q": "Best practice if you must place a phone call while driving:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Exit traffic and stop in a safe place first",
+      "Hold the phone low and glance",
+      "Use speaker while holding it",
+      "Call only on straightaways"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Avoid any in‑motion device use."
   },
   {
-    "id": "gen-x66",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "work-001",
+    "category": "Laws",
+    "q": "Many moving violations committed in signed work zones are:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Subject to enhanced fines",
+      "Dismissed if traffic is heavy",
+      "Halved at night",
+      "Exempt for locals"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Penalties are often higher in work zones."
   },
   {
-    "id": "gen-x67",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "work-002",
+    "category": "Safety",
+    "q": "When workers are present, you should:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Slow down, obey flaggers, expect sudden stops",
+      "Keep speed to avoid congestion",
+      "Tailgate to deter cut‑ins",
+      "Use high beams to be seen"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Follow all temporary controls."
   },
   {
-    "id": "gen-x68",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "rdbt-001",
+    "category": "Laws",
+    "q": "When entering a roundabout, you must yield to:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Traffic already in the circle and pedestrians",
+      "Only vehicles to your left",
+      "Only larger vehicles",
+      "No one—entry is free"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Yield to circulating traffic; watch for pedestrians/cyclists."
   },
   {
-    "id": "gen-x69",
+    "id": "rdbt-002",
     "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "q": "Proper signaling in a roundabout is:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Signal right just before your exit",
+      "Signal left while circulating",
+      "Signal isn’t used",
+      "Signal both on entry"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Signal when exiting to communicate intent."
   },
   {
-    "id": "gen-x70",
-    "category": "General",
-    "q": "When driving, always maintain awareness of the road by:",
+    "id": "rdbt-003",
+    "category": "Safety",
+    "q": "Appropriate roundabout speed is:",
     "choices": [
-      "Scanning ahead continually",
-      "Staring at one spot",
-      "Relying only on mirrors",
-      "Only watching nearby vehicles"
+      "Low and steady",
+      "As posted for the road",
+      "Fast to exit sooner",
+      "Match freeway speeds"
     ],
     "answerIndex": 0,
-    "explanation": "Continuous scanning improves reaction time."
+    "explanation": "Slow speeds reduce conflicts."
+  },
+  {
+    "id": "ped-002",
+    "category": "Safety",
+    "q": "At mid‑block crosswalks, you must:",
+    "choices": [
+      "Yield to pedestrians in the crosswalk",
+      "Only slow if they run",
+      "Honk to warn",
+      "Proceed because it’s not an intersection"
+    ],
+    "answerIndex": 0,
+    "explanation": "Crosswalks grant pedestrian right‑of‑way."
+  },
+  {
+    "id": "ped-003",
+    "category": "Safety",
+    "q": "A blind pedestrian with a white cane or guide dog:",
+    "choices": [
+      "Has absolute priority—stop and yield",
+      "Must wait for a walk signal",
+      "Should be waved across",
+      "Should be passed quickly"
+    ],
+    "answerIndex": 0,
+    "explanation": "Give full right‑of‑way; do not distract or block."
+  },
+  {
+    "id": "hov-001",
+    "category": "Laws",
+    "q": "You may use an HOV lane when:",
+    "choices": [
+      "You meet occupancy rules or have an eligible clean‑air decal",
+      "Traffic is heavy",
+      "Your car is compact",
+      "It’s after 7 pm"
+    ],
+    "answerIndex": 0,
+    "explanation": "Compliance requires passengers or qualifying decals."
+  },
+  {
+    "id": "belt-001",
+    "category": "Laws",
+    "q": "Seat belts are required for:",
+    "choices": [
+      "Driver and all passengers",
+      "Front seats only",
+      "Adults only",
+      "Highways only"
+    ],
+    "answerIndex": 0,
+    "explanation": "Everyone must be properly restrained."
+  },
+  {
+    "id": "child-001",
+    "category": "Laws",
+    "q": "Children under 2 must be secured:",
+    "choices": [
+      "In a rear‑facing car seat unless they exceed size exemptions",
+      "In any belt",
+      "In the front seat",
+      "With only a lap belt"
+    ],
+    "answerIndex": 0,
+    "explanation": "Rear‑facing is required for infants/toddlers unless exempt."
+  },
+  {
+    "id": "child-002",
+    "category": "Laws",
+    "q": "Children under 8 generally must ride:",
+    "choices": [
+      "In a car seat or booster in the back seat",
+      "In front with an airbag",
+      "With only a lap belt",
+      "Anywhere without restraint"
+    ],
+    "answerIndex": 0,
+    "explanation": "Proper restraint in back seat is required."
+  },
+  {
+    "id": "glare-001",
+    "category": "Safety",
+    "q": "To reduce glare from oncoming high beams at night:",
+    "choices": [
+      "Glance to the right edge line and keep speed safe",
+      "Stare at the lights to gauge distance",
+      "Close eyes briefly",
+      "Use your high beams back"
+    ],
+    "answerIndex": 0,
+    "explanation": "Use the right edge as a guide; don’t look into glare."
+  },
+  {
+    "id": "space-001",
+    "category": "Safety",
+    "q": "Best tactic to neutralize a tailgater:",
+    "choices": [
+      "Increase your following distance ahead",
+      "Brake‑check them",
+      "Maintain exact speed regardless",
+      "Weave to block"
+    ],
+    "answerIndex": 0,
+    "explanation": "Extra space reduces the need to brake hard."
+  },
+  {
+    "id": "frwy-004",
+    "category": "General",
+    "q": "When being passed on a two‑lane road, you should:",
+    "choices": [
+      "Maintain or slightly reduce speed",
+      "Speed up",
+      "Move to the center",
+      "Sound your horn"
+    ],
+    "answerIndex": 0,
+    "explanation": "Do not interfere with the passing vehicle."
+  },
+  {
+    "id": "overheat-001",
+    "category": "Safety",
+    "q": "If the engine overheats, you should first:",
+    "choices": [
+      "Turn off A/C, pull over safely, and let it cool",
+      "Open the radiator cap immediately",
+      "Drive faster for airflow",
+      "Shut engine off instantly on freeway"
+    ],
+    "answerIndex": 0,
+    "explanation": "Never open hot radiator; cool first."
+  },
+  {
+    "id": "light-001",
+    "category": "Safety",
+    "q": "If your headlights fail at night, you should:",
+    "choices": [
+      "Slow, try the switch, turn on hazards, exit roadway safely",
+      "Accelerate to reach a lit area",
+      "Use phone flashlight out window",
+      "Stop in a travel lane"
+    ],
+    "answerIndex": 0,
+    "explanation": "Get off the roadway safely; use hazards."
+  },
+  {
+    "id": "dui-001",
+    "category": "Laws",
+    "q": "For drivers 21+, DUI per se is at BAC:",
+    "choices": [
+      "0.08% or higher",
+      "0.05%",
+      "0.02%",
+      "Any detectable alcohol"
+    ],
+    "answerIndex": 0,
+    "explanation": "0.08% is the per se limit for adults."
+  },
+  {
+    "id": "dui-002",
+    "category": "Laws",
+    "q": "Alcohol first impairs:",
+    "choices": [
+      "Judgment and decision‑making",
+      "Vision",
+      "Balance",
+      "Vehicle control only"
+    ],
+    "answerIndex": 0,
+    "explanation": "Judgment declines before gross motor skills."
+  },
+  {
+    "id": "dui-003",
+    "category": "Laws",
+    "q": "Medications (even prescribed) can lead to DUI if they:",
+    "choices": [
+      "Impair your ability to drive safely",
+      "Are labeled non‑drowsy",
+      "Are doctor‑approved",
+      "Are over‑the‑counter only"
+    ],
+    "answerIndex": 0,
+    "explanation": "Any impairing substance can constitute DUI."
+  },
+  {
+    "id": "dui-004",
+    "category": "Laws",
+    "q": "Zero‑tolerance BAC for drivers under 21 in CA is:",
+    "choices": [
+      "0.01%",
+      "0.08%",
+      "0.05%",
+      "0.00% exact only"
+    ],
+    "answerIndex": 0,
+    "explanation": "0.01% or higher violates under‑21 rules."
+  },
+  {
+    "id": "judge-001",
+    "category": "Safety",
+    "q": "If a driver with high beams fails to dim, you should:",
+    "choices": [
+      "Look to right edge, avoid glare, and maintain safe speed",
+      "Flash continuously",
+      "Brake hard in lane",
+      "Stop immediately in lane"
+    ],
+    "answerIndex": 0,
+    "explanation": "Use the right edge line and keep control."
+  },
+  {
+    "id": "judge-002",
+    "category": "General",
+    "q": "If visibility ahead is blocked (e.g., large truck), your best choice is to:",
+    "choices": [
+      "Increase following distance to see around",
+      "Close the gap",
+      "Use high beams",
+      "Weave to peek"
+    ],
+    "answerIndex": 0,
+    "explanation": "Space restores sight distance."
+  },
+  {
+    "id": "judge-003",
+    "category": "General",
+    "q": "Before changing lanes in heavy traffic, create a gap by:",
+    "choices": [
+      "Adjusting speed early and signaling well in advance",
+      "Signaling during the move",
+      "Honk to force entry",
+      "Straddling lanes"
+    ],
+    "answerIndex": 0,
+    "explanation": "Early signal and speed change invites cooperation."
+  },
+  {
+    "id": "judge-004",
+    "category": "Safety",
+    "q": "If your vehicle leaves the pavement edge unintentionally, you should:",
+    "choices": [
+      "Ease off gas, keep wheels straight, re‑enter gradually when safe",
+      "Jerk steering back immediately",
+      "Brake hard and stop in lane",
+      "Accelerate to climb back"
+    ],
+    "answerIndex": 0,
+    "explanation": "Sudden steering causes loss of control."
+  },
+  {
+    "id": "sig-001",
+    "category": "Laws",
+    "q": "A steady green arrow giving a protected turn means you may:",
+    "choices": [
+      "Turn in indicated direction; opposing traffic is stopped",
+      "Turn only after yielding to oncoming",
+      "Go straight only",
+      "Turn but yield to opposing with right‑of‑way"
+    ],
+    "answerIndex": 0,
+    "explanation": "Protected phase grants right‑of‑way to turn traffic."
+  },
+  {
+    "id": "sig-002",
+    "category": "Laws",
+    "q": "A flashing yellow arrow for a turn indicates:",
+    "choices": [
+      "Proceed with the turn but yield to oncoming/pedestrians",
+      "Protected turn—no yielding",
+      "No turns permitted",
+      "Stop then turn"
+    ],
+    "answerIndex": 0,
+    "explanation": "Flashing yellow arrow = permissive yield turn."
+  },
+  {
+    "id": "sig-003",
+    "category": "Laws",
+    "q": "A solid yellow light means:",
+    "choices": [
+      "Signal is about to turn red—stop if safe to do so",
+      "Proceed—you have priority",
+      "Stop immediately regardless",
+      "Speed up to beat the red"
+    ],
+    "answerIndex": 0,
+    "explanation": "Prepare to stop unless unsafe to do so."
+  },
+  {
+    "id": "def-001",
+    "category": "Safety",
+    "q": "The most effective countermeasure to fatigue is to:",
+    "choices": [
+      "Rest/sleep",
+      "Energy drinks only",
+      "Loud music",
+      "Open windows"
+    ],
+    "answerIndex": 0,
+    "explanation": "Only sleep truly reverses fatigue."
+  },
+  {
+    "id": "def-002",
+    "category": "Safety",
+    "q": "When traction is marginal on a curve, the safest technique is to:",
+    "choices": [
+      "Slow before the curve and maintain steady speed through it",
+      "Brake in the curve",
+      "Accelerate into the curve",
+      "Coast in neutral"
+    ],
+    "answerIndex": 0,
+    "explanation": "Set speed before the curve; avoid mid‑curve braking."
+  },
+  {
+    "id": "rr-002",
+    "category": "Safety",
+    "q": "If your vehicle stalls on tracks with a train approaching, you should:",
+    "choices": [
+      "Exit immediately and run at an angle toward the train",
+      "Stay inside and call",
+      "Try to push the car",
+      "Stand behind vehicle"
+    ],
+    "answerIndex": 0,
+    "explanation": "Move away at an angle to avoid debris trajectory."
+  },
+  {
+    "id": "vis-001",
+    "category": "General",
+    "q": "Before lane changes, you should check:",
+    "choices": [
+      "Mirrors and blind spots via over‑the‑shoulder glance",
+      "Rearview only",
+      "Blind spot monitors only",
+      "Side mirrors only"
+    ],
+    "answerIndex": 0,
+    "explanation": "Shoulder check remains essential."
+  },
+  {
+    "id": "vis-002",
+    "category": "General",
+    "q": "After passing another vehicle on a two‑lane road, return to your lane when:",
+    "choices": [
+      "You can see both headlights of the passed vehicle in your mirror",
+      "Immediately after clearing their bumper",
+      "When the driver flashes you",
+      "At the next curve"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ensure sufficient clearance before returning."
+  },
+  {
+    "id": "misc-001",
+    "category": "Laws",
+    "q": "It is illegal to stop or park:",
+    "choices": [
+      "On a crosswalk",
+      "Beside a white curb briefly",
+      "At a designated loading zone during hours",
+      "More than 18 inches from the curb when parallel parked"
+    ],
+    "answerIndex": 0,
+    "explanation": "Do not obstruct crosswalks."
+  },
+  {
+    "id": "misc-002",
+    "category": "Laws",
+    "q": "When a traffic officer’s directions conflict with signs or signals, you must:",
+    "choices": [
+      "Obey the officer",
+      "Obey the sign",
+      "Obey the signal",
+      "Stop until clear"
+    ],
+    "answerIndex": 0,
+    "explanation": "Officer’s directions control the intersection."
+  },
+  {
+    "id": "misc-003",
+    "category": "Laws",
+    "q": "You must report a collision to DMV within 10 days when:",
+    "choices": [
+      "Injury/fatality occurs or damage exceeds the statutory threshold",
+      "Only if police respond",
+      "Only if you’re at fault",
+      "Only if vehicles are towed"
+    ],
+    "answerIndex": 0,
+    "explanation": "Timely reporting is legally required."
+  },
+  {
+    "id": "misc-004",
+    "category": "Safety",
+    "q": "Driving substantially below the flow of traffic in the left lane is:",
+    "choices": [
+      "Unsafe and can be unlawful impeding",
+      "Always the safest choice",
+      "Required for new drivers",
+      "Recommended to save fuel"
+    ],
+    "answerIndex": 0,
+    "explanation": "Keep right unless passing; don’t impede."
+  },
+  {
+    "id": "misc-005",
+    "category": "Safety",
+    "q": "To minimize risk when stopped behind another vehicle, you should:",
+    "choices": [
+      "Leave a visible escape gap and watch mirrors",
+      "Close the gap tightly",
+      "Turn wheels sharply left",
+      "Look only forward"
+    ],
+    "answerIndex": 0,
+    "explanation": "Space and mirror checks help avoid rear‑end traps."
+  },
+  {
+    "id": "misc-006",
+    "category": "Safety",
+    "q": "If strong crosswinds affect steering on bridges, you should:",
+    "choices": [
+      "Reduce speed and keep a firm grip",
+      "Accelerate to cut exposure",
+      "Steer abruptly to compensate",
+      "Use cruise control"
+    ],
+    "answerIndex": 0,
+    "explanation": "Smooth, slower inputs maintain control."
+  },
+  {
+    "id": "misc-007",
+    "category": "General",
+    "q": "If your vehicle has a tire pressure warning, you should:",
+    "choices": [
+      "Check and correct pressure before extended driving",
+      "Ignore until service time",
+      "Compensate by speeding up",
+      "Let air out for comfort"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct tire pressure is critical for safety."
+  },
+  {
+    "id": "hard-104",
+    "category": "General",
+    "q": "On a narrow mountain road with turnouts, the slower driver should:",
+    "choices": [
+      "Use the next turnout to let vehicles pass",
+      "Maintain speed and ignore following traffic",
+      "Stop in the lane to wave others by",
+      "Straddle the centerline to block passes"
+    ],
+    "answerIndex": 0,
+    "explanation": "Use posted turnouts to avoid impeding traffic."
+  },
+  {
+    "id": "hard-new-001",
+    "category": "Laws",
+    "q": "When approaching a stopped emergency vehicle with flashing lights on a multi-lane road, what must you do?",
+    "choices": [
+      "Move one lane away or slow significantly if a lane change is unsafe",
+      "Stop immediately in your lane",
+      "Honk to alert them you are passing",
+      "Maintain speed but shift to the left side of your lane"
+    ],
+    "answerIndex": 0,
+    "explanation": "California's Move Over law requires moving over or slowing if moving is unsafe."
+  },
+  {
+    "id": "hard-new-002",
+    "category": "Safety",
+    "q": "When descending a long steep grade, why should you avoid continuously riding your brakes?",
+    "choices": [
+      "Brakes can overheat and lose effectiveness",
+      "It increases fuel usage",
+      "It may confuse other drivers",
+      "It prevents ABS from activating"
+    ],
+    "answerIndex": 0,
+    "explanation": "Continuous braking generates heat and can cause brake fade."
+  },
+  {
+    "id": "hard-new-003",
+    "category": "Laws",
+    "q": "If you are involved in a minor collision and no one is injured, you must:",
+    "choices": [
+      "Stop and exchange information",
+      "Leave if the damage is under $500",
+      "Call the police and wait in your car",
+      "Move your vehicle only when instructed by law enforcement"
+    ],
+    "answerIndex": 0,
+    "explanation": "Drivers must stop and exchange information after any collision."
+  },
+  {
+    "id": "hard-new-004",
+    "category": "General",
+    "q": "A flashing yellow arrow for a left turn means:",
+    "choices": [
+      "You may turn left if yielding to oncoming traffic and pedestrians",
+      "You must stop and wait for green",
+      "Left turns are prohibited",
+      "The signal is malfunctioning"
+    ],
+    "answerIndex": 0,
+    "explanation": "A flashing yellow arrow allows left turns if the way is clear and you yield."
+  },
+  {
+    "id": "hard-new-005",
+    "category": "Safety",
+    "q": "When your tires lose contact with the road due to water, it is called:",
+    "choices": [
+      "Hydroplaning",
+      "Drafting",
+      "Balding",
+      "Crabbing"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hydroplaning reduces traction and control on wet surfaces."
+  },
+  {
+    "id": "hard-new-006",
+    "category": "Laws",
+    "q": "U-turns are illegal in business districts except:",
+    "choices": [
+      "At intersections unless prohibited",
+      "Anywhere traffic is light",
+      "In the middle of the block",
+      "Only when a police officer signals you to do so"
+    ],
+    "answerIndex": 0,
+    "explanation": "In business districts, U-turns are allowed only at intersections where not prohibited."
+  },
+  {
+    "id": "hard-new-007",
+    "category": "Safety",
+    "q": "On icy roads, you should avoid:",
+    "choices": [
+      "Sudden acceleration or braking",
+      "Driving slowly",
+      "Using headlights",
+      "Checking mirrors"
+    ],
+    "answerIndex": 0,
+    "explanation": "Smooth control prevents loss of traction on icy surfaces."
+  },
+  {
+    "id": "hard-new-008",
+    "category": "General",
+    "q": "If another driver is tailgating you, the best action is to:",
+    "choices": [
+      "Increase following distance ahead of you",
+      "Brake sharply to warn them",
+      "Speed up to create distance",
+      "Move to the left lane and maintain speed"
+    ],
+    "answerIndex": 0,
+    "explanation": "Creating extra space ahead allows smoother slowing and reduces collision risk."
+  },
+  {
+    "id": "hard-new-009",
+    "category": "Laws",
+    "q": "At an uncontrolled T-intersection, the vehicle on the terminating road must:",
+    "choices": [
+      "Yield to all traffic on the through road",
+      "Proceed first",
+      "Yield only to vehicles turning left",
+      "Turn right only"
+    ],
+    "answerIndex": 0,
+    "explanation": "Vehicles entering a through road must yield to those already on it."
+  },
+  {
+    "id": "hard-new-010",
+    "category": "Safety",
+    "q": "If your vehicle begins to skid, the correct steering action is to:",
+    "choices": [
+      "Steer in the direction you want the front of the car to go",
+      "Steer in the opposite direction",
+      "Hold the wheel straight",
+      "Accelerate to regain traction"
+    ],
+    "answerIndex": 0,
+    "explanation": "Steering in the direction of travel helps regain control."
+  },
+  {
+    "id": "hard-new-011",
+    "category": "General",
+    "q": "When merging into freeway traffic, you must:",
+    "choices": [
+      "Match the speed of traffic before merging",
+      "Stop at the end of the ramp",
+      "Merge at a slower speed to avoid collisions",
+      "Drive on the shoulder until space opens"
+    ],
+    "answerIndex": 0,
+    "explanation": "Safe merging requires adjusting speed to match traffic flow."
+  },
+  {
+    "id": "hard-new-012",
+    "category": "Laws",
+    "q": "You must report a collision to the DMV if damages exceed:",
+    "choices": [
+      "$1000",
+      "$500",
+      "$2500",
+      "$5000"
+    ],
+    "answerIndex": 0,
+    "explanation": "California requires DMV report for collisions with over $1000 in damage."
+  },
+  {
+    "id": "hard-new-013",
+    "category": "Safety",
+    "q": "When driving in heavy fog, the best visibility is achieved by using:",
+    "choices": [
+      "Low-beam headlights",
+      "High-beam headlights",
+      "Parking lights only",
+      "Hazard flashers"
+    ],
+    "answerIndex": 0,
+    "explanation": "Low beams reduce glare and improve vision in fog."
+  },
+  {
+    "id": "hard-new-014",
+    "category": "General",
+    "q": "To maintain maximum control on curves, you should:",
+    "choices": [
+      "Slow before entering the curve",
+      "Brake throughout the curve",
+      "Accelerate into the curve",
+      "Hold the wheel loosely"
+    ],
+    "answerIndex": 0,
+    "explanation": "Entering a curve at a safe speed provides stability."
+  },
+  {
+    "id": "hard-new-015",
+    "category": "Laws",
+    "q": "You may drive in a bike lane only within how many feet of making a turn?",
+    "choices": [
+      "200 feet",
+      "100 feet",
+      "400 feet",
+      "50 feet"
+    ],
+    "answerIndex": 0,
+    "explanation": "California allows entering a bike lane only 200 feet before a turn."
+  },
+  {
+    "id": "hard-new-016",
+    "category": "Safety",
+    "q": "If your accelerator sticks and you cannot free it, the safest action is to:",
+    "choices": [
+      "Shift to neutral and brake smoothly",
+      "Turn off the engine immediately",
+      "Pull the parking brake hard",
+      "Accelerate to break it loose"
+    ],
+    "answerIndex": 0,
+    "explanation": "Shifting to neutral disconnects engine power and allows controlled braking."
   }
 ];
