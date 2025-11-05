@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>REAL DMV EXAM MODE</title>
+<style>
+  body {
+    background: linear-gradient(145deg, #0b1226, #0f1b3d);
+    font-family: Arial, sans-serif;
+    color: #e6e8f5;
+    margin: 0;
+    padding: 0;
+  }
+
+  #app {
+    max-width: 700px;
+    margin: 50px auto;
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(18px);
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.6);
+  }
+
+  h1 {
+    margin: 0 0 12px 0;
+    text-align: center;
+    font-size: 26px;
+  }
+
+  #timer {
+    text-align:center;
+    font-size:18px;
+    margin-bottom: 15px;
+    font-weight:600;
+    color:#d9e1ff;
+  }
+
+  #qText {
+    font-size:20px;
+    font-weight:600;
+    margin-bottom: 14px;
+    text-align:center;
+  }
+
+  .choice {
+    display:block;
+    width:100%;
+    background:#141e36;
+    border:1px solid #314679;
+    color:#dde4ff;
+    padding:12px;
+    margin:6px 0;
+    border-radius:8px;
+    cursor:pointer;
+    text-align:left;
+    transition:0.15s;
+  }
+  .choice:hover { background:#1d2b4c; }
+  .choice.selected { background:#243a7b; border-color:#4f7bff; }
+
+  .sign-img {
+    display:block;
+    margin: 0 auto 12px auto;
+    width:130px;
+    height:130px;
+    object-fit:contain;
+    border-radius:4px;
+  }
+
+  #resultScreen {
+    text-align:center;
+    display:none;
+  }
+
+  #resultScreen h2 {
+    margin-top:0;
+    font-size:32px;
+  }
+
+  #resultScreen h2.pass { color:#4cff9e; }
+  #resultScreen h2.fail { color:#ff6f7d; }
+
+  button {
+    padding:8px 14px;
+    margin-top:12px;
+    cursor:pointer;
+    border:none;
+    border-radius:6px;
+    background:#234bff;
+    color:white;
+    transition:0.2s;
+  }
+  button:hover { background:#173ad3; }
+
+  .secondary {
+    background:#1a2647;
+    border:1px solid #334a85;
+    color:#d0d7ff;
+  }
+  .secondary:hover { background:#24345e; }
+</style>
+</head>
+<body>
+<div id="app">
+  <h1>REAL DMV EXAM</h1>
+  <div id="timer">Time: --:--</div>
+
+  <div id="quizScreen">
+    <img id="qImg" class="sign-img" style="display:none;">
+    <div id="qText"></div>
+    <div id="choices"></div>
+    <button id="nextBtn">Next →</button>
+  </div>
+
+  <div id="resultScreen">
+    <h2 id="resultTitle"></h2>
+    <p id="scoreLine"></p>
+    <button id="reviewBtn" class="secondary">Review Incorrect</button>
+    <button id="retryBtn">Take Test Again</button>
+    <button class="secondary" onclick="window.location='index.html'">Return to Practice</button>
+  </div>
+</div>
+
+<script src="questions.js"></script>
+<script src="realstyle.js"></script>
+</body>
+</html>
