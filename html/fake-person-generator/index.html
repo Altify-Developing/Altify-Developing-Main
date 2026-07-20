@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Altify Fake Person Creator</title>
+<style>
+  :root { --primary: #2d3436; --accent: #6c5ce7; --bg: #f5f6fa; }
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg); padding: 20px; display: flex; flex-direction: column; align-items: center; }
+  .container { max-width: 800px; width: 100%; }
+  #generateBtn {
+    padding: 12px 32px; font-size: 16px; background: var(--accent); color: white; border: none; border-radius: 6px; cursor: pointer; transition: 0.2s; margin-bottom: 20px;
+  }
+  #generateBtn:hover { background: #5f4dd8; transform: translateY(-1px); }
+  #outputArea { width: 100%; background: white; border-radius: 8px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  .raw-output { font-family: 'Consolas', monospace; white-space: pre-wrap; line-height: 1.5; margin-bottom: 20px; padding: 10px; background: #f8f9fa; border-left: 4px solid var(--accent); }
+  .vars-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+  .var-box { background: #eef2f7; padding: 8px; border-radius: 4px; font-size: 13px; }
+  .var-label { color: var(--primary); font-weight: bold; display: block; margin-bottom: 4px; }
+  .var-value { color: #555; word-break: break-all; }
+  h3 { color: var(--primary); margin-top: 0; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <button id="generateBtn">Generate</button>
+  
+  <div id="outputArea" style="display:none;">
+    <h3>Capture Output (Raw)</h3>
+    <div id="rawOutput" class="raw-output"></div>
+    
+    <h3>All Generated Variables</h3>
+    <div id="varsGrid" class="vars-grid"></div>
+  </div>
+</div>
+
+<script>
+// ==========================================
+// ALTIFY GENERATOR (AHK -> JS Conversion)
+// ==========================================
+const AltifyGen = {
+  // Base Config Variables
+  ad: "[ N/A ]", accs: 1, discLink: "[ N/A ]", yt: "[ N/A ]", twitchLink: "[ N/A ]", memory: "64", threads: "20",
+
+  // Simulated External Lists (replace .pdb/.db files)
+  firstNames: ["John","Jane","Michael","Emily","David","Sarah","James","Lisa","Robert","Karen","William","Betty","Richard","Susan","Joseph","Margaret"],
+  lastNames: ["Smith","Jones","Brown","Davis","Miller","Wilson","Moore","Taylor","Anderson","Thomas","Jackson","White","Harris","Martin","Thompson","Garcia"],
+  statesUSA: ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"],
+  mailEndings: [".com",".net",".org",".io",".co",".info",".biz",".edu"],
+  
+  // Simulated Games Lists
+  xboxGames: ["Halo Infinite","Forza Horizon 5","Gears 5","Starfield","Psychonauts 2","Hi-Fi Rush","Age of Empires IV","Sea of Thieves","Slay the Spire","Microsoft Flight Simulator","Minecraft","Red Dead Redemption 2","FIFA 23","Call of Duty","Overwatch 2","Dead Island 2","Baldur's Gate 3","PUBG","Roblox","Among Us","Rocket League","Fall Guys","Tetris Effect","Stardew Valley","Celeste"],
+  battlenetGames: ["World of Warcraft","Diablo IV","Overwatch 2","StarCraft II","Hearthstone","Heroes of the Storm","Call of Duty: Modern Warfare III","Destiny 2","League of Legends","Valorant","Fortnite","Apex Legends","The Witcher 3","Grand Theft Auto V","Cyberpunk 2077","Elden Ring","Final Fantasy XIV","Lost Ark","PUBG Battlegrounds","Rocket League","Fall Guys","Tetris Effect","Stardew Valley","Celeste"],
+  epicGames: ["Fortnite","Rocket League","Fall Guys","Slay the Spire","Dead Island 2","Baldur's Gate 3","PUBG","Among Us","Overwatch 2","Call of Duty","Destiny 2","League of Legends","Valorant","Grand Theft Auto V","Cyberpunk 2077","Elden Ring","Final Fantasy XIV","Lost Ark"],
+  steamGames: ["Counter-Strike 2","Dota 2","Team Fortress 2","Portal 2","Half-Life 2","Garry's Mod","Rust","ARK Survival Evolved","Terraria","Stardew Valley","Hades","Dead Cells","Slay the Spire","Celeste","Hollow Knight","Ori and the Blind Forest","Axiom Verge","Hyper Light Drifter","Tunic","Shovel Knight","Enter the Gungeon","Risk of Rain 2","Cuphead","Undertale","Moonlighter"],
+  uplayGames: ["Assassin's Creed Valhalla","Rainbow Six Siege","The Division 2","Far Cry 6","Watch Dogs Legion","Ghost Recon Breakpoint","Tom Clancy's Elite Squad","Blade & Sorcery","Elite Dangerous","Anno 1800","Just Cause 4","Skylords Reborn","Star Traders Frontiers"],
+
+  // Helper: Random integer
+  rand(min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; },
+  
+  // String generators adapted from AHK character arrays & loops
+  charsBase: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
+  charsAZ09: "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
+  digits: "1234567890",
+  letters: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+
+  genRandomStr(len=1) {
+    let r="", l2=this.rand(3,6); for(let i=0;i<len;i++){for(let j=0;j<l2;j++)r+=this.charsBase.charAt(this.rand(0,306));} return r;
+  },
+  dToken1(len=1) { let r="",l2=this.rand(22,26); for(let i=0;i<len;i++){for(let j=0;j<l2;j++)r+=this.charsBase.charAt(this.rand(0,306));} return r; },
+  dToken2(len=1) { let r="___",l2=this.rand(4,8); for(let i=0;i<len;i++){for(let j=0;j<l2;j++)r+=this.charsBase.charAt(this.rand(0,309));} return r; },
+  dToken3(len=1) { let r="---",l2=this.rand(25,29); for(let i=0;i<len;i++){for(let j=0;j<l2;j++)r+=this.charsBase.charAt(this.rand(0,309));} return r; },
+  
+  pak(len=1) { let r="", l2=4; for(let i=0;i<len;i++){for(let j=0;j<l2;j++)r+=this.charsAZ09.charAt(this.rand(0,35));} return r; },
+  license1() { return this.digits.charAt(this.rand(0,9)); },
+  license2() { let r="", l2=3; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.letters.charAt(this.rand(0,25));} return r; },
+  license3() { let r="", l2=3; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+
+  cv(n) { const cfg=[{c:this.letters,l:1},{c:this.digits,l:1},{c:this.letters,l:3},{c:this.digits,l:9},{c:this.letters,l:1},{c:this.letters,l:1},{c:this.digits,l:1},{c:this.letters,l:3},{c:this.digits,l:2},{c:this.letters,l:2},{c:this.digits,l:1},{c:this.letters,l:1},{c:this.digits,l:1},{c:this.letters,l:1},{c:this.digits,l:1},{c:this.letters,l:1},{c:this.digits,l:1},{c:this.letters,l:1},{c:this.digits,l:1}]; let t=cfg[n-1]; let r="",l2=this.rand(1,1); for(let i=0;i<t.l;i++){for(let j=0;j<l2;j++)r+=t.c.charAt(this.rand(0,t.c.length-1));} return r; },
+  mon1() { let r="", l2=this.rand(1,6); for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+
+  da(n) { const len=[9,9,4][n-1]; let r="", l2=this.rand(1,1); for(let i=0;i<len;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+  id1() { let r="",l2=5; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+  id2() { let r="",l2=3; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.letters.charAt(this.rand(0,25));} return r; },
+  hm1() { let r="",l2=1; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.letters.charAt(this.rand(0,25));} return r; },
+  hm2() { let r="",l2=8; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+  Rx(n) { const len=[6,8,5][n-1]; let r="",l2=this.rand(1,1); for(let i=0;i<len;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+  hrn() { let r="",l2=7; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+  gnl() { let r="",l2=1; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.letters.charAt(this.rand(0,25));} return r; },
+  Rxx1() { let r="",l2=6; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+  Rxx2() { let r="",l2=5; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+
+  vvf(n) { const len=[5,4,1,6][n-1]; let r="", l2=this.rand(1,1); for(let i=0;i<len;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+
+  // Main Generation Loop
+  run() {
+    const result = {};
+    
+    // Config defaults if blank
+    if(!result.ad) result.ad = "[ N/A ]";
+    if(!result.discLink) result.discLink = "[ N/A ]";
+    if(!result.yt) result.yt = "[ N/A ]";
+    if(!result.twitchLink) result.twitchLink = "[ N/A ]";
+    if(!result.memory) result.memory = "64";
+    if(!result.threads) result.threads = "20";
+
+    // State & Country
+    const sp = this.rand(1, 20);
+    result.StateProbability = sp;
+    result.Country = (sp === 20 ? "Mexico" : "USA");
+    result.State = (sp === 20 ? "Mexico City" : this.statesUSA[this.rand(0,47)]);
+
+    // IP & Gender
+    const ip1=this.rand(10,99),ip2=this.rand(10,99),ip3=this.rand(100,999),ip4=this.rand(100,999);
+    result.IP = `${ip1}.${ip2}.${ip3}.${ip4}`;
+    const genderType=this.rand(1,2);
+    result.Gender = (genderType===1?"Male":"Female");
+
+    // Names & Mail
+    result.FirstName = this.firstNames[this.rand(0,15)];
+    result.LastName = this.lastNames[this.rand(0,15)];
+    result.Mail = `${result.FirstName}@${this.mailEndings[this.rand(0,7)]}:${result.LastName}`;
+
+    // Subscription Logic (AHK exact ranges)
+    const sub=this.rand(1,5);
+    result.Subscription = sub === 1 ? "False" : "True";
+    if(sub !== 1) {
+      let YrRange=[0,5][sub-2], Mo= this.rand(0,12), Dy= this.rand(0,27), Hr= this.rand(0,23), Mi= this.rand(0,59), Sc=this.rand(0,59), Ms=this.rand(0,999);
+      result.TimeRemaining = `${YrRange} Years\n${Mo} Months\n${Dy} Days\n${Hr} Hours\n${Mi} Minutes\n${Sc} Seconds\n${Ms} Miliseconds`;
+    }
+
+    // Computer Info
+    result.ComputerName = this.genRandomStr();
+    result.PIN = `${this.rand(1,9)}${this.rand(1,9)}${this.rand(1,9)}${this.rand(1,9)}`;
+    result.MicrosoftAccount = `${this.genRandomStr()}\n${result.FirstName}@outlook.com:${result.LastName}`;
+
+    // Product Activation Key
+    const pak1=this.pak(),pak2=this.pak(),pak3=this.pak(),pak4=this.pak();
+    result.ProductKey = `${pak1}-${pak2}-${pak3}-${pak4}`;
+
+    // Discord Token
+    result.DiscordToken = `${this.dToken1()}.${this.dToken2()}.${this.dToken3()}`;
+
+    // Credit Card
+    const cc1=this.rand(1000,9999),cc2=this.rand(1000,9999),cc3=this.rand(1000,9999),cc4=this.rand(1000,9999);
+    result.CreditCard = `${cc1}-${cc2}-${cc3}-${cc4}`;
+    result.CCV2 = this.rand(100,999);
+    const expM=this.rand(1,28),expY=this.rand(2024,2027);
+    result.ExpirationDate = `${expM}/${expY}`;
+    result.CardNetwork = "MasterCard/Access/Eurocard";
+    const avm=this.rand(1,999);
+    result.MoneyAvailable = `$${avm}`;
+
+    // License Plate (conditional on StateProbability)
+    if(sp <= 19) {
+      result.LicensePlate = `${this.license1()} ${this.license2()} ${this.license3()}`;
+    } else {
+      result.LicensePlate = `${this.license2()} ${this.license1()} ${this.license3()}`;
+    }
+
+    // Coinvoucher Code (cv1 to cv19)
+    let cvCode=""; for(let i=1;i<=19;i++) cvCode+=this.cv(i);
+    result.Coinvoucher = cvCode;
+
+    // Dental Logic
+    const dentplan=this.rand(1,100);
+    if(dentplan <= 59) {
+      result.DentalType = "Delta";
+      const da1=this.da(1),da2=this.da(2),da3=this.da(3);
+      const eff1=this.rand(1,12),eff2=this.rand(1,28),eff3=this.rand(21,23);
+      result.DeltaInfo = `Group Name: Delta Dental of ${result.State}\nGroup Number: ${da1}-${da2}-${da3}\nSubscriber Name: ${result.FirstName} ${result.LastName}\nIdentification Number: ${this.id1()}${this.id2()}\nMembership Type: Subscriber\nDate: ${eff1}/${eff2}/${eff3}`;
+    } else {
+      result.DentalType = "Humana";
+      const plann1=this.rand(10000,99999),plann2=this.rand(100,999),plann3=this.rand(100,999);
+      const s1=this.rand(1,9),s2=this.rand(1,9),s3=this.rand(1,9);
+      const eff1=this.rand(1,12),eff2=this.rand(1,28),eff3=this.rand(21,23);
+      result.HumanaInfo = `Plan: (${plann1}) ${plann1}${plann2}${plann3}\nRx BIN: ${this.Rx(1)}\nRx PCN: ${this.Rx(2)}\nRx GRP: ${this.Rx(3)}\nCard Issued: ${eff1}/${eff2}/20${eff3}\nCopayments:\nOffice Visits: $${s1}0\nSpecialist: $${s2}0\nHospital Emergency: $${s3}`;
+    }
+
+    // Kaiser Benefits (k1-k14 conditional strings)
+    const k1 = this.rand(0,1)? "Annual Deductible N/A" : "No Annual Deductible";
+    const aoup=this.rand(0,2);
+    const k2 = aoup===1? "Annual Out-of-Pocket (OOP) Maximum Individual: $2,000" : (aoup===2?"Annual Out-of-Pocket (OOP) Maximum Family: $4,000":"OOP - Not Covered");
+    const emp=this.rand(0,1);
+    const k3 = emp? "Employee Coinsurance 20% Durable Equipment" : "Employee Coinsurance - Not Covered";
+    const prev=this.rand(0,1);
+    const k4 = prev? "Preventive (Annual Physicals, Well Care Exams) 100% covered" : "Annual Physicals - Not Covered";
+    const phys=this.rand(0,2);
+    const k6 = phys===1? "Physician Visits Primary Care: $20/visit" : (phys===2?"Specialists: $20/visit":"Physician Visits Primary Care - Not Covered");
+    const lax=this.rand(0,1);
+    const k7 = lax? "Lab and X-Ray 100% covered" : "Lab and X-Ray - Not Covered";
+    const emg=this.rand(0,1);
+    const k8 = emg? "Emergency Room $150 / visit" : "Emergency - Not Covered";
+    const amb=this.rand(0,1);
+    const k9 = amb? "Ambulance $50 / trip" : "Ambulance - Not Covered";
+    const hosp=this.rand(0,1);
+    const k10 = hosp? "Hospitalization $250 / admission" : "Hospitalization - Not Covered";
+    const chr=this.rand(0,2);
+    const k11 = chr===1? "Chiropractic $15/visit" : (chr===2?"Up to 30 visits/year":"Chiropractic - Not Covered");
+    const acu=this.rand(0,2);
+    const k12 = acu===1? "Acupuncture $15/visit" : (acu===2?"Up to 30 visits/year":"Acupuncture - Not Covered");
+    const mas=this.rand(0,1);
+    const k13 = mas? "Massage" : "Massage - Not Covered";
+    const spe=this.rand(0,1);
+    const k14 = spe? "Speech Therapy $20" : "Speech Therapy - Not Covered";
+
+    const gn=this.rand(10000,99999),gn2=this.rand(10,99);
+    const eff1_k=this.rand(1,12),eff2_k=this.rand(1,28),eff3_k=this.rand(20,23);
+    const s1k=this.rand(1,9),s2k=this.rand(1,9),s3k=this.rand(1,9),s4k=this.rand(1,9),s5k=this.rand(1,9),s6k=this.rand(1,9),s7k=this.rand(1,9);
+    const s8k=this.rand(1,9),s9k=this.rand(1,9),s10k=this.rand(1,9),s11k=this.rand(1,9),s12k=this.rand(1,9);
+    
+    result.KaiserBenefits = `${k1}\n${k2}\n${k3}\n${k4}\n${k6}\n${k7}\n${k8}\n${k9}\n${k10}\n${k11}\n${k12}\n${k13}\n${k14}`;
+    result.KaiserID = `Member Name: ${result.FirstName} ${result.LastName}\nHealth Record Number: ${this.hrn()}\nGroup Number: ${gn}-${this.gnl()}${gn2}\nRx BIN Number: ${this.Rxx1()}\nRx PCN Number: ${this.Rxx2()}\nEFF Date: ${eff1_k}/${eff2_k}/${eff3_k}`;
+
+    // Games Grabbers
+    const games = {};
+    ["Xbox","Battle.NET","Epic","Steam","UPlay"].forEach(sys => {
+      const chance=this.rand(1,100);
+      if(chance > 40) {
+        let count=this.rand(1, sys==="Steam"?50:sys==="Battle.NET"?8:25);
+        let titles=[];
+        for(let i=0;i<count;i++) {
+          const idx=this.rand(0,(sys==="Xbox"?this.xboxGames.length:(sys==="Battle.NET"?this.battlenetGames.length:(sys==="Epic"?this.epicGames.length:(sys==="Steam"?this.steamGames.length:this.uplayGames.length)))));
+          titles.push(sys==="Xbox"?this.xboxGames[idx]:(sys==="Battle.NET"?this.battlenetGames[idx]:(sys==="Epic"?this.epicGames[idx]:(sys==="Steam"?this.steamGames[idx]:(sys==="UPlay"?this.uplayGames[idx])))));
+        }
+        games[sys]=titles.join(", ");
+      } else {
+        games[sys]="N/A";
+      }
+    });
+    result.Games = games;
+
+    // Credit Score
+    const creditposs=this.rand(1,10);
+    const ranges=[[300,400],[350,450],[450,500],[500,550],[550,650],[650,700],[700,750],[750,800],[800,825],[825,850]];
+    result.CreditScore = this.rand(ranges[creditposs-1][0], ranges[creditposs-1][1]);
+
+    // Passport Info
+    const dobM=this.rand(1,12),dobD=this.rand(1,28),dobY=this.rand(1960,2004);
+    const issM=this.rand(1,12),issD=this.rand(1,28),issY=this.rand(2019,2023);
+    const sv3o=this.rand(1000000,9999999),sv3t=this.rand(10,99),sv4o=this.rand(1,9),sv4t=this.rand(1,9);
+    result.Passport = `Given Name: ${result.FirstName}\nSurname: ${result.LastName}\nNationality: USA\nSex: ${result.Gender}\nDate of Birth: ${dobM}/${dobD}/${dobY}\nPlace of Birth: ${result.State}\nIssued On: ${issM}/${issD}/${issY}\nExpires on: ${issM}/${issD}/2024\nVVFs: ${this.vvf(1)}-${this.vvf(2)}-${sv3o} ${this.vvf(3)} ${sv3t}-${sv4o} ${this.vvf(4)} ${sv4t}`;
+
+    // Build Raw Output (AHK file append style)
+    let raw = `Name: ${result.FirstName} ${result.LastName}\n${result.Country}/${result.State}\nGender: ${result.Gender}\nIP=${result.IP}\nSubscribed:${result.Subscription}\n${result.TimeRemaining || ""}\nLicense Plate: ${result.LicensePlate}\n\nComputer Information:\nUsername: ${result.FirstName}\nComputer Name: ${result.ComputerName}\nPIN ( Personal Identification Number ): ${result.PIN}\nMicosoft Account Linked: ${result.MicrosoftAccount}\nProduct Activation Key: ${result.ProductKey}\nDiscord Token: ${result.DiscordToken}\n\nCredit Card: ${result.CreditCard}\nCCV2: ${result.CCV2}\nExpiration Date: ${result.ExpirationDate}\nCard Network: ${result.CardNetwork}\nMoney Avaliable On Account: ${result.MoneyAvailable}\nCoinvoucher code: ${result.Coinvoucher}\n\n${result.DentalType} DENTAL INFORMATION:\n${result.DeltaInfo || result.HumanaInfo}\n\nKaiser Benefits:\n${result.KaiserBenefits}\nKaiser ID:\n${result.KaiserID}\n\nGames Grabbers:\nXbox: ${games.Xbox}\nBattle.NET: ${games["Battle.NET"]}\nEpic Games: ${games.Epic}\nSteam: ${games.Steam}\nUPlay: ${games.UPlay}\n\nCredit Score: ${result.CreditScore}\n\nPassport Information:\n${result.Passport}`;
+
+    // Display to UI
+    document.getElementById('rawOutput').textContent = raw;
+    
+    const varsGrid = document.getElementById('varsGrid');
+    varsGrid.innerHTML = "";
+    
+    // Flatten result for display
+    Object.entries(result).forEach(([key, val]) => {
+      if(key === "Games") {
+        let gStr = "<br>";
+        Object.entries(val).forEach(([gk,gv]) => gStr += `${gk}: ${gv}<br>`);
+        this.createVarBox(varsGrid, key, gStr.trim());
+      } else if (key.includes("TimeRemaining")) {
+        this.createVarBox(varsGrid, key, val.replace(/\n/g, "<br>"));
+      } else {
+        this.createVarBox(varsGrid, key, String(val));
+      }
+    });
+
+    document.getElementById('outputArea').style.display = "block";
+  },
+
+  createVarBox(container, label, value) {
+    const div = document.createElement("div");
+    div.className = "var-box";
+    div.innerHTML = `<span class="var-label">${label}</span><span class="var-value">${value}</span>`;
+    container.appendChild(div);
+  }
+};
+
+// ==========================================
+// UI EVENT HANDLER
+// ==========================================
+document.getElementById('generateBtn').addEventListener('click', () => {
+  AltifyGen.run();
+});
+</script>
+</body>
+</html>
