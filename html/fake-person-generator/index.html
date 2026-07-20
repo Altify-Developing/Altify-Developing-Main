@@ -80,6 +80,278 @@ const AltifyGen = {
   letters: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
 
   genRandomStr(len=1) {
+    let r="", l2=this.rand(3,6); for(let i=0;i<len;i++){for(let j=0;j<l2;j++)r+=this.charsBase.charAt(this.rand(0, this.charsBase.length - 1));} return r;
+  },
+  dToken1(len=1) { let r="",l2=this.rand(22,26); for(let i=0;i<len;i++){for(let j=0;j<l2;j++)r+=this.charsBase.charAt(this.rand(0, this.charsBase.length - 1));} return r; },
+  dToken2(len=1) { let r="___",l2=this.rand(4,8); for(let i=0;i<len;i++){for(let j=0;j<l2;j++)r+=this.charsBase.charAt(this.rand(0, this.charsBase.length - 1));} return r; },
+  dToken3(len=1) { let r="---",l2=this.rand(25,29); for(let i=0;i<len;i++){for(let j=0;j<l2;j++)r+=this.charsBase.charAt(this.rand(0, this.charsBase.length - 1));} return r; },
+  
+  pak(len=1) { let r="", l2=4; for(let i=0;i<len;i++){for(let j=0;j<l2;j++)r+=this.charsAZ09.charAt(this.rand(0,35));} return r; },
+  license1() { return this.digits.charAt(this.rand(0,9)); },
+  license2() { let r="", l2=3; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.letters.charAt(this.rand(0,25));} return r; },
+  license3() { let r="", l2=3; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+
+  cv(n) { const cfg=[{c:this.letters,l:1},{c:this.digits,l:1},{c:this.letters,l:3},{c:this.digits,l:9},{c:this.letters,l:1},{c:this.letters,l:1},{c:this.digits,l:1},{c:this.letters,l:3},{c:this.digits,l:2},{c:this.letters,l:2},{c:this.digits,l:1},{c:this.letters,l:1},{c:this.digits,l:1},{c:this.letters,l:1},{c:this.digits,l:1},{c:this.letters,l:1},{c:this.digits,l:1},{c:this.letters,l:1},{c:this.digits,l:1}]; let t=cfg[n-1]; let r="",l2=this.rand(1,1); for(let i=0;i<t.l;i++){for(let j=0;j<l2;j++)r+=t.c.charAt(this.rand(0,t.c.length-1));} return r; },
+  mon1() { let r="", l2=this.rand(1,6); for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+
+  da(n) { const len=[9,9,4][n-1]; let r="", l2=this.rand(1,1); for(let i=0;i<len;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+  id1() { let r="",l2=5; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+  id2() { let r="",l2=3; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.letters.charAt(this.rand(0,25));} return r; },
+  hm1() { let r="",l2=1; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.letters.charAt(this.rand(0,25));} return r; },
+  hm2() { let r="",l2=8; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+  Rx(n) { const len=[6,8,5][n-1]; let r="",l2=this.rand(1,1); for(let i=0;i<len;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+  hrn() { let r="",l2=7; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+  gnl() { let r="",l2=1; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.letters.charAt(this.rand(0,25));} return r; },
+  Rxx1() { let r="",l2=6; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+  Rxx2() { let r="",l2=5; for(let i=0;i<1;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+
+  vvf(n) { const len=[5,4,1,6][n-1]; let r="", l2=this.rand(1,1); for(let i=0;i<len;i++){for(let j=0;j<l2;j++)r+=this.digits.charAt(this.rand(0,9));} return r; },
+
+  // Main Generation Loop
+  run() {
+    const result = {};
+    
+    // Config defaults if blank (matches Defaults.ini)
+    if(!result.ad) result.ad = "[ N/A ]";
+    if(!result.discLink) result.discLink = "[ N/A ]";
+    if(!result.yt) result.yt = "[ N/A ]";
+    if(!result.twitchLink) result.twitchLink = "[ N/A ]";
+    if(!result.memory) result.memory = "1300";
+    if(!result.threads) result.threads = "5";
+
+    // State & Country (AHK: 1-19 USA, 20 Mexico)
+    const sp = this.rand(1, 20);
+    result.StateProbability = sp;
+    result.Country = (sp === 20 ? "Mexico" : "USA");
+    result.State = (sp === 20 ? this.readLine(this.statesMEXICO, 1, 30) : this.readLine(this.statesUSA, 1, 50));
+
+    // IP & Gender
+    const ip1=this.rand(10,99),ip2=this.rand(10,99),ip3=this.rand(100,999),ip4=this.rand(100,999);
+    result.IP = `${ip1}.${ip2}.${ip3}.${ip4}`;
+    const genderType=this.rand(1,2);
+    result.Gender = (genderType===1?"Male":"Female");
+
+    // Names & Mail (ENDINGS.db is all outlook.com)
+    result.FirstName = this.readLine(this.firstNames, 1, 700);
+    result.LastName = this.readLine(this.lastNames, 1, 200);
+    result.Mail = `${result.FirstName}@outlook.com:${result.LastName}`;
+
+    // Subscription Logic (AHK exact ranges)
+    const sub=this.rand(1,5);
+    result.Subscription = sub === 1 ? "False" : "True";
+    if(sub !== 1) {
+      let YrRange=[0,5][sub-2], Mo= this.rand(0,12), Dy= this.rand(0,27), Hr= this.rand(0,23), Mi= this.rand(0,59), Sc=this.rand(0,59), Ms=this.rand(0,999);
+      result.TimeRemaining = `${YrRange} Years\n${Mo} Months\n${Dy} Days\n${Hr} Hours\n${Mi} Minutes\n${Sc} Seconds\n${Ms} Miliseconds`;
+    }
+
+    // Computer Info
+    result.ComputerName = this.genRandomStr();
+    result.PIN = `${this.rand(1,9)}${this.rand(1,9)}${this.rand(1,9)}${this.rand(1,9)}`;
+    result.MicrosoftAccount = `${this.genRandomStr()}\n${result.FirstName}@outlook.com:${result.LastName}`;
+
+    // Product Activation Key
+    const pak1=this.pak(),pak2=this.pak(),pak3=this.pak(),pak4=this.pak();
+    result.ProductKey = `${pak1}-${pak2}-${pak3}-${pak4}`;
+
+    // Discord Token
+    result.DiscordToken = `${this.dToken1()}.${this.dToken2()}.${this.dToken3()}`;
+
+    // Credit Card
+    const cc1=this.rand(1000,9999),cc2=this.rand(1000,9999),cc3=this.rand(1000,9999),cc4=this.rand(1000,9999);
+    result.CreditCard = `${cc1}-${cc2}-${cc3}-${cc4}`;
+    result.CCV2 = this.rand(100,999);
+    const expM=this.rand(1,28),expY=this.rand(2024,2027);
+    result.ExpirationDate = `${expM}/${expY}`;
+    result.CardNetwork = "MasterCard/Access/Eurocard";
+    const avm=this.rand(1,999);
+    result.MoneyAvailable = `$${avm}`;
+
+    // License Plate (conditional on StateProbability)
+    if(sp <= 19) {
+      result.LicensePlate = `${this.license1()} ${this.license2()} ${this.license3()}`;
+    } else {
+      result.LicensePlate = `${this.license2()} ${this.license1()} ${this.license3()}`;
+    }
+
+    // Coinvoucher Code (cv1 to cv19)
+    let cvCode=""; for(let i=1;i<=19;i++) cvCode+=this.cv(i);
+    result.Coinvoucher = cvCode;
+
+    // Dental Logic
+    const dentplan=this.rand(1,100);
+    if(dentplan <= 59) {
+      result.DentalType = "Delta";
+      const da1=this.da(1),da2=this.da(2),da3=this.da(3);
+      const eff1=this.rand(1,12),eff2=this.rand(1,28),eff3=this.rand(21,23);
+      result.DeltaInfo = `Group Name: Delta Dental of ${result.State}\nGroup Number: ${da1}-${da2}-${da3}\nSubscriber Name: ${result.FirstName} ${result.LastName}\nIdentification Number: ${this.id1()}${this.id2()}\nMembership Type: Subscriber\nDate: ${eff1}/${eff2}/${eff3}`;
+    } else {
+      result.DentalType = "Humana";
+      const plann1=this.rand(10000,99999),plann2=this.rand(100,999),plann3=this.rand(100,999);
+      const s1=this.rand(1,9),s2=this.rand(1,9),s3=this.rand(1,9);
+      const eff1=this.rand(1,12),eff2=this.rand(1,28),eff3=this.rand(21,23);
+      result.HumanaInfo = `Plan: (${plann1}) ${plann1}${plann2}${plann3}\nRx BIN: ${this.Rx(1)}\nRx PCN: ${this.Rx(2)}\nRx GRP: ${this.Rx(3)}\nCard Issued: ${eff1}/${eff2}/20${eff3}\nCopayments:\nOffice Visits: $${s1}0\nSpecialist: $${s2}0\nHospital Emergency: $${s3}`;
+    }
+
+    // Kaiser Benefits (k1-k14 conditional strings)
+    const k1 = this.rand(0,1)? "Annual Deductible N/A" : "No Annual Deductible";
+    const aoup=this.rand(0,2);
+    const k2 = aoup===1? "Annual Out-of-Pocket (OOP) Maximum Individual: $2,000" : (aoup===2?"Annual Out-of-Pocket (OOP) Maximum Family: $4,000":"OOP - Not Covered");
+    const emp=this.rand(0,1);
+    const k3 = emp? "Employee Coinsurance 20% Durable Equipment" : "Employee Coinsurance - Not Covered";
+    const prev=this.rand(0,1);
+    const k4 = prev? "Preventive (Annual Physicals, Well Care Exams) 100% covered" : "Annual Physicals - Not Covered";
+    const phys=this.rand(0,2);
+    const k6 = phys===1? "Physician Visits Primary Care: $20/visit" : (phys===2?"Specialists: $20/visit":"Physician Visits Primary Care - Not Covered");
+    const lax=this.rand(0,1);
+    const k7 = lax? "Lab and X-Ray 100% covered" : "Lab and X-Ray - Not Covered";
+    const emg=this.rand(0,1);
+    const k8 = emg? "Emergency Room $150 / visit" : "Emergency - Not Covered";
+    const amb=this.rand(0,1);
+    const k9 = amb? "Ambulance $50 / trip" : "Ambulance - Not Covered";
+    const hosp=this.rand(0,1);
+    const k10 = hosp? "Hospitalization $250 / admission" : "Hospitalization - Not Covered";
+    const chr=this.rand(0,2);
+    const k11 = chr===1? "Chiropractic $15/visit" : (chr===2?"Up to 30 visits/year":"Chiropractic - Not Covered");
+    const acu=this.rand(0,2);
+    const k12 = acu===1? "Acupuncture $15/visit" : (acu===2?"Up to 30 visits/year":"Acupuncture - Not Covered");
+    const mas=this.rand(0,1);
+    const k13 = mas? "Massage" : "Massage - Not Covered";
+    const spe=this.rand(0,1);
+    const k14 = spe? "Speech Therapy $20" : "Speech Therapy - Not Covered";
+
+    const gn=this.rand(10000,99999),gn2=this.rand(10,99);
+    const eff1_k=this.rand(1,12),eff2_k=this.rand(1,28),eff3_k=this.rand(20,23);
+    const s1k=this.rand(1,9),s2k=this.rand(1,9),s3k=this.rand(1,9),s4k=this.rand(1,9),s5k=this.rand(1,9),s6k=this.rand(1,9),s7k=this.rand(1,9);
+    const s8k=this.rand(1,9),s9k=this.rand(1,9),s10k=this.rand(1,9),s11k=this.rand(1,9),s12k=this.rand(1,9);
+    
+    result.KaiserBenefits = `${k1}\n${k2}\n${k3}\n${k4}\n${k6}\n${k7}\n${k8}\n${k9}\n${k10}\n${k11}\n${k12}\n${k13}\n${k14}`;
+    result.KaiserID = `Member Name: ${result.FirstName} ${result.LastName}\nHealth Record Number: ${this.hrn()}\nGroup Number: ${gn}-${this.gnl()}${gn2}\nRx BIN Number: ${this.Rxx1()}\nRx PCN Number: ${this.Rxx2()}\nEFF Date: ${eff1_k}/${eff2_k}/${eff3_k}`;
+
+    // Games Grabbers (Fixed object lookup)
+    const games = {};
+    const gameMap = {
+      "Xbox": this.gamesLists.xbox,
+      "Battle.NET": this.gamesLists.battlenet,
+      "Epic": this.gamesLists.epic,
+      "Steam": this.gamesLists.steam,
+      "UPlay": this.gamesLists.uplay
+    };
+
+    ["Xbox","Battle.NET","Epic","Steam","UPlay"].forEach(sys => {
+        const chance = this.rand(1,100);
+        if (chance > 40) {
+            const list = gameMap[sys];
+            const count = this.rand(1, Math.min(25, list.length));
+            const titles = [];
+            for (let i = 0; i < count; i++) {
+                titles.push(list[this.rand(0, list.length - 1)]);
+            }
+            games[sys] = titles.join(", ");
+        } else {
+            games[sys] = "N/A";
+        }
+    });
+    result.Games = games;
+
+    // Credit Score
+    const creditposs=this.rand(1,10);
+    const ranges=[[300,400],[350,450],[450,500],[500,550],[550,650],[650,700],[700,750],[750,800],[800,825],[825,850]];
+    result.CreditScore = this.rand(ranges[creditposs-1][0], ranges[creditposs-1][1]);
+
+    // Passport Info
+    const dobM=this.rand(1,12),dobD=this.rand(1,28),dobY=this.rand(1960,2004);
+    const issM=this.rand(1,12),issD=this.rand(1,28),issY=this.rand(2019,2023);
+    const sv3o=this.rand(1000000,9999999),sv3t=this.rand(10,99),sv4o=this.rand(1,9),sv4t=this.rand(1,9);
+    result.Passport = `Given Name: ${result.FirstName}\nSurname: ${result.LastName}\nNationality: USA\nSex: ${result.Gender}\nDate of Birth: ${dobM}/${dobD}/${dobY}\nPlace of Birth: ${result.State}\nIssued On: ${issM}/${issD}/${issY}\nExpires on: ${issM}/${issD}/2024\nVVFs: ${this.vvf(1)}-${this.vvf(2)}-${sv3o} ${this.vvf(3)} ${sv3t}-${sv4o} ${this.vvf(4)} ${sv4t}`;
+
+    // Build Raw Output (AHK file append style)
+    let raw = `Name: ${result.FirstName} ${result.LastName}\n${result.Country}/${result.State}\nGender: ${result.Gender}\nIP=${result.IP}\nSubscribed:${result.Subscription}\n${result.TimeRemaining || ""}\nLicense Plate: ${result.LicensePlate}\n\nComputer Information:\nUsername: ${result.FirstName}\nComputer Name: ${result.ComputerName}\nPIN ( Personal Identification Number ): ${result.PIN}\nMicosoft Account Linked: ${result.MicrosoftAccount}\nProduct Activation Key: ${result.ProductKey}\nDiscord Token: ${result.DiscordToken}\n\nCredit Card: ${result.CreditCard}\nCCV2: ${result.CCV2}\nExpiration Date: ${result.ExpirationDate}\nCard Network: ${result.CardNetwork}\nMoney Avaliable On Account: ${result.MoneyAvailable}\nCoinvoucher code: ${result.Coinvoucher}\n\n${result.DentalType} DENTAL INFORMATION:\n${result.DeltaInfo || result.HumanaInfo}\n\nKaiser Benefits:\n${result.KaiserBenefits}\nKaiser ID:\n${result.KaiserID}\n\nGames Grabbers:\nXbox: ${games.Xbox}\nBattle.NET: ${games["Battle.NET"]}\nEpic Games: ${games.Epic}\nSteam: ${games.Steam}\nUPlay: ${games.UPlay}\n\nCredit Score: ${result.CreditScore}\n\nPassport Information:\n${result.Passport}`;
+
+    // Display to UI
+    document.getElementById('rawOutput').textContent = raw;
+    
+    const varsGrid = document.getElementById('varsGrid');
+    varsGrid.innerHTML = "";
+    
+    // Flatten result for display
+    Object.entries(result).forEach(([key, val]) => {
+      if(key === "Games") {
+        let gStr = "<br>";
+        Object.entries(val).forEach(([gk,gv]) => gStr += `${gk}: ${gv}<br>`);
+        this.createVarBox(varsGrid, key, gStr.trim());
+      } else if (key.includes("TimeRemaining")) {
+        this.createVarBox(varsGrid, key, val.replace(/\n/g, "<br>"));
+      } else {
+        this.createVarBox(varsGrid, key, String(val));
+      }
+    });
+
+    document.getElementById('outputArea').style.display = "block";
+  },
+
+  createVarBox(container, label, value) {
+    const div = document.createElement("div");
+    div.className = "var-box";
+    div.innerHTML = `<span class="var-label">${label}</span><span class="var-value">${value}</span>`;
+    container.appendChild(div);
+  }
+};
+
+// ==========================================
+// UI EVENT HANDLER
+// ==========================================
+document.getElementById('generateBtn').addEventListener('click', () => {
+  AltifyGen.run();
+});
+</script>
+</body>
+</html>
+
+<script>
+// ==========================================
+// ALTIFY GENERATOR (AHK -> JS Conversion)
+// ==========================================
+const AltifyGen = {
+  // Defaults.ini mapping
+  config: { ad: "[ N/A ]", accs: 100, discLink: "[ N/A ]", yt: "[ N/A ]", twitchLink: "[ N/A ]", memory: "1300", threads: "5" },
+
+  // Embedded arrays (exact matches to your .pdb/.db files)
+  statesUSA: ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"],
+  
+  statesMEXICO: ["Aguascalientes","Baja California","Baja California Sur","Campeche","Chiapas","Chihuahua","Coahuila","Colima","Cuidad de Mexico","Durango","Guanajuato","Guerrero","Hidalgo","Jalisco","Mexico","Michoacan","Morelos","Nayarit","Nuevo Leon","Oaxaca","Puebla","Queretaro","Quintana Roo","San Luis Potosi","Sinaloa","Sonora","Tabasco","Tamaulipas","Tlaxcala","Veracruz","Yucatan","Zacatecas"],
+  
+  firstNames: "Liam\nNoah\nOliver\nElijah\nWilliam\nJames\nBenjamin\nLucas\nHenry\nAlexander\nMason\nMichael\nEthan\nDaniel\nJacob\nLogan\nJackson\nLevi\nSebastian\nMateo\nJack\nOwen\nTheodore\nAiden\nSamuel\nJoseph\nJohn\nDavid\nWyatt\nMatthew\nLuke\nAsher\nCarter\nJulian\nGrayson\nLeo\nJayden\nGabriel\nIsaac\nLincoln\nAnthony\nHudson\nDylan\nEzra\nThomas\nCharles\nChristopher\nJaxon\nMaverick\nJosiah\nIsaiah\nAndrew\nElias\nJoshua\nNathan\nCaleb\nRyan\nAdrian\nMiles\nEli\nNolan\nChristian\nAaron\nCameron\nEzekiel\nColton\nLuca\nLandon\nHunter\nJonathan\nSantiago\nAxel\nEaston\nCooper\nJeremiah\nAngel\nRoman\nConnor\nJameson\nRobert\nGreyson\nJordan\nIan\nCarson\nJaxson\nLeonardo\nNicholas\nDominic\nAustin\nEverett\nBrooks\nXavier\nKai\nJose\nParker\nAdam\nJace\nWesley\nKayden\nSilas\nBennett\nDeclan\nWaylon\nWeston\nEvan\nEmmett\nMicah\nRyder\nBeau\nDamian\nBrayden\nGael\nRowan\nHarrison\nBryson\nSawyer\nAmir\nKingston\nJason\nGiovanni\nVincent\nAyden\nChase\nMyles\nDiego\nNathaniel\nLegend\nJonah\nRiver\nTyler\nCole\nBraxton\nGeorge\nMilo\nZachary\nAshton\nLuis\nJasper\nKaiden\nAdriel\nGavin\nBentley\nCalvin\nZion\nJuan\nMaxwell\nMax\nRyker\nCarlos\nEmmanuel\nJayce\nLorenzo\nIvan\nJude\nAugust\nKevin\nMalachi\nElliott\nRhett\nArcher\nKarter\nArthur\nLuka\nElliot\nThiago\nBrandon\nCamden\nJustin\nJesus\nMaddox\nKing\nTheo\nEnzo\nMatteo\nEmiliano\nDean\nHayden\nFinn\nBrody\nAntonio\nAbel\nAlex\nTristan\nGraham\nZayden\nJudah\nXander\nMiguel\nAtlas\nMessiah\nBarrett\nTucker\nTimothy\nAlan\nEdward\nLeon\nDawson\nEric\nAce\nVictor\nAbraham\nNicolas\nJesse\nCharlie\nPatrick\nWalker\nJoel\nRichard\nBeckett\nBlake\nAlejandro\nAvery\nGrant\nPeter\nOscar\nMatias\nAmari\nLukas\nAndres\nArlo\nColt\nAdonis\nKyrie\nSteven\nFelix\nPreston\nMarcus\nHolden\nEmilio\nRemington\nJeremy\nKaleb\nBrantley\nBryce\nMark\nKnox\nIsrael\nPhoenix\nKobe\nNash\nGriffin\nCaden\nKenneth\nKyler\nHayes\nJax\nRafael\nBeckham\nJavier\nMaximus\nSimon\nPaul\nOmar\nKaden\nKash\nLane\nBryan\nRiley\nZane\nLouis\nAidan\nPaxton\nMaximiliano\nKarson\nCash\nCayden\nEmerson\nTobias\nRonan\nBrian\nDallas\nBradley\nJorge\nWalter\nJosue\nKhalil\nDamien\nJett\nKairo\nZander\nAndre\nCohen\nCrew\nHendrix\nColin\nChance\nMalakai\nClayton\nDaxton\nMalcolm\nLennox\nMartin\nJaden\nKayson\nBodhi\nFrancisco\nCody\nErick\nKameron\nAtticus\nDante\nJensen\nCruz\nFinley\nBrady\nJoaquin\nAnderson\nGunner\nMuhammad\nZayn\nDerek\nRaymond\nKyle\nAngelo\nReid\nSpencer\nNico\nJaylen\nJake\nPrince\nManuel\nAli\nGideon\nStephen\nEllis\nOrion\nRylan\nEduardo\nMario\nRory\nCristian\nOdin\nTanner\nJulius\nCallum\nSean\nKane\nRicardo\nTravis\nWade\nWarren\nFernando\nTitus\nLeonel\nEdwin\nCairo\nCorbin\nDakota\nIsmael\nColson\nKillian\nMajor\nTate\nGianni\nElian\nRemy\nLawson\nNiko\nNasir\nKade\nArmani\nEzequiel\nMarshall\nHector\nDesmond\nKason\nGarrett\nJared\nCyrus\nRussell\nCesar\nTyson\nMalik\nDonovan\nJaxton\nCade\nRomeo\nNehemiah\nSergio\nIker\nCaiden\nJay\nPablo\nDevin\nJeffrey\nOtto\nKamari\nRonin\nJohnny\nClark\nAri\nMarco\nEdgar\nBowen\nJaiden\nGrady\nZayne\nSullivan\nJayceon\nSterling\nAndy\nConor\nRaiden\nRoyal\nRoyce\nSolomon\nTrevor\nWinston\nEmanuel\nFinnegan\nPedro\nLuciano\nHarvey\nFranklin\nNoel\nTroy\nPrinceton\nJohnathan\nErik\nFabian\nOakley\nRhys\nPorter\nHugo\nFrank\nDamon\nKendrick\nMathias\nMilan\nPeyton\nWilder\nCallan\nGregory\nSeth\nMatthias\nBriggs\nIbrahim\nRoberto\nConner\nQuinn\nKashton\nSage\nSantino\nKolton\nAlijah\nDominick\nZyaire\nApollo\nKylo\nReed\nPhilip\nKian\nShawn\nKaison\nLeonidas\nAyaan\nLucca\nMemphis\nFord\nBaylor\nKyson\nUriel\nAllen\nCollin\nRuben\nArchie\nDalton\nEsteban\nAdan\nForrest\nAlonzo\nIsaias\nLeland\nJase\nDax\nKasen\nGage\nKamden\nMarcos\nJamison\nFrancis\nHank\nAlexis\nTripp\nFrederick\nJonas\nStetson\nCassius\nIzaiah\nEden\nMaximilian\nRocco\nTatum\nKeegan\nAziel\nMoses\nBruce\nLewis\nBraylen\nOmari\nMack\nAugustus\nEnrique\nArmando\nPierce\nMoises\nAsa\nShane\nEmmitt\nSoren\nDorian\nKeanu\nZaiden\nRaphael\nDeacon\nAbdiel\nKieran\nPhillip\nRyland\nZachariah\nCasey\nZaire\nAlbert\nBaker\nCorey\nKylan\nDenver\nGunnar\nJayson\nDrew\nCallen\nJasiah\nDrake\nKannon\nBraylon\nSonny\nBo\nMoshe\nHuxley\nQuentin\nRowen\nSantana\nCannon\nKenzo\nWells\nJulio\nNikolai\nConrad\nJalen\nMakai\nBenson\nDerrick\nGerardo\nDavis\nAbram\nMohamed\nRonald\nRaul\nArjun\nDexter\nKaysen\nJaime\nScott\nLawrence\nAriel\nSkyler\nDanny\nRoland\nChandler\nYusuf\nSamson\nCase\nZain\nRoy\nRodrigo\nSutton\nBoone\nSaint\nSaul\nJaziel\nHezekiah\nAlec\nArturo\nJamari\nJaxtyn\nJulien\nKoa\nReece\nLanden\nKoda\nDarius\nSylas\nAres\nKyree\nBoston\nKeith\nTaylor\nJohan\nEdison\nSincere\nWatson\nJerry\nNikolas\nQuincy\nShepherd\nBrycen\nMarvin\nDariel\nAxton\nDonald\nBodie\nFinnley\nOnyx\nRayan\nRaylan\nBrixton\nColby\nShiloh\nValentino\nLayton\nTrenton\nLandyn\nAlessandro\nAhmad\nGustavo\nLedger\nRidge\nAnder\nAhmed\nKingsley\nIssac\nMauricio\nTony\nLeonard\nMohammed\nUriah\nDuke\nKareem\nLucian\nMarcelo\nAarav\nLeandro\nReign\nClay\nKohen\nDennis\nSamir\nErmias\nOtis\nEmir\nNixon\nTy\nSam\nFletcher\nWilson\nDustin\nHamza\nBryant\nFlynn\nLionel\nMohammad\nCason\nJamir\nAden\nDakari\nJustice\nDillon\nLayne\nZaid\nAlden\nNelson\nDevon\nTitan\nChris\nKhari\nZeke\nNoe\nAlberto\nRoger\nBrock\nRex\nQuinton\nAlvin\nCullen\nAzariah\nHarlan\nKellan\nLennon\nMarcel\nKeaton\nMorgan\nRicky\nTrey\nKarsyn\nLangston\nMiller\nChaim\nSalvador\nAmias\nTadeo\nCurtis\nLachlan\nAmos\nAnakin\nKrew\nTomas\nJefferson\nYosef\nBruno\nKorbin\nAugustine\nCayson\nMathew\nVihaan\nJamie\nClyde\nBrendan\nJagger\nCarmelo\nHarry\nNathanael\nMitchell\nDarren\nRay\nJedidiah\nJimmy\nLochlan\nBellamy\nEddie\nRayden\nReese\nStanley\nJoe\nHouston\nDouglas\nVincenzo\nCasen\nEmery\nJoziah\nLeighton\nMarcellus\nAtreus\nAron\nHugh\nMusa\nTommy\nAlfredo\nJunior\nNeil\nWestley\nBanks\nEliel\nMelvin\nMaximo\nBriar\nColten\nLance\nNova\nTrace\nAxl\nRamon\nVicente\nBrennan\nCaspian\nRemi\nDeandre\nLegacy\nLee\nValentin\nBen\nLouie\nWestin\nWayne\nBenicio\nGrey\nZayd\nGatlin\nMekhi\nOrlando\nBjorn\nHarley\nAlonso\nRio\nAldo\nByron\nEliseo\nErnesto\nTalon\nThaddeus\nBrecken\nKace\nKellen\nEnoch\nKiaan\nLian\nCreed\nRohan\nCallahan\nJaxxon\nOcean\nCrosby\nDash\nGary\nMylo\nIra\nMagnus\nSalem\nAbdullah\nKye\nTru\nForest\nJon\nMisael\nMadden\nBraden\nCarl\nHassan\nEmory\nKristian\nAlaric\nAmbrose\nDario\nAllan\nBode\nBoden\nJuelz\nKristopher\nGenesis\nIdris\nAmeer\nAnders\nDarian\nKase\nAryan\nDane\nGuillermo\nElisha\nJakobe\nThatcher\nEugene\nIshaan\nLarry\nWesson\nYehuda\nAlvaro\nBobby\nBronson\nDilan\nKole\nKyro\nTristen\nBlaze\nBrayan\nJadiel\nKamryn\nDemetrius\nMaurice\nArian\nKabir\nRocky\nRudy\nRandy\nRodney\nYousef\nFelipe\nRobin\nAydin\nDior\nKaiser\nVan\nBrodie\nLondon\nEithan\nStefan\nUlises\nCamilo\nBranson\nJakari\nJudson\nYahir\nZavier\nDamari\nJakob\nJaxx\nBentlee\nCain\nNiklaus\nRey\nZahir\nAries\nBlaine\nKyng\nCastiel\nHenrik\nJoey\nKhalid\nBear\nGraysen\nJair\nKylen\nDarwin\nAlfred\nAyan\nKenji\nZakai\nAvi\nCory\nFisher\nJacoby\nOsiris\nHarlem\nJamal\nSantos\nWallace\nBrett\nFox\nLeif\nMaison\nReuben\nAdler\nZev\nCalum\nKelvin\nZechariah\nBridger\nMccoy\nSeven\nShepard\nAzrael\nLeroy\nTerry\nHarold\nMac\nMordechai\nAhmir\nCal\nFranco\nTrent\nBlaise\nCoen\nDominik\nMarley\nDavion\nJeremias\nRiggs\nJones\nWill\nDamir\nDangelo\nCanaan\nDion\nJabari\nLandry\nSalvatore\nKody\nHakeem\nTruett\nGerald\nLyric\nGordon\nJovanni\nKamdyn\nAlistair\nCillian\nFoster\nTerrance\nMurphy\nZyair\nCedric\nRome\nAbner\nColter\nDayton\nJad\nXzavier\nRene\nVance\nDuncan\nFrankie\nBishop\nDavian\nEverest\nHeath\nJaxen\nMarlon\nMaxton\nReginald\nHarris\nJericho\nKeenan\nKorbyn\nWes\nEliezer\nJeffery\nKalel\nKylian\nTurner\nWillie\nRogelio\nEphraim".split("\n"),
+  
+  lastNames: "Smith\nJohnson\nWilliams\nBrown\nJones\nGarcia\nMiller\nDavis\nRodriguez\nMartinez\nHernandez\nLopez\nFernando\nHernando\nGonzalez\nWilson\nAnderson\nThomas\nTaylor\nMoore\nJackson\nMartin\nLee\nPerez\nThompson\nWhite\nHarris\nSanchez\nClark\nRamirez\nLewis\nRobinson\nWalker\nYoung\nAllen\nKing\nWright\nScott\nRobby\nTorres\nNguyen\nRich\nHill\nFlores\nGreen\nAdams\nNelson\nBaker\nBakerson\nHall\nRivera\nCampbell\nMitchell\nCarter\nCartier\nRoberts\nGomez\nPhillips\nEvans\nTurner\nDiaz\nParker\nCruz\nEdwards\nEdward\nCollin\nCollins\nReye\nReyes\nStewart\nMorris\nMorales\nMurphy\nCook\nCooks\nRodger\nRogers\nGutierrez\nOrtiz\nMorgan\nCooper\nPeterson\nBailey\nReed\nKelly\nHoward\nRamos\nKim\nCox\nCockson\nWard\nWarden\nRichardson\nRichard\nWatson\nBrook\nBrooks\nChavez\nWood\nJames".split("\n"),
+  
+  mailNorm: "gmail.com\naol.com\nmail.com\nemail.com\nusa.com\nmyself.com\nconsultant.com\npost.com\neurope.com\nasia.com\niname.com\nwriteme.com\ndr.com\nengineer.com\ncheerful.com\naccountant.com\ntechie.com\nuymail.com\nactivist.com\nadexec.com\nallergist.com\nalumni.com\nalumnidirector.com\nangelic.com\narchaeologist.com\narcticmail.com\nartlover.com\nbikerider.com\nbirdlover.com\nbrew-meister.com\ncash4u.com\nchemist.com\nclerk.com\ncolumnist.com\ncomic.com\ncomputer4u.com\ncounsellor.com\ncyberservices.com\ndeliveryman.com\ndiplomats.com\ndisposable.com\nexecs.com\nfastservice.com\nfinancier.com\ngardener.com\ngeologist.com\ngraphic-designer.com\ngroupmail.com\nhomemail.com\nhot-shot.com\ninstruction.com\ninsurer.com\njob4u.com\njournalist.com\nlegislator.com\nlobbyist.com\nminister.com\nnet-shopping.com\noptician.com\npediatrician.com\nplanetmail.com\npolitician.com\npresidency.com\npriest.com\npublicist.com\nqualityservice.com\nrealtyagent.com\nregisterednurses.com\nrepairman.com\nrepresentative.com\nrescueteam.com\nsociologist.com\nsolution4u.com\ntech-center.com\ntechnologist.com\ntheplate.com\ntoothfairy.com\ntvstar.com\numpire.com\nwebname.com\nworker.com\nworkmail.com\n2trom.com\naircraftmail.com\natheist.com\nblader.com\nboardermail.com\nbrew-master.com\nbsdmail.com\ncatlover.com\ncutey.com\ndbzmail.com\ndoglover.com\ndoramail.com\ngalaxyhit.com\nhackermail.com\nhilarious.com\nkeromail.com\nkittymail.com\nlovecat.com\nmarchmail.com\nnonpartisan.com\npetlover.com\nsnakebite.com\ntoke.com\ncyberdude.com\ncybergal.com\ncyber-wizard.com\nhousemail.com\ninorbit.com\nmail-me.com\nrocketship.com\nacdcfan.com\ndiscofan.com\nelvisfan.com\nhiphopfan.com\nkissfans.com\nmadonnafan.com\nmetalfan.com\nninfan.com\nravemail.com\nreborn.com\nreggaefan.com\ncaliforniamail.com\ndallasmail.com\nnycmail.com\npacific-ocean.com\npacificwest.com\nsanfranmail.com\nafricamail.com\nasia-mail.com\naustraliamail.com\nberlin.com\nbrazilmail.com\nchinamail.com\ndublin.com\ndutchmail.com\nenglandmail.com\neuropemail.com\ngermanymail.com\nirelandmail.com\nisraelmail.com\nitalymail.com\nkoreamail.com\nmexicomail.com\nmoscowmail.com\nmunich.com\npolandmail.com\nsafrica.com\nsamerica.com\nscotlandmail.com\nspainmail.com\nswedenmail.com\nswissmail.com\ntorontomail.com\ndisciples.com\ninnocent.com\nmuslim.com\nprotestant.com\nreincarnate.com\nreligious.com\nsaintly.com\ncontractor.net\nappraiser.net\nauctioneer.net\nbartender.net\nchef.net\ncoolsite.net\nfireman.net\nhairdresser.net\ninstructor.net\northodontist.net\nphotographer.net\nphysicist.net\nplanetmail.net\nprogrammer.net\nradiologist.net\nsalesperson.net\nsecretary.net\nsocialworker.net\nsongwriter.net\nsurgical.net\ntherapist.net\ngreenmail.net\nhumanoid.net\nnull.net\nbellair.net\nlinuxmail.org\nclubmember.org\ncollector.org\ngraduate.org\nmusician.org\nteachers.org".split("\n"),
+  
+  // ENDINGS.db contains exactly 100 lines of outlook.com
+  mailEndingsDB: Array(100).fill("outlook.com"),
+
+  gamesLists: {
+    xbox: ["Halo Infinite","Forza Horizon 5","Gears 5","Starfield","Psychonauts 2","Hi-Fi Rush","Age of Empires IV","Sea of Thieves","Slay the Spire","Microsoft Flight Simulator","Minecraft","Red Dead Redemption 2","FIFA 23","Call of Duty","Overwatch 2","Dead Island 2","Baldur's Gate 3","PUBG","Roblox","Among Us","Rocket League","Fall Guys","Tetris Effect","Stardew Valley","Celeste"], // AHK max: 291
+    battlenet: ["World of Warcraft","Diablo IV","Overwatch 2","StarCraft II","Hearthstone","Heroes of the Storm","Call of Duty: Modern Warfare III","Destiny 2","League of Legends","Valorant","Fortnite","Apex Legends","The Witcher 3","Grand Theft Auto V","Cyberpunk 2077","Elden Ring","Final Fantasy XIV","Lost Ark","PUBG Battlegrounds","Rocket League","Fall Guys","Tetris Effect","Stardew Valley","Celeste"], // AHK max: 28
+    epic: ["Fortnite","Rocket League","Fall Guys","Slay the Spire","Dead Island 2","Baldur's Gate 3","PUBG","Among Us","Overwatch 2","Call of Duty","Destiny 2","League of Legends","Valorant","Grand Theft Auto V","Cyberpunk 2077","Elden Ring","Final Fantasy XIV","Lost Ark"], // AHK max: 21
+    steam: ["Counter-Strike 2","Dota 2","Team Fortress 2","Portal 2","Half-Life 2","Garry's Mod","Rust","ARK Survival Evolved","Terraria","Stardew Valley","Hades","Dead Cells","Slay the Spire","Celeste","Hollow Knight","Ori and the Blind Forest","Axiom Verge","Hyper Light Drifter","Tunic","Shovel Knight","Enter the Gungeon","Risk of Rain 2","Cuphead","Undertale","Moonlighter"], // AHK max: 177
+    uplay: ["Assassin's Creed Valhalla","Rainbow Six Siege","The Division 2","Far Cry 6","Watch Dogs Legion","Ghost Recon Breakpoint","Tom Clancy's Elite Squad","Blade & Sorcery","Elite Dangerous","Anno 1800","Just Cause 4","Skylords Reborn","Star Traders Frontiers"] // AHK max: 21
+  },
+
+  // Helper: Simulates AHK FileReadLine (1-based indexing, loops if > array length)
+  readLine(arr, minIdx, maxIdx) {
+    let idx = this.rand(minIdx, maxIdx);
+    return arr[(idx - 1) % arr.length];
+  },
+
+  rand(min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; },
+  
+  // String generators adapted from AHK character arrays & loops
+  charsBase: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
+  charsAZ09: "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
+  digits: "1234567890",
+  letters: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+
+  genRandomStr(len=1) {
     let r="", l2=this.rand(3,6); for(let i=0;i<len;i++){for(let j=0;j<l2;j++)r+=this.charsBase.charAt(this.rand(0,306));} return r;
   },
   dToken1(len=1) { let r="",l2=this.rand(22,26); for(let i=0;i<len;i++){for(let j=0;j<l2;j++)r+=this.charsBase.charAt(this.rand(0,306));} return r; },
