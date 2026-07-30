@@ -7,8 +7,11 @@ assignees: Altify-Development
 
 ---
 
-Issue tracker is **ONLY** used for reporting bugs. New features should be discussed on our slack channel. Please use [stackoverflow](https://stackoverflow.com) for supporting issues.
+**Issue tracker is ONLY used for reporting bugs.**
 
+For general troubleshooting and usage questions, please use [Stack Overflow](https://stackoverflow.com/). The issue tracker is exclusively for bug reports.
+
+If you're reporting a bug that's related to a feature request, please report the bug here and discuss the feature request separately on our Slack channel.
 <!--- Provide a general summary of the issue in the Title above -->
 
 ## Expected Behavior
