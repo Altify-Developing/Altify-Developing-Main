@@ -1,9 +1,7 @@
-# Hey IM BACK!
+# new domain bra its https://www.altify.uk
 
 ## WHATS CHANGED!
-### - All links dont work except https://altify-developing-001.netlify.app ( I LOST ACCESS TO THE DOMAIN CUZ IM BROKE ASF )
-### - I made a new tool for people struggling with DMV tests all around the US, with 0 ads ( you can even download it and run it offline )
-### If you have suggestions, DO NOT leave an issue, I will probably never see it due to GitHub signing me out EVERY SINGLE TIME I CLOSE IT ON MY PC AND PHONE, but rather instead hit up either one of my main business emails - altifydeveloping@gmail.com or alts@null.net, i suggest you try the gmail first, because i only look at null.net mail once a month if that.
+### - prolly a lot of links that link to altifydeveloping.com still, and to the old netlify link
 
 
 # Altify-Developing-Main
